@@ -11,6 +11,7 @@ export async function GET(context: APIContext) {
     title: 'कस्बा',
     description: 'छोटे शहरों की बड़ी ख़बरें, आधिकारिक स्रोतों से',
     site: context.site!,
+    trailingSlash: false,
     customData: '<language>hi</language>',
     items: stories.map((s) => ({
       title: s.data.title,

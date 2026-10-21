@@ -40,6 +40,17 @@ export const t = {
     sections: 'विषय',
     aboutKasba: 'कस्बा',
     policies: 'नीतियाँ',
+    share: 'WhatsApp पर भेजें',
+    addCalendar: 'कैलेंडर में जोड़ें',
+    deadlines: 'आख़िरी तारीख़ें',
+    deadlinesNote: 'फ़ॉर्म, फ़ीस, परीक्षा और योजनाओं की आने वाली अंतिम तिथियाँ, आधिकारिक सूचनाओं से।',
+    noDeadlines: 'अभी कोई आने वाली आख़िरी तारीख़ नहीं है।',
+    today: 'आज',
+    daysLeft: (n: number) => (n === 1 ? 'कल' : `${n} दिन बाक़ी`),
+    allDeadlines: 'सभी तारीख़ें',
+    glossary: 'शब्दकोश',
+    glossaryNote: 'सरकारी सूचनाओं में आने वाले शब्द, आसान हिंदी में।',
+    checked: 'आधिकारिक सूचना से मिलाया',
   },
   en: {
     tagline: 'Big news for small towns',
@@ -70,6 +81,17 @@ export const t = {
     sections: 'Sections',
     aboutKasba: 'Kasba',
     policies: 'Policies',
+    share: 'Share on WhatsApp',
+    addCalendar: 'Add to calendar',
+    deadlines: 'Last dates',
+    deadlinesNote: 'Upcoming last dates for forms, fees, exams and schemes, from official notices.',
+    noDeadlines: 'No upcoming last dates right now.',
+    today: 'Today',
+    daysLeft: (n: number) => (n === 1 ? 'Tomorrow' : `${n} days left`),
+    allDeadlines: 'All last dates',
+    glossary: 'Glossary',
+    glossaryNote: 'Words from official notices, in plain language.',
+    checked: 'Checked against the official notice',
   },
 } as const;
 
@@ -90,3 +112,17 @@ export const dateFmt = (lang: Lang, d: Date) =>
 // Devanagari reads slower than English, so Hindi uses a lower words-per-minute.
 export const readMinutes = (text: string, lang: Lang) =>
   Math.max(1, Math.round(text.trim().split(/\s+/).length / (lang === 'hi' ? 160 : 220)));
+
+// Whole days from today (India time) to a date; 0 means today.
+export const daysUntil = (d: Date, now = new Date()) => {
+  const day = (x: Date) => Date.parse(new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(x));
+  return Math.round((day(d) - day(now)) / 86400000);
+};
+
+// Google Calendar link for an all-day reminder on a last date.
+export const calendarLink = (title: string, d: Date, details: string) => {
+  const ymd = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(d).replace(/-/g, '');
+  const next = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata' }).format(new Date(d.getTime() + 86400000)).replace(/-/g, '');
+  const q = new URLSearchParams({ action: 'TEMPLATE', text: title, dates: `${ymd}/${next}`, details });
+  return `https://calendar.google.com/calendar/render?${q}`;
+};

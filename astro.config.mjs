@@ -6,5 +6,5 @@ export default defineConfig({
   site: 'https://kasba.co.in',
   trailingSlash: 'never',
   build: { format: 'file' },
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/offline') })],
 });

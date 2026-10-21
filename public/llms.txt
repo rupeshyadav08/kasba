@@ -10,3 +10,6 @@ All stories are drafted with AI from official sources and checked by a human edi
 - [RSS feed](https://kasba.co.in/rss.xml)
 - [Editorial policy](https://kasba.co.in/editorial-policy)
 - [Sources and AI use](https://kasba.co.in/sources-ai)
+- [Last dates for forms, exams and schemes](https://kasba.co.in/deadlines)
+- [Glossary of official terms](https://kasba.co.in/shabdkosh)
+- [Full text of recent stories](https://kasba.co.in/llms-full.txt)

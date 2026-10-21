@@ -1,0 +1,49 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const L = t[lang];
+const terms = (await getCollection('glossary', ({ data }) => data.lang === lang))
+  .sort((a, b) => a.data.term.localeCompare(b.data.term, lang === 'hi' ? 'hi' : 'en'));
+const rendered = await Promise.all(terms.map(async (e) => ({ e, Content: (await render(e)).Content })));
+const path = lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
+const url = new URL(path, Astro.site).toString();
+// DefinedTermSet tells search and AI answers that each entry is a definition they can quote.
+const jsonLd = [{
+  '@context': 'https://schema.org', '@type': 'DefinedTermSet', name: L.glossary, url, inLanguage: lang,
+  hasDefinedTerm: terms.map((e) => ({ '@type': 'DefinedTerm', name: e.data.term, description: e.data.short, url: `${url}#${e.data.termId}` })),
+}];
+---
+<Base lang={lang} title={`${L.glossary} | Kasba`} description={L.glossaryNote} altPath={lang === 'hi' ? '/en/shabdkosh' : '/shabdkosh'} jsonLd={jsonLd}>
+  <main class="wrap gpage">
+    <h1 class="serif">{L.glossary}</h1>
+    <p class="muted">{L.glossaryNote}</p>
+    <nav class="jump" aria-label={L.glossary}>
+      {terms.map((e) => <a href={`#${e.data.termId}`}>{e.data.term}</a>)}
+    </nav>
+    <dl>
+      {rendered.map(({ e, Content }) => (
+        <div class="entry" id={e.data.termId}>
+          <dt class="serif">{e.data.term}</dt>
+          <dd><p class="short">{e.data.short}</p><div class="more"><Content /></div></dd>
+        </div>
+      ))}
+    </dl>
+  </main>
+</Base>
+<style>
+  .gpage { padding-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+  h1 { margin: 0; font-size: 2rem; border-top: 4px solid var(--accent); padding-top: 0.5rem; }
+  .muted { margin: 0; }
+  .jump { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.9rem; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; }
+  .jump a:hover { border-color: var(--accent); }
+  dl { margin: 0; }
+  .entry { border-top: 1px solid var(--line); padding: 1rem 0; scroll-margin-top: 1rem; }
+  dt { font-size: 1.35rem; font-weight: 700; }
+  dd { margin: 0.25rem 0 0; }
+  .short { margin: 0; font-weight: 600; }
+  .more :global(p) { margin: 0.5rem 0 0; color: var(--text-soft); line-height: 1.75; }
+</style>

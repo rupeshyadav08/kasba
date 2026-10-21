@@ -4,6 +4,8 @@ import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
 import SectionBlock from './SectionBlock.astro';
 import LocalStrip from './LocalStrip.astro';
+import DeadlineList from './DeadlineList.astro';
+import { upcomingDeadlines } from '../lib/deadlines';
 import { sectionOrder, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -12,6 +14,8 @@ const stories = (await getCollection('stories', ({ data }) => data.lang === lang
 const [lead, ...top] = stories;
 const secondary = top.slice(0, 4);
 const L = t[lang];
+const deadlines = (await upcomingDeadlines(lang)).slice(0, 3);
+const p = lang === 'hi' ? '' : '/en';
 const jsonLd = [{
   '@context': 'https://schema.org', '@type': 'NewsMediaOrganization',
   name: 'Kasba', url: 'https://kasba.co.in', email: 'admin@kasba.co.in',
@@ -37,6 +41,13 @@ const jsonLd = [{
       <LocalStrip lang={lang} />
     </div>
 
+    {deadlines.length > 0 && (
+      <section class="deadlines" aria-labelledby="dl-h">
+        <h2 id="dl-h"><a href={`${p}/deadlines`}>{L.deadlines} ›</a></h2>
+        <DeadlineList lang={lang} items={deadlines} />
+      </section>
+    )}
+
     {sectionOrder.map((sec) => (
       <SectionBlock lang={lang} section={sec} stories={stories.filter((s) => s.data.category === sec)} />
     ))}
@@ -58,4 +69,7 @@ const jsonLd = [{
   .b-kicker { color: #8fd9bd; font-weight: 600; font-size: 0.9rem; }
   .b-title { font-size: 1.3rem; font-weight: 600; line-height: 1.45; }
   .briefing:hover .b-title { text-decoration: underline; }
+  .deadlines { border-top: 4px solid var(--c-health); padding-top: 0.25rem; }
+  .deadlines h2 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+  .deadlines h2 a { display: inline-flex; align-items: center; min-height: 44px; color: var(--c-health); }
 </style>

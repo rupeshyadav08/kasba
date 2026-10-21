@@ -19,6 +19,9 @@ source:
   url: "https://www.cbse.gov.in/cbsenew/cbse.html"
   date: 2026-10-21
 category: jobs-exams
+deadline:
+  date: 2026-10-21
+  label: "CBSE LOC जमा करने की आख़िरी तारीख़"
 author: "कस्बा डेस्क (नमूना)"
 published: 2026-10-21T16:30:00+05:30
 ---

@@ -5,8 +5,8 @@ const { lang } = Astro.props;
 const p = lang === 'hi' ? '' : '/en';
 const L = t[lang];
 const about = lang === 'hi'
-  ? [['हमारे बारे में', '/about'], ['स्रोत और AI', '/sources-ai'], ['संपर्क', '/contact'], ['कस्बा ब्रीफ़िंग', '/briefing']]
-  : [['About', '/about'], ['Sources and AI', '/sources-ai'], ['Contact', '/contact'], ['Kasba Briefing', '/briefing']];
+  ? [['हमारे बारे में', '/about'], ['स्रोत और AI', '/sources-ai'], ['संपर्क', '/contact'], ['कस्बा ब्रीफ़िंग', '/briefing'], ['आख़िरी तारीख़ें', '/deadlines'], ['शब्दकोश', '/shabdkosh']]
+  : [['About', '/about'], ['Sources and AI', '/sources-ai'], ['Contact', '/contact'], ['Kasba Briefing', '/briefing'], ['Last dates', '/deadlines'], ['Glossary', '/shabdkosh']];
 const policies = lang === 'hi'
   ? [['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['आचार संहिता', '/code-of-ethics'], ['शिकायत निवारण', '/grievance'], ['निजता', '/privacy'], ['नियम व शर्तें', '/terms']]
   : [['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Code of ethics', '/code-of-ethics'], ['Grievance redressal', '/grievance'], ['Privacy', '/privacy'], ['Terms', '/terms']];

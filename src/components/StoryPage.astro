@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection, render } from 'astro:content';
 import StoryCard from './StoryCard.astro';
 import Base from '../layouts/Base.astro';
-import { categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
+import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
 const { story, altPath } = Astro.props;
 const d = story.data;
@@ -12,9 +12,19 @@ const { Content } = await render(story);
 const related = (await getCollection('stories', ({ data }) => data.lang === d.lang && data.storyId !== d.storyId))
   .sort((a, b) => Number(b.data.category === d.category) - Number(a.data.category === d.category) || b.data.published.getTime() - a.data.published.getTime())
   .slice(0, 4);
+// Glossary entries whose words appear in this story, shown as a "words in this story" box.
+const text = [d.title, d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].join(' ').toLowerCase();
+const terms = (await getCollection('glossary', ({ data }) => data.lang === d.lang))
+  .filter((g) => g.data.match.some((w) => text.includes(w.toLowerCase())));
+const glossaryPath = d.lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
 const url = new URL(storyPath(d.lang, d.storyId), Astro.site).toString();
 const home = new URL(d.lang === 'hi' ? '/' : '/en', Astro.site).toString();
+const image = new URL(`/og/${d.category}.png`, Astro.site).toString();
+// WhatsApp is how most of Kasba's readers pass news on, so the share text carries the useful line too.
+const shareText = `${d.title}\n\n${L.meaning}: ${d.meaning}\n\n${url}`;
+const whatsapp = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+const calendar = d.deadline && calendarLink(`${d.deadline.label} (Kasba)`, d.deadline.date, `${d.title}\n${url}`);
 
 const jsonLd = [
   {
@@ -22,8 +32,13 @@ const jsonLd = [
     headline: d.title, description: d.summary, inLanguage: d.lang,
     datePublished: d.published.toISOString(),
     dateModified: (d.updated ?? d.published).toISOString(),
+    image: [image],
+    articleSection: categories[d.category][d.lang],
     author: { '@type': 'Person', name: d.author },
-    publisher: { '@type': 'Organization', name: 'Kasba', url: 'https://kasba.co.in' },
+    publisher: {
+      '@type': 'NewsMediaOrganization', name: 'Kasba', url: 'https://kasba.co.in',
+      logo: { '@type': 'ImageObject', url: 'https://kasba.co.in/logo-600x60.png', width: 600, height: 60 },
+    },
     mainEntityOfPage: url,
     isBasedOn: d.source.url,
   },
@@ -41,7 +56,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category}>
+<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category} image={image}>
   <div class="page layout" style={secColor(d.category)}>
   <main class="story">
     <nav aria-label="breadcrumb" class="crumbs"><a href={d.lang === 'hi' ? '/' : '/en'}>{L.home}</a> › <a class="sec" href={sectionPath(d.lang, d.category)}>{categories[d.category][d.lang]}</a></nav>
@@ -54,6 +69,13 @@ const jsonLd = [
         {d.updated && <> · {L.updated} <time datetime={d.updated.toISOString()}>{dateFmt(d.lang, d.updated)}</time></>}
         · {minutes} {L.minRead}
       </span>
+    </div>
+    <div class="actions">
+      <a class="btn wa" href={whatsapp} rel="noopener" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+        {L.share}
+      </a>
+      {calendar && <a class="btn cal" href={calendar} rel="noopener" target="_blank">📅 {L.addCalendar}: {dateFmt(d.lang, d.deadline!.date)}</a>}
     </div>
     {d.correction && <p class="correction"><strong>{L.correction}:</strong> {d.correction}</p>}
 
@@ -74,9 +96,16 @@ const jsonLd = [
       {d.faq.map((f) => <div class="qa"><h3>{f.q}</h3><p>{f.a}</p></div>)}
     </section>
 
+    {terms.length > 0 && (
+      <section class="words" aria-labelledby="words-h">
+        <h2 id="words-h">{L.glossary}</h2>
+        <dl>{terms.map((g) => <div><dt><a href={`${glossaryPath}#${g.data.termId}`}>{g.data.term}</a></dt><dd>{g.data.short}</dd></div>)}</dl>
+      </section>
+    )}
+
     <section class="source" aria-label={L.source}>
       <p><strong>{L.source}:</strong> {d.source.name}, "{d.source.title}", {dateFmt(d.lang, d.source.date)}. <a href={d.source.url} rel="noopener">{L.viewSource}</a></p>
-      <p>{L.aiNote} <a href="mailto:admin@kasba.co.in">{L.reportError}</a></p>
+      <p>{L.checked}: {dateFmt(d.lang, d.updated ?? d.published)}. {L.aiNote} <a href="mailto:admin@kasba.co.in">{L.reportError}</a></p>
     </section>
   </main>
   {related.length > 0 && (
@@ -101,6 +130,12 @@ const jsonLd = [
   h2 { margin: 0 0 0.6rem; font-size: 1.25rem; font-weight: 700; }
   .summary { margin: 0; font-size: 1.125rem; line-height: 1.7; color: var(--text-soft); }
   .byline { display: flex; flex-direction: column; font-size: 0.9rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .btn { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 1rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem; }
+  .wa { background: #1a7f4b; color: #fff; }
+  .wa:hover { background: #136239; }
+  .cal { border: 1px solid var(--line); color: var(--text); }
+  .cal:hover { border-color: var(--sec); }
   .correction { background: var(--accent-tint); padding: 0.75rem 1rem; border-radius: 8px; margin: 0; }
   .meaning { background: var(--bg-soft); border-left: 4px solid var(--sec); padding: 1.25rem; border-radius: 12px; }
   .meaning h2 { font-family: var(--sans); font-size: 1rem; color: var(--sec); }
@@ -109,6 +144,11 @@ const jsonLd = [
   .body { font-size: 1.125rem; line-height: 1.85; }
   .qa h3 { margin: 0; font-size: 1.0625rem; }
   .qa p { margin: 0.2rem 0 1rem; color: var(--text-soft); }
+  .words { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; }
+  .words h2 { font-family: var(--sans); font-size: 1rem; color: var(--sec); }
+  .words dl { margin: 0; display: grid; gap: 0.5rem; }
+  .words dt a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: underline; text-decoration-color: var(--line); }
+  .words dd { margin: 0; color: var(--text-soft); font-size: 0.95rem; }
   .source { border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.9rem; color: var(--muted); }
   .source a { color: var(--sec); text-decoration: underline; display: inline-block; padding: 0.6rem 0; }
 </style>

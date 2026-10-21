@@ -29,6 +29,9 @@ const stories = defineCollection({
     updated: z.coerce.date().optional(),
     correction: z.string().optional(),
     sample: z.boolean().default(false),
+    // A last date readers must act by (form, fee, exam, eKYC). Feeds the
+    // "last dates" page and the add-to-calendar button.
+    deadline: z.object({ date: z.coerce.date(), label: z.string() }).optional(),
   }),
 });
 
@@ -44,4 +47,16 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { stories, pages };
+// Plain-language meanings of official terms (LOC, eKYC, repo rate) for the glossary.
+const glossary = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/glossary' }),
+  schema: z.object({
+    lang: z.enum(['hi', 'en']),
+    termId: z.string(), // shared by the Hindi and English entry, used as the #anchor
+    term: z.string(),
+    match: z.array(z.string()).default([]), // words that link a story to this entry (case-insensitive)
+    short: z.string().max(200), // one-line meaning, shown in the list and in search results
+  }),
+});
+
+export const collections = { stories, pages, glossary };
