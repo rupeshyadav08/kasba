@@ -21,5 +21,5 @@ Stories are drafted with AI from official sources and published only after an ed
 
 ## Team
 
-- Editor and publisher: [Editor's full name]
+- Editing: Kasba Desk
 - Contact: [admin@kasba.co.in](mailto:admin@kasba.co.in)

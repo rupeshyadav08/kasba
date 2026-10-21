@@ -1,4 +1,5 @@
 ---
+import { state, statePath } from '../lib/places';
 import { categories, sectionOrder, sectionPath, secColor, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang; altPath?: string; current?: string }
 const { lang, altPath, current } = Astro.props;
@@ -24,6 +25,7 @@ const today = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-IN', {
           <a href={sectionPath(lang, c)} aria-current={current === c ? 'page' : undefined}>{categories[c][lang]}</a>
         </li>
       ))}
+      <li class="state"><a href={statePath(lang)} aria-current={current === 'up' ? 'page' : undefined}>{state[lang]}</a></li>
     </ul>
   </nav>
 </header>
@@ -49,6 +51,7 @@ const today = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-IN', {
   .pillars li { flex: 0 0 auto; border-left: 1px solid var(--line); }
   .pillars li:first-child { border-left: 0; }
   .pillars a { display: flex; align-items: center; min-height: 48px; padding: 0 0.85rem; font-weight: 600; font-size: 0.975rem; white-space: nowrap; border-bottom: 4px solid transparent; }
+  .pillars .state { --sec: var(--local-ink); }
   .pillars a:hover, .pillars a[aria-current='page'] { border-bottom-color: var(--sec); color: var(--sec); }
   @media (min-width: 740px) { .pillars a { min-width: 7.5rem; font-size: 1.05rem; padding: 0 1rem; } }
 </style>

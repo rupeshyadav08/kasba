@@ -63,8 +63,8 @@ const jsonLd = [{
   @media (min-width: 1024px) {
     .top { grid-template-columns: 5fr 3fr; column-gap: 2rem; }
   }
-  .bands { display: grid; gap: 1rem; }
-  @media (min-width: 740px) { .bands { grid-template-columns: 3fr 2fr; } }
+  .bands { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  @media (min-width: 740px) { .bands { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); } }
   .briefing { display: flex; flex-direction: column; justify-content: center; gap: 0.35rem; background: var(--band-bg); color: var(--band-text); padding: 1.25rem 1.5rem; border-radius: 4px; }
   .b-kicker { color: #8fd9bd; font-weight: 600; font-size: 0.9rem; }
   .b-title { font-size: 1.3rem; font-weight: 600; line-height: 1.45; }

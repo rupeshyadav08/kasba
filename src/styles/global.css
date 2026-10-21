@@ -13,6 +13,7 @@
   --local-bg: #22305a;
   --local-text: #ffffff;
   --local-soft: #d5daea;
+  --local-ink: #22305a;
   --band-bg: #1f2328;
   --band-text: #f4f5f6;
   /* Section colours (all pass 4.5:1 on white). */
@@ -33,7 +34,7 @@
   :root:not([data-theme='light']) {
     --bg: #121416; --bg-soft: #1a1d20; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
     --line: #2f343a; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
-    --local-bg: #1b2440; --band-bg: #0b0c0e;
+    --local-bg: #1b2440; --local-ink: #a9b8ec; --band-bg: #0b0c0e;
     --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
     --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
     color-scheme: dark;
@@ -42,7 +43,7 @@
 :root[data-theme='dark'] {
   --bg: #121416; --bg-soft: #1a1d20; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
   --line: #2f343a; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
-  --local-bg: #1b2440; --band-bg: #0b0c0e;
+  --local-bg: #1b2440; --local-ink: #a9b8ec; --band-bg: #0b0c0e;
   --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
   --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
   color-scheme: dark;

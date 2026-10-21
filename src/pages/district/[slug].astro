@@ -1,0 +1,10 @@
+---
+import DistrictPage from '../../components/DistrictPage.astro';
+import { districtSlugs } from '../../lib/places';
+
+export function getStaticPaths() {
+  return districtSlugs.map((slug) => ({ params: { slug } }));
+}
+const { slug } = Astro.params as { slug: string };
+---
+<DistrictPage lang="hi" slug={slug} />

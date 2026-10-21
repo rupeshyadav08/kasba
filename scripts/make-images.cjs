@@ -15,6 +15,7 @@ const sections = {
   weather: ['मौसम', 'Weather', '#00677f'],
   health: ['सेहत', 'Health', '#a4262c'],
   nation: ['देश', 'Nation', '#3d434a'],
+  up: ['उत्तर प्रदेश', 'Uttar Pradesh', '#22305a'],
 };
 
 // 1200x630 share card: dark band, section colour stripe, logo and promise.

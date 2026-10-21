@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, render } from 'astro:content';
 import StoryCard from './StoryCard.astro';
+import { districtBySlug, districtPath, state, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
 import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
@@ -34,7 +35,8 @@ const jsonLd = [
     dateModified: (d.updated ?? d.published).toISOString(),
     image: [image],
     articleSection: categories[d.category][d.lang],
-    author: { '@type': 'Person', name: d.author },
+    // Kasba publishes under the desk's name, not a person's.
+    author: { '@type': 'Organization', name: d.author, url: 'https://kasba.co.in/about' },
     publisher: {
       '@type': 'NewsMediaOrganization', name: 'Kasba', url: 'https://kasba.co.in',
       logo: { '@type': 'ImageObject', url: 'https://kasba.co.in/logo-600x60.png', width: 600, height: 60 },
@@ -96,6 +98,13 @@ const jsonLd = [
       {d.faq.map((f) => <div class="qa"><h3>{f.q}</h3><p>{f.a}</p></div>)}
     </section>
 
+    {(d.state || d.districts.length > 0) && (
+      <nav class="places" aria-label={L.districtsLabel}>
+        {d.state && <a href={statePath(d.lang)}>{state[d.lang]}</a>}
+        {d.districts.map((slug) => <a href={districtPath(d.lang, slug)}>{districtBySlug(slug)![d.lang]}</a>)}
+      </nav>
+    )}
+
     {terms.length > 0 && (
       <section class="words" aria-labelledby="words-h">
         <h2 id="words-h">{L.glossary}</h2>
@@ -144,6 +153,8 @@ const jsonLd = [
   .body { font-size: 1.125rem; line-height: 1.85; }
   .qa h3 { margin: 0; font-size: 1.0625rem; }
   .qa p { margin: 0.2rem 0 1rem; color: var(--text-soft); }
+  .places { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .places a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.9rem; border-radius: 999px; background: var(--local-bg); color: #fff; font-size: 0.9rem; font-weight: 600; }
   .words { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; }
   .words h2 { font-family: var(--sans); font-size: 1rem; color: var(--sec); }
   .words dl { margin: 0; display: grid; gap: 0.5rem; }
