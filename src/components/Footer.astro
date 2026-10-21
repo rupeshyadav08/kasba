@@ -16,7 +16,7 @@ const policies = lang === 'hi'
     <div class="brand">
       <div class="serif logo">कस्बा</div>
       <p>{L.siteNote}</p>
-      <p><a href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
+      <p><a class="mail" href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
     </div>
     <nav aria-label={L.sections}>
       <h2>{L.sections}</h2>
@@ -39,10 +39,11 @@ const policies = lang === 'hi'
   .brand { grid-column: 1 / -1; }
   @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr 1fr 1fr; } .brand { grid-column: auto; } }
   .logo { font-size: 2rem; font-weight: 700; }
+  .mail { display: inline-flex; min-height: 44px; align-items: center; }
   p { margin: 0.5rem 0 0; font-size: 0.9rem; color: #c3c8ce; max-width: 28rem; }
   h2 { font-size: 0.875rem; font-weight: 600; margin: 0 0 0.5rem; color: #c3c8ce; }
   ul { list-style: none; margin: 0; padding: 0; }
-  li a { display: inline-flex; min-height: 36px; align-items: center; font-size: 0.95rem; }
+  li a { display: inline-flex; min-height: 44px; align-items: center; font-size: 0.95rem; }
   li a:hover, p a:hover { text-decoration: underline; }
   .copy { border-top: 1px solid #3a3f45; margin-top: 2rem; padding-top: 1rem; padding-bottom: 1.5rem; font-size: 0.8125rem; color: #aab0b6; }
 </style>
