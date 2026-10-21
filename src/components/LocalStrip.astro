@@ -1,0 +1,18 @@
+---
+// Direction C's district strip. Data hooks (IMD, data.gov.in mandi API) come in week 3;
+// until then it shows the district picker only, with no invented numbers.
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<section class="local" aria-label={t[lang].yourTown}>
+  <label for="district">{t[lang].yourTown}</label>
+  <select id="district" disabled>
+    <option>{lang === 'hi' ? 'ज़िला चुनें (जल्द)' : 'Choose district (soon)'}</option>
+  </select>
+</section>
+<style>
+  .local { background: var(--local-bg); color: var(--local-text); border-radius: 16px; padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  label { font-size: 0.875rem; color: var(--local-soft); }
+  select { min-height: 44px; font: inherit; border: 0; border-radius: 10px; padding: 0 0.75rem; background: #fff; color: #22223a; }
+</style>

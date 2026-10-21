@@ -1,0 +1,17 @@
+---
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; altPath?: string }
+const { lang, altPath } = Astro.props;
+const home = lang === 'hi' ? '/' : '/en';
+const other = altPath ?? (lang === 'hi' ? '/en' : '/');
+---
+<header class="site-header wrap">
+  <a href={home} class="logo serif" aria-label="Kasba home">कस्बा<span class="dot" aria-hidden="true"></span></a>
+  <a href={other} class="lang" hreflang={lang === 'hi' ? 'en' : 'hi'}>{t[lang].switchLang}</a>
+</header>
+<style>
+  .site-header { display: flex; justify-content: space-between; align-items: center; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .logo { font-weight: 700; font-size: 1.6rem; min-height: 44px; display: flex; align-items: center; gap: 0.4rem; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .lang { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; color: var(--muted); }
+</style>

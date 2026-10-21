@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import StoryCard from './StoryCard.astro';
+import LocalStrip from './LocalStrip.astro';
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const stories = (await getCollection('stories', ({ data }) => data.lang === lang))
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const [lead, ...rest] = stories;
+const L = t[lang];
+const jsonLd = [{
+  '@context': 'https://schema.org', '@type': 'NewsMediaOrganization',
+  name: 'Kasba', url: 'https://kasba.co.in', email: 'admin@kasba.co.in',
+  publishingPrinciples: 'https://kasba.co.in/editorial-policy',
+  correctionsPolicy: 'https://kasba.co.in/corrections',
+}];
+---
+<Base lang={lang} title={lang === 'hi' ? 'कस्बा: छोटे शहरों की बड़ी ख़बरें' : 'Kasba: big news for small towns'}
+  description={L.tagline} altPath={lang === 'hi' ? '/en' : '/'} jsonLd={jsonLd}>
+  <main class="wrap home">
+    <LocalStrip lang={lang} />
+    {lead && <StoryCard story={lead} lead />}
+    {rest.length > 0 && (
+      <section aria-labelledby="latest-h" class="latest">
+        <h2 id="latest-h" class="muted">{L.latest}</h2>
+        {rest.map((s) => <StoryCard story={s} />)}
+      </section>
+    )}
+  </main>
+</Base>
+<style>
+  .home { display: flex; flex-direction: column; gap: 2.5rem; padding-top: 0.5rem; }
+  .latest { display: flex; flex-direction: column; gap: 1.75rem; }
+  .latest h2 { margin: 0; font-weight: 600; }
+</style>

@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import StoryPage from '../../components/StoryPage.astro';
+import { storyPath } from '../../lib/i18n';
+
+export async function getStaticPaths() {
+  const all = await getCollection('stories');
+  return all
+    .filter((s) => s.data.lang === 'hi')
+    .map((story) => {
+      const twin = all.find((o) => o.data.storyId === story.data.storyId && o.data.lang !== 'hi');
+      return {
+        params: { slug: story.data.storyId },
+        props: { story, altPath: twin ? storyPath(twin.data.lang, twin.data.storyId) : undefined },
+      };
+    });
+}
+const { story, altPath } = Astro.props;
+---
+<StoryPage story={story} altPath={altPath} />

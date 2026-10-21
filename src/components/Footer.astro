@@ -1,0 +1,21 @@
+---
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = lang === 'hi' ? '' : '/en';
+const links = lang === 'hi'
+  ? [['हमारे बारे में', '/about'], ['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['स्रोत और AI', '/sources-ai'], ['शिकायत', '/grievance'], ['संपर्क', '/contact']]
+  : [['About', '/about'], ['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Sources and AI', '/sources-ai'], ['Grievance', '/grievance'], ['Contact', '/contact']];
+---
+<footer class="wrap site-footer">
+  <p>{t[lang].siteNote}</p>
+  <nav aria-label="Site">
+    {links.map(([label, href]) => <a href={`${p}${href}`}>{label}</a>)}
+  </nav>
+  <p>© {new Date().getFullYear()} Kasba · admin@kasba.co.in</p>
+</footer>
+<style>
+  .site-footer { margin-top: 4rem; padding-top: 2rem; padding-bottom: 2.5rem; border-top: 1px solid var(--line); font-size: 0.875rem; color: var(--muted); }
+  nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin: 0.75rem 0; }
+  nav a { min-height: 32px; display: inline-flex; align-items: center; }
+</style>
