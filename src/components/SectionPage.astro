@@ -2,25 +2,32 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
-import SectionNav from './SectionNav.astro';
-import { categories, type Lang } from '../lib/i18n';
-interface Props { lang: Lang; category: keyof typeof categories }
+import { categories, secColor, t, type Lang, type Section } from '../lib/i18n';
+interface Props { lang: Lang; category: Section }
 const { lang, category } = Astro.props;
 const stories = (await getCollection('stories', ({ data }) => data.lang === lang && data.category === category))
   .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const [lead, ...rest] = stories;
 const name = categories[category][lang];
 const alt = lang === 'hi' ? `/en/section/${category}` : `/section/${category}`;
 ---
-<Base lang={lang} title={`${name} | Kasba`} description={lang === 'hi' ? `${name}: आधिकारिक सूचनाएँ, आसान भाषा में` : `${name}: official updates in simple language`} altPath={alt}>
-  <main class="wrap section">
+<Base lang={lang} title={`${name} | Kasba`} section={category}
+  description={lang === 'hi' ? `${name}: आधिकारिक सूचनाएँ, आसान भाषा में` : `${name}: official updates in simple language`} altPath={alt}>
+  <main class="page section" style={secColor(category)}>
     <h1 class="serif">{name}</h1>
-    <SectionNav lang={lang} current={category} />
-    {stories.length === 0
-      ? <p class="muted">{lang === 'hi' ? 'इस विषय पर जल्द ख़बरें आएँगी।' : 'Stories in this section are coming soon.'}</p>
-      : stories.map((s) => <StoryCard story={s} />)}
+    {!lead && <p class="muted">{t[lang].soon}</p>}
+    {lead && (
+      <div class="grid">
+        <div class="lead"><StoryCard story={lead} size="lead" showKicker={false} /></div>
+        {rest.map((s) => <StoryCard story={s} size="standard" showKicker={false} />)}
+      </div>
+    )}
   </main>
 </Base>
 <style>
-  .section { display: flex; flex-direction: column; gap: 1.75rem; padding-top: 1.5rem; }
-  h1 { margin: 0; font-size: 2rem; }
+  .section { padding-top: 1.25rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  h1 { margin: 0; font-size: 2.25rem; color: var(--sec); border-bottom: 4px solid var(--sec); padding-bottom: 0.25rem; }
+  .grid { display: grid; gap: 1.5rem; }
+  @media (min-width: 740px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .lead { grid-column: 1 / -1; } }
+  @media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .lead { grid-column: span 2; grid-row: span 2; } }
 </style>

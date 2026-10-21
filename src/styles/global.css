@@ -1,42 +1,62 @@
-/* Kasba design tokens: direction B (Shaant) with C's district strip.
-   Change the look here; components only use these variables. */
+/* Kasba design tokens. Direction B (calm reading) with C's district strip,
+   arranged as a multi-section newspaper: every section has its own colour. */
 :root {
   --bg: #ffffff;
+  --bg-soft: #f6f6f4;
   --text: #1f2328;
   --text-soft: #3d434a;
   --muted: #5b6168;
-  --line: #e3e6e8;
+  --line: #dcdfe2;
   --accent: #1e6b52;
   --accent-strong: #14493a;
   --accent-tint: #eef5f2;
   --local-bg: #22305a;
   --local-text: #ffffff;
   --local-soft: #d5daea;
+  --band-bg: #1f2328;
+  --band-text: #f4f5f6;
+  /* Section colours (all pass 4.5:1 on white). */
+  --c-schemes: #0b6e4f;
+  --c-jobs-exams: #1f4e9c;
+  --c-farming: #7a5200;
+  --c-money: #5b2c83;
+  --c-weather: #00677f;
+  --c-health: #a4262c;
+  --c-nation: #3d434a;
   --serif: 'Noto Serif Devanagari', 'Noto Serif', Georgia, serif;
   --sans: 'Mukta', system-ui, sans-serif;
   --measure: 40rem;
+  --page: 76rem;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #121416; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
-    --line: #2a2f34; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
-    --local-bg: #1b2440; color-scheme: dark;
+    --bg: #121416; --bg-soft: #1a1d20; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
+    --line: #2f343a; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
+    --local-bg: #1b2440; --band-bg: #0b0c0e;
+    --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
+    --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
+    color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --bg: #121416; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
-  --line: #2a2f34; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
-  --local-bg: #1b2440; color-scheme: dark;
+  --bg: #121416; --bg-soft: #1a1d20; --text: #e8eaed; --text-soft: #c9cdd2; --muted: #9aa1a8;
+  --line: #2f343a; --accent: #6cc3a3; --accent-strong: #9fdcc4; --accent-tint: #18302a;
+  --local-bg: #1b2440; --band-bg: #0b0c0e;
+  --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
+  --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 1.0625rem; line-height: 1.6; }
 a { color: inherit; text-decoration: none; }
-a:hover { color: var(--accent); }
+a:hover .hl, a.hl:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.5rem; }
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1rem; }
+.page { max-width: var(--page); margin: 0 auto; padding: 0 1rem; }
+@media (min-width: 740px) { .wrap, .page { padding: 0 1.5rem; } }
 .serif { font-family: var(--serif); }
 .muted { color: var(--muted); font-size: 0.875rem; }
-.kicker { color: var(--accent); font-weight: 600; font-size: 0.875rem; }
+.kicker { color: var(--sec, var(--accent)); font-weight: 600; font-size: 0.875rem; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

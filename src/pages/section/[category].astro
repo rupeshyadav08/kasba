@@ -1,10 +1,10 @@
 ---
 import SectionPage from '../../components/SectionPage.astro';
-import { categories } from '../../lib/i18n';
+import { sectionOrder, type Section } from '../../lib/i18n';
 
 export function getStaticPaths() {
-  return Object.keys(categories).map((category) => ({ params: { category } }));
+  return sectionOrder.map((category) => ({ params: { category } }));
 }
-const { category } = Astro.params as { category: keyof typeof categories };
+const { category } = Astro.params as { category: Section };
 ---
 <SectionPage lang="hi" category={category} />

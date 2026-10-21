@@ -1,13 +1,17 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
+import StoryCard from './StoryCard.astro';
 import Base from '../layouts/Base.astro';
-import { categories, dateFmt, readMinutes, storyPath, t } from '../lib/i18n';
+import { categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
 const { story, altPath } = Astro.props;
 const d = story.data;
 const L = t[d.lang];
 const { Content } = await render(story);
+const related = (await getCollection('stories', ({ data }) => data.lang === d.lang && data.storyId !== d.storyId))
+  .sort((a, b) => Number(b.data.category === d.category) - Number(a.data.category === d.category) || b.data.published.getTime() - a.data.published.getTime())
+  .slice(0, 4);
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
 const url = new URL(storyPath(d.lang, d.storyId), Astro.site).toString();
 const home = new URL(d.lang === 'hi' ? '/' : '/en', Astro.site).toString();
@@ -37,9 +41,10 @@ const jsonLd = [
   },
 ];
 ---
-<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article">
-  <main class="wrap story">
-    <nav aria-label="breadcrumb" class="muted"><a href={d.lang === 'hi' ? '/' : '/en'}>{L.home}</a> › {categories[d.category][d.lang]}</nav>
+<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category}>
+  <div class="page layout" style={secColor(d.category)}>
+  <main class="story">
+    <nav aria-label="breadcrumb" class="crumbs"><a href={d.lang === 'hi' ? '/' : '/en'}>{L.home}</a> › <a class="sec" href={sectionPath(d.lang, d.category)}>{categories[d.category][d.lang]}</a></nav>
     <h1 class="serif">{d.title}</h1>
     <p class="serif summary">{d.summary}</p>
     <div class="byline">
@@ -74,21 +79,35 @@ const jsonLd = [
       <p>{L.aiNote} <a href="mailto:admin@kasba.co.in">{L.reportError}</a></p>
     </section>
   </main>
+  {related.length > 0 && (
+    <aside class="rail" aria-label={L.moreIn}>
+      <h2 class="rail-h">{L.moreIn}</h2>
+      {related.map((r) => <StoryCard story={r} size="compact" />)}
+    </aside>
+  )}
+  </div>
 </Base>
 <style>
-  .story { display: flex; flex-direction: column; gap: 1.5rem; padding-top: 1.5rem; }
-  h1 { margin: 0; font-size: 1.85rem; line-height: 1.4; font-weight: 700; }
+  .layout { display: grid; gap: 3rem; padding-top: 1.25rem; }
+  @media (min-width: 1024px) { .layout { grid-template-columns: minmax(0, 42rem) 18rem; justify-content: space-between; } }
+  .story { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+  .crumbs { font-size: 0.875rem; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; }
+  .crumbs .sec { color: var(--sec); font-weight: 600; }
+  .rail { display: flex; flex-direction: column; gap: 1.25rem; align-self: start; }
+  .rail-h { font-size: 1rem; margin: 0; border-top: 4px solid var(--sec); padding-top: 0.5rem; color: var(--sec); }
+  h1 { margin: 0; font-size: 1.9rem; line-height: 1.35; font-weight: 700; }
+  @media (min-width: 740px) { h1 { font-size: 2.5rem; } }
   h2 { margin: 0 0 0.6rem; font-size: 1.25rem; font-weight: 700; }
   .summary { margin: 0; font-size: 1.125rem; line-height: 1.7; color: var(--text-soft); }
   .byline { display: flex; flex-direction: column; font-size: 0.9rem; }
   .correction { background: var(--accent-tint); padding: 0.75rem 1rem; border-radius: 8px; margin: 0; }
-  .meaning { background: var(--accent-tint); padding: 1.25rem; border-radius: 12px; }
-  .meaning h2 { font-family: var(--sans); font-size: 1rem; color: var(--accent-strong); }
+  .meaning { background: var(--bg-soft); border-left: 4px solid var(--sec); padding: 1.25rem; border-radius: 12px; }
+  .meaning h2 { font-family: var(--sans); font-size: 1rem; color: var(--sec); }
   .meaning p { margin: 0; line-height: 1.75; }
   .facts { margin: 0; padding-left: 1.25rem; line-height: 1.8; }
   .body { font-size: 1.125rem; line-height: 1.85; }
   .qa h3 { margin: 0; font-size: 1.0625rem; }
   .qa p { margin: 0.2rem 0 1rem; color: var(--text-soft); }
   .source { border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.9rem; color: var(--muted); }
-  .source a { color: var(--accent); text-decoration: underline; }
+  .source a { color: var(--sec); text-decoration: underline; }
 </style>

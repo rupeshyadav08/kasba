@@ -2,14 +2,15 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
+import SectionBlock from './SectionBlock.astro';
 import LocalStrip from './LocalStrip.astro';
-import SectionNav from './SectionNav.astro';
-import { t, type Lang } from '../lib/i18n';
+import { sectionOrder, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const stories = (await getCollection('stories', ({ data }) => data.lang === lang))
   .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
-const [lead, ...rest] = stories;
+const [lead, ...top] = stories;
+const secondary = top.slice(0, 4);
 const L = t[lang];
 const jsonLd = [{
   '@context': 'https://schema.org', '@type': 'NewsMediaOrganization',
@@ -20,26 +21,41 @@ const jsonLd = [{
 ---
 <Base lang={lang} title={lang === 'hi' ? 'कस्बा: छोटे शहरों की बड़ी ख़बरें' : 'Kasba: big news for small towns'}
   description={L.tagline} altPath={lang === 'hi' ? '/en' : '/'} jsonLd={jsonLd}>
-  <main class="wrap home">
-    <LocalStrip lang={lang} />
-    {lead && <StoryCard story={lead} lead />}
-    <a class="briefing" href={lang === 'hi' ? '/briefing' : '/en/briefing'}>
-      <span class="kicker">{L.briefing}</span>
-      <span class="serif b-title">{lang === 'hi' ? 'आज की ज़रूरी बातें, कुछ मिनट में' : "Today's essentials in a few minutes"}</span>
-    </a>
-    {rest.length > 0 && (
-      <section aria-labelledby="latest-h" class="latest">
-        <h2 id="latest-h" class="muted">{L.latest}</h2>
-        {rest.map((s) => <StoryCard story={s} />)}
+  <main class="page home">
+    {lead && (
+      <section class="top" aria-label={L.topStories}>
+        <div class="lead"><StoryCard story={lead} size="lead" /></div>
+        <div class="secondary">{secondary.map((s) => <StoryCard story={s} size="compact" />)}</div>
       </section>
     )}
-    <SectionNav lang={lang} />
+
+    <div class="bands">
+      <a class="briefing" href={lang === 'hi' ? '/briefing' : '/en/briefing'}>
+        <span class="b-kicker">{L.briefing}</span>
+        <span class="serif b-title">{lang === 'hi' ? 'आज की ज़रूरी बातें, कुछ मिनट में' : "Today's essentials in a few minutes"} ›</span>
+      </a>
+      <LocalStrip lang={lang} />
+    </div>
+
+    {sectionOrder.map((sec) => (
+      <SectionBlock lang={lang} section={sec} stories={stories.filter((s) => s.data.category === sec)} />
+    ))}
   </main>
 </Base>
 <style>
-  .home { display: flex; flex-direction: column; gap: 2.5rem; padding-top: 0.5rem; }
-  .latest { display: flex; flex-direction: column; gap: 1.75rem; }
-  .latest h2 { margin: 0; font-weight: 600; }
-  .briefing { display: flex; flex-direction: column; gap: 0.35rem; background: var(--accent-tint); padding: 1.25rem; border-radius: 12px; }
-  .b-title { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
+  .home { display: flex; flex-direction: column; gap: 2.5rem; padding-top: 1.25rem; }
+  .top { display: grid; gap: 1.5rem; }
+  .secondary { display: grid; gap: 1.25rem; }
+  @media (min-width: 740px) {
+    .top { grid-template-columns: 2fr 1fr; }
+  }
+  @media (min-width: 1024px) {
+    .top { grid-template-columns: 5fr 3fr; column-gap: 2rem; }
+  }
+  .bands { display: grid; gap: 1rem; }
+  @media (min-width: 740px) { .bands { grid-template-columns: 3fr 2fr; } }
+  .briefing { display: flex; flex-direction: column; justify-content: center; gap: 0.35rem; background: var(--band-bg); color: var(--band-text); padding: 1.25rem 1.5rem; border-radius: 4px; }
+  .b-kicker { color: #8fd9bd; font-weight: 600; font-size: 0.9rem; }
+  .b-title { font-size: 1.3rem; font-weight: 600; line-height: 1.45; }
+  .briefing:hover .b-title { text-decoration: underline; }
 </style>

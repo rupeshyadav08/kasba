@@ -1,21 +1,48 @@
 ---
-import { t, type Lang } from '../lib/i18n';
+import { categories, sectionOrder, sectionPath, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = lang === 'hi' ? '' : '/en';
-const links = lang === 'hi'
-  ? [['हमारे बारे में', '/about'], ['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['स्रोत और AI', '/sources-ai'], ['आचार संहिता', '/code-of-ethics'], ['निजता', '/privacy'], ['नियम व शर्तें', '/terms'], ['शिकायत', '/grievance'], ['संपर्क', '/contact']]
-  : [['About', '/about'], ['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Sources and AI', '/sources-ai'], ['Code of ethics', '/code-of-ethics'], ['Privacy', '/privacy'], ['Terms', '/terms'], ['Grievance', '/grievance'], ['Contact', '/contact']];
+const L = t[lang];
+const about = lang === 'hi'
+  ? [['हमारे बारे में', '/about'], ['स्रोत और AI', '/sources-ai'], ['संपर्क', '/contact'], ['कस्बा ब्रीफ़िंग', '/briefing']]
+  : [['About', '/about'], ['Sources and AI', '/sources-ai'], ['Contact', '/contact'], ['Kasba Briefing', '/briefing']];
+const policies = lang === 'hi'
+  ? [['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['आचार संहिता', '/code-of-ethics'], ['शिकायत निवारण', '/grievance'], ['निजता', '/privacy'], ['नियम व शर्तें', '/terms']]
+  : [['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Code of ethics', '/code-of-ethics'], ['Grievance redressal', '/grievance'], ['Privacy', '/privacy'], ['Terms', '/terms']];
 ---
-<footer class="wrap site-footer">
-  <p>{t[lang].siteNote}</p>
-  <nav aria-label="Site">
-    {links.map(([label, href]) => <a href={`${p}${href}`}>{label}</a>)}
-  </nav>
-  <p>© {new Date().getFullYear()} Kasba · admin@kasba.co.in</p>
+<footer class="site-footer">
+  <div class="page grid">
+    <div class="brand">
+      <div class="serif logo">कस्बा</div>
+      <p>{L.siteNote}</p>
+      <p><a href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
+    </div>
+    <nav aria-label={L.sections}>
+      <h2>{L.sections}</h2>
+      <ul>{sectionOrder.map((c) => <li><a href={sectionPath(lang, c)}>{categories[c][lang]}</a></li>)}</ul>
+    </nav>
+    <nav aria-label={L.aboutKasba}>
+      <h2>{L.aboutKasba}</h2>
+      <ul>{about.map(([label, href]) => <li><a href={`${p}${href}`}>{label}</a></li>)}</ul>
+    </nav>
+    <nav aria-label={L.policies}>
+      <h2>{L.policies}</h2>
+      <ul>{policies.map(([label, href]) => <li><a href={`${p}${href}`}>{label}</a></li>)}</ul>
+    </nav>
+  </div>
+  <div class="page copy">© {new Date().getFullYear()} Kasba · kasba.co.in</div>
 </footer>
 <style>
-  .site-footer { margin-top: 4rem; padding-top: 2rem; padding-bottom: 2.5rem; border-top: 1px solid var(--line); font-size: 0.875rem; color: var(--muted); }
-  nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin: 0.75rem 0; }
-  nav a { min-height: 32px; display: inline-flex; align-items: center; }
+  .site-footer { margin-top: 4rem; background: var(--band-bg); color: var(--band-text); padding-top: 2rem; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+  .brand { grid-column: 1 / -1; }
+  @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr 1fr 1fr; } .brand { grid-column: auto; } }
+  .logo { font-size: 2rem; font-weight: 700; }
+  p { margin: 0.5rem 0 0; font-size: 0.9rem; color: #c3c8ce; max-width: 28rem; }
+  h2 { font-size: 0.875rem; font-weight: 600; margin: 0 0 0.5rem; color: #c3c8ce; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li a { display: inline-flex; min-height: 36px; align-items: center; font-size: 0.95rem; }
+  li a:hover, p a:hover { text-decoration: underline; }
+  .copy { border-top: 1px solid #3a3f45; margin-top: 2rem; padding-top: 1rem; padding-bottom: 1.5rem; font-size: 0.8125rem; color: #aab0b6; }
 </style>

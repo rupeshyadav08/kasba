@@ -11,8 +11,9 @@ interface Props {
   altPath?: string; // the same page in the other language, for hreflang
   jsonLd?: object[];
   type?: 'website' | 'article';
+  section?: string; // highlights this section in the navigation
 }
-const { lang, title, description, altPath, jsonLd = [], type = 'website' } = Astro.props;
+const { lang, title, description, altPath, jsonLd = [], type = 'website', section } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const alt = altPath ? new URL(altPath, Astro.site) : undefined;
 const hiUrl = lang === 'hi' ? canonical : alt;
@@ -42,7 +43,7 @@ const enUrl = lang === 'en' ? canonical : alt;
   {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d)} />)}
 </head>
 <body>
-  <Header lang={lang} altPath={altPath} />
+  <Header lang={lang} altPath={altPath} current={section} />
   <slot />
   <Footer lang={lang} />
 </body>

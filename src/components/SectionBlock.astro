@@ -1,0 +1,38 @@
+---
+// A homepage "container": section title on a coloured rule, stories in a grid.
+import type { CollectionEntry } from 'astro:content';
+import StoryCard from './StoryCard.astro';
+import { categories, secColor, sectionPath, t, type Lang, type Section } from '../lib/i18n';
+interface Props { lang: Lang; section: Section; stories: CollectionEntry<'stories'>[] }
+const { lang, section, stories } = Astro.props;
+const [first, ...others] = stories.slice(0, 5);
+---
+<section class="block" style={secColor(section)} aria-labelledby={`sec-${section}`}>
+  <header>
+    <h2 id={`sec-${section}`} class="serif"><a href={sectionPath(lang, section)}>{categories[section][lang]}</a></h2>
+    <a class="more" href={sectionPath(lang, section)}>{t[lang].more} ›</a>
+  </header>
+  {first ? (
+    <div class="grid">
+      <div class="main"><StoryCard story={first} size="standard" showKicker={false} /></div>
+      {others.map((s) => <StoryCard story={s} size="compact" showKicker={false} />)}
+    </div>
+  ) : <p class="muted">{t[lang].soon}</p>}
+</section>
+<style>
+  .block { border-top: 4px solid var(--sec); padding-top: 0.5rem; display: grid; gap: 1rem; }
+  header { display: flex; justify-content: space-between; align-items: baseline; }
+  h2 { margin: 0; font-size: 1.5rem; color: var(--sec); font-weight: 700; }
+  .more { color: var(--sec); font-weight: 600; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  @media (min-width: 740px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .main { grid-row: span 2; }
+  }
+  @media (min-width: 1024px) {
+    .block { grid-template-columns: 12rem 1fr; column-gap: 1.5rem; }
+    header { flex-direction: column; justify-content: flex-start; }
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .main { grid-row: span 2; }
+  }
+</style>

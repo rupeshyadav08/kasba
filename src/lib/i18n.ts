@@ -32,6 +32,14 @@ export const t = {
     mandi: 'मंडी भाव',
     briefing: 'कस्बा ब्रीफ़िंग',
     switchLang: 'EN',
+    topStories: 'मुख्य ख़बरें',
+    samjhiye: 'समझिए',
+    more: 'और',
+    moreIn: 'और ख़बरें',
+    soon: 'इस विषय पर जल्द ख़बरें आएँगी।',
+    sections: 'विषय',
+    aboutKasba: 'कस्बा',
+    policies: 'नीतियाँ',
   },
   en: {
     tagline: 'Big news for small towns',
@@ -54,8 +62,22 @@ export const t = {
     mandi: 'Mandi price',
     briefing: 'Kasba Briefing',
     switchLang: 'हिंदी',
+    topStories: 'Top stories',
+    samjhiye: 'Samjhiye: explainers',
+    more: 'More',
+    moreIn: 'More stories',
+    soon: 'Stories in this section are coming soon.',
+    sections: 'Sections',
+    aboutKasba: 'Kasba',
+    policies: 'Policies',
   },
 } as const;
+
+// Order of sections in the navigation and on the homepage.
+export const sectionOrder = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'nation'] as const;
+export type Section = (typeof sectionOrder)[number];
+export const secColor = (c: string) => `--sec: var(--c-${c})`;
+export const sectionPath = (lang: Lang, c: string) => (lang === 'hi' ? `/section/${c}` : `/en/section/${c}`);
 
 export const storyPath = (lang: Lang, slug: string) =>
   lang === 'hi' ? `/story/${slug}` : `/en/story/${slug}`;

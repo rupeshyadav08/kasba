@@ -1,28 +1,30 @@
 ---
+// One story teaser. Sizes follow a newspaper front page:
+// "lead" (big headline + summary), "standard" (headline + summary), "compact" (headline only).
 import type { CollectionEntry } from 'astro:content';
-import { categories, dateFmt, storyPath, t } from '../lib/i18n';
-interface Props { story: CollectionEntry<'stories'>; lead?: boolean }
-const { story, lead = false } = Astro.props;
+import { categories, dateFmt, secColor, storyPath } from '../lib/i18n';
+interface Props { story: CollectionEntry<'stories'>; size?: 'lead' | 'standard' | 'compact'; showKicker?: boolean }
+const { story, size = 'standard', showKicker = true } = Astro.props;
 const d = story.data;
-const href = storyPath(d.lang, d.storyId);
+const Tag = size === 'lead' ? 'h2' : 'h3';
 ---
-{lead ? (
-  <article class="lead">
-    <div class="kicker">{categories[d.category][d.lang]}</div>
-    <h1 class="serif"><a href={href}>{d.title}</a></h1>
-    <p class="serif summary">{d.summary}</p>
-    <div class="muted">{d.source.name} · {dateFmt(d.lang, d.published)}</div>
-  </article>
-) : (
-  <a class="card" href={href}>
-    <span class="serif title">{d.title}</span>
-    <span class="muted">{categories[d.category][d.lang]} · {dateFmt(d.lang, d.published)}</span>
+<article class={`card ${size}`} style={secColor(d.category)}>
+  <a href={storyPath(d.lang, d.storyId)}>
+    {showKicker && <span class="kicker">{categories[d.category][d.lang]}</span>}
+    <Tag class="serif hl">{d.title}</Tag>
+    {size !== 'compact' && <p class="serif sum">{d.summary}</p>}
+    <span class="muted">{d.source.name} · {dateFmt(d.lang, d.published)}</span>
   </a>
-)}
+</article>
 <style>
-  .lead { display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem; }
-  .lead h1 { margin: 0; font-size: 1.9rem; line-height: 1.35; font-weight: 700; }
-  .summary { margin: 0; font-size: 1.0625rem; line-height: 1.75; color: var(--text-soft); }
-  .card { display: flex; flex-direction: column; gap: 0.35rem; }
-  .title { font-size: 1.25rem; line-height: 1.5; font-weight: 600; }
+  .card { border-top: 1px solid var(--sec); padding-top: 0.5rem; }
+  .card a { display: flex; flex-direction: column; gap: 0.35rem; }
+  .card :is(h2, h3) { margin: 0; font-weight: 600; line-height: 1.4; }
+  .lead { border-top-width: 3px; }
+  .lead h2 { font-size: 1.75rem; font-weight: 700; line-height: 1.3; }
+  @media (min-width: 740px) { .lead h2 { font-size: 2.25rem; } }
+  .standard h3 { font-size: 1.2rem; }
+  .compact h3 { font-size: 1.05rem; }
+  .sum { margin: 0; color: var(--text-soft); line-height: 1.65; font-size: 1rem; }
+  .lead .sum { font-size: 1.1rem; }
 </style>
