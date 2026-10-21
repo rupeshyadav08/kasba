@@ -1,0 +1,17 @@
+---
+import { categories, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; current?: string }
+const { lang, current } = Astro.props;
+const base = lang === 'hi' ? '/section' : '/en/section';
+const keys = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health'] as const;
+---
+<nav class="sections" aria-label={lang === 'hi' ? 'विषय' : 'Sections'}>
+  {keys.map((k) => (
+    <a href={`${base}/${k}`} aria-current={current === k ? 'page' : undefined}>{categories[k][lang]}</a>
+  ))}
+</nav>
+<style>
+  .sections { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  a { font-size: 0.9rem; padding: 0 0.9rem; min-height: 44px; display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; }
+  a[aria-current='page'] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+</style>

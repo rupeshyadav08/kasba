@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
 import LocalStrip from './LocalStrip.astro';
+import SectionNav from './SectionNav.astro';
 import { t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -22,16 +23,23 @@ const jsonLd = [{
   <main class="wrap home">
     <LocalStrip lang={lang} />
     {lead && <StoryCard story={lead} lead />}
+    <a class="briefing" href={lang === 'hi' ? '/briefing' : '/en/briefing'}>
+      <span class="kicker">{L.briefing}</span>
+      <span class="serif b-title">{lang === 'hi' ? 'आज की ज़रूरी बातें, कुछ मिनट में' : "Today's essentials in a few minutes"}</span>
+    </a>
     {rest.length > 0 && (
       <section aria-labelledby="latest-h" class="latest">
         <h2 id="latest-h" class="muted">{L.latest}</h2>
         {rest.map((s) => <StoryCard story={s} />)}
       </section>
     )}
+    <SectionNav lang={lang} />
   </main>
 </Base>
 <style>
   .home { display: flex; flex-direction: column; gap: 2.5rem; padding-top: 0.5rem; }
   .latest { display: flex; flex-direction: column; gap: 1.75rem; }
   .latest h2 { margin: 0; font-weight: 600; }
+  .briefing { display: flex; flex-direction: column; gap: 0.35rem; background: var(--accent-tint); padding: 1.25rem; border-radius: 12px; }
+  .b-title { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
 </style>

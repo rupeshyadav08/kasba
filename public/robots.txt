@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kasba.co.in/sitemap-index.xml
+Sitemap: https://kasba.co.in/news-sitemap.xml
