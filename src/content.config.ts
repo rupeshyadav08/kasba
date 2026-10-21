@@ -32,4 +32,16 @@ const stories = defineCollection({
   }),
 });
 
-export const collections = { stories };
+// Fixed site pages (policies, about, contact), one file per language.
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+  schema: z.object({
+    lang: z.enum(['hi', 'en']),
+    key: z.string(), // not "slug": the glob loader would use it as the entry id and merge languages
+    title: z.string(),
+    description: z.string(),
+    updated: z.coerce.date(),
+  }),
+});
+
+export const collections = { stories, pages };

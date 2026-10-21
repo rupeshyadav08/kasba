@@ -4,8 +4,8 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = lang === 'hi' ? '' : '/en';
 const links = lang === 'hi'
-  ? [['हमारे बारे में', '/about'], ['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['स्रोत और AI', '/sources-ai'], ['शिकायत', '/grievance'], ['संपर्क', '/contact']]
-  : [['About', '/about'], ['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Sources and AI', '/sources-ai'], ['Grievance', '/grievance'], ['Contact', '/contact']];
+  ? [['हमारे बारे में', '/about'], ['संपादकीय नीति', '/editorial-policy'], ['सुधार नीति', '/corrections'], ['स्रोत और AI', '/sources-ai'], ['आचार संहिता', '/code-of-ethics'], ['निजता', '/privacy'], ['नियम व शर्तें', '/terms'], ['शिकायत', '/grievance'], ['संपर्क', '/contact']]
+  : [['About', '/about'], ['Editorial policy', '/editorial-policy'], ['Corrections', '/corrections'], ['Sources and AI', '/sources-ai'], ['Code of ethics', '/code-of-ethics'], ['Privacy', '/privacy'], ['Terms', '/terms'], ['Grievance', '/grievance'], ['Contact', '/contact']];
 ---
 <footer class="wrap site-footer">
   <p>{t[lang].siteNote}</p>

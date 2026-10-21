@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import InfoPage from '../../components/InfoPage.astro';
+
+export async function getStaticPaths() {
+  const all = await getCollection('pages');
+  return all
+    .filter((p) => p.data.lang === 'en')
+    .map((page) => {
+      const twin = all.some((o) => o.data.key === page.data.key && o.data.lang !== 'en');
+      const alt = 'en' === 'hi' ? `/en/${page.data.key}` : `/${page.data.key}`;
+      return { params: { page: page.data.key }, props: { page, altPath: twin ? alt : undefined } };
+    });
+}
+const { page, altPath } = Astro.props;
+---
+<InfoPage page={page} altPath={altPath} />
