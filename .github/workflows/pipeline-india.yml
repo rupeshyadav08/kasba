@@ -1,0 +1,51 @@
+name: News pipeline (India runner)
+
+# RBI shows GitHub's servers a CAPTCHA, so its feeds are read from a machine in India
+# (Rupesh's Mac for now) registered as a self-hosted runner with the label kasba-india.
+# Drafts go to Telegram as usual; the main pipeline applies the Approve / Reject taps.
+on:
+  schedule:
+    - cron: '45 1-16/3 * * *' # every 3 hours from 7:15 to 22:15 India time
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Draft only: print drafts in the log, send nothing, change nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-pipeline-india
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: [self-hosted, kasba-india]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check pdftotext
+        run: command -v pdftotext || brew install poppler
+
+      - name: Fetch and draft
+        run: node pipeline/run.mjs
+        env:
+          PIPELINE_MODE: india
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit
+        if: ${{ always() && inputs.dry_run != true }}
+        run: |
+          git config user.name "kasba-pipeline"
+          git config user.email "admin@kasba.co.in"
+          git add pipeline/state-india.json pipeline/drafts
+          git diff --cached --quiet && exit 0
+          git commit -m "[skip ci] Pipeline state (India runner)"
+          git pull --rebase origin main && git push origin HEAD:main

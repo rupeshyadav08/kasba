@@ -2,6 +2,9 @@
 //   1. applies the editor's Approve / Reject taps from Telegram (publishes approved stories)
 //   2. checks the official feeds for new notices, drafts the useful ones and sends them for approval
 // State (seen links, Telegram offset) and pending drafts are files in pipeline/, committed by the workflow.
+// With PIPELINE_MODE=india (the runner on a machine in India) it only drafts from the sources marked
+// "india" (sites that refuse GitHub's servers), keeps its own state file, and leaves Telegram taps
+// to the main run.
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dateFromLink, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
@@ -15,8 +18,10 @@ const readJson = (p) => JSON.parse(readFileSync(here(p), 'utf8'));
 const writeJson = (p, v) => writeFileSync(here(p), JSON.stringify(v, null, 2) + '\n');
 
 const config = readJson('config.json');
-const sources = readJson('sources.json');
-const state = readJson('state.json');
+const india = process.env.PIPELINE_MODE === 'india';
+const sources = readJson('sources.json').filter((s) => Boolean(s.india) === india);
+const stateFile = india ? 'state-india.json' : 'state.json';
+const state = existsSync(here(stateFile)) ? readJson(stateFile) : { seen: {}, telegramOffset: 0 };
 const dryRun = process.env.DRY_RUN === 'true';
 const summary = { published: [], rejected: [], drafted: [], skipped: [], errors: [] };
 
@@ -188,12 +193,12 @@ function pruneSeen() {
 }
 
 try {
-  if (!dryRun) await applyDecisions();
-  expireDrafts();
+  if (!dryRun && !india) await applyDecisions();
+  if (!india) expireDrafts();
   await draftNew();
   pruneSeen();
 } finally {
-  if (!dryRun) writeJson('state.json', state);
+  if (!dryRun) writeJson(stateFile, state);
   console.log(JSON.stringify(summary, null, 2));
   if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length}\n`, { flag: 'a' });
 }
