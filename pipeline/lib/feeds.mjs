@@ -52,16 +52,24 @@ export async function noticeText(url) {
   const html = await res.text();
   const inner = innerPdf(html, res.url || url);
   if (inner) return pdfText(Buffer.from(await (await fetchOk(inner, 30000)).arrayBuffer()));
-  const block = html.match(/<div[^>]*class=["'][^"']*innner-page-main-about-us-content-right-part[\s\S]*/i);
-  return { text: htmlToText(block ? block[0] : html), ocr: false };
+  return { text: mainText(html), ocr: false };
+}
+
+// The notice itself, without the site's menus: PIB keeps it in one content block, RBI in the
+// first table.tablebg (followed by its archive of months). RBI's PDF host shows any program a
+// CAPTCHA, so RBI is read from the page, which carries the full text.
+export function mainText(html) {
+  const pib = html.match(/<div[^>]*class=["'][^"']*innner-page-main-about-us-content-right-part[\s\S]*/i);
+  if (pib) return htmlToText(pib[0]);
+  const rbi = html.match(/<table[^>]*class=["'][^"']*tablebg[\s\S]*?<\/table>/i);
+  if (rbi) return htmlToText(rbi[0]).split(/\n\s*20\d\d\s*\n\s*All Months/)[0].trim();
+  return htmlToText(html);
 }
 
 // The PDF a wrapper page exists to show, if it is one of the known wrappers.
 export function innerPdf(html, base) {
   const viewer = html.match(/<iframe[^>]*src=["'][^"']*[?&]file=([^"'&]+\.pdf)/i);
   if (viewer) return new URL(decode(decodeURIComponent(viewer[1])), base).toString();
-  const rbi = html.match(/href=["'](https?:\/\/rbidocs\.rbi\.org\.in\/rdocs\/(?:PressRelease|notification)\/PDFs\/[^"']+)["']/i);
-  if (rbi) return decode(rbi[1]);
   return null;
 }
 
