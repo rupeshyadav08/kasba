@@ -1,6 +1,8 @@
 // Kasba news pipeline. One run does two things:
-//   1. applies the editor's Approve / Reject taps from Telegram (publishes approved stories)
-//   2. checks the official feeds for new notices, drafts the useful ones and sends them for approval
+//   1. applies the editor's Approve / Reject / Remove taps from Telegram (publishes approved stories)
+//   2. checks the official feeds for new notices and drafts the useful ones. Routine notices from
+//      sources marked "auto" are published straight away (the editor can remove them); anything
+//      sensitive, scanned, a court record or from other sources goes to the editor for approval
 // State (seen links, Telegram offset) and pending drafts are files in pipeline/, committed by the workflow.
 // With PIPELINE_MODE=india (the runner on a machine in India) it only drafts from the sources marked
 // "india" (sites that refuse GitHub's servers), keeps its own state file, and leaves Telegram taps
@@ -10,7 +12,7 @@ import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'no
 import { dateFromLink, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
-import { check, districtSlugs, publish } from './lib/story.mjs';
+import { check, districtSlugs, publish, unpublish } from './lib/story.mjs';
 import * as tg from './lib/telegram.mjs';
 
 const here = (p) => new URL(p, import.meta.url);
@@ -23,7 +25,7 @@ const sources = readJson('sources.json').filter((s) => Boolean(s.india) === indi
 const stateFile = india ? 'state-india.json' : 'state.json';
 const state = existsSync(here(stateFile)) ? readJson(stateFile) : { seen: {}, telegramOffset: 0 };
 const dryRun = process.env.DRY_RUN === 'true';
-const summary = { published: [], rejected: [], drafted: [], skipped: [], errors: [] };
+const summary = { published: [], autoPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -53,6 +55,14 @@ async function applyDecisions() {
     if (!cb) continue;
     if (String(cb.from?.id) !== tg.editorChat()) { await tg.answer(cb.id, 'Not allowed'); continue; }
     const [action, id] = String(cb.data).split(':');
+    if (action === 'u') {
+      await tg.clearButtons(cb.message.chat.id, cb.message.message_id);
+      const gone = unpublish(id);
+      if (gone) summary.removed.push(id);
+      await tg.answer(cb.id, gone ? '🗑 हटाया जा रहा है' : 'यह ख़बर पहले ही हटाई जा चुकी है');
+      if (gone) await tg.send(`🗑 साइट से हटाया गया: ${tg.esc(id)}\n(साइट 2-3 मिनट में अपडेट होगी)`);
+      continue;
+    }
     if (!existsSync(draftPath(id))) { await tg.answer(cb.id, 'यह ड्राफ़्ट अब मौजूद नहीं है'); continue; }
     const draft = JSON.parse(readFileSync(draftPath(id), 'utf8'));
     await tg.clearButtons(cb.message.chat.id, cb.message.message_id);
@@ -171,6 +181,18 @@ async function draftNew() {
       const id = createHash('sha1').update(it.link).digest('hex').slice(0, 10);
       const draft = { id, createdAt: new Date().toISOString(), provider, model, ocr, source: { name: it.name, title: it.title, link: it.link }, story };
       if (dryRun) { console.log(JSON.stringify(draft, null, 2)); drafted++; continue; }
+      // Routine notices from trusted text sources go live at once; the editor gets a Remove button.
+      const auto = sources.find((s) => s.id === it.sourceId)?.auto && story.sensitive === false && !ocr && story.storyType !== 'record';
+      if (auto) {
+        const storyId = publish(draft, config.author, { auto: true });
+        summary.published.push(storyId);
+        summary.autoPublished.push(storyId);
+        await tg.send(`🤖 <b>अपने-आप प्रकाशित</b>\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
+          { text: '🗑 साइट से हटाएँ', callback_data: `u:${storyId}` },
+        ]);
+        drafted++;
+        continue;
+      }
       writeJson(`drafts/${id}.json`, draft);
       await tg.send(draftMessage(id, draft), [
         { text: '✅ Approve', callback_data: `a:${id}` },
@@ -204,5 +226,5 @@ try {
 } finally {
   if (!dryRun) writeJson(stateFile, state);
   console.log(JSON.stringify(summary, null, 2));
-  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length}\nids=${summary.published.join(' ')}\n`, { flag: 'a' });
+  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length + summary.removed.length}\nids=${summary.published.join(' ')}\n`, { flag: 'a' });
 }

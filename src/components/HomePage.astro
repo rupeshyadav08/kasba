@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
 import SectionBlock from './SectionBlock.astro';
 import LocalStrip from './LocalStrip.astro';
+import LocalHeadlines from './LocalHeadlines.astro';
 import DeadlineList from './DeadlineList.astro';
 import { upcomingDeadlines } from '../lib/deadlines';
 import { sectionOrder, storyPath, t, type Lang } from '../lib/i18n';
@@ -50,6 +51,7 @@ const jsonLd = [
       </a>
       <LocalStrip lang={lang} />
     </div>
+    <LocalHeadlines lang={lang} limit={4} />
 
     {deadlines.length > 0 && (
       <section class="deadlines" aria-labelledby="dl-h">

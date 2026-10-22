@@ -35,7 +35,7 @@ export function storyMarkdown(story: CollectionEntry<'stories'>, site: URL) {
     '',
     ...d.faq.flatMap((f) => [`**${f.q}**`, f.a, '']),
     ...(d.correction ? [`${L.correction}: ${d.correction}`, ''] : []),
-    `${d.author}, Kasba. ${L.aiNote}`,
+    `${d.author}, Kasba. ${d.autoPublished ? L.aiNoteAuto : L.aiNote}`,
     '',
   ].join('\n');
 }

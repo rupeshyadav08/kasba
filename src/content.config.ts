@@ -33,6 +33,8 @@ const stories = defineCollection({
     updated: z.coerce.date().optional(),
     correction: z.string().optional(),
     sample: z.boolean().default(false),
+    // Routine notice published without waiting for the editor (reviewed after); the page says so.
+    autoPublished: z.boolean().default(false),
     // A last date readers must act by (form, fee, exam, eKYC). Feeds the
     // "last dates" page and the add-to-calendar button.
     deadline: z.object({ date: z.coerce.date(), label: z.string() }).optional(),
