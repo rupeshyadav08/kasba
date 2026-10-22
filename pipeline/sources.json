@@ -1,0 +1,6 @@
+[
+  { "id": "pib-hi", "name": "PIB", "type": "rss", "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3" },
+  { "id": "rbi-press", "name": "RBI", "type": "rss", "url": "https://rbi.org.in/pressreleases_rss.xml" },
+  { "id": "rbi-notifications", "name": "RBI", "type": "rss", "url": "https://rbi.org.in/notifications_rss.xml" },
+  { "id": "sebi", "name": "SEBI", "type": "rss", "url": "https://www.sebi.gov.in/sebirss.xml" }
+]

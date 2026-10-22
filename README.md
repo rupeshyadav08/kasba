@@ -4,7 +4,7 @@ Hindi-first news for small-town India: official updates explained simply, with "
 
 - Site: Astro static site on Cloudflare Pages (coming in week 2)
 - Content: Markdown files in `src/content/` (one file per story)
-- Pipeline: scheduled GitHub Actions job that fetches official sources, drafts with Claude Haiku, and waits for editor approval on Telegram (coming in week 3)
+- Pipeline: scheduled GitHub Actions job (`pipeline/`) that fetches official sources, drafts with an AI model (DeepSeek for now, set in `pipeline/config.json`), and waits for editor approval on Telegram
 
 Secrets (API keys, bot tokens) live only in GitHub Actions secrets, never in this repo.
 
@@ -23,3 +23,13 @@ npm run build    # static site in dist/
 Each story is one Markdown file per language: `src/content/stories/hi/<id>.md` and `src/content/stories/en/<id>.md`, sharing the same `storyId`. The front matter fields (title, summary, meaning, keyFacts, faq, source, category, author, published) are checked at build time in `src/content.config.ts`, so a story missing its source or "what this means for you" box fails the build instead of going live.
 
 Files marked `sample: true` exist only to show the layout and will be deleted before launch.
+
+## News pipeline
+
+`.github/workflows/pipeline.yml` runs `node pipeline/run.mjs` every hour from 6:00 to 22:00 India time (and on demand from the Actions tab, with a "draft only" option).
+
+Each run:
+1. Reads the editor's ✅ Approve / ❌ Reject taps from Telegram. Approved drafts become story files in `src/content/stories/` and are committed, which makes Cloudflare rebuild the site.
+2. Reads the feeds in `pipeline/sources.json`, skips links already in `pipeline/state.json`, opens each new notice, and asks the model (rules in `pipeline/lib/prompt.mjs`) for a Hindi and English draft. Drafts that fail the story checks are dropped; useful ones are saved in `pipeline/drafts/` and sent to Telegram.
+
+Secrets it needs (GitHub Actions secrets): `DEEPSEEK_API_KEY` (or `ANTHROPIC_API_KEY` if `provider` is switched to `anthropic`), `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. Only taps from `TELEGRAM_CHAT_ID` count.

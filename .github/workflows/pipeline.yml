@@ -1,0 +1,50 @@
+name: News pipeline
+
+on:
+  schedule:
+    - cron: '30 0-16 * * *' # every hour, 6:00 to 22:00 India time
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Draft only: print drafts in the log, send nothing, change nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch, draft and publish
+        id: pipeline
+        run: node pipeline/run.mjs
+        env:
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      # Stories trigger a Cloudflare build; state-only commits carry [skip ci] so they don't.
+      - name: Commit
+        if: ${{ always() && inputs.dry_run != true }}
+        run: |
+          git config user.name "kasba-pipeline"
+          git config user.email "admin@kasba.co.in"
+          git add pipeline/state.json pipeline/drafts src/content/stories
+          git diff --cached --quiet && exit 0
+          if [ "${{ steps.pipeline.outputs.published }}" != "" ] && [ "${{ steps.pipeline.outputs.published }}" != "0" ]; then
+            git commit -m "Publish ${{ steps.pipeline.outputs.published }} approved stories"
+          else
+            git commit -m "[skip ci] Pipeline state"
+          fi
+          git pull --rebase origin main && git push origin HEAD:main
