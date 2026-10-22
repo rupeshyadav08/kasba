@@ -53,7 +53,7 @@ export async function noticeText(url) {
   const inner = innerPdf(html, res.url || url);
   if (inner) return pdfText(Buffer.from(await (await fetchOk(inner, 30000)).arrayBuffer()));
   const block = html.match(/<div[^>]*class=["'][^"']*innner-page-main-about-us-content-right-part[\s\S]*/i);
-  return htmlToText(block ? block[0] : html);
+  return { text: htmlToText(block ? block[0] : html), ocr: false };
 }
 
 // The PDF a wrapper page exists to show, if it is one of the known wrappers.
@@ -67,25 +67,27 @@ export function innerPdf(html, base) {
 
 function pdfText(buf) {
   // Some PDF links answer with an HTML page instead (an error or a redirect page).
-  if (buf.subarray(0, 5).toString() !== '%PDF-') return htmlToText(buf.toString('utf8'));
+  if (buf.subarray(0, 5).toString() !== '%PDF-') return { text: htmlToText(buf.toString('utf8')), ocr: false };
   const dir = mkdtempSync(join(tmpdir(), 'kasba-'));
   const file = join(dir, 'notice.pdf');
   writeFileSync(file, buf);
   const text = execFileSync('pdftotext', ['-l', '6', '-enc', 'UTF-8', file, '-'], { encoding: 'utf8', maxBuffer: 20e6 }).trim();
-  if (text.length >= 200) return text;
+  if (text.length >= 200) return { text, ocr: false };
   // No text layer: a scanned notice. OCR the first three pages in Hindi and English.
   try {
     execFileSync('pdftoppm', ['-r', '200', '-l', '3', '-png', file, join(dir, 'page')]);
-    return readdirSync(dir).filter((f) => f.endsWith('.png')).sort()
+    const ocrText = readdirSync(dir).filter((f) => f.endsWith('.png')).sort()
       .map((f) => execFileSync('tesseract', [join(dir, f), '-', '-l', 'hin+eng'], { encoding: 'utf8', maxBuffer: 20e6, stdio: ['ignore', 'pipe', 'ignore'] }))
       .join('\n').trim();
-  } catch { return text; } // OCR tools missing: fall back to whatever text there was
+    return { text: ocrText, ocr: true };
+  } catch { return { text, ocr: false }; } // OCR tools missing: fall back to whatever text there was
 }
 
 const decode = (s) => s
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
   .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+  .replace(/&nbsp;/g, ' ')
   .replace(/&amp;/g, '&')
   .trim();
 
@@ -115,7 +117,7 @@ export function parsePage(html, base, pattern) {
     try { link = new URL(decode(m[1]), base).toString(); } catch { continue; }
     if (!re.test(link) || seen.has(link)) continue;
     let title = htmlToText(m[2]).replace(/\(\s*\d+(\.\d+)?\s*[KM]B\s*\)/i, '').trim();
-    if (title.length < 15) {
+    if (title.length < 15 || /^(read more|click here|download|view|more)\b/i.test(title)) {
       const before = htmlToText(html.slice(Math.max(0, m.index - 1500), m.index)).split('\n').map((l) => l.trim()).filter((l) => l.length > 15);
       title = before.at(-1) ?? '';
     }

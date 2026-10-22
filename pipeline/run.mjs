@@ -93,6 +93,7 @@ function draftMessage(id, d) {
   const lines = [
     `${d.story.storyType === 'record' ? '⚖️ <b>रिकॉर्ड से</b>' : '📝 <b>नया ड्राफ़्ट</b>'} · ${tg.esc(d.story.category)}${d.story.state ? ' · UP' : ''}`,
     '',
+    ...(d.ocr ? ['⚠️ स्कैन किए गए PDF से पढ़ा गया: तारीख़ें और आँकड़े मूल सूचना से ज़रूर मिलाएँ।', ''] : []),
     `<b>${tg.esc(s.title)}</b>`,
     tg.esc(s.summary),
     '',
@@ -127,7 +128,13 @@ async function draftNew() {
     state.seen[it.link] = new Date().toISOString().slice(0, 10);
     try {
       let text = it.description;
-      try { text = (await noticeText(it.link)).slice(0, 8000); } catch (e) { summary.errors.push(`notice ${it.link}: ${e.message}`); }
+      let ocr = false;
+      try {
+        const notice = await noticeText(it.link);
+        // RBI answers foreign servers with a CAPTCHA page; the feed's own description is then the better text.
+        if (!/captcha/i.test(notice.text) || notice.text.length > 5 * text.length) ({ text, ocr } = notice);
+        text = text.slice(0, 8000);
+      } catch (e) { summary.errors.push(`notice ${it.link}: ${e.message}`); }
       // Too little to write from, or a Hindi PDF in an old non-Unicode font that extracts as gibberish:
       // hold it back rather than let the model guess.
       if (!text || text.length < 200 || (it.lang === 'hi' && it.sourceId !== 'editor' && devanagariShare(text) < 0.3)) {
@@ -146,10 +153,14 @@ async function draftNew() {
         summary.skipped.push(`${it.sourceId}: ${story.sourceDate ? `notice is from ${story.sourceDate}` : 'notice has no date'} (${it.link})`);
         continue;
       }
+      if (story.deadline?.date && story.deadline.date < new Date().toISOString().slice(0, 10)) {
+        summary.skipped.push(`${it.sourceId}: deadline ${story.deadline.date} has passed (${it.link})`);
+        continue;
+      }
       const problems = check(story);
       if (problems.length) { summary.errors.push(`draft for ${it.link} failed checks: ${problems.join(', ')}`); continue; }
       const id = createHash('sha1').update(it.link).digest('hex').slice(0, 10);
-      const draft = { id, createdAt: new Date().toISOString(), provider, model, source: { name: it.name, title: it.title, link: it.link }, story };
+      const draft = { id, createdAt: new Date().toISOString(), provider, model, ocr, source: { name: it.name, title: it.title, link: it.link }, story };
       if (dryRun) { console.log(JSON.stringify(draft, null, 2)); drafted++; continue; }
       writeJson(`drafts/${id}.json`, draft);
       await tg.send(draftMessage(id, draft), [
