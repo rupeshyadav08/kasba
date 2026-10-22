@@ -18,7 +18,7 @@ const config = readJson('config.json');
 const sources = readJson('sources.json');
 const state = readJson('state.json');
 const dryRun = process.env.DRY_RUN === 'true';
-const summary = { published: [], rejected: [], drafted: [], skipped: 0, errors: [] };
+const summary = { published: [], rejected: [], drafted: [], skipped: [], errors: [] };
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -131,13 +131,13 @@ async function draftNew() {
       // Too little to write from, or a Hindi PDF in an old non-Unicode font that extracts as gibberish:
       // hold it back rather than let the model guess.
       if (!text || text.length < 200 || (it.lang === 'hi' && it.sourceId !== 'editor' && devanagariShare(text) < 0.3)) {
-        summary.skipped++;
+        summary.skipped.push(`${it.sourceId}: ${!text || text.length < 200 ? `only ${text?.length ?? 0} characters of text` : 'Hindi text not readable (old font)'} (${it.link})`);
         if (it.sourceId === 'editor' && !dryRun) await tg.send(`इस लिंक से सूचना का पाठ नहीं पढ़ पाया: ${tg.esc(it.link)}`);
         continue;
       }
       const { text: reply } = await complete({ provider, model, system, user: userPrompt({ ...it, text }) });
       const story = parseJson(reply);
-      if (!story.relevant && it.sourceId !== 'editor') { summary.skipped++; continue; }
+      if (!story.relevant && it.sourceId !== 'editor') { summary.skipped.push(`${it.sourceId}: not relevant, ${story.reason ?? 'no reason given'} (${it.link})`); continue; }
       if (!story.relevant) { await tg.send(`AI के हिसाब से यह आम पाठकों के काम की सूचना नहीं है: ${tg.esc(story.reason ?? '')}`); continue; }
       const problems = check(story);
       if (problems.length) { summary.errors.push(`draft for ${it.link} failed checks: ${problems.join(', ')}`); continue; }

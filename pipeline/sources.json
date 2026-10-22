@@ -41,7 +41,7 @@
     "type": "page",
     "lang": "en",
     "url": "https://nta.ac.in/NoticeBoardArchive",
-    "linkPattern": "nta\\.ac\\.in/.*(\\.pdf$|Download|Notice/)"
+    "linkPattern": "nta\\.ac\\.in/.*(\\.pdf$|Notice/)"
   },
   {
     "id": "up-board",
