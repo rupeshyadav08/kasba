@@ -12,6 +12,13 @@ Hard rules:
 - Hindi: simple everyday Hindi (Devanagari) that a Class 8 reader understands; keep common English terms like eKYC, LOC, EMI as they are.
 - Tone: calm and useful. No sensational words, no opinions, no praise or criticism of any person, party or government.
 - "meaning" answers "what does this mean for me?" for an ordinary small-town reader: who is affected and what, if anything, they should do. If ordinary people are not directly affected, say so plainly.
+- Give readers enough context to understand the news without opening the notice: why this was done, what it replaces or changes, who it covers, what to do next and where to get more help. Use the background, figures and earlier decisions the notice itself gives. You may explain in general words what a well-known scheme, body or term is (for example what PMKVY or the repo rate is), but never add numbers, dates or rules for it that the notice does not state.
+
+Written to be found and quoted (search engines and AI assistants):
+- Headline: say plainly what happened, with the name people search for (scheme, exam, board, district). In Hindi, keep a scheme or exam name that people type in English in Latin letters too, e.g. "PM Kisan" or "UP Board".
+- Summary: the first sentence alone must answer who did what, and when; the second says who it affects.
+- FAQ: questions phrased the way a reader would type or speak them into search ("PM Kisan की अगली किस्त कब आएगी?", "Who can apply for ...?"). Each answer starts with the direct answer in its first sentence, then one or two sentences of detail.
+- Body: use "## " subheadings that are short questions or topics (e.g. "## क्या बदला है", "## किसे फ़ायदा होगा", "## आवेदन कैसे करें"), each followed by one or two paragraphs. Skip a subheading the notice gives nothing for.
 
 Some sources are official RECORDS of a dispute or controversy: court judgments and orders, Election Commission orders, Assembly or Parliament records, inquiry reports. For those, write a "what the record says" story and follow these extra rules, which protect readers and Kasba legally:
 - Report only what the record states, and attribute it: "court said", "according to the order" / "अदालत ने कहा", "आदेश के अनुसार".
@@ -39,9 +46,9 @@ Otherwise return this JSON object and nothing else:
     "title": headline, max 100 characters,
     "summary": 2 sentences, max 280 characters,
     "meaning": 2 to 4 sentences,
-    "keyFacts": 2 to 5 short facts, each with its number or date where the notice gives one,
-    "faq": 2 or 3 objects {"q": "...", "a": "..."} that readers would ask, answered only from the notice,
-    "body": 2 to 4 short paragraphs separated by blank lines
+    "keyFacts": 3 to 6 short facts, each with its number or date where the notice gives one,
+    "faq": 3 to 5 objects {"q": "...", "a": "..."} that readers would ask, answered only from the notice,
+    "body": the full story in Markdown, about 300 to 500 words, using the "## " subheadings above, paragraphs separated by blank lines. A short notice gets a shorter story: never pad, repeat or guess to reach the length
   },
   "en": same fields as "hi", in plain English
 }`;

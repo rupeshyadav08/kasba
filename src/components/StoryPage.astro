@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import StoryCard from './StoryCard.astro';
 import { districtBySlug, districtPath, state, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
+import { org } from '../lib/site';
 import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
 const { story, altPath } = Astro.props;
@@ -19,6 +20,11 @@ const terms = (await getCollection('glossary', ({ data }) => data.lang === d.lan
   .filter((g) => g.data.match.some((w) => text.includes(w.toLowerCase())));
 const glossaryPath = d.lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
+const words = [d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].join(' ').trim().split(/\s+/).length;
+const places = [
+  ...(d.state ? [{ '@type': 'State', name: state[d.lang], containedInPlace: { '@type': 'Country', name: 'India' } }] : []),
+  ...d.districts.map((slug) => ({ '@type': 'AdministrativeArea', name: districtBySlug(slug)![d.lang], containedInPlace: { '@type': 'State', name: state[d.lang] } })),
+];
 const url = new URL(storyPath(d.lang, d.storyId), Astro.site).toString();
 const home = new URL(d.lang === 'hi' ? '/' : '/en', Astro.site).toString();
 const image = new URL(`/og/${d.category}.png`, Astro.site).toString();
@@ -36,19 +42,27 @@ const jsonLd = [
     image: [image],
     articleSection: categories[d.category][d.lang],
     // Kasba publishes under the desk's name, not a person's.
-    author: { '@type': 'Organization', name: d.author, url: 'https://kasba.co.in/about' },
-    publisher: {
-      '@type': 'NewsMediaOrganization', name: 'Kasba', url: 'https://kasba.co.in',
-      logo: { '@type': 'ImageObject', url: 'https://kasba.co.in/logo-600x60.png', width: 600, height: 60 },
-    },
+    author: { '@type': 'Organization', name: d.author, url: new URL(d.lang === 'hi' ? '/about' : '/en/about', Astro.site).toString() },
+    publisher: org,
     mainEntityOfPage: url,
-    isBasedOn: d.source.url,
+    isAccessibleForFree: true,
+    wordCount: words,
+    // The official notice the story explains, so search engines and AI answers can trace each fact.
+    isBasedOn: {
+      '@type': 'CreativeWork', name: d.source.title, url: d.source.url,
+      datePublished: d.source.date.toISOString().slice(0, 10),
+      publisher: { '@type': 'GovernmentOrganization', name: d.source.name },
+    },
+    ...(places.length && { contentLocation: places }),
+    // Voice assistants read these parts aloud.
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.summary', '.meaning p'] },
+    ...(d.correction && { correction: { '@type': 'CorrectionComment', text: d.correction } }),
   },
   {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: L.home, item: home },
-      { '@type': 'ListItem', position: 2, name: categories[d.category][d.lang] },
+      { '@type': 'ListItem', position: 2, name: categories[d.category][d.lang], item: new URL(sectionPath(d.lang, d.category), Astro.site).toString() },
       { '@type': 'ListItem', position: 3, name: d.title, item: url },
     ],
   },
@@ -58,7 +72,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category} image={image}>
+<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category} image={image} markdown={`${storyPath(d.lang, d.storyId)}.md`}>
   <div class="page layout" style={secColor(d.category)}>
   <main class="story">
     <nav aria-label="breadcrumb" class="crumbs"><a href={d.lang === 'hi' ? '/' : '/en'}>{L.home}</a> › <a class="sec" href={sectionPath(d.lang, d.category)}>{categories[d.category][d.lang]}</a></nav>
@@ -154,6 +168,7 @@ const jsonLd = [
   .meaning p { margin: 0; line-height: 1.75; }
   .facts { margin: 0; padding-left: 1.25rem; line-height: 1.8; }
   .body { font-size: 1.125rem; line-height: 1.85; }
+  .body :global(h2) { font-family: var(--sans); font-size: 1.25rem; margin: 1.75rem 0 0.5rem; }
   .qa h3 { margin: 0; font-size: 1.0625rem; }
   .qa p { margin: 0.2rem 0 1rem; color: var(--text-soft); }
   .places { display: flex; flex-wrap: wrap; gap: 0.5rem; }

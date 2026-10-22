@@ -25,7 +25,7 @@ export function check(d) {
     if (!s.summary || s.summary.length > 300) p.push(`${lang} summary length`);
     if (!s.meaning) p.push(`${lang} meaning`);
     if (!Array.isArray(s.keyFacts) || s.keyFacts.length < 1) p.push(`${lang} keyFacts`);
-    if (!Array.isArray(s.faq) || s.faq.length < 2 || s.faq.length > 3 || s.faq.some((f) => !f.q || !f.a)) p.push(`${lang} faq`);
+    if (!Array.isArray(s.faq) || s.faq.length < 2 || s.faq.length > 5 || s.faq.some((f) => !f.q || !f.a)) p.push(`${lang} faq`);
     if (!s.body) p.push(`${lang} body`);
   }
   return p;

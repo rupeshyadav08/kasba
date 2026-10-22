@@ -6,7 +6,8 @@ import SectionBlock from './SectionBlock.astro';
 import LocalStrip from './LocalStrip.astro';
 import DeadlineList from './DeadlineList.astro';
 import { upcomingDeadlines } from '../lib/deadlines';
-import { sectionOrder, t, type Lang } from '../lib/i18n';
+import { sectionOrder, storyPath, t, type Lang } from '../lib/i18n';
+import { org } from '../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const stories = (await getCollection('stories', ({ data }) => data.lang === lang))
@@ -16,12 +17,21 @@ const secondary = top.slice(0, 4);
 const L = t[lang];
 const deadlines = (await upcomingDeadlines(lang)).slice(0, 3);
 const p = lang === 'hi' ? '' : '/en';
-const jsonLd = [{
-  '@context': 'https://schema.org', '@type': 'NewsMediaOrganization',
-  name: 'Kasba', url: 'https://kasba.co.in', email: 'admin@kasba.co.in',
-  publishingPrinciples: 'https://kasba.co.in/editorial-policy',
-  correctionsPolicy: 'https://kasba.co.in/corrections',
-}];
+const home = new URL(lang === 'hi' ? '/' : '/en', Astro.site).toString();
+const jsonLd = [
+  { '@context': 'https://schema.org', ...org },
+  {
+    '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${home}#site`,
+    name: lang === 'hi' ? 'कस्बा' : 'Kasba', alternateName: lang === 'hi' ? 'Kasba' : 'कस्बा',
+    url: home, inLanguage: lang, description: L.tagline, publisher: { '@id': org['@id'] },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'ItemList', name: L.topStories,
+    itemListElement: stories.slice(0, 10).map((s, i) => ({
+      '@type': 'ListItem', position: i + 1, url: new URL(storyPath(lang, s.data.storyId), Astro.site).toString(),
+    })),
+  },
+];
 ---
 <Base lang={lang} title={lang === 'hi' ? 'कस्बा: छोटे शहरों की बड़ी ख़बरें' : 'Kasba: big news for small towns'}
   description={L.tagline} altPath={lang === 'hi' ? '/en' : '/'} jsonLd={jsonLd}>
@@ -48,7 +58,7 @@ const jsonLd = [{
       </section>
     )}
 
-    {sectionOrder.map((sec) => (
+    {sectionOrder.filter((sec) => stories.some((s) => s.data.category === sec)).map((sec) => (
       <SectionBlock lang={lang} section={sec} stories={stories.filter((s) => s.data.category === sec)} />
     ))}
   </main>

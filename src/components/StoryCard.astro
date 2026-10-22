@@ -2,7 +2,7 @@
 // One story teaser. Sizes follow a newspaper front page:
 // "lead" (big headline + summary), "standard" (headline + summary), "compact" (headline only).
 import type { CollectionEntry } from 'astro:content';
-import { categories, dateFmt, secColor, storyPath } from '../lib/i18n';
+import { categories, dateFmt, secColor, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; size?: 'lead' | 'standard' | 'compact'; showKicker?: boolean }
 const { story, size = 'standard', showKicker = true } = Astro.props;
 const d = story.data;
@@ -13,6 +13,7 @@ const Tag = size === 'lead' ? 'h2' : 'h3';
     {showKicker && <span class="kicker">{categories[d.category][d.lang]}</span>}
     <Tag class="serif hl">{d.title}</Tag>
     {size !== 'compact' && <p class="serif sum">{d.summary}</p>}
+    {size === 'lead' && <p class="mean"><strong>{t[d.lang].meaning}:</strong> {d.meaning}</p>}
     <span class="muted">{d.source.name} · {dateFmt(d.lang, d.published)}</span>
   </a>
 </article>
@@ -22,9 +23,11 @@ const Tag = size === 'lead' ? 'h2' : 'h3';
   .card :is(h2, h3) { margin: 0; font-weight: 600; line-height: 1.4; }
   .lead { border-top-width: 3px; }
   .lead h2 { font-size: 1.75rem; font-weight: 700; line-height: 1.3; }
-  @media (min-width: 740px) { .lead h2 { font-size: 2.25rem; } }
+  @media (min-width: 740px) { .lead h2 { font-size: 2rem; } }
   .standard h3 { font-size: 1.2rem; }
   .compact h3 { font-size: 1.05rem; }
   .sum { margin: 0; color: var(--text-soft); line-height: 1.65; font-size: 1rem; }
   .lead .sum { font-size: 1.1rem; }
+  .mean { margin: 0.25rem 0; padding: 0.75rem 1rem; border-left: 3px solid var(--sec); background: var(--bg-soft); border-radius: 0 8px 8px 0; color: var(--text-soft); line-height: 1.6; font-size: 0.975rem; }
+  .mean strong { color: var(--sec); }
 </style>

@@ -67,3 +67,11 @@ jobs:
             git commit -m "[skip ci] Pipeline state"
           fi
           git pull --rebase origin main && git push origin HEAD:main
+
+      # Cloudflare needs a couple of minutes to put new stories live before search engines are told.
+      - name: Tell search engines (IndexNow)
+        if: ${{ steps.pipeline.outputs.published != '' && steps.pipeline.outputs.published != '0' && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          IDS: ${{ steps.pipeline.outputs.ids }}
+        run: sleep 180 && node pipeline/indexnow.mjs $IDS

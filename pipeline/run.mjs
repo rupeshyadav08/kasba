@@ -107,6 +107,7 @@ function draftMessage(id, d) {
     '',
     ...s.keyFacts.map((f) => `• ${tg.esc(f)}`),
     ...(d.story.deadline ? ['', `⏰ आख़िरी तारीख़: ${tg.esc(d.story.deadline.date)}`] : []),
+    '', `📏 पूरी ख़बर: ${s.body.trim().split(/\s+/).length} शब्द, ${s.faq.length} सवाल-जवाब`,
     '',
     `EN: ${tg.esc(d.story.en.title)}`,
     `स्रोत: ${tg.esc(d.source.name)}, <a href="${tg.esc(d.source.link)}">मूल सूचना</a>`,
@@ -139,7 +140,7 @@ async function draftNew() {
         const notice = await noticeText(it.link);
         // RBI answers foreign servers with a CAPTCHA page; the feed's own description is then the better text.
         if (!/captcha/i.test(notice.text) || notice.text.length > 5 * text.length) ({ text, ocr } = notice);
-        text = text.slice(0, 8000);
+        text = text.slice(0, 12000);
       } catch (e) { summary.errors.push(`notice ${it.link}: ${e.message}`); }
       // Too little to write from, or a Hindi PDF in an old non-Unicode font that extracts as gibberish:
       // hold it back rather than let the model guess.
@@ -203,5 +204,5 @@ try {
 } finally {
   if (!dryRun) writeJson(stateFile, state);
   console.log(JSON.stringify(summary, null, 2));
-  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length}\n`, { flag: 'a' });
+  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length}\nids=${summary.published.join(' ')}\n`, { flag: 'a' });
 }

@@ -5,7 +5,7 @@ export async function complete({ provider, model, system, user }) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}` },
       body: JSON.stringify({
-        model, temperature: 0.2, max_tokens: 4000, response_format: { type: 'json_object' },
+        model, temperature: 0.2, max_tokens: 8000, response_format: { type: 'json_object' },
         messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
       }),
     });
@@ -18,7 +18,7 @@ export async function complete({ provider, model, system, user }) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
-        model, max_tokens: 4000, temperature: 0.2,
+        model, max_tokens: 8000, temperature: 0.2,
         system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }],
         messages: [{ role: 'user', content: user }],
       }),
