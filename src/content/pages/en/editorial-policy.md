@@ -8,7 +8,7 @@ updated: 2026-10-21
 
 ## Our sources
 
-We write only from official sources whose material may be reused with credit: the Press Information Bureau (PIB), press releases from central, state and district governments, RBI, SEBI, the India Meteorological Department (IMD), exam boards, official scheme portals, Agmarknet and open government data (data.gov.in).
+We write only from official sources whose material may be reused with credit: the Press Information Bureau (PIB), press releases from the central and Uttar Pradesh governments, RBI, SEBI, exam boards (CBSE, NTA, UP Board), Supreme Court judgments and other government websites.
 
 ## What we never do
 
