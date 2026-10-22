@@ -7,5 +7,7 @@
   "maxDraftsPerRun": 4,
   "maxItemsCheckedPerRun": 20,
   "draftExpiryDays": 3,
+  "maxNoticeAgeDays": 21,
+  "firstRunPerSource": 3,
   "author": { "hi": "कस्बा डेस्क", "en": "Kasba Desk" }
 }
