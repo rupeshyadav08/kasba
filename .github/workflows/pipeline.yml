@@ -19,13 +19,17 @@ concurrency:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    # Indian government sites (PIB, CBSE, Supreme Court) block foreign data centres, so this
+    # runs on a machine in India registered as a self-hosted runner with the label kasba-india.
+    runs-on: [self-hosted, kasba-india]
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
       - name: Install pdftotext
-        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null)
+        run: |
+          command -v pdftotext && exit 0
+          if command -v brew; then brew install poppler; else sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null; fi
 
       - name: Fetch, draft and publish
         id: pipeline
