@@ -1,0 +1,80 @@
+{
+  "id": "a7ca2efe0e",
+  "createdAt": "2026-10-22T09:41:41.713Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "CBSE",
+    "title": "Reminder 4 : Only 04 days are left in the last date for submission of LOC - Reg.",
+    "link": "https://www.cbse.gov.in/cbsenew/documents/Reminder_4_Submission_LOC_17102026.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "jobs-exams",
+    "state": null,
+    "districts": [],
+    "deadline": {
+      "date": "2026-10-24",
+      "label_hi": "LOC जमा करने की आखिरी तारीख (सामान्य फीस के साथ)",
+      "label_en": "Last date to submit LOC with normal fee"
+    },
+    "sourceTitle": "Reminder 4 : Only 04 days are left in the last date for submission of LOC - Reg.",
+    "sourceDate": "2026-10-07",
+    "hi": {
+      "title": "CBSE ने स्कूलों को याद दिलाया: LOC जमा करने के लिए अब सिर्फ 4 दिन बचे",
+      "summary": "CBSE ने स्कूलों को चौथी बार याद दिलाया है कि सामान्य फीस के साथ LOC जमा करने की आखिरी तारीख 24 अक्टूबर 2026 है। बोर्ड ने कहा है कि स्कूल तय समय पर सही जानकारी और फीस के साथ LOC जमा करें।",
+      "meaning": "यह निर्देश सीधे CBSE से जुड़े स्कूलों के प्रिंसिपलों के लिए है, आम छात्रों या अभिभावकों के लिए नहीं। अगर आपका बच्चा CBSE स्कूल में पढ़ता है और आपने LOC से जुड़ी कोई जानकारी या फीस स्कूल से मांगी है, तो स्कूल से पूछ लें कि उसने LOC जमा कर दिया है या नहीं। आम लोगों को इसके लिए कोई अलग काम नहीं करना है।",
+      "keyFacts": [
+        "सामान्य फीस के साथ LOC जमा करने की आखिरी तारीख 24 अक्टूबर 2026 है।",
+        "यह चौथा रिमाइंडर है और नोटिस की तारीख से सिर्फ 4 दिन बचे हैं।",
+        "पहला LOC सर्कुलर 7 सितंबर 2026 को जारी हुआ था।",
+        "बोर्ड ने स्कूलों से छात्रों का सही डेटा और सही विषय भरने को कहा है।",
+        "बोर्ड ने सभी योग्य छात्रों का LOC और समय पर फीस जमा करने को कहा है।"
+      ],
+      "faq": [
+        {
+          "q": "LOC क्या है?",
+          "a": "नोटिस में LOC का पूरा नाम नहीं लिखा है। यह CBSE स्कूलों द्वारा छात्रों की परीक्षा से जुड़ी जानकारी जमा करने की प्रक्रिया है, जिसमें सही डेटा, विषय और फीस शामिल हैं।"
+        },
+        {
+          "q": "क्या छात्र या अभिभावक को कुछ करना है?",
+          "a": "नोटिस स्कूलों के प्रिंसिपलों को संबोधित है। इसमें छात्रों या अभिभावकों के लिए कोई अलग निर्देश नहीं दिया गया है।"
+        },
+        {
+          "q": "LOC जमा न होने पर क्या होगा?",
+          "a": "नोटिस में इस बारे में कुछ नहीं कहा गया है। बोर्ड ने सिर्फ स्कूलों से तय समय पर LOC जमा करने को कहा है।"
+        }
+      ],
+      "body": "केंद्रीय माध्यमिक शिक्षा बोर्ड (CBSE) ने 7 अक्टूबर 2026 को एक रिमाइंडर जारी किया है। इसमें बोर्ड से जुड़े स्कूलों के प्रिंसिपलों को बताया गया है कि सामान्य फीस के साथ LOC जमा करने की आखिरी तारीख 24 अक्टूबर 2026 है। नोटिस के मुताबिक इस तारीख से पहले सिर्फ 4 दिन बचे हैं।\n\nबोर्ड ने यह भी लिखा है कि 7 सितंबर 2026 के LOC सर्कुलर में स्कूलों से कुछ बातें कही गई थीं। इनमें छात्रों का सही डेटा देना, छात्रों के चुने हुए सही विषय भरना, तय समय पर LOC जमा करना, सभी योग्य छात्रों का LOC भेजना और समय पर फीस देना शामिल है।\n\nबोर्ड ने प्रिंसिपलों से दोबारा अनुरोध किया है कि वे अपने स्कूल का LOC तय समय के अंदर जमा कर दें। नोटिस की कॉपी केंद्रीय विद्यालय संगठन, नवोदय विद्यालय समिति और कई अन्य शिक्षा संस्थानों के प्रमुखों को भी भेजी गई है, ताकि वे अपने अधीन स्कूलों को जानकारी दे सकें।"
+    },
+    "en": {
+      "title": "CBSE reminds schools: only 4 days left to submit LOC",
+      "summary": "CBSE has sent a fourth reminder that the last date to submit LOC with the normal fee is 24 October 2026. The board has asked schools to submit LOC on time with correct details and fee.",
+      "meaning": "This instruction is for principals of CBSE-affiliated schools, not for ordinary students or parents. If your child studies in a CBSE school and you have been asked for any LOC-related information or fee, you can check with the school whether it has submitted the LOC. Ordinary people do not need to do anything else for this.",
+      "keyFacts": [
+        "The last date to submit LOC with the normal fee is 24 October 2026.",
+        "This is the fourth reminder, and only 4 days are left from the date of the notice.",
+        "The first LOC circular was issued on 7 September 2026.",
+        "The board asked schools to submit correct student data and correct subjects.",
+        "The board asked for LOC of all eligible students and timely payment of fee."
+      ],
+      "faq": [
+        {
+          "q": "What is LOC?",
+          "a": "The notice does not spell out the full form of LOC. It is the process by which CBSE schools submit students' examination-related details, including correct data, subjects and fee."
+        },
+        {
+          "q": "Do students or parents need to do anything?",
+          "a": "The notice is addressed to school principals. It gives no separate instruction for students or parents."
+        },
+        {
+          "q": "What happens if LOC is not submitted?",
+          "a": "The notice does not say anything about this. The board has only asked schools to submit LOC within the schedule."
+        }
+      ],
+      "body": "The Central Board of Secondary Education (CBSE) issued a reminder on 7 October 2026. It tells principals of CBSE-affiliated schools that the last date to submit LOC with the normal fee is 24 October 2026. According to the notice, only 4 days are left before this date.\n\nThe board also wrote that its LOC circular of 7 September 2026 had asked schools to do certain things. These include submitting correct student data, entering the correct subjects chosen by students, submitting LOC within the schedule, sending LOC for all eligible students and paying the fee on time.\n\nThe board has again requested principals to submit their school's LOC within the schedule. A copy of the notice has also been sent to heads of Kendriya Vidyalaya Sangathan, Navodaya Vidyalaya Samiti and several other education bodies so they can pass on the information to schools under them."
+    }
+  }
+}
