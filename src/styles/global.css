@@ -61,3 +61,5 @@ a:focus-visible, button:focus-visible, select:focus-visible { outline: 3px solid
 .muted { color: var(--muted); font-size: 0.875rem; }
 .kicker { color: var(--sec, var(--accent)); font-weight: 600; font-size: 0.875rem; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.prelaunch { margin: 0; padding: 0.5rem 1rem; text-align: center; font-size: 0.875rem; background: var(--accent-tint); color: var(--text); }
