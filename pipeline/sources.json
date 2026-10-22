@@ -8,6 +8,7 @@
   },
   {
     "id": "rbi-press",
+    "india": true,
     "name": "RBI",
     "type": "rss",
     "lang": "en",
@@ -15,6 +16,7 @@
   },
   {
     "id": "rbi-notifications",
+    "india": true,
     "name": "RBI",
     "type": "rss",
     "lang": "en",
