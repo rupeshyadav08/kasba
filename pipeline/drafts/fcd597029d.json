@@ -1,0 +1,74 @@
+{
+  "id": "fcd597029d",
+  "createdAt": "2026-10-22T14:37:29.021Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "भारतीय रेलवे ने इस साल अक्टूबर में (18 तारीख तक) कोयला लदान का सर्वकालिक उच्च रिकॉर्ड बनाया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2326805"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "nation",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "भारतीय रेलवे ने इस साल अक्टूबर में (18 तारीख तक) कोयला लदान का सर्वकालिक उच्च रिकॉर्ड बनाया",
+    "sourceDate": "2026-10-22",
+    "hi": {
+      "title": "रेलवे ने 18 अक्टूबर तक कोयला लदान में रिकॉर्ड बनाया, बिजली आपूर्ति सुचारु रखने की कोशिश",
+      "summary": "भारतीय रेलवे ने इस साल 18 अक्टूबर तक कोयला लदान में अब तक का सबसे ज्यादा आंकड़ा दर्ज किया है। रेलवे का कहना है कि इससे थर्मल पावर प्लांटों में कोयले का भंडार बना रहा और बिजली उत्पादन सुचारु चल सका।",
+      "meaning": "यह खबर आम लोगों के लिए सीधे तौर पर कोई नया काम या आवेदन नहीं मांगती। इसका मतलब यह है कि बिजलीघरों तक कोयला पहुंचाने की व्यवस्था चल रही है, जिससे बिजली उत्पादन सुचारु रखने में मदद मिलती है। आम उपभोक्ता को कुछ करने की जरूरत नहीं है।",
+      "keyFacts": [
+        "18 अक्टूबर तक पिछले साल की इसी अवधि के मुकाबले कोयला लदान में 22.5 प्रतिशत की बढ़ोतरी दर्ज हुई।",
+        "अक्टूबर 2025 की तुलना में इस अवधि में प्रतिदिन 87 रेक ज्यादा कोयला भेजा गया।",
+        "वित्त वर्ष 2026-27 की पहली छमाही में थर्मल पावर प्लांटों को प्रतिदिन औसतन 430 कोयला रेक भेजे गए, जो पिछले साल की इसी अवधि से 7.1 प्रतिशत ज्यादा है।",
+        "सितंबर 2025 की तुलना में सितंबर 2026 में कोयला रेक रवानगी प्रतिदिन 14 प्रतिशत बढ़ी।"
+      ],
+      "faq": [
+        {
+          "q": "कोयला रेक क्या होता है?",
+          "a": "यह मालगाड़ी के खास डिब्बे होते हैं, जिनसे खदानों से थर्मल पावर प्लांटों, उद्योगों और बिजली उत्पादन केंद्रों तक बड़ी मात्रा में कोयला ढोया जाता है।"
+        },
+        {
+          "q": "इससे आम लोगों को क्या फायदा है?",
+          "a": "विज्ञप्ति के अनुसार लगातार कोयला पहुंचने से थर्मल पावर प्लांटों में कोयले का स्टॉक स्थिर रहने में मदद मिली और देश भर में बिजली उत्पादन सुचारु हो सका।"
+        },
+        {
+          "q": "क्या इसके लिए किसी को कुछ करना है?",
+          "a": "नहीं। यह रेल मंत्रालय की ओर से जारी जानकारी है, इसमें आम लोगों के लिए कोई आवेदन या समय-सीमा नहीं बताई गई है।"
+        }
+      ],
+      "body": "रेल मंत्रालय ने बताया है कि भारतीय रेलवे ने इस साल अक्टूबर में 18 तारीख तक कोयला लदान का अब तक का सबसे ऊंचा आंकड़ा हासिल किया है। पिछले साल की इसी अवधि के मुकाबले इसमें 22.5 प्रतिशत की बढ़ोतरी दर्ज हुई है।\n\nविज्ञप्ति के अनुसार अक्टूबर 2025 की तुलना में इस दौरान प्रतिदिन 87 रेक ज्यादा कोयला भेजा गया। वित्त वर्ष 2026-27 की पहली छमाही में थर्मल पावर प्लांटों को प्रतिदिन औसतन 430 कोयला रेक भेजे गए, जो पिछले साल की इसी अवधि से 7.1 प्रतिशत ज्यादा है। सितंबर 2026 में भी यह सिलसिला जारी रहा और सितंबर 2025 के मुकाबले कोयला रेक रवानगी प्रतिदिन 14 प्रतिशत बढ़ी।\n\nरेलवे के मुताबिक कोयला ढुलाई की यह रफ्तार बढ़ती ऊर्जा खपत, ज्यादा औद्योगिक उत्पादन और देश के कुछ हिस्सों में कम बारिश के कारण कोयला आधारित बिजली की बढ़ती मांग के बीच आई है। लगातार कोयला पहुंचने से थर्मल पावर प्लांटों में कोयले का स्टॉक स्थिर रखने में मदद मिली, जिससे देश भर में बिजली उत्पादन सुचारु हो सका।\n\nविज्ञप्ति में कहा गया है कि भारतीय रेलवे कोयले की आपूर्ति सुनिश्चित करने के लिए कोयला मंत्रालय के साथ मिलकर काम कर रहा है और विद्युत मंत्रालय के साथ भी तालमेल बना रहा है, ताकि ताप विद्युत संयंत्रों में पर्याप्त कोयला बना रहे और देश की ऊर्जा जरूरतें पूरी हो सकें।"
+    },
+    "en": {
+      "title": "Railways sets coal-loading record till 18 October, works to keep power supply steady",
+      "summary": "Indian Railways recorded its highest-ever coal loading up to 18 October this year, the Railway Ministry said. The ministry says steady coal supply helped thermal power plants keep stock and run power generation smoothly.",
+      "meaning": "This notice does not ask ordinary people to do anything. It means coal is being moved to power plants to help keep electricity generation running. Consumers do not need to take any action.",
+      "keyFacts": [
+        "Coal loading up to 18 October rose 22.5 per cent compared with the same period last year.",
+        "About 87 more coal rakes were dispatched per day this period compared with October 2025.",
+        "In the first half of financial year 2026-27, an average of 430 coal rakes per day went to thermal power plants, 7.1 per cent more than the same period last year.",
+        "Coal rake dispatch in September 2026 was 14 per cent higher per day than in September 2025."
+      ],
+      "faq": [
+        {
+          "q": "What is a coal rake?",
+          "a": "It is a set of special goods-train wagons used to carry coal in bulk from mines to thermal power plants, industries and other power generation centres."
+        },
+        {
+          "q": "How does this help ordinary people?",
+          "a": "According to the release, steady coal movement helped keep coal stock stable at thermal power plants, which helped smooth power generation across the country."
+        },
+        {
+          "q": "Do people need to do anything?",
+          "a": "No. This is information from the Railway Ministry; it sets no application or deadline for the public."
+        }
+      ],
+      "body": "The Railway Ministry has said Indian Railways achieved its highest-ever coal loading up to 18 October this year. This was 22.5 per cent higher than the same period last year.\n\nAccording to the release, about 87 more rakes of coal were dispatched per day during this period compared with October 2025. In the first half of financial year 2026-27, thermal power plants received an average of 430 coal rakes per day, 7.1 per cent more than the same period last year. The trend continued in September 2026, when coal rake dispatch was 14 per cent higher per day than in September 2025.\n\nThe ministry says this pace of coal movement came amid rising energy consumption, higher industrial output and greater demand for coal-based power due to low rainfall in some parts of the country. Steady coal supply helped keep stock stable at thermal power plants, which helped smooth power generation nationwide.\n\nThe release says Indian Railways is working with the Coal Ministry to ensure coal reaches plants and is coordinating with the Power Ministry to keep adequate coal stock at thermal power plants and meet the country's energy needs."
+    }
+  }
+}
