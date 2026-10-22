@@ -9,10 +9,14 @@ on:
         description: 'Draft only: print drafts in the log, send nothing, change nothing'
         type: boolean
         default: false
-      on_github:
-        description: "Run on GitHub's own servers instead of the India runner (for testing)"
+      on_mac:
+        description: "Run on the India runner (Rupesh's Mac) instead of GitHub's servers"
         type: boolean
         default: false
+      probe_urls:
+        description: 'Debug: space-separated URLs to inspect before the run'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -23,17 +27,25 @@ concurrency:
 
 jobs:
   run:
-    # Indian government sites (PIB, CBSE, Supreme Court) block foreign data centres, so this
-    # runs on a machine in India registered as a self-hosted runner with the label kasba-india.
-    runs-on: ${{ inputs.on_github && 'ubuntu-latest' || 'kasba-india' }}
+    # GitHub's servers can read every source. A self-hosted runner in India (label kasba-india)
+    # is kept as a fallback in case a site starts refusing foreign servers.
+    runs-on: ${{ inputs.on_mac && 'kasba-india' || 'ubuntu-latest' }}
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install pdftotext
+      # pdftotext reads PDFs; tesseract reads scanned ones (CBSE and UP notices are often scans).
+      - name: Install PDF and OCR tools
         run: |
-          command -v pdftotext && exit 0
-          if command -v brew; then brew install poppler; else sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null; fi
+          command -v pdftotext && command -v tesseract && exit 0
+          if command -v brew; then brew install poppler tesseract tesseract-lang
+          else sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-hin >/dev/null; fi
+
+      - name: Probe pages (debug only)
+        if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
+        env:
+          PROBE_URLS: ${{ inputs.probe_urls }}
+        run: node pipeline/probe.mjs $PROBE_URLS
 
       - name: Fetch, draft and publish
         id: pipeline

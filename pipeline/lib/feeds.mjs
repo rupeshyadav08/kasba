@@ -4,7 +4,7 @@
 const FROM = 'admin@kasba.co.in';
 
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
@@ -42,14 +42,42 @@ export async function get(url, timeoutMs = 20000) {
 }
 
 // Text of an official notice: HTML pages are cleaned, PDFs go through pdftotext.
+// Several sites wrap the real notice: RBI pages only link the PDF, SEBI shows it in a
+// viewer iframe, PIB puts it in one content block. Scanned PDFs are read with OCR.
 export async function noticeText(url) {
   if (!(await allowed(url))) throw new Error(`robots.txt disallows ${url}`);
   const res = await fetchOk(url, 30000);
   const isPdf = /\.pdf($|\?)/i.test(url) || (res.headers.get('content-type') ?? '').includes('pdf');
-  if (!isPdf) return htmlToText(await res.text());
-  const file = join(mkdtempSync(join(tmpdir(), 'kasba-')), 'notice.pdf');
-  writeFileSync(file, Buffer.from(await res.arrayBuffer()));
-  return execFileSync('pdftotext', ['-l', '6', '-enc', 'UTF-8', file, '-'], { encoding: 'utf8', maxBuffer: 20e6 }).trim();
+  if (isPdf) return pdfText(Buffer.from(await res.arrayBuffer()));
+  const html = await res.text();
+  const inner = innerPdf(html, res.url || url);
+  if (inner) return pdfText(Buffer.from(await (await fetchOk(inner, 30000)).arrayBuffer()));
+  const block = html.match(/<div[^>]*class=["'][^"']*innner-page-main-about-us-content-right-part[\s\S]*/i);
+  return htmlToText(block ? block[0] : html);
+}
+
+// The PDF a wrapper page exists to show, if it is one of the known wrappers.
+export function innerPdf(html, base) {
+  const viewer = html.match(/<iframe[^>]*src=["'][^"']*[?&]file=([^"'&]+\.pdf)/i);
+  if (viewer) return new URL(decode(decodeURIComponent(viewer[1])), base).toString();
+  const rbi = html.match(/href=["'](https?:\/\/rbidocs\.rbi\.org\.in\/rdocs\/(?:PressRelease|notification)\/PDFs\/[^"']+)["']/i);
+  if (rbi) return decode(rbi[1]);
+  return null;
+}
+
+function pdfText(buf) {
+  const dir = mkdtempSync(join(tmpdir(), 'kasba-'));
+  const file = join(dir, 'notice.pdf');
+  writeFileSync(file, buf);
+  const text = execFileSync('pdftotext', ['-l', '6', '-enc', 'UTF-8', file, '-'], { encoding: 'utf8', maxBuffer: 20e6 }).trim();
+  if (text.length >= 200) return text;
+  // No text layer: a scanned notice. OCR the first three pages in Hindi and English.
+  try {
+    execFileSync('pdftoppm', ['-r', '200', '-l', '3', '-png', file, join(dir, 'page')]);
+    return readdirSync(dir).filter((f) => f.endsWith('.png')).sort()
+      .map((f) => execFileSync('tesseract', [join(dir, f), '-', '-l', 'hin+eng'], { encoding: 'utf8', maxBuffer: 20e6, stdio: ['ignore', 'pipe', 'ignore'] }))
+      .join('\n').trim();
+  } catch { return text; } // OCR tools missing: fall back to whatever text there was
 }
 
 const decode = (s) => s
