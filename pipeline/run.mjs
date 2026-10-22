@@ -152,6 +152,8 @@ async function draftNew() {
       if (!story.relevant && it.sourceId !== 'editor') { summary.skipped.push(`${it.sourceId}: not relevant, ${story.reason ?? 'no reason given'} (${it.link})`); continue; }
       if (!story.relevant) { await tg.send(`AI के हिसाब से यह आम पाठकों के काम की सूचना नहीं है: ${tg.esc(story.reason ?? '')}`); continue; }
       // Listing pages also link to old, undated documents; only recent notices are news.
+      // A date in the file name (Reminder_21102026.pdf) is more reliable than one read by OCR.
+      if (ocr && dateFromLink(it.link)) story.sourceDate = dateFromLink(it.link);
       story.sourceDate ??= dateFromLink(it.link);
       const ageDays = story.sourceDate ? (Date.now() - Date.parse(story.sourceDate)) / 86400e3 : NaN;
       if (it.sourceId !== 'editor' && !(ageDays <= config.maxNoticeAgeDays)) {
