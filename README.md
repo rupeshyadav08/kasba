@@ -32,4 +32,6 @@ Each run:
 1. Reads the editor's ✅ Approve / ❌ Reject taps from Telegram. Approved drafts become story files in `src/content/stories/` and are committed, which makes Cloudflare rebuild the site.
 2. Reads the feeds in `pipeline/sources.json`, skips links already in `pipeline/state.json`, opens each new notice, and asks the model (rules in `pipeline/lib/prompt.mjs`) for a Hindi and English draft. Drafts that fail the story checks are dropped; useful ones are saved in `pipeline/drafts/` and sent to Telegram.
 
+Sources: PIB (Hindi), RBI press releases and notifications, SEBI, CBSE, NTA, UP Board and the UP Information Department (`pipeline/sources.json`; RSS feeds or listing pages with a link pattern; PDFs are read with `pdftotext`). Sites whose robots.txt asks bots to stay away (UPSC, UPPSC, UPSSSC, NDMA Sachet) are not read. The editor can also send any official (gov.in, nic.in and similar) link to the bot, and the next run drafts it.
+
 Secrets it needs (GitHub Actions secrets): `DEEPSEEK_API_KEY` (or `ANTHROPIC_API_KEY` if `provider` is switched to `anthropic`), `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. Only taps from `TELEGRAM_CHAT_ID` count.

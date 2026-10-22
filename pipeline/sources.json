@@ -1,6 +1,62 @@
 [
-  { "id": "pib-hi", "name": "PIB", "type": "rss", "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3" },
-  { "id": "rbi-press", "name": "RBI", "type": "rss", "url": "https://rbi.org.in/pressreleases_rss.xml" },
-  { "id": "rbi-notifications", "name": "RBI", "type": "rss", "url": "https://rbi.org.in/notifications_rss.xml" },
-  { "id": "sebi", "name": "SEBI", "type": "rss", "url": "https://www.sebi.gov.in/sebirss.xml" }
+  {
+    "id": "pib-hi",
+    "name": "PIB",
+    "type": "rss",
+    "lang": "hi",
+    "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3"
+  },
+  {
+    "id": "rbi-press",
+    "name": "RBI",
+    "type": "rss",
+    "lang": "en",
+    "url": "https://rbi.org.in/pressreleases_rss.xml"
+  },
+  {
+    "id": "rbi-notifications",
+    "name": "RBI",
+    "type": "rss",
+    "lang": "en",
+    "url": "https://rbi.org.in/notifications_rss.xml"
+  },
+  {
+    "id": "sebi",
+    "name": "SEBI",
+    "type": "rss",
+    "lang": "en",
+    "url": "https://www.sebi.gov.in/sebirss.xml"
+  },
+  {
+    "id": "cbse",
+    "name": "CBSE",
+    "type": "page",
+    "lang": "en",
+    "url": "https://www.cbse.gov.in/cbsenew/cbse.html",
+    "linkPattern": "cbse\\.gov\\.in/cbsenew/documents/.+\\.pdf$"
+  },
+  {
+    "id": "nta",
+    "name": "NTA",
+    "type": "page",
+    "lang": "en",
+    "url": "https://nta.ac.in/NoticeBoardArchive",
+    "linkPattern": "nta\\.ac\\.in/.*(\\.pdf$|Download|Notice/)"
+  },
+  {
+    "id": "up-board",
+    "name": "UP Board (UPMSP)",
+    "type": "page",
+    "lang": "hi",
+    "url": "https://upmsp.edu.in/",
+    "linkPattern": "upmsp\\.edu\\.in/Downloads/.+\\.pdf$"
+  },
+  {
+    "id": "up-info",
+    "name": "UP Information Department",
+    "type": "page",
+    "lang": "hi",
+    "url": "https://information.up.gov.in/",
+    "linkPattern": "information\\.up\\.gov\\.in/admin/UploadDocument/(CmPress|OtherPress)/.+\\.pdf$"
+  }
 ]

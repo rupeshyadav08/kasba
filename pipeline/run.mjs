@@ -4,7 +4,7 @@
 // State (seen links, Telegram offset) and pending drafts are files in pipeline/, committed by the workflow.
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
-import { get, htmlToText, parseRss } from './lib/feeds.mjs';
+import { get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
 import { check, districtSlugs, publish } from './lib/story.mjs';
@@ -23,12 +23,27 @@ const summary = { published: [], rejected: [], drafted: [], skipped: 0, errors: 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
 const site = 'https://kasba.pages.dev';
+const devanagariShare = (t) => (t.match(/[\u0900-\u097F]/g)?.length ?? 0) / Math.max(1, (t.match(/\p{L}/gu)?.length ?? 0));
+
+// Links the editor sends to the bot are drafted in this run, if they are official.
+const official = /(^|\.)(gov\.in|nic\.in|rbi\.org\.in|nta\.ac\.in|upmsp\.edu\.in|ndma\.gov\.in)$/i;
+const manual = [];
 
 // 1. Editor's decisions.
 async function applyDecisions() {
   const list = await tg.updates(state.telegramOffset);
   for (const u of list) {
     state.telegramOffset = u.update_id + 1;
+    const msg = u.message;
+    if (msg && String(msg.chat?.id) === tg.editorChat()) {
+      for (const url of String(msg.text ?? '').match(/https?:\/\/\S+/g) ?? []) {
+        let host = '';
+        try { host = new URL(url).hostname; } catch {}
+        if (official.test(host)) manual.push({ title: url, link: url, description: '', date: null, name: host, sourceId: 'editor', lang: 'hi' });
+        else await tg.send(`यह लिंक सरकारी स्रोत का नहीं लगता, इसलिए छोड़ दिया: ${tg.esc(url)}`);
+      }
+      continue;
+    }
     const cb = u.callback_query;
     if (!cb) continue;
     if (String(cb.from?.id) !== tg.editorChat()) { await tg.answer(cb.id, 'Not allowed'); continue; }
@@ -63,8 +78,9 @@ async function newItems() {
   const items = [];
   for (const src of sources) {
     try {
-      const feed = parseRss(await get(src.url));
-      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id });
+      const body = await get(src.url);
+      const feed = src.type === 'page' ? parsePage(body, src.url, src.linkPattern) : parseRss(body);
+      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang });
     } catch (e) {
       summary.errors.push(`${src.id}: ${e.message}`);
     }
@@ -100,7 +116,8 @@ async function draftNew() {
     for (const i of items) if (!newest.includes(i)) state.seen[i.link] = new Date().toISOString().slice(0, 10);
     items = newest;
   }
-  items = items.slice(0, config.maxItemsCheckedPerRun);
+  // Links the editor sent come first; they skip the "seen" check because the editor asked.
+  items = [...manual, ...items].slice(0, config.maxItemsCheckedPerRun);
   const provider = config.provider;
   const model = config.models[provider];
   const system = systemPrompt(districtSlugs());
@@ -110,11 +127,18 @@ async function draftNew() {
     state.seen[it.link] = new Date().toISOString().slice(0, 10);
     try {
       let text = it.description;
-      try { text = htmlToText(await get(it.link)).slice(0, 8000); } catch (e) { summary.errors.push(`page ${it.link}: ${e.message}`); }
-      if (!text || text.length < 200) { summary.skipped++; continue; } // too little to write from: hold back rather than guess
+      try { text = (await noticeText(it.link)).slice(0, 8000); } catch (e) { summary.errors.push(`notice ${it.link}: ${e.message}`); }
+      // Too little to write from, or a Hindi PDF in an old non-Unicode font that extracts as gibberish:
+      // hold it back rather than let the model guess.
+      if (!text || text.length < 200 || (it.lang === 'hi' && it.sourceId !== 'editor' && devanagariShare(text) < 0.3)) {
+        summary.skipped++;
+        if (it.sourceId === 'editor' && !dryRun) await tg.send(`इस लिंक से सूचना का पाठ नहीं पढ़ पाया: ${tg.esc(it.link)}`);
+        continue;
+      }
       const { text: reply } = await complete({ provider, model, system, user: userPrompt({ ...it, text }) });
       const story = parseJson(reply);
-      if (!story.relevant) { summary.skipped++; continue; }
+      if (!story.relevant && it.sourceId !== 'editor') { summary.skipped++; continue; }
+      if (!story.relevant) { await tg.send(`AI के हिसाब से यह आम पाठकों के काम की सूचना नहीं है: ${tg.esc(story.reason ?? '')}`); continue; }
       const problems = check(story);
       if (problems.length) { summary.errors.push(`draft for ${it.link} failed checks: ${problems.join(', ')}`); continue; }
       const id = createHash('sha1').update(it.link).digest('hex').slice(0, 10);
