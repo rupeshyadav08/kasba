@@ -12,7 +12,7 @@ Under the Information Technology Rules, 2021, Kasba has appointed a grievance of
 
 - **Name:** Rupesh Yadav
 - **Email:** [admin@kasba.co.in](mailto:admin@kasba.co.in)
-- **Address:** [Postal address, India]
+- **Address:** Gram Kalwari, Post Bhimpura No. 1, Ballia, Uttar Pradesh, India
 
 ## Process and timelines
 
