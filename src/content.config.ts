@@ -22,6 +22,8 @@ const stories = defineCollection({
       url: z.url(),
       date: z.coerce.date(),
     }),
+    // "record": a "what the record says" story from a court judgment or other official record.
+    storyType: z.enum(['notice', 'record']).default('notice'),
     category: z.enum(['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'nation']),
     // 'up' for Uttar Pradesh stories; districts use the slugs in src/lib/places.ts.
     state: z.enum(['up']).optional(),

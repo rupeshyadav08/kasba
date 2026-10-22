@@ -1,0 +1,11 @@
+{
+  "provider": "deepseek",
+  "models": {
+    "deepseek": "deepseek-chat",
+    "anthropic": "claude-haiku-5-5"
+  },
+  "maxDraftsPerRun": 4,
+  "maxItemsCheckedPerRun": 20,
+  "draftExpiryDays": 3,
+  "author": { "hi": "कस्बा डेस्क", "en": "Kasba Desk" }
+}
