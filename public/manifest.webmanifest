@@ -1,0 +1,20 @@
+{
+  "name": "कस्बा: छोटे शहरों की बड़ी ख़बरें",
+  "short_name": "कस्बा",
+  "description": "आधिकारिक सूचनाओं से, आसान हिंदी में: आपके लिए इसका मतलब।",
+  "lang": "hi",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e6b52",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "आख़िरी तारीख़ें", "url": "/deadlines" },
+    { "name": "कस्बा ब्रीफ़िंग", "url": "/briefing" }
+  ]
+}

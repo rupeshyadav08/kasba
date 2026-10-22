@@ -1,0 +1,20 @@
+---
+import { districtPath, sortedDistricts } from '../lib/places';
+import type { Lang } from '../lib/i18n';
+interface Props { lang: Lang; counts?: Record<string, number> }
+const { lang, counts = {} } = Astro.props;
+---
+<ul class="dgrid">
+  {sortedDistricts(lang).map((d) => (
+    <li><a href={districtPath(lang, d.slug)}>{d[lang]}{counts[d.slug] ? <span class="n">{counts[d.slug]}</span> : null}</a></li>
+  ))}
+</ul>
+<style>
+  .dgrid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  @media (min-width: 740px) { .dgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (min-width: 1024px) { .dgrid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+  li { border-top: 1px solid var(--line); }
+  a { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; min-height: 44px; }
+  a:hover { color: var(--local-ink); text-decoration: underline; }
+  .n { font-size: 0.75rem; background: var(--local-bg); color: #fff; border-radius: 999px; padding: 0 0.5rem; }
+</style>

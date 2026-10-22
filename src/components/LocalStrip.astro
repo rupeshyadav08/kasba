@@ -1,0 +1,50 @@
+---
+// District picker (direction C's strip). Picking a district opens its page and
+// remembers the choice on this phone; without JavaScript the "all districts" link still works.
+import { t, type Lang } from '../lib/i18n';
+import { sortedDistricts, state, statePath } from '../lib/places';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const L = t[lang];
+const base = lang === 'hi' ? '/district/' : '/en/district/';
+---
+<section class="local" aria-label={L.yourTown}>
+  <form class="pick" data-base={base}>
+    <label for="district">{L.yourTown}, {state[lang]}</label>
+    <div class="row">
+      <select id="district" name="d" required>
+        <option value="">{L.chooseDistrict}</option>
+        {sortedDistricts(lang).map((d) => <option value={d.slug}>{d[lang]}</option>)}
+      </select>
+      <button type="submit">{L.go}</button>
+    </div>
+  </form>
+  <a class="mine" hidden></a>
+  <a class="all" href={statePath(lang)}>{L.allDistricts} ›</a>
+</section>
+<script is:inline>
+  (() => {
+    const form = document.currentScript.previousElementSibling.querySelector('.pick');
+    const sel = form.querySelector('select');
+    const mine = form.parentElement.querySelector('.mine');
+    const go = (slug) => { try { localStorage.setItem('kasba-district', slug); } catch {} location.href = form.dataset.base + slug; };
+    form.addEventListener('submit', (e) => { e.preventDefault(); if (sel.value) go(sel.value); });
+    sel.addEventListener('change', () => { if (sel.value) go(sel.value); });
+    let saved = null;
+    try { saved = localStorage.getItem('kasba-district'); } catch {}
+    const opt = saved && sel.querySelector(`option[value="${CSS.escape(saved)}"]`);
+    if (opt) { sel.value = saved; mine.textContent = opt.textContent + ' ›'; mine.href = form.dataset.base + saved; mine.hidden = false; }
+  })();
+</script>
+<style>
+  .local { background: var(--local-bg); color: var(--local-text); border-radius: 4px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
+  .pick { display: flex; flex-direction: column; gap: 0.4rem; }
+  label { font-size: 0.875rem; color: var(--local-soft); }
+  .row { display: flex; gap: 0.5rem; }
+  select { flex: 1; min-width: 0; min-height: 44px; font: inherit; border: 0; border-radius: 10px; padding: 0 0.75rem; background: #fff; color: #22223a; }
+  button { min-height: 44px; min-width: 44px; padding: 0 1rem; border: 1px solid var(--local-soft); border-radius: 10px; background: transparent; color: var(--local-text); font: inherit; font-weight: 600; cursor: pointer; }
+  .mine, .all { display: inline-flex; align-items: center; min-height: 44px; color: var(--local-text); font-weight: 600; }
+  .mine { font-size: 1.1rem; }
+  .all { font-size: 0.9rem; color: var(--local-soft); }
+  .mine:hover, .all:hover { text-decoration: underline; }
+</style>

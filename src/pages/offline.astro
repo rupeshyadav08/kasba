@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base lang="hi" title="इंटरनेट नहीं है | Kasba" description="आप अभी ऑफ़लाइन हैं।" noindex>
+  <main class="wrap off">
+    <h1 class="serif">इंटरनेट नहीं है</h1>
+    <p>नेटवर्क मिलते ही ताज़ा ख़बरें खुल जाएँगी। जो ख़बरें आपने पहले पढ़ी हैं, वे बिना इंटरनेट भी खुल सकती हैं।</p>
+    <p lang="en" class="muted">You are offline. Stories you opened before may still work.</p>
+    <p><a href="/">होम पर जाएँ ›</a></p>
+  </main>
+</Base>
+<style>
+  .off { padding-top: 3rem; }
+  h1 { font-size: 2rem; margin: 0 0 1rem; }
+  a { display: inline-flex; min-height: 44px; align-items: center; color: var(--accent); font-weight: 600; }
+</style>

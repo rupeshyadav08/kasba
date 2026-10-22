@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { dateFmt } from '../lib/i18n';
+interface Props { page: CollectionEntry<'pages'>; altPath?: string }
+const { page, altPath } = Astro.props;
+const d = page.data;
+const { Content } = await render(page);
+---
+<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.description} altPath={altPath}>
+  <main class="wrap info">
+    <h1 class="serif">{d.title}</h1>
+    <p class="muted">{d.lang === 'hi' ? 'अंतिम अपडेट' : 'Last updated'}: {dateFmt(d.lang, d.updated)}</p>
+    <div class="prose"><Content /></div>
+  </main>
+</Base>
+<style>
+  .info { padding-top: 1.5rem; }
+  h1 { margin: 0 0 0.25rem; font-size: 1.85rem; line-height: 1.4; }
+  .prose { line-height: 1.8; }
+  .prose :global(h2) { font-family: var(--serif); font-size: 1.25rem; margin: 2rem 0 0.5rem; }
+  .prose :global(a) { color: var(--accent); text-decoration: underline; padding: 0.4rem 0; }
+  .prose :global(li) { margin-bottom: 0.35rem; }
+  .prose :global(table) { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  .prose :global(td), .prose :global(th) { border: 1px solid var(--line); padding: 0.5rem; text-align: left; vertical-align: top; }
+</style>

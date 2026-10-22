@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  altPath?: string; // the same page in the other language, for hreflang
+  jsonLd?: object[];
+  type?: 'website' | 'article';
+  section?: string; // highlights this section in the navigation
+  noindex?: boolean;
+  image?: string; // share image path; defaults to the section card, then the site card
+}
+const { lang, title, description, altPath, jsonLd = [], type = 'website', section, image, noindex } = Astro.props;
+const ogImage = new URL(image ?? (section ? `/og/${section}.png` : '/og/default.png'), Astro.site);
+// Build format 'file' makes Astro.url end in .html; Cloudflare serves the clean
+// address, so every canonical, hreflang and share URL drops it.
+const clean = (p: string) => p.replace(/\.html$/, '').replace(/\/index$/, '').replace(/(.)\/$/, '$1') || '/';
+const canonical = new URL(clean(Astro.url.pathname), Astro.site);
+const alt = altPath ? new URL(altPath, Astro.site) : undefined;
+const hiUrl = lang === 'hi' ? canonical : alt;
+const enUrl = lang === 'en' ? canonical : alt;
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  {hiUrl && <link rel="alternate" hreflang="hi" href={hiUrl} />}
+  {enUrl && <link rel="alternate" hreflang="en" href={enUrl} />}
+  {hiUrl && <link rel="alternate" hreflang="x-default" href={hiUrl} />}
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:site_name" content="Kasba" />
+  <meta property="og:locale" content={lang === 'hi' ? 'hi_IN' : 'en_IN'} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <meta name="robots" content={noindex ? 'noindex' : 'max-image-preview:large, max-snippet:-1'} />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="theme-color" content="#1e6b52" />
+  <link rel="alternate" type="application/rss+xml" title="Kasba" href="/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" />
+  {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify(d)} />)}
+</head>
+<body>
+  <Header lang={lang} altPath={altPath} current={section} />
+  <slot />
+  <Footer lang={lang} />
+  <script is:inline>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
+</body>
+</html>

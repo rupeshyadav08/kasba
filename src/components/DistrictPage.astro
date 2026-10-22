@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import StoryCard from './StoryCard.astro';
+import { t, type Lang } from '../lib/i18n';
+import { districtBySlug, districtPath, state, statePath } from '../lib/places';
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const L = t[lang];
+const d = districtBySlug(slug)!;
+const all = (await getCollection('stories', ({ data }) => data.lang === lang))
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const own = all.filter((s) => s.data.districts.includes(slug));
+const stateWide = all.filter((s) => s.data.state === state.code && !s.data.districts.includes(slug)).slice(0, 6);
+const nation = all.filter((s) => s.data.state !== state.code && s.data.districts.length === 0).slice(0, 6);
+const name = d[lang];
+// Until a district has stories of its own, its page stays out of search results
+// (and the sitemap), so Google never sees 75 near-identical pages.
+const jsonLd = [{
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.home, item: new URL(lang === 'hi' ? '/' : '/en', Astro.site).toString() },
+    { '@type': 'ListItem', position: 2, name: state[lang], item: new URL(statePath(lang), Astro.site).toString() },
+    { '@type': 'ListItem', position: 3, name, item: new URL(districtPath(lang, slug), Astro.site).toString() },
+  ],
+}];
+---
+<Base lang={lang} section="up" title={`${L.districtNews(name)} | Kasba`} altPath={districtPath(lang === 'hi' ? 'en' : 'hi', slug)} jsonLd={jsonLd} noindex={own.length === 0}
+  description={lang === 'hi' ? `${name} (उत्तर प्रदेश) के लिए ज़रूरी सरकारी सूचनाएँ, योजनाएँ, भर्ती और मौसम, आसान हिंदी में।` : `Official updates, schemes, jobs and weather for ${name}, Uttar Pradesh, in simple language.`}>
+  <main class="page district">
+    <nav aria-label="breadcrumb" class="crumbs"><a href={lang === 'hi' ? '/' : '/en'}>{L.home}</a> › <a href={statePath(lang)}>{state[lang]}</a></nav>
+    <h1 class="serif">{L.districtNews(name)}</h1>
+    {own.length > 0 ? (
+      <div class="grid">{own.map((s) => <StoryCard story={s} size="standard" />)}</div>
+    ) : <p class="muted">{L.districtSoon}</p>}
+    {stateWide.length > 0 && (
+      <section aria-labelledby="sw-h"><h2 id="sw-h">{L.stateNews}</h2><div class="grid">{stateWide.map((s) => <StoryCard story={s} size="compact" />)}</div></section>
+    )}
+    {nation.length > 0 && (
+      <section aria-labelledby="na-h"><h2 id="na-h">{L.nationNews}</h2><div class="grid">{nation.map((s) => <StoryCard story={s} size="compact" />)}</div></section>
+    )}
+    <p><a class="all" href={statePath(lang)}>{L.allDistricts} ›</a></p>
+  </main>
+</Base>
+<style>
+  .district { padding-top: 0.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .crumbs { font-size: 0.875rem; color: var(--muted); }
+  .crumbs a { display: inline-flex; align-items: center; min-height: 44px; }
+  h1 { margin: 0; font-size: 2rem; color: var(--local-ink); border-bottom: 4px solid var(--local-ink); padding-bottom: 0.25rem; }
+  h2 { margin: 0 0 0.75rem; font-size: 1.2rem; }
+  .muted { margin: 0; }
+  .grid { display: grid; gap: 1.25rem; }
+  @media (min-width: 740px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .all { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--local-ink); }
+</style>

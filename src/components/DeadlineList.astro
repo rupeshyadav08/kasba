@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { calendarLink, categories, dateFmt, secColor, storyPath, t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; items: { story: CollectionEntry<'stories'>; days: number }[]; calendar?: boolean }
+const { lang, items, calendar = false } = Astro.props;
+const L = t[lang];
+---
+<ol class="dl">
+  {items.map(({ story, days }) => (
+    <li style={secColor(story.data.category)}>
+      <span class={days <= 2 ? 'when soon' : 'when'}>
+        <strong>{days === 0 ? L.today : L.daysLeft(days)}</strong>
+        <span>{dateFmt(lang, story.data.deadline!.date)}</span>
+      </span>
+      <div class="item">
+        <a href={storyPath(lang, story.data.storyId)}>
+          <span class="kicker">{categories[story.data.category][lang]}</span>
+          <span class="serif what">{story.data.deadline!.label}</span>
+        </a>
+        {calendar && (
+          <a class="cal" rel="noopener" target="_blank"
+            href={calendarLink(story.data.deadline!.label, story.data.deadline!.date, new URL(storyPath(lang, story.data.storyId), Astro.site).toString())}>
+            📅 {L.addCalendar}
+          </a>
+        )}
+      </div>
+    </li>
+  ))}
+</ol>
+<style>
+  .dl { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+  li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1rem; align-items: start; border-top: 1px solid var(--line); padding-top: 0.75rem; }
+  .when { display: flex; flex-direction: column; font-size: 0.85rem; color: var(--muted); }
+  .when strong { font-size: 1rem; color: var(--text); }
+  .when.soon strong { color: var(--c-health); }
+  a { display: flex; flex-direction: column; gap: 0.15rem; min-height: 44px; }
+  .item { display: flex; flex-direction: column; min-width: 0; }
+  .cal { flex-direction: row; align-items: center; font-size: 0.875rem; color: var(--accent); }
+  .what { font-size: 1.05rem; font-weight: 600; line-height: 1.45; }
+  a:hover .what { text-decoration: underline; }
+</style>

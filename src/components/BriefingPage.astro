@@ -1,0 +1,36 @@
+---
+// Kasba Briefing: the day's stories in one short list. Until the pipeline
+// writes a written briefing each evening, this lists the latest day's stories.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { dateFmt, storyPath, t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const stories = (await getCollection('stories', ({ data }) => data.lang === lang))
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+const latest = stories[0]?.data.published;
+const day = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
+const today = latest ? stories.filter((s) => day(s.data.published) === day(latest)).slice(0, 5) : [];
+const L = t[lang];
+---
+<Base lang={lang} title={`${L.briefing} | Kasba`} description={lang === 'hi' ? 'दिन की ज़रूरी बातें, कुछ मिनट में' : "The day's essentials in a few minutes"} altPath={lang === 'hi' ? '/en/briefing' : '/briefing'}>
+  <main class="wrap briefing">
+    <div class="kicker">{L.briefing}</div>
+    <h1 class="serif">{latest ? dateFmt(lang, latest) : L.briefing}</h1>
+    <ol>
+      {today.map((s) => (
+        <li>
+          <a href={storyPath(lang, s.data.storyId)} class="serif title">{s.data.title}</a>
+          <p>{s.data.meaning}</p>
+        </li>
+      ))}
+    </ol>
+  </main>
+</Base>
+<style>
+  .briefing { padding-top: 1.5rem; }
+  h1 { margin: 0.25rem 0 1.5rem; font-size: 1.85rem; }
+  ol { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 1.5rem; }
+  .title { font-size: 1.2rem; font-weight: 600; line-height: 1.5; }
+  li p { margin: 0.35rem 0 0; color: var(--text-soft); }
+</style>

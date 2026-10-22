@@ -1,0 +1,15 @@
+# Kasba
+
+> Kasba (kasba.co.in) is a Hindi-first news site for small-town India. Each story explains one official update (PIB, RBI, SEBI, IMD, exam boards, scheme portals, open government data) in simple language, with a "what this means for you" box, key facts, a short FAQ and a link to the original source.
+
+All stories are drafted with AI from official sources and checked by a human editor before publishing. Every story names its source and date.
+
+## Main pages
+- [Hindi home](https://kasba.co.in/)
+- [English home](https://kasba.co.in/en)
+- [RSS feed](https://kasba.co.in/rss.xml)
+- [Editorial policy](https://kasba.co.in/editorial-policy)
+- [Sources and AI use](https://kasba.co.in/sources-ai)
+- [Last dates for forms, exams and schemes](https://kasba.co.in/deadlines)
+- [Glossary of official terms](https://kasba.co.in/shabdkosh)
+- [Full text of recent stories](https://kasba.co.in/llms-full.txt)
