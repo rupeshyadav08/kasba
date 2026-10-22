@@ -32,7 +32,7 @@ Otherwise return this JSON object and nothing else:
   "category": one of ${JSON.stringify(categories)},
   "state": "up" if the notice is specifically about Uttar Pradesh, else null,
   "districts": district slugs from this list only if the notice names those UP districts, else []: ${districtSlugs.join(', ')},
-  "deadline": {"date": "YYYY-MM-DD", "label_hi": "...", "label_en": "..."} only if the notice states a last date readers must act by, else null,
+  "deadline": {"date": "YYYY-MM-DD", "label_hi": "...", "label_en": "..."} only if the notice states a last date readers must act by, else null. Copy the date exactly as written. If the notice only says "today is the last date" or "N days are left", work it out from the notice's own date,
   "sourceTitle": the notice's own title,
   "sourceDate": "YYYY-MM-DD" date of the notice if stated, else null,
   "hi": {
