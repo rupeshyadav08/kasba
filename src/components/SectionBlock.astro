@@ -30,7 +30,10 @@ const [first, ...others] = stories.slice(0, 5);
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .main { grid-row: span 2; }
   }
+  /* A section with one story lets it use the extra width. */
+  .main:only-child { grid-column: 1 / -1; }
   @media (min-width: 1024px) {
+    .main:only-child { grid-column: span 2; }
     .block { grid-template-columns: 12rem 1fr; column-gap: 1.5rem; }
     header { flex-direction: column; justify-content: flex-start; }
     .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }

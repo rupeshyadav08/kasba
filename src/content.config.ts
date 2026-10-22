@@ -15,7 +15,7 @@ const stories = defineCollection({
     summary: z.string().max(300),
     meaning: z.string(),
     keyFacts: z.array(z.string()).min(1),
-    faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).max(3),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).max(5),
     source: z.object({
       name: z.string(),
       title: z.string(),

@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
-import { categories, secColor, t, type Lang, type Section } from '../lib/i18n';
+import { categories, secColor, sectionPath, storyPath, t, type Lang, type Section } from '../lib/i18n';
 interface Props { lang: Lang; category: Section }
 const { lang, category } = Astro.props;
 const stories = (await getCollection('stories', ({ data }) => data.lang === lang && data.category === category))
@@ -10,9 +10,26 @@ const stories = (await getCollection('stories', ({ data }) => data.lang === lang
 const [lead, ...rest] = stories;
 const name = categories[category][lang];
 const alt = lang === 'hi' ? `/en/section/${category}` : `/section/${category}`;
+const abs = (p: string) => new URL(p, Astro.site).toString();
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name, inLanguage: lang, url: abs(sectionPath(lang, category)),
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: stories.slice(0, 20).map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(storyPath(lang, s.data.storyId)) })),
+    },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t[lang].home, item: abs(lang === 'hi' ? '/' : '/en') },
+      { '@type': 'ListItem', position: 2, name, item: abs(sectionPath(lang, category)) },
+    ],
+  },
+];
 ---
 <Base lang={lang} title={`${name} | Kasba`} section={category}
-  description={lang === 'hi' ? `${name}: आधिकारिक सूचनाएँ, आसान भाषा में` : `${name}: official updates in simple language`} altPath={alt}>
+  description={lang === 'hi' ? `${name}: आधिकारिक सूचनाएँ, आसान भाषा में` : `${name}: official updates in simple language`} altPath={alt} jsonLd={jsonLd}>
   <main class="page section" style={secColor(category)}>
     <h1 class="serif">{name}</h1>
     {!lead && <p class="muted">{t[lang].soon}</p>}

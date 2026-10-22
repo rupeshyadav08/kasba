@@ -45,6 +45,7 @@ const base = lang === 'hi' ? '/district/' : '/en/district/';
   button { min-height: 44px; min-width: 44px; padding: 0 1rem; border: 1px solid var(--local-soft); border-radius: 10px; background: transparent; color: var(--local-text); font: inherit; font-weight: 600; cursor: pointer; }
   .mine, .all { display: inline-flex; align-items: center; min-height: 44px; color: var(--local-text); font-weight: 600; }
   .mine { font-size: 1.1rem; }
+  .mine[hidden] { display: none; }
   .all { font-size: 0.9rem; color: var(--local-soft); }
   .mine:hover, .all:hover { text-decoration: underline; }
 </style>

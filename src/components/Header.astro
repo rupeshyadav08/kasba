@@ -53,5 +53,7 @@ const today = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-IN', {
   .pillars a { display: flex; align-items: center; min-height: 48px; padding: 0 0.85rem; font-weight: 600; font-size: 0.975rem; white-space: nowrap; border-bottom: 4px solid transparent; }
   .pillars .state { --sec: var(--local-ink); }
   .pillars a:hover, .pillars a[aria-current='page'] { border-bottom-color: var(--sec); color: var(--sec); }
-  @media (min-width: 740px) { .pillars a { min-width: 7.5rem; font-size: 1.05rem; padding: 0 1rem; } }
+  @media (min-width: 740px) { .pillars a { font-size: 1.05rem; padding: 0 1rem; } }
+  /* On wide screens the sections share the full width evenly, labels centred. */
+  @media (min-width: 1000px) { .pillars li { flex: 1 1 0; } .pillars a { justify-content: center; } }
 </style>

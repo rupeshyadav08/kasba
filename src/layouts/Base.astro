@@ -15,8 +15,9 @@ interface Props {
   section?: string; // highlights this section in the navigation
   noindex?: boolean;
   image?: string; // share image path; defaults to the section card, then the site card
+  markdown?: string; // plain-text copy of the page for AI assistants
 }
-const { lang, title, description, altPath, jsonLd = [], type = 'website', section, image, noindex } = Astro.props;
+const { lang, title, description, altPath, jsonLd = [], type = 'website', section, image, noindex, markdown } = Astro.props;
 const ogImage = new URL(image ?? (section ? `/og/${section}.png` : '/og/default.png'), Astro.site);
 // Build format 'file' makes Astro.url end in .html; Cloudflare serves the clean
 // address, so every canonical, hreflang and share URL drops it.
@@ -43,6 +44,7 @@ const enUrl = lang === 'en' ? canonical : alt;
   <meta property="og:url" content={canonical} />
   <meta property="og:site_name" content="Kasba" />
   <meta property="og:locale" content={lang === 'hi' ? 'hi_IN' : 'en_IN'} />
+  {alt && <meta property="og:locale:alternate" content={lang === 'hi' ? 'en_IN' : 'hi_IN'} />}
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -55,7 +57,8 @@ const enUrl = lang === 'en' ? canonical : alt;
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="theme-color" content="#1e6b52" />
-  <link rel="alternate" type="application/rss+xml" title="Kasba" href="/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title={lang === 'hi' ? 'कस्बा' : 'Kasba (English)'} href={lang === 'hi' ? '/rss.xml' : '/en/rss.xml'} />
+  {markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;800&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" />
