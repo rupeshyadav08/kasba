@@ -58,5 +58,22 @@
     "lang": "hi",
     "url": "https://information.up.gov.in/",
     "linkPattern": "information\\.up\\.gov\\.in/admin/UploadDocument/(CmPress|OtherPress)/.+\\.pdf$"
+  },
+  {
+    "id": "sc-judgments",
+    "name": "Supreme Court of India",
+    "type": "page",
+    "lang": "en",
+    "kind": "record",
+    "url": "https://www.sci.gov.in/",
+    "linkPattern": "sci\\.gov\\.in/view-pdf/\\?diary_no=.+type=j"
+  },
+  {
+    "id": "sc-press",
+    "name": "Supreme Court of India",
+    "type": "page",
+    "lang": "en",
+    "url": "https://www.sci.gov.in/",
+    "linkPattern": "sci\\.gov\\.in/press-release-.+"
   }
 ]

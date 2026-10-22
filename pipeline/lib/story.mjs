@@ -13,6 +13,7 @@ const isDate = (s) => typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && 
 export function check(d) {
   const p = [];
   if (!categories.includes(d.category)) p.push(`category "${d.category}"`);
+  if (d.storyType != null && !['notice', 'record'].includes(d.storyType)) p.push(`storyType "${d.storyType}"`);
   if (d.state != null && d.state !== 'up') p.push(`state "${d.state}"`);
   const slugs = districtSlugs();
   for (const s of d.districts ?? []) if (!slugs.includes(s)) p.push(`district "${s}"`);
@@ -61,6 +62,7 @@ export function toMarkdown(draft, lang, { storyId, author, published }) {
     `  url: ${q(draft.source.link)}`,
     `  date: ${draft.story.sourceDate && isDate(draft.story.sourceDate) ? draft.story.sourceDate : published.slice(0, 10)}`,
     `category: ${draft.story.category}`,
+    ...(draft.story.storyType === 'record' ? ['storyType: record'] : []),
     ...(draft.story.state ? [`state: ${draft.story.state}`] : []),
     ...(draft.story.districts?.length ? ['districts:', ...draft.story.districts.map((x) => `  - ${x}`)] : []),
     ...(draft.story.deadline ? ['deadline:', `  date: ${draft.story.deadline.date}`, `  label: ${q(draft.story.deadline[`label_${lang}`])}`] : []),

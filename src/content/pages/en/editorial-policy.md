@@ -24,3 +24,7 @@ A headline, a two-line summary, "what this means for you", key facts, 2 to 3 que
 ## Review
 
 An editor reads and approves every story before it is published. If a source is unclear, the story is held until the editor has checked it. See also our [Code of ethics](/en/code-of-ethics) and [Corrections policy](/en/corrections).
+
+## Court judgments and contested matters
+
+When a matter is in the news or disputed, Kasba does not repeat other media's claims. We report only what an official record says: a court judgment or order, a government order, or legislative proceedings. Such stories are marked "From the record". We give each side's arguments as the record gives them, never call anyone guilty before a final verdict, and never identify victims of sexual offences, children or juveniles.

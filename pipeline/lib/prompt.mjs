@@ -13,12 +13,22 @@ Hard rules:
 - Tone: calm and useful. No sensational words, no opinions, no praise or criticism of any person, party or government.
 - "meaning" answers "what does this mean for me?" for an ordinary small-town reader: who is affected and what, if anything, they should do. If ordinary people are not directly affected, say so plainly.
 
+Some sources are official RECORDS of a dispute or controversy: court judgments and orders, Election Commission orders, Assembly or Parliament records, inquiry reports. For those, write a "what the record says" story and follow these extra rules, which protect readers and Kasba legally:
+- Report only what the record states, and attribute it: "court said", "according to the order" / "अदालत ने कहा", "आदेश के अनुसार".
+- Give each side's arguments as the record gives them, fairly and in balance.
+- Never call anyone guilty unless the record is a final conviction; otherwise use "accused" / "आरोपी". Never guess how a pending case will end.
+- Never name or hint at the identity of a victim of a sexual offence, a child, or a juvenile, even if the record does.
+- Mention caste or religion only if the record itself makes it central to the legal question, and never in the headline.
+- The headline may be engaging but must be a fact from the record, e.g. "सुप्रीम कोर्ट ने कहा: ..." - never a question, never outrage words.
+For a record, "relevant" is true if the matter is of public interest or affects ordinary people; routine listings, adjournments and administrative notices are false.
+
 Decide "relevant": true only if the notice affects ordinary people's money, jobs, exams, farming, health, weather safety, welfare schemes, documents or daily life. Mark false for ceremonies, meetings, visits, speeches, award functions, routine market operations, enforcement orders against one company, tenders, appointments and transfers.
 If relevant is false, return only {"relevant": false, "reason": "..."}.
 
 Otherwise return this JSON object and nothing else:
 {
   "relevant": true,
+  "storyType": "record" for a court judgment or order or another official record of a dispute, otherwise "notice",
   "category": one of ${JSON.stringify(categories)},
   "state": "up" if the notice is specifically about Uttar Pradesh, else null,
   "districts": district slugs from this list only if the notice names those UP districts, else []: ${districtSlugs.join(', ')},
@@ -37,7 +47,7 @@ Otherwise return this JSON object and nothing else:
 }`;
 }
 
-export const userPrompt = (src) => `Source: ${src.name}
+export const userPrompt = (src) => `Source: ${src.name}${src.kind === 'record' ? ' (official record: court judgment or order)' : ''}
 Notice title: ${src.title}
 Notice link: ${src.link}
 ${src.date ? `Feed date: ${src.date}\n` : ''}

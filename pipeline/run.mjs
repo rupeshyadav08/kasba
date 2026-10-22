@@ -26,7 +26,7 @@ const site = 'https://kasba.pages.dev';
 const devanagariShare = (t) => (t.match(/[\u0900-\u097F]/g)?.length ?? 0) / Math.max(1, (t.match(/\p{L}/gu)?.length ?? 0));
 
 // Links the editor sends to the bot are drafted in this run, if they are official.
-const official = /(^|\.)(gov\.in|nic\.in|rbi\.org\.in|nta\.ac\.in|upmsp\.edu\.in|ndma\.gov\.in)$/i;
+const official = /(^|\.)(gov\.in|nic\.in|rbi\.org\.in|nta\.ac\.in|upmsp\.edu\.in|allahabadhighcourt\.in|sansad\.in|ecourts\.gov\.in)$/i;
 const manual = [];
 
 // 1. Editor's decisions.
@@ -80,7 +80,7 @@ async function newItems() {
     try {
       const body = await get(src.url);
       const feed = src.type === 'page' ? parsePage(body, src.url, src.linkPattern) : parseRss(body);
-      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang });
+      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind });
     } catch (e) {
       summary.errors.push(`${src.id}: ${e.message}`);
     }
@@ -91,7 +91,7 @@ async function newItems() {
 function draftMessage(id, d) {
   const s = d.story.hi;
   const lines = [
-    `📝 <b>नया ड्राफ़्ट</b> · ${tg.esc(d.story.category)}${d.story.state ? ' · UP' : ''}`,
+    `${d.story.storyType === 'record' ? '⚖️ <b>रिकॉर्ड से</b>' : '📝 <b>नया ड्राफ़्ट</b>'} · ${tg.esc(d.story.category)}${d.story.state ? ' · UP' : ''}`,
     '',
     `<b>${tg.esc(s.title)}</b>`,
     tg.esc(s.summary),
