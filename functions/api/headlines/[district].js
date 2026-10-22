@@ -7,8 +7,9 @@ import { districtBySlug } from '../../../src/lib/places';
 const MAX_AGE_HOURS = 48;
 const LIMIT = 8;
 
-// Amar Ujala has one feed per district; its address uses the district's usual name.
-const amarUjalaSlug = { 'gautam-buddh-nagar': 'noida', 'kanpur-nagar': 'kanpur' };
+// Amar Ujala has one feed per district, under the paper's own name for it (checked 22 Oct 2026;
+// Kanpur Dehat has none, so it gets Bhaskar's headlines only).
+const amarUjalaSlug = { 'gautam-buddh-nagar': 'noida', 'kanpur-nagar': 'kanpur', prayagraj: 'allahabad', sonbhadra: 'sonebhadra' };
 const sources = [
   { name: 'अमर उजाला', url: (slug) => `https://www.amarujala.com/rss/${amarUjalaSlug[slug] ?? slug}.xml`, all: true },
   // Dainik Bhaskar has one feed for all of UP; a headline counts if it names the district.
