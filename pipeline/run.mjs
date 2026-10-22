@@ -64,6 +64,7 @@ async function applyDecisions() {
     } else {
       summary.rejected.push(id);
       await tg.answer(cb.id, '❌ हटाया गया');
+      await tg.send(`❌ हटाया गया: ${tg.esc(draft.story.hi.title)}`);
     }
     rmSync(draftPath(id));
   }

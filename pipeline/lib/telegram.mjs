@@ -16,6 +16,8 @@ export const send = (text, buttons) => call('sendMessage', {
   ...(buttons ? { reply_markup: { inline_keyboard: [buttons] } } : {}),
 });
 export const updates = (offset) => call('getUpdates', { offset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
-export const answer = (id, text) => call('answerCallbackQuery', { callback_query_id: id, text });
-export const clearButtons = (chatId, messageId) => call('editMessageReplyMarkup', { chat_id: chatId, message_id: messageId, reply_markup: { inline_keyboard: [] } });
+// Telegram only accepts an answer to a tap within seconds, and the pipeline reads taps up to an hour
+// later, so the answer is best-effort; the follow-up message is what the editor sees.
+export const answer = (id, text) => call('answerCallbackQuery', { callback_query_id: id, text }).catch(() => {});
+export const clearButtons = (chatId, messageId) => call('editMessageReplyMarkup', { chat_id: chatId, message_id: messageId, reply_markup: { inline_keyboard: [] } }).catch(() => {});
 export const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
