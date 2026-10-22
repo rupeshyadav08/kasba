@@ -4,7 +4,7 @@
 // State (seen links, Telegram offset) and pending drafts are files in pipeline/, committed by the workflow.
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
-import { get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
+import { dateFromLink, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
 import { check, districtSlugs, publish } from './lib/story.mjs';
@@ -110,9 +110,9 @@ function draftMessage(id, d) {
 async function draftNew() {
   let items = await newItems();
   // First run: everything in the feeds is already old news. Remember it all and
-  // draft only the newest notice from each source, so the editor sees a few samples.
+  // check only the newest few notices from each source, so the editor sees a few samples.
   if (Object.keys(state.seen).length === 0) {
-    const newest = sources.map((s) => items.find((i) => i.sourceId === s.id)).filter(Boolean);
+    const newest = sources.flatMap((s) => items.filter((i) => i.sourceId === s.id).slice(0, config.firstRunPerSource));
     for (const i of items) if (!newest.includes(i)) state.seen[i.link] = new Date().toISOString().slice(0, 10);
     items = newest;
   }
@@ -140,6 +140,7 @@ async function draftNew() {
       if (!story.relevant && it.sourceId !== 'editor') { summary.skipped.push(`${it.sourceId}: not relevant, ${story.reason ?? 'no reason given'} (${it.link})`); continue; }
       if (!story.relevant) { await tg.send(`AI के हिसाब से यह आम पाठकों के काम की सूचना नहीं है: ${tg.esc(story.reason ?? '')}`); continue; }
       // Listing pages also link to old, undated documents; only recent notices are news.
+      story.sourceDate ??= dateFromLink(it.link);
       const ageDays = story.sourceDate ? (Date.now() - Date.parse(story.sourceDate)) / 86400e3 : NaN;
       if (it.sourceId !== 'editor' && !(ageDays <= config.maxNoticeAgeDays)) {
         summary.skipped.push(`${it.sourceId}: ${story.sourceDate ? `notice is from ${story.sourceDate}` : 'notice has no date'} (${it.link})`);

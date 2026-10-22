@@ -66,6 +66,8 @@ export function innerPdf(html, base) {
 }
 
 function pdfText(buf) {
+  // Some PDF links answer with an HTML page instead (an error or a redirect page).
+  if (buf.subarray(0, 5).toString() !== '%PDF-') return htmlToText(buf.toString('utf8'));
   const dir = mkdtempSync(join(tmpdir(), 'kasba-'));
   const file = join(dir, 'notice.pdf');
   writeFileSync(file, buf);
@@ -133,4 +135,13 @@ export function htmlToText(html) {
     .replace(/[ \t ]+/g, ' ')
     .replace(/\n\s*\n+/g, '\n')
     .trim();
+}
+
+// A notice date written into its link, such as Reminder_21102026.pdf or /2026-10-21/.
+export function dateFromLink(link) {
+  const m = link.match(/(?<!\d)(\d{2})[-_.]?(\d{2})[-_.]?(20\d{2})(?!\d)/) ?? link.match(/(?<!\d)(20\d{2})[-_/](\d{2})[-_/](\d{2})(?!\d)/);
+  if (!m) return null;
+  const [y, mo, d] = m[3].length === 4 ? [m[3], m[2], m[1]] : [m[1], m[2], m[3]];
+  const iso = `${y}-${mo}-${d}`;
+  return Number(mo) <= 12 && Number(d) <= 31 && !Number.isNaN(Date.parse(iso)) ? iso : null;
 }
