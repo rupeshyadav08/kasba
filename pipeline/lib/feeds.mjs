@@ -1,5 +1,7 @@
 // Reads RSS feeds and official pages with no extra packages.
-const UA = 'KasbaBot/1.0 (+https://kasba.co.in/sources-ai; admin@kasba.co.in)';
+// PIB, CBSE and the Supreme Court site answer 403 to any User-Agent that names a bot, so we
+// send Node's default one and give our contact address in the standard From header instead.
+const FROM = 'admin@kasba.co.in';
 
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync } from 'node:fs';
@@ -7,7 +9,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 async function fetchOk(url, timeoutMs) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: '*/*' }, signal: AbortSignal.timeout(timeoutMs) });
+  const res = await fetch(url, { headers: { From: FROM, Accept: '*/*' }, signal: AbortSignal.timeout(timeoutMs) });
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);
   return res;
 }

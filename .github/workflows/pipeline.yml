@@ -9,6 +9,10 @@ on:
         description: 'Draft only: print drafts in the log, send nothing, change nothing'
         type: boolean
         default: false
+      on_github:
+        description: "Run on GitHub's own servers instead of the India runner (for testing)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,7 +25,7 @@ jobs:
   run:
     # Indian government sites (PIB, CBSE, Supreme Court) block foreign data centres, so this
     # runs on a machine in India registered as a self-hosted runner with the label kasba-india.
-    runs-on: [self-hosted, kasba-india]
+    runs-on: ${{ inputs.on_github && 'ubuntu-latest' || 'kasba-india' }}
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4

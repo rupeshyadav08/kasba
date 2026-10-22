@@ -139,6 +139,12 @@ async function draftNew() {
       const story = parseJson(reply);
       if (!story.relevant && it.sourceId !== 'editor') { summary.skipped.push(`${it.sourceId}: not relevant, ${story.reason ?? 'no reason given'} (${it.link})`); continue; }
       if (!story.relevant) { await tg.send(`AI के हिसाब से यह आम पाठकों के काम की सूचना नहीं है: ${tg.esc(story.reason ?? '')}`); continue; }
+      // Listing pages also link to old, undated documents; only recent notices are news.
+      const ageDays = story.sourceDate ? (Date.now() - Date.parse(story.sourceDate)) / 86400e3 : NaN;
+      if (it.sourceId !== 'editor' && !(ageDays <= config.maxNoticeAgeDays)) {
+        summary.skipped.push(`${it.sourceId}: ${story.sourceDate ? `notice is from ${story.sourceDate}` : 'notice has no date'} (${it.link})`);
+        continue;
+      }
       const problems = check(story);
       if (problems.length) { summary.errors.push(`draft for ${it.link} failed checks: ${problems.join(', ')}`); continue; }
       const id = createHash('sha1').update(it.link).digest('hex').slice(0, 10);
