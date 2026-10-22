@@ -1,11 +1,10 @@
 name: News pipeline (India runner)
 
-# RBI shows GitHub's servers a CAPTCHA, so its feeds are read from a machine in India
-# (Rupesh's Mac for now) registered as a self-hosted runner with the label kasba-india.
-# Drafts go to Telegram as usual; the main pipeline applies the Approve / Reject taps.
+# Fallback for sources that refuse GitHub's servers: mark them "india": true in sources.json
+# and they are read here, on a machine in India (Rupesh's Mac) registered as a self-hosted
+# runner with the label kasba-india. No source needs it today, so it only runs by hand; add a
+# schedule back (e.g. cron '45 1-16/3 * * *') when one does. The main pipeline applies the taps.
 on:
-  schedule:
-    - cron: '45 1-16/3 * * *' # every 3 hours from 7:15 to 22:15 India time
   workflow_dispatch:
     inputs:
       dry_run:
