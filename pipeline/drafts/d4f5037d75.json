@@ -1,0 +1,94 @@
+{
+  "id": "d4f5037d75",
+  "createdAt": "2026-10-23T19:24:05.773Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "केंद्रीय वित्त एवं कॉरपोरेट कार्य मंत्री श्रीमती निर्मला सीतारमण ने आज नई दिल्ली में वित्तीय स्थिरता एवं विकास परिषद (एफएसडीसी) की 30वीं बैठक की अध्यक्षता की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327696"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "money",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "केंद्रीय वित्त एवं कॉरपोरेट कार्य मंत्री श्रीमती निर्मला सीतारमण ने आज नई दिल्ली में वित्तीय स्थिरता एवं विकास परिषद (एफएसडीसी) की 30वीं बैठक की अध्यक्षता की",
+    "sourceDate": "2026-10-23",
+    "hi": {
+      "title": "FSDC की 30वीं बैठक: सीतारमण ने लावारिस बैंक जमा, शेयर और बीमा का पैसा जल्द लौटाने पर ज़ोर दिया",
+      "summary": "केंद्रीय वित्त मंत्री निर्मला सीतारमण ने 23 अक्टूबर 2026 को नई दिल्ली में वित्तीय स्थिरता एवं विकास परिषद (FSDC) की 30वीं बैठक की अध्यक्षता की। बैठक में लावारिस वित्तीय संपत्तियों को सही मालिकों तक पहुंचाने और वित्तीय क्षेत्र की साइबर सुरक्षा मजबूत करने पर चर्चा हुई।",
+      "meaning": "आम लोगों के लिए इस बैठक का सीधा असर यह है कि सरकार और नियामक लावारिस पड़े बैंक जमा, लाभांश, शेयर, डाकघर खाते, बीमा और पेंशन का पैसा असली मालिकों को लौटाने की प्रक्रिया तेज़ करने पर सहमत हुए हैं। अगर आपका या आपके परिवार का पैसा किसी पुराने खाते, शेयर या बीमा पॉलिसी में अटका है तो यह खबर आपके लिए उपयोगी है। इस बैठक में कोई नई योजना, तारीख या आवेदन की प्रक्रिया घोषित नहीं हुई है, इसलिए अभी किसी को कुछ करने की ज़रूरत नहीं है।",
+      "keyFacts": [
+        "बैठक 23 अक्टूबर 2026 को नई दिल्ली में हुई, यह FSDC की 30वीं बैठक थी।",
+        "बैठक में भू-राजनीतिक अनिश्चितता, AI के बढ़ते इस्तेमाल और वैश्विक बॉन्ड यील्ड में तेज़ उछाल जैसे जोखिमों पर चर्चा हुई।",
+        "वित्तीय क्षेत्र पर साइबर सुरक्षा रणनीति (FSCSS) पर ध्यान दिया गया, जिसे DEA, DFS और MeitY के समन्वय से तैयार किया गया है।",
+        "NRI और FPI के लिए KYC प्रक्रिया को सरल और डिजिटल बनाने पर चर्चा हुई।",
+        "MSME पर विशेष ध्यान के साथ अकाउंट एग्रीगेटर और ULI फ्रेमवर्क जैसे सुधारों पर बात हुई।",
+        "वित्त मंत्री ने नियामकों से लावारिस संपत्तियों की वापसी तेज़ करने और FSDC की बैठकें नियमित अंतराल पर करने का आग्रह किया।"
+      ],
+      "faq": [
+        {
+          "q": "FSDC की 30वीं बैठक कब और कहां हुई?",
+          "a": "23 अक्टूबर 2026 को नई दिल्ली में। बैठक की अध्यक्षता केंद्रीय वित्त एवं कॉरपोरेट कार्य मंत्री निर्मला सीतारमण ने की।"
+        },
+        {
+          "q": "लावारिस संपत्ति का पैसा वापस पाने के लिए क्या करना होगा?",
+          "a": "इस बैठक में आम लोगों के लिए कोई नई आवेदन प्रक्रिया या तारीख नहीं बताई गई। बैठक में सिर्फ नियामकों और मंत्रालयों से कहा गया कि वे पैसा लौटाने की प्रक्रिया तेज़ करें।"
+        },
+        {
+          "q": "\"आपका पैसा, आपका अधिकार\" अभियान क्या है?",
+          "a": "यह जिला स्तर पर चलने वाला अभियान है, जिसके तहत लावारिस वित्तीय संपत्तियां उनके सही मालिकों को लौटाई जाती हैं। बैठक में इस अभियान की सफलता की सराहना की गई।"
+        },
+        {
+          "q": "क्या इस बैठक में बैंक जमा या ब्याज दरों में कोई बदलाव हुआ?",
+          "a": "नहीं। विज्ञप्ति में ब्याज दरों या जमा से जुड़े किसी बदलाव का ज़िक्र नहीं है।"
+        },
+        {
+          "q": "FSDC क्या है?",
+          "a": "यह वित्तीय स्थिरता एवं विकास परिषद है, जिसकी अध्यक्षता केंद्रीय वित्त मंत्री करते हैं। इसमें RBI गवर्नर और वित्तीय क्षेत्र के नियामकों के प्रमुख सदस्य होते हैं।"
+        }
+      ],
+      "body": "## बैठक में क्या हुआ\n\nकेंद्रीय वित्त एवं कॉरपोरेट कार्य मंत्री निर्मला सीतारमण ने 23 अक्टूबर 2026 को नई दिल्ली में वित्तीय स्थिति एवं विकास परिषद (FSDC) की 30वीं बैठक की अध्यक्षता की। बैठक में परिषद के सदस्य भी मौजूद रहे। परिषद ने देश की वित्तीय स्थिरता से जुड़े मुद्दों और उनसे निपटने के लिए भारत की तैयारियों पर चर्चा की।\n\n## किन जोखिमों पर चर्चा हुई\n\nविज्ञप्ति के मुताबिक परिषद ने देश और दुनिया की वित्तीय स्थिति में उभरते रुझानों को देखा। इसमें भू-राजनीतिक अनिश्चितता, आर्टिफिशियल इंटेलीजेंस के बढ़ते इस्तेमाल और वैश्विक बॉन्ड यील्ड में तेज़ उछाल जैसी बातें शामिल हैं। परिषद ने कहा कि इन जोखिमों को कम करने के लिए पहले से सतर्क रहना और सुरक्षा के इंतज़ाम मजबूत करना ज़रूरी है। सदस्यों ने वित्तीय क्षेत्र के विकास के लिए नियामकों के आपसी तालमेल को और मजबूत करने का फैसला किया।\n\n## साइबर सुरक्षा पर ज़ोर\n\nपरिषद ने भारतीय वित्तीय क्षेत्र की साइबर सुरक्षा क्षमता की समीक्षा की। इसमें वित्तीय क्षेत्र पर साइबर सुरक्षा रणनीति (FSCSS) पर ध्यान दिया गया, जिसे नियामकों और साइबर सुरक्षा एजेंसियों वाले अंतर-मंत्रालयी समूह ने DEA, DFS और MeitY के सहयोग से तैयार किया है। बैठक में क्रिटिकल इन्फॉर्मेशन इंफ्रास्ट्रक्चर की सुरक्षा और क्षेत्रीय ग्रामीण बैंकों (RRB) की साइबर सुरक्षा तैयारियों को बेहतर बनाने पर भी बात हुई।\n\n## लावारिस पैसे पर सख्त रुख\n\nवित्त मंत्री ने नियामक निकायों और जुड़े हितधारकों से कहा कि लावारिस संपत्तियों को उनके सही मालिकों को जल्द से जल्द लौटाने की प्रक्रिया तेज़ की जाए। इन संपत्तियों में बैंक जमा, लाभांश, शेयर, डाकघर खाते, बीमा और पेंशन फंड आदि शामिल हैं। परिषद ने जिला स्तर पर चल रहे \"आपका पैसा, आपका अधिकार\" अभियान की सराहना की और मंत्रालयों तथा नियामकों को निर्देश दिया कि सही मालिकों को समय पर पैसा मिले, इसके लिए और कोशिशें हों।\n\n## और किन मुद्दों पर बात हुई\n\nपरिषद ने पिछले फैसलों और बजट घोषणाओं को लागू करने की रणनीति पर भी चर्चा की। इसमें घरेलू निवेश को बढ़ाना, गिफ्ट-IFSC सहित निवेश के रास्ते बेहतर करना, NRI और FPI के लिए KYC प्रक्रिया को सरल और डिजिटल बनाना शामिल है। इसके अलावा MSME पर विशेष ध्यान के साथ अकाउंट एग्रीगेटर और UPI जैसे डिजिटल फ्रेमवर्क को बढ़ावा देने, वित्तीय क्षेत्र में बिचौलियों की लागत घटाने और क्रेडिट गारंटी योजनाओं को व्यवस्थित करने पर भी बात हुई।\n\n## आगे क्या\n\nवित्त मंत्री ने बढ़ती वैश्विक अनिश्चितता को देखते हुए परिषद से कहा कि FSDC की बैठकें तय कार्यक्रम के मुताबिक नियमित अंतराल पर हों। बैठक में RBI गवर्नर संजय मल्होत्रा, वित्त मंत्रालय के कई सचिव, SEBI, IRDAI, IFSCA, PFRDA और IBBI के प्रमुख, CERT-In के महानिदेशक और FSDC सचिव मौजूद रहे।"
+    },
+    "en": {
+      "title": "FSDC 30th meeting: Sitharaman pushes for faster return of unclaimed bank deposits, shares and insurance money",
+      "summary": "Union Finance Minister Nirmala Sitharaman chaired the 30th meeting of the Financial Stability and Development Council (FSDC) in New Delhi on 23 October 2026. The meeting discussed returning unclaimed financial assets to their rightful owners and strengthening cyber security in the financial sector.",
+      "meaning": "For ordinary people, the main takeaway is that the government and regulators agreed to speed up returning unclaimed money lying in bank deposits, dividends, shares, post office accounts, insurance and pension funds to its rightful owners. If money belonging to you or your family is stuck in an old account, share or policy, this news is relevant to you. The meeting did not announce any new scheme, deadline or application process, so nobody needs to do anything right now.",
+      "keyFacts": [
+        "The meeting was held in New Delhi on 23 October 2026 and was the 30th FSDC meeting.",
+        "Risks discussed included geopolitical uncertainty, growing use of AI and a sharp rise in global bond yields.",
+        "The council reviewed the Financial Sector Cyber Security Strategy (FSCSS), prepared with coordination from DEA, DFS and MeitY.",
+        "Simplification and digitalisation of KYC for NRIs and FPIs was discussed.",
+        "Reforms to promote Digital Public Infrastructure with special focus on MSMEs, including Account Aggregator and UPI frameworks, were discussed.",
+        "The Finance Minister asked regulators to speed up return of unclaimed assets and urged more regular FSDC meetings."
+      ],
+      "faq": [
+        {
+          "q": "When and where was the 30th FSDC meeting held?",
+          "a": "It was held in New Delhi on 23 October 2026. The meeting was chaired by Union Finance and Corporate Affairs Minister Nirmala Sitharaman."
+        },
+        {
+          "q": "What should I do to get back my unclaimed money?",
+          "a": "The meeting did not announce any new application process or deadline for the public. It only asked regulators and ministries to speed up the return of money to rightful owners."
+        },
+        {
+          "q": "What is the \"Aapka Paisa, Aapka Adhikar\" campaign?",
+          "a": "It is a campaign run at the district level under which unclaimed financial assets are returned to their rightful owners. The council appreciated the progress made under it."
+        },
+        {
+          "q": "Did this meeting change bank deposit or interest rates?",
+          "a": "No. The release does not mention any change in interest rates or deposit rules."
+        },
+        {
+          "q": "What is FSDC?",
+          "a": "It is the Financial Stability and Development Council, chaired by the Union Finance Minister. It includes the RBI Governor and heads of financial sector regulators as members."
+        }
+      ],
+      "body": "## What happened at the meeting\n\nUnion Finance and Corporate Affairs Minister Nirmala Sitharaman chaired the 30th meeting of the Financial Stability and Development Council (FSDC) in New Delhi on 23 October 2026. Members of the council were present. The council discussed issues related to the country's overall financial stability and India's preparedness to deal with them.\n\n## Which risks were discussed\n\nAccording to the release, the council noted emerging trends in the domestic and global financial situation. These included geopolitical uncertainty, the growing use of Artificial Intelligence and a sharp rise in global bond yields. The council stressed the need for vigilance and for adopting safeguards in advance to reduce possible risks to financial stability. Members decided to strengthen coordination among regulators for the wider development of the financial sector.\n\n## Focus on cyber security\n\nThe council reviewed the cyber security capacity of India's financial sector. It focused on the Financial Sector Cyber Security Strategy (FSCSS), prepared by an inter-ministerial group of financial regulators and cyber security agencies with coordination from DEA, DFS and MeitY. The meeting also looked at India's preparedness to protect critical information infrastructure and at improving the cyber security readiness of Regional Rural Banks (RRBs).\n\n## Push on unclaimed money\n\nThe Finance Minister asked regulators and stakeholders to speed up the process of returning unclaimed assets to their rightful owners. These assets include bank deposits, dividends, shares, post office accounts, insurance and pension funds. The council appreciated the progress made under the \"Aapka Paisa, Aapka Adhikar\" campaign at the district level and directed ministries and regulators to make extra efforts so that money reaches the rightful owners on time.\n\n## Other issues discussed\n\nThe council discussed ways to implement earlier decisions and Budget announcements. These included strengthening the domestic investment ecosystem and improving the flow of resources for investment, including GIFT-IFSC; simplifying and digitalising KYC and digital onboarding for NRIs and FPIs; reforms to promote Digital Public Infrastructure with special focus on MSMEs, including Account Aggregator and UPI frameworks; and reducing intermediation costs, improving accountability of regulations and rationalising credit guarantee schemes in India.\n\n## What next\n\nCiting growing geopolitical tensions and global uncertainty, Sitharaman urged the council to hold FSDC meetings at regular intervals as per the schedule. The meeting was attended by RBI Governor Sanjay Malhotra, secretaries of the Finance Ministry, heads of SEBI, IRDAI, IFSCA, PFRDA and IBBI, the CERT-In Director General and the FSDC Secretary."
+    }
+  }
+}
