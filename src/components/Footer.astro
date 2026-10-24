@@ -29,7 +29,7 @@ const policies = lang === 'hi'
 <footer class="site-footer">
   <div class="page grid">
     <div class="brand">
-      <div class="logo">कस्बा</div>
+      <div class="logo">कस्बा<svg class="pin" viewBox="0 0 32 44" aria-hidden="true"><path d="M16 1C7.7 1 1 7.7 1 16c0 11.3 15 27 15 27s15-15.7 15-27C31 7.7 24.3 1 16 1Z" fill="currentColor"/><circle cx="16" cy="16" r="6" class="pin-dot"/></svg></div>
       <p>{L.siteNote}</p>
       <p><a class="mail" href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
       <div class="pick"><LocalStrip lang={lang} variant="footer" /></div>
@@ -66,7 +66,9 @@ const policies = lang === 'hi'
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
   .brand { grid-column: 1 / -1; }
   @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr 1fr 1fr; } .brand { grid-column: auto; } }
-  .logo { font-family: var(--display); font-size: 2.5rem; font-weight: 600; line-height: 1.1; }
+  .logo { font-family: var(--display); font-size: 2.5rem; font-weight: 600; line-height: 1.1; display: inline-flex; align-items: flex-start; }
+  .pin { width: 0.34em; height: 0.47em; margin: 0.05em 0 0 0.06em; color: #ff4d5e; }
+  .pin-dot { fill: var(--dark); }
   .mail { display: inline-flex; min-height: 44px; align-items: center; }
   p { margin: 0.5rem 0 0; font-size: 0.95rem; color: #c3c3c3; max-width: 28rem; }
   h2 { font-family: var(--display); font-weight: 400; font-size: 1.15rem; margin: 0 0 0.4rem; color: #fff; }

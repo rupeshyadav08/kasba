@@ -1,10 +1,10 @@
 // Kasba offline support: pages come from the network first and fall back to
 // the last copy read on this phone, or to the offline page.
-const CACHE = 'kasba-v1';
+const CACHE = 'kasba-v2';
 const OFFLINE = '/offline';
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll([OFFLINE, '/favicon.svg'])));
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll([OFFLINE, '/favicon.ico'])));
   self.skipWaiting();
 });
 
