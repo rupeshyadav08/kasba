@@ -1,7 +1,7 @@
 import { states } from './places';
 // Before launch the whole site is kept out of search results and shows a
 // "coming soon" note. Set to false on launch day (after the samples are deleted).
-export const prelaunch = true;
+export const prelaunch = false;
 
 // Kasba as a news organisation, for structured data on the home page and as
 // the publisher of every story. The policy links help search engines and AI

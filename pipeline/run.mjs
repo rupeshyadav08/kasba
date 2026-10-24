@@ -29,7 +29,7 @@ const summary = { telegramUpdates: 0, published: [], autoPublished: [], removed:
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
-const site = 'https://kasba.pages.dev';
+const site = 'https://kasba.co.in';
 const devanagariShare = (t) => (t.match(/[\u0900-\u097F]/g)?.length ?? 0) / Math.max(1, (t.match(/\p{L}/gu)?.length ?? 0));
 
 // Links the editor sends to the bot are drafted in this run, if they are official.
