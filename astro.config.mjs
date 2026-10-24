@@ -23,7 +23,8 @@ const keep = (page) => {
 export default defineConfig({
   site: 'https://kasba.co.in',
   trailingSlash: 'never',
-  build: { format: 'file' },
+  // Inline CSS so the first paint does not wait for a stylesheet request.
+  build: { format: 'file', inlineStylesheets: 'always' },
   // i18n pairs each Hindi page with its /en twin in the sitemap (hreflang), which
   // is how search engines show each reader the right language.
   integrations: [sitemap({ filter: keep, i18n: { defaultLocale: 'hi', locales: { hi: 'hi-IN', en: 'en-IN' } } })],
