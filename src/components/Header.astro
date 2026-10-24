@@ -1,59 +1,105 @@
 ---
+import { getCollection } from 'astro:content';
 import { state, statePath } from '../lib/places';
-import { categories, sectionOrder, sectionPath, secColor, t, type Lang } from '../lib/i18n';
+import { categories, sectionOrder, sectionPath, storyPath, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang; altPath?: string; current?: string }
 const { lang, altPath, current } = Astro.props;
+const L = t[lang];
+const p = lang === 'hi' ? '' : '/en';
 const home = lang === 'hi' ? '/' : '/en';
 const other = altPath ?? (lang === 'hi' ? '/en' : '/');
-const today = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-IN', {
-  weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata',
-}).format(new Date());
+// The black ticker under the header carries the latest few headlines.
+const latest = (await getCollection('stories', ({ data }) => data.lang === lang))
+  .sort((a, b) => b.data.published.getTime() - a.data.published.getTime())
+  .slice(0, 6);
 ---
 <header class="masthead">
-  <div class="page top">
-    <div class="meta">
-      <span class="date">{today}</span>
-      <a href={other} class="lang" hreflang={lang === 'hi' ? 'en' : 'hi'}>{t[lang].switchLang}</a>
+  <div class="bar">
+    <div class="left">
+      <a class="listen" href={`${p}/briefing`}>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2Zm16 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z"/></svg>
+        <span>{L.briefing}</span>
+        <span class="play" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4v16l13-8z"/></svg></span>
+      </a>
     </div>
-    <a href={home} class="logo serif" aria-label="Kasba home">कस्बा<span class="dot" aria-hidden="true"></span></a>
-    <p class="tagline">{t[lang].tagline}</p>
+    <a href={home} class="logo" aria-label={lang === 'hi' ? 'कस्बा होम' : 'Kasba home'}>
+      <span class="logo-main">कस्बा</span><span class="logo-sub">{lang === 'hi' ? 'KASBA' : 'KASBA'}</span>
+    </a>
+    <div class="right">
+      <a href={statePath(lang)} class="pill district">{L.chooseDistrict} <span aria-hidden="true">↗</span></a>
+      <a href={other} class="lang" hreflang={lang === 'hi' ? 'en' : 'hi'}>{L.switchLang}</a>
+      <details class="menu">
+        <summary aria-label={L.sections}><span></span><span></span><span></span></summary>
+        <nav class="drawer" aria-label={L.sections}>
+          <ul>
+            {sectionOrder.map((c) => <li><a href={sectionPath(lang, c)}>{categories[c][lang]}</a></li>)}
+            <li><a href={statePath(lang)}>{state[lang]}</a></li>
+            <li><a href={`${p}/deadlines`}>{L.deadlines}</a></li>
+            <li><a href={`${p}/shabdkosh`}>{L.glossary}</a></li>
+            <li><a href={`${p}/about`}>{lang === 'hi' ? 'हमारे बारे में' : 'About'}</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
   </div>
-  <nav class="pillars" aria-label={t[lang].sections}>
-    <ul class="page">
+  <nav class="sections" aria-label={L.sections}>
+    <ul>
       {sectionOrder.map((c) => (
-        <li style={secColor(c)}>
-          <a href={sectionPath(lang, c)} aria-current={current === c ? 'page' : undefined}>{categories[c][lang]}</a>
-        </li>
+        <li><a href={sectionPath(lang, c)} aria-current={current === c ? 'page' : undefined}>{categories[c][lang]}</a></li>
       ))}
-      <li class="state"><a href={statePath(lang)} aria-current={current === 'up' ? 'page' : undefined}>{state[lang]}</a></li>
+      <li><a href={statePath(lang)} aria-current={current === 'up' ? 'page' : undefined}>{state[lang]}</a></li>
     </ul>
   </nav>
+  {latest.length > 0 && (
+    <div class="ticker">
+      <span class="start">{lang === 'hi' ? 'आज की शुरुआत यहाँ से' : 'Start the day here'}</span>
+      <ul>{latest.map((s) => <li><a href={storyPath(lang, s.data.storyId)}>{s.data.title}</a></li>)}</ul>
+      <a class="arrow" href={latest[0] ? storyPath(lang, latest[0].data.storyId) : home} aria-label={L.latest}>→</a>
+    </div>
+  )}
 </header>
 <style>
-  .masthead { border-bottom: 1px solid var(--line); }
-  .top { display: grid; grid-template-columns: 1fr; padding-top: 0.5rem; padding-bottom: 0.5rem; }
-  .meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8125rem; color: var(--muted); }
-  .lang { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: flex-end; font-weight: 600; color: var(--text); }
-  .logo { font-weight: 700; font-size: 2.75rem; line-height: 1.1; display: inline-flex; align-items: baseline; gap: 0.35rem; justify-self: start; }
-  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
-  .tagline { margin: 0.1rem 0 0; color: var(--muted); font-size: 0.9375rem; }
-  @media (min-width: 740px) {
-    .top { grid-template-columns: 1fr auto; grid-template-areas: 'tag logo' 'meta logo'; align-items: end; column-gap: 1rem; padding-top: 1rem; padding-bottom: 0.75rem; }
-    .logo { grid-area: logo; font-size: 4rem; justify-self: end; }
-    .meta { grid-area: meta; justify-content: flex-start; gap: 1.25rem; }
-    .tagline { grid-area: tag; font-size: 1rem; }
-  }
-  .pillars { border-top: 1px solid var(--line); position: relative; }
-  /* On phones the section bar scrolls sideways; a soft fade on the right shows there is more. */
-  .pillars::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 2rem; background: linear-gradient(to right, transparent, var(--bg)); pointer-events: none; }
-  @media (min-width: 1000px) { .pillars::after { display: none; } }
-  .pillars ul { list-style: none; margin: 0 auto; display: flex; overflow-x: auto; scrollbar-width: none; }
-  .pillars li { flex: 0 0 auto; border-left: 1px solid var(--line); }
-  .pillars li:first-child { border-left: 0; }
-  .pillars a { display: flex; align-items: center; min-height: 48px; padding: 0 0.85rem; font-weight: 600; font-size: 0.975rem; white-space: nowrap; border-bottom: 4px solid transparent; }
-  .pillars .state { --sec: var(--local-ink); }
-  .pillars a:hover, .pillars a[aria-current='page'] { border-bottom-color: var(--sec); color: var(--sec); }
-  @media (min-width: 740px) { .pillars a { font-size: 1.05rem; padding: 0 1rem; } }
-  /* On wide screens the sections share the full width evenly, labels centred. */
-  @media (min-width: 1000px) { .pillars li { flex: 1 1 0; } .pillars a { justify-content: center; } }
+  .bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.75rem; padding: 0.9rem 1rem; }
+  @media (min-width: 740px) { .bar { padding: 1.25rem 1.6rem; } }
+  .left, .right { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
+  .right { justify-content: flex-end; }
+  .listen { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 0.35rem 0 0.9rem; border-radius: 999px; background: var(--dark); color: #fff; font-size: 0.95rem; white-space: nowrap; }
+  .listen > span:not(.play) { display: none; }
+  @media (min-width: 900px) { .listen > span:not(.play) { display: inline; } }
+  .play { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; color: #111; }
+  .listen:hover .play { transform: scale(1.06); }
+  .logo { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+  .logo-main { font-family: var(--display); font-weight: 600; font-size: 2.1rem; letter-spacing: 0; }
+  .logo-sub { font-family: var(--display); font-size: 0.7rem; letter-spacing: 0.45em; color: var(--muted); margin-top: 0.15rem; padding-left: 0.45em; }
+  @media (min-width: 740px) { .logo-main { font-size: 2.75rem; } .logo-sub { font-size: 0.78rem; } }
+  .district { display: none; font-size: 0.95rem; white-space: nowrap; }
+  @media (min-width: 1000px) { .district { display: inline-flex; } }
+  .lang { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; font-family: var(--sans); font-weight: 600; }
+  .menu { position: relative; }
+  .menu summary { list-style: none; cursor: pointer; width: 44px; height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 0 8px; }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu summary span { display: block; height: 1.5px; background: var(--text); border-radius: 2px; }
+  .drawer { position: absolute; right: 0; top: 52px; z-index: 20; background: var(--bg); border-radius: var(--r-tile); box-shadow: 0 12px 40px rgb(0 0 0 / 0.14); padding: 0.5rem; min-width: 14rem; }
+  .drawer ul { list-style: none; margin: 0; padding: 0; }
+  .drawer a { display: flex; align-items: center; min-height: 44px; padding: 0 0.9rem; border-radius: 10px; font-size: 1.05rem; }
+  .drawer a:hover { background: var(--card); }
+
+  .sections { position: relative; }
+  .sections::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 2rem; background: linear-gradient(to right, transparent, var(--bg)); pointer-events: none; }
+  .sections ul { list-style: none; margin: 0; padding: 0 0.6rem; display: flex; overflow-x: auto; scrollbar-width: none; }
+  @media (min-width: 1000px) { .sections ul { justify-content: center; } .sections::after { display: none; } }
+  .sections a { display: flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.85rem; font-size: 1.05rem; white-space: nowrap; color: var(--text-soft); }
+  .sections a::after { content: '⌄'; font-size: 0.8em; color: var(--muted); transform: translateY(-0.15em); }
+  .sections a:hover, .sections a[aria-current='page'] { color: var(--text); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+
+  .ticker { display: flex; align-items: center; gap: 1rem; background: var(--dark); color: #fff; padding: 0 1rem; min-height: 48px; margin-top: 0.4rem; }
+  @media (min-width: 740px) { .ticker { padding: 0 1.6rem; min-height: 54px; } }
+  .start { font-style: italic; white-space: nowrap; flex: 0 0 auto; color: #fff; font-size: 0.95rem; }
+  .ticker ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; mask-image: linear-gradient(to right, #000 85%, transparent); }
+  .ticker li { white-space: nowrap; color: #d9d9d9; }
+  .ticker li + li::before { content: '·'; padding: 0 0.75rem; color: #8a8a8a; }
+  .ticker li a { display: inline-flex; align-items: center; min-height: 44px; }
+  .ticker li a:hover { color: #fff; text-decoration: underline; }
+  .arrow { flex: 0 0 auto; font-size: 1.25rem; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: flex-end; }
+  @media (max-width: 739px) { .start { display: none; } }
 </style>

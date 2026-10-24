@@ -37,15 +37,16 @@ const base = lang === 'hi' ? '/district/' : '/en/district/';
   })();
 </script>
 <style>
-  .local { background: var(--local-bg); color: var(--local-text); border-radius: 4px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
-  .pick { display: flex; flex-direction: column; gap: 0.4rem; }
-  label { font-size: 0.875rem; color: var(--local-soft); }
+  .local { background: var(--dark-2); color: var(--local-text); border-radius: var(--r-card); padding: 1.4rem 1.5rem; display: flex; flex-direction: column; gap: 0.35rem; background-image: radial-gradient(120% 90% at 100% 0%, #444 0%, transparent 60%); }
+  .pick { display: flex; flex-direction: column; gap: 0.6rem; }
+  label { font-family: var(--display); font-size: 1.45rem; line-height: 1.2; color: #fff; }
   .row { display: flex; gap: 0.5rem; }
-  select { flex: 1; min-width: 0; min-height: 44px; font: inherit; border: 0; border-radius: 10px; padding: 0 0.75rem; background: #fff; color: #22223a; }
-  button { min-height: 44px; min-width: 44px; padding: 0 1rem; border: 1px solid var(--local-soft); border-radius: 10px; background: transparent; color: var(--local-text); font: inherit; font-weight: 600; cursor: pointer; }
-  .mine, .all { display: inline-flex; align-items: center; min-height: 44px; color: var(--local-text); font-weight: 600; }
+  select { flex: 1; min-width: 0; min-height: 44px; font: inherit; border: 0; border-radius: 999px; padding: 0 1rem; background: #fff; color: #111; }
+  button { min-height: 44px; min-width: 44px; padding: 0 1.1rem; border: 1px solid #fff; border-radius: 999px; background: transparent; color: #fff; font: inherit; cursor: pointer; }
+  button:hover { background: #fff; color: #111; }
+  .mine, .all { display: inline-flex; align-items: center; min-height: 44px; color: #fff; }
   .mine { font-size: 1.1rem; }
   .mine[hidden] { display: none; }
-  .all { font-size: 0.9rem; color: var(--local-soft); }
+  .all { font-size: 0.95rem; color: var(--local-soft); }
   .mine:hover, .all:hover { text-decoration: underline; }
 </style>

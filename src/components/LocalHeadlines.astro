@@ -49,14 +49,14 @@ const L = t[lang];
   })();
 </script>
 <style>
-  .papers { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; }
+  .papers { background: var(--card); border-radius: var(--r-card); padding: 1.4rem 1.5rem; }
   .papers[hidden] { display: none; }
-  h2 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--local-ink); }
-  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.25rem; }
-  li { display: flex; flex-direction: column; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
-  li:last-child { border-bottom: 0; }
-  a { font-weight: 600; line-height: 1.5; min-height: 44px; display: inline-flex; align-items: center; }
+  h2 { margin: 0 0 0.5rem; font-family: var(--display); font-weight: 400; font-size: 1.6rem; color: var(--text); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 2rem; }
+  @media (min-width: 900px) { ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  li { display: flex; flex-direction: column; padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
+  a { line-height: 1.45; min-height: 44px; display: inline-flex; align-items: center; font-size: 1.05rem; }
   a:hover { text-decoration: underline; }
   span { font-size: 0.85rem; color: var(--muted); }
-  .note { margin: 0.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
+  .note { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
 </style>
