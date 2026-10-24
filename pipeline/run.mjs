@@ -37,12 +37,44 @@ const official = /(^|\.)(gov\.in|nic\.in|rbi\.org\.in|nta\.ac\.in|upmsp\.edu\.in
 const manual = [];
 
 // 1. Editor's decisions.
+// Taps arrive two ways: saved in pipeline/inbox/ by the site's webhook (functions/api/telegram.js),
+// or, until the webhook is on, polled from Telegram. Polling lost every tap from 22 to 24 Oct to
+// something else reading the bot, which is why the webhook exists.
+const inboxDir = here('inbox/');
+async function readUpdates() {
+  const inbox = existsSync(inboxDir) ? readdirSync(inboxDir).filter((f) => f.endsWith('.json')) : [];
+  const saved = inbox.map((f) => JSON.parse(readFileSync(inboxDir + f, 'utf8')));
+  let polled = [];
+  try {
+    polled = await tg.updates(state.telegramOffset);
+  } catch (e) {
+    // 409 means the webhook is on, so there is nothing to poll.
+    if (!/conflict/i.test(e.message)) throw e;
+  }
+  for (const u of polled) state.telegramOffset = Math.max(state.telegramOffset, u.update_id + 1);
+  summary.telegramUpdates = saved.length + polled.length;
+  const seen = new Set();
+  const list = [...saved, ...polled].sort((a, b) => a.update_id - b.update_id).filter((u) => !seen.has(u.update_id) && seen.add(u.update_id));
+  return { list, done: () => inbox.forEach((f) => rmSync(inboxDir + f)) };
+}
+
+// Turns the webhook on once the site says it can take updates; until then polling carries on.
+async function ensureWebhook() {
+  try {
+    const info = await tg.webhookInfo();
+    if (info.url) return;
+    const ready = await fetch(`${site}/api/telegram`).then((r) => r.json()).catch(() => ({}));
+    if (!ready.ready) return;
+    await tg.setWebhook(`${site}/api/telegram`);
+    summary.webhook = 'turned on';
+  } catch (e) {
+    summary.errors.push(`webhook: ${e.message}`);
+  }
+}
+
 async function applyDecisions() {
-  const list = await tg.updates(state.telegramOffset);
-  // Logged so a run shows whether the editor's taps reached it (they did not for two days in October).
-  summary.telegramUpdates = list.length;
+  const { list, done } = await readUpdates();
   for (const u of list) {
-    state.telegramOffset = u.update_id + 1;
     const msg = u.message;
     if (msg && String(msg.chat?.id) === tg.editorChat()) {
       for (const url of String(msg.text ?? '').match(/https?:\/\/\S+/g) ?? []) {
@@ -80,6 +112,7 @@ async function applyDecisions() {
     }
     rmSync(draftPath(id));
   }
+  done();
 }
 
 // Old drafts nobody acted on are dropped so the queue stays short.
@@ -222,6 +255,7 @@ function pruneSeen() {
 
 try {
   if (!dryRun && !india) await applyDecisions();
+  if (!dryRun && !india) await ensureWebhook();
   if (!india) expireDrafts();
   await draftNew();
   pruneSeen();

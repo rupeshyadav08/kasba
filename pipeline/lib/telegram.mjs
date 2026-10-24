@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 // Minimal Telegram Bot API client. Only the editor's chat may approve anything.
 const token = () => process.env.TELEGRAM_BOT_TOKEN;
 export const editorChat = () => String(process.env.TELEGRAM_CHAT_ID ?? '').trim();
@@ -16,6 +17,10 @@ export const send = (text, buttons) => call('sendMessage', {
   ...(buttons ? { reply_markup: { inline_keyboard: [buttons] } } : {}),
 });
 export const updates = (offset) => call('getUpdates', { offset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
+export const webhookInfo = () => call('getWebhookInfo', {});
+// Same derivation as functions/api/telegram.js, so the site can check that a request came from Telegram.
+export const webhookSecret = () => createHash('sha256').update(`kasba-webhook:${token()}`).digest('hex').slice(0, 48);
+export const setWebhook = (url) => call('setWebhook', { url, secret_token: webhookSecret(), allowed_updates: ['callback_query', 'message'] });
 // Telegram only accepts an answer to a tap within seconds, and the pipeline reads taps up to an hour
 // later, so the answer is best-effort; the follow-up message is what the editor sees.
 export const answer = (id, text) => call('answerCallbackQuery', { callback_query_id: id, text }).catch(() => {});

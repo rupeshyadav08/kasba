@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
-          git add pipeline/state.json pipeline/drafts src/content/stories
+          git add -A pipeline/state.json pipeline/drafts pipeline/inbox src/content/stories
           git diff --cached --quiet && exit 0
           if [ "${{ steps.pipeline.outputs.published }}" != "" ] && [ "${{ steps.pipeline.outputs.published }}" != "0" ]; then
             git commit -m "Publish ${{ steps.pipeline.outputs.published }} approved stories"
