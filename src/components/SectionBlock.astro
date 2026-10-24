@@ -13,7 +13,7 @@ const [first, ...others] = stories.slice(0, 5);
     <a class="more" href={sectionPath(lang, section)}>{t[lang].more} ↗</a>
   </header>
   {first ? (
-    <div class="grid">
+    <div class={`grid k${others.length}`}>
       <div class="main"><StoryCard story={first} size="tall" showKicker={false} /></div>
       {others.map((s) => <StoryCard story={s} size="compact" showKicker={false} />)}
     </div>
@@ -32,11 +32,14 @@ const [first, ...others] = stories.slice(0, 5);
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .main { grid-row: span 2; }
   }
-  /* A section with one story lets it use the extra width. */
+  /* Fill the row whatever the story count: one story takes the width, two share it,
+     and an odd last card stretches across the empty slot. */
   .main:only-child { grid-column: 1 / -1; }
+  .k3 > :global(:last-child) { grid-column: span 2; }
   @media (min-width: 1150px) {
     .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .main:only-child { grid-column: span 2; }
+    .grid.k1 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .k1 > :global(:last-child) { grid-row: span 2; }
   }
   .main { display: flex; flex-direction: column; }
   .main > :global(*) { flex: 1; }

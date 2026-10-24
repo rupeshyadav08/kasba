@@ -130,6 +130,8 @@ const jsonLd = [
 
   .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); }
   .stat { display: flex; flex-direction: column; gap: 0.25rem; padding: 1rem 1.1rem 1.1rem; border-radius: 20px; min-height: 11rem; }
+  /* An odd last card fills the row instead of leaving a hole. */
+  .stat:last-of-type:nth-of-type(odd) { grid-column: span 2; min-height: 8rem; }
   .stat.up { background: var(--up-tint); }
   .stat.down { background: var(--down-tint); }
   .s-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: auto; }
