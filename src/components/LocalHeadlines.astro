@@ -1,0 +1,62 @@
+---
+// Latest headlines for one district from local papers, loaded in the browser from
+// /api/headlines/<district> (functions/api/headlines). Kasba shows the headline and links
+// to the paper; the box stays hidden if there are none or the page is opened offline.
+// Without a district it uses the one the reader picked on this phone (see LocalStrip).
+import { t, type Lang } from '../lib/i18n';
+interface Props { lang: Lang; district?: string; limit?: number; heading?: boolean }
+const { lang, district = '', limit = 8, heading = true } = Astro.props;
+const L = t[lang];
+---
+<section class="papers" data-district={district} data-limit={limit} data-lang={lang} hidden aria-label={L.localPapers}>
+  {heading && <h2>{L.localPapers}</h2>}
+  <ul></ul>
+  <p class="note">{L.localPapersNote}</p>
+</section>
+<script is:inline>
+  (() => {
+    const box = document.currentScript.previousElementSibling;
+    const show = async (slug) => {
+      if (!slug) return;
+      try {
+        const res = await fetch(`/api/headlines/${encodeURIComponent(slug)}`);
+        if (!res.ok) return;
+        const { items } = await res.json();
+        if (!items?.length) return;
+        const lang = box.dataset.lang === 'hi' ? 'hi-IN' : 'en-IN';
+        const rtf = new Intl.RelativeTimeFormat(lang, { numeric: 'auto' });
+        const ago = (iso) => {
+          const h = Math.round((Date.now() - Date.parse(iso)) / 3600e3);
+          return h < 24 ? rtf.format(-Math.max(h, 0), 'hour') : rtf.format(-Math.round(h / 24), 'day');
+        };
+        const ul = box.querySelector('ul');
+        for (const h of items.slice(0, Number(box.dataset.limit))) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = h.url; a.textContent = h.title; a.rel = 'nofollow noopener'; a.target = '_blank';
+          const meta = document.createElement('span');
+          meta.textContent = `${h.source} · ${ago(h.date)}`;
+          li.append(a, meta);
+          ul.append(li);
+        }
+        box.hidden = false;
+      } catch {}
+    };
+    // On the home page there is no district: use the one the reader picked in the district box.
+    let slug = box.dataset.district;
+    if (!slug) try { slug = localStorage.getItem('kasba-district'); } catch {}
+    show(slug);
+  })();
+</script>
+<style>
+  .papers { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; }
+  .papers[hidden] { display: none; }
+  h2 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--local-ink); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.25rem; }
+  li { display: flex; flex-direction: column; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  li:last-child { border-bottom: 0; }
+  a { font-weight: 600; line-height: 1.5; min-height: 44px; display: inline-flex; align-items: center; }
+  a:hover { text-decoration: underline; }
+  span { font-size: 0.85rem; color: var(--muted); }
+  .note { margin: 0.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
+</style>

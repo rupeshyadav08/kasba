@@ -4,7 +4,7 @@
     "deepseek": "deepseek-chat",
     "anthropic": "claude-haiku-5-5"
   },
-  "maxDraftsPerRun": 4,
+  "maxDraftsPerRun": 6,
   "maxItemsCheckedPerRun": 20,
   "draftExpiryDays": 3,
   "maxNoticeAgeDays": 21,

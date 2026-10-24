@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
+import LocalHeadlines from './LocalHeadlines.astro';
 import { t, type Lang } from '../lib/i18n';
 import { districtBySlug, districtPath, state, statePath } from '../lib/places';
 interface Props { lang: Lang; slug: string }
@@ -33,6 +34,7 @@ const jsonLd = [{
     {own.length > 0 ? (
       <div class="grid">{own.map((s) => <StoryCard story={s} size="standard" />)}</div>
     ) : <p class="muted">{L.districtSoon}</p>}
+    <LocalHeadlines lang={lang} district={slug} />
     {stateWide.length > 0 && (
       <section aria-labelledby="sw-h"><h2 id="sw-h">{L.stateNews}</h2><div class="grid">{stateWide.map((s) => <StoryCard story={s} size="compact" />)}</div></section>
     )}

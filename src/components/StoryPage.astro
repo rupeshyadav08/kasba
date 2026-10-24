@@ -129,7 +129,7 @@ const jsonLd = [
 
     <section class="source" aria-label={L.source}>
       <p><strong>{L.source}:</strong> {d.source.name}, "{d.source.title}", {dateFmt(d.lang, d.source.date)}. <a href={d.source.url} rel="noopener">{L.viewSource}</a></p>
-      <p>{L.checked}: {dateFmt(d.lang, d.updated ?? d.published)}. {L.aiNote} <a href="mailto:admin@kasba.co.in">{L.reportError}</a></p>
+      <p>{d.autoPublished ? L.aiNoteAuto : <>{L.checked}: {dateFmt(d.lang, d.updated ?? d.published)}. {L.aiNote}</>} <a href="mailto:admin@kasba.co.in">{L.reportError}</a></p>
     </section>
   </main>
   {related.length > 0 && (

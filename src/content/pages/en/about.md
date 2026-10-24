@@ -3,7 +3,7 @@ lang: en
 key: about
 title: "About Kasba"
 description: "Kasba explains official updates in simple language for people in India's small towns and districts."
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 **Kasba** (kasba.co.in) is a Hindi-first news site for people in India's small towns, kasbas and districts. We take official updates from the government, the Reserve Bank, the weather department, exam boards and scheme portals, explain them in simple language, and tell you **what this means for you**.
@@ -17,7 +17,7 @@ updated: 2026-10-21
 
 ## How we work
 
-Stories are drafted with AI from official sources and published only after an editor checks them. See [Sources and AI use](/en/sources-ai) and our [Editorial policy](/en/editorial-policy).
+Stories are drafted with AI from official sources. An editor approves each one before publishing, except routine notices, which are published automatically and reviewed straight after. See [Sources and AI use](/en/sources-ai) and our [Editorial policy](/en/editorial-policy).
 
 ## Team
 

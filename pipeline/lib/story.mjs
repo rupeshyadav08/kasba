@@ -1,5 +1,5 @@
 // Checks a model draft against Kasba's story schema and writes the Markdown files.
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { categories } from './prompt.mjs';
 
 const root = new URL('../../', import.meta.url);
@@ -21,8 +21,10 @@ export function check(d) {
   for (const lang of ['hi', 'en']) {
     const s = d[lang];
     if (!s) { p.push(`missing ${lang}`); continue; }
-    if (!s.title || s.title.length > 110) p.push(`${lang} title length`);
-    if (!s.summary || s.summary.length > 300) p.push(`${lang} summary length`);
+    // The prompt asks for 100 and 280 characters; the limits leave room so a slightly long draft
+    // still reaches the editor instead of being dropped.
+    if (!s.title || s.title.length > 130) p.push(`${lang} title length`);
+    if (!s.summary || s.summary.length > 450) p.push(`${lang} summary length`);
     if (!s.meaning) p.push(`${lang} meaning`);
     if (!Array.isArray(s.keyFacts) || s.keyFacts.length < 1) p.push(`${lang} keyFacts`);
     if (!Array.isArray(s.faq) || s.faq.length < 2 || s.faq.length > 5 || s.faq.some((f) => !f.q || !f.a)) p.push(`${lang} faq`);
@@ -45,7 +47,7 @@ export const istNow = (d = new Date()) => new Date(d.getTime() + 5.5 * 3600e3).t
 
 const q = (s) => JSON.stringify(String(s)); // a JSON string is a valid YAML double-quoted scalar
 
-export function toMarkdown(draft, lang, { storyId, author, published }) {
+export function toMarkdown(draft, lang, { storyId, author, published, auto = false }) {
   const s = draft.story[lang];
   const lines = [
     '---',
@@ -67,6 +69,7 @@ export function toMarkdown(draft, lang, { storyId, author, published }) {
     ...(draft.story.districts?.length ? ['districts:', ...draft.story.districts.map((x) => `  - ${x}`)] : []),
     ...(draft.story.deadline ? ['deadline:', `  date: ${draft.story.deadline.date}`, `  label: ${q(draft.story.deadline[`label_${lang}`])}`] : []),
     `author: ${q(author[lang])}`,
+    ...(auto ? ['autoPublished: true'] : []),
     `published: ${published}`,
     '---',
     '',
@@ -76,11 +79,22 @@ export function toMarkdown(draft, lang, { storyId, author, published }) {
   return lines.join('\n');
 }
 
-export function publish(draft, author) {
+export function publish(draft, author, { auto = false } = {}) {
   const storyId = uniqueId(slugify(draft.story.en.title));
   const published = istNow();
   for (const lang of ['hi', 'en']) {
-    writeFileSync(new URL(`src/content/stories/${lang}/${storyId}.md`, root), toMarkdown(draft, lang, { storyId, author, published }));
+    writeFileSync(new URL(`src/content/stories/${lang}/${storyId}.md`, root), toMarkdown(draft, lang, { storyId, author, published, auto }));
   }
   return storyId;
+}
+
+// Takes a published story off the site (both languages). Returns false if it was already gone.
+export function unpublish(storyId) {
+  if (!/^[a-z0-9-]+$/.test(storyId)) return false;
+  let gone = false;
+  for (const lang of ['hi', 'en']) {
+    const f = new URL(`src/content/stories/${lang}/${storyId}.md`, root);
+    if (existsSync(f)) { rmSync(f); gone = true; }
+  }
+  return gone;
 }

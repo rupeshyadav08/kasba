@@ -3,7 +3,7 @@ lang: en
 key: editorial-policy
 title: "Editorial policy"
 description: "Which sources Kasba uses and the rules every story follows."
-updated: 2026-10-21
+updated: 2026-10-22
 ---
 
 ## Our sources
@@ -23,7 +23,7 @@ A headline, a two-line summary, "what this means for you", key facts, 2 to 3 que
 
 ## Review
 
-An editor reads and approves every story before it is published. If a source is unclear, the story is held until the editor has checked it. See also our [Code of ethics](/en/code-of-ethics) and [Corrections policy](/en/corrections).
+An editor approves every story before it is published, except routine notices from a small list of official sources, which are published automatically and reviewed by the editor straight after (see [Sources and AI use](/en/sources-ai)). If a source is unclear, the story is held until the editor has checked it. See also our [Code of ethics](/en/code-of-ethics) and [Corrections policy](/en/corrections).
 
 ## Court judgments and contested matters
 

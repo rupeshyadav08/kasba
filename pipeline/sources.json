@@ -4,28 +4,32 @@
     "name": "PIB",
     "type": "rss",
     "lang": "hi",
-    "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3"
+    "url": "https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3",
+    "auto": true
   },
   {
     "id": "rbi-press",
     "name": "RBI",
     "type": "rss",
     "lang": "en",
-    "url": "https://rbi.org.in/pressreleases_rss.xml"
+    "url": "https://rbi.org.in/pressreleases_rss.xml",
+    "auto": true
   },
   {
     "id": "rbi-notifications",
     "name": "RBI",
     "type": "rss",
     "lang": "en",
-    "url": "https://rbi.org.in/notifications_rss.xml"
+    "url": "https://rbi.org.in/notifications_rss.xml",
+    "auto": true
   },
   {
     "id": "sebi",
     "name": "SEBI",
     "type": "rss",
     "lang": "en",
-    "url": "https://www.sebi.gov.in/sebirss.xml"
+    "url": "https://www.sebi.gov.in/sebirss.xml",
+    "auto": true
   },
   {
     "id": "cbse",
@@ -33,7 +37,8 @@
     "type": "page",
     "lang": "en",
     "url": "https://www.cbse.gov.in/cbsenew/cbse.html",
-    "linkPattern": "cbse\\.gov\\.in/cbsenew/documents/.+\\.pdf$"
+    "linkPattern": "cbse\\.gov\\.in/cbsenew/documents/.+\\.pdf$",
+    "auto": true
   },
   {
     "id": "nta",
@@ -41,7 +46,8 @@
     "type": "page",
     "lang": "en",
     "url": "https://nta.ac.in/NoticeBoardArchive",
-    "linkPattern": "nta\\.ac\\.in/.*(\\.pdf$|Notice/)"
+    "linkPattern": "nta\\.ac\\.in/.*(\\.pdf$|Notice/)",
+    "auto": true
   },
   {
     "id": "up-board",
@@ -49,7 +55,8 @@
     "type": "page",
     "lang": "hi",
     "url": "https://upmsp.edu.in/",
-    "linkPattern": "upmsp\\.edu\\.in/Downloads/.+\\.pdf$"
+    "linkPattern": "upmsp\\.edu\\.in/Downloads/.+\\.pdf$",
+    "auto": true
   },
   {
     "id": "up-info",

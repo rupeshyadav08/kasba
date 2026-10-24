@@ -2,7 +2,10 @@ name: News pipeline
 
 on:
   schedule:
-    - cron: '30 0-16 * * *' # every hour, 6:00 to 22:00 India time
+    # GitHub delays or drops scheduled runs at busy minutes like :00 and :30 (on 23-24 Oct only one
+    # run in 4-5 hours started), so this asks at a quieter minute. Hourly keeps the private repo
+    # inside GitHub's 2,000 free Actions minutes a month.
+    - cron: '17 0-16 * * *' # every hour, 6:00 to 22:00 India time
   workflow_dispatch:
     inputs:
       dry_run:

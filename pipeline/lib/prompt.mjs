@@ -36,6 +36,7 @@ Otherwise return this JSON object and nothing else:
 {
   "relevant": true,
   "storyType": "record" for a court judgment or order or another official record of a dispute, otherwise "notice",
+  "sensitive": true if the story touches crime, accidents or deaths, courts or police, elections, politics or a party or politician, religion or caste, protests or unrest, a disease outbreak or health scare, an allegation against anyone, or anything else an editor should check before it goes live; false only for routine notices such as scheme rules, exam dates, results, deadlines, rates and weather. When unsure, true,
   "category": one of ${JSON.stringify(categories)},
   "state": "up" if the notice is specifically about Uttar Pradesh, else null,
   "districts": district slugs from this list only if the notice names those UP districts, else []: ${districtSlugs.join(', ')},
