@@ -12,3 +12,12 @@ console.log('stored offset', state.telegramOffset);
 const all = await call('getUpdates', { offset: state.telegramOffset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
 console.log('getUpdates ok', all.ok, all.description ?? '', 'count', all.result?.length);
 for (const u of all.result ?? []) console.log(u.update_id, u.callback_query ? `tap ${u.callback_query.data} from=${u.callback_query.from?.id === Number(process.env.TELEGRAM_CHAT_ID) ? 'editor' : 'OTHER ' + u.callback_query.from?.id} chat=${u.callback_query.message?.chat?.type}` : u.message ? `message chat=${u.message.chat?.type}` : Object.keys(u));
+
+// Second look: same call again, then without an offset (offset 0 = from the oldest unconfirmed).
+await new Promise((r) => setTimeout(r, 3000));
+const again = await call('getUpdates', { offset: state.telegramOffset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
+console.log('again count', again.result?.length, (again.result ?? []).map((u) => u.update_id).join(','));
+const zero = await call('getUpdates', { timeout: 0 });
+console.log('no-offset count', zero.result?.length, (zero.result ?? []).map((u) => u.update_id).join(','));
+const wh2 = await call('getWebhookInfo');
+console.log('pending after', wh2.result?.pending_update_count);
