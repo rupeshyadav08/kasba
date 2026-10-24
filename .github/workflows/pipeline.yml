@@ -44,10 +44,11 @@ jobs:
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
         env:
           PROBE_URLS: ${{ inputs.probe_urls }}
-        run: node pipeline/probe.mjs $PROBE_URLS
+        run: node pipeline/probe-compact.mjs $PROBE_URLS
 
       - name: Fetch, draft and publish
         id: pipeline
+        if: ${{ inputs.probe_urls == '' || inputs.probe_urls == null }}
         run: node pipeline/run.mjs
         env:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
