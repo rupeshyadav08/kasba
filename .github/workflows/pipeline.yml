@@ -41,7 +41,9 @@ jobs:
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
         env:
           PROBE_URLS: ${{ inputs.probe_urls }}
-        run: node pipeline/probe.mjs $PROBE_URLS
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node pipeline/tg-check.mjs
 
       - name: Fetch, draft and publish
         id: pipeline
