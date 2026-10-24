@@ -1,0 +1,92 @@
+{
+  "id": "d8119720dd",
+  "createdAt": "2026-10-23T19:23:44.774Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "सीएक्यूएम के अध्यक्ष के नेतृत्व में उच्चस्तरीय दल ने रोपड़, होशियारपुर और अमृतसर में धान की पराली के प्रबंधन संबंधी उपायों की समीक्षा की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327692"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "farming",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "सीएक्यूएम के अध्यक्ष के नेतृत्व में उच्चस्तरीय दल ने रोपड़, होशियारपुर और अमृतसर में धान की पराली के प्रबंधन संबंधी उपायों की समीक्षा की",
+    "sourceDate": "2026-10-23",
+    "hi": {
+      "title": "CAQM टीम ने पंजाब में पराली प्रबंधन की समीक्षा की, मशीनें समय पर उपलब्ध कराने के निर्देश",
+      "summary": "वायु गुणवत्ता प्रबंधन आयोग (CAQM) के अध्यक्ष के नेतृत्व में एक उच्चस्तरीय दल ने 23 अक्टूबर को पंजाब के रोपड़, होशियारपुर और अमृतसर में धान की पराली प्रबंधन की तैयारियों की समीक्षा की। इसका असर उन किसानों और इलाकों पर पड़ेगा जहां पराली जलाने से हवा खराब होती है।",
+      "meaning": "यह खबर सीधे पंजाब के किसानों और वहां के अधिकारियों से जुड़ी है। आम लोगों को कोई फॉर्म नहीं भरना है और कोई तारीख नहीं निभानी है। लेकिन अगर पराली कम जलेगी तो दिल्ली-एनसीआर और आसपास की हवा में सुधार हो सकता है, जिसका फायदा वहां रहने वाले लोगों को मिलता है।",
+      "keyFacts": [
+        "दल ने 23 अक्टूबर 2026 को रोपड़, होशियारपुर और अमृतसर का दौरा किया।",
+        "दल ने ताप विद्युत संयंत्र, सीबीजी संयंत्र, कृषि विज्ञान केन्द्र (KVK), खेत और एक बायोमास संयंत्र देखा।",
+        "CAQM ने ताप विद्युत संयंत्रों में को-फायरिंग के तय लक्ष्य पूरे करने का निर्देश दिया।",
+        "अधिकारियों को किसानों तक समय पर फसल अवशेष प्रबंधन (CRM) मशीनें पहुंचाने को कहा गया।",
+        "खेतों में सक्रिय निगरानी रखने और कमियां तुरंत दूर करने पर जोर दिया गया।"
+      ],
+      "faq": [
+        {
+          "q": "CAQM क्या है?",
+          "a": "CAQM यानी राष्ट्रीय राजधानी क्षेत्र और आसपास के क्षेत्रों में वायु गुणवत्ता प्रबंधन आयोग है। यह दिल्ली-एनसीआर और आसपास की हवा की गुणवत्ता सुधारने के लिए काम करता है।"
+        },
+        {
+          "q": "CAQM की टीम ने कहां-कहां दौरा किया?",
+          "a": "टीम ने पंजाब के रोपड़, होशियारपुर और अमृतसर में दौरा किया। यहां उसने ताप विद्युत संयंत्र, सीबीजी संयंत्र, कृषि विज्ञान केन्द्र, खेत और एक बायोमास संयंत्र देखा।"
+        },
+        {
+          "q": "किसानों के लिए क्या निर्देश दिए गए?",
+          "a": "आयोग ने कहा कि किसानों को समय पर फसल अवशेष प्रबंधन (CRM) मशीनें मिलें और उन्हें अधिकतम सहायता दी जाए। खासकर कटाई के चरम समय में मशीनों की उपलब्धता पर ध्यान देने को कहा गया।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं, इस खबर में आम लोगों के लिए कोई आवेदन या तारीख नहीं बताई गई है। यह निर्देश राज्य के अधिकारियों और संयंत्रों के लिए हैं।"
+        },
+        {
+          "q": "पराली जलाना कम करने से किसे फायदा होगा?",
+          "a": "आयोग का मकसद पराली जलाने की घटनाएं कम करना है। इससे उन इलाकों की हवा साफ रहने में मदद मिल सकती है जहां पराली का धुआं पहुंचता है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराष्ट्रीय राजधानी क्षेत्र और आसपास के क्षेत्रों में वायु गुणवत्ता प्रबंधन आयोग (CAQM) के अध्यक्ष के नेतृत्व में एक उच्चस्तरीय दल ने पंजाब के रोपड़, होशियारपुर और अमृतसर का दौरा किया। दल ने ताप विद्युत संयंत्रों, सीबीजी संयंत्रों, कृषि विज्ञान केन्द्र (KVK), खेतों और एक बायोमास संयंत्र को देखा।\n\nदौरे का मकसद धान की इस कटाई के मौसम में पराली को संभालने की तैयारियां जांचना था। दल ने देखा कि पराली जलाने की घटनाएं रोकने के लिए जमीन पर कौन-कौन से उपाय किए जा रहे हैं।\n\n## क्या बदला है\n\nइस दौरे में कोई नया नियम या तारीख नहीं बताई गई। आयोग ने राज्य के अधिकारियों को निर्देश दिए हैं। ताप विद्युत संयंत्रों में को-फायरिंग के तय लक्ष्य पूरे करने को कहा गया है। साथ ही उत्सर्जन मानकों का पालन सुनिश्चित करने पर जोर दिया गया।\n\nको-फायरिंग का मतलब है बिजली संयंत्रों में कोयले के साथ पराली जैसे कृषि अवशेष का भी इस्तेमाल करना। इससे पराली खेत में जलाने की जरूरत कम हो सकती है।\n\n## किसानों के लिए क्या कहा गया\n\nKVK के दौरे में दल ने पराली को खेत में ही संभालने और बाहर भेजकर इस्तेमाल करने वाली मशीनों का प्रदर्शन देखा। दल ने यह भी जांचा कि किसानों की मदद के लिए मशीनें कितनी हैं और कितनी आसानी से मिल सकती हैं।\n\nधान की कटाई तेज होने के साथ आयोग ने कहा कि सभी संबंधित विभाग आपस में तालमेल बढ़ाएं। किसानों को समय पर फसल अवशेष प्रबंधन (CRM) मशीनें मिलें, इस पर ध्यान दिया जाए। खासकर कटाई के चरम समय में मशीनों की उपलब्धता और उनके सही इस्तेमाल पर जोर दिया गया।\n\n## आगे क्या होगा\n\nआयोग ने राज्य के अधिकारियों से कहा कि पराली प्रबंधन की व्यवस्थाएं मजबूत करें। खेतों में सक्रिय निगरानी रखी जाए और काम में जो कमियां दिखें, उन्हें समय पर ठीक किया जाए। इसका मकसद पराली जलाने की घटनाओं को कम करना है।\n\n## आम लोगों पर क्या असर\n\nयह खबर सीधे पंजाब के किसानों और वहां के अधिकारियों से जुड़ी है। आम लोगों को इसके लिए कोई आवेदन नहीं करना है और कोई तारीख नहीं निभानी है। लेकिन पराली कम जलने से उन इलाकों की हवा साफ रहने में मदद मिल सकती है, जहां इसका धुआं पहुंचता है।"
+    },
+    "en": {
+      "title": "CAQM team reviews stubble management in Punjab, tells officials to ensure machines reach farmers on time",
+      "summary": "A high-level team led by the CAQM chairperson reviewed paddy stubble management preparations in Ropar, Hoshiarpur and Amritsar in Punjab on 23 October. It affects farmers there and the areas where stubble burning worsens air quality.",
+      "meaning": "This news is directly about farmers in Punjab and the officials there. Ordinary readers do not have to fill any form or meet any date. But if less stubble is burnt, air in Delhi-NCR and nearby areas may improve, which helps people living there.",
+      "keyFacts": [
+        "The team visited Ropar, Hoshiarpur and Amritsar on 23 October 2026.",
+        "It saw thermal power plants, CBG plants, a Krishi Vigyan Kendra (KVK), farm fields and a biomass plant.",
+        "CAQM told thermal plants to meet their set co-firing targets.",
+        "Officials were told to ensure Crop Residue Management (CRM) machines reach farmers on time.",
+        "The commission stressed active field monitoring and fixing operational gaps quickly."
+      ],
+      "faq": [
+        {
+          "q": "What is CAQM?",
+          "a": "CAQM is the Commission for Air Quality Management in the National Capital Region and adjoining areas. It works to improve air quality in Delhi-NCR and nearby areas."
+        },
+        {
+          "q": "Where did the CAQM team visit?",
+          "a": "The team visited Ropar, Hoshiarpur and Amritsar in Punjab. It saw thermal power plants, CBG plants, a Krishi Vigyan Kendra, farm fields and a biomass plant."
+        },
+        {
+          "q": "What was said for farmers?",
+          "a": "The commission said farmers should get Crop Residue Management (CRM) machines on time and maximum support. It stressed machine availability, especially at the peak of harvesting."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No, the notice gives no application or deadline for ordinary people. The directions are for state authorities and plants."
+        },
+        {
+          "q": "Who benefits from less stubble burning?",
+          "a": "The commission aims to reduce stubble burning incidents. This can help keep the air cleaner in areas where the smoke reaches."
+        }
+      ],
+      "body": "## What happened\n\nA high-level team led by the chairperson of the Commission for Air Quality Management in the National Capital Region and adjoining areas (CAQM) visited Ropar, Hoshiarpur and Amritsar in Punjab. The team saw thermal power plants, CBG plants, a Krishi Vigyan Kendra (KVK), farm fields and a biomass plant.\n\nThe aim was to check preparations for handling paddy stubble during the current harvest season. The team reviewed the steps being taken on the ground to manage stubble and stop stubble burning.\n\n## What has changed\n\nThe visit did not announce any new rule or deadline. The commission gave directions to state officials. Thermal power plants were told to meet their set co-firing targets. Special stress was laid on following emission standards.\n\nCo-firing means using farm residue such as stubble along with coal in power plants. This can reduce the need to burn stubble in fields.\n\n## What was said for farmers\n\nAt the KVK, the team saw machines that use stubble in the field itself or send it out for other use. The team also assessed whether enough machines are available to help farmers.\n\nAs paddy harvesting picks up, the commission said all related departments should coordinate more. Farmers should get Crop Residue Management (CRM) machines on time. The focus is on machine availability and their effective use, especially at the peak of harvesting.\n\n## What happens next\n\nState authorities were told to strengthen stubble management arrangements. Fields should be actively monitored and operational gaps fixed in time. The aim is to reduce stubble burning incidents.\n\n## What it means for ordinary people\n\nThis news is directly about farmers in Punjab and officials there. Ordinary readers do not have to apply for anything or meet any date. But less stubble burning can help keep the air cleaner in areas where the smoke reaches."
+    }
+  }
+}

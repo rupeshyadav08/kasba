@@ -1,0 +1,94 @@
+{
+  "id": "d33a99a2ca",
+  "createdAt": "2026-10-23T10:16:58.325Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "भाकृअनुप-सिरकॉट ने कपास चुनने वाले श्रमिकों के लिए सुरक्षात्मक दस्तानों के प्रौद्योगिकी हस्तांतरण हेतु समझौता ज्ञापन पर हस्ताक्षर किए",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327350"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "farming",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "भाकृअनुप-सिरकॉट ने कपास चुनने वाले श्रमिकों के लिए सुरक्षात्मक दस्तानों के प्रौद्योगिकी हस्तांतरण हेतु समझौता ज्ञापन पर हस्ताक्षर किए",
+    "sourceDate": "2026-10-23",
+    "hi": {
+      "title": "कपास चुनने वाले मज़दूरों के लिए सुरक्षात्मक दस्ताने: ICAR-CIRCOT ने कंपनी से समझौता किया",
+      "summary": "भाकृअनुप-सिरकॉट (ICAR-CIRCOT), मुंबई ने 22 अक्टूबर 2026 को कपास चुनने वाले श्रमिकों के लिए सुरक्षात्मक दस्तानों की तकनीक एक कंपनी को देने के लिए समझौता ज्ञापन पर हस्ताक्षर किए। इसका असर कपास किसानों और खेत मज़दूरों पर पड़ेगा, जिन्हें तुड़ाई के समय हाथ बचाने वाले दस्ताने मिल सकेंगे।",
+      "meaning": "यह समझौता सीधे किसी आम नागरिक से नहीं, बल्कि कपास की खेती और तुड़ाई से जुड़े किसानों और मज़दूरों से जुड़ा है। दस्ताने बनाने वाली कंपनी को तकनीक मिलने से बाज़ार में ऐसे दस्ताने आसानी से मिल सकेंगे। आम लोगों को अभी कोई फ़ॉर्म भरने या आवेदन करने की ज़रूरत नहीं है; दस्ताने कब और कहाँ मिलेंगे, इसकी जानकारी इस विज्ञप्ति में नहीं दी गई है।",
+      "keyFacts": [
+        "समझौता ज्ञापन 22 अक्टूबर 2026 को हस्ताक्षरित हुआ",
+        "तकनीक भाकृअनुप-सिरकॉट (ICAR-CIRCOT), मुंबई की है",
+        "तकनीक मैसर्स ट्रस्ट एआरएस रबर प्राइवेट लिमिटेड, चेंगलपट्टू को दी गई",
+        "दस्ताने कपास के नुकीले सहपत्रों (ब्रोक्ट्स) से हाथों को बचाने के लिए बनाए गए हैं",
+        "दस्ताने दोबारा इस्तेमाल हो सकते हैं और टिकाऊ हैं",
+        "विज्ञप्ति 23 अक्टूबर 2026 को जारी हुई"
+      ],
+      "faq": [
+        {
+          "q": "कपास चुनने वाले दस्ताने किसने बनाए हैं?",
+          "a": "यह तकनीक भाकृअनुप-सिरकॉट (ICAR-CIRCOT), मुंबई ने विकसित की है। संस्थान ने इसे बनाने और बाज़ार में पहुँचाने के लिए एक कंपनी को सौंपा है।"
+        },
+        {
+          "q": "ये दस्ताने किस काम आते हैं?",
+          "a": "ये दस्ताने कपास तोड़ते समय कपास के नुकीले सहपत्रों (ब्रोक्ट्स) से हाथों में लगने वाली चोट से बचाते हैं। साथ ही इनमें लचीलापन और आराम भी है।"
+        },
+        {
+          "q": "क्या दस्ताने दोबारा इस्तेमाल हो सकते हैं?",
+          "a": "हाँ, विज्ञप्ति के अनुसार ये दस्ताने दोबारा इस्तेमाल योग्य (reusable) और टिकाऊ हैं। इसलिए खेत के कठिन काम में इन्हें बार-बार पहना जा सकता है।"
+        },
+        {
+          "q": "क्या मुझे इन दस्तानों के लिए आवेदन करना है?",
+          "a": "नहीं, विज्ञप्ति में आम लोगों के लिए किसी आवेदन या फ़ॉर्म का ज़िक्र नहीं है। यह समझौता तकनीक देने और दस्तानों के व्यावसायिक उत्पादन से जुड़ा है।"
+        },
+        {
+          "q": "दस्ताने कब से मिलने लगेंगे?",
+          "a": "इस बारे में विज्ञप्ति में कोई तारीख नहीं दी गई है। विज्ञप्ति में सिर्फ़ यह कहा गया है कि इससे दस्तानों की व्यापक उपलब्धता की उम्मीद है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nभाकृअनुप–केंद्रीय कपास प्रौद्योगिकी अनुसंधान संस्थान (ICAR-CIRCOT), मुंबई ने 22 अक्टूबर 2026 को एक समझौता ज्ञापन पर हस्ताक्षर किए। यह समझौता \"कपास चुनने वाले श्रमिकों के लिए सुरक्षात्मक दस्ताने\" बनाने की तकनीक को मैसर्स ट्रस्ट एआरएस रबर प्राइवेट लिमिटेड, चेंगलपट्टू को देने के लिए है।\n\nसरल शब्दों में, संस्थान ने अपनी बनाई तकनीक एक कंपनी को सौंपी है ताकि वह इन दस्तानों को बड़े पैमाने पर बना और बेच सके।\n\n## दस्ताने क्यों बनाए गए\n\nविज्ञप्ति के अनुसार यह तकनीक कटाई और तुड़ाई के दौरान कपास चुनने वाले श्रमिकों की सुरक्षा बढ़ाने के लिए विकसित की गई है। कपास के पौधे पर नुकीले सहपत्र (ब्रोक्ट्स) होते हैं, जिनसे तुड़ाई करते समय हाथों में चोट लग सकती है।\n\nखास तौर पर डिज़ाइन किए गए ये दस्ताने इन नुकीले हिस्सों से हाथों को बचाते हैं और साथ में लचीलापन व आराम भी देते हैं। विज्ञप्ति में यह भी कहा गया है कि ये दस्ताने दोबारा इस्तेमाल योग्य (reusable) और टिकाऊ हैं, इसलिए खेत की कठिन परिस्थितियों में इन्हें बार-बार पहना जा सकता है।\n\n## किसे फ़ायदा होगा\n\nविज्ञप्ति के मुताबिक इस तकनीक हस्तांतरण से दस्तानों के व्यावसायीकरण को बढ़ावा मिलने और इनकी व्यापक उपलब्धता सुनिश्चित होने की उम्मीद है। इससे कपास किसानों और कृषि श्रमिकों को सीधा लाभ होगा।\n\nइस पहल का मकसद उपयुक्त सुरक्षात्मक उपकरणों का इस्तेमाल बढ़ाना, हाथों में लगने वाली चोटें कम करना, काम की स्थितियाँ सुधारना और सुरक्षित तुड़ाई को बढ़ावा देना बताया गया है।\n\n## आगे क्या होगा\n\nविज्ञप्ति में यह नहीं बताया गया है कि दस्ताने कब से बाज़ार में आएँगे, कहाँ मिलेंगे या इनकी कीमत क्या होगी। यह भी नहीं कहा गया है कि किसानों या मज़दूरों को ये दस्ताने किसी योजना के तहत मुफ़्त मिलेंगे।\n\nसंस्थान ने इस साझेदारी को उद्योग और अनुसंधान के बीच सहयोग मज़बूत करने की दिशा में एक कदम बताया है, ताकि उसकी तकनीक खेत के स्तर की चुनौतियों का व्यावहारिक समाधान बन सके।\n\n## आम लोगों पर असर\n\nयह खबर आम नागरिकों की रोज़मर्रा की ज़िंदगी से सीधे नहीं जुड़ी है। इसका संबंध कपास की खेती, तुड़ाई और उससे जुड़े मज़दूरों से है। जिन लोगों को कपास तुड़ाई में हाथों की चोट का सामना करना पड़ता है, उनके लिए यह उपयोगी जानकारी है।"
+    },
+    "en": {
+      "title": "Protective gloves for cotton pickers: ICAR-CIRCOT signs technology transfer MoU",
+      "summary": "ICAR-CIRCOT, Mumbai signed a memorandum of understanding on 22 October 2026 to transfer its technology for protective gloves for cotton pickers to a private company. The move is meant to benefit cotton farmers and farm workers who pick cotton by hand.",
+      "meaning": "This agreement does not directly involve the general public; it concerns people working in cotton farming and picking. Once the company makes the gloves, they are expected to be more widely available in the market. Ordinary readers do not need to apply or fill any form now, and the notice does not say when or where the gloves will be sold.",
+      "keyFacts": [
+        "The MoU was signed on 22 October 2026",
+        "The technology belongs to ICAR-CIRCOT, Mumbai",
+        "It was transferred to M/s Trust ARS Rubber Private Limited, Chengalpattu",
+        "The gloves protect hands from cotton plant bracts, which are pointed",
+        "The gloves are reusable and durable",
+        "The release was issued on 23 October 2026"
+      ],
+      "faq": [
+        {
+          "q": "Who developed the gloves for cotton pickers?",
+          "a": "The technology was developed by ICAR-CIRCOT, Mumbai. The institute has handed it to a company to make and market the gloves."
+        },
+        {
+          "q": "What do these gloves do?",
+          "a": "They protect workers' hands from injuries caused by the pointed bracts of the cotton plant while picking. The gloves also offer flexibility and comfort."
+        },
+        {
+          "q": "Can the gloves be used again?",
+          "a": "Yes, according to the release the gloves are reusable and durable. That makes them suitable for repeated use in tough farm conditions."
+        },
+        {
+          "q": "Do I need to apply for these gloves?",
+          "a": "No, the notice mentions no application or form for the public. It is an agreement about transferring technology and making the gloves commercially."
+        },
+        {
+          "q": "When will the gloves be available?",
+          "a": "The notice gives no date. It only says the transfer is expected to promote commercialisation and wider availability of the gloves."
+        }
+      ],
+      "body": "## What happened\n\nICAR-Central Institute for Research on Cotton Technology (ICAR-CIRCOT), Mumbai signed a memorandum of understanding on 22 October 2026. The agreement transfers the technology for \"protective gloves for cotton pickers\" to M/s Trust ARS Rubber Private Limited, Chengalpattu.\n\nIn simple terms, the institute has handed its technology to a company so that the gloves can be produced and sold on a larger scale.\n\n## Why the gloves were developed\n\nAccording to the release, the technology was developed to improve the safety of workers who pick cotton during harvest and picking. Cotton plants have pointed bracts that can hurt the hands while picking.\n\nThe specially designed gloves protect workers' hands from injuries caused by these pointed bracts, while also giving flexibility and comfort. The release also says the gloves are reusable and durable, which makes them suitable for repeated use in difficult farm conditions.\n\n## Who benefits\n\nThe release says the technology transfer is expected to promote commercialisation and ensure wider availability of the gloves, which will directly benefit cotton farmers and agricultural workers.\n\nThe aim, it says, is to encourage the use of proper protective equipment, reduce hand injuries, improve working conditions and promote safer picking practices.\n\n## What happens next\n\nThe notice does not say when the gloves will reach the market, where they will be sold or what they will cost. It also does not say that farmers or workers will get them free under any scheme.\n\nThe institute describes the partnership as a step towards strengthening industry-research collaboration, so that its technology becomes a practical solution to challenges at the field level.\n\n## Effect on ordinary people\n\nThis news is not directly about the daily life of the general public. It relates to cotton farming, picking and the workers involved. It is useful information for those who face hand injuries while picking cotton."
+    }
+  }
+}

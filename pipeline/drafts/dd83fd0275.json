@@ -1,0 +1,94 @@
+{
+  "id": "dd83fd0275",
+  "createdAt": "2026-10-23T10:17:47.711Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "बैंकिंग अनुप्रयोगों के लिए स्वदेशी क्वांटम प्रौद्योगिकियों को बढ़ावा देने की दिशा में सी-डेक और बैंक ऑफ इंडिया ने हाथ मिलाया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327342"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "category": "money",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "बैंकिंग अनुप्रयोगों के लिए स्वदेशी क्वांटम प्रौद्योगिकियों को बढ़ावा देने की दिशा में सी-डेक और बैंक ऑफ इंडिया ने हाथ मिलाया",
+    "sourceDate": "2026-10-23",
+    "hi": {
+      "title": "सी-डेक और बैंक ऑफ इंडिया ने क्वांटम बैंकिंग तकनीक पर समझौता किया",
+      "summary": "सी-डेक और बैंक ऑफ इंडिया ने 22 अक्टूबर 2026 को बैंकिंग के लिए स्वदेशी क्वांटम और अन्य उभरती तकनीकों पर शोध के लिए समझौता ज्ञापन पर हस्ताक्षर किए। इसका असर आम ग्राहकों पर अभी सीधे नहीं पड़ता; यह भविष्य की बैंकिंग सुरक्षा और सेवाओं पर काम की शुरुआत है।",
+      "meaning": "आम खाताधारकों को अभी कोई फॉर्म नहीं भरना है और कोई तारीख नहीं निभानी है। यह समझौता बैंक और सी-डेक के बीच शोध और परीक्षण का ढांचा है, इसलिए आपकी बैंकिंग सेवा में तुरंत कोई बदलाव नहीं आएगा। लंबे समय में इसका मकसद बैंकिंग सिस्टम को क्वांटम तकनीक से जुड़ी सुरक्षा चुनौतियों के लिए तैयार करना है।",
+      "keyFacts": [
+        "समझौता ज्ञापन पर 22 अक्टूबर 2026 को हस्ताक्षर हुए।",
+        "यह सी-डेक और बैंक ऑफ इंडिया के बीच है।",
+        "सी-डेक इलेक्ट्रॉनिक्स एवं आईटी मंत्रालय के अधीन स्वायत्त वैज्ञानिक संस्था है।",
+        "काम के क्षेत्र: क्वांटम तकनीक, ब्लॉकचेन, कृत्रिम बुद्धिमत्ता, साइबर सुरक्षा और स्वदेशी तकनीक विकास।",
+        "सुरक्षित सैंडबॉक्स में अवधारणाओं के प्रमाण दिखाना और आगे के लिए रोडमैप बनाना लक्ष्य है।",
+        "प्रशिक्षण और क्षमता निर्माण कार्यक्रमों पर भी ध्यान दिया जाएगा।"
+      ],
+      "faq": [
+        {
+          "q": "सी-डेक और बैंक ऑफ इंडिया का समझौता कब हुआ?",
+          "a": "22 अक्टूबर 2026 को। इस दिन दोनों संस्थाओं ने क्वांटम वित्तीय नवाचार और बैंकिंग में उभरती तकनीकों को अपनाने के लिए समझौता ज्ञापन पर हस्ताक्षर किए।"
+        },
+        {
+          "q": "क्या इससे आम बैंक ग्राहकों पर कोई असर पड़ेगा?",
+          "a": "अभी सीधा असर नहीं। यह शोध, परीक्षण और क्षमता निर्माण का ढांचा है, इसलिए खाताधारकों को कोई नया काम या आवेदन नहीं करना है।"
+        },
+        {
+          "q": "इस समझौते में किन तकनीकों पर काम होगा?",
+          "a": "क्वांटम तकनीक, ब्लॉकचेन, कृत्रिम बुद्धिमत्ता, साइबर सुरक्षा और स्वदेशी तकनीक विकास पर। इसके अलावा दस्तावेज़ प्रसंस्करण, धोखाधड़ी विश्लेषण, क्रेडिट विश्लेषण और डिजिटल पहचान जैसे बैंकिंग उपयोग भी शामिल हैं।"
+        },
+        {
+          "q": "सी-डेक क्या है?",
+          "a": "सी-डेक यानी सेंटर फॉर डेवलपमेंट ऑफ एडवांस्ड कंप्यूटिंग, इलेक्ट्रॉनिक्स और सूचना प्रौद्योगिकी मंत्रालय के अधीन एक स्वायत्त वैज्ञानिक संस्था है।"
+        },
+        {
+          "q": "क्या इस समझौते से बैंकिंग सेवाएं तुरंत बदल जाएंगी?",
+          "a": "नहीं। समझौते में कहा गया है कि पहले बैंकिंग उपयोगों की पहचान, सुरक्षित सैंडबॉक्स में परीक्षण और व्यवहार्यता का आकलन होगा, उसके बाद आगे के लिए रोडमैप बनेगा।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nइलेक्ट्रॉनिक्स और सूचना प्रौद्योगिकी मंत्रालय के अधीन स्वायत्त वैज्ञानिक संस्था सी-डेक और बैंक ऑफ इंडिया ने 22 अक्टूबर 2026 को एक समझौता ज्ञापन पर हस्ताक्षर किए। इसका मकसद बैंकिंग में क्वांटम वित्तीय नवाचार और उभरती तकनीकों को अपनाने पर साथ काम करना है।\n\n## समझौते में क्या तय हुआ\n\nसमझौते के तहत दोनों संस्थाओं के लिए बैंकिंग और वित्तीय सेवा क्षेत्र की अहम तकनीकों पर संयुक्त शोध, विकास, प्रायोगिक कार्यान्वयन, तकनीक प्रदर्शन और क्षमता निर्माण का ढांचा बना है। सी-डेक की हाई परफॉर्मेंस कंप्यूटिंग, कृत्रिम बुद्धिमत्ता, क्वांटम तकनीक, ब्लॉकचेन, साइबर सुरक्षा और स्वदेशी तकनीक विकास की क्षमता को बैंक ऑफ इंडिया की बैंकिंग विशेषज्ञता और देशभर में फैले तकनीकी वातावरण से जोड़ा जाएगा।\n\n## क्वांटम तकनीक पर खास जोर\n\nसाझेदारी का एक प्रमुख लक्ष्य वित्तीय नवाचार के लिए क्वांटम तंत्र विकसित करना है। इससे बैंकिंग सिस्टम को क्वांटम तकनीक से जुड़े अवसरों और उभरती सुरक्षा चुनौतियों के लिए तैयार करने की कोशिश होगी। दोनों संस्थाएं क्वांटम-प्रेरित और क्वांटम-सुरक्षित तकनीकों पर साथ काम करेंगी, जिससे बैंकिंग व्यवस्था में सुरक्षा, भरोसा, लचीलापन और निर्णय लेने की क्षमता मजबूत हो सके।\n\n## आगे क्या होगा\n\nसमझौते के अनुसार पहले बैंकिंग उपयोगों की प्राथमिकता वाली सूची तय की जाएगी। फिर सुरक्षित सैंडबॉक्स वातावरण में अवधारणाओं के प्रमाण दिखाए जाएंगे और तकनीकी व्यवहार्यता तथा संभावित बैंकिंग मूल्य का आकलन होगा। इसके बाद मौजूदा व्यवस्थाओं के मुकाबले नए तरीकों के मानकीकरण और आगे के विकास, प्रायोगिक परियोजनाओं या अपनाने के लिए रोडमैप बनाया जाएगा।\n\n## क्वांटम के अलावा और क्या शामिल है\n\nसमझौता ज्ञापन ब्लॉकचेन, कृत्रिम बुद्धिमत्ता और वित्तीय सेवाओं से जुड़ी अन्य उभरती तकनीकों में सहयोग का ढांचा भी देता है। संभावित क्षेत्रों में दस्तावेज़ों का बुद्धिमान तरीके से प्रसंस्करण, ग्राहक और कर्मचारी सहायता, धोखाधड़ी विश्लेषण, क्रेडिट और वित्तीय विश्लेषण, सुरक्षित एआई प्लेटफॉर्म, जिम्मेदार एआई, स्मार्ट अनुबंध, डिजिटल पहचान और सुरक्षित डेटा साझाकरण शामिल हैं।\n\n## किसे फ़ायदा होगा\n\nयह साझेदारी क्वांटम कंप्यूटिंग, क्वांटम सुरक्षा, कृत्रिम बुद्धिमत्ता और ब्लॉकचेन जैसे क्षेत्रों में प्रशिक्षण और क्षमता-निर्माण कार्यक्रमों पर भी ध्यान देगी, ताकि भविष्य के लिए तैयार कुशल लोगों का समूह बन सके। मंत्रालय के सचिव एस. कृष्णन ने इस मौके पर कहा कि बढ़ती साइबर सुरक्षा चिंताओं और उभरते तकनीकी खतरों के दौर में क्वांटम-प्रतिरोधी वित्तीय व्यवस्था बनाना जरूरी है।\n\n## आम लोगों को क्या करना है\n\nफिलहाल कुछ नहीं। यह बैंक और सी-डेक के बीच शोध और परीक्षण का समझौता है, इसलिए खाताधारकों के लिए कोई आवेदन, शुल्क या तारीख तय नहीं की गई है। बैंकिंग सेवाओं में बदलाव होने पर उसकी जानकारी अलग से दी जाएगी।"
+    },
+    "en": {
+      "title": "C-DAC and Bank of India sign MoU on quantum tech for banking",
+      "summary": "C-DAC and Bank of India signed a memorandum of understanding on 22 October 2026 to work together on indigenous quantum and other emerging technologies for banking. It does not directly affect ordinary customers right away; it is the start of work on future banking security and services.",
+      "meaning": "Account holders have no form to fill or deadline to meet right now. This is a research and testing framework between the bank and C-DAC, so your banking service will not change immediately. Over time, the aim is to prepare banking systems for security challenges linked to quantum technologies.",
+      "keyFacts": [
+        "The memorandum of understanding was signed on 22 October 2026.",
+        "It is between C-DAC and Bank of India.",
+        "C-DAC is an autonomous scientific society under the Ministry of Electronics and IT.",
+        "Areas of work: quantum technology, blockchain, artificial intelligence, cyber security and indigenous technology development.",
+        "Goals include showing proofs of concept in a secure sandbox and building a roadmap for the future.",
+        "Training and capacity-building programmes will also be a focus."
+      ],
+      "faq": [
+        {
+          "q": "When did C-DAC and Bank of India sign the agreement?",
+          "a": "On 22 October 2026. On that day the two organisations signed a memorandum of understanding to adopt quantum financial innovation and emerging technologies in banking."
+        },
+        {
+          "q": "Will this affect ordinary bank customers?",
+          "a": "Not directly for now. It is a framework for research, testing and capacity building, so account holders do not have to do anything."
+        },
+        {
+          "q": "Which technologies will the agreement cover?",
+          "a": "Quantum technology, blockchain, artificial intelligence, cyber security and indigenous technology development. Banking uses such as document processing, fraud analysis, credit analysis and digital identity are also listed."
+        },
+        {
+          "q": "What is C-DAC?",
+          "a": "C-DAC, the Centre for Development of Advanced Computing, is an autonomous scientific society under the Ministry of Electronics and Information Technology."
+        },
+        {
+          "q": "Will banking services change immediately because of this?",
+          "a": "No. The agreement says banking use cases will first be identified, tested in a secure sandbox and assessed for feasibility, after which a roadmap will be prepared."
+        }
+      ],
+      "body": "## What has happened\n\nC-DAC, an autonomous scientific society under the Ministry of Electronics and Information Technology, and Bank of India signed a memorandum of understanding on 22 October 2026. The aim is to work together on quantum financial innovation and the adoption of emerging technologies in banking.\n\n## What the agreement sets out\n\nThe memorandum creates a framework for the two organisations to explore joint research, development, experimental implementation, technology demonstration and capacity-building in technologies that matter for the banking and financial services sector. C-DAC's strengths in high performance computing, artificial intelligence, quantum technologies, blockchain, cyber security and indigenous technology development will be paired with Bank of India's banking expertise and its large technology environment.\n\n## Focus on quantum technology\n\nA key goal is to develop quantum mechanisms for financial innovation, so that banking systems are prepared for the opportunities and emerging security challenges linked to quantum technologies. The two organisations will jointly explore quantum-inspired and quantum-safe technologies that can strengthen security, trust, resilience and decision-making in the banking system.\n\n## What happens next\n\nAccording to the agreement, the partners will first identify a priority-based portfolio of banking use cases. They will then show proofs of concept in a secure sandbox environment and assess technical feasibility and potential banking value. After that they will work on standardising emerging approaches against existing systems and build a roadmap for further development, pilot projects or adoption.\n\n## Beyond quantum\n\nThe memorandum also provides a framework for cooperation in blockchain, artificial intelligence and other emerging technologies related to financial services. Possible areas include intelligent document processing, customer and employee support, fraud analysis, credit and financial analysis, secure AI platforms, responsible AI, smart contracts, digital identity and secure data sharing.\n\n## Who benefits\n\nThe partnership will also focus on building a future-ready talent pool through training and capacity-building programmes in areas such as quantum computing, quantum security, artificial intelligence and blockchain. At the signing, MeitY Secretary S. Krishnan said that with rising cyber security concerns and emerging technological threats, building a quantum-resistant financial ecosystem is necessary.\n\n## What ordinary people need to do\n\nNothing for now. This is a research and testing agreement between a bank and C-DAC, so no application, fee or deadline has been set for account holders. Any change in banking services will be communicated separately."
+    }
+  }
+}
