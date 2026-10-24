@@ -1,3 +1,4 @@
+import { states } from './places';
 // Before launch the whole site is kept out of search results and shows a
 // "coming soon" note. Set to false on launch day (after the samples are deleted).
 export const prelaunch = true;
@@ -13,7 +14,7 @@ export const org = {
   url: 'https://kasba.co.in',
   email: 'admin@kasba.co.in',
   logo: { '@type': 'ImageObject', url: 'https://kasba.co.in/logo-600x60.png', width: 600, height: 60 },
-  areaServed: [{ '@type': 'State', name: 'Uttar Pradesh' }, { '@type': 'Country', name: 'India' }],
+  areaServed: [...states.map((s) => ({ '@type': 'State', name: s.en })), { '@type': 'Country', name: 'India' }],
   knowsLanguage: ['hi', 'en'],
   publishingPrinciples: 'https://kasba.co.in/editorial-policy',
   correctionsPolicy: 'https://kasba.co.in/corrections',

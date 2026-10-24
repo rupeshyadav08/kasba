@@ -14,8 +14,12 @@ const sections = {
   money: ['पैसा', 'Money', '#5b2c83'],
   weather: ['मौसम', 'Weather', '#00677f'],
   health: ['सेहत', 'Health', '#a4262c'],
+  sports: ['खेल', 'Sports', '#b3410e'],
   nation: ['देश', 'Nation', '#3d434a'],
   up: ['उत्तर प्रदेश', 'Uttar Pradesh', '#22305a'],
+  bihar: ['बिहार', 'Bihar', '#22305a'],
+  mp: ['मध्य प्रदेश', 'Madhya Pradesh', '#22305a'],
+  delhi: ['दिल्ली', 'Delhi', '#22305a'],
 };
 
 // 1200x630 share card: dark band, section colour stripe, logo and promise.

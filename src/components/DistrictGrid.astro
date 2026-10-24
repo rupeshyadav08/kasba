@@ -1,11 +1,11 @@
 ---
 import { districtPath, sortedDistricts } from '../lib/places';
 import type { Lang } from '../lib/i18n';
-interface Props { lang: Lang; counts?: Record<string, number> }
-const { lang, counts = {} } = Astro.props;
+interface Props { lang: Lang; state: string; counts?: Record<string, number> }
+const { lang, state, counts = {} } = Astro.props;
 ---
 <ul class="dgrid">
-  {sortedDistricts(lang).map((d) => (
+  {sortedDistricts(lang, state).map((d) => (
     <li><a href={districtPath(lang, d.slug)}>{d[lang]}{counts[d.slug] ? <span class="n">{counts[d.slug]}</span> : null}</a></li>
   ))}
 </ul>

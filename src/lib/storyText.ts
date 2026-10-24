@@ -2,14 +2,14 @@
 // facts as the page, with the source and dates stated next to them.
 import type { CollectionEntry } from 'astro:content';
 import { categories, storyPath, t } from './i18n';
-import { districtBySlug, state } from './places';
+import { districtBySlug, stateByCode } from './places';
 
 const day = (d: Date) => d.toISOString().slice(0, 10);
 
 export function storyMarkdown(story: CollectionEntry<'stories'>, site: URL) {
   const d = story.data;
   const L = t[d.lang];
-  const places = [d.state ? state[d.lang] : '', ...d.districts.map((s) => districtBySlug(s)![d.lang])].filter(Boolean);
+  const places = [d.state ? stateByCode(d.state)![d.lang] : '', ...d.districts.map((s) => districtBySlug(s)![d.lang])].filter(Boolean);
   return [
     `# ${d.title}`,
     '',

@@ -7,6 +7,7 @@ export const categories = {
   money: { hi: 'पैसा', en: 'Money' },
   weather: { hi: 'मौसम', en: 'Weather' },
   health: { hi: 'सेहत', en: 'Health' },
+  sports: { hi: 'खेल', en: 'Sports' },
   nation: { hi: 'देश', en: 'Nation' },
 } as const;
 
@@ -58,10 +59,10 @@ export const t = {
     chooseDistrict: 'अपना ज़िला चुनें',
     go: 'देखें',
     districtNews: (n: string) => `${n} की ख़बरें`,
-    districtSoon: 'इस ज़िले की अपनी ख़बरें जल्द आएँगी। तब तक उत्तर प्रदेश और देश की ज़रूरी ख़बरें:',
+    districtSoon: (st: string) => `इस ज़िले की अपनी ख़बरें जल्द आएँगी। तब तक ${st} और देश की ज़रूरी ख़बरें:`,
     stateNews: 'पूरे प्रदेश की ख़बरें',
     nationNews: 'देश की ज़रूरी ख़बरें',
-    stateSoon: 'उत्तर प्रदेश की ख़बरें जल्द आएँगी।',
+    stateSoon: (st: string) => `${st} की ख़बरें जल्द आएँगी।`,
     districtsLabel: 'ज़िले',
     localPapers: 'स्थानीय अख़बारों से',
     localPapersNote: 'ये सुर्खियाँ स्थानीय अख़बारों की हैं, कस्बा की नहीं। कस्बा ने इन्हें न लिखा है, न जाँचा है; पूरी ख़बर अख़बार की साइट पर पढ़ें।',
@@ -113,10 +114,10 @@ export const t = {
     chooseDistrict: 'Choose your district',
     go: 'Go',
     districtNews: (n: string) => `News for ${n}`,
-    districtSoon: 'Stories for this district are coming soon. Meanwhile, the key news for Uttar Pradesh and India:',
+    districtSoon: (st: string) => `Stories for this district are coming soon. Meanwhile, the key news for ${st} and India:`,
     stateNews: 'Across the state',
     nationNews: 'Key national news',
-    stateSoon: 'Uttar Pradesh stories are coming soon.',
+    stateSoon: (st: string) => `${st} stories are coming soon.`,
     districtsLabel: 'Districts',
     localPapers: 'From local papers (in Hindi)',
     localPapersNote: "These headlines are from local newspapers, not Kasba. Kasba did not write or check them; read the full story on the paper's site.",
@@ -124,7 +125,7 @@ export const t = {
 } as const;
 
 // Order of sections in the navigation and on the homepage.
-export const sectionOrder = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'nation'] as const;
+export const sectionOrder = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'sports', 'nation'] as const;
 export type Section = (typeof sectionOrder)[number];
 export const secColor = (c: string) => `--sec: var(--c-${c})`;
 export const sectionPath = (lang: Lang, c: string) => (lang === 'hi' ? `/section/${c}` : `/en/section/${c}`);

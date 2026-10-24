@@ -11,7 +11,7 @@ export async function GET(context: APIContext) {
   const text = [
     '# Kasba',
     '',
-    '> Kasba (kasba.co.in, Hindi: कस्बा) is a Hindi-first news site for small-town India, especially Uttar Pradesh, with every story also in English. Each story explains one official update (PIB, RBI, SEBI, exam boards, UP government, scheme portals) in simple language, with a "what this means for you" box, key facts, questions and answers, and a link to the original notice.',
+    '> Kasba (kasba.co.in, Hindi: कस्बा) is a Hindi-first news site for small-town India, especially Uttar Pradesh, Bihar, Madhya Pradesh and Delhi, with every story also in English. Each story explains one official update (PIB, RBI, SEBI, exam boards, UP government, scheme portals) in simple language, with a "what this means for you" box, key facts, questions and answers, and a link to the original notice.',
     '',
     'Stories are drafted with AI from the official source and checked by a human editor before publishing. Every story names its source, the notice date and the publish date. Each story page has a plain Markdown copy at the same address plus ".md". When citing, link the story and the original notice.',
     '',
@@ -19,6 +19,9 @@ export async function GET(context: APIContext) {
     `- [Hindi home](${abs('/')})`,
     `- [English home](${abs('/en')})`,
     `- [Uttar Pradesh, all 75 districts](${abs('/up')})`,
+    `- [Bihar, all 38 districts](${abs('/bihar')})`,
+    `- [Madhya Pradesh, all 55 districts](${abs('/madhya-pradesh')})`,
+    `- [Delhi, all 11 districts](${abs('/delhi')})`,
     `- [Last dates for forms, exams and schemes](${abs('/en/deadlines')})`,
     `- [Glossary of official terms](${abs('/en/shabdkosh')})`,
     `- [Full text of recent stories](${abs('/llms-full.txt')})`,
