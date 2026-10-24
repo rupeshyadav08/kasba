@@ -21,3 +21,14 @@ const zero = await call('getUpdates', { timeout: 0 });
 console.log('no-offset count', zero.result?.length, (zero.result ?? []).map((u) => u.update_id).join(','));
 const wh2 = await call('getWebhookInfo');
 console.log('pending after', wh2.result?.pending_update_count);
+
+// Watch for 12 minutes: when does a pending tap disappear? Reads only the pending count, so it
+// never confirms anything itself.
+let last = -1;
+for (let i = 0; i < 72; i++) {
+  const w = await call('getWebhookInfo');
+  const n = w.result?.pending_update_count;
+  if (n !== last) console.log(new Date().toISOString(), 'pending', n, w.result?.url ? 'WEBHOOK SET' : '');
+  last = n;
+  await new Promise((r) => setTimeout(r, 10000));
+}
