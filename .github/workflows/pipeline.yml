@@ -56,7 +56,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
-      # Stories trigger a Cloudflare build; state-only commits carry [skip ci] so they don't.
+      # Only a deploy commit makes Cloudflare build the site. Stories are batched (run.mjs decides
+      # when, at most every couple of hours) so 20+ a day stay inside the free 500 builds a month.
       - name: Commit
         if: ${{ always() && inputs.dry_run != true }}
         run: |
@@ -64,8 +65,10 @@ jobs:
           git config user.email "admin@kasba.co.in"
           git add -A pipeline/state.json pipeline/drafts pipeline/inbox src/content/stories
           git diff --cached --quiet && exit 0
-          if [ "${{ steps.pipeline.outputs.published }}" != "" ] && [ "${{ steps.pipeline.outputs.published }}" != "0" ]; then
-            git commit -m "Publish ${{ steps.pipeline.outputs.published }} approved stories"
+          if [ "${{ steps.pipeline.outputs.deploy }}" = "true" ]; then
+            git commit -m "Put ${{ steps.pipeline.outputs.live }} stories live"
+          elif [ "${{ steps.pipeline.outputs.published }}" != "" ] && [ "${{ steps.pipeline.outputs.published }}" != "0" ]; then
+            git commit -m "[skip ci] Queue ${{ steps.pipeline.outputs.published }} stories for the next deploy"
           else
             git commit -m "[skip ci] Pipeline state"
           fi
@@ -73,7 +76,7 @@ jobs:
 
       # Cloudflare needs a couple of minutes to put new stories live before search engines are told.
       - name: Tell search engines (IndexNow)
-        if: ${{ steps.pipeline.outputs.published != '' && steps.pipeline.outputs.published != '0' && inputs.dry_run != true }}
+        if: ${{ steps.pipeline.outputs.ids != '' && inputs.dry_run != true }}
         continue-on-error: true
         env:
           IDS: ${{ steps.pipeline.outputs.ids }}
