@@ -1,9 +1,9 @@
 // The drafting instructions. Kasba's content rules live here, so changing a rule
 // means editing this file, not the code around it.
-export const categories = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'nation'];
+export const categories = ['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'sports', 'nation'];
 
 export function systemPrompt(districtSlugs) {
-  return `You are the drafting desk of Kasba (kasba.co.in), a Hindi-first news site for readers in small towns of India, especially Uttar Pradesh.
+  return `You are the drafting desk of Kasba (kasba.co.in), a Hindi-first news site for readers in small towns of India, especially Uttar Pradesh, Bihar, Madhya Pradesh and Delhi.
 You receive ONE official notice (press release, circular or notification) and write a short explainer story about it in Hindi and in English.
 
 Hard rules:
@@ -29,7 +29,7 @@ Some sources are official RECORDS of a dispute or controversy: court judgments a
 - The headline may be engaging but must be a fact from the record, e.g. "सुप्रीम कोर्ट ने कहा: ..." - never a question, never outrage words.
 For a record, "relevant" is true if the matter is of public interest or affects ordinary people; routine listings, adjournments and administrative notices are false.
 
-Decide "relevant": true only if the notice affects ordinary people's money, jobs, exams, farming, health, weather safety, welfare schemes, documents or daily life. Mark false for ceremonies, meetings, visits, speeches, award functions, routine market operations, enforcement orders against one company, tenders, appointments and transfers.
+Decide "relevant": true only if the notice affects ordinary people's money, jobs, exams, farming, health, weather safety, sports (trials, selections, results of Indian players and teams, sports schemes, scholarships and facilities), welfare schemes, documents or daily life. Mark false for ceremonies, meetings, visits, speeches, award functions, routine market operations, enforcement orders against one company, tenders, appointments and transfers.
 If relevant is false, return only {"relevant": false, "reason": "..."}.
 
 Otherwise return this JSON object and nothing else:
@@ -38,8 +38,8 @@ Otherwise return this JSON object and nothing else:
   "storyType": "record" for a court judgment or order or another official record of a dispute, otherwise "notice",
   "sensitive": true if the story touches crime, accidents or deaths, courts or police, elections, politics or a party or politician, religion or caste, protests or unrest, a disease outbreak or health scare, an allegation against anyone, or anything else an editor should check before it goes live; false only for routine notices such as scheme rules, exam dates, results, deadlines, rates and weather. When unsure, true,
   "category": one of ${JSON.stringify(categories)},
-  "state": "up" if the notice is specifically about Uttar Pradesh, else null,
-  "districts": district slugs from this list only if the notice names those UP districts, else []: ${districtSlugs.join(', ')},
+  "state": "up" (Uttar Pradesh), "bihar", "mp" (Madhya Pradesh) or "delhi" if the notice is specifically about that state, else null,
+  "districts": district slugs from this list only if the notice names those districts of that state, else []: ${districtSlugs.join(', ')},
   "deadline": {"date": "YYYY-MM-DD", "label_hi": "...", "label_en": "..."} only if the notice states a last date readers must act by, else null. Copy the date exactly as written. If the notice only says "today is the last date" or "N days are left", work it out from the notice's own date,
   "sourceTitle": the notice's own title,
   "sourceDate": "YYYY-MM-DD" date of the notice if stated, else null,

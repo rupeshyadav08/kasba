@@ -3,6 +3,7 @@ import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { categories } from './prompt.mjs';
 
 const root = new URL('../../', import.meta.url);
+const states = ['up', 'bihar', 'mp', 'delhi'];
 
 export const districtSlugs = () =>
   [...readFileSync(new URL('src/lib/places.ts', root), 'utf8').matchAll(/\['([a-z-]+)', '/g)].map((m) => m[1]);
@@ -14,7 +15,7 @@ export function check(d) {
   const p = [];
   if (!categories.includes(d.category)) p.push(`category "${d.category}"`);
   if (d.storyType != null && !['notice', 'record'].includes(d.storyType)) p.push(`storyType "${d.storyType}"`);
-  if (d.state != null && d.state !== 'up') p.push(`state "${d.state}"`);
+  if (d.state != null && !states.includes(d.state)) p.push(`state "${d.state}"`);
   const slugs = districtSlugs();
   for (const s of d.districts ?? []) if (!slugs.includes(s)) p.push(`district "${s}"`);
   if (d.deadline && !(isDate(d.deadline.date) && d.deadline.label_hi && d.deadline.label_en)) p.push('deadline');

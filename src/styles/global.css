@@ -38,6 +38,7 @@
   --c-money: #5b2c83;
   --c-weather: #00677f;
   --c-health: #a4262c;
+  --c-sports: #b3410e;
   --c-nation: #3d434a;
   --display: 'Gloock', 'Noto Serif Devanagari', Georgia, serif;
   --serif: 'Source Serif 4', 'Noto Serif Devanagari', Georgia, serif;
@@ -57,7 +58,7 @@
     --accent: #ededed; --accent-strong: #ffffff; --accent-tint: #2a241d; --dark: #000000; --dark-2: #242424;
     --up: #6fbfa0; --up-tint: #16241f; --down: #ef6b6b; --down-tint: #2a1819; --local-ink: #ededed; --band-bg: #000000;
     --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
-    --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
+    --c-weather: #5cc6de; --c-health: #f08a8f; --c-sports: #f2a06b; --c-nation: #b8bec5;
     color-scheme: dark;
   }
 }
@@ -67,7 +68,7 @@
   --accent: #ededed; --accent-strong: #ffffff; --accent-tint: #2a241d; --dark: #000000; --dark-2: #242424;
   --up: #6fbfa0; --up-tint: #16241f; --down: #ef6b6b; --down-tint: #2a1819; --local-ink: #ededed; --band-bg: #000000;
   --c-schemes: #5fc79e; --c-jobs-exams: #8fb3f0; --c-farming: #e0b04f; --c-money: #c39be6;
-  --c-weather: #5cc6de; --c-health: #f08a8f; --c-nation: #b8bec5;
+  --c-weather: #5cc6de; --c-health: #f08a8f; --c-sports: #f2a06b; --c-nation: #b8bec5;
   color-scheme: dark;
 }
 

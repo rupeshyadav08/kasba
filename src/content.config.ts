@@ -1,7 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
-import { districtSlugs } from './lib/places';
+import { districtSlugs, stateCodes } from './lib/places';
 
 // One Markdown file per story per language. The pipeline writes these files;
 // every field below is required by Kasba's content rules.
@@ -24,9 +24,9 @@ const stories = defineCollection({
     }),
     // "record": a "what the record says" story from a court judgment or other official record.
     storyType: z.enum(['notice', 'record']).default('notice'),
-    category: z.enum(['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'nation']),
-    // 'up' for Uttar Pradesh stories; districts use the slugs in src/lib/places.ts.
-    state: z.enum(['up']).optional(),
+    category: z.enum(['schemes', 'jobs-exams', 'farming', 'money', 'weather', 'health', 'sports', 'nation']),
+    // A state code (up, bihar, mp, delhi); districts use the slugs in src/lib/places.ts.
+    state: z.enum(stateCodes).optional(),
     districts: z.array(z.enum(districtSlugs as [string, ...string[]])).default([]),
     author: z.string(),
     published: z.coerce.date(),

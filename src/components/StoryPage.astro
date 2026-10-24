@@ -2,7 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, render } from 'astro:content';
 import StoryCard from './StoryCard.astro';
-import { districtBySlug, districtPath, state, statePath } from '../lib/places';
+import { districtBySlug, districtPath, stateByCode, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
 import { org } from '../lib/site';
 import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
@@ -21,9 +21,11 @@ const terms = (await getCollection('glossary', ({ data }) => data.lang === d.lan
 const glossaryPath = d.lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
 const words = [d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].join(' ').trim().split(/\s+/).length;
+// The state a story is about: stated, or the state of its first district.
+const st = stateByCode(d.state ?? districtBySlug(d.districts[0] ?? '')?.state ?? '');
 const places = [
-  ...(d.state ? [{ '@type': 'State', name: state[d.lang], containedInPlace: { '@type': 'Country', name: 'India' } }] : []),
-  ...d.districts.map((slug) => ({ '@type': 'AdministrativeArea', name: districtBySlug(slug)![d.lang], containedInPlace: { '@type': 'State', name: state[d.lang] } })),
+  ...(d.state && st ? [{ '@type': 'State', name: st[d.lang], containedInPlace: { '@type': 'Country', name: 'India' } }] : []),
+  ...d.districts.map((slug) => ({ '@type': 'AdministrativeArea', name: districtBySlug(slug)![d.lang], containedInPlace: { '@type': 'State', name: stateByCode(districtBySlug(slug)!.state)![d.lang] } })),
 ];
 const url = new URL(storyPath(d.lang, d.storyId), Astro.site).toString();
 const home = new URL(d.lang === 'hi' ? '/' : '/en', Astro.site).toString();
@@ -116,7 +118,7 @@ const jsonLd = [
 
     {(d.state || d.districts.length > 0) && (
       <nav class="places" aria-label={L.districtsLabel}>
-        {d.state && <a href={statePath(d.lang)}>{state[d.lang]}</a>}
+        {d.state && st && <a href={statePath(d.lang, st.code)}>{st[d.lang]}</a>}
         {d.districts.map((slug) => <a href={districtPath(d.lang, slug)}>{districtBySlug(slug)![d.lang]}</a>)}
       </nav>
     )}

@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { state, statePath } from '../lib/places';
+import { states, statePath } from '../lib/places';
 import LocalStrip from './LocalStrip.astro';
 import { categories, sectionOrder, sectionPath, storyPath, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang; altPath?: string; current?: string }
@@ -37,7 +37,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
         <nav class="drawer" aria-label={L.sections}>
           <ul>
             {sectionOrder.map((c) => <li><a href={sectionPath(lang, c)}>{categories[c][lang]}</a></li>)}
-            <li><a href={statePath(lang)}>{L.chooseDistrict}</a></li>
+            {states.map((s) => <li><a href={statePath(lang, s.code)}>{s[lang]}</a></li>)}
             <li><a href={`${p}/deadlines`}>{L.deadlines}</a></li>
             <li><a href={`${p}/shabdkosh`}>{L.glossary}</a></li>
             <li><a href={`${p}/about`}>{lang === 'hi' ? 'हमारे बारे में' : 'About'}</a></li>
@@ -51,7 +51,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
       {sectionOrder.map((c) => (
         <li><a href={sectionPath(lang, c)} aria-current={current === c ? 'page' : undefined}>{categories[c][lang]}</a></li>
       ))}
-      <li><a href={statePath(lang)} aria-current={current === 'up' ? 'page' : undefined}>{state[lang]}</a></li>
+      {states.map((s) => <li class="st"><a href={statePath(lang, s.code)} aria-current={current === s.code ? 'page' : undefined}>{s[lang]}</a></li>)}
     </ul>
   </nav>
   {latest.length > 0 && (
@@ -96,6 +96,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   .sections ul { list-style: none; margin: 0; padding: 0 0.6rem; display: flex; overflow-x: auto; scrollbar-width: none; }
   @media (min-width: 1000px) { .sections ul { justify-content: center; } .sections::after { display: none; } }
   .sections a { display: flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 0.85rem; font-size: 1.05rem; white-space: nowrap; color: var(--text-soft); }
+  .sections .st:first-of-type { border-left: 1px solid var(--line); margin-left: 0.4rem; padding-left: 0.4rem; }
   .sections a::after { content: '⌄'; font-size: 0.8em; color: var(--muted); transform: translateY(-0.15em); }
   .sections a:hover, .sections a[aria-current='page'] { color: var(--text); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
 

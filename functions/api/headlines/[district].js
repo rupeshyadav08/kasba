@@ -1,4 +1,4 @@
-// GET /api/headlines/<district>: the latest local headlines for one UP district, from local
+// GET /api/headlines/<district>: the latest local headlines for one district, from local
 // papers' own RSS feeds. Kasba shows only the headline, the paper's name and a link to the
 // paper's page; nothing is copied or rewritten, and the stories are the papers' own.
 // Runs as a Cloudflare Pages Function, so the headlines stay fresh without rebuilding the site.
@@ -7,14 +7,20 @@ import { districtBySlug } from '../../../src/lib/places';
 const MAX_AGE_HOURS = 48;
 const LIMIT = 8;
 
-// Amar Ujala has one feed per district, under the paper's own name for it (checked 22 Oct 2026;
-// Kanpur Dehat has none, so it gets Bhaskar's headlines only).
+// Amar Ujala has one feed per district, under the paper's own name for it (UP checked 22 Oct 2026;
+// Kanpur Dehat has none, so it gets Bhaskar's headlines only). A district without a feed just
+// gives an empty list. Bihar and MP also get the paper's state feed, filtered by district name;
+// Delhi's districts all share the Delhi feed.
 const amarUjalaSlug = { 'gautam-buddh-nagar': 'noida', 'kanpur-nagar': 'kanpur', prayagraj: 'allahabad', sonbhadra: 'sonebhadra' };
-const sources = [
-  { name: 'अमर उजाला', url: (slug) => `https://www.amarujala.com/rss/${amarUjalaSlug[slug] ?? slug}.xml`, all: true },
+const amarUjala = (path) => `https://www.amarujala.com/rss/${path}.xml`;
+const perDistrict = { name: 'अमर उजाला', url: (slug) => amarUjala(amarUjalaSlug[slug] ?? slug), all: true };
+const sourcesByState = {
   // Dainik Bhaskar has one feed for all of UP; a headline counts if it names the district.
-  { name: 'दैनिक भास्कर', url: () => 'https://www.bhaskar.com/rss-v1--category-2052.xml', all: false },
-];
+  up: [perDistrict, { name: 'दैनिक भास्कर', url: () => 'https://www.bhaskar.com/rss-v1--category-2052.xml', all: false }],
+  bihar: [perDistrict, { name: 'अमर उजाला', url: () => amarUjala('bihar'), all: false }],
+  mp: [perDistrict, { name: 'अमर उजाला', url: () => amarUjala('madhya-pradesh'), all: false }],
+  delhi: [{ name: 'अमर उजाला', url: () => amarUjala('delhi'), all: true }],
+};
 
 const decode = (s) => s
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
@@ -43,7 +49,7 @@ export async function onRequestGet({ params, request, waitUntil }) {
   const names = district.hi.split(/[()]/).map((s) => s.trim()).filter(Boolean);
   const cutoff = Date.now() - MAX_AGE_HOURS * 3600e3;
 
-  const lists = await Promise.all(sources.map(async (s) => {
+  const lists = await Promise.all(sourcesByState[district.state].map(async (s) => {
     try {
       const res = await fetch(s.url(district.slug), { headers: { Accept: 'application/rss+xml, application/xml', From: 'admin@kasba.co.in' } });
       if (!res.ok) return [];
