@@ -11,8 +11,8 @@ const stories = defineCollection({
     lang: z.enum(['hi', 'en']),
     // Shared id that links the Hindi and English versions of one story.
     storyId: z.string(),
-    title: z.string().max(110),
-    summary: z.string().max(300),
+    title: z.string().max(130),
+    summary: z.string().max(450),
     meaning: z.string(),
     keyFacts: z.array(z.string()).min(1),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).max(5),

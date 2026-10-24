@@ -21,8 +21,10 @@ export function check(d) {
   for (const lang of ['hi', 'en']) {
     const s = d[lang];
     if (!s) { p.push(`missing ${lang}`); continue; }
-    if (!s.title || s.title.length > 110) p.push(`${lang} title length`);
-    if (!s.summary || s.summary.length > 300) p.push(`${lang} summary length`);
+    // The prompt asks for 100 and 280 characters; the limits leave room so a slightly long draft
+    // still reaches the editor instead of being dropped.
+    if (!s.title || s.title.length > 130) p.push(`${lang} title length`);
+    if (!s.summary || s.summary.length > 450) p.push(`${lang} summary length`);
     if (!s.meaning) p.push(`${lang} meaning`);
     if (!Array.isArray(s.keyFacts) || s.keyFacts.length < 1) p.push(`${lang} keyFacts`);
     if (!Array.isArray(s.faq) || s.faq.length < 2 || s.faq.length > 5 || s.faq.some((f) => !f.q || !f.a)) p.push(`${lang} faq`);

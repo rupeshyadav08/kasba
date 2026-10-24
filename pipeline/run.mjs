@@ -25,7 +25,7 @@ const sources = readJson('sources.json').filter((s) => Boolean(s.india) === indi
 const stateFile = india ? 'state-india.json' : 'state.json';
 const state = existsSync(here(stateFile)) ? readJson(stateFile) : { seen: {}, telegramOffset: 0 };
 const dryRun = process.env.DRY_RUN === 'true';
-const summary = { published: [], autoPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
+const summary = { telegramUpdates: 0, published: [], autoPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -39,6 +39,8 @@ const manual = [];
 // 1. Editor's decisions.
 async function applyDecisions() {
   const list = await tg.updates(state.telegramOffset);
+  // Logged so a run shows whether the editor's taps reached it (they did not for two days in October).
+  summary.telegramUpdates = list.length;
   for (const u of list) {
     state.telegramOffset = u.update_id + 1;
     const msg = u.message;
