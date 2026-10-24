@@ -1,4 +1,5 @@
 ---
+import LocalStrip from './LocalStrip.astro';
 import { categories, sectionOrder, sectionPath, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -31,6 +32,7 @@ const policies = lang === 'hi'
       <div class="logo">कस्बा</div>
       <p>{L.siteNote}</p>
       <p><a class="mail" href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
+      <div class="pick"><LocalStrip lang={lang} variant="footer" /></div>
     </div>
     <nav aria-label={L.sections}>
       <h2>{L.sections}</h2>
@@ -71,6 +73,7 @@ const policies = lang === 'hi'
   ul { list-style: none; margin: 0; padding: 0; }
   li a { display: inline-flex; min-height: 40px; align-items: center; font-size: 0.97rem; color: #d6d6d6; }
   li a:hover, p a:hover { text-decoration: underline; color: #fff; }
+  .pick { margin-top: 1.25rem; }
   .share { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 2rem; font-size: 0.95rem; color: #c3c3c3; }
   .share ul { display: flex; gap: 0.5rem; }
   .share li a { justify-content: center; width: 44px; min-height: 44px; border-radius: 50%; background: #2a2a2a; color: #e6e6e6; }

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { state, statePath } from '../lib/places';
+import LocalStrip from './LocalStrip.astro';
 import { categories, sectionOrder, sectionPath, storyPath, t, type Lang } from '../lib/i18n';
 interface Props { lang: Lang; altPath?: string; current?: string }
 const { lang, altPath, current } = Astro.props;
@@ -26,14 +27,17 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
       <span class="logo-main">कस्बा</span><span class="logo-sub">{lang === 'hi' ? 'KASBA' : 'KASBA'}</span>
     </a>
     <div class="right">
-      <a href={statePath(lang)} class="pill district">{L.chooseDistrict} <span aria-hidden="true">↗</span></a>
+      <details class="district">
+        <summary class="pill">{L.chooseDistrict} <span aria-hidden="true">⌄</span></summary>
+        <div class="pop"><LocalStrip lang={lang} variant="pop" /></div>
+      </details>
       <a href={other} class="lang" hreflang={lang === 'hi' ? 'en' : 'hi'}>{L.switchLang}</a>
       <details class="menu">
         <summary aria-label={L.sections}><span></span><span></span><span></span></summary>
         <nav class="drawer" aria-label={L.sections}>
           <ul>
             {sectionOrder.map((c) => <li><a href={sectionPath(lang, c)}>{categories[c][lang]}</a></li>)}
-            <li><a href={statePath(lang)}>{state[lang]}</a></li>
+            <li><a href={statePath(lang)}>{L.chooseDistrict}</a></li>
             <li><a href={`${p}/deadlines`}>{L.deadlines}</a></li>
             <li><a href={`${p}/shabdkosh`}>{L.glossary}</a></li>
             <li><a href={`${p}/about`}>{lang === 'hi' ? 'हमारे बारे में' : 'About'}</a></li>
@@ -72,8 +76,11 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   .logo-main { font-family: var(--display); font-weight: 600; font-size: 2.1rem; letter-spacing: 0; }
   .logo-sub { font-family: var(--display); font-size: 0.7rem; letter-spacing: 0.45em; color: var(--muted); margin-top: 0.15rem; padding-left: 0.45em; }
   @media (min-width: 740px) { .logo-main { font-size: 2.75rem; } .logo-sub { font-size: 0.78rem; } }
-  .district { display: none; font-size: 0.95rem; white-space: nowrap; }
-  @media (min-width: 1000px) { .district { display: inline-flex; } }
+  .district { display: none; position: relative; }
+  @media (min-width: 1000px) { .district { display: block; } }
+  .district summary { list-style: none; cursor: pointer; font-size: 0.95rem; white-space: nowrap; }
+  .district summary::-webkit-details-marker { display: none; }
+  .pop { position: absolute; right: 0; top: 52px; z-index: 20; width: 22rem; background: var(--bg); border-radius: var(--r-tile); box-shadow: 0 12px 40px rgb(0 0 0 / 0.14); padding: 1rem 1.1rem 0.4rem; }
   .lang { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; font-family: var(--sans); font-weight: 600; }
   .menu { position: relative; }
   .menu summary { list-style: none; cursor: pointer; width: 44px; height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 0 8px; }

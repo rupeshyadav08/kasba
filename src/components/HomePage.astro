@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
 import SectionBlock from './SectionBlock.astro';
-import LocalStrip from './LocalStrip.astro';
 import LocalHeadlines from './LocalHeadlines.astro';
 import { upcomingDeadlines } from '../lib/deadlines';
 import { districts } from '../lib/places';
@@ -52,7 +51,6 @@ const jsonLd = [
             <span>⌖ {districts.length} {lang === 'hi' ? 'ज़िले' : 'districts'}</span>
           </span>
         </a>
-        <LocalStrip lang={lang} />
       </div>
 
       <div class="col c">
@@ -98,10 +96,10 @@ const jsonLd = [
   @media (min-width: 740px) { .bento { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .a { grid-column: 1 / -1; } }
   @media (min-width: 1150px) { .bento { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); } .a { grid-column: auto; } }
 
-  .briefing { display: flex; flex-direction: column; gap: 0.6rem; background: var(--cream); border-radius: var(--r-card); padding: 1.5rem; }
+  .briefing { flex: 1; display: flex; flex-direction: column; gap: 0.6rem; background: var(--cream); border-radius: var(--r-card); padding: 1.5rem; }
   .b-title { font-size: 1.75rem; line-height: 1.15; }
   .b-text { font-size: 1.02rem; line-height: 1.5; }
-  .b-stats { display: flex; gap: 1.25rem; color: var(--text-soft); font-size: 0.95rem; }
+  .b-stats { margin-top: auto; padding-top: 0.6rem; display: flex; gap: 1.25rem; color: var(--text-soft); font-size: 0.95rem; }
   .briefing:hover .b-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 
 
