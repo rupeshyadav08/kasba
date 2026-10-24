@@ -12,5 +12,3 @@ console.log('stored offset', state.telegramOffset);
 const all = await call('getUpdates', { offset: state.telegramOffset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
 console.log('getUpdates ok', all.ok, all.description ?? '', 'count', all.result?.length);
 for (const u of all.result ?? []) console.log(u.update_id, u.callback_query ? `tap ${u.callback_query.data} from=${u.callback_query.from?.id === Number(process.env.TELEGRAM_CHAT_ID) ? 'editor' : 'OTHER ' + u.callback_query.from?.id} chat=${u.callback_query.message?.chat?.type}` : u.message ? `message chat=${u.message.chat?.type}` : Object.keys(u));
-const any = await call('getUpdates', { offset: -1, timeout: 0 });
-console.log('latest update id overall:', any.result?.[0]?.update_id);
