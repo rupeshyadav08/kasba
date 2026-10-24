@@ -10,33 +10,34 @@ const [first, ...others] = stories.slice(0, 5);
 <section class="block" style={secColor(section)} aria-labelledby={`sec-${section}`}>
   <header>
     <h2 id={`sec-${section}`} class="serif"><a href={sectionPath(lang, section)}>{categories[section][lang]}</a></h2>
-    <a class="more" href={sectionPath(lang, section)}>{t[lang].more} ›</a>
+    <a class="more" href={sectionPath(lang, section)}>{t[lang].more} ↗</a>
   </header>
   {first ? (
     <div class="grid">
-      <div class="main"><StoryCard story={first} size="standard" showKicker={false} /></div>
+      <div class="main"><StoryCard story={first} size="tall" showKicker={false} /></div>
       {others.map((s) => <StoryCard story={s} size="compact" showKicker={false} />)}
     </div>
   ) : <p class="muted">{t[lang].soon}</p>}
 </section>
 <style>
-  .block { border-top: 4px solid var(--sec); padding-top: 0.5rem; display: grid; gap: 1rem; }
-  header { display: flex; justify-content: space-between; align-items: baseline; }
-  h2 { margin: 0; font-size: 1.5rem; color: var(--sec); font-weight: 700; }
+  .block { display: grid; gap: var(--gap); }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 0 0.25rem 0.5rem; }
+  h2 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.1; }
   h2 a { display: inline-flex; align-items: center; min-height: 44px; }
-  .more { color: var(--sec); font-weight: 600; font-size: 0.9rem; min-height: 44px; display: inline-flex; align-items: center; }
-  .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  h2 a::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--sec); margin-right: 0.6rem; }
+  .more { min-height: 44px; display: inline-flex; align-items: center; padding: 0 1.1rem; border: 1px solid var(--text); border-radius: 999px; font-size: 0.95rem; }
+  .more:hover { background: var(--text); color: var(--bg); }
+  .grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap); }
   @media (min-width: 740px) {
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .main { grid-row: span 2; }
   }
   /* A section with one story lets it use the extra width. */
   .main:only-child { grid-column: 1 / -1; }
-  @media (min-width: 1024px) {
-    .main:only-child { grid-column: span 2; }
-    .block { grid-template-columns: 12rem 1fr; column-gap: 1.5rem; }
-    header { flex-direction: column; justify-content: flex-start; }
+  @media (min-width: 1150px) {
     .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .main { grid-row: span 2; }
+    .main:only-child { grid-column: span 2; }
   }
+  .main { display: flex; flex-direction: column; }
+  .main > :global(*) { flex: 1; }
 </style>

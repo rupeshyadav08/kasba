@@ -1,33 +1,83 @@
 ---
-// One story teaser. Sizes follow a newspaper front page:
-// "lead" (big headline + summary), "standard" (headline + summary), "compact" (headline only).
+// One story teaser, drawn as a borderless tinted card.
+// "hero" (front-page lead, big headline), "tall" (front-page column card), "standard"
+// (headline + summary), "compact" (headline only). Headlines like "PM-KISAN: ..." get
+// their topic marked with a highlighter block, as in the reference design.
 import type { CollectionEntry } from 'astro:content';
-import { categories, dateFmt, secColor, storyPath, t } from '../lib/i18n';
-interface Props { story: CollectionEntry<'stories'>; size?: 'lead' | 'standard' | 'compact'; showKicker?: boolean }
-const { story, size = 'standard', showKicker = true } = Astro.props;
+import { categories, dateFmt, readMinutes, secColor, storyPath, t } from '../lib/i18n';
+interface Props { story: CollectionEntry<'stories'>; size?: 'hero' | 'tall' | 'lead' | 'standard' | 'compact'; showKicker?: boolean; highlight?: 'red' | 'beige' }
+const { story, size = 'standard', showKicker = true, highlight } = Astro.props;
 const d = story.data;
-const Tag = size === 'lead' ? 'h2' : 'h3';
+const L = t[d.lang];
+const Tag = size === 'hero' || size === 'lead' ? 'h2' : 'h3';
+const big = size === 'hero' || size === 'tall' || size === 'lead';
+const mark = highlight ?? (size === 'hero' || size === 'lead' ? 'red' : undefined);
+const colon = d.title.indexOf(':');
+// Without a "Topic:" prefix, the hero marks its first two words instead.
+const words = d.title.split(' ');
+const [topic, rest] = !mark ? ['', d.title]
+  : colon > 0 && colon < 40 ? [d.title.slice(0, colon), d.title.slice(colon)]
+  : size === 'hero' && words.length > 4 ? [words.slice(0, 2).join(' '), ' ' + words.slice(2).join(' ')]
+  : ['', d.title];
+const minutes = readMinutes([d.summary, d.meaning].join(' '), d.lang) + 2;
 ---
 <article class={`card ${size}`} style={secColor(d.category)}>
   <a href={storyPath(d.lang, d.storyId)}>
-    {showKicker && <span class="kicker">{categories[d.category][d.lang]}</span>}
-    <Tag class="serif hl">{d.title}</Tag>
-    {size !== 'compact' && <p class="serif sum">{d.summary}</p>}
-    {size === 'lead' && <p class="mean"><strong>{t[d.lang].meaning}:</strong> {d.meaning}</p>}
-    <span class="muted">{d.source.name} · {dateFmt(d.lang, d.published)}</span>
+    {(showKicker || big) && (
+      <span class="meta">
+        {showKicker && <span class="kicker">{categories[d.category][d.lang]}</span>}
+        <span class="date">{dateFmt(d.lang, d.published)}</span>
+      </span>
+    )}
+    <span class="spacer" aria-hidden="true"></span>
+    <Tag class="serif hl">{topic && <span class={`hl-${mark}`}>{topic}</span>}{rest}</Tag>
+    {size !== 'compact' && <p class="sum">{d.summary}</p>}
+    {(size === 'hero' || size === 'lead') && <p class="mean"><strong>{L.meaning}:</strong> {d.meaning}</p>}
+    {big ? (
+      <span class="foot">
+        <span>{d.source.name}</span>
+        <span>
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          {minutes} {L.minRead}
+        </span>
+      </span>
+    ) : !showKicker || size === 'standard' ? <span class="muted">{d.source.name} · {dateFmt(d.lang, d.published)}</span> : <span class="muted">{d.source.name}</span>}
   </a>
 </article>
 <style>
-  .card { border-top: 1px solid var(--sec); padding-top: 0.5rem; }
-  .card a { display: flex; flex-direction: column; gap: 0.35rem; }
-  .card :is(h2, h3) { margin: 0; font-weight: 600; line-height: 1.4; }
-  .lead { border-top-width: 3px; }
-  .lead h2 { font-size: 1.75rem; font-weight: 700; line-height: 1.3; }
-  @media (min-width: 740px) { .lead h2 { font-size: 2rem; } }
-  .standard h3 { font-size: 1.2rem; }
-  .compact h3 { font-size: 1.05rem; }
-  .sum { margin: 0; color: var(--text-soft); line-height: 1.65; font-size: 1rem; }
-  .lead .sum { font-size: 1.1rem; }
-  .mean { margin: 0.25rem 0; padding: 0.75rem 1rem; border-left: 3px solid var(--sec); background: var(--bg-soft); border-radius: 0 8px 8px 0; color: var(--text-soft); line-height: 1.6; font-size: 0.975rem; }
-  .mean strong { color: var(--sec); }
+  .card { background: var(--card); border-radius: var(--r-card); }
+  .card a { display: flex; flex-direction: column; gap: 0.6rem; height: 100%; padding: 1.25rem 1.25rem 1.1rem; }
+  @media (min-width: 740px) { .card a { padding: 1.6rem 1.6rem 1.3rem; } }
+  .card :is(h2, h3) { margin: 0; line-height: 1.2; overflow-wrap: anywhere; }
+  .meta { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; align-items: baseline; font-size: 0.95rem; }
+  .date { color: var(--muted); }
+  .spacer { flex: 1 1 auto; }
+  .sum { margin: 0; color: var(--text-soft); line-height: 1.6; font-size: 1rem; }
+  .foot { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: 0.9rem; padding-top: 0.4rem; }
+  .foot > span { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .card a:hover .hl { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+
+  .hero { min-height: 100%; background: linear-gradient(160deg, var(--card-2) 0%, var(--card) 60%); }
+  .hero a { gap: 1rem; }
+  .hero .spacer { min-height: 4rem; }
+  .hero h2 { font-size: clamp(2.1rem, 5.2vw, 4.2rem); line-height: 1.08; }
+  .hero .sum { font-size: 1.1rem; max-width: 40rem; }
+  @media (min-width: 1150px) { .hero .spacer { min-height: 10rem; } }
+
+  .tall { background: linear-gradient(180deg, var(--card) 0%, var(--card-2) 70%, var(--bg) 100%); }
+  .tall .spacer { min-height: 2.5rem; }
+  .tall h3 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); line-height: 1.12; }
+  .tall .sum { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .lead h2 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.1; }
+  .standard h3 { font-size: 1.45rem; }
+  .compact { background: var(--card-2); }
+  .compact a { gap: 0.4rem; padding: 1rem 1.1rem; }
+  .compact .spacer { display: none; }
+  .compact h3 { font-size: 1.15rem; line-height: 1.3; }
+  :is(.standard, .compact) .meta { font-size: 0.85rem; }
+  :is(.standard, .compact) .date { display: none; }
+
+  .mean { margin: 0; padding: 0.9rem 1.1rem; background: var(--bg); border-radius: var(--r-tile); color: var(--text-soft); line-height: 1.6; font-size: 1rem; max-width: 40rem; }
+  .mean strong { color: var(--text); font-weight: 600; }
 </style>

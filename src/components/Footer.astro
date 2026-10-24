@@ -14,7 +14,7 @@ const policies = lang === 'hi'
 <footer class="site-footer">
   <div class="page grid">
     <div class="brand">
-      <div class="serif logo">कस्बा</div>
+      <div class="logo">कस्बा</div>
       <p>{L.siteNote}</p>
       <p><a class="mail" href="mailto:admin@kasba.co.in">admin@kasba.co.in</a></p>
     </div>
@@ -34,16 +34,18 @@ const policies = lang === 'hi'
   <div class="page copy">© {new Date().getFullYear()} Kasba · kasba.co.in</div>
 </footer>
 <style>
-  .site-footer { margin-top: 4rem; background: var(--band-bg); color: var(--band-text); padding-top: 2rem; }
+  .site-footer { margin: 4rem var(--gap) var(--gap); background: var(--dark); color: var(--band-text); padding-top: 2.25rem; border-radius: var(--r-card); }
+  @media (min-width: 740px) { .site-footer { margin: 4rem 1.6rem 1.6rem; } }
+  .page { padding: 0 1.5rem; }
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
   .brand { grid-column: 1 / -1; }
   @media (min-width: 900px) { .grid { grid-template-columns: 2fr 1fr 1fr 1fr; } .brand { grid-column: auto; } }
-  .logo { font-size: 2rem; font-weight: 700; }
+  .logo { font-family: var(--display); font-size: 2.5rem; font-weight: 600; line-height: 1.1; }
   .mail { display: inline-flex; min-height: 44px; align-items: center; }
-  p { margin: 0.5rem 0 0; font-size: 0.9rem; color: #c3c8ce; max-width: 28rem; }
-  h2 { font-size: 0.875rem; font-weight: 600; margin: 0 0 0.5rem; color: #c3c8ce; }
+  p { margin: 0.5rem 0 0; font-size: 0.95rem; color: #c3c3c3; max-width: 28rem; }
+  h2 { font-family: var(--display); font-weight: 400; font-size: 1.15rem; margin: 0 0 0.4rem; color: #fff; }
   ul { list-style: none; margin: 0; padding: 0; }
-  li a { display: inline-flex; min-height: 44px; align-items: center; font-size: 0.95rem; }
-  li a:hover, p a:hover { text-decoration: underline; }
-  .copy { border-top: 1px solid #3a3f45; margin-top: 2rem; padding-top: 1rem; padding-bottom: 1.5rem; font-size: 0.8125rem; color: #aab0b6; }
+  li a { display: inline-flex; min-height: 40px; align-items: center; font-size: 0.97rem; color: #d6d6d6; }
+  li a:hover, p a:hover { text-decoration: underline; color: #fff; }
+  .copy { border-top: 1px solid #333; margin-top: 2rem; padding-top: 1rem; padding-bottom: 1.5rem; font-size: 0.85rem; color: #a8a8a8; }
 </style>
