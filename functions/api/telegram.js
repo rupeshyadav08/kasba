@@ -56,7 +56,7 @@ export async function onRequestPost({ request, env }) {
   // Telegram retry later, which is what we want.
   if (!saved.ok && saved.status !== 422) return new Response('could not save', { status: 502 });
   if (update.callback_query) {
-    await tg(env, 'answerCallbackQuery', { callback_query_id: update.callback_query.id, text: '⏳ मिल गया, 2-3 मिनट में साइट पर' });
+    await tg(env, 'answerCallbackQuery', { callback_query_id: update.callback_query.id, text: '⏳ मिल गया' });
   }
   // A run already waiting will read this file too, so a refused start is fine.
   await gh(env, 'actions/workflows/pipeline.yml/dispatches', 'POST', { ref: 'main' });

@@ -103,8 +103,8 @@ async function applyDecisions() {
     if (action === 'a') {
       const storyId = publish(draft, config.author);
       summary.published.push(storyId);
-      await tg.answer(cb.id, '✅ प्रकाशित हो रहा है');
-      await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(साइट 2-3 मिनट में अपडेट होगी)`);
+      await tg.answer(cb.id, '✅ मंज़ूर, 2 घंटे के अंदर साइट पर');
+      await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(अगले अपडेट में साइट पर, 2 घंटे के अंदर)`);
     } else {
       summary.rejected.push(id);
       await tg.answer(cb.id, '❌ हटाया गया');
@@ -222,7 +222,7 @@ async function draftNew() {
         const storyId = publish(draft, config.author, { auto: true });
         summary.published.push(storyId);
         summary.autoPublished.push(storyId);
-        await tg.send(`🤖 <b>अपने-आप प्रकाशित</b>\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
+        await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (2 घंटे के अंदर साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
           { text: '🗑 साइट से हटाएँ', callback_data: `u:${storyId}` },
         ]);
         drafted++;
@@ -247,6 +247,20 @@ async function draftNew() {
   }
 }
 
+// Cloudflare's free plan allows 500 builds a month, and 20+ stories a day each building the site
+// would pass that. So stories are committed without a build and go live together: at most one
+// build every config.deployEveryMinutes, but a removal goes out at once.
+function deployDue() {
+  const d = (state.deploy ??= { last: null, pending: [] });
+  d.pending = [...new Set([...d.pending, ...summary.published])].filter((id) => !summary.removed.includes(id));
+  const waited = d.last ? (Date.now() - Date.parse(d.last)) / 60e3 : Infinity;
+  if (!summary.removed.length && !(d.pending.length && waited >= config.deployEveryMinutes)) return [];
+  const ids = d.pending;
+  d.pending = [];
+  d.last = new Date().toISOString();
+  return ids;
+}
+
 // Seen links older than 60 days are forgotten; feeds never go back that far.
 function pruneSeen() {
   const cutoff = new Date(Date.now() - 60 * 86400e3).toISOString().slice(0, 10);
@@ -260,7 +274,9 @@ try {
   await draftNew();
   pruneSeen();
 } finally {
+  const live = !dryRun && !india ? deployDue() : [];
+  const deploy = live.length > 0 || summary.removed.length > 0;
   if (!dryRun) writeJson(stateFile, state);
   console.log(JSON.stringify(summary, null, 2));
-  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length + summary.removed.length}\nids=${summary.published.join(' ')}\n`, { flag: 'a' });
+  if (process.env.GITHUB_OUTPUT) writeFileSync(process.env.GITHUB_OUTPUT, `published=${summary.published.length + summary.removed.length}\ndeploy=${deploy}\nlive=${live.length}\nids=${live.join(' ')}\n`, { flag: 'a' });
 }
