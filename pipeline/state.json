@@ -2436,5 +2436,9 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328219": "2026-10-25",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63862": "2026-10-25"
   },
-  "telegramOffset": 406796360
+  "telegramOffset": 406796360,
+  "deploy": {
+    "last": null,
+    "pending": []
+  }
 }
