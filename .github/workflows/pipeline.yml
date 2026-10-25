@@ -40,8 +40,20 @@ jobs:
           if command -v brew; then brew install poppler tesseract tesseract-lang
           else sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-hin >/dev/null; fi
 
+      - name: Sample short (debug only)
+        if: ${{ inputs.probe_urls == 'short' }}
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          npm ci && npm i --no-save playwright && npx playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+          pip install -q edge-tts
+          node scripts/make-short.mjs
+
       - name: Probe pages (debug only)
-        if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
+        if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null && inputs.probe_urls != 'short' }}
         env:
           PROBE_URLS: ${{ inputs.probe_urls }}
         run: |
