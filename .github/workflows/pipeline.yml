@@ -81,7 +81,7 @@ jobs:
 
       # Stories trigger a Cloudflare build; state-only commits carry [skip ci] so they don't.
       - name: Commit
-        if: ${{ always() && inputs.dry_run != true }}
+        if: ${{ always() && inputs.dry_run != true && (inputs.probe_urls == '' || inputs.probe_urls == null) }}
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
