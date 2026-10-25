@@ -44,7 +44,13 @@ jobs:
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
         env:
           PROBE_URLS: ${{ inputs.probe_urls }}
-        run: node pipeline/probe-compact.mjs $PROBE_URLS
+        run: |
+          node pipeline/probe-compact.mjs $PROBE_URLS
+          for f in mobile desktop; do
+            flag=""; [ $f = desktop ] && flag="--preset=desktop"
+            npx -y lighthouse@12 https://kasba.co.in/ $flag --quiet --chrome-flags="--headless=new --no-sandbox" --output=json --output-path=lh-$f.json || continue
+            node -e "const l=require('./lh-'+process.argv[1]+'.json');console.log(process.argv[1],Object.fromEntries(Object.entries(l.categories).map(([k,v])=>[k,Math.round(v.score*100)])),['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','server-response-time'].map(k=>k+'='+l.audits[k].displayValue).join(' '))" $f
+          done
 
       - name: Fetch, draft and publish
         id: pipeline
