@@ -47,6 +47,20 @@ export async function onRequestPost({ request, env }) {
     if (update.callback_query) await tg(env, 'answerCallbackQuery', { callback_query_id: update.callback_query.id, text: 'Not allowed' });
     return new Response('ok');
   }
+  // Post/Skip on a Short (y:<run id> / n:<run id>) goes straight to the Shorts workflow, not the
+  // news pipeline. The buttons are removed first so a second tap cannot upload the video twice.
+  const shortTap = update.callback_query?.data?.match(/^([yn]):(\d+)$/);
+  if (shortTap) {
+    const { id, message } = update.callback_query;
+    await tg(env, 'editMessageReplyMarkup', { chat_id: message.chat.id, message_id: message.message_id, reply_markup: { inline_keyboard: [] } });
+    if (shortTap[1] === 'n') {
+      await tg(env, 'answerCallbackQuery', { callback_query_id: id, text: 'छोड़ दिया' });
+      return new Response('ok');
+    }
+    const started = await gh(env, 'actions/workflows/short.yml/dispatches', 'POST', { ref: 'main', inputs: { upload: shortTap[2] } });
+    await tg(env, 'answerCallbackQuery', { callback_query_id: id, text: started.ok ? '⏳ YouTube पर डाल रहे हैं' : '⚠️ शुरू नहीं हो पाया' });
+    return new Response('ok');
+  }
   const content = btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(update))));
   const saved = await gh(env, `contents/pipeline/inbox/${update.update_id}.json`, 'PUT', {
     // [skip ci] stops Cloudflare building the site for this commit.

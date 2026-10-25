@@ -1,0 +1,100 @@
+name: Shorts
+
+# Three times a day: makes a ~35-second vertical video from a recent story and sends it to the
+# editor on Telegram with Post/Skip buttons. A Post tap reaches functions/api/telegram.js, which
+# starts this workflow again with `upload` set to the run that made the video; that run's video is
+# then uploaded to YouTube. Repo variable SHORTS_AUTO=true skips the tap and uploads straight away.
+on:
+  schedule:
+    - cron: '41 3,8,13 * * *' # about 9:10, 14:10 and 19:10 India time
+  workflow_dispatch:
+    inputs:
+      story:
+        description: 'Story id (blank: a recent story without a Short yet)'
+        type: string
+        default: ''
+      upload:
+        description: 'Run id whose video to upload (set by the Telegram Post button)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  make:
+    if: ${{ !inputs.upload }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - name: Install tools
+        run: |
+          npm ci
+          npm i --no-save playwright
+          npx playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+          pip install -q edge-tts
+      - name: Make the video and send it to the editor
+        run: node scripts/make-short.mjs ${{ inputs.story }}
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+          SHORT_TONE: hinglish
+          SHORT_RATE: +5%
+          SHORT_ASK: ${{ vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short
+          path: |
+            short/short.mp4
+            short/meta.json
+          if-no-files-found: ignore
+          retention-days: 7
+      # Remember the story so the next run picks a different one.
+      - name: Commit
+        run: |
+          git config user.name "kasba-pipeline"
+          git config user.email "admin@kasba.co.in"
+          git add pipeline/shorts.json
+          git diff --cached --quiet && exit 0
+          git commit -m "[skip ci] Shorts log"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+      - name: Upload to YouTube (no tap needed)
+        if: ${{ vars.SHORTS_AUTO == 'true' && hashFiles('short/meta.json') != '' }}
+        run: node scripts/youtube-upload.mjs
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+  upload:
+    if: ${{ inputs.upload }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: short
+          path: short
+          run-id: ${{ inputs.upload }}
+          github-token: ${{ github.token }}
+      - name: Upload to YouTube
+        run: node scripts/youtube-upload.mjs
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
