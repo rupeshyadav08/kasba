@@ -35,7 +35,9 @@ async function writeScript() {
   if (!process.env.DEEPSEEK_API_KEY) return fallback;
   const config = JSON.parse(readFileSync('pipeline/config.json', 'utf8'));
   const system = `तुम कस्बा (kasba.co.in) के लिए 25-30 सेकंड का हिंदी शॉर्ट वीडियो स्क्रिप्ट लिखते हो।
-नियम: सिर्फ़ ख़बर में दिए तथ्य, कोई नया तथ्य या अंदाज़ा नहीं। आसान बोलचाल की हिंदी। पहला दृश्य एक ठोस हुक हो
+नियम: सिर्फ़ ख़बर में दिए तथ्य, कोई नया तथ्य या अंदाज़ा नहीं। बोलचाल की हिंदी, जैसे कोई जानकार दोस्त
+जोश से बता रहा हो: छोटे वाक्य, सीधे "आप" से बात, बीच में "ध्यान दीजिए", "याद रखिए" जैसे शब्द, सवाल और विस्मय (!)।
+अंक शब्दों में नहीं, अंकों में लिखो; अंग्रेज़ी नाम (JEE, NTA) वैसे ही। पहला दृश्य एक ठोस हुक हो
 (जैसे "आख़िरी तारीख़ 22 नवंबर"), फिर 3 दृश्य काम की बातें, आख़िरी दृश्य "पूरी ख़बर kasba.co.in पर"।
 हर दृश्य: screen = स्क्रीन पर 4-9 शब्द, voice = बोलने के लिए 1-2 छोटे वाक्य। कुल voice 60-75 शब्द।
 सिर्फ़ JSON लौटाओ: {"scenes":[{"screen":"...","voice":"..."}]}`;
@@ -98,7 +100,8 @@ for (const [i, scene] of scenes.entries()) {
   await tab.goto(`file://${process.cwd()}/${out}s${i}.html`);
   await tab.evaluate(() => document.fonts.ready);
   await tab.screenshot({ path: `${out}s${i}.png` });
-  execFileSync('edge-tts', ['--voice', 'hi-IN-SwaraNeural', '--rate', '+8%', '--text', scene.voice, '--write-media', `${out}s${i}.mp3`]);
+  const voice = process.env.SHORT_VOICE ?? 'hi-IN-SwaraNeural';
+  execFileSync('edge-tts', ['--voice', voice, `--rate=${process.env.SHORT_RATE ?? '+8%'}`, `--pitch=${process.env.SHORT_PITCH ?? '+0Hz'}`, '--text', scene.voice, '--write-media', `${out}s${i}.mp3`]);
   const secs = Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `${out}s${i}.mp3`]).toString()) + 0.35;
   // A slow push-in keeps a still card from feeling frozen.
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-loop', '1', '-i', `${out}s${i}.png`, '-i', `${out}s${i}.mp3`,
@@ -115,7 +118,7 @@ console.log('made', `${out}short.mp4`);
 if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
   const form = new FormData();
   form.append('chat_id', process.env.TELEGRAM_CHAT_ID.trim());
-  form.append('caption', `🎬 नमूना शॉर्ट (कहीं पोस्ट नहीं हुआ)\n${story.title}\nhttps://kasba.co.in/story/${story.storyId}`);
+  form.append('caption', `🎬 नमूना शॉर्ट (कहीं पोस्ट नहीं हुआ) ${process.env.SHORT_LABEL ?? ''}\n${story.title}\nhttps://kasba.co.in/story/${story.storyId}`);
   form.append('supports_streaming', 'true');
   form.append('video', new Blob([readFileSync(`${out}short.mp4`)], { type: 'video/mp4' }), 'short.mp4');
   const res = await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendVideo`, { method: 'POST', body: form });
