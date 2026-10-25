@@ -1,0 +1,52 @@
+name: Free-plan usage report
+
+# Every Monday, tells the editor on Telegram how close Kasba is to Cloudflare Pages'
+# free-plan limits: 20,000 files per site and 500 builds a month. Nothing is deleted;
+# at 75% it's time to render old story pages on demand (or batch publishes).
+on:
+  schedule:
+    - cron: '23 4 * * 1' # Monday 9:53 India time
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci && npx astro build > /dev/null
+
+      - name: Count and report
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          files=$(find dist -type f | wc -l)
+          size=$(du -sh dist | cut -f1)
+          stories=$(ls src/content/stories/hi | wc -l)
+          # Each push to main without [skip ci] starts one Cloudflare build. PR preview builds also
+          # count toward the 500 but are not visible here, so the warning starts at 75%.
+          builds=$(git log origin/main --first-parent --since="$(date +%Y-%m-01)" --format=%s | grep -vc 'skip ci' || true)
+          day=$(date +%-d); days=$(date -d "$(date +%Y-%m-01) +1 month -1 day" +%-d)
+          pace=$(( builds * days / day ))
+          warn=''
+          [ "$files" -ge 15000 ] && warn="$warn
+          ⚠️ फ़ाइलें 75% से ज़्यादा: पुरानी ख़बरों के पेज ऑन-डिमांड बनाने का समय।"
+          [ "$pace" -ge 375 ] && warn="$warn
+          ⚠️ इस रफ़्तार से महीने में ~$pace बिल्ड होंगे (सीमा 500): पब्लिश को बैच में करें।"
+          text="📊 कस्बा साप्ताहिक रिपोर्ट
+          ख़बरें: $stories
+          फ़ाइलें: $files / 20,000 ($size)
+          इस महीने बिल्ड: $builds / 500 (महीने के अंत तक अनुमान ~$pace; PR प्रीव्यू बिल्ड शामिल नहीं)$warn"
+          echo "$text"
+          curl -sS -o /dev/null -w 'Telegram: %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+            --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text=$(echo "$text" | sed 's/^ *//')"
