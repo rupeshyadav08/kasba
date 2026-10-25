@@ -46,10 +46,11 @@ jobs:
           PROBE_URLS: ${{ inputs.probe_urls }}
         run: |
           node pipeline/probe-compact.mjs $PROBE_URLS
-          for f in mobile desktop; do
+          curl -s https://kasba.co.in/ | head -c 2500; echo; curl -sI https://kasba.co.in/ | head -20
+          for f in mobile; do
             flag=""; [ $f = desktop ] && flag="--preset=desktop"
             npx -y lighthouse@12 https://kasba.co.in/ $flag --quiet --chrome-flags="--headless=new --no-sandbox" --output=json --output-path=lh-$f.json || continue
-            node -e "const l=require('./lh-'+process.argv[1]+'.json');console.log(process.argv[1],Object.fromEntries(Object.entries(l.categories).map(([k,v])=>[k,Math.round(v.score*100)])),['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','server-response-time'].map(k=>k+'='+l.audits[k].displayValue).join(' '))" $f
+            node -e "const l=require('./lh-'+process.argv[1]+'.json');console.log(process.argv[1],Object.fromEntries(Object.entries(l.categories).map(([k,v])=>[k,Math.round(v.score*100)])),['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index','server-response-time'].map(k=>k+'='+l.audits[k].displayValue).join(' '));const a=l.audits;console.log(JSON.stringify({rb:a['render-blocking-resources']?.details?.items,lcp:a['largest-contentful-paint-element']?.details?.items?.[0]?.items?.[0]?.node?.snippet,crit:a['critical-request-chains']?.details?.chains&&Object.keys(a['critical-request-chains'].details.chains),req:a['network-requests'].details.items.map(r=>[r.url.slice(0,90),r.resourceType,Math.round(r.transferSize/1024)+'KB',Math.round(r.networkRequestTime),Math.round(r.networkEndTime)]).slice(0,25),ft:a['font-display']?.score,bt:a['bootup-time']?.displayValue,mw:a['mainthread-work-breakdown']?.displayValue}))" $f
           done
 
       - name: Fetch, draft and publish
