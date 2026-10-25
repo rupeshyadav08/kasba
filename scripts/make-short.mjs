@@ -141,11 +141,33 @@ console.log(JSON.stringify(script, null, 2));
 const scenes = script.scenes.slice(0, 6);
 
 // Voice first: each scene lasts as long as its narration plus a short breath.
+// Sarvam's Bulbul voices (made for Indian languages and Hinglish) when SARVAM_API_KEY is set,
+// otherwise Microsoft's free Edge voice.
 const voice = process.env.SHORT_VOICE ?? 'hi-IN-SwaraNeural';
-const durations = scenes.map((scene, i) => {
-  execFileSync('edge-tts', ['--voice', voice, `--rate=${process.env.SHORT_RATE ?? '+8%'}`, `--pitch=${process.env.SHORT_PITCH ?? '+0Hz'}`, '--text', scene.voice, '--write-media', `${out}s${i}.mp3`]);
-  return Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `${out}s${i}.mp3`]).toString()) + 0.45;
-});
+async function speak(text, file) {
+  if (process.env.SARVAM_API_KEY) {
+    const res = await fetch('https://api.sarvam.ai/text-to-speech', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'api-subscription-key': process.env.SARVAM_API_KEY },
+      body: JSON.stringify({
+        inputs: [text.replace(/\.\.\./g, ',')], target_language_code: 'hi-IN', model: process.env.SARVAM_MODEL ?? 'bulbul:v2',
+        speaker: process.env.SARVAM_SPEAKER ?? 'anushka', pace: Number(process.env.SARVAM_PACE ?? 1.1), speech_sample_rate: 24000, enable_preprocessing: true,
+      }),
+    });
+    if (res.ok) {
+      writeFileSync(file.replace(/\.mp3$/, '.wav'), Buffer.from((await res.json()).audios[0], 'base64'));
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', file.replace(/\.mp3$/, '.wav'), file]);
+      return;
+    }
+    console.log('sarvam', res.status, (await res.text()).slice(0, 300), '- using the Edge voice');
+  }
+  execFileSync('edge-tts', ['--voice', voice, `--rate=${process.env.SHORT_RATE ?? '+8%'}`, `--pitch=${process.env.SHORT_PITCH ?? '+0Hz'}`, '--text', text, '--write-media', file]);
+}
+const durations = [];
+for (const [i, scene] of scenes.entries()) {
+  await speak(scene.voice, `${out}s${i}.mp3`);
+  durations.push(Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `${out}s${i}.mp3`]).toString()) + 0.45);
+}
 const total = durations.reduce((a, b) => a + b, 0);
 
 // Background footage from Pixabay (free for commercial use, no credit needed). Real stock clips
