@@ -43,7 +43,8 @@ async function writeScript() {
 सिर्फ़ JSON लौटाओ: {"scenes":[{"screen":"...","voice":"..."}]}`;
   const user = JSON.stringify({ title: story.title, summary: story.summary, meaning: story.meaning, keyFacts: story.keyFacts, deadline: story.deadline });
   try {
-    const { text } = await complete({ provider: config.provider, model: config.models[config.provider], system, user });
+    const { text, usage } = await complete({ provider: config.provider, model: config.models[config.provider], system, user });
+    console.log('tokens', JSON.stringify(usage));
     const script = parseJson(text);
     if (script.scenes?.length >= 3) return script;
   } catch (e) {
