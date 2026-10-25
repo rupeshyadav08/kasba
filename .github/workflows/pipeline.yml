@@ -52,7 +52,7 @@ jobs:
           pip install -q edge-tts
           git fetch -q origin main && git checkout origin/main -- src/content/stories
           ID=jee-main-2027-session-1-applications-open-apply-by-22-novemb
-          SHORT_TONE=anchor SHORT_LABEL="D: एंकर अंदाज़, एनिमेशन के साथ" SHORT_VOICE=hi-IN-SwaraNeural SHORT_RATE=+14% SHORT_PITCH=-1Hz node scripts/make-short.mjs $ID
+          SHORT_TONE=hinglish SHORT_LABEL="E: Hinglish" SHORT_VOICE=hi-IN-SwaraNeural SHORT_RATE=+5% SHORT_PITCH=-1Hz node scripts/make-short.mjs $ID
 
       - name: Probe pages (debug only)
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null && inputs.probe_urls != 'short' }}
