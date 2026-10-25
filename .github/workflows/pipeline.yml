@@ -50,6 +50,7 @@ jobs:
           npm ci && npm i --no-save playwright && npx playwright install --with-deps chromium
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
           pip install -q edge-tts
+          git fetch -q origin main && git checkout origin/main -- src/content/stories
           ID=jee-main-2027-session-1-applications-open-apply-by-22-novemb
           SHORT_LABEL="A: पुरुष आवाज़" SHORT_VOICE=hi-IN-MadhurNeural SHORT_RATE=+12% SHORT_PITCH=+3Hz node scripts/make-short.mjs $ID
           SHORT_LABEL="B: महिला आवाज़, तेज़" SHORT_VOICE=hi-IN-SwaraNeural SHORT_RATE=+15% SHORT_PITCH=+6Hz node scripts/make-short.mjs $ID
