@@ -1,0 +1,39 @@
+name: Sample short video
+
+# Makes a ~30-second vertical video from one story and sends it to the editor on Telegram.
+# Manual only for now; nothing is posted to YouTube or Instagram.
+on:
+  workflow_dispatch:
+    inputs:
+      story:
+        description: 'Story id (blank: newest story with a deadline)'
+        type: string
+        default: ''
+
+jobs:
+  short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - name: Install tools
+        run: |
+          npm ci
+          npm i --no-save playwright
+          npx playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+          pip install -q edge-tts
+      - name: Make the video and send it to the editor
+        run: node scripts/make-short.mjs ${{ inputs.story }}
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: short
+          path: short/short.mp4
