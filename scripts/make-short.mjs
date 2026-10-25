@@ -102,7 +102,9 @@ body { width: 1080px; height: 1920px; overflow: hidden; font-family: Mukta, sans
 .tag { background: ${hook ? '#fff' : colours[story.category] ?? '#3d434a'}; color: ${hook ? '#c8102e' : '#fff'}; font-size: 44px; font-weight: 600;
   padding: 10px 34px; border-radius: 999px; animation: slideL 0.6s cubic-bezier(.2,1.3,.4,1) 0.1s both; }
 @keyframes slideL { from { transform: translateX(300px); opacity: 0; } to { transform: none; opacity: 1; } }
-.main { flex: 1; display: flex; align-items: center; }
+.main { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 48px; }
+.cap { font-size: 46px; line-height: 1.45; font-weight: 600; color: ${hook ? '#fff' : '#333'}; background: ${hook ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.7)'};
+  padding: 24px 32px; border-radius: 24px; animation: fade 0.4s ease-out 0.5s both; }
 .card { ${hook ? '' : 'background: #fff; border-radius: 40px; padding: 70px 64px; box-shadow: 0 30px 80px rgba(0,0,0,0.10); border-left: 16px solid ' + (colours[story.category] ?? '#3d434a') + ';'}
   animation: cardIn 0.6s cubic-bezier(.2,1.2,.4,1) both; width: 100%; }
 @keyframes cardIn { from { transform: translateX(${hook ? 0 : 140}px) scale(${hook ? 0.92 : 1}); opacity: 0; } to { transform: none; opacity: 1; } }
@@ -125,8 +127,8 @@ mark { color: inherit; padding: 0 10px; border-radius: 10px; background-image: l
 <div class="blob"></div><div class="blob b2"></div><div class="bar"></div>
 <div class="wrap">
 <div class="top"><div class="logo">कस्बा<b>•</b></div><div class="tag">${sections[story.category] ?? ''}</div></div>
-<div class="main"><div class="card"><h1>${h1}</h1></div></div>
-${last ? '<div class="follow">🔔 फ़ॉलो करें</div>' : due ? `<div class="due">📅 आख़िरी तारीख़: <b>${due}</b></div>` : ''}
+<div class="main"><div class="card"><h1>${h1}</h1></div><div class="cap">${esc(scene.voice.replace(/\.\.\./g, ','))}</div></div>
+${last ? '<div class="follow">🔔 फ़ॉलो करें</div>' : due ? `<div class="due">📅 ${process.env.SHORT_TONE === 'hinglish' ? 'Last date' : 'आख़िरी तारीख़'}: <b>${due}</b></div>` : ''}
 <div class="foot"><span>kasba.co.in</span><span>${i + 1}/${n}</span></div>
 </div></body></html>`;
 };
