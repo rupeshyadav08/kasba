@@ -150,8 +150,8 @@ async function speak(text, file) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'api-subscription-key': process.env.SARVAM_API_KEY },
       body: JSON.stringify({
-        inputs: [text.replace(/\.\.\./g, ',')], target_language_code: 'hi-IN', model: process.env.SARVAM_MODEL ?? 'bulbul:v2',
-        speaker: process.env.SARVAM_SPEAKER ?? 'anushka', pace: Number(process.env.SARVAM_PACE ?? 1.1), speech_sample_rate: 24000, enable_preprocessing: true,
+        text: text.replace(/\.\.\./g, ','), language_code: 'hi-IN', model: process.env.SARVAM_MODEL ?? 'bulbul:v4-flash',
+        speaker: process.env.SARVAM_SPEAKER ?? 'simran_hi_news', pace: Number(process.env.SARVAM_PACE ?? 1.05), speech_sample_rate: 24000,
       }),
     });
     if (res.ok) {
