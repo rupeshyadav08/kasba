@@ -44,6 +44,7 @@ jobs:
         if: ${{ inputs.probe_urls == 'short' }}
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
@@ -52,7 +53,7 @@ jobs:
           pip install -q edge-tts
           git fetch -q origin main && git checkout origin/main -- src/content/stories
           ID=jee-main-2027-session-1-applications-open-apply-by-22-novemb
-          SHORT_TONE=hinglish SHORT_LABEL="E: Hinglish" SHORT_VOICE=hi-IN-SwaraNeural SHORT_RATE=+5% SHORT_PITCH=-1Hz node scripts/make-short.mjs $ID
+          SHORT_TONE=hinglish SHORT_LABEL="F: Hinglish + footage" SHORT_VOICE=hi-IN-SwaraNeural SHORT_RATE=+5% SHORT_PITCH=-1Hz node scripts/make-short.mjs $ID
 
       - name: Probe pages (debug only)
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null && inputs.probe_urls != 'short' }}

@@ -45,7 +45,8 @@ async function writeScript() {
 अंक शब्दों में नहीं, अंकों में लिखो; अंग्रेज़ी नाम (JEE, NTA) वैसे ही। पहला दृश्य एक ठोस हुक हो
 (जैसे "आख़िरी तारीख़ 22 नवंबर"), फिर 3 दृश्य काम की बातें, आख़िरी दृश्य "पूरी ख़बर kasba.co.in पर"।
 हर दृश्य: screen = स्क्रीन पर 4-9 शब्द, voice = बोलने के लिए 1-2 छोटे वाक्य। कुल voice 60-75 शब्द।
-सिर्फ़ JSON लौटाओ: {"scenes":[{"screen":"...","voice":"..."}]}`;
+bg = स्टॉक वीडियो खोजने के लिए 2-3 English शब्द जो ख़बर के माहौल से मेल खाएँ (जैसे "students exam hall", "farmer field", "train railway"); किसी असली व्यक्ति का नाम नहीं।
+सिर्फ़ JSON लौटाओ: {"bg":"...","scenes":[{"screen":"...","voice":"..."}]}`;
   const user = JSON.stringify({ title: story.title, summary: story.summary, meaning: story.meaning, keyFacts: story.keyFacts, deadline: story.deadline });
   try {
     const { text, usage } = await complete({ provider: config.provider, model: config.models[config.provider], system, user });
@@ -85,7 +86,9 @@ ${font('Mukta', 'mukta/files/mukta-devanagari-600-normal.woff2', 600)}
 ${font('Mukta', 'mukta/files/mukta-latin-600-normal.woff2', 600, 'unicode-range: U+0000-00FF;')}
 * { margin: 0; box-sizing: border-box; }
 body { width: 1080px; height: 1920px; overflow: hidden; font-family: Mukta, sans-serif; position: relative;
-  background: ${hook ? 'linear-gradient(160deg, #e0193a, #a50d26)' : 'linear-gradient(170deg, #fbf8f2, #efe9dc)'}; color: ${hook ? '#fff' : '#111'}; }
+  background: ${footage ? (hook ? 'linear-gradient(180deg, rgba(200,16,46,0.55), rgba(120,8,26,0.85))' : 'linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45))') : hook ? 'linear-gradient(160deg, #e0193a, #a50d26)' : 'linear-gradient(170deg, #fbf8f2, #efe9dc)'};
+  color: ${hook || footage ? '#fff' : '#111'}; }
+${footage ? '.blob { display: none; } .logo, .foot { color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,0.5); } .cap { color: #fff !important; background: rgba(0,0,0,0.55) !important; }' + (hook ? '' : ' .card { color: #111; }') : ''}
 .blob { position: absolute; width: 900px; height: 900px; border-radius: 50%; right: -380px; top: -260px;
   background: ${hook ? 'rgba(255,255,255,0.08)' : colours[story.category] ?? '#3d434a'}; opacity: ${hook ? 1 : 0.07};
   animation: drift ${secs}s linear both; }
@@ -145,6 +148,26 @@ const durations = scenes.map((scene, i) => {
 });
 const total = durations.reduce((a, b) => a + b, 0);
 
+// Background footage from Pixabay (free for commercial use, no credit needed). Real stock clips
+// set the mood only; they never pretend to show the event itself.
+const topics = { schemes: 'india village', 'jobs-exams': 'students exam', farming: 'farmer field', money: 'money coins', weather: 'rain clouds', health: 'hospital doctor', sports: 'stadium sport', nation: 'india city' };
+async function findFootage() {
+  if (!process.env.PIXABAY_API_KEY) return null;
+  for (const q of [script.bg, topics[story.category]].filter(Boolean)) {
+    const res = await fetch(`https://pixabay.com/api/videos/?key=${process.env.PIXABAY_API_KEY}&q=${encodeURIComponent(q)}&video_type=film&safesearch=true&per_page=20`);
+    if (!res.ok) { console.log('pixabay', res.status); continue; }
+    const hits = (await res.json()).hits.filter((h) => h.duration >= 6);
+    if (!hits.length) continue;
+    const pick = hits[[...story.storyId].reduce((a, c) => a + c.charCodeAt(0), 0) % Math.min(hits.length, 8)];
+    const v = pick.videos.large?.url ? pick.videos.large : pick.videos.medium;
+    writeFileSync(`${out}bg.mp4`, Buffer.from(await (await fetch(v.url)).arrayBuffer()));
+    console.log('footage', q, pick.pageURL);
+    return `${out}bg.mp4`;
+  }
+  return null;
+}
+const footage = process.env.SHORT_FOOTAGE || await findFootage(); // SHORT_FOOTAGE: use a local clip instead
+
 const browser = await chromium.launch();
 const tab = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 const parts = [];
@@ -156,13 +179,18 @@ for (const [i, scene] of scenes.entries()) {
   await tab.evaluate(() => document.fonts.ready);
   await tab.evaluate(() => document.getAnimations().forEach((a) => a.pause()));
   const frames = Math.ceil(secs * fps);
-  const enc = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-', '-i', `${out}s${i}.mp3`,
-    '-filter_complex', '[1:a]apad[a]', '-map', '0:v', '-map', '[a]', '-t', secs.toFixed(3), '-pix_fmt', 'yuv420p',
-    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-c:a', 'aac', '-ar', '44100', `${out}s${i}.mp4`], { stdio: ['pipe', 'inherit', 'inherit'] });
+  // With footage, frames are transparent PNGs laid over the clip (cropped to 9:16, looped).
+  const inputs = ['-f', 'image2pipe', '-framerate', String(fps), '-i', '-',
+    ...(footage ? ['-stream_loop', '-1', '-ss', (start % 5).toFixed(2), '-i', footage] : []), '-i', `${out}s${i}.mp3`];
+  const graph = footage
+    ? `[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=${fps}[bg];[bg][0:v]overlay=0:0[v];[2:a]apad[a]`
+    : '[0:v]null[v];[1:a]apad[a]';
+  const enc = spawn('ffmpeg', ['-y', '-loglevel', 'error', ...inputs, '-filter_complex', graph, '-map', '[v]', '-map', '[a]',
+    '-t', secs.toFixed(3), '-pix_fmt', 'yuv420p', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-c:a', 'aac', '-ar', '44100', `${out}s${i}.mp4`], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((ok, fail) => enc.on('close', (c) => (c ? fail(new Error(`ffmpeg ${c}`)) : ok())));
   for (let f = 0; f < frames; f++) {
     await tab.evaluate((ms) => document.getAnimations().forEach((a) => { a.currentTime = ms; }), (f * 1000) / fps);
-    const jpg = await tab.screenshot({ type: 'jpeg', quality: 88 });
+    const jpg = footage ? await tab.screenshot({ type: 'png', omitBackground: true }) : await tab.screenshot({ type: 'jpeg', quality: 88 });
     if (!enc.stdin.write(jpg)) await new Promise((r) => enc.stdin.once('drain', r));
   }
   enc.stdin.end();
