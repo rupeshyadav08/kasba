@@ -43,7 +43,7 @@ const manual = [];
 const inboxDir = here('inbox/');
 async function readUpdates() {
   const inbox = existsSync(inboxDir) ? readdirSync(inboxDir).filter((f) => f.endsWith('.json')) : [];
-  const saved = inbox.map((f) => JSON.parse(readFileSync(inboxDir + f, 'utf8')));
+  const saved = inbox.map((f) => JSON.parse(readFileSync(new URL(f, inboxDir), 'utf8')));
   let polled = [];
   try {
     polled = await tg.updates(state.telegramOffset);
@@ -55,7 +55,7 @@ async function readUpdates() {
   summary.telegramUpdates = saved.length + polled.length;
   const seen = new Set();
   const list = [...saved, ...polled].sort((a, b) => a.update_id - b.update_id).filter((u) => !seen.has(u.update_id) && seen.add(u.update_id));
-  return { list, done: () => inbox.forEach((f) => rmSync(inboxDir + f)) };
+  return { list, done: () => inbox.forEach((f) => rmSync(new URL(f, inboxDir))) };
 }
 
 // Turns the webhook on once the site says it can take updates; until then polling carries on.
