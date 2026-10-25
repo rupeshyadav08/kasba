@@ -1,0 +1,95 @@
+{
+  "id": "18d176cf7e",
+  "createdAt": "2026-10-25T14:27:26.900Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "सीसीपीए ने भ्रामक विज्ञापनों और वॉकी-टॉकी की गैर-अनुपालन बिक्री के खिलाफ कार्रवाई तेज की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328235"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "money",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "सीसीपीए ने भ्रामक विज्ञापनों और वॉकी-टॉकी की गैर-अनुपालन बिक्री के खिलाफ कार्रवाई तेज की",
+    "sourceDate": "2026-10-25",
+    "hi": {
+      "title": "CCPA ने वॉकी-टॉकी के भ्रामक विज्ञापनों पर 12 कंपनियों से 58 लाख रुपये का जुर्माना वसूला",
+      "summary": "केंद्रीय उपभोक्ता संरक्षण प्राधिकरण (CCPA) ने 25 अक्टूबर 2026 को बताया कि वॉकी-टॉकी के भ्रामक विज्ञापनों और अनुचित व्यापार प्रथाओं के लिए 12 कंपनियों पर कुल 58 लाख रुपये का जुर्माना लगाया गया है। इसका असर उन लोगों पर पड़ता है जो ऑनलाइन वॉकी-टॉकी खरीदते हैं और बिना पूरी जानकारी के गलत फैसला कर सकते हैं।",
+      "meaning": "अगर आप ऑनलाइन वॉकी-टॉकी या ऐसा कोई रेडियो उपकरण खरीदने की सोच रहे हैं, तो पहले देखें कि विज्ञापन में उसकी परिचालन आवृत्ति और लाइसेंस से जुड़ी जानकारी दी गई है या नहीं। CCPA ने साफ कहा है कि विज्ञापन में यह जानकारी छिपाना भ्रामक विज्ञापन माना जा सकता है। आम उपभोक्ता को कोई फॉर्म नहीं भरना है; बस खरीदारी से पहले जानकारी जांच लेनी चाहिए।",
+      "keyFacts": [
+        "होगर टेक्नोलॉजीज एंड इनोवेशन एलएलपी पर 1 लाख रुपये का जुर्माना लगाया गया।",
+        "ऑनलाइन प्लेटफॉर्म पर 16,970 से अधिक गैर-अनुपालन प्रविष्टियां मिलीं।",
+        "13 ई-कॉमर्स कंपनियों को नोटिस जारी किए गए।",
+        "12 कंपनियों के खिलाफ अंतिम आदेश, कुल जुर्माना 58 लाख रुपये।",
+        "अमेज़न, फ्लिपकार्ट, मीशो, मेटा और ट्रेडइंडिया पर 10-10 लाख रुपये का जुर्माना।",
+        "446.0–446.2 मीहर्ट्ज़ की आवृत्ति सीमा में काम करने वाले व्यक्तिगत मोबाइल रेडियो को कुछ शर्तों के साथ लाइसेंस से छूट है।"
+      ],
+      "faq": [
+        {
+          "q": "वॉकी-टॉकी के विज्ञापन पर CCPA ने क्या कार्रवाई की है?",
+          "a": "CCPA ने वॉकी-टॉकी के भ्रामक विज्ञापनों और अनुचित व्यापार प्रथाओं के लिए 12 कंपनियों पर कुल 58 लाख रुपये का जुर्माना लगाया है। इनमें होगर टेक्नोलॉजीज एंड इनोवेशन एलएलपी पर 1 लाख रुपये का जुर्माना भी शामिल है।"
+        },
+        {
+          "q": "क्या वॉकी-टॉकी खरीदने के लिए लाइसेंस चाहिए?",
+          "a": "नोटिस के मुताबिक, 446.0–446.2 मीहर्ट्ज़ की निर्धारित आवृत्ति सीमा में काम करने वाले व्यक्तिगत मोबाइल रेडियो को कुछ शर्तों के साथ लाइसेंस लेने की जरूरत से छूट दी गई है। इस सीमा के बाहर काम करने वाले अन्य वायरलेस रेडियो उपकरणों पर संबंधित नियामक नियम लागू होते हैं।"
+        },
+        {
+          "q": "विज्ञापन में कौन-सी जानकारी जरूरी है?",
+          "a": "CCPA के अनुसार विज्ञापन और उत्पाद प्रविष्टि में परिचालन आवृत्ति, लाइसेंस की जरूरतें और अन्य जरूरी नियामक जानकारी साफ-साफ बताई जानी चाहिए। इससे उपभोक्ता सही फैसला ले सकें।"
+        },
+        {
+          "q": "क्या वेबसाइट पर ऑनलाइन पेमेंट की सुविधा न होने पर भी नियम लागू होते हैं?",
+          "a": "हां, CCPA ने कहा है कि अगर वेबसाइट पर ऑनलाइन पेमेंट गेटवे या शॉपिंग कार्ट नहीं है, तो भी वहां किया गया प्रचार भ्रामक विज्ञापन के दायरे में आ सकता है।"
+        },
+        {
+          "q": "अंतिम आदेश कहां देख सकते हैं?",
+          "a": "अंतिम आदेश CCPA की वेबसाइट https://ccpa.doca.gov.in पर उपलब्ध है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nकेंद्रीय उपभोक्ता संरक्षण प्राधिकरण (CCPA) ने वॉकी-टॉकी (व्यक्तिगत मोबाइल रेडियो) के भ्रामक विज्ञापनों और अनुचित व्यापार प्रथाओं के खिलाफ कार्रवाई तेज की है। प्राधिकरण ने 'होगर टेक्नोलॉजीज एंड इनोवेशन एलएलपी' पर 1 लाख रुपये का जुर्माना लगाया है। यह आदेश उपभोक्ता संरक्षण अधिनियम, 2019 के तहत जारी किया गया। प्राधिकरण की अध्यक्षता मुख्य आयुक्त श्रीमती निधि खरे और आयुक्त श्री अनुपम मिश्रा कर रहे थे।\n\n## कंपनी पर क्या आरोप थे\n\nCCPA ने कंपनी की वेबसाइट पर मौजूद वॉकी-टॉकी मॉडल के विज्ञापनों और उत्पाद प्रविष्टि की जांच की। प्राधिकरण के अनुसार इनमें उपकरण की परिचालन आवृत्ति, लाइसेंस की जरूरतें और जरूरी नियामक मंजूरियों की साफ जानकारी नहीं दी गई थी। ऐसी जानकारी छिपाने से उपभोक्ता यह सोच सकते हैं कि इन उपकरणों को बिना किसी सरकारी मंजूरी के कानूनी रूप से इस्तेमाल किया जा सकता है।\n\n## कंपनी ने क्या कहा\n\nकार्रवाई के दौरान कंपनी ने बताया कि उसके पास वैध 'डीलर पजेसिंग लाइसेंस' (DPL) है और उसके उपकरण 'उपकरण प्रकार मंजूरी' (ETA) प्रमाणन के दायरे में आते हैं। कंपनी ने यह भी कहा कि उसकी वेबसाइट मुख्य रूप से जानकारी देने और संभावित ग्राहकों को जुटाने के लिए है और वहां सीधे ऑनलाइन लेन-देन नहीं होता।\n\n## CCPA ने क्या कहा\n\nकंपनी के तर्कों, जांच के नतीजों और रिकॉर्ड के दस्तावेजों की समीक्षा के बाद CCPA ने कहा कि नियामक मंजूरियां होने का मतलब यह नहीं है कि विज्ञापन देने वाला व्यक्ति खरीदारी से पहले सटीक और पूरी जानकारी देने की जिम्मेदारी से मुक्त हो जाता है। प्राधिकरण ने यह भी कहा कि वेबसाइट पर ऑनलाइन पेमेंट गेटवे या शॉपिंग कार्ट न होने पर भी वहां का प्रचार भ्रामक विज्ञापन के दायरे में आ सकता है।\n\n## लाइसेंस को लेकर नियम क्या है\n\nनोटिस के मुताबिक 'लो पावर और वैरी लो पावर वाले शॉर्ट-रेंज रेडियो आवृति उपकरण (लाइसेंस की आवश्यकता से छूट) नियम, 2018' के तहत 446.0–446.2 मीहर्ट्ज़ की निर्धारित आवृत्ति सीमा में काम करने वाले व्यक्तिगत मोबाइल रेडियो को कुछ शर्तों के साथ लाइसेंस से छूट है। इस सीमा के बाहर काम करने वाले अन्य वायरलेस रेडियो उपकरणों पर संबंधित नियामक नियम लागू होते हैं।\n\n## ई-कॉमर्स प्लेटफॉर्म पर भी कार्रवाई\n\nCCPA ने ई-कॉमर्स प्लेटफॉर्म पर वॉकी-टॉकी की बड़े पैमाने पर प्रविष्टि और बिक्री का स्वतः संज्ञान लिया था। जांच में विभिन्न प्लेटफॉर्म पर 16,970 से अधिक ऐसी प्रविष्टियां मिलीं जो नियमों का पालन नहीं कर रही थीं। इसके बाद अमेज़न, फ्लिपकार्ट, मीशो, मेटा (फेसबुक मार्केटप्लेस), जियोमार्ट, इंडियामार्ट और ट्रेडइंडिया समेत 13 ई-कॉमर्स कंपनियों को नोटिस जारी किए गए। अब तक 12 कंपनियों के खिलाफ अंतिम आदेश जारी हुए हैं और कुल 58 लाख रुपये का जुर्माना लगाया गया है।\n\n## कुछ कंपनियां अदालत में\n\nनोटिस के अनुसार अमेज़न सेलर सर्विसेज प्राइवेट लिमिटेड और फ्लिपकार्ट इंटरनेट प्राइवेट लिमिटेड ने CCPA के आदेशों को कर्नाटक उच्च न्यायालय में चुनौती दी है। मेटा प्लेटफॉर्म्स और ट्रेडइंडिया (इन्फोकॉम नेटवर्क प्राइवेट लिमिटेड) ने राष्ट्रीय उपभोक्ता विवाद निवारण आयोग (NCDRC) में अपील की है; ट्रेडइंडिया के मामले में NCDRC ने कंपनी को जुर्माने की रकम जमा करने का निर्देश दिया है। इंडियामार्ट इंटरमेश लिमिटेड ने दिल्ली उच्च न्यायालय का रुख किया है, जबकि उसका मामला प्राधिकरण के पास विचाराधीन है।\n\n## उपभोक्ता के लिए क्या मतलब है\n\nअगर आप ऑनलाइन वॉकी-टॉकी खरीदने की सोच रहे हैं, तो विज्ञापन में परिचालन आवृत्ति और लाइसेंस से जुड़ी जानकारी जरूर देखें। CCPA ने कहा है कि यह जानकारी छिपाने से उपभोक्ता को कानूनी और आर्थिक नुकसान हो सकता है। अंतिम आदेश प्राधिकरण की वेबसाइट https://ccpa.doca.gov.in पर उपलब्ध है।"
+    },
+    "en": {
+      "title": "CCPA fines 12 firms Rs 58 lakh over misleading walkie-talkie ads",
+      "summary": "The Central Consumer Protection Authority (CCPA) said on 25 October 2026 that it has imposed a total fine of Rs 58 lakh on 12 companies for misleading walkie-talkie advertisements and unfair trade practices. This matters to people who buy walkie-talkies online and may decide without full information.",
+      "meaning": "If you are planning to buy a walkie-talkie or similar radio device online, check whether the listing clearly states its operating frequency and licence requirements. The CCPA has said hiding this information can count as a misleading advertisement. Ordinary consumers do not need to fill any form; they should simply check the details before buying.",
+      "keyFacts": [
+        "Hogar Technologies and Innovation LLP fined Rs 1 lakh.",
+        "More than 16,970 non-compliant listings found on online platforms.",
+        "Notices issued to 13 e-commerce companies.",
+        "Final orders against 12 companies, total fine Rs 58 lakh.",
+        "Amazon, Flipkart, Meesho, Meta and TradeIndia fined Rs 10 lakh each.",
+        "Personal mobile radios in the 446.0–446.2 MHz band are exempt from licensing, subject to conditions."
+      ],
+      "faq": [
+        {
+          "q": "What action has CCPA taken on walkie-talkie advertisements?",
+          "a": "The CCPA has imposed a total fine of Rs 58 lakh on 12 companies for misleading walkie-talkie advertisements and unfair trade practices. This includes a Rs 1 lakh fine on Hogar Technologies and Innovation LLP."
+        },
+        {
+          "q": "Do I need a licence to buy a walkie-talkie?",
+          "a": "According to the notice, personal mobile radios operating in the prescribed 446.0–446.2 MHz frequency band are exempt from the licensing requirement, subject to certain conditions. Other wireless radio devices operating outside this band are governed by the relevant regulatory rules."
+        },
+        {
+          "q": "What information must an advertisement carry?",
+          "a": "The CCPA says advertisements and product listings must clearly state the operating frequency, licence requirements and other necessary regulatory information. This helps consumers make an informed decision."
+        },
+        {
+          "q": "Do the rules apply if a website has no online payment facility?",
+          "a": "Yes. The CCPA has said that even if a website has no online payment gateway or shopping cart, promotion carried out there can fall within the scope of misleading advertisements."
+        },
+        {
+          "q": "Where can I see the final order?",
+          "a": "The final order is available on the CCPA website at https://ccpa.doca.gov.in."
+        }
+      ],
+      "body": "## What happened\n\nThe Central Consumer Protection Authority (CCPA) has stepped up action against misleading advertisements and unfair trade practices related to walkie-talkies (personal mobile radios). The authority imposed a fine of Rs 1 lakh on Hogar Technologies and Innovation LLP. The order was issued under the Consumer Protection Act, 2019. The authority was chaired by Chief Commissioner Smt. Nidhi Khare and Commissioner Shri Anupam Mishra.\n\n## What the company was accused of\n\nThe CCPA examined the advertisements and product listings of various walkie-talkie models on the company's website. According to the authority, these listings did not clearly state the device's operating frequency, licence requirements and necessary regulatory approvals. Hiding such information, it said, can mislead consumers into believing the devices can be used legally without any expected government approval.\n\n## What the company said\n\nDuring the proceedings, the company said it holds a valid Dealer Possessing Licence (DPL) and that its devices fall within Equipment Type Approval (ETA) certification. It also argued that its website is mainly for information and lead generation and does not facilitate direct online transactions.\n\n## What the CCPA said\n\nAfter reviewing the company's arguments, the findings of the investigation and documents on record, the CCPA said holding regulatory approvals does not free an advertiser from the responsibility of giving consumers accurate, complete and material information before purchase. The authority also said that even if a website has no online payment gateway or shopping cart, promotion carried out there can fall within the scope of misleading advertisements.\n\n## What the licensing rule says\n\nAccording to the notice, under the Low Power and Very Low Power Short Range Radio Frequency Devices (Exemption from Licensing Requirement) Rules, 2018, personal mobile radios operating in the prescribed 446.0–446.2 MHz frequency band are exempt from the licensing requirement, subject to certain conditions. Other wireless radio devices operating outside this exempted band are governed by the relevant regulatory rules.\n\n## Action on e-commerce platforms\n\nThe CCPA took suo motu cognisance of the large-scale listing and sale of walkie-talkies on e-commerce platforms without the required regulatory information. During the investigation, more than 16,970 non-compliant listings were found across various platforms. Notices were then issued to 13 e-commerce companies, including Amazon, Flipkart, Meesho, Meta (Facebook Marketplace), JioMart, IndiaMART and TradeIndia. Final orders have so far been issued against 12 companies, with a total fine of Rs 58 lakh.\n\n## Some companies have moved court\n\nAccording to the notice, Amazon Seller Services Private Limited and Flipkart Internet Private Limited have challenged the authority's orders before the Karnataka High Court. Meta Platforms and TradeIndia (Infocom Network Private Limited) have appealed the Rs 10 lakh penalty orders before the National Consumer Disputes Redressal Commission (NCDRC); in TradeIndia's case, the NCDRC directed the company to deposit the fine amount. IndiaMART InterMESH Limited has approached the Delhi High Court challenging the CCPA proceedings, while its matter is still pending before the authority.\n\n## What it means for consumers\n\nIf you are planning to buy a walkie-talkie online, look for the operating frequency and licence-related details in the listing. The CCPA has said that hiding this information can cause consumers legal and financial loss. The final order is available on the authority's website at https://ccpa.doca.gov.in."
+    }
+  }
+}

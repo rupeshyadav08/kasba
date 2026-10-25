@@ -1,0 +1,95 @@
+{
+  "id": "bd7019bfcb",
+  "createdAt": "2026-10-25T14:27:51.826Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "मोदी सरकार का ड्रग्स के खिलाफ बड़ा प्रहार, NCB द्वारा चलाए गए 'ऑपरेशन ट्राइडेंट' के तहत 38 टीमों ने असम, मिजोरम और मणिपुर में एक साथ 38 जगहों पर छापेमारी की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328187"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "मोदी सरकार का ड्रग्स के खिलाफ बड़ा प्रहार, NCB द्वारा चलाए गए 'ऑपरेशन ट्राइडेंट' के तहत 38 टीमों ने असम, मिजोरम और मणिपुर में एक साथ 38 जगहों पर छापेमारी की",
+    "sourceDate": "2026-10-25",
+    "hi": {
+      "title": "Operation Trident: NCB ने असम, मिजोरम और मणिपुर में 38 जगहों पर एक साथ छापेमारी की",
+      "summary": "गृह मंत्रालय के अनुसार NCB ने 23 अक्टूबर 2026 को 'ऑपरेशन ट्राइडेंट' के तहत असम, मिजोरम और मणिपुर में 38 जगहों पर एक साथ छापेमारी की। इस कार्रवाई में 18 लोग गिरफ्तार हुए और 1,424 बैंक खाते फ्रीज किए गए।",
+      "meaning": "यह कार्रवाई पूर्वोत्तर के तीन राज्यों में हुई है, इसलिए यूपी, बिहार, एमपी और दिल्ली के आम लोगों को इससे सीधे कुछ करने की जरूरत नहीं है। यह ड्रग्स तस्करी के एक अंतरराष्ट्रीय नेटवर्क पर कार्रवाई है। अगर किसी के बैंक खाते इस नेटवर्क से जुड़े पाए गए हैं तो वे फ्रीज हो सकते हैं, लेकिन विज्ञप्ति में आम खाताधारकों के लिए कोई निर्देश नहीं दिया गया है।",
+      "keyFacts": [
+        "छापेमारी 23 अक्टूबर 2026 की सुबह 38 संयुक्त टीमों ने 38 जगहों पर की।",
+        "100 करोड़ रुपये के हवाला लेनदेन का पता चला और 1,424 बैंक खाते फ्रीज किए गए।",
+        "17.82 करोड़ रुपये की संपत्ति, 500 डेटोनेटर और 12 लाख रुपये नकद जब्त हुए।",
+        "18 लोगों को गिरफ्तार किया गया।",
+        "नेटवर्क 'Death Triangle Corridor' के जरिए भारत, म्यांमार और बांग्लादेश की सीमाओं से तस्करी करता था।",
+        "गृह मंत्रालय के अनुसार लक्ष्य 31 दिसंबर 2029 तक नशीले पदार्थों के हर नेटवर्क को खत्म करना है।"
+      ],
+      "faq": [
+        {
+          "q": "Operation Trident क्या है?",
+          "a": "यह NCB के नेतृत्व में ड्रग्स तस्करी के एक अंतरराष्ट्रीय नेटवर्क के खिलाफ चलाया गया अभियान है। इसमें मिजोरम पुलिस और प्रवर्तन निदेशालय (ED) ने भी साथ काम किया।"
+        },
+        {
+          "q": "ऑपरेशन ट्राइडेंट कब और कहां चलाया गया?",
+          "a": "यह 23 अक्टूबर 2026 की सुबह असम, मिजोरम और मणिपुर में 38 जगहों पर एक साथ चलाया गया।"
+        },
+        {
+          "q": "इस कार्रवाई में कितने लोग गिरफ्तार हुए?",
+          "a": "विज्ञप्ति के अनुसार 18 लोग गिरफ्तार किए गए।"
+        },
+        {
+          "q": "क्या इसका असर यूपी, बिहार या दिल्ली के लोगों पर पड़ेगा?",
+          "a": "विज्ञप्ति में आम लोगों के लिए कोई निर्देश नहीं है। यह कार्रवाई पूर्वोत्तर के तीन राज्यों में हुई है और ड्रग्स तस्करी के नेटवर्क से जुड़ी है।"
+        },
+        {
+          "q": "ड्रग्स के खिलाफ भारत का लक्ष्य क्या बताया गया है?",
+          "a": "गृह मंत्रालय के अनुसार 31 दिसंबर 2029 तक नशीले पदार्थों के हर नेटवर्क को जड़ से खत्म करना लक्ष्य है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nगृह मंत्रालय की विज्ञप्ति के अनुसार नारकोटिक्स कंट्रोल ब्यूरो (NCB) ने 23 अक्टूबर 2026 की सुबह 'ऑपरेशन ट्राइडेंट' चलाया। इसमें असम, मिजोरम और मणिपुर में पहले से चिह्नित 38 जगहों पर 38 संयुक्त टीमों ने एक साथ कार्रवाई की।\n\nविज्ञप्ति के मुताबिक यह कार्रवाई NCB, मिजोरम पुलिस और प्रवर्तन निदेशालय (ED) ने मिलकर की। इन जगहों में मिजोरम के आइजॉल, चम्फाई और भारत-म्यांमार सीमा पर स्थित जोखॉथर, मणिपुर का चूड़ाचांदपुर और असम के कछार क्षेत्र के ठिकाने शामिल थे।\n\n## क्या मिला\n\nविज्ञप्ति के अनुसार इस ऑपरेशन में 100 करोड़ रुपये के हवाला लेनदेन का पता चला और 1,424 बैंक खाते फ्रीज किए गए। 17.82 करोड़ रुपये की संपत्ति जब्त की गई। इसके अलावा 500 डेटोनेटर और 12 लाख रुपये नकद जब्त हुए तथा 18 लोगों को गिरफ्तार किया गया।\n\n## किस गिरोह पर कार्रवाई हुई\n\nविज्ञप्ति कहती है कि यह नेटवर्क 'Death Triangle Corridor' के जरिए भारत, म्यांमार और बांग्लादेश की सीमाओं से नशीले पदार्थों की तस्करी करता था। जांच में म्यांमार में रहने वाले थांगसिंतुआंग उर्फ चिंतुआंग उर्फ त्लुआंगा के नेतृत्व वाले गिरोह का पता चला। विज्ञप्ति के अनुसार वह NDPS अधिनियम के तहत दर्ज 10 से अधिक मामलों में वांछित था और उसे दिल्ली से गिरफ्तार किया गया।\n\nविज्ञप्ति में यह भी बताया गया है कि पिछले चरणों में गिरोह के कई सदस्य पकड़े गए। इनमें वुंगखानथॉना को गिरफ्तार कर PIT-NDPS अधिनियम के तहत हिरासत में लिया गया, हवाला संचालक ललरमपारी को 08.08.2024 को गिरफ्तार किया गया और असम कॉरिडोर के लॉजिस्टिक्स प्रमुख अबू सालेह उर्फ सैफुद्दीन को 20.11.2025 को असम के कछार से गिरफ्तार किया गया।\n\n## नई रणनीति क्या है\n\nविज्ञप्ति के अनुसार यह ऑपरेशन 'नारकोटिक्स कंट्रोल विजन डॉक्यूमेंट (2026-2029)' के अनुरूप है। इसकी रणनीति सिर्फ नशीले पदार्थ जब्त करने की नहीं, बल्कि पूरे नेटवर्क को तोड़ने और उसके वित्तीय स्रोतों को खत्म करने की है।\n\nकेंद्रीय गृह मंत्री अमित शाह ने कहा कि यह कार्रवाई 31 दिसंबर 2029 तक नशीले पदार्थों के हर नेटवर्क को जड़ से खत्म करने के संकल्प को दिखाती है। उन्होंने केंद्रीय एजेंसियों और तीनों राज्यों की पुलिस की एंटी-नारकोटिक्स टीम को बधाई दी।\n\n## आम लोगों के लिए क्या मतलब\n\nविज्ञप्ति में आम नागरिकों के लिए कोई निर्देश या अपील नहीं दी गई है। यह कार्रवाई पूर्वोत्तर के तीन राज्यों में हुई है, इसलिए यूपी, बिहार, एमपी और दिल्ली के पाठकों को इससे सीधे कुछ करने की जरूरत नहीं है।"
+    },
+    "en": {
+      "title": "Operation Trident: NCB raids 38 locations across Assam, Mizoram and Manipur",
+      "summary": "The Union Home Ministry said the NCB led 'Operation Trident' on 23 October 2026, with 38 teams raiding 38 locations across Assam, Mizoram and Manipur. Eighteen people were arrested and 1,424 bank accounts were frozen.",
+      "meaning": "The raids took place in three northeastern states, so ordinary readers in UP, Bihar, MP and Delhi have nothing to do because of this notice. It is an action against an international drug trafficking network. The notice gives no instruction to the general public.",
+      "keyFacts": [
+        "38 joint teams raided 38 locations on the morning of 23 October 2026.",
+        "Hawala transactions worth ₹100 crore were detected and 1,424 bank accounts frozen.",
+        "Properties worth ₹17.82 crore, 500 detonators and ₹12 lakh in cash were seized.",
+        "18 people were arrested.",
+        "The network trafficked narcotics through the 'Death Triangle Corridor' across the India-Myanmar-Bangladesh borders.",
+        "The Home Ministry said the goal is to end every drug network by 31 December 2029."
+      ],
+      "faq": [
+        {
+          "q": "What is Operation Trident?",
+          "a": "It is an operation led by the NCB against an international drug trafficking network. Mizoram Police and the Enforcement Directorate (ED) worked with the NCB in it."
+        },
+        {
+          "q": "When and where was Operation Trident carried out?",
+          "a": "It was carried out on the morning of 23 October 2026 at 38 locations across Assam, Mizoram and Manipur."
+        },
+        {
+          "q": "How many people were arrested in this operation?",
+          "a": "According to the release, 18 people were arrested."
+        },
+        {
+          "q": "Does this affect people in UP, Bihar or Delhi?",
+          "a": "The release gives no instruction for the general public. The raids were in three northeastern states and concern a drug trafficking network."
+        },
+        {
+          "q": "What goal has India set against drugs?",
+          "a": "The Home Ministry said the aim is to eradicate every drug network by 31 December 2029."
+        }
+      ],
+      "body": "## What happened\n\nAccording to a Home Ministry release, the Narcotics Control Bureau (NCB) led 'Operation Trident' on the morning of 23 October 2026. Thirty-eight joint teams carried out simultaneous action at 38 pre-identified locations in Assam, Mizoram and Manipur.\n\nThe release says the operation was carried out by the NCB along with Mizoram Police and the Enforcement Directorate (ED). The locations included Aizawl, Champhai and the border trade town of Zokhawthar on the India-Myanmar border in Mizoram, Churachandpur in Manipur, and sites in the Cachar area of Assam.\n\n## What was found\n\nThe release says the operation revealed hawala transactions worth ₹100 crore and led to 1,424 bank accounts being frozen. Properties worth ₹17.82 crore were attached. Besides this, 500 detonators and ₹12 lakh in cash were seized, and 18 people were arrested.\n\n## Which network was targeted\n\nThe release says the network trafficked narcotics through the 'Death Triangle Corridor' across the borders of India, Myanmar and Bangladesh. Investigation revealed a cartel led by Thangsintuang alias Chintuang alias Tluanga, based in Myanmar. According to the release, he was wanted in more than 10 cases registered under the NDPS Act and was arrested from Delhi.\n\nThe release also lists earlier arrests in the case: Vungkhanthona was arrested and later detained under the stricter PIT-NDPS Act; hawala operator Lalrampari was arrested by the NCB on 08.08.2024; and Abu Saleh alias Saifuddin, described as the logistics head on the Assam corridor, was arrested from Cachar in Assam on 20.11.2025.\n\n## What is the new strategy\n\nThe release says the operation follows the 'Narcotics Control Vision Document (2026-2029)'. The strategy is not only to seize drugs but to dismantle the entire network and destroy its financial sources.\n\nUnion Home Minister Amit Shah said the action reflects India's resolve to eradicate every drug network by 31 December 2029. He congratulated the anti-narcotics teams of central agencies and the police forces of the three states.\n\n## What it means for ordinary people\n\nThe release gives no instruction or appeal to the general public. The raids took place in three northeastern states, so readers in UP, Bihar, MP and Delhi have nothing to do because of this notice."
+    }
+  }
+}
