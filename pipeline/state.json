@@ -2444,11 +2444,31 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328309": "2026-10-26",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328308": "2026-10-26",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328316": "2026-10-26",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63863": "2026-10-26"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63863": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328446": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328453": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328498": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328426": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328493": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328496": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328447": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328431": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328417": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328414": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328411": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328410": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328405": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328429": "2026-10-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328339": "2026-10-26",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63866": "2026-10-26",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63865": "2026-10-26",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63864": "2026-10-26",
+    "https://nta.ac.in/Download/Notice/Notice_20261026114247.pdf": "2026-10-26",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bd4a15aa-9706-4dca-9f36-a0d48e0d4cfa.pdf": "2026-10-26"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-10-25T15:10:00.525Z",
+    "last": "2026-10-26T11:16:25.185Z",
     "pending": []
   }
 }
