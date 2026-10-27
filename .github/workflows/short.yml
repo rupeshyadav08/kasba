@@ -6,7 +6,10 @@ name: Shorts
 # then uploaded to YouTube. Repo variable SHORTS_AUTO=true skips the tap and uploads straight away.
 on:
   schedule:
+    # GitHub delays scheduled runs by hours or drops them, so each slot has a back-up an hour and
+    # a half later; the check job skips a run when a Short was made in the last 3.5 hours.
     - cron: '41 3,8,13 * * *' # about 9:10, 14:10 and 19:10 India time
+    - cron: '13 5,10,15 * * *'
   workflow_dispatch:
     inputs:
       story:
@@ -23,8 +26,28 @@ permissions:
   actions: read
 
 jobs:
-  make:
+  check:
     if: ${{ !inputs.upload }}
+    runs-on: ubuntu-latest
+    outputs:
+      due: ${{ steps.due.outputs.due }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: pipeline
+      - id: due
+        run: |
+          node -e "
+            const fs = require('fs');
+            const last = fs.existsSync('pipeline/shorts.json') ? JSON.parse(fs.readFileSync('pipeline/shorts.json', 'utf8')).at(-1)?.made : null;
+            const due = '${{ github.event_name }}' !== 'schedule' || !last || Date.now() - Date.parse(last) > 3.5 * 36e5;
+            console.log('last Short', last, 'due', due);
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, 'due=' + due + '\n');
+          "
+
+  make:
+    needs: check
+    if: ${{ needs.check.outputs.due == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

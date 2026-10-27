@@ -16,6 +16,7 @@ export const send = (text, buttons) => call('sendMessage', {
   chat_id: editorChat(), text, parse_mode: 'HTML', disable_web_page_preview: true,
   ...(buttons ? { reply_markup: { inline_keyboard: [buttons] } } : {}),
 });
+export const sendTo = (chat, text) => call('sendMessage', { chat_id: chat, text, disable_web_page_preview: true });
 export const updates = (offset) => call('getUpdates', { offset, timeout: 0, allowed_updates: ['callback_query', 'message'] });
 export const webhookInfo = () => call('getWebhookInfo', {});
 // Same derivation as functions/api/telegram.js, so the site can check that a request came from Telegram.
