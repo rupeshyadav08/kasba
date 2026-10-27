@@ -41,7 +41,7 @@ export async function onRequestPost({ request, env }) {
     return new Response('forbidden', { status: 403 });
   }
   const update = await request.json();
-  const from = String(update.callback_query?.from?.id ?? update.message?.chat?.id ?? '');
+  const from = String(update.callback_query?.from?.id ?? update.message?.from?.id ?? '');
   // Only the editor's taps and messages matter; anything else is acknowledged and dropped.
   if (from !== String(env.TELEGRAM_CHAT_ID).trim()) {
     if (update.callback_query) await tg(env, 'answerCallbackQuery', { callback_query_id: update.callback_query.id, text: 'Not allowed' });

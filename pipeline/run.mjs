@@ -76,6 +76,15 @@ async function applyDecisions() {
   const { list, done } = await readUpdates();
   for (const u of list) {
     const msg = u.message;
+    // Any message from the editor in a group makes that group the home for Shorts, so the videos
+    // don't get lost among the story drafts (scripts/make-short.mjs reads state.shortsChat).
+    if (msg && /group/.test(msg.chat?.type) && String(msg.from?.id) === tg.editorChat()) {
+      if (state.shortsChat !== msg.chat.id) {
+        state.shortsChat = msg.chat.id;
+        await tg.sendTo(msg.chat.id, '✅ अब नए शॉर्ट्स इसी ग्रुप में आएँगे।');
+      }
+      continue;
+    }
     if (msg && String(msg.chat?.id) === tg.editorChat()) {
       for (const url of String(msg.text ?? '').match(/https?:\/\/\S+/g) ?? []) {
         let host = '';

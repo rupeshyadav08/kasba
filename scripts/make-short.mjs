@@ -247,12 +247,17 @@ writeFileSync(`${out}meta.json`, JSON.stringify({
   tags: ['Kasba', 'कस्बा', 'Hindi news', sections[story.category]].filter(Boolean),
 }, null, 1));
 
-// Goes to the editor first. With SHORT_ASK (the run id) the video carries Post/Skip buttons; a Post
+// Goes to the editor first, in the Shorts group once there is one (pipeline/state.json).
+function shortsChat() {
+  const state = existsSync('pipeline/state.json') ? JSON.parse(readFileSync('pipeline/state.json', 'utf8')) : {};
+  return state.shortsChat ?? process.env.TELEGRAM_CHAT_ID.trim();
+}
+// With SHORT_ASK (the run id) the video carries Post/Skip buttons; a Post
 // tap makes the site's Telegram webhook start the upload job for this run.
 if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
   const ask = process.env.SHORT_ASK;
   const form = new FormData();
-  form.append('chat_id', process.env.TELEGRAM_CHAT_ID.trim());
+  form.append('chat_id', String(shortsChat()));
   form.append('caption', `${ask ? '🎬 नया शॉर्ट: YouTube पर डालें?' : `🎬 नमूना शॉर्ट (कहीं पोस्ट नहीं हुआ) ${process.env.SHORT_LABEL ?? ''}`}\n${story.title}\n${link}`);
   form.append('supports_streaming', 'true');
   if (ask) form.append('reply_markup', JSON.stringify({ inline_keyboard: [[{ text: '✅ पोस्ट करें', callback_data: `y:${ask}` }, { text: '❌ छोड़ें', callback_data: `n:${ask}` }]] }));

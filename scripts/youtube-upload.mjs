@@ -2,16 +2,18 @@
 // the editor on Telegram. Run by .github/workflows/short.yml after the editor taps Post.
 // Secrets: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (one-time Google sign-in for the channel).
 // YouTube keeps uploads from an app it has not audited yet private, whatever we ask for here.
-import { readFileSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, statSync } from 'node:fs';
 
 const meta = JSON.parse(readFileSync('short/meta.json', 'utf8'));
 const file = 'short/short.mp4';
 
+// Replies go where the video was sent: the Shorts group if there is one, else the editor's chat.
+const state = existsSync('pipeline/state.json') ? JSON.parse(readFileSync('pipeline/state.json', 'utf8')) : {};
 async function tell(text) {
   if (!process.env.TELEGRAM_BOT_TOKEN) return;
   await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: String(process.env.TELEGRAM_CHAT_ID).trim(), text, disable_web_page_preview: true }),
+    body: JSON.stringify({ chat_id: String(state.shortsChat ?? process.env.TELEGRAM_CHAT_ID).trim(), text, disable_web_page_preview: true }),
   });
 }
 
