@@ -2514,11 +2514,20 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328877": "2026-10-27",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328818": "2026-10-27",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63870": "2026-10-27",
-    "https://nta.ac.in/Download/Notice/Notice_20261027133408.pdf": "2026-10-27"
+    "https://nta.ac.in/Download/Notice/Notice_20261027133408.pdf": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328948": "2026-10-27",
+    "https://upmsp.edu.in/Downloads/Teachers_Profile_vigyapti.pdf": "2026-10-27",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_7894d9f6-3ae9-46f1-88a3-926de0742854.pdf": "2026-10-27",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_fd4e513a-57a2-478b-b8f6-d1f09f66d437.pdf": "2026-10-27",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_e036cc65-29c7-4942-acfc-5ce126279897.pdf": "2026-10-27",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_1b50e1c2-a739-4373-a53c-2c9fbfa30c56.pdf": "2026-10-27",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b02d962b-c4d0-40b5-8772-3c68a066c50b.pdf": "2026-10-27"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-10-27T09:56:14.601Z",
-    "pending": []
+    "pending": [
+      "rms-cet-2026-nta-opens-one-time-correction-window-for-applic"
+    ]
   }
 }
