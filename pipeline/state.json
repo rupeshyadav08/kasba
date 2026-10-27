@@ -2521,13 +2521,31 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_fd4e513a-57a2-478b-b8f6-d1f09f66d437.pdf": "2026-10-27",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_e036cc65-29c7-4942-acfc-5ce126279897.pdf": "2026-10-27",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_1b50e1c2-a739-4373-a53c-2c9fbfa30c56.pdf": "2026-10-27",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b02d962b-c4d0-40b5-8772-3c68a066c50b.pdf": "2026-10-27"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b02d962b-c4d0-40b5-8772-3c68a066c50b.pdf": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329257": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329225": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329241": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329190": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329222": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329228": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329236": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329162": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329209": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329221": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329207": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329211": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329229": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329172": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329177": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329157": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329120": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329140": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329145": "2026-10-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329111": "2026-10-27"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-10-27T09:56:14.601Z",
-    "pending": [
-      "rms-cet-2026-nta-opens-one-time-correction-window-for-applic"
-    ]
+    "last": "2026-10-27T16:52:09.822Z",
+    "pending": []
   }
 }
