@@ -1,0 +1,93 @@
+{
+  "id": "7b1fdb4a84",
+  "createdAt": "2026-10-28T05:56:00.342Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "RBI",
+    "title": "Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Removal of 03 Entries",
+    "link": "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13747&Mode=0"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "money",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Implementation of Section 51A of UAPA, 1967: Updates to UNSC’s 1267/ 1989 ISIL (Da'esh) & Al-Qaida Sanctions List: Removal of 03 Entries",
+    "sourceDate": "2026-10-27",
+    "hi": {
+      "title": "RBI ने बैंकों को UNSC की सैंक्शन लिस्ट से तीन नाम हटने की जानकारी दी",
+      "summary": "RBI ने 27 अक्टूबर 2026 को बैंकों और वित्तीय कंपनियों को बताया कि UNSC ने ISIL (Da'esh) और Al-Qaida सैंक्शन लिस्ट से तीन व्यक्तियों के नाम हटा दिए हैं। इसका असर आम जमाकर्ताओं और खाताधारकों पर सीधे तौर पर नहीं पड़ता।",
+      "meaning": "यह सूचना बैंकों और वित्तीय कंपनियों के लिए है, आम लोगों के लिए नहीं। अगर आपका खाता किसी आम नागरिक के नाम है तो आपको कुछ करने की ज़रूरत नहीं है। बैंकों को अपनी सैंक्शन लिस्ट अपडेट करनी है ताकि जिन नामों पर से पाबंदी हटी है, उन पर लगी रोक भी हट सके।",
+      "keyFacts": [
+        "RBI का पत्र 27 अक्टूबर 2026 का है।",
+        "UNSC की प्रेस रिलीज़ SC/16488, 26 अक्टूबर 2026 की है।",
+        "तीन नाम लिस्ट से हटाए गए: Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri और Iyad Nazmi Salih Khalil।",
+        "ये नाम 1267 (1999), 1989 (2011) और 2253 (2015) प्रस्तावों से जुड़ी लिस्ट से हटे हैं।",
+        "हटने के बाद इन नामों पर संपत्ति फ्रीज़, यात्रा प्रतिबंध और हथियार प्रतिबंध लागू नहीं रहेंगे।"
+      ],
+      "faq": [
+        {
+          "q": "UNSC की सैंक्शन लिस्ट से किन तीन नामों को हटाया गया है?",
+          "a": "Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri और Iyad Nazmi Salih Khalil को हटाया गया है। RBI ने UNSC की प्रेस रिलीज़ SC/16488 के आधार पर यह जानकारी दी।"
+        },
+        {
+          "q": "क्या इसका असर मेरे बैंक खाते पर पड़ेगा?",
+          "a": "नहीं, आम खाताधारकों पर इसका सीधा असर नहीं है। यह सूचना बैंकों और वित्तीय कंपनियों को उनकी सैंक्शन लिस्ट अपडेट करने के लिए दी गई है।"
+        },
+        {
+          "q": "संपत्ति फ्रीज़, यात्रा प्रतिबंध और हथियार प्रतिबंध का क्या मतलब है?",
+          "a": "ये UNSC के तय किए हुए प्रतिबंध हैं जो लिस्ट में शामिल नामों पर लगते हैं। RBI के मुताबिक अब ये तीनों प्रतिबंध इन तीन नामों पर लागू नहीं होंगे।"
+        },
+        {
+          "q": "अगर किसी को लिस्ट से नाम हटवाना है तो कहाँ आवेदन करें?",
+          "a": "UNSC की लिस्ट से नाम हटवाने की अर्जी UN के Ombudsperson को दी जा सकती है। RBI ने कहा है कि बैंक को मिली ऐसी कोई भी अर्जी MHA के Joint Secretary (CTCR) को इलेक्ट्रॉनिक तरीके से भेजी जानी चाहिए।"
+        },
+        {
+          "q": "अपडेटेड सैंक्शन लिस्ट कहाँ देखी जा सकती है?",
+          "a": "अपडेटेड लिस्ट UNSC की वेबसाइट पर देखी जा सकती है। RBI ने अपने पत्र में 1267 और 1988 सैंक्शन लिस्ट के लिंक दिए हैं।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nभारतीय रिज़र्व बैंक (RBI) ने 27 अक्टूबर 2026 को सभी बैंकों और वित्तीय कंपनियों को एक सूचना भेजी है। इसमें बताया गया है कि संयुक्त राष्ट्र सुरक्षा परिषद (UNSC) ने अपनी ISIL (Da'esh) और Al-Qaida सैंक्शन लिस्ट से तीन व्यक्तियों के नाम हटा दिए हैं।\n\nयह जानकारी विदेश मंत्रालय ने RBI को दी, जो UNSC की 26 अक्टूबर 2026 की प्रेस रिलीज़ SC/16488 पर आधारित है।\n\n## किन नामों पर से पाबंदी हटी\n\nRBI के पत्र के मुताबिक हटाए गए तीन नाम ये हैं: Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri और Iyad Nazmi Salih Khalil।\n\nये नाम 1267 (1999), 1989 (2011) और 2253 (2015) प्रस्तावों से जुड़ी लिस्ट से हटाए गए हैं। UNSC की समिति ने उस देश की अर्जी पर विचार पूरा करने के बाद यह फैसला लिया, जिसने इन नामों को लिस्ट में डाला था।\n\n## अब क्या बदलेगा\n\nRBI के अनुसार, हटाए गए नामों पर अब संपत्ति फ्रीज़, यात्रा प्रतिबंध और हथियार प्रतिबंध लागू नहीं रहेंगे। ये प्रतिबंध UNSC के प्रस्ताव 2734 (2024) के तहत लगाए गए थे।\n\n## बैंकों को क्या करना है\n\nRBI ने बैंकों से कहा है कि वे UAPA कानून की धारा 51A और RBI की KYC Directions, 2025 के Chapter IX के तहत तय प्रक्रिया का पालन करें। बैंकों को यह भी सुनिश्चित करना है कि उनके पास ऐसे किसी व्यक्ति या संस्था का खाता न हो जो UNSC की लिस्ट में शामिल हो।\n\nअगर किसी बैंक को लिस्ट से नाम हटाने की कोई अर्जी मिलती है, तो उसे इलेक्ट्रॉनिक तरीके से गृह मंत्रालय के Joint Secretary (CTCR) को भेजना है।\n\n## आम लोगों पर असर\n\nयह सूचना मुख्य रूप से बैंकों और वित्तीय कंपनियों के लिए है। आम जमाकर्ताओं, खाताधारकों या ग्राहकों को इसके लिए कुछ नहीं करना है।\n\nअपडेटेड सैंक्शन लिस्ट UNSC की वेबसाइट पर देखी जा सकती है। लिस्ट से नाम हटवाने की अर्जी UN के Ombudsperson को भी दी जा सकती है, जिनकी जानकारी UNSC की वेबसाइट पर उपलब्ध है।"
+    },
+    "en": {
+      "title": "RBI tells banks three names removed from UNSC ISIL and Al-Qaida sanctions list",
+      "summary": "The RBI on 27 October 2026 informed banks and financial companies that the UNSC has removed three individuals from its ISIL (Da'esh) and Al-Qaida Sanctions List. This does not directly affect ordinary depositors or account holders.",
+      "meaning": "This notice is meant for banks and financial companies, not for ordinary people. If your account is in the name of a regular citizen, you do not need to do anything. Banks have to update their sanctions lists so that restrictions on the removed names are lifted.",
+      "keyFacts": [
+        "The RBI letter is dated 27 October 2026.",
+        "The UNSC press release SC/16488 is dated 26 October 2026.",
+        "Three names were removed: Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri and Iyad Nazmi Salih Khalil.",
+        "The names were removed from the list linked to resolutions 1267 (1999), 1989 (2011) and 2253 (2015).",
+        "After removal, the assets freeze, travel ban and arms embargo no longer apply to these names."
+      ],
+      "faq": [
+        {
+          "q": "Which three names were removed from the UNSC sanctions list?",
+          "a": "Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri and Iyad Nazmi Salih Khalil were removed. The RBI gave this information based on UNSC press release SC/16488."
+        },
+        {
+          "q": "Will this affect my bank account?",
+          "a": "No, it does not directly affect ordinary account holders. The notice is for banks and financial companies to update their sanctions lists."
+        },
+        {
+          "q": "What do assets freeze, travel ban and arms embargo mean?",
+          "a": "These are restrictions set by the UNSC that apply to names on the list. According to the RBI, these three restrictions will no longer apply to the three removed names."
+        },
+        {
+          "q": "Where can someone apply to be removed from the list?",
+          "a": "A request for removal from the UNSC list can be made to the UN Ombudsperson. The RBI said any such request received by a bank must be sent electronically to the Joint Secretary (CTCR) at the Ministry of Home Affairs."
+        },
+        {
+          "q": "Where can the updated sanctions list be seen?",
+          "a": "The updated list is available on the UNSC website. The RBI letter gives links to the 1267 and 1988 sanctions lists."
+        }
+      ],
+      "body": "## What has happened\n\nThe Reserve Bank of India (RBI) on 27 October 2026 sent a notice to all banks and financial companies. It said the United Nations Security Council (UNSC) has removed three individuals from its ISIL (Da'esh) and Al-Qaida Sanctions List.\n\nThe information came to the RBI from the Ministry of External Affairs and is based on UNSC press release SC/16488 dated 26 October 2026.\n\n## Which names were removed\n\nAccording to the RBI letter, the three removed names are Shafi Sultan Mohammed Sultan Al-Ajmi, Bassam Ahmad Al-Hasri and Iyad Nazmi Salih Khalil.\n\nThe names were removed from the list linked to resolutions 1267 (1999), 1989 (2011) and 2253 (2015). The UNSC Committee took the decision after completing its consideration of a delisting request from the designating State.\n\n## What changes now\n\nAccording to the RBI, the assets freeze, travel ban and arms embargo no longer apply to the removed names. These measures were set out under UNSC resolution 2734 (2024).\n\n## What banks have to do\n\nThe RBI asked banks to follow the procedure laid down under Section 51A of the UAPA and Chapter IX of the RBI's KYC Directions, 2025. Banks must also ensure they do not hold any account in the name of a person or entity on the UNSC list.\n\nIf a bank receives a request to remove a name from the list, it must send it electronically to the Joint Secretary (CTCR) at the Ministry of Home Affairs.\n\n## Impact on ordinary people\n\nThis notice is mainly for banks and financial companies. Ordinary depositors, account holders and customers do not need to do anything.\n\nThe updated sanctions list can be seen on the UNSC website. A request to be removed from the list can also be made to the UN Ombudsperson, whose details are available on the UNSC website."
+    }
+  }
+}
