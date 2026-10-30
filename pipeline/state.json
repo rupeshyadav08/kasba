@@ -2664,11 +2664,38 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330491": "2026-10-30",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330418": "2026-10-30",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330426": "2026-10-30",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330436": "2026-10-30"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330436": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330591": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330545": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330590": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330562": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330564": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330580": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330578": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330565": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330560": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330556": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330554": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63896": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63895": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63893": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63892": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63891": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63890": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63889": "2026-10-30"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-10-30T13:09:28.166Z",
-    "pending": []
+    "pending": [
+      "drl-seizes-50-kg-methamphetamine-in-mizoram-and-assam-four-a",
+      "vande-bharat-sleeper-new-overnight-varanasi-new-delhi-train",
+      "caqm-s-pawan-i3c-centre-launched-ncr-construction-work-banne",
+      "dfs-special-campaign-6-rs-4-12-crore-scrap-revenue-31-327-pu",
+      "rbi-sets-sgb-2021-22-series-vii-early-redemption-price-at-14",
+      "rbi-average-interest-rate-on-fresh-bank-loans-falls-in-septe"
+    ]
   }
 }
