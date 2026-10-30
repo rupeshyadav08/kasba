@@ -2655,14 +2655,20 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b0655976-6823-4092-ba35-23d615c14406.pdf": "2026-10-30",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_1e415aeb-a2f8-4efa-81e4-2810f14d4da4.pdf": "2026-10-30",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_7cf75b49-95c6-4f68-bc02-c8e35df88345.pdf": "2026-10-30",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_ee07dd1f-e154-4a2c-99b8-e15199735bb1.pdf": "2026-10-30"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_ee07dd1f-e154-4a2c-99b8-e15199735bb1.pdf": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330474": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330504": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330502": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330416": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330412": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330491": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330418": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330426": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330436": "2026-10-30"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-10-30T06:01:06.924Z",
-    "pending": [
-      "narmada-control-authority-15th-rcnca-meet-accepts-mou-on-sar",
-      "rbi-extends-restrictions-on-kerala-s-irinjalakuda-town-co-op"
-    ]
+    "last": "2026-10-30T13:09:28.166Z",
+    "pending": []
   }
 }

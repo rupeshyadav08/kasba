@@ -1,0 +1,93 @@
+{
+  "id": "13b5f9332d",
+  "createdAt": "2026-10-30T13:07:37.672Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "डीआरआई ने म्यांमार से जुड़े मादक पदार्थों की तस्करी के नेटवर्क को बड़ा झटका दिया; पूर्वोत्तर में 50 किलोग्राम मेथामफेटामाइन की गोलियों और क्रिस्टल मेथ की भारी खेप जब्त की गई; चार गिरफ्तार",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330504"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "डीआरआई ने म्यांमार से जुड़े मादक पदार्थों की तस्करी के नेटवर्क को बड़ा झटका दिया; पूर्वोत्तर में 50 किलोग्राम मेथामफेटामाइन की गोलियों और क्रिस्टल मेथ की भारी खेप जब्त की गई; चार गिरफ्तार",
+    "sourceDate": "2026-10-30",
+    "hi": {
+      "title": "DRI ने मिजोरम और असम में 50 किलोग्राम मेथामफेटामाइन जब्त किया, चार गिरफ्तार",
+      "summary": "राजस्व खुफिया निदेशालय (DRI) ने 29 और 30 अक्टूबर 2026 को मिजोरम और असम में दो अभियानों में 50 किलोग्राम मेथामफेटामाइन जब्त किया और NDPS अधिनियम के तहत चार लोगों को गिरफ्तार किया। यह कार्रवाई पूर्वोत्तर में सीमा पार नशीली दवाओं की तस्करी से जुड़े नेटवर्क पर असर डालती है।",
+      "meaning": "यह कार्रवाई सीधे आम लोगों से जुड़ी नहीं है — इसमें किसी से कोई आवेदन या भुगतान नहीं मांगा गया है। यह खबर इसलिए उपयोगी है कि सरकारी एजेंसियां सीमा पार से आने वाली सिंथेटिक नशीली दवाओं पर कार्रवाई कर रही हैं। अगर आपको कहीं संदिग्ध तस्करी की जानकारी मिले तो पुलिस या संबंधित एजेंसी को बताएं।",
+      "keyFacts": [
+        "कुल 50 किलोग्राम मेथामफेटामाइन जब्त — 30 किलोग्राम गोलियां (याबा) और 20 किलोग्राम क्रिस्टल मेथ",
+        "29 अक्टूबर 2026: आइजोल-चंफाई रोड पर बोलेरो कैंपर से 30 किलोग्राम गोलियां बरामद",
+        "30 अक्टूबर 2026: सिलचर से लगभग 40 किमी दूर धोलाई में ट्रक से 20 किलोग्राम क्रिस्टल मेथ बरामद",
+        "NDPS अधिनियम, 1985 के तहत चार लोग गिरफ्तार, तीन वाहन जब्त",
+        "प्रारंभिक जांच के अनुसार दवाओं की तस्करी म्यांमार से की गई थी"
+      ],
+      "faq": [
+        {
+          "q": "DRI ने कितनी मेथामफेटामाइन जब्त की?",
+          "a": "कुल 50 किलोग्राम। इसमें 30 किलोग्राम गोलियां (याबा) और 20 किलोग्राम क्रिस्टल मेथामफेटामाइन शामिल है।"
+        },
+        {
+          "q": "कितने लोग गिरफ्तार हुए हैं?",
+          "a": "चार लोग गिरफ्तार किए गए हैं। यह गिरफ्तारी NDPS अधिनियम, 1985 के प्रासंगिक प्रावधानों के तहत हुई है।"
+        },
+        {
+          "q": "यह कार्रवाई कहां हुई?",
+          "a": "मिजोरम और असम में। पहला अभियान आइजोल के बाहरी इलाके में और दूसरा सिलचर से लगभग 40 किमी दूर धोलाई में हुआ।"
+        },
+        {
+          "q": "तस्करी कहां से आई थी?",
+          "a": "प्रारंभिक जांच से संकेत मिलता है कि जब्त दवाओं की तस्करी म्यांमार से की गई थी।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं। इस सूचना में आम लोगों के लिए कोई आवेदन, भुगतान या समय-सीमा नहीं बताई गई है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराजस्व खुफिया निदेशालय (DRl) ने मिजोरम और असम में लगातार दो अभियान चलाए। इनमें कुल 50 किलोग्राम मेथामफेटामाइन जब्त किया गया। इसमें 30 किलोग्राम गोलियां (याबा) और 20 किलोग्राम क्रिस्टल मेथामफेटामाइन शामिल है। NDPS अधिनियम, 1985 के तहत चार लोगों को गिरफ्तार किया गया है और तीन वाहन जब्त किए गए हैं।\n\n## पहला अभियान\n\n29 अक्टूबर 2026 को DRl अधिकारियों ने असम राइफल्स की मदद से आइजोल-चंफाई रोड पर आइजोल के बाहरी इलाके में एक महिंद्रा बोलेरो कैंपर रोका। तलाशी में 30 ईंट के आकार के पैकेट मिले, जिनमें गुलाबी-नारंगी गोलियां थीं और वजन 30 किलोग्राम था। ये पैकेट एक ऑफिस की मेज के अंदर बने खास खाने में छिपाए गए थे। सूचना के मुताबिक, तस्करी छिपाने के लिए फर्नीचर को कवर कार्गो बनाना एक नया तरीका है।\n\n## दूसरा अभियान\n\n30 अक्टूबर 2026 को एक और अभियान में अधिकारियों ने सिलचर से लगभग 40 किमी दूर धोलाई में एक अशोक लीलैंड ट्रक और एक बोलेरो कैंपर रोका। ट्रक से 20 पैकेट क्रिस्टल मेथामफेटामाइन बरामद हुए, जिनका वजन 20 किलोग्राम था। पैकेट ड्राइवर के केबिन के ऊपर छिपाए गए थे और विदेशी निशान वाले चाय के पैकेट में पैक किए गए थे। फील्ड परीक्षण में बरामद पदार्थ में एम्फ़ैटेमिन की मौजूदगी का संकेत मिला।\n\n## पहले की बरामदगी\n\nयह कार्रवाई DRl द्वारा पूर्वोत्तर में हाल ही में 232 किलोग्राम और 56 किलोग्राम मेथामफेटामाइन की दो बड़ी बरामदगी के बाद हुई है। सूचना के अनुसार, ये लगातार बरामदगी सीमा पार सिंथेटिक नशीली दवाओं की तस्करी के पैमाने को दिखाती हैं।\n\n## आम लोगों के लिए क्या मतलब\n\nइस खबर में आम नागरिकों के लिए कोई आवेदन, भुगतान या समय-सीमा नहीं बताई गई है। यह सरकारी एजेंसी की कार्रवाई की जानकारी है। DRl ने कहा है कि वह संगठित नशीली दवाओं की तस्करी के नेटवर्क को रोकने और सिंथेटिक दवाओं के प्रसार को रोकने के लिए काम कर रहा है।"
+    },
+    "en": {
+      "title": "DRl seizes 50 kg methamphetamine in Mizoram and Assam, four arrested",
+      "summary": "The Directorate of Revenue Intelligence (DRl) seized 50 kg of methamphetamine in two operations in Mizoram and Assam on 29 and 30 October 2026 and arrested four people under the NDPS Act. The action targets networks smuggling drugs across the border in the Northeast.",
+      "meaning": "This action does not directly involve ordinary people — no application or payment is asked of anyone. It matters because it shows agencies acting against synthetic drugs coming across the border. If you come across information about suspected smuggling, report it to the police or the concerned agency.",
+      "keyFacts": [
+        "Total 50 kg methamphetamine seized — 30 kg tablets (Yaba) and 20 kg crystal meth",
+        "29 October 2026: 30 kg of tablets found in a Bolero camper on the Aizawl-Champhai road",
+        "30 October 2026: 20 kg crystal meth found in a truck at Dholai, about 40 km from Silchar",
+        "Four arrested under the NDPS Act, 1985; three vehicles seized",
+        "Initial probe suggests the drugs were smuggled from Myanmar"
+      ],
+      "faq": [
+        {
+          "q": "How much methamphetamine did DRl seize?",
+          "a": "A total of 50 kg. This includes 30 kg of tablets (Yaba) and 20 kg of crystal methamphetamine."
+        },
+        {
+          "q": "How many people were arrested?",
+          "a": "Four people were arrested. The arrests were made under the relevant provisions of the NDPS Act, 1985."
+        },
+        {
+          "q": "Where did the operations take place?",
+          "a": "In Mizoram and Assam. The first operation was on the outskirts of Aizawl and the second at Dholai, about 40 km from Silchar."
+        },
+        {
+          "q": "Where did the drugs come from?",
+          "a": "Initial investigation suggests the seized drugs were smuggled from Myanmar."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No. The notice does not ask the public to apply, pay or meet any deadline."
+        }
+      ],
+      "body": "## What happened\n\nThe Directorate of Revenue Intelligence (DRl) carried out two back-to-back operations in Mizoram and Assam. A total of 50 kg of methamphetamine was seized, including 30 kg of tablets (Yaba) and 20 kg of crystal methamphetamine. Four people were arrested under the NDPS Act, 1985, and three vehicles were seized.\n\n## The first operation\n\nOn 29 October 2026, DRl officers, with operational support from the Assam Rifles, stopped a Mahindra Bolero camper on the Aizawl-Champhai road on the outskirts of Aizawl. A search found 30 brick-shaped packets of pink-orange tablets weighing 30 kg, hidden in a specially built cavity inside an office desk along with a storage cabinet. According to the notice, using furniture as cover cargo to hide drug transport is a new modus operandi.\n\n## The second operation\n\nOn 30 October 2026, in another operation, officers stopped an Ashok Leyland truck and a Bolero camper at Dholai, about 40 km from Silchar. The truck search yielded 20 packets of crystal methamphetamine weighing 20 kg. The packets were hidden above the driver's cabin and packed in tea packets with foreign markings. A field test indicated the presence of amphetamine in the seized substance.\n\n## Earlier seizures\n\nThe action follows two recent major DRl seizures of 232 kg and 56 kg of methamphetamine in the Northeast. According to the notice, these repeated seizures show the scale of cross-border synthetic drug trafficking.\n\n## What it means for the public\n\nThe notice does not ask citizens to apply, pay or meet any deadline. It is information about an agency action. DRl said it is committed to disrupting organised drug trafficking networks and preventing the spread of synthetic drugs."
+    }
+  }
+}
