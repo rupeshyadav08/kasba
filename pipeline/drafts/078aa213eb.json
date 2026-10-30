@@ -1,0 +1,95 @@
+{
+  "id": "078aa213eb",
+  "createdAt": "2026-10-30T05:59:47.034Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "माय भारत(MY Bharat) ने 12 राज्यों/केंद्रशासित प्रदेशों में 23 ‘विकसित भारत युवा संवाद: अपना वोट जानें’ कार्यक्रम आयोजित किया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330292"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "माय भारत(MY Bharat) ने 12 राज्यों/केंद्रशासित प्रदेशों में 23 ‘विकसित भारत युवा संवाद: अपना वोट जानें’ कार्यक्रम आयोजित किया",
+    "sourceDate": "2026-10-29",
+    "hi": {
+      "title": "MY Bharat ने 12 राज्यों में 23 ‘अपना वोट जानें’ कार्यक्रम किए, 5,481 युवाओं ने लिया हिस्सा",
+      "summary": "युवा कार्यक्रम एवं खेल मंत्रालय के माय भारत (MY Bharat) ने 29 अक्टूबर 2026 को 12 राज्यों और केंद्रशासित प्रदेशों के कॉलेजों में ‘विकसित भारत युवा संवाद: अपना वोट जानें’ के 23 कार्यक्रम किए। इनमें 5,481 युवाओं ने हिस्सा लिया और मतदान के अधिकार, चुनाव प्रक्रिया और नागरिक दायित्वों पर बात की गई।",
+      "meaning": "यह कार्यक्रम खास तौर पर पहली बार मतदान करने वाले युवाओं के लिए है, ताकि वे वोट के अधिकार और चुनाव प्रक्रिया को समझ सकें। अगर आपका कॉलेज या संस्थान इस अभियान में शामिल है तो आप सीधे इन सत्रों में हिस्सा ले सकते हैं। कार्यक्रम स्थल पर MY Bharat पंजीकरण और QR कोड से सुझाव भी दिए जा सकते हैं। जिन लोगों का कॉलेज शामिल नहीं है, उनके लिए इस सूचना में कोई अलग निर्देश नहीं दिया गया है।",
+      "keyFacts": [
+        "29 अक्टूबर 2026 को 12 राज्यों/केंद्रशासित प्रदेशों में 23 कार्यक्रम हुए, 5,481 युवाओं ने हिस्सा लिया",
+        "अभियान 26 अक्टूबर से 5 नवंबर 2026 तक चलेगा और 500 विश्वविद्यालय, कॉलेज और संस्थान इसमें शामिल हैं",
+        "29 अक्टूबर तक 19 राज्यों/केंद्रशासित प्रदेशों में 50 युवा संवाद हो चुके हैं, जिनमें 11,787 युवा और 51 युवा आइकॉन शामिल हुए",
+        "उत्तर प्रदेश में गाजियाबाद, शाहजहांपुर और सुल्तानपुर में कार्यक्रम हुए; बलरामपुर, बदायूं, देवरिया, सिद्धार्थनगर और सोनभ्रद भी सूची में हैं",
+        "मध्य प्रदेश में बैतूल, मंदसौर और नर्मदापुरम में सत्र हुए; बिहार में शेखपुरा शामिल रहा",
+        "अभियान में लोकतांत्रिक शपथ और ‘अपने वोट को जानें’ ऑनलाइन प्रश्नोत्तरी भी शामिल है"
+      ],
+      "faq": [
+        {
+          "q": "MY Bharat का ‘अपना वोट जानें’ कार्यक्रम क्या है?",
+          "a": "यह युवा कार्यक्रम एवं खेल मंत्रालय के माय भारत की ओर से चलाया जा रहा अभियान है, जिसमें युवाओं को मतदान के अधिकार, चुनाव प्रक्रिया और नागरिक दायित्वों के बारे में बताया जाता है। इसमें जनप्रतिनिधि और युवा आइकॉन भी युवाओं से बात करते हैं।"
+        },
+        {
+          "q": "यह अभियान कब तक चलेगा?",
+          "a": "अभियान 26 अक्टूबर से 5 नवंबर 2026 तक चलाया जा रहा है। इस दौरान 500 विश्वविद्यालयों, कॉलेजों और संस्थानों को शामिल किया जा रहा है।"
+        },
+        {
+          "q": "क्या मैं भी इसमें हिस्सा ले सकता हूं?",
+          "a": "हिस्सा उन कॉलेजों और संस्थानों में होता है जहां यह कार्यक्रम आयोजित किया जा रहा है। कार्यक्रम स्थल पर MY Bharat पंजीकरण और QR कोड से सुझाव भी लिए जा रहे हैं। सूचना में इसके अलावा किसी अलग आवेदन की बात नहीं कही गई है।"
+        },
+        {
+          "q": "उत्तर प्रदेश में किन जिलों में कार्यक्रम हुए?",
+          "a": "सूचना के अनुसार उत्तर प्रदेश में गाजियाबाद, शाहजहांपुर और सुल्तानपुर में कार्यक्रम हुए। इसके अलावा बलरामपुर, बदायूं, देवरिया, सिद्धार्थनगर और सोनभ्रद भी कुल स्थानों की सूची में शामिल हैं।"
+        },
+        {
+          "q": "अब तक कितने युवा इन सत्रों में शामिल हुए हैं?",
+          "a": "29 अक्टूबर तक 19 राज्यों और केंद्रशासित प्रदेशों में 50 युवा संवाद हो चुके हैं, जिनमें 11,787 युवाओं और 51 युवा आइकॉन्स ने हिस्सा लिया है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nयुवा कार्यक्रम एवं खेल मंत्रालय के युवा कार्यक्रम विभाग के तहत काम करने वाले माय भारत (MY Bharat) ने 29 अक्टूबर 2026 को 12 राज्यों और केंद्रशासित प्रदेशों के कॉलेजों और संस्थानों में ‘विकसित भारत युवा संवाद: अपना वोट जानें’ के 23 कार्यक्रम आयोजित किए। इनमें 5,481 युवाओं ने भाग लिया।\n\n## यह अभियान क्यों चलाया जा रहा है\n\nसूचना के मुताबिक इस पहल का उद्देश्य युवाओं, खासकर पहली बार मतदान करने वाले मतदाताओं में चुनावी जागरूकता बढ़ाना है। उन्हें मतदान के अधिकार, चुनावी प्रक्रियाओं और नागरिक दायित्वों से परिचित कराया जाता है, ताकि वे लोकतांत्रिक प्रक्रिया में जागरूक और सूचित तरीके से हिस्सा ले सकें।\n\n## अभियान कितना बड़ा है\n\nयह राष्ट्रव्यापी अभियान 26 अक्टूबर से 5 नवंबर 2026 तक 500 विश्वविद्यालयों, महाविद्यालयों और संस्थानों में चलाया जा रहा है। सूचना के अनुसार 29 अक्टूबर तक 19 राज्यों और केंद्रशासित प्रदेशों में कुल 50 युवा संवाद हो चुके हैं, जिनमें 11,787 युवाओं और 51 युवा आइकॉन्स ने भाग लिया। इन सत्रों में युवाओं, जनप्रतिनिधियों और युवा आइकॉन्स को एक मंच पर लाकर लोकतांत्रिक भागीदारी, नागरिक दायित्वों और राष्ट्र निर्माण में युवाओं की भूमिका पर चर्चा की जाती है।\n\n## उत्तर प्रदेश, बिहार और मध्य प्रदेश में क्या हुआ\n\nउत्तर प्रदेश में शाहजहांपुर के छात्रों ने मतदान के अधिकारों, जिम्मेदारियों और चुनावी प्रक्रियाओं पर चर्चा की। गाजियाबाद के कार्यक्रम में मतदाता पंजीकरण, विकसित भारत युवा नेतृत्व संवाद (वीबीवाईएलडी) प्रश्नोत्तरी और युवा संसद से जुड़ी गतिविधियां हुईं। सुल्तानपुर में भारतीय निर्वाचन आयोग और चुनावी भागीदारी पर प्रश्नोत्तर सत्र हुआ, साथ ही माय भारत के बैनर तले सांस्कृतिक कार्यक्रम भी हुआ।\n\nबिहार के शेखपुरा में युवाओं ने लोकतांत्रिक शपथ ली और जिम्मेदार नागरिकता तथा लोकतांत्रिक भागीदारी पर चर्चा में हिस्सा लिया। मध्य प्रदेश में बैतूल में केंद्रीय मंत्री श्री दुर्गादास उइके ने युवाओं से संवाद किया, जबकि युवा आइकन योगी देशमुख ने सक्रिय मतदान के लिए प्रोत्साहित किया। मंदसौर में सांसद श्री सुधीर गुप्ता और नर्मदापुरम में सांसद श्री दर्शन सिंह चौधरी तथा एशियाई खेलों की कांस्य पदक विजेता सुश्री हर्षिता तोमर ने युवाओं से बात की।\n\n## और कहां-कहां हुए कार्यक्रम\n\nकुल 23 कार्यक्रमों में छत्तीसगढ़ के रायपुर; मध्य प्रदेश के बैतूल, मंदसौर और नर्मदापुरम; गुजरात के साबरकांठा (हिम्मतनगर) और कच्छ (भुज); जम्मू-कश्मीर के कुपवाड़ा; उत्तर प्रदेश के गाजियाबाद, शाहजहांपुर और सुल्तानपुर; तथा बिहार के शेखपुरा के अलावा उत्तर प्रदेश के बलरामपुर, बदायूं, देवरिया, सिद्धार्थनगर और सोनभ्रद; अरुणाचल प्रदेश के पश्चिम कामेंग (बोमडिला); त्रिपुरा के अगरतला (पश्चिम त्रिपुरा); कर्नाटक के बेंगलुरु शहरी; केरल के कोट्टायम; तमिलनाडु के तिरुचिरापल्ली; और तेलंगाना के महबूबनगर तथा रंगा रेड्डी शामिल रहे।\n\n## युवा क्या कर सकते हैं\n\nअभियान में लोकतांत्रिक शपथ और ‘अपने वोट को जानें’ ऑनलाइन प्रश्नोत्तरी भी शामिल है, जिसका मकसद चुनावी प्रक्रियाओं और लोकतांत्रिक मूल्यों के प्रति जागरूकता बढ़ाना है। कार्यक्रम स्थलों पर MY Bharat पंजीकरण और QR कोड के जरिए सुझाव भी जमा किए जा रहे हैं, जिससे युवाओं को भागीदारी के अतिरिक्त अवसर मिलते हैं।"
+    },
+    "en": {
+      "title": "MY Bharat holds 23 ‘Apna Vote Jaane’ events across 12 states; 5,481 youth take part",
+      "summary": "The Youth Affairs and Sports Ministry’s MY Bharat held 23 editions of ‘Viksit Bharat Yuva Samvad: Apna Vote Jaane’ in colleges across 12 states and union territories on 29 October 2026. A total of 5,481 young people took part and discussed voting rights, election processes and civic duties.",
+      "meaning": "The programme is aimed mainly at first-time voters, to help them understand their right to vote and how elections work. If your college or institute is part of this campaign, you can join these sessions directly. At the venue, MY Bharat registration and QR-code based suggestions are also available. The notice gives no separate instruction for people whose colleges are not part of the campaign.",
+      "keyFacts": [
+        "23 events held on 29 October 2026 across 12 states/UTs, with 5,481 youth participating",
+        "Campaign runs from 26 October to 5 November 2026 and covers 500 universities, colleges and institutes",
+        "By 29 October, 50 youth samvads had been held in 19 states/UTs, with 11,787 youth and 51 youth icons taking part",
+        "In Uttar Pradesh, events were held in Ghaziabad, Shahjahanpur and Sultanpur; Balrampur, Budaun, Deoria, Siddharthnagar and Sonbhadra are also on the list",
+        "In Madhya Pradesh, sessions were held in Betul, Mandsaur and Narmadapuram; Sheikhpura in Bihar was also included",
+        "The campaign includes a democratic oath and an online ‘Apna Vote Jaane’ quiz"
+      ],
+      "faq": [
+        {
+          "q": "What is MY Bharat’s ‘Apna Vote Jaane’ programme?",
+          "a": "It is a campaign run by MY Bharat under the Ministry of Youth Affairs and Sports to tell young people about voting rights, the election process and civic duties. Public representatives and youth icons also talk to the youth at these sessions."
+        },
+        {
+          "q": "How long will this campaign run?",
+          "a": "The campaign is being held from 26 October to 5 November 2026. During this period, 500 universities, colleges and institutes are being covered."
+        },
+        {
+          "q": "Can I take part in it?",
+          "a": "Participation happens at the colleges and institutes where the programme is being held. At the venue, MY Bharat registration and QR-code based suggestions are also being collected. The notice does not mention any other separate application."
+        },
+        {
+          "q": "Which districts of Uttar Pradesh held the programme?",
+          "a": "According to the notice, events in Uttar Pradesh were held in Ghaziabad, Shahjahanpur and Sultanpur. Balrampur, Budaun, Deoria, Siddharthnagar and Sonbhadra are also part of the overall list of venues."
+        },
+        {
+          "q": "How many young people have joined these sessions so far?",
+          "a": "By 29 October, 50 youth samvads had been held in 19 states and union territories, with 11,787 youth and 51 youth icons taking part."
+        }
+      ],
+      "body": "## What happened\n\nMY Bharat, which works under the Youth Affairs Department of the Ministry of Youth Affairs and Sports, held 23 editions of ‘Viksit Bharat Yuva Samvad: Apna Vote Jaane’ in colleges and institutes across 12 states and union territories on 29 October 2026. A total of 5,481 young people took part.\n\n## Why the campaign is being run\n\nAccording to the notice, the aim is to build electoral awareness among young people, especially first-time voters. They are introduced to voting rights, election processes and civic duties so that they can take part in the democratic process in an informed way.\n\n## How big the campaign is\n\nThe nationwide campaign is being held from 26 October to 5 November 2026 in 500 universities, colleges and institutes. As per the notice, by 29 October a total of 50 youth samvads had been held in 19 states and union territories, with 11,787 youth and 51 youth icons participating. These sessions bring youth, public representatives and youth icons on one platform to discuss participation in the democratic process, civic duties and the role of youth in nation building.\n\n## What happened in Uttar Pradesh, Bihar and Madhya Pradesh\n\nIn Uttar Pradesh, students in Shahjahanpur discussed voting rights, responsibilities and election processes. The Ghaziabad event included voter registration, a Viksit Bharat Yuva Leadership Samvad (VBYLD) quiz and activities related to Youth Parliament. In Sultanpur, participants joined a question-and-answer session on the Election Commission of India and electoral participation, and a cultural programme was also held under the MY Bharat banner.\n\nIn Sheikhpura, Bihar, young people took a democratic oath and joined a discussion on responsible citizenship and democratic participation. In Madhya Pradesh, Union Minister Shri Durgadas Uikey spoke to youth in Betul, while youth icon Yogi Deshmukh encouraged them to vote actively. MP Shri Sudhir Gupta spoke to participants in Mandsaur, and in Narmadapuram MP Shri Darshan Singh Chaudhary and Asian Games bronze medallist Ms Harshita Tomar spoke to the youth.\n\n## Where else the events were held\n\nBesides Raipur in Chhattisgarh; Betul, Mandsaur and Narmadapuram in Madhya Pradesh; Sabarkantha (Himmatnagar) and Kutch (Bhuj) in Gujarat; Kupwara in Jammu and Kashmir; Ghaziabad, Shahjahanpur and Sultanpur in Uttar Pradesh; and Sheikhpura in Bihar, the 23 events also covered Balrampur, Budaun, Deoria, Siddharthnagar and Sonbhadra in Uttar Pradesh; West Kameng (Bomdila) in Arunachal Pradesh; Agartala (West Tripura); Bengaluru Urban in Karnataka; Kottayam in Kerala; Tiruchirappalli in Tamil Nadu; and Mahbubnagar and Ranga Reddy in Telangana.\n\n## What young people can do\n\nThe campaign also includes a democratic oath and an online ‘Apna Vote Jaane’ quiz, meant to raise awareness of election processes and democratic values. At the event venues, MY Bharat registration and QR-code based collection of suggestions give young people additional ways to take part."
+    }
+  }
+}
