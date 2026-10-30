@@ -2643,11 +2643,26 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63886": "2026-10-30",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63885": "2026-10-30",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63884": "2026-10-30",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63883": "2026-10-30"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63883": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63882": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63881": "2026-10-30",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63880": "2026-10-30",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notice-of-demand-dated-october-29-2026-issued-under-rc-no-9308-of-2026-drawn-against-niranjan-d-agarwal-in-the-matter-of-kalahridhaan-trendz-limited_105487.html": "2026-10-30",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/appeal-no-7117-of-2026-filed-by-goutam-mohanta_105481.html": "2026-10-30",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/appeal-no-7116-of-2026-filed-by-saroj-sharma_105480.html": "2026-10-30",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/general-remittance-dated-28-10-2026-against-chandrakant-a-parekh-pan-ahxpp5708j-defaulter-in-the-matter-of-ipo-irregularities-2003-2005-under-recovery-certificate-no-2001-of-2019_105484.html": "2026-10-30",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_07b7b30a-12e5-45f0-8137-56f1d11d1b92.pdf": "2026-10-30",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b0655976-6823-4092-ba35-23d615c14406.pdf": "2026-10-30",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_1e415aeb-a2f8-4efa-81e4-2810f14d4da4.pdf": "2026-10-30",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_7cf75b49-95c6-4f68-bc02-c8e35df88345.pdf": "2026-10-30",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_ee07dd1f-e154-4a2c-99b8-e15199735bb1.pdf": "2026-10-30"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-10-30T06:01:06.924Z",
-    "pending": []
+    "pending": [
+      "narmada-control-authority-15th-rcnca-meet-accepts-mou-on-sar",
+      "rbi-extends-restrictions-on-kerala-s-irinjalakuda-town-co-op"
+    ]
   }
 }
