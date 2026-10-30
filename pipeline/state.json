@@ -2684,18 +2684,20 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63892": "2026-10-30",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63891": "2026-10-30",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63890": "2026-10-30",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63889": "2026-10-30"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63889": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330688": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330669": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330667": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330652": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330655": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330671": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330674": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330631": "2026-10-30",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330639": "2026-10-30"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-10-30T13:09:28.166Z",
-    "pending": [
-      "drl-seizes-50-kg-methamphetamine-in-mizoram-and-assam-four-a",
-      "vande-bharat-sleeper-new-overnight-varanasi-new-delhi-train",
-      "caqm-s-pawan-i3c-centre-launched-ncr-construction-work-banne",
-      "dfs-special-campaign-6-rs-4-12-crore-scrap-revenue-31-327-pu",
-      "rbi-sets-sgb-2021-22-series-vii-early-redemption-price-at-14",
-      "rbi-average-interest-rate-on-fresh-bank-loans-falls-in-septe"
-    ]
+    "last": "2026-10-30T18:42:03.487Z",
+    "pending": []
   }
 }
