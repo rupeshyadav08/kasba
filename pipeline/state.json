@@ -2701,11 +2701,35 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330745": "2026-10-31",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330741": "2026-10-31",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330743": "2026-10-31",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330605": "2026-10-31"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330605": "2026-10-31",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330758": "2026-10-31",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330601": "2026-10-31",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63888": "2026-10-31",
+    "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13749&Mode=0": "2026-10-31",
+    "https://www.sebi.gov.in/legal/circulars/oct-2026/extension-of-timeline-with-respect-to-compliance-of-digital-accessibility-circulars_105523.html": "2026-10-31",
+    "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2026/ease-of-compliance-for-fpis-rationalisation-of-kyc-review-periodicity_105522.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/order-in-the-matter-of-inspection-of-veena-sharma-proprietor-research-guru-investment-adviser_105519.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/adjudication-order-in-the-matter-of-integra-switchgear-limited_105517.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notice-of-demand-dated-october-30-2026-against-sunitadevi-niranjan-agarwal-pan-adrps3295h-in-the-matter-of-kalahridhaan-trendz-limited-under-rc-no-9311-of-2026_105515.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notice-of-demand-dated-october-30-2026-against-aditya-n-agarwal-pan-aktpa4024b-in-the-matter-of-kalahridhaan-trendz-limited-under-rc-no-9310-of-2026_105513.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/appeal-no-7120-of-2026-filed-by-rahul-bagrecha_105509.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/appeal-no-7119-of-2026-filed-by-furkan-salmani_105508.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/appeal-no-7118-of-2026-filed-by-priya_105506.html": "2026-10-31",
+    "https://www.sebi.gov.in/legal/circulars/oct-2026/rationalisation-of-periodicity-of-kyc-review-for-fpis_105504.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/orders/oct-2026/adjudication-order-in-the-matter-of-inspection-of-central-depository-services-india-limited-conducted-during-fy-2023-24_105499.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notice-of-demand-dated-october-30-2026-issued-under-rc-no-9309-of-2026-drawn-against-m-s-arihant-securities-proprietor-pravin-kumar-jain-in-the-matter-of-betala-global-securities-limited_105511.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/sebi-order-for-compliance-release-order-for-recovery-certificate-no-9194-of-2026-against-trdez-investment-private-limited-pan-aajct5451g-in-the-matter-of-trdez-investment-private-limited_105503.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/sebi-order-for-compliance-completion-order-for-recovery-certificate-no-9194-of-2026-against-trdez-investment-private-limited-pan-aajct5451g-in-the-matter-of-trdez-investment-private-limited_105501.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notice-of-attachment-dated-october-29-2026-issued-under-rc-no-7544-of-2024-drawn-against-rajesh-nath-and-shubham-rai-in-the-matter-of-unregistered-investment-advisory_105497.html": "2026-10-31",
+    "https://www.sebi.gov.in/enforcement/recovery-proceedings/oct-2026/notices-of-attachment-of-bank-and-post-office-accounts-and-demat-accounts-and-mutual-fund-folios-with-ap-nos-15759-and-15760-of-2026-dated-october-28-2026-against-aahuti-rasik-mistry-pan-akspm8453-_105521.html": "2026-10-31"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-10-31T05:56:24.805Z",
-    "pending": []
+    "pending": [
+      "transbharat-aviation-helicopter-crashes-near-joshimath-dgca",
+      "burj-khalifa-and-resorts-world-sentosa-online-bookings-can-n",
+      "rbi-tells-banks-to-follow-changes-in-unsc-taliban-sanctions"
+    ]
   }
 }
