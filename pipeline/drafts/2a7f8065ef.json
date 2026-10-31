@@ -1,0 +1,93 @@
+{
+  "id": "2a7f8065ef",
+  "createdAt": "2026-10-31T08:13:07.160Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "CBSE",
+    "title": "Visit of Students of CBSE - Affiliated Schools to the CBSE Experience Centre - reg.",
+    "link": "https://www.cbse.gov.in/cbsenew/documents/Experience_Centre_Opening_Circular_30102026.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Visit of Students of CBSE-Affiliated Schools to the CBSE Experience Centre - reg.",
+    "sourceDate": "2026-10-30",
+    "hi": {
+      "title": "CBSE Experience Centre के लिए स्कूल 1 नवंबर से ऑनलाइन बुकिंग कर सकेंगे",
+      "summary": "CBSE ने अपने द्वारका स्थित Experience Centre में स्कूली छात्रों के दौरे के लिए ऑनलाइन बुकिंग की सुविधा शुरू की है। इसका सीधा फ़ायदा CBSE से जुड़े स्कूलों के छात्रों और शिक्षकों को मिलेगा।",
+      "meaning": "अगर आपका बच्चा CBSE से जुड़े स्कूल में पढ़ता है, तो स्कूल की ओर से इस Experience Centre की विज़िट कराई जा सकती है। अभिभावकों को खुद कुछ करने की ज़रूरत नहीं; बुकिंग स्कूल स्तर पर होगी। बच्चों को स्कूल के शिक्षकों के साथ ही जाना होगा।",
+      "keyFacts": [
+        "Experience Centre CBSE के द्वारका, नई दिल्ली स्थित Integrated Office Complex में है।",
+        "पहले चरण में 17 नवंबर से 30 नवंबर 2026 तक सिर्फ़ CBSE से जुड़े स्कूलों के छात्रों के दौरे होंगे।",
+        "स्कूल 1 नवंबर 2026 से Pariksha Sangam — School Section — CBSE Experience Centre के ज़रिए ऑनलाइन बुकिंग कर सकेंगे।",
+        "बुकिंग के लिए स्कूल को अपना CBSE affiliation number और OASIS password डालकर लॉग इन करना होगा।",
+        "एक समय-स्लॉट में अधिकतम 60 लोग आ सकते हैं, जिनमें साथ जाने वाले शिक्षक भी शामिल हैं।"
+      ],
+      "faq": [
+        {
+          "q": "CBSE Experience Centre की बुकिंग कब से शुरू होगी?",
+          "a": "बुकिंग 1 नवंबर 2026 से शुरू होगी। स्कूल CBSE वेबसाइट पर Pariksha Sangam के School Section में जाकर बुकिंग कर सकेंगे।"
+        },
+        {
+          "q": "Experience Centre में छात्रों का दौरा कब-कब होगा?",
+          "a": "पहले चरण में 17 नवंबर से 30 नवंबर 2026 तक दौरे होंगे। इस दौरान सिर्फ़ CBSE से जुड़े स्कूलों के छात्र जा सकेंगे।"
+        },
+        {
+          "q": "क्या माता-पिता खुद बच्चे की बुकिंग करा सकते हैं?",
+          "a": "नहीं, बुकिंग स्कूल स्तर पर होगी। CBSE ने स्कूलों को ही दौरे आयोजित करने के लिए आमंत्रित किया है।"
+        },
+        {
+          "q": "एक बार में कितने लोग Experience Centre जा सकते हैं?",
+          "a": "एक समय-स्लॉट में अधिकतम 60 लोग जा सकते हैं। इसमें साथ जाने वाले शिक्षक भी शामिल हैं।"
+        },
+        {
+          "q": "Experience Centre में छात्र क्या देख सकेंगे?",
+          "a": "यहाँ छात्र भारत में शिक्षा के विकास, उभरती तकनीक, विज्ञान, नवाचार और भविष्य के करियर के अवसरों को जान सकेंगे।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nCBSE ने अपने द्वारका, नई दिल्ली स्थित Integrated Office Complex में एक CBSE Experience Centre बनाया है। यह केंद्र छात्रों को पढ़ाई का ऐसा अनुभव देने के लिए बनाया गया है जिसमें वे सीधे जुड़कर चीज़ें समझ सकें। अब CBSE ने अपने से जुड़े स्कूलों को इस केंद्र में छात्रों को ले जाने के लिए आमंत्रित किया है।\n\n## छात्र वहाँ क्या देखेंगे\n\nसर्कुलर के मुताबिक यहाँ छात्र भारत में शिक्षा के विकास को जान सकेंगे। इसके अलावा उभरती तकनीक, विज्ञान, नवाचार और भविष्य के करियर के अवसरों को भी देख और समझ सकेंगे।\n\n## दौरे कब होंगे\n\nपहले चरण में 17 नवंबर से 30 नवंबर 2026 तक दौरे आयोजित होंगे। इस दौरान ये सुविधा सिर्फ़ CBSE से जुड़े स्कूलों के छात्रों के लिए ही रहेगी।\n\n## बुकिंग कैसे करें\n\nस्कूल 1 नवंबर 2026 से ऑनलाइन बुकिंग कर सकेंगे। इसके लिए CBSE की वेबसाइट www.cbse.gov.in पर Pariksha Sangam के School Section में CBSE Experience Centre का विकल्प चुनना होगा। स्कूल को अपने CBSE affiliation number और OASIS password से लॉग इन करना होगा। लॉग इन करने के बाद उपलब्ध तारीख और समय-स्लॉट चुना जा सकेगा।\n\n## कितने लोग जा सकते हैं\n\nएक समय-स्लॉट में अधिकतम 60 लोग आ सकते हैं। इसमें साथ जाने वाले शिक्षक भी शामिल हैं।\n\n## स्कूलों को क्या ध्यान रखना है\n\nCBSE ने स्कूलों से कहा है कि वे बुकिंग पोर्टल पर दिए गए निर्देश ध्यान से पढ़ें। पूरे दौरे के दौरान छात्रों के साथ शिक्षक रहना ज़रूरी है। विज़िट के समय बुकिंग की पुष्टि और तय पहचान दस्तावेज़ साथ ले जाने होंगे।\n\n## किसे फ़ायदा होगा\n\nइसका फ़ायदा CBSE से जुड़े स्कूलों के छात्रों और शिक्षकों को होगा। आम लोगों या अभिभावकों को इसके लिए अलग से कुछ करने की ज़रूरत नहीं है, क्योंकि बुकिंग स्कूल ही करेगा। स्कूलों के प्रमुखों से कहा गया है कि वे इस अवसर का उपयोग करें और छात्रों के दौरे की व्यवस्था करें। बुकिंग से जुड़ी सहायता के लिए स्कूल CBSE में संपर्क कर सकते हैं।"
+    },
+    "en": {
+      "title": "CBSE schools can book online visits to Experience Centre from 1 November",
+      "summary": "CBSE has opened online booking for school students to visit its Experience Centre in Dwarka, New Delhi. It directly benefits students and teachers of CBSE-affiliated schools.",
+      "meaning": "If your child studies in a CBSE-affiliated school, the school can arrange a visit to this Experience Centre. Parents do not need to do anything themselves, as booking is done at the school level. Students must be accompanied by teachers during the visit.",
+      "keyFacts": [
+        "The Experience Centre is at CBSE's Integrated Office Complex in Sector 23, Phase I, Dwarka, New Delhi.",
+        "In the first phase, from 17 November to 30 November 2026, visits will be only for students of CBSE-affiliated schools.",
+        "Schools can book online from 1 November 2026 through Pariksha Sangam — School Section — CBSE Experience Centre.",
+        "Schools must log in using their CBSE affiliation number and OASIS password.",
+        "Each time slot can accommodate up to 60 visitors, including accompanying teachers."
+      ],
+      "faq": [
+        {
+          "q": "When does booking for the CBSE Experience Centre start?",
+          "a": "Booking starts from 1 November 2026. Schools can book through the School Section of Pariksha Sangam on the CBSE website."
+        },
+        {
+          "q": "When will students visit the Experience Centre?",
+          "a": "In the first phase, visits will be held from 17 November to 30 November 2026. During this period, only students of CBSE-affiliated schools can go."
+        },
+        {
+          "q": "Can parents book a visit for their child themselves?",
+          "a": "No, booking is done at the school level. CBSE has invited schools to organise the visits."
+        },
+        {
+          "q": "How many people can visit the Experience Centre at one time?",
+          "a": "Each time slot can accommodate up to 60 visitors. This includes the accompanying teachers."
+        },
+        {
+          "q": "What will students see at the Experience Centre?",
+          "a": "Students can explore the evolution of education in India, emerging technologies, science, innovation and future career opportunities."
+        }
+      ],
+      "body": "## What has happened\n\nCBSE has set up a CBSE Experience Centre at its Integrated Office Complex in Dwarka, New Delhi. The centre is designed to give students an engaging and interactive learning experience. CBSE has now invited its affiliated schools to organise visits for their students.\n\n## What students will see\n\nAccording to the circular, students can explore the evolution of education in India. They can also learn about emerging technologies, science, innovation and future career opportunities.\n\n## When the visits will be held\n\nIn the initial phase, visits will be organised from 17 November to 30 November 2026. During this period, the facility will be open only to students of CBSE-affiliated schools.\n\n## How to book\n\nSchools can book online from 1 November 2026. They need to go to the CBSE website www.cbse.gov.in and choose Pariksha Sangam — School Section — CBSE Experience Centre. Schools must log in using their CBSE affiliation number and OASIS password. After logging in, they can select an available date and time slot.\n\n## How many can visit at a time\n\nEach time slot can accommodate up to 60 visitors, including accompanying teachers.\n\n## What schools must keep in mind\n\nCBSE has asked schools to carefully read the instructions available on the booking portal. Students must be accompanied by teachers throughout the visit. The booking confirmation and prescribed identification documents must be carried at the time of the visit.\n\n## Who benefits\n\nThe facility benefits students and teachers of CBSE-affiliated schools. Ordinary people or parents do not need to do anything separately, since the school makes the booking. School heads have been encouraged to use this opportunity and facilitate visits by their students. For booking-related help, schools can contact CBSE."
+    }
+  }
+}
