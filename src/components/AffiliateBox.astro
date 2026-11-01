@@ -1,0 +1,31 @@
+---
+// Exam-prep offers under jobs and exam stories (src/data/affiliates.json). Kept apart from the news,
+// labelled as advertising, and marked rel="sponsored" so search engines pass no credit.
+import affiliates from '../data/affiliates.json';
+interface Props { lang: 'hi' | 'en'; category: string }
+const { lang, category } = Astro.props;
+const offers: { by: string; hi: string; en: string; url: string }[] = (affiliates as Record<string, any>)[category] ?? [];
+---
+{offers.length > 0 && (
+  <aside class="aff" aria-label={lang === 'hi' ? 'विज्ञापन' : 'Advertisement'}>
+    <p class="tag">{lang === 'hi' ? 'विज्ञापन · Affiliate link' : 'Advertisement · Affiliate link'}</p>
+    <h2>{lang === 'hi' ? 'परीक्षा की तैयारी' : 'Prepare for the exam'}</h2>
+    <ul>
+      {offers.map((o) => (
+        <li><a href={o.url} rel="sponsored nofollow noopener" target="_blank">{o[lang]}</a> <span>({o.by})</span></li>
+      ))}
+    </ul>
+    <p class="note">{lang === 'hi'
+      ? 'इन लिंक से ख़रीद पर कस्बा को कमीशन मिल सकता है; आपकी क़ीमत नहीं बढ़ती। इसका हमारी ख़बरों पर कोई असर नहीं होता।'
+      : 'Kasba may earn a commission if you buy through these links, at no extra cost to you. It never affects our news.'}</p>
+  </aside>
+)}
+<style>
+  .aff { border: 1px dashed var(--muted); border-radius: var(--r-tile); padding: 1rem 1.2rem; }
+  .aff .tag { margin: 0 0 0.3rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  .aff h2 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+  .aff ul { margin: 0; padding-left: 1.2rem; line-height: 1.8; }
+  .aff a { text-decoration: underline; min-height: 44px; }
+  .aff span, .aff .note { color: var(--muted); font-size: 0.9rem; }
+  .aff .note { margin: 0.5rem 0 0; }
+</style>

@@ -6,8 +6,8 @@
     "glm": "glm-4.7-flash",
     "sarvam": "glm5.3-flash"
   },
-  "maxDraftsPerRun": 6,
-  "maxItemsCheckedPerRun": 20,
+  "maxDraftsPerRun": 8,
+  "maxItemsCheckedPerRun": 30,
   "draftExpiryDays": 3,
   "maxNoticeAgeDays": 21,
   "deployEveryMinutes": 110,
