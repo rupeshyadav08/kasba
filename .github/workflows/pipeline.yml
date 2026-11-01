@@ -31,7 +31,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      # A run that waited in the queue behind another must start from the branch as it is now, not
+      # from the commit it was triggered on, or it re-publishes the same drafts and its push fails.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       # pdftotext reads PDFs; tesseract reads scanned ones (CBSE and UP notices are often scans).
       - name: Install PDF and OCR tools
