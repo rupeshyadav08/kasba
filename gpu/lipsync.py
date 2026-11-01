@@ -10,7 +10,7 @@ image = (
     .run_commands(
         "pip install 'setuptools<70' wheel",
         "pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118",
-        "pip install numpy==1.23.5 face_alignment==1.3.5 imageio==2.19.3 imageio-ffmpeg==0.4.7 librosa==0.9.2"
+        "pip install numpy==1.23.5 face_alignment==1.3.5 imageio==2.31.1 imageio-ffmpeg==0.4.7 librosa==0.9.2"
         " numba==0.57.1 resampy==0.3.1 pydub==0.25.1 scipy==1.10.1 kornia==0.6.8 tqdm yacs==0.1.8 pyyaml"
         " joblib==1.1.0 scikit-image==0.20.0 facexlib==0.3.0 av safetensors",
         "pip install --no-build-isolation basicsr==1.4.2 gfpgan==1.3.8",
