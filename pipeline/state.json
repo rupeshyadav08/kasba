@@ -2772,11 +2772,17 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331059": "2026-11-01",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331062": "2026-11-01",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331080": "2026-11-01",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331064": "2026-11-01"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331064": "2026-11-01",
+    "https://nta.ac.in/Download/Notice/Notice_20261101103301.pdf": "2026-11-01"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-01T06:22:10.556Z",
-    "pending": []
+    "pending": [
+      "cbn-madhya-pradesh-seizes-2-774-650-kg-of-poppy-husk-in-thre",
+      "waterlogging-on-ins-kesari-at-visakhapatnam-dockyard-formal",
+      "mpapcet-did-not-pay-crores-on-placement-claims-says-social-j",
+      "ugc-net-december-2026-nta-extends-exam-fee-payment-date-by-o"
+    ]
   }
 }
