@@ -18,7 +18,7 @@ image = (
         "cd /wan && grep -v flash_attn requirements.txt > /tmp/req.txt && pip install -r /tmp/req.txt",
         "cd /wan && pip install -r requirements_s2v.txt",
         "pip install packaging ninja && pip install flash-attn==2.7.4.post1 --no-build-isolation",
-        "pip install 'huggingface_hub[cli]'",
+        "pip install 'huggingface_hub[cli]' peft",
     )
 )
 
