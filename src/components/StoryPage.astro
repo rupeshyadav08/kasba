@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { getCollection, render } from 'astro:content';
+import AffiliateBox from './AffiliateBox.astro';
 import StoryCard from './StoryCard.astro';
 import { districtBySlug, districtPath, stateByCode, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
@@ -115,6 +116,8 @@ const jsonLd = [
       <h2 id="faq-h" class="serif">{L.faq}</h2>
       {d.faq.map((f) => <div class="qa"><h3>{f.q}</h3><p>{f.a}</p></div>)}
     </section>
+
+    <AffiliateBox lang={d.lang} category={d.category} />
 
     {(d.state || d.districts.length > 0) && (
       <nav class="places" aria-label={L.districtsLabel}>

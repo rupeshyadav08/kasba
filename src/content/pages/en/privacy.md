@@ -3,7 +3,7 @@ lang: en
 key: privacy
 title: "Privacy policy"
 description: "What information Kasba collects and how it is used."
-updated: 2026-10-21
+updated: 2026-11-01
 ---
 
 ## What we collect
@@ -16,6 +16,7 @@ updated: 2026-10-21
 
 - The site runs on Cloudflare, which keeps technical logs for security and speed.
 - Fonts load from Google Fonts.
+- Some jobs and exam stories may show exam-prep **affiliate links**, labelled "Advertisement". Clicking one takes you to another company's website, where its own privacy policy applies; that company may know you came from Kasba. Kasba shares none of your personal data with it.
 - If we start showing ads (Google AdSense) in future, we will update this policy first.
 
 ## Your rights
