@@ -11,7 +11,7 @@ CKPT = "/weights/Wan2.2-S2V-14B"
 
 image = (
     modal.Image.from_registry("nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04", add_python="3.11")
-    .apt_install("git", "ffmpeg", "libgl1", "libglib2.0-0")
+    .apt_install("git", "ffmpeg", "libgl1", "libglib2.0-0", "clang", "build-essential")
     .run_commands(
         "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124",
         "git clone https://github.com/Wan-Video/Wan2.2 /wan",
