@@ -2,21 +2,32 @@ name: Anchor test
 
 # Trial of an AI presenter for Shorts, run on Modal's GPUs (free monthly credit).
 # step=faces: makes 4 invented presenter faces and sends them to the editor on Telegram to pick one.
+# step=sample: the chosen face (face_run + face) reads a short Hindi script in the Sarvam voice,
+# lip-synced on Modal, and the vertical test video is sent to the editor on Telegram.
 on:
   workflow_dispatch:
     inputs:
       step:
         description: 'faces'
         type: choice
-        options: [faces]
+        options: [faces, sample]
         default: faces
       seed:
         description: 'Batch number (change it for a different set of faces)'
         type: string
         default: '1'
+      face_run:
+        description: 'sample: run id of the faces run'
+        type: string
+        default: ''
+      face:
+        description: 'sample: which face (1-4)'
+        type: string
+        default: '1'
 
 permissions:
   contents: read
+  actions: read
 
 jobs:
   faces:
@@ -51,6 +62,61 @@ jobs:
             -F chat_id="$TELEGRAM_CHAT_ID" -F media="$media" $args
           curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
             -d chat_id="$TELEGRAM_CHAT_ID" --data-urlencode text="Shorts के लिए AI एंकर: इनमें से कौन-सा चेहरा ठीक लगा? (1-4) Claude को बताएँ।"
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+  sample:
+    if: ${{ inputs.step == 'sample' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q "modal>=1.6,<2"
+      - uses: actions/download-artifact@v4
+        with:
+          name: anchor-faces
+          path: anchor
+          run-id: ${{ inputs.face_run }}
+          github-token: ${{ github.token }}
+      - name: Voice
+        run: |
+          node -e "
+            const text = 'नमस्ते, कस्बा न्यूज़ में आपका स्वागत है। आज की काम की ख़बर: UGC-NET दिसंबर परीक्षा की फ़ीस जमा करने की आख़िरी तारीख अब एक नवंबर, रात ग्यारह बजकर पचास मिनट तक है। फ़ॉर्म भर चुके हैं तो फ़ीस आज ही जमा करें। पूरी ख़बर पढ़ें कस्बा डॉट को डॉट इन पर।';
+            fetch('https://api.sarvam.ai/text-to-speech', { method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'api-subscription-key': process.env.SARVAM_API_KEY },
+              body: JSON.stringify({ text, language_code: 'hi-IN', model: 'bulbul:v4-flash', speaker: 'simran_hi_news', pace: 1.05, speech_sample_rate: 24000 }),
+            }).then(async (r) => { if (!r.ok) throw new Error(r.status + ' ' + await r.text());
+              require('fs').writeFileSync('voice.wav', Buffer.from((await r.json()).audios[0], 'base64')); });
+          "
+        env:
+          SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+      - name: Lip-sync on Modal
+        run: |
+          face=$(ls anchor/*-${{ inputs.face }}.png | head -1)
+          modal run gpu/lipsync.py --face "$face" --audio voice.wav --out talk.mp4
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+      - name: Make it vertical
+        run: |
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+          ffmpeg -y -loglevel error -i talk.mp4 -vf "scale=1080:-2,pad=1080:1920:0:(oh-ih)/3:color=0x0b2545,format=yuv420p" \
+            -c:v libx264 -preset veryfast -crf 22 -c:a aac -b:a 128k -movflags +faststart anchor-sample.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: anchor-sample
+          path: |
+            anchor-sample.mp4
+            talk.mp4
+      - name: Send to the editor
+        run: |
+          curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVideo" \
+            -F chat_id="$TELEGRAM_CHAT_ID" -F video=@anchor-sample.mp4 -F supports_streaming=true \
+            -F caption="AI एंकर टेस्ट (एंकर ${{ inputs.face }})। कैसा लगा? Claude को बताएँ।"
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
