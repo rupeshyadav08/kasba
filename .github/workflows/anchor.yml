@@ -1,0 +1,56 @@
+name: Anchor test
+
+# Trial of an AI presenter for Shorts, run on Modal's GPUs (free monthly credit).
+# step=faces: makes 4 invented presenter faces and sends them to the editor on Telegram to pick one.
+on:
+  workflow_dispatch:
+    inputs:
+      step:
+        description: 'faces'
+        type: choice
+        options: [faces]
+        default: faces
+      seed:
+        description: 'Batch number (change it for a different set of faces)'
+        type: string
+        default: '1'
+
+permissions:
+  contents: read
+
+jobs:
+  faces:
+    if: ${{ inputs.step == 'faces' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q "modal>=1.6,<2"
+      - name: Make the faces on Modal
+        run: modal run gpu/faces.py --n 4 --seed ${{ inputs.seed }} --out anchor/
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: anchor-faces
+          path: anchor/
+      - name: Send them to the editor
+        run: |
+          media='['; i=0
+          for f in anchor/*.png; do
+            i=$((i+1)); [ $i -gt 1 ] && media="$media,"
+            media="$media{\"type\":\"photo\",\"media\":\"attach://f$i\",\"caption\":\"एंकर $i\"}"
+            args="$args -F f$i=@$f"
+          done
+          media="$media]"
+          curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMediaGroup" \
+            -F chat_id="$TELEGRAM_CHAT_ID" -F media="$media" $args
+          curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+            -d chat_id="$TELEGRAM_CHAT_ID" --data-urlencode text="Shorts के लिए AI एंकर: इनमें से कौन-सा चेहरा ठीक लगा? (1-4) Claude को बताएँ।"
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
