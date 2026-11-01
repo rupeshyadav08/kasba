@@ -47,9 +47,10 @@ export async function onRequestPost({ request, env }) {
     if (update.callback_query) await tg(env, 'answerCallbackQuery', { callback_query_id: update.callback_query.id, text: 'Not allowed' });
     return new Response('ok');
   }
-  // Post/Skip on a Short (y:<run id> / n:<run id>) goes straight to the Shorts workflow, not the
-  // news pipeline. The buttons are removed first so a second tap cannot upload the video twice.
-  const shortTap = update.callback_query?.data?.match(/^([yn]):(\d+)$/);
+  // Post/Skip on a Short (y:<run id>[-<n>] / n:...) goes straight to the Shorts workflow, not the
+  // news pipeline; n picks one of the run's videos. The buttons are removed first so a second tap
+  // cannot upload the video twice.
+  const shortTap = update.callback_query?.data?.match(/^([yn]):(\d+)(?:-(\d))?$/);
   if (shortTap) {
     const { id, message } = update.callback_query;
     await tg(env, 'editMessageReplyMarkup', { chat_id: message.chat.id, message_id: message.message_id, reply_markup: { inline_keyboard: [] } });
@@ -57,7 +58,7 @@ export async function onRequestPost({ request, env }) {
       await tg(env, 'answerCallbackQuery', { callback_query_id: id, text: 'छोड़ दिया' });
       return new Response('ok');
     }
-    const started = await gh(env, 'actions/workflows/short.yml/dispatches', 'POST', { ref: 'main', inputs: { upload: shortTap[2] } });
+    const started = await gh(env, 'actions/workflows/short.yml/dispatches', 'POST', { ref: 'main', inputs: { upload: shortTap[2], n: shortTap[3] ?? '' } });
     await tg(env, 'answerCallbackQuery', { callback_query_id: id, text: started.ok ? '⏳ YouTube पर डाल रहे हैं' : '⚠️ शुरू नहीं हो पाया' });
     return new Response('ok');
   }

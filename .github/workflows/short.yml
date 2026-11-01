@@ -1,15 +1,16 @@
 name: Shorts
 
-# Three times a day: makes a ~35-second vertical video from a recent story and sends it to the
-# editor on Telegram with Post/Skip buttons. A Post tap reaches functions/api/telegram.js, which
+# Twice a day: makes three ~35-second vertical videos from recent stories (one setup, three
+# renders) and sends each to the editor on Telegram with Post/Skip buttons. Six a day also fits
+# YouTube's default API quota of about six uploads. A Post tap reaches functions/api/telegram.js, which
 # starts this workflow again with `upload` set to the run that made the video; that run's video is
 # then uploaded to YouTube. Repo variable SHORTS_AUTO=true skips the tap and uploads straight away.
 on:
   schedule:
     # GitHub delays scheduled runs by hours or drops them, so each slot has a back-up an hour and
     # a half later; the check job skips a run when a Short was made in the last 3.5 hours.
-    - cron: '41 3,8,13 * * *' # about 9:10, 14:10 and 19:10 India time
-    - cron: '13 5,10,15 * * *'
+    - cron: '41 3,12 * * *' # about 9:10 and 18:10 India time
+    - cron: '13 5,14 * * *'
   workflow_dispatch:
     inputs:
       story:
@@ -18,6 +19,10 @@ on:
         default: ''
       upload:
         description: 'Run id whose video to upload (set by the Telegram Post button)'
+        type: string
+        default: ''
+      n:
+        description: 'Which of that run''s videos (1-3; blank for runs that made one)'
         type: string
         default: ''
 
@@ -49,7 +54,7 @@ jobs:
     needs: check
     if: ${{ needs.check.outputs.due == 'true' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -63,23 +68,28 @@ jobs:
           npx playwright install --with-deps chromium
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
           pip install -q edge-tts
-      - name: Make the video and send it to the editor
-        run: node scripts/make-short.mjs ${{ inputs.story }}
+      - name: Make the videos and send them to the editor
+        run: |
+          if [ -n "${{ inputs.story }}" ]; then SHORT_OUT=short/1/ SHORT_ASK=${ASK:+$ASK-1} node scripts/make-short.mjs ${{ inputs.story }}; exit; fi
+          # Each pass logs its story in pipeline/shorts.json, so the next one picks a different story.
+          for n in 1 2 3; do
+            SHORT_OUT=short/$n/ SHORT_ASK=${ASK:+$ASK-$n} node scripts/make-short.mjs || echo "short $n failed"
+          done
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           SHORT_TONE: hinglish
           SHORT_RATE: +5%
-          SHORT_ASK: ${{ vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
+          ASK: ${{ vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - uses: actions/upload-artifact@v4
         with:
           name: short
           path: |
-            short/short.mp4
-            short/meta.json
+            short/*/short.mp4
+            short/*/meta.json
           if-no-files-found: ignore
           retention-days: 7
       # Remember the story so the next run picks a different one.
@@ -92,8 +102,8 @@ jobs:
           git commit -m "[skip ci] Shorts log"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
       - name: Upload to YouTube (no tap needed)
-        if: ${{ vars.SHORTS_AUTO == 'true' && hashFiles('short/meta.json') != '' }}
-        run: node scripts/youtube-upload.mjs
+        if: ${{ vars.SHORTS_AUTO == 'true' }}
+        run: for d in short/*/; do [ -f "$d/meta.json" ] && SHORT_DIR=$d node scripts/youtube-upload.mjs; done
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -116,6 +126,7 @@ jobs:
       - name: Upload to YouTube
         run: node scripts/youtube-upload.mjs
         env:
+          SHORT_DIR: short/${{ inputs.n && format('{0}/', inputs.n) || '' }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
