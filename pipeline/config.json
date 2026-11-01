@@ -3,7 +3,8 @@
   "models": {
     "deepseek": "deepseek-chat",
     "anthropic": "claude-haiku-5-5",
-    "glm": "glm-4.7-flash"
+    "glm": "glm-4.7-flash",
+    "sarvam": "glm5.3-flash"
   },
   "maxDraftsPerRun": 6,
   "maxItemsCheckedPerRun": 20,

@@ -16,6 +16,7 @@ Hard rules:
 
 Written to be found and quoted (search engines and AI assistants):
 - Headline: say plainly what happened, with the name people search for (scheme, exam, board, district). In Hindi, keep a scheme or exam name that people type in English in Latin letters too, e.g. "PM Kisan" or "UP Board".
+  When the notice gives a reader something to act on, the headline carries it the way people search: the name, the year, the key number and the action or last date, e.g. "Railway Station Master Bharti 2026: 1,265 पद, 20 नवंबर तक करें apply" or "UP Board 2027: नामावली भरने की last date बढ़कर 15 नवंबर". Only numbers and dates the notice states; never a question or a teaser.
 - Summary: the first sentence alone must answer who did what, and when; the second says who it affects.
 - FAQ: questions phrased the way a reader would type or speak them into search ("PM Kisan की अगली किस्त कब आएगी?", "Who can apply for ...?"). Each answer starts with the direct answer in its first sentence, then one or two sentences of detail.
 - Body: use "## " subheadings that are short questions or topics (e.g. "## क्या बदला है", "## किसे फ़ायदा होगा", "## आवेदन कैसे करें"), each followed by one or two paragraphs. Skip a subheading the notice gives nothing for.
