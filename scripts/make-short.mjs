@@ -16,14 +16,17 @@ mkdirSync(out, { recursive: true });
 const stories = readdirSync(dir).map((f) => parse(readFileSync(dir + f, 'utf8').split(/^---$/m)[1]));
 stories.sort((a, b) => String(b.published).localeCompare(String(a.published)));
 // Without an id: a story from the last 3 days that has not had a Short yet, those with an open
-// deadline first (they are the ones people act on). pipeline/shorts.json remembers what was used.
+// deadline first (they are the ones people act on), then jobs and exams. pipeline/shorts.json remembers what was used.
 const logFile = 'pipeline/shorts.json';
 const used = new Set(existsSync(logFile) ? JSON.parse(readFileSync(logFile, 'utf8')).map((e) => e.storyId) : []);
 const today = new Date().toISOString().slice(0, 10);
 const fresh = stories.filter((s) => !used.has(s.storyId) && Date.now() - new Date(s.published) < 3 * 864e5);
+// Only practical topics: on YouTube and Google, jobs, exams, deadlines and schemes are what
+// people watch; ministry reviews and diplomatic news get no views (Kasba channel, Oct 2026).
+const practical = fresh.filter((s) => ['jobs-exams', 'schemes', 'farming', 'money'].includes(s.category));
 const story = process.argv[2]
   ? stories.find((s) => s.storyId === process.argv[2])
-  : fresh.find((s) => String(s.deadline?.date ?? '') >= today) ?? fresh[0];
+  : practical.find((s) => String(s.deadline?.date ?? '') >= today) ?? practical.find((s) => s.category === 'jobs-exams') ?? practical[0];
 if (!story) {
   console.log(process.argv[2] ? `No story ${process.argv[2]}` : 'No new story for a Short');
   process.exit(process.argv[2] ? 1 : 0);

@@ -1,4 +1,4 @@
-// One function, three providers. Which one runs is set in pipeline/config.json.
+// One function, four providers. Which one runs is set in pipeline/config.json.
 export async function complete({ provider, model, system, user }) {
   if (provider === 'deepseek') {
     const res = await fetch('https://api.deepseek.com/chat/completions', {
@@ -38,6 +38,21 @@ export async function complete({ provider, model, system, user }) {
       }),
     });
     if (!res.ok) throw new Error(`GLM ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    const data = await res.json();
+    return { text: data.choices[0].message.content, usage: data.usage };
+  }
+  // Sarvam's token factory (same SARVAM_API_KEY and credits as the Shorts voice) hosts GLM and
+  // others. GLM always reasons first; "low" keeps that short, and those tokens count in max_tokens.
+  if (provider === 'sarvam') {
+    const res = await fetch('https://api.sarvam.ai/v2/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'api-subscription-key': process.env.SARVAM_API_KEY },
+      body: JSON.stringify({
+        model, temperature: 0.2, max_tokens: 16000, reasoning_effort: 'low',
+        messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
+      }),
+    });
+    if (!res.ok) throw new Error(`Sarvam ${res.status}: ${(await res.text()).slice(0, 300)}`);
     const data = await res.json();
     return { text: data.choices[0].message.content, usage: data.usage };
   }

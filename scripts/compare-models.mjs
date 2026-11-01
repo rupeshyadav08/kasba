@@ -1,6 +1,6 @@
 // Drafts the same recent notices with two models and writes a side-by-side report, so a model
 // change is decided on real Kasba notices. Nothing is published or sent.
-// Usage: node scripts/compare-models.mjs [count] [providerA] [providerB]   (default: 8 deepseek glm)
+// Usage: node scripts/compare-models.mjs [count] [providerA] [providerB]   (default: 8 deepseek sarvam)
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import { noticeText } from '../pipeline/lib/feeds.mjs';
@@ -8,7 +8,7 @@ import { complete, parseJson } from '../pipeline/lib/llm.mjs';
 import { systemPrompt, userPrompt } from '../pipeline/lib/prompt.mjs';
 import { check, districtSlugs } from '../pipeline/lib/story.mjs';
 
-const [count = 8, a = 'deepseek', b = 'glm'] = process.argv.slice(2);
+const [count = 8, a = 'deepseek', b = 'sarvam'] = process.argv.slice(2);
 const config = JSON.parse(readFileSync('pipeline/config.json', 'utf8'));
 const dir = 'src/content/stories/hi/';
 const stories = readdirSync(dir).map((f) => parse(readFileSync(dir + f, 'utf8').split(/^---$/m)[1]))

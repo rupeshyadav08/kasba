@@ -16,7 +16,7 @@ on:
       b:
         description: 'Second provider'
         type: string
-        default: glm
+        default: sarvam
 
 jobs:
   compare:
@@ -38,6 +38,7 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - uses: actions/upload-artifact@v4
         with:
