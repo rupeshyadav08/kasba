@@ -35,6 +35,7 @@ jobs:
         run: |
           node scripts/compare-models.mjs ${{ inputs.count }} ${{ inputs.a }} ${{ inputs.b }}
           cat compare.md >> "$GITHUB_STEP_SUMMARY"
+          cat compare.md
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
