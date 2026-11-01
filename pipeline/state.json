@@ -2801,11 +2801,14 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_89f456e8-67d4-47f3-929a-3cec0ed49890.pdf": "2026-11-01",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_f05a5734-cdcf-46ab-839c-3c73318db8ef.pdf": "2026-11-01",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_db2e4a70-f7a9-4b0a-addc-01bce31a1191.pdf": "2026-11-01",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bc9a846a-a99c-4156-bf63-03d87c07b02d.pdf": "2026-11-01"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bc9a846a-a99c-4156-bf63-03d87c07b02d.pdf": "2026-11-01",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331363": "2026-11-01",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331353": "2026-11-01",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331339": "2026-11-01"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-01T14:33:49.573Z",
+    "last": "2026-11-01T18:37:35.619Z",
     "pending": []
   }
 }
