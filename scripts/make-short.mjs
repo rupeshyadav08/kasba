@@ -10,7 +10,8 @@ import { parse } from 'yaml';
 import { complete, parseJson } from '../pipeline/lib/llm.mjs';
 
 const dir = 'src/content/stories/hi/';
-const out = 'short/';
+// SHORT_OUT lets one run make several videos side by side (short/1/, short/2/, ...).
+const out = process.env.SHORT_OUT ?? 'short/';
 mkdirSync(out, { recursive: true });
 
 const stories = readdirSync(dir).map((f) => parse(readFileSync(dir + f, 'utf8').split(/^---$/m)[1]));

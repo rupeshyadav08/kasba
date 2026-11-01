@@ -1,11 +1,13 @@
-// Uploads short/short.mp4 to the Kasba YouTube channel with the text in short/meta.json, then tells
+// Uploads a Short (short.mp4 + meta.json in SHORT_DIR) to the Kasba YouTube channel, then tells
 // the editor on Telegram. Run by .github/workflows/short.yml after the editor taps Post.
 // Secrets: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (one-time Google sign-in for the channel).
 // YouTube keeps uploads from an app it has not audited yet private, whatever we ask for here.
 import { existsSync, readFileSync, statSync } from 'node:fs';
 
-const meta = JSON.parse(readFileSync('short/meta.json', 'utf8'));
-const file = 'short/short.mp4';
+// SHORT_DIR: which of the run's videos (short/1/, short/2/, ...); older runs kept one in short/.
+const dir = process.env.SHORT_DIR ?? 'short/';
+const meta = JSON.parse(readFileSync(`${dir}meta.json`, 'utf8'));
+const file = `${dir}short.mp4`;
 
 // Replies go where the video was sent: the Shorts group if there is one, else the editor's chat.
 const state = existsSync('pipeline/state.json') ? JSON.parse(readFileSync('pipeline/state.json', 'utf8')) : {};
