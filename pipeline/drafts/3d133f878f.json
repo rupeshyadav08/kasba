@@ -1,0 +1,95 @@
+{
+  "id": "3d133f878f",
+  "createdAt": "2026-11-01T06:21:51.438Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "विशाखापत्तनम में आईएनएस केसरी पर जलभराव की घटना",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331080"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "विशाखापत्तनम में आईएनएस केसरी पर जलभराव की घटना",
+    "sourceDate": "2026-10-31",
+    "hi": {
+      "title": "INS Kesari में जलभराव: विशाखापत्तनम डॉकयार्ड में खड़े जहाज पर पानी भरा, जांच होगी",
+      "summary": "रक्षा मंत्रालय ने बताया है कि 31 अक्टूबर 2026 की दोपहर विशाखापत्तनम के नौसेना डॉकयार्ड में खड़े जहाज आईएनएस केसरी पर पानी भर गया। मंत्रालय के मुताबिक किसी की जान नहीं गई और किसी के घायल होने की सूचना नहीं है।",
+      "meaning": "यह घटना नौसेना के एक जहाज की है, जो उस समय किनारे पर खड़ा था। आम लोगों को इससे सीधे कोई काम नहीं करना है और न ही किसी तरह का आवेदन करना है। मंत्रालय ने कहा है कि पानी निकाला जा रहा है और कारणों की जांच होगी।",
+      "keyFacts": [
+        "घटना 31 अक्टूबर 2026 की दोपहर हुई।",
+        "जहाज आईएनएस केसरी उस समय विशाखापत्तनम के नौसेना डॉकयार्ड में किनारे पर खड़ा था।",
+        "जनहानि या कर्मियों के घायल होने की कोई सूचना नहीं है।",
+        "प्रभावित हिस्सों से पानी निकालने का कार्य जारी है।",
+        "स्थिति पर लगातार निगरानी रखी जा रही है।",
+        "सटीक कारणों का पता लगाने के लिए औपचारिक जांच शुरू की जाएगी।"
+      ],
+      "faq": [
+        {
+          "q": "INS Kesari में जलभराव कब हुआ?",
+          "a": "31 अक्टूबर 2026 की दोपहर। रक्षा मंत्रालय के अनुसार उस समय जहाज विशाखापत्तनम के नौसेना डॉकयार्ड में किनारे पर खड़ा था।"
+        },
+        {
+          "q": "क्या इस घटना में किसी की जान गई या कोई घायल हुआ?",
+          "a": "मंत्रालय ने कहा है कि जनहानि या कर्मियों के घायल होने की कोई सूचना नहीं है।"
+        },
+        {
+          "q": "जहाज का पानी निकाला जा रहा है या नहीं?",
+          "a": "हां, प्रभावित हिस्सों से पानी निकालने का कार्य सक्रिय रूप से जारी है। मंत्रालय ने कहा है कि स्थिति पर लगातार निगरानी रखी जा रही है।"
+        },
+        {
+          "q": "जलभराव की जांच होगी या नहीं?",
+          "a": "हां, मंत्रालय ने कहा है कि घटना के सटीक कारणों का पता लगाने के लिए एक औपचारिक जांच शुरू की जाएगी।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं। यह नौसेना के जहाज से जुड़ी घटना है और इसमें आम नागरिकों के लिए कोई आवेदन या कार्रवाई नहीं बताई गई है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nरक्षा मंत्रालय के अनुसार 31 अक्टूबर 2026 की दोपहर आईएनएस केसरी पर जलभराव की घटना हुई, यानी जहाज में पानी भर गया। घटना के समय जहाज विशाखापत्तनम स्थित नौसेना डॉकयार्ड में किनारे पर खड़ा था।\n\n## किसी के हताहत होने की सूचना नहीं\n\nमंत्रालय ने स्पष्ट किया है कि किसी भी प्रकार की जनहानि अथवा कर्मियों के घायल होने की कोई सूचना नहीं है। यानी उपलब्ध जानकारी के मुताबिक इस घटना में किसी की जान नहीं गई और कोई घायल नहीं हुआ।\n\n## अब क्या किया जा रहा है\n\nप्रभावित हिस्सों से पानी निकालने का कार्य सक्रिय रूप से जारी है। मंत्रालय ने बताया है कि स्थिति पर लगातार निगरानी रखी जा रही है।\n\n## जांच की बात\n\nमंत्रालय ने कहा है कि घटना के सटीक कारणों का पता लगाने के लिए एक औपचारिक जांच शुरू की जाएगी। जांच में क्या सामने आएगा, इस बारे में विज्ञप्ति में कुछ नहीं कहा गया है।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nयह नौसेना के एक जहाज से जुड़ी घटना है, जो डॉकयार्ड में किनारे पर खड़ा था। विज्ञप्ति में आम नागरिकों के लिए कोई निर्देश, आवेदन या समय-सीमा नहीं दी गई है। इसलिए आम पाठकों को इस सिलसिले में कुछ करने की जरूरत नहीं है।"
+    },
+    "en": {
+      "title": "Waterlogging on INS Kesari at Visakhapatnam dockyard; formal probe to be started",
+      "summary": "The Defence Ministry said water entered INS Kesari on the afternoon of 31 October 2026 while the ship was berthed at the Naval Dockyard in Visakhapatnam. The ministry said there is no report of any loss of life or injury to personnel.",
+      "meaning": "This concerns a naval ship that was standing at the dockyard at the time. Ordinary readers do not need to do anything and there is no application or deadline for the public. The ministry says water is being pumped out and the exact cause will be investigated.",
+      "keyFacts": [
+        "The incident took place on the afternoon of 31 October 2026.",
+        "INS Kesari was berthed at the Naval Dockyard in Visakhapatnam at the time.",
+        "There is no report of loss of life or injury to personnel.",
+        "Work to remove water from the affected parts is continuing.",
+        "The situation is being monitored continuously.",
+        "A formal investigation will be started to find the exact cause."
+      ],
+      "faq": [
+        {
+          "q": "When did waterlogging on INS Kesari happen?",
+          "a": "On the afternoon of 31 October 2026. According to the Defence Ministry, the ship was berthed at the Naval Dockyard in Visakhapatnam at that time."
+        },
+        {
+          "q": "Was anyone killed or injured in the incident?",
+          "a": "The ministry said there is no report of any loss of life or injury to personnel."
+        },
+        {
+          "q": "Is water being removed from the ship?",
+          "a": "Yes, work to remove water from the affected parts is actively continuing. The ministry said the situation is being monitored continuously."
+        },
+        {
+          "q": "Will there be an investigation?",
+          "a": "Yes, the ministry said a formal investigation will be started to find out the exact cause of the incident."
+        },
+        {
+          "q": "Does the public need to do anything?",
+          "a": "No. This concerns a naval ship and the release gives no step or application for ordinary citizens."
+        }
+      ],
+      "body": "## What happened\n\nAccording to the Defence Ministry, water entered INS Kesari on the afternoon of 31 October 2026. At the time of the incident, the ship was berthed at the Naval Dockyard in Visakhapatnam.\n\n## No report of casualties\n\nThe ministry said there is no report of any loss of life or of personnel being injured. In other words, as per the information given, no one died and no one was hurt in the incident.\n\n## What is being done now\n\nWork to remove water from the affected parts is actively continuing. The ministry said the situation is being monitored continuously.\n\n## About the investigation\n\nThe ministry said a formal investigation will be started to find out the exact cause of the incident. The release does not say what the investigation has found or when it will be completed.\n\n## What this means for ordinary people\n\nThis is an incident involving a naval ship that was standing at the dockyard. The release gives no instruction, application or deadline for ordinary citizens, so readers do not need to take any action."
+    }
+  }
+}

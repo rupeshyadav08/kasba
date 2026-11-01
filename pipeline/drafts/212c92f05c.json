@@ -1,0 +1,103 @@
+{
+  "id": "212c92f05c",
+  "createdAt": "2026-11-01T06:21:37.962Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "सामाजिक न्याय और अधिकारिता मंत्रालय ने 31 अक्टूबर, 2026 को सेंट्रल क्रॉनिकल (भोपाल) में प्रकाशित एक रिपोर्ट में प्रकाशित दावे के संबंध में तथ्यात्मक रिपोर्ट जारी की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331062"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "schemes",
+    "state": "mp",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "सामाजिक न्याय और अधिकारिता मंत्रालय ने 31 अक्टूबर, 2026 को सेंट्रल क्रॉनिकल (भोपाल) में प्रकाशित एक रिपोर्ट में प्रकाशित दावे के संबंध में तथ्यात्मक रिपोर्ट जारी की",
+    "sourceDate": "2026-10-31",
+    "hi": {
+      "title": "MPAPCET पर प्लेसमेंट के नाम पर करोड़ों भुगतान का दावा गलत, मंत्रालय ने जारी की तथ्यात्मक रिपोर्ट",
+      "summary": "सामाजिक न्याय और अधिकारिता मंत्रालय ने 31 अक्टूबर 2026 को एक तथ्यात्मक रिपोर्ट जारी कर कहा कि MPAPCET ने बिना प्लेसमेंट सत्यापन के करोड़ों रुपये का भुगतान नहीं किया। यह बयान उन लोगों के लिए है जो SC कौशल प्रशिक्षण योजना से जुड़े हैं या इसकी खबरें पढ़ रहे हैं।",
+      "meaning": "आम नागरिकों के पैसे या रोजगार पर इसका सीधा असर नहीं है। यह मंत्रालय की ओर से एक अखबार की खबर का जवाब है। अगर आप SC कौशल प्रशिक्षण योजना के प्रशिक्षु हैं, तो आपके प्रशिक्षण और भुगतान से जुड़ी जानकारी परिषद के पोर्टल से मिलती है।",
+      "keyFacts": [
+        "SC उप-योजना के लिए विशेष केंद्रीय सहायता के तहत कौशल विकास प्रशिक्षण के लिए 3,241.37 लाख रुपये स्वीकृत किए गए।",
+        "2021-22 में MPAPCET को कुल 2,945.37 लाख रुपये दिए गए — 1,296.00 लाख रुपये (26 नवंबर 2021 का आदेश 4695) और 1,649.37 लाख रुपये (25 मार्च 2022 का आदेश 10283)।",
+        "34 प्रशिक्षण प्रदाता संस्थाओं के साथ अनुबंध हुए, जिनमें से 6 ने काम शुरू नहीं किया; 28 संस्थानों ने 4,952 प्रशिक्षुओं को प्रशिक्षण दिया।",
+        "MSDE की 4 दिसंबर 2020 की अधिसूचना 349 के अनुसार भुगतान तीन किश्तों में: 30% प्रशिक्षण शुरू होने पर, 40% प्रमाणीकरण पर, 30% 70% सत्यापित रोजगार पर।",
+        "तीसरी किश्त किसी संस्थान को नहीं दी गई, क्योंकि पोर्टल पर कोई भुगतान दावा नहीं बना।"
+      ],
+      "faq": [
+        {
+          "q": "MPAPCET क्या है?",
+          "a": "MPAPCET का पूरा नाम मध्य प्रदेश रोजगार एवं प्रशिक्षण परिषद है। यह मध्य प्रदेश में रोजगार और कौशल प्रशिक्षण से जुड़ी परिषद है, जिसने 2021-22 में SC वर्ग के BPL परिवारों के लाभार्थियों को प्रशिक्षण देने के लिए संस्थाओं को काम दिया।",
+          "a_en": ""
+        },
+        {
+          "q": "क्या MPAPCET ने प्लेसमेंट के आधार पर करोड़ों का भुगतान किया?",
+          "a": "नहीं। मंत्रालय ने कहा है कि यह दावा पूरी तरह गलत और निराधार है। संस्थानों को सिर्फ पहली और दूसरी किश्त मिली है, और ये दोनों प्लेसमेंट से जुड़ी नहीं हैं।",
+          "a_en": ""
+        },
+        {
+          "q": "तीसरी किश्त क्यों नहीं दी गई?",
+          "a": "तीसरी किश्त प्लेसमेंट पर निर्भर है और इसके लिए संस्थानों को पोर्टल पर प्लेसमेंट का विवरण अपलोड करना होता है। मंत्रालय के अनुसार किसी भी संस्थान के लिए ऐसा भुगतान दावा नहीं बना, इसलिए तीसरी किश्त नहीं दी गई।",
+          "a_en": ""
+        },
+        {
+          "q": "कितने प्रशिक्षुओं को प्रशिक्षण मिला?",
+          "a": "मंत्रालय के अनुसार 28 संस्थानों ने 4,952 प्रशिक्षुओं को प्रशिक्षण दिया। 34 संस्थाओं के साथ अनुबंध हुआ था, जिनमें से 6 ने काम शुरू नहीं किया।",
+          "a_en": ""
+        },
+        {
+          "q": "तीसरी किश्त कब मिलेगी?",
+          "a": "मंत्रालय ने कहा है कि तीसरी किश्त तब दी जाएगी जब उम्मीदवार प्रशिक्षण पूरा करके नौकरी शुरू कर लेंगे। फिलहाल संस्थाएं प्लेसमेंट दिलाने में मदद कर रही हैं।",
+          "a_en": ""
+        }
+      ],
+      "body": "## क्या हुआ है\n\nसामाजिक न्याय और अधिकारिता मंत्रालय ने 31 अक्टूबर 2026 को एक तथ्यात्मक रिपोर्ट जारी की है। यह रिपोर्ट उस खबर के जवाब में है जो 31 अक्टूबर 2026 को भोपाल के 'सेंट्रल क्रॉनिकल' में छपी थी। उस खबर में दावा किया गया था कि मध्य प्रदेश रोजगार एवं प्रशिक्षण परिषद (MPAPCET) ने प्लेसमेंट डेटा की पुष्टि किए बिना ही प्लेसमेंट के आधार पर करोड़ों रुपये का भुगतान कर दिया। मंत्रालय ने इस दावे को पूरी तरह गलत और निराधार बताया है।\n\n## पैसा कहां से आया और कितना\n\nमंत्रालय के अनुसार आयुक्त कार्यालय, अनुसूचित जाति विकास विभाग ने \"अनुसूचित जाति उप-योजना के लिए विशेष केंद्रीय सहायता\" मद के तहत कौशल विकास प्रशिक्षण के लिए 3,241.37 लाख रुपये स्वीकृत किए। इस राशि के विरुद्ध 2021-22 के दौरान MPAPCET को कुल 2,945.37 लाख रुपये दिए गए। इसमें 1,296.00 लाख रुपये 26 नवंबर 2021 के आदेश क्रमांक 4695 के तहत और 1,649.37 लाख रुपये 25 मार्च 2022 के आदेश क्रमांक 10283 के तहत शामिल थे।\n\n## प्रशिक्षण कैसे हुआ\n\nMPAPCET ने 2021-22 के लिए SC वर्ग के गरीबी रेखा से नीचे (BPL) रहने वाले परिवारों के लाभार्थियों को प्रशिक्षण देने के लिए 'रिक्वेस्ट फॉर प्रपोजल' (RFP) जारी किया। चयन प्रक्रिया के बाद 34 प्रशिक्षण प्रदाता संस्थाओं के साथ अनुबंध हुए और उन्हें कार्य आदेश दिए गए। इनमें से छह संस्थाओं ने काम शुरू ही नहीं किया। बाकी 28 संस्थानों ने 4,952 प्रशिक्षुओं को प्रशिक्षण दिया। मंत्रालय का कहना है कि परिषद का प्रशिक्षण कार्यक्रम कौशल विकास और उद्यमिता मंत्रालय (MSDE) के मानकों के अनुरूप है और सारी गतिविधियां एक समर्पित पोर्टल से चलती हैं, जहां पंजीकरण, रोज की उपस्थिति, मूल्यांकन और प्लेसमेंट डेटा अपलोड होता है।\n\n## भुगतान के नियम क्या हैं\n\nMSDE की 4 दिसंबर 2020 की अधिसूचना संख्या 349 की अनुसूची IV के खंड 2.1.1 के अनुसार बैच मोड में प्रशिक्षण देने वाले प्रशिक्षण प्रदाताओं को तीन किश्तों में भुगतान होता है। पहली किश्त बैच राशि का 30% है, जो प्रशिक्षण शुरू होने पर मिलती है। दूसरी किश्त 40% है, जो प्रमाणीकरण पूरा होने पर मिलती है; अग्रिम भुगतान समायोजित करने के बाद प्रमाणित उम्मीदवारों की संख्या के आधार पर भुगतान होता है। तीसरी किश्त 30% है, जो 70% सत्यापित रोजगार मिलने पर दी जाती है, जिसमें डेस्क सत्यापन और प्लेसमेंट सत्यापन के साथ तीन महीने तक लगातार रोजगार शामिल है।\n\n## किसे क्या मिला\n\nमंत्रालय के अनुसार पहली किश्त तब दी जाती है जब प्रशिक्षुओं के भौतिक सत्यापन के बाद प्रशिक्षण बैच शुरू होता है। दूसरी किश्त प्रशिक्षण पूरा होने और मूल्यांकन के बाद दी जाती है। यह मूल्यांकन राष्ट्रीय व्यावसायिक शिक्षा एवं प्रशिक्षण परिषद (NCVET) द्वारा नामित संस्थाएं करती हैं, और इसके लिए प्रशिक्षु की कम से कम 70 प्रतिशत उपस्थिति जरूरी है। मंत्रालय ने कहा कि संस्थानों को सिर्फ पहली और दूसरी किश्त मिली है और इनमें से कोई भी प्लेसमेंट से जुड़ी नहीं है।\n\n## तीसरी किश्त क्यों नहीं दी गई\n\nमंत्रालय के अनुसार संस्थानों ने प्लेसमेंट की जानकारी हार्ड-कॉपी में जॉब ऑफर या ऑफर लेटर के आधार पर दी है, लेकिन इस तरह की जानकारी से तीसरी किश्त जारी नहीं हो सकती। इसके लिए संस्थानों को निर्धारित मानदंडों के अनुसार पोर्टल पर प्लेसमेंट का विवरण अपलोड करना होता है, तभी पोर्टल भुगतान का दावा बनाता है। मंत्रालय का कहना है कि किसी भी संस्थान के लिए ऐसा दावा नहीं बना, इसलिए तीसरी किश्त का कोई भुगतान नहीं हुआ। तीसरी किश्त तब दी जाएगी जब उम्मीदवार प्रशिक्षण पूरा करके नौकरी शुरू कर लेंगे; फिलहाल संस्थाएं प्लेसमेंट दिलाने में मदद कर रही हैं।"
+    },
+    "en": {
+      "title": "MPAPCET did not pay crores on placement claims, says Social Justice Ministry fact-check",
+      "summary": "The Ministry of Social Justice and Empowerment issued a fact-check report on 31 October 2026 rejecting a report's claim that MPAPCET paid crores based on unverified placement data. It concerns people linked to the SC skill-training scheme and readers following the news.",
+      "meaning": "This does not directly affect ordinary people's money or jobs. It is the ministry's response to a newspaper report. If you are a trainee under the SC skill-training scheme, your training and payment details come through the council's portal.",
+      "keyFacts": [
+        "Rs 3,241.37 lakh was sanctioned for skill development training under Special Central Assistance to the Scheduled Caste Sub-Plan.",
+        "In 2021-22, MPAPCET received Rs 2,945.37 lakh in total — Rs 1,296.00 lakh (order 4695 of 26 November 2021) and Rs 1,649.37 lakh (order 10283 of 25 March 2022).",
+        "Contracts were signed with 34 training providers; 6 did not start work, and 28 institutions trained 4,952 trainees.",
+        "Under MSDE notification 349 of 4 December 2020, payment is in three instalments: 30% at training start, 40% on certification, 30% on 70% verified employment.",
+        "No third instalment was paid to any institution because no payment claim was generated on the portal."
+      ],
+      "faq": [
+        {
+          "q": "What is MPAPCET?",
+          "a": "MPAPCET stands for Madhya Pradesh Employment and Training Council. It is the state council for employment and skill training, which in 2021-22 gave work orders to institutions to train SC beneficiaries from below-poverty-line families.",
+          "a_en": ""
+        },
+        {
+          "q": "Did MPAPCET pay crores based on placements?",
+          "a": "No. The ministry said the claim is completely false and baseless. Institutions received only the first and second instalments, and neither is linked to placements.",
+          "a_en": ""
+        },
+        {
+          "q": "Why was the third instalment not paid?",
+          "a": "The third instalment depends on placements, and institutions must upload placement details on the portal. According to the ministry, no payment claim was generated for any institution, so no third instalment was paid.",
+          "a_en": ""
+        },
+        {
+          "q": "How many trainees were trained?",
+          "a": "According to the ministry, 28 institutions trained 4,952 trainees. Contracts were signed with 34 institutions, of which 6 did not start work.",
+          "a_en": ""
+        },
+        {
+          "q": "When will the third instalment be paid?",
+          "a": "The ministry said the third instalment will be paid when candidates complete training and start a job. For now, the institutions are helping with placements.",
+          "a_en": ""
+        }
+      ],
+      "body": "## What happened\n\nThe Ministry of Social Justice and Empowerment issued a fact-check report on 31 October 2026. It responds to a report published the same day in Bhopal's 'Central Chronicle', which claimed that the Madhya Pradesh Employment and Training Council (MPAPCET) paid crores based on placement data without verifying it. The ministry called the claim completely false and baseless.\n\n## Where the money came from\n\nAccording to the ministry, the Commissioner's office of the Scheduled Caste Development Department sanctioned Rs 3,241.37 lakh for skill development training under \"Special Central Assistance to the Scheduled Caste Sub-Plan\". Against this, MPAPCET received Rs 2,945.37 lakh in total during 2021-22. This included Rs 1,296.00 lakh under order number 4695 of 26 November 2021 and Rs 1,649.37 lakh under order number 10283 of 25 March 2022.\n\n## How the training was run\n\nMPAPCET issued a Request for Proposal (RFP) for 2021-22 to train Scheduled Caste beneficiaries from below-poverty-line families. After selection, contracts were signed with 34 training provider institutions and work orders were issued. Six of these institutions did not start work. The remaining 28 institutions trained 4,952 trainees. The ministry said the council's training programme follows standards set by the Ministry of Skill Development and Entrepreneurship (MSDE), and all activities are managed through a dedicated portal that handles trainee registration, daily attendance tracking, assessment and placement data upload.\n\n## What the payment rules say\n\nUnder Schedule IV, clause 2.1.1 of MSDE gazette notification number 349 dated 4 December 2020, training providers in batch mode are paid in three instalments. The first instalment is 30% of the batch amount, paid when training begins. The second is 40%, paid on successful completion of certification, based on the number of certified candidates after adjusting advance payment. The third is 30%, paid on achieving 70% verified employment, with desk verification and placement verification as per standard rules and three months of continuous employment.\n\n## What was actually paid\n\nAccording to the ministry, the first instalment is paid when a training batch starts after physical verification of trainees. The second is paid after training is completed and trainees are assessed. This assessment is done by agencies nominated by the National Council for Vocational Education and Training (NCVET), and trainees need at least 70% attendance to be eligible. The ministry said institutions received only the first and second instalments, and neither is linked to placements.\n\n## Why the third instalment was not paid\n\nThe ministry said institutions submitted post-training placement information in hard copy based on job offers or offer letters, but such information cannot release the third instalment. For that, institutions must upload placement details on the portal as per the prescribed criteria, and only then can the portal generate a payment claim. The ministry said no such claim was generated for any institution, so no third instalment was paid. The third instalment will be paid when candidates complete training and start a job; for now, the institutions are helping with placements."
+    }
+  }
+}
