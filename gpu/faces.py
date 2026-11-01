@@ -12,9 +12,10 @@ image = modal.Image.debian_slim(python_version="3.11").pip_install(
 )
 
 PROMPT = (
-    "photo of an Indian woman television news presenter, about 30 years old, professional and friendly, "
-    "wearing a formal navy blue blazer, hair neatly tied back, looking straight at the camera, "
-    "head and shoulders, centred, plain soft blue studio background, soft even lighting, "
+    "photo of a glamorous Indian woman television news anchor, about 28 years old, fair complexion, "
+    "confident warm smile, styled open wavy hair, polished makeup, wearing a fitted modern blazer, "
+    "elegant and professional, looking straight at the camera, chest-up, centred, "
+    "modern TV news studio with soft blue screens behind, soft studio lighting, "
     "sharp focus, natural skin texture, photorealistic, 85mm portrait"
 )
 NEGATIVE = (
