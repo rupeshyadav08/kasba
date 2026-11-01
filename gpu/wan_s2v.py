@@ -34,7 +34,7 @@ def download():
     print(sorted(os.listdir(CKPT)))
 
 
-@app.function(image=image, gpu="H100", volumes={"/weights": weights}, timeout=3600)
+@app.function(image=image, gpu=["H100", "A100-80GB", "H200"], volumes={"/weights": weights}, timeout=3600)
 def talk(face: bytes, audio: bytes, prompt: str, audio_ext: str = "wav", size: str = "480*832") -> bytes:
     import os
     import subprocess

@@ -19,7 +19,7 @@ image = (
 )
 
 
-@app.function(image=image, gpu="L4", timeout=1200)
+@app.function(image=image, gpu=["L4", "A10G", "L40S", "T4"], timeout=1200)
 def talk(face: bytes, audio: bytes, audio_ext: str = "wav") -> bytes:
     import glob
     import os

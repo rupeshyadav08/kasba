@@ -24,7 +24,7 @@ NEGATIVE = (
 )
 
 
-@app.function(image=image, gpu="L4", volumes={"/cache": cache}, timeout=1500)
+@app.function(image=image, gpu=["L4", "A10G", "L40S", "T4"], volumes={"/cache": cache}, timeout=1500)
 def faces(n: int, seed: int) -> list[bytes]:
     import io
 
