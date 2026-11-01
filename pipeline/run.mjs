@@ -247,7 +247,7 @@ async function draftNew() {
     } catch (e) {
       summary.errors.push(`${it.link}: ${e.message}`);
       // A provider error (no balance, bad key) would repeat for every item; stop and tell the editor once.
-      if (/DeepSeek|Anthropic/.test(e.message)) {
+      if (/DeepSeek|Anthropic|GLM/.test(e.message)) {
         delete state.seen[it.link];
         if (!dryRun) await tg.send(`⚠️ AI ड्राफ़्टिंग रुकी: ${tg.esc(e.message.slice(0, 200))}`);
         break;

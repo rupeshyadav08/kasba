@@ -1,4 +1,4 @@
-// One function, two providers. Which one runs is set in pipeline/config.json.
+// One function, three providers. Which one runs is set in pipeline/config.json.
 export async function complete({ provider, model, system, user }) {
   if (provider === 'deepseek') {
     const res = await fetch('https://api.deepseek.com/chat/completions', {
@@ -26,6 +26,20 @@ export async function complete({ provider, model, system, user }) {
     if (!res.ok) throw new Error(`Anthropic ${res.status}: ${(await res.text()).slice(0, 300)}`);
     const data = await res.json();
     return { text: data.content.map((c) => c.text ?? '').join(''), usage: data.usage };
+  }
+  // Zhipu's GLM speaks the OpenAI format. GLM_BASE_URL switches to bigmodel.cn for a mainland account.
+  if (provider === 'glm') {
+    const res = await fetch(`${process.env.GLM_BASE_URL ?? 'https://api.z.ai/api/paas/v4'}/chat/completions`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${process.env.GLM_API_KEY}` },
+      body: JSON.stringify({
+        model, temperature: 0.2, max_tokens: 8000, response_format: { type: 'json_object' }, thinking: { type: 'disabled' },
+        messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
+      }),
+    });
+    if (!res.ok) throw new Error(`GLM ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    const data = await res.json();
+    return { text: data.choices[0].message.content, usage: data.usage };
   }
   throw new Error(`Unknown provider: ${provider}`);
 }
