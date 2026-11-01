@@ -112,8 +112,8 @@ async function applyDecisions() {
     if (action === 'a') {
       const storyId = publish(draft, config.author);
       summary.published.push(storyId);
-      await tg.answer(cb.id, '✅ मंज़ूर, 2 घंटे के अंदर साइट पर');
-      await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(अगले अपडेट में साइट पर, 2 घंटे के अंदर)`);
+      await tg.answer(cb.id, '✅ मंज़ूर, अगले अपडेट में साइट पर');
+      await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(अगले अपडेट में साइट पर)`);
     } else {
       summary.rejected.push(id);
       await tg.answer(cb.id, '❌ हटाया गया');
@@ -231,7 +231,7 @@ async function draftNew() {
         const storyId = publish(draft, config.author, { auto: true });
         summary.published.push(storyId);
         summary.autoPublished.push(storyId);
-        await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (2 घंटे के अंदर साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
+        await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (अगले अपडेट में साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
           { text: '🗑 साइट से हटाएँ', callback_data: `u:${storyId}` },
         ]);
         drafted++;

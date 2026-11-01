@@ -114,9 +114,20 @@ jobs:
   upload:
     if: ${{ inputs.upload }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      # Each video reaches Telegram as soon as it is made, but the run saves all three only when it
+      # ends, so a quick Post tap waits here for that run to finish.
+      - name: Wait for the run that made the video
+        run: |
+          for i in $(seq 1 60); do
+            [ "$(gh run view ${{ inputs.upload }} --json status -q .status)" = completed ] && exit 0
+            sleep 30
+          done
+          exit 1
+        env:
+          GH_TOKEN: ${{ github.token }}
       - uses: actions/download-artifact@v4
         with:
           name: short

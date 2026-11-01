@@ -2,10 +2,12 @@ name: News pipeline
 
 on:
   schedule:
-    # GitHub delays or drops scheduled runs at busy minutes like :00 and :30 (on 23-24 Oct only one
-    # run in 4-5 hours started), so this asks at a quieter minute. Hourly keeps the private repo
-    # inside GitHub's 2,000 free Actions minutes a month.
-    - cron: '17 0-16 * * *' # every hour, 6:00 to 22:00 India time
+    # Three batched runs a day (Rupesh, 1 Nov 2026). GitHub delays or drops scheduled runs at busy
+    # minutes like :00 and :30, so these ask at quieter minutes. Taps on Telegram still start a run
+    # at once through the webhook, and every trigger shares the news-pipeline group below.
+    - cron: '17 2 * * *'  # about 7:45 India time
+    - cron: '47 7 * * *'  # about 13:15
+    - cron: '47 13 * * *' # about 19:15
   workflow_dispatch:
     inputs:
       dry_run:
@@ -29,7 +31,7 @@ jobs:
     # Sources marked "india" in sources.json (RBI) refuse GitHub's servers; pipeline-india.yml
     # reads those on the self-hosted runner in India.
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       # A run that waited in the queue behind another must start from the branch as it is now, not
       # from the commit it was triggered on, or it re-publishes the same drafts and its push fails.
