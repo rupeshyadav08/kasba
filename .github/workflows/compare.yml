@@ -1,0 +1,45 @@
+name: Compare models
+
+# Drafts the same recent notices with two models and shows them side by side in the run summary
+# (and as a compare.md artifact). Nothing is published or sent.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'How many notices'
+        type: string
+        default: '8'
+      a:
+        description: 'First provider'
+        type: string
+        default: deepseek
+      b:
+        description: 'Second provider'
+        type: string
+        default: glm
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: Install PDF and OCR tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-hin >/dev/null
+      - name: Draft with both models
+        run: |
+          node scripts/compare-models.mjs ${{ inputs.count }} ${{ inputs.a }} ${{ inputs.b }}
+          cat compare.md >> "$GITHUB_STEP_SUMMARY"
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compare
+          path: compare.md
