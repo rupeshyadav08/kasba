@@ -2889,5 +2889,18 @@
   "deploy": {
     "last": "2026-11-02T18:16:34.607Z",
     "pending": []
-  }
+  },
+  "sources": [
+    "pib-hi",
+    "rbi-press",
+    "rbi-notifications",
+    "sebi",
+    "cbse",
+    "nta",
+    "up-board",
+    "up-info",
+    "sc-press",
+    "ssc",
+    "uppsc"
+  ]
 }
