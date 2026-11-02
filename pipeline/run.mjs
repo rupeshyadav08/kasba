@@ -263,7 +263,10 @@ function deployDue() {
   const d = (state.deploy ??= { last: null, pending: [] });
   d.pending = [...new Set([...d.pending, ...summary.published])].filter((id) => !summary.removed.includes(id));
   const waited = d.last ? (Date.now() - Date.parse(d.last)) / 60e3 : Infinity;
-  if (!summary.removed.length && !(d.pending.length && waited >= config.deployEveryMinutes)) return [];
+  // A run started by the result watcher (workers/watcher) puts its stories live at once: results
+  // and admit cards are read most in their first hour.
+  const urgent = process.env.URGENT === 'true' && summary.published.length;
+  if (!summary.removed.length && !urgent && !(d.pending.length && waited >= config.deployEveryMinutes)) return [];
   const ids = d.pending;
   d.pending = [];
   d.last = new Date().toISOString();

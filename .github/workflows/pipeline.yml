@@ -14,6 +14,10 @@ on:
         description: 'Draft only: print drafts in the log, send nothing, change nothing'
         type: boolean
         default: false
+      urgent:
+        description: 'Put new stories live at once (set by the result watcher)'
+        type: boolean
+        default: false
       probe_urls:
         description: 'Debug: space-separated URLs to inspect before the run'
         type: string
@@ -57,6 +61,7 @@ jobs:
         run: node pipeline/run.mjs
         env:
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          URGENT: ${{ inputs.urgent || 'false' }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
