@@ -68,14 +68,17 @@ async function sscFeed() {
       if (!n.headline || !file) continue;
       items.push({
         title: strip(n.headline).slice(0, 300),
-        link: `https://ssc.gov.in/api/attachment/${file.replace(/\\/g, '/').replace(/^\/+/, '')}`,
+        link: encodeURI(`https://ssc.gov.in/api/attachment/${file.replace(/\\/g, '/').replace(/^\/+/, '')}`),
         date: n.createdAt ? new Date(n.createdAt) : null,
       });
     }
   }
-  // Lists from one result share their write-up PDF: keep one item per PDF.
+  // One write-up is often posted both as a notice and as a result: keep one item per file name.
   const seen = new Set();
-  return items.sort((a, b) => (b.date ?? 0) - (a.date ?? 0)).filter((i) => !seen.has(i.link) && seen.add(i.link));
+  return items.sort((a, b) => (b.date ?? 0) - (a.date ?? 0)).filter((i) => {
+    const name = i.link.split('/').pop().toLowerCase();
+    return !seen.has(name) && seen.add(name);
+  });
 }
 
 // UPPSC's home page carries a "recruitment dashboard": one line per live advertisement, admit
