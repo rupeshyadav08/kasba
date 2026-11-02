@@ -1,10 +1,13 @@
 name: News pipeline (India runner)
 
-# Fallback for sources that refuse GitHub's servers: mark them "india": true in sources.json
-# and they are read here, on a machine in India (Rupesh's Mac) registered as a self-hosted
-# runner with the label kasba-india. No source needs it today, so it only runs by hand; add a
-# schedule back (e.g. cron '45 1-16/3 * * *') when one does. The main pipeline applies the taps.
+# Sources that refuse GitHub's servers and Cloudflare (state exam boards) are marked "india": true
+# in sources.json and read here, on Kasba's Oracle Cloud server in Mumbai (Always Free), registered
+# as a self-hosted runner with the label kasba-india. Self-hosted runs use no GitHub minutes.
+# Stories it publishes are queued for the main pipeline's next deploy; results, admit cards and
+# answer keys go live at once.
 on:
+  schedule:
+    - cron: '7,37 0-17 * * *' # every 30 minutes, about 5:30 am to 11:30 pm India time
   workflow_dispatch:
     inputs:
       dry_run:
@@ -22,19 +25,30 @@ concurrency:
 jobs:
   run:
     runs-on: [self-hosted, kasba-india]
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check pdftotext
-        run: command -v pdftotext || brew install poppler
+      - name: Check PDF and OCR tools
+        run: command -v pdftotext && command -v tesseract
 
-      - name: Fetch and draft
+      # sharp (story pictures) comes with the site's locked packages; npm's cache stays on the server.
+      - name: Install packages
+        continue-on-error: true
+        run: npm ci --no-audit --no-fund --prefer-offline
+
+      - name: Fetch, draft and publish
+        id: pipeline
         run: node pipeline/run.mjs
         env:
           PIPELINE_MODE: india
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          # Intermediate certificates some board sites forget to send (BPSC, IBPS); kept on the server.
+          NODE_EXTRA_CA_CERTS: /etc/kasba/extra-ca.pem
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -44,7 +58,18 @@ jobs:
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
-          git add pipeline/state-india.json pipeline/drafts
+          git add -A pipeline/state-india.json pipeline/drafts src/content/stories public/img/s
           git diff --cached --quiet && exit 0
-          git commit -m "[skip ci] Pipeline state (India runner)"
-          git pull --rebase origin main && git push origin HEAD:main
+          if [ "${{ steps.pipeline.outputs.deploy }}" = "true" ]; then
+            git commit -m "Put ${{ steps.pipeline.outputs.live }} urgent stories live (India runner)"
+          else
+            git commit -m "[skip ci] Pipeline state (India runner)"
+          fi
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+
+      - name: Tell search engines (IndexNow)
+        if: ${{ steps.pipeline.outputs.ids != '' && inputs.dry_run != true }}
+        continue-on-error: true
+        env:
+          IDS: ${{ steps.pipeline.outputs.ids }}
+        run: sleep 180 && node pipeline/indexnow.mjs $IDS

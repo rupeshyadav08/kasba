@@ -91,5 +91,45 @@
     "url": "https://kasba-watcher.rupeshyadavoffical.workers.dev/feed/uppsc",
     "auto": true,
     "feedText": true
+  },
+  {
+    "id": "bpsc",
+    "name": "BPSC (Bihar Public Service Commission)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://bpsc.bihar.gov.in/",
+    "linkPattern": "^https://bpsc\\.bihar\\.gov\\.in/wp-content/uploads/BPSC_content/Notices/.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "ibps",
+    "name": "IBPS",
+    "type": "page",
+    "lang": "en",
+    "url": "https://www.ibps.in/",
+    "linkPattern": "^https://www\\.ibps\\.in/wp-content/uploads/.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "dsssb-results",
+    "name": "DSSSB (Delhi Subordinate Services Selection Board)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://dsssb.delhi.gov.in/doit/dsssb/latest-result",
+    "linkPattern": "^https://dsssb\\.delhi\\.gov\\.in/sites/default/files/DSSSB/universal-tab/.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "dsssb-notices",
+    "name": "DSSSB (Delhi Subordinate Services Selection Board)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://dsssb.delhi.gov.in/notice-of-exam",
+    "linkPattern": "^https://dsssb\\.delhi\\.gov\\.in/sites/default/files/DSSSB/circulars-orders/.+\\.pdf$",
+    "india": true,
+    "auto": true
   }
 ]
