@@ -25,7 +25,9 @@ const sources = readJson('sources.json').filter((s) => Boolean(s.india) === indi
 const stateFile = india ? 'state-india.json' : 'state.json';
 const state = existsSync(here(stateFile)) ? readJson(stateFile) : { seen: {}, telegramOffset: 0 };
 const dryRun = process.env.DRY_RUN === 'true';
-const summary = { telegramUpdates: 0, published: [], autoPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
+// Notices readers rush to (the same words the result watcher looks for).
+const URGENT = /result|admit|hall ?ticket|answer ?key|merit|cut ?off|परिणाम|रिजल्ट|प्रवेश ?पत्र|उत्तर ?कुंजी|मेरिट/i;
+const summary = { telegramUpdates: 0, published: [], autoPublished: [], urgentPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -134,12 +136,14 @@ function expireDrafts() {
 }
 
 // 2. New notices.
+const knownSources = new Set(); // sources whose feed has a link seen before
 async function newItems() {
   const items = [];
   for (const src of sources) {
     try {
       const body = await get(src.url);
       const feed = src.type === 'page' ? parsePage(body, src.url, src.linkPattern) : parseRss(body);
+      if (feed.some((it) => state.seen[it.link])) knownSources.add(src.id);
       for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind });
     } catch (e) {
       summary.errors.push(`${src.id}: ${e.message}`);
@@ -171,12 +175,17 @@ function draftMessage(id, d) {
 
 async function draftNew() {
   let items = await newItems();
-  // First run: everything in the feeds is already old news. Remember it all and
-  // check only the newest few notices from each source, so the editor sees a few samples.
-  if (Object.keys(state.seen).length === 0) {
-    const newest = sources.flatMap((s) => items.filter((i) => i.sourceId === s.id).slice(0, config.firstRunPerSource));
-    for (const i of items) if (!newest.includes(i)) state.seen[i.link] = new Date().toISOString().slice(0, 10);
-    items = newest;
+  // A source's first run: everything in its feed is already old news. Remember it all and
+  // check only its newest few notices, so a new source never floods the desk with its archive.
+  // (Older states have no list of started sources: a source counts as started if any of its
+  // current links was seen before.)
+  const started = (state.sources ??= [...knownSources]);
+  const fresh = new Set(sources.map((s) => s.id).filter((id) => !started.includes(id) && items.some((i) => i.sourceId === id)));
+  if (fresh.size) {
+    const newest = [...fresh].flatMap((id) => items.filter((i) => i.sourceId === id).slice(0, config.firstRunPerSource));
+    for (const i of items) if (fresh.has(i.sourceId) && !newest.includes(i)) state.seen[i.link] = new Date().toISOString().slice(0, 10);
+    items = items.filter((i) => !fresh.has(i.sourceId) || newest.includes(i));
+    started.push(...fresh);
   }
   // Links the editor sent come first; they skip the "seen" check because the editor asked.
   items = [...manual, ...items].slice(0, config.maxItemsCheckedPerRun);
@@ -231,6 +240,7 @@ async function draftNew() {
         const storyId = await publish(draft, config.author, { auto: true });
         summary.published.push(storyId);
         summary.autoPublished.push(storyId);
+        if (URGENT.test(`${it.title} ${story.en?.title ?? ''}`)) summary.urgentPublished.push(storyId);
         await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (अगले अपडेट में साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
           { text: '🗑 साइट से हटाएँ', callback_data: `u:${storyId}` },
         ]);
@@ -286,7 +296,9 @@ try {
   await draftNew();
   pruneSeen();
 } finally {
-  const live = !dryRun && !india ? deployDue() : [];
+  // The India runner queues its stories for the main pipeline's next deploy, except results,
+  // admit cards and answer keys, which go live at once (readers search for them in the first hour).
+  const live = dryRun ? [] : india ? summary.urgentPublished : deployDue();
   const deploy = live.length > 0 || summary.removed.length > 0;
   if (!dryRun) writeJson(stateFile, state);
   console.log(JSON.stringify(summary, null, 2));
