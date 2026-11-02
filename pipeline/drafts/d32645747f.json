@@ -1,0 +1,88 @@
+{
+  "id": "d32645747f",
+  "createdAt": "2026-11-02T18:11:49.296Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Appeal No. 7131 of 2026 filed by Ramapati Kuar",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/appeal-no-7131-of-2026-filed-by-ramapati-kuar_105556.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "land documents paperwork",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Appeal No. 7131 of 2026 filed by Ramapati Kuar",
+    "sourceDate": "2026-11-02",
+    "hi": {
+      "title": "PACL रिफंड: SEBI की अपीलीय अथॉरिटी ने RTI अपील ख़ारिज की, जानें कहां करें शिकायत",
+      "summary": "SEBI की अपीलीय अथॉरिटी ने 2 नवंबर 2026 को Ramapati Kuar की RTI अपील ख़ारिज कर दी। यह मामला PACL सर्टिफिकेट के रिफंड और ज़मीन के ब्योरे से जुड़ी जानकारी मांगने का था।",
+      "meaning": "यह फ़ैसला उस महिला की अपील पर है जिसने अपने PACL सर्टिफिकेट के रिफंड और ज़मीन के ब्योरे की जानकारी मांगी थी। अगर आपका भी PACL में पैसा फंसा है और रिफंड की स्थिति जाननी है, तो आदेश के अनुसार Justice (Retd.) R.M. Lodha Committee से संपर्क करें। SEBI की वेबसाइट पर PACL से जुड़े Public Notice, Press Release, Status Report और FAQ भी देख सकते हैं।",
+      "keyFacts": [
+        "अपील संख्या 7131 of 2026, अपीलकर्ता Ramapati Kuar",
+        "RTI आवेदन 3 अक्टूबर 2026 को दिया गया था",
+        "SEBI ने 6 अक्टूबर 2026 को जवाब दिया था",
+        "अपीलीय अथॉरिटी का आदेश 2 नवंबर 2026 का है",
+        "PACL मामले में रिफंड और संपत्ति के निपटान की ज़िम्मेदारी Justice (Retd.) R.M. Lodha Committee के पास है",
+        "यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनी थी"
+      ],
+      "faq": [
+        {
+          "q": "PACL रिफंड की जानकारी कहां से मिलेगी?",
+          "a": "आदेश के अनुसार रिफंड से जुड़ी जानकारी Justice (Retd.) R.M. Lodha Committee देखती है, इसलिए वहीं संपर्क करें। SEBI की वेबसाइट पर PACL से जुड़े Public Notice, Press Release, Status Report और FAQ भी उपलब्ध हैं।"
+        },
+        {
+          "q": "SEBI ने जानकारी देने से क्यों मना किया?",
+          "a": "SEBI ने कहा कि मांगी गई जानकारी उसके पास उपलब्ध नहीं है। अपीलीय अथॉरिटी ने पाया कि जो जानकारी किसी के पास नहीं है, वह दी नहीं जा सकती।"
+        },
+        {
+          "q": "इस अपील का नतीजा क्या रहा?",
+          "a": "अपीलीय अथॉरिटी ने SEBI के जवाब में कोई कमी नहीं पाई और अपील ख़ारिज कर दी।"
+        },
+        {
+          "q": "Lodha Committee क्या है?",
+          "a": "यह Justice (Retd.) R.M. Lodha की अध्यक्षता वाली कमेटी है, जो सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनी। आदेश के अनुसार PACL की संपत्तियों के निपटान और निवेशकों को पैसा लौटाने की ज़िम्मेदारी इसी कमेटी के पास है।"
+        }
+      ],
+      "body": "SEBI की अपीलीय अथॉरिटी ने PACL से जुड़ी एक RTI अपील पर 2 नवंबर 2026 को आदेश दिया। अपील Ramapati Kuar ने दायर की थी। उन्होंने अपने PACL सर्टिफिकेट के रिफंड और उसके नाम पर दिखाई गई ज़मीन के ब्योरे के बारे में जानकारी मांगी थी।\n\n## मामला क्या था\n\nआदेश के अनुसार अपीलकर्ता ने 3 अक्टूबर 2026 को RTI आवेदन दिया था। इसमें PACL सर्टिफिकेट से जुड़ी कई बातें पूछी गई थीं, जैसे ज़मीन का प्लॉट या खसरा नंबर, गांव, तहसील और ज़िला, ज़मीन का रकबा, PACL प्रोजेक्ट का नाम और ज़मीन से जुड़े दस्तावेज़ों की कॉपी। साथ ही यह भी पूछा गया था कि रिकॉर्ड में सिर्फ़ आवंटन की एंट्री है या असल में रजिस्ट्री और कब्ज़ा भी हुआ है।\n\nSEBI ने 6 अक्टूबर 2026 को जवाब दिया। आदेश के अनुसार SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है। SEBI ने यह भी बताया कि रिफंड की स्थिति से जुड़ी सारी जानकारी Justice (Retd.) R.M. Lodha Committee देखती है और अपीलकर्ता उससे संपर्क कर सकती है। SEBI ने PACL से जुड़े Public Notice, Press Release, Status Report और FAQ की जानकारी अपनी वेबसाइट पर उपलब्ध होने की बात भी कही।\n\n## अथॉरिटी ने क्या कहा\n\nअपीलकर्ता SEBI के जवाब से संतुष्ट नहीं थी, इसलिए उसने अपील दायर की। अथॉरिटी ने आवेदन, जवाब और अपील देखने के बाद कहा कि SEBI ने साफ़ बताया है कि जानकारी उसके पास नहीं है। आदेश में Central Information Commission के 8 जुलाई 2013 के एक फ़ैसले का हवाला दिया गया, जिसमें कहा गया था कि अगर जानकारी किसी के पास नहीं है तो वह बनाई नहीं जा सकती।\n\nअथॉरिटी ने यह भी दर्ज किया कि PACL की संपत्तियों के निपटान और निवेशकों को पैसा लौटाने की ज़िम्मेदारी Justice (Retd.) R.M. Lodha Committee के पास है। यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी।\n\n## अब क्या हुआ\n\nअथॉरिटी ने SEBI के जवाब में कोई कमी नहीं पाई और अपील ख़ारिज कर दी। आदेश में यह भी लिखा है कि अपीलकर्ता Lodha Committee और SEBI की वेबसाइट पर उपलब्ध जानकारी का सहारा ले सकती है।"
+    },
+    "en": {
+      "title": "PACL refund: SEBI appellate authority dismisses RTI appeal, here's where to seek help",
+      "summary": "SEBI's appellate authority dismissed Ramapati Kuar's RTI appeal on 2 November 2026. The appeal concerned information about a PACL certificate's refund and the land shown against it.",
+      "meaning": "This order is about one investor's RTI appeal over her PACL certificate and the land shown against it. If your money is also stuck in PACL and you want to know your refund status, the order says such matters are handled by the Justice (Retd.) R.M. Lodha Committee. PACL-related public notices, press releases, status reports and FAQs are also available on SEBI's website.",
+      "keyFacts": [
+        "Appeal No. 7131 of 2026, filed by Ramapati Kuar",
+        "RTI application dated 3 October 2026",
+        "SEBI replied on 6 October 2026",
+        "Order of the appellate authority dated 2 November 2026",
+        "Refund and disposal of PACL properties rest with the Justice (Retd.) R.M. Lodha Committee",
+        "The committee was set up under the Supreme Court's order of 2 February 2016"
+      ],
+      "faq": [
+        {
+          "q": "Where can I get information about my PACL refund?",
+          "a": "According to the order, refund-related matters are handled by the Justice (Retd.) R.M. Lodha Committee, so that is where you should reach out. PACL public notices, press releases, status reports and FAQs are also on SEBI's website."
+        },
+        {
+          "q": "Why did SEBI say it could not give the information?",
+          "a": "SEBI said the information sought is not available with it. The appellate authority held that information a body does not have cannot be provided."
+        },
+        {
+          "q": "What was the outcome of the appeal?",
+          "a": "The appellate authority found no deficiency in SEBI's reply and dismissed the appeal."
+        },
+        {
+          "q": "What is the Lodha Committee?",
+          "a": "It is a committee chaired by Justice (Retd.) R.M. Lodha, set up under the Supreme Court's order of 2 February 2016. As per the order, it is entrusted with disposing of PACL's properties and repaying investors."
+        }
+      ],
+      "body": "SEBI's appellate authority passed an order on 2 November 2026 in an RTI appeal linked to PACL. The appeal was filed by Ramapati Kuar, who had sought details about her PACL certificate's refund and the land shown against it.\n\n## What the case was about\n\nAccording to the order, the appellant filed an RTI application on 3 October 2026. She asked for details such as the plot or khasra number of the land shown as allotted, the village, tehsil and district, the area of land, the name of the PACL project, and copies of related land documents. She also asked whether the record shows an actual allotment, registration or possession, or only an allotment entry in the data given by PACL Ltd.\n\nSEBI replied on 6 October 2026. As per the order, SEBI said the information sought is not available with it. SEBI also said that all communication about refund status is handled by the Justice (Retd.) R.M. Lodha Committee and advised the appellant to approach it. SEBI further pointed to PACL-related public notices, press releases, status reports and FAQs on its website.\n\n## What the authority said\n\nThe appellant was not satisfied with SEBI's reply and filed an appeal. After going through the application, the reply and the appeal, the authority noted that SEBI had clearly stated the information is not with it. The order cited a Central Information Commission decision of 8 July 2013, which held that if a body does not have the information, it cannot invent it.\n\nThe authority also recorded that the responsibility for disposing of PACL's properties and repaying investors rests with the Justice (Retd.) R.M. Lodha Committee, constituted under the Supreme Court's order of 2 February 2016.\n\n## What happens now\n\nThe authority found no deficiency in SEBI's response and dismissed the appeal. The order notes that the appellant may be guided by the Lodha Committee and the information already available in the public domain on SEBI's website."
+    }
+  }
+}
