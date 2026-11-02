@@ -50,6 +50,11 @@ jobs:
           if command -v brew; then brew install poppler tesseract tesseract-lang
           else sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-hin >/dev/null; fi
 
+      # Story pictures are resized with sharp, which comes with the site's locked packages.
+      - name: Install packages
+        continue-on-error: true
+        run: npm ci --no-audit --no-fund
+
       - name: Probe pages (debug only)
         if: ${{ inputs.probe_urls != '' && inputs.probe_urls != null }}
         env:
