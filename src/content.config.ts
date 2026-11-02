@@ -67,4 +67,22 @@ const glossary = defineCollection({
   }),
 });
 
-export const collections = { stories, pages, glossary };
+// Always-updated exam and scheme pages ("hubs"): fixed facts here, the latest Kasba stories and
+// last dates are added at build time from stories whose text names the exam (see src/lib/exams.ts).
+const exams = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/exams' }),
+  schema: z.object({
+    lang: z.enum(['hi', 'en']),
+    examId: z.string(), // shared by the Hindi and English page, used in the URL
+    name: z.string(),
+    short: z.string().max(220), // meta description and index line
+    match: z.array(z.string()).min(1), // words that tie a story to this page (case-insensitive)
+    official: z.array(z.object({ label: z.string(), url: z.url() })).min(1),
+    steps: z.array(z.string()).min(2), // how to check the result / status
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2),
+    order: z.number().default(50),
+    updated: z.coerce.date(),
+  }),
+});
+
+export const collections = { stories, pages, glossary, exams };

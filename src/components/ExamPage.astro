@@ -1,0 +1,101 @@
+---
+// One always-updated exam or scheme page: fixed facts from src/content/exams, plus the latest
+// Kasba stories and last dates about it, added at every build (stories go live several times a day).
+import type { CollectionEntry } from 'astro:content';
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import DeadlineList from './DeadlineList.astro';
+import StoryCard from './StoryCard.astro';
+import { org } from '../lib/site';
+import { dateFmt, t } from '../lib/i18n';
+import { examPath, examStories } from '../lib/exams';
+interface Props { exam: CollectionEntry<'exams'>; altPath?: string }
+const { exam, altPath } = Astro.props;
+const d = exam.data;
+const lang = d.lang;
+const L = t[lang];
+const hi = lang === 'hi';
+const { Content } = await render(exam);
+const { stories, deadlines } = await examStories(exam);
+const latest = stories.slice(0, 12);
+const lastUpdate = [d.updated, ...stories.slice(0, 1).map((s) => s.data.published)].sort((a, b) => b.getTime() - a.getTime())[0];
+const url = new URL(examPath(lang, d.examId), Astro.site).toString();
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'WebPage', name: d.name, description: d.short, url, inLanguage: lang,
+    dateModified: lastUpdate.toISOString(), publisher: org,
+    breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: hi ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides', item: new URL(examPath(lang), Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: d.name, item: url },
+    ] },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang,
+    mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+  ...(latest.length ? [{
+    '@context': 'https://schema.org', '@type': 'ItemList', name: hi ? 'ताज़ा अपडेट' : 'Latest updates',
+    itemListElement: latest.map((s, i) => ({ '@type': 'ListItem', position: i + 1, url: new URL(`${hi ? '' : '/en'}/story/${s.data.storyId}`, Astro.site).toString() })),
+  }] : []),
+];
+---
+<Base lang={lang} title={`${d.name} | Kasba`} description={d.short} altPath={altPath} jsonLd={jsonLd}>
+  <main class="wrap epage">
+    <nav class="crumbs"><a href={examPath(lang)}>{hi ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides'}</a></nav>
+    <h1 class="serif">{d.name}</h1>
+    <p class="lede">{d.short}</p>
+    <p class="muted">{hi ? 'अपडेट' : 'Updated'}: <time datetime={lastUpdate.toISOString()}>{dateFmt(lang, lastUpdate)}</time>. {hi ? 'नई आधिकारिक सूचना आते ही यह पेज अपने-आप अपडेट होता है।' : 'This page updates itself as new official notices arrive.'}</p>
+
+    <section aria-labelledby="latest-h">
+      <h2 id="latest-h" class="serif">{hi ? 'ताज़ा अपडेट' : 'Latest updates'}</h2>
+      {latest.length
+        ? <div class="list">{latest.map((s) => <StoryCard story={s} size="compact" />)}</div>
+        : <p class="muted">{hi ? 'अभी कोई नई सूचना नहीं। आधिकारिक सूचना आते ही यहाँ ख़बर जुड़ जाएगी।' : 'No new notice yet. A story appears here as soon as an official notice comes out.'}</p>}
+    </section>
+
+    {deadlines.length > 0 && (
+      <section aria-labelledby="dates-h">
+        <h2 id="dates-h" class="serif">{hi ? 'आने वाली आख़िरी तारीख़ें' : 'Coming last dates'}</h2>
+        <DeadlineList lang={lang} items={deadlines} calendar />
+      </section>
+    )}
+
+    <section aria-labelledby="about-h">
+      <h2 id="about-h" class="serif">{hi ? 'जानिए' : 'About'}</h2>
+      <div class="serif body"><Content /></div>
+    </section>
+
+    <section aria-labelledby="steps-h">
+      <h2 id="steps-h" class="serif">{hi ? 'कैसे देखें' : 'How to check'}</h2>
+      <ol class="steps">{d.steps.map((s) => <li>{s}</li>)}</ol>
+    </section>
+
+    <section aria-labelledby="links-h">
+      <h2 id="links-h" class="serif">{hi ? 'आधिकारिक वेबसाइट' : 'Official websites'}</h2>
+      <ul class="links">{d.official.map((o) => <li><a href={o.url} rel="noopener">{o.label}</a> <span class="muted">{new URL(o.url).hostname}</span></li>)}</ul>
+      <p class="muted small">{hi ? 'फ़ॉर्म, फ़ीस और रिज़ल्ट केवल आधिकारिक वेबसाइट पर ही देखें। किसी लिंक पर पैसे या OTP माँगे जाएँ तो सावधान रहें।' : 'Fill forms, pay fees and check results only on the official websites. Be careful with any link that asks for money or an OTP.'}</p>
+    </section>
+
+    <section aria-labelledby="faq-h">
+      <h2 id="faq-h" class="serif">{L.faq}</h2>
+      {d.faq.map((f) => <div class="qa"><h3>{f.q}</h3><p>{f.a}</p></div>)}
+    </section>
+  </main>
+</Base>
+<style>
+  .epage { padding-top: 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; max-width: 46rem; }
+  .crumbs a { font-size: 0.875rem; color: var(--accent); }
+  h1 { margin: 0; font-size: 2rem; border-top: 4px solid var(--accent); padding-top: 0.5rem; }
+  h2 { margin: 0 0 0.5rem; font-size: 1.35rem; }
+  .lede { margin: 0; font-size: 1.1rem; font-weight: 600; line-height: 1.6; }
+  .muted { margin: 0; color: var(--muted); }
+  .small { font-size: 0.875rem; margin-top: 0.5rem; }
+  .list { display: grid; gap: 0.5rem; }
+  .body :global(p) { margin: 0 0 0.75rem; line-height: 1.8; }
+  .steps { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.4rem; line-height: 1.7; }
+  .links { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.4rem; }
+  .links a { color: var(--accent); font-weight: 600; }
+  .qa { border-top: 1px solid var(--line); padding: 0.75rem 0; }
+  .qa h3 { margin: 0; font-size: 1.05rem; }
+  .qa p { margin: 0.35rem 0 0; line-height: 1.7; color: var(--text-soft); }
+</style>
