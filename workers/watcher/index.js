@@ -5,13 +5,16 @@
 // publishing stay in the pipeline. Free plan: Workers cron + KV (writes only when a page changes).
 //
 // Secrets (set by .github/workflows/watcher.yml): GITHUB_TOKEN (Actions: write on the repo).
-// GET /status shows the last check of every board.
+// GET /status shows the last check of every board; GET /links/<id> the notices last seen there;
+// GET /page/<id> fetches that board's page now, so the pipeline (on GitHub's servers, which some
+// boards refuse) can read boards that answer Cloudflare.
 
 const BOARDS = [
   // Already Kasba sources: a new item here becomes a story in the run this starts.
-  { id: 'nta', url: 'https://nta.ac.in/NoticeBoardArchive' },
-  { id: 'cbse', url: 'https://www.cbse.gov.in/cbsenew/cbse.html' },
   { id: 'up-board', url: 'https://upmsp.edu.in/' },
+  // NTA and CBSE refuse Cloudflare (530, 403 on 2 Nov 2026); the pipeline's own runs cover them.
+  { id: 'nta', url: 'https://nta.ac.in/NoticeBoardArchive', probeOnly: true },
+  { id: 'cbse', url: 'https://www.cbse.gov.in/cbsenew/cbse.html', probeOnly: true },
   // Not sources yet (they refuse GitHub's servers); watched to learn whether Cloudflare reaches them.
   { id: 'ssc', url: 'https://ssc.gov.in/', probeOnly: true },
   { id: 'upsssc', url: 'https://upsssc.gov.in/', probeOnly: true },
@@ -28,31 +31,39 @@ const URGENT = /result|admit|hall ?ticket|answer ?key|merit|cut ?off|last date|e
 
 const REPO = 'rupeshyadav08/kasba';
 
-// The link texts on a page: what a reader would see as the list of notices.
-function links(html) {
-  const out = new Set();
-  for (const m of html.matchAll(/<a\b[^>]*>([\s\S]*?)<\/a>/gi)) {
-    const text = m[1].replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-    if (text.length >= 12 && text.length <= 300) out.add(text);
+// The links on a page, as a reader would see the list of notices: text plus full address.
+function links(html, base) {
+  const out = new Map();
+  for (const m of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const text = m[2].replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+    if (text.length < 12 || text.length > 300 || out.has(text)) continue;
+    const href = m[1].match(/href\s*=\s*["']([^"']+)["']/i)?.[1];
+    let url = '';
+    try { url = href ? new URL(href.trim(), base).toString() : ''; } catch {}
+    out.set(text, url);
   }
-  return [...out];
+  return [...out].map(([t, h]) => ({ t, h }));
 }
+
+const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; KasbaWatcher/1.0; +https://kasba.co.in/about)', From: 'admin@kasba.co.in' };
 
 async function checkBoard(board, env) {
   const seenKey = `seen:${board.id}`;
   const status = { id: board.id, at: new Date().toISOString() };
   try {
     const res = await fetch(board.url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; KasbaWatcher/1.0; +https://kasba.co.in/about)', From: 'admin@kasba.co.in' },
+      headers: UA,
       cf: { cacheTtl: 0 },
       signal: AbortSignal.timeout(20000),
     });
     status.http = res.status;
     if (!res.ok) return status;
-    const now = links(await res.text());
+    const now = links(await res.text(), board.url);
     status.links = now.length;
     const before = JSON.parse((await env.WATCH.get(seenKey)) ?? 'null');
-    const fresh = before ? now.filter((t) => !before.includes(t)) : [];
+    // Older entries were plain strings; newer ones are {t, h}.
+    const seen = new Set((before ?? []).map((x) => (typeof x === 'string' ? x : x.t)));
+    const fresh = before ? now.filter((x) => !seen.has(x.t)).map((x) => x.t) : [];
     status.fresh = fresh.slice(0, 5);
     status.urgent = fresh.filter((t) => URGENT.test(t)).slice(0, 5);
     // Write only when the page changed, to stay far inside KV's free daily writes.
@@ -85,8 +96,16 @@ export default {
     ctx.waitUntil(run(env));
   },
   async fetch(request, env) {
-    if (new URL(request.url).pathname === '/status') {
-      return new Response((await env.WATCH.get('status')) ?? '{}', { headers: { 'Content-Type': 'application/json' } });
+    const path = new URL(request.url).pathname;
+    const json = { headers: { 'Content-Type': 'application/json; charset=utf-8' } };
+    if (path === '/status') return new Response((await env.WATCH.get('status')) ?? '{}', json);
+    const [, kind, id] = path.split('/');
+    const board = BOARDS.find((b) => b.id === id);
+    if (kind === 'links' && board) return new Response((await env.WATCH.get(`seen:${id}`)) ?? '[]', json);
+    // Only the boards listed above, so this never becomes an open proxy.
+    if (kind === 'page' && board) {
+      const res = await fetch(board.url, { headers: UA, signal: AbortSignal.timeout(25000) });
+      return new Response(res.body, { status: res.status, headers: { 'Content-Type': res.headers.get('Content-Type') ?? 'text/html' } });
     }
     return new Response('Kasba result watcher', { status: 200 });
   },

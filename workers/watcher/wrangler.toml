@@ -4,6 +4,9 @@ main = "index.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
 
+[observability]
+enabled = true
+
 [triggers]
 # Every 30 minutes, 5:30 am to 11:30 pm India time (cron runs in UTC).
 crons = ["*/30 0-17 * * *"]
