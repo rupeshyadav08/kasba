@@ -73,28 +73,61 @@ async function sscFeed() {
       });
     }
   }
-  return items.sort((a, b) => (b.date ?? 0) - (a.date ?? 0));
+  // Lists from one result share their write-up PDF: keep one item per PDF.
+  const seen = new Set();
+  return items.sort((a, b) => (b.date ?? 0) - (a.date ?? 0)).filter((i) => !seen.has(i.link) && seen.add(i.link));
 }
 
-// UPPSC lists open recruitments in a server-made table; each advertisement has its own ID.
+// UPPSC's home page carries a "recruitment dashboard": one line per live advertisement, admit
+// card, district slip or result, each with a full title. Its advertisement pages hold no text, so
+// the item's description is written from the dashboard line plus, for an open recruitment, the
+// dates in the Notifications table; the pipeline drafts from that (feedText in sources.json).
+const hash = (t) => [...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7).toString(36);
+
 async function uppscFeed() {
-  const url = 'https://uppsc.up.nic.in/CandidatePages/Notifications.aspx';
-  const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(20000) });
-  if (!res.ok) throw new Error(`UPPSC: ${res.status}`);
-  const html = await res.text();
-  const items = new Map();
-  for (const [row] of html.matchAll(/<tr[\s>][\s\S]*?<\/tr>/gi)) {
-    const href = row.match(/href\s*=\s*["']([^"']*View_Advertisement\.aspx\?ID=(\d+)[^"']*)["']/i);
-    if (!href || items.has(href[2])) continue;
-    const cells = [...row.matchAll(/<td[\s\S]*?<\/td>/gi)].map(([c]) => strip(c)).filter(Boolean);
-    const d = row.match(/(\d{2})\/(\d{2})\/(20\d{2})/);
-    items.set(href[2], {
-      title: `UPPSC: ${cells.join(' | ')}`.slice(0, 300),
-      link: new URL(href[1].replace(/&amp;/g, '&'), url).toString(),
-      date: d ? new Date(`${d[3]}-${d[2]}-${d[1]}T00:00:00+05:30`) : null,
-    });
+  const base = 'https://uppsc.up.nic.in/';
+  const get = async (u) => {
+    const res = await fetch(u, { headers: UA, signal: AbortSignal.timeout(20000) });
+    if (!res.ok) throw new Error(`UPPSC ${u}: ${res.status}`);
+    return res.text();
+  };
+  const home = await get(base);
+  const dash = home.match(/id=["']?ctl00_MainContent_RecruitmentDash[\s\S]*?<\/marquee>/i)?.[0] ?? '';
+  // Open recruitments, keyed by advertisement number.
+  const ads = new Map();
+  try {
+    const page = await get(`${base}CandidatePages/Notifications.aspx`);
+    for (const [row] of page.matchAll(/<tr[\s>][\s\S]*?<\/tr>/gi)) {
+      const f = {};
+      for (const m of row.matchAll(/<span[^>]*id=["'][^"']*_(Lbl_\w+)["'][^>]*>([\s\S]*?)<\/span>/gi)) f[m[1]] = strip(m[2]);
+      if (f.Lbl_Adv_number) ads.set(f.Lbl_Adv_number.replace(/\s/g, '').toUpperCase(), f);
+    }
+  } catch {}
+  const items = [];
+  for (const m of dash.matchAll(/<span class=['"]content-sect[^'"]*['"]>\s*([^<:]+?)\s*:-\s*<a([^>]*)>([\s\S]*?)<\/a>[\s\S]*?Visible upto\s*:\s*(\d{2}\/\d{2}\/20\d{2})/gi)) {
+    const [, kind, attrs, text, upto] = m;
+    const title = strip(attrs.match(/title=(['"])([\s\S]*?)\1/i)?.[2] ?? text).replace(/^CLICK HERE TO\s+/i, '').replace(/\.\s*$/, '');
+    const href = attrs.match(/href=(?:(['"])([^'"]+)\1|([^\s>]+))/i);
+    const official = new URL((href?.[2] ?? href?.[3] ?? '').replace(/&amp;/g, '&'), base).toString();
+    const lines = [`Uttar Pradesh Public Service Commission (UPPSC), official recruitment dashboard.`, `${kind.trim()}: ${title}.`, `Shown on the UPPSC website until ${upto}.`];
+    const advt = title.match(/ADVT\.?\s*NO\.?\s*-?\s*([A-Z]-\d+\/[A-Z]-\d+\/20\d{2})/i)?.[1]?.toUpperCase();
+    const f = advt && ads.get(advt);
+    let date = null;
+    if (f) {
+      lines.push(
+        `Advertisement ${f.Lbl_Adv_number} dated ${f.Lbl_adv_date}, post: ${f.Lbl_Exam_Name}.`,
+        `Online application: ${f.Lbl_Gazette_Date} to ${f.Lbl_ApplicationFormRegistration_LastDate}.`,
+        `Last date to pay the fee: ${f.Lbl_ApplicationFormFeeDeposition_LastDate}; last date of fee reconciliation: ${f.Lbl_ApplicationFormSubmission_LastDate}.`,
+        `Corrections to a submitted form: ${f.Lbl_ApplicationFormModification_StartDate} to ${f.Lbl_ApplicationFormModification_LastDate}.`,
+        `Official website: https://uppsc.up.nic.in`,
+      );
+      const d = f.Lbl_adv_date?.match(/(\d{2})\/(\d{2})\/(20\d{2})/);
+      if (d) date = new Date(`${d[3]}-${d[2]}-${d[1]}T00:00:00+05:30`);
+    }
+    // Several lines point at the same page, so each gets its own address for "seen".
+    items.push({ title: `UPPSC ${kind.trim()}: ${title}`.slice(0, 300), link: `${official}#${hash(title)}`, date, description: lines.join('\n') });
   }
-  return [...items.values()];
+  return items;
 }
 
 const FEEDS = { ssc: sscFeed, uppsc: uppscFeed };
@@ -105,7 +138,7 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 function rss(id, items) {
   const fresh = items.filter((i) => !i.date || Date.now() - i.date < 14 * DAY).slice(0, 20);
   return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${id}</title>\n${fresh.map((i) =>
-    `<item><title>${esc(i.title)}</title><link>${esc(i.link)}</link>${i.date ? `<pubDate>${i.date.toUTCString()}</pubDate>` : ''}</item>`).join('\n')}\n</channel></rss>`;
+    `<item><title>${esc(i.title)}</title><link>${esc(i.link)}</link>${i.description ? `<description>${esc(i.description)}</description>` : ''}${i.date ? `<pubDate>${i.date.toUTCString()}</pubDate>` : ''}</item>`).join('\n')}\n</channel></rss>`;
 }
 
 // Kasba respects robots.txt, here as in the pipeline.
