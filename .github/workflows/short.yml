@@ -2,9 +2,10 @@ name: Shorts
 
 # Twice a day: makes three ~35-second vertical videos from recent stories (one setup, three
 # renders) and sends each to the editor on Telegram with Post/Skip buttons. Six a day also fits
-# YouTube's default API quota of about six uploads. A Post tap reaches functions/api/telegram.js, which
+# YouTube's default API quota of about six uploads. Videos upload straight away (Rupesh, 2 Nov
+# 2026); repo variable SHORTS_AUTO=false brings back the Post/Skip tap. A Post tap reaches functions/api/telegram.js, which
 # starts this workflow again with `upload` set to the run that made the video; that run's video is
-# then uploaded to YouTube. Repo variable SHORTS_AUTO=true skips the tap and uploads straight away.
+# then uploaded to YouTube.
 on:
   schedule:
     # GitHub delays scheduled runs by hours or drops them, so each slot has a back-up an hour and
@@ -81,7 +82,7 @@ jobs:
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           SHORT_TONE: hinglish
           SHORT_RATE: +5%
-          ASK: ${{ vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
+          ASK: ${{ vars.SHORTS_AUTO == 'false' && github.run_id || '' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - uses: actions/upload-artifact@v4
@@ -102,7 +103,7 @@ jobs:
           git commit -m "[skip ci] Shorts log"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
       - name: Upload to YouTube (no tap needed)
-        if: ${{ vars.SHORTS_AUTO == 'true' }}
+        if: ${{ vars.SHORTS_AUTO != 'false' }}
         run: for d in short/*/; do [ -f "$d/meta.json" ] && SHORT_DIR=$d node scripts/youtube-upload.mjs; done
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
