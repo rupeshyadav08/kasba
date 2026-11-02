@@ -87,9 +87,9 @@
     "id": "uppsc",
     "name": "UPPSC",
     "type": "rss",
-    "lang": "hi",
+    "lang": "en",
     "url": "https://kasba-watcher.rupeshyadavoffical.workers.dev/feed/uppsc",
-    "via": "https://kasba-watcher.rupeshyadavoffical.workers.dev/file/uppsc?u=",
-    "auto": true
+    "auto": true,
+    "feedText": true
   }
 ]
