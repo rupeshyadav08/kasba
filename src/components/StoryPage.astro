@@ -6,6 +6,7 @@ import StoryCard from './StoryCard.astro';
 import { districtBySlug, districtPath, stateByCode, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
 import { org } from '../lib/site';
+import { examPath, examsForStory } from '../lib/exams';
 import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
 const { story, altPath } = Astro.props;
@@ -20,6 +21,8 @@ const text = [d.title, d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].jo
 const terms = (await getCollection('glossary', ({ data }) => data.lang === d.lang))
   .filter((g) => g.data.match.some((w) => text.includes(w.toLowerCase())));
 const glossaryPath = d.lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
+// Always-updated guide pages for the exam or scheme this story is about.
+const guides = await examsForStory(story);
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
 const words = [d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].join(' ').trim().split(/\s+/).length;
 // The state a story is about: stated, or the state of its first district.
@@ -122,6 +125,17 @@ const jsonLd = [
       <h2 id="faq-h" class="serif">{L.faq}</h2>
       {d.faq.map((f) => <div class="qa"><h3>{f.q}</h3><p>{f.a}</p></div>)}
     </section>
+
+    {guides.length > 0 && (
+      <nav class="guides" aria-label={d.lang === 'hi' ? 'पूरी जानकारी' : 'Full guide'}>
+        {guides.map((g) => (
+          <a href={examPath(d.lang, g.data.examId)}>
+            <span class="g-k">{d.lang === 'hi' ? 'पूरी जानकारी, हमेशा अपडेट' : 'Full guide, always updated'}</span>
+            <span class="serif g-n">{g.data.name} →</span>
+          </a>
+        ))}
+      </nav>
+    )}
 
     <AffiliateBox lang={d.lang} category={d.category} />
 
@@ -241,4 +255,9 @@ const jsonLd = [
   .words dd { margin: 0; color: var(--text-soft); font-size: 0.97rem; }
   .source { border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.95rem; color: var(--muted); }
   .source a { color: var(--text); text-decoration: underline; display: inline-block; padding: 0.6rem 0; }
+  .guides { display: grid; gap: 0.5rem; }
+  .guides a { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; min-height: 44px; }
+  .guides a:hover .g-n { text-decoration: underline; }
+  .g-k { font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+  .g-n { font-size: 1.05rem; font-weight: 700; }
 </style>

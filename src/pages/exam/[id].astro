@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import ExamPage from '../../components/ExamPage.astro';
+import { examPath } from '../../lib/exams';
+
+export async function getStaticPaths() {
+  const all = await getCollection('exams');
+  return all.filter((e) => e.data.lang === 'hi').map((exam) => {
+    const twin = all.find((o) => o.data.examId === exam.data.examId && o.data.lang !== 'hi');
+    return { params: { id: exam.data.examId }, props: { exam, altPath: twin ? examPath(twin.data.lang, twin.data.examId) : undefined } };
+  });
+}
+const { exam, altPath } = Astro.props;
+---
+<ExamPage exam={exam} altPath={altPath} />

@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/i18n';
+import { examPath, examStories } from '../lib/exams';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const hi = lang === 'hi';
+const exams = (await getCollection('exams', ({ data }) => data.lang === lang)).sort((a, b) => a.data.order - b.data.order);
+const counts = await Promise.all(exams.map(async (e) => (await examStories(e)).stories.length));
+const title = hi ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides';
+const description = hi
+  ? 'बड़ी भर्ती परीक्षाओं, बोर्ड रिज़ल्ट और सरकारी योजनाओं के हमेशा अपडेट रहने वाले पेज: ताज़ा सूचना, आख़िरी तारीख़ें, आधिकारिक लिंक।'
+  : 'Always-updated pages for big recruitment exams, board results and government schemes: latest notices, last dates, official links.';
+---
+<Base lang={lang} title={`${title} | Kasba`} description={description} altPath={examPath(hi ? 'en' : 'hi')}>
+  <main class="wrap xpage">
+    <h1 class="serif">{title}</h1>
+    <p class="muted">{description}</p>
+    <ul>
+      {exams.map((e, i) => (
+        <li>
+          <a href={examPath(lang, e.data.examId)}>
+            <span class="serif name">{e.data.name}</span>
+            <span class="short">{e.data.short}</span>
+            {counts[i] > 0 && <span class="count">{hi ? `${counts[i]} अपडेट` : `${counts[i]} updates`}</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</Base>
+<style>
+  .xpage { padding-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; max-width: 46rem; }
+  h1 { margin: 0; font-size: 2rem; border-top: 4px solid var(--accent); padding-top: 0.5rem; }
+  .muted { margin: 0; color: var(--muted); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+  li a { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.9rem 0; border-top: 1px solid var(--line); min-height: 44px; }
+  .name { font-size: 1.3rem; font-weight: 700; }
+  li a:hover .name { text-decoration: underline; }
+  .short { color: var(--text-soft); line-height: 1.6; }
+  .count { font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+</style>
