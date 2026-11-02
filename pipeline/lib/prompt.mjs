@@ -40,6 +40,7 @@ Otherwise return this JSON object and nothing else:
   "storyType": "record" for a court judgment or order or another official record of a dispute, otherwise "notice",
   "sensitive": true if the story touches crime, accidents or deaths, courts or police, elections, politics or a party or politician, religion or caste, protests or unrest, a disease outbreak or health scare, an allegation against anyone, or anything else an editor should check before it goes live; false only for routine notices such as scheme rules, exam dates, results, deadlines, rates and weather. When unsure, true,
   "category": one of ${JSON.stringify(categories)},
+  "imageQuery": 2-4 plain English words for a stock photo that sets the scene without showing any real person or the event itself, e.g. "students writing exam", "farmer wheat field", "railway station platform", "bank passbook",
   "state": "up" (Uttar Pradesh), "bihar", "mp" (Madhya Pradesh) or "delhi" if the notice is specifically about that state, else null,
   "districts": district slugs from this list only if the notice names those districts of that state, else []: ${districtSlugs.join(', ')},
   "deadline": {"date": "YYYY-MM-DD", "label_hi": "...", "label_en": "..."} only if the notice states a last date readers must act by, else null. Copy the date exactly as written. If the notice only says "today is the last date" or "N days are left", work it out from the notice's own date,

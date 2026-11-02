@@ -28,6 +28,8 @@ const stories = defineCollection({
     // A state code (up, bihar, mp, delhi); districts use the slugs in src/lib/places.ts.
     state: z.enum(stateCodes).optional(),
     districts: z.array(z.enum(districtSlugs as [string, ...string[]])).default([]),
+    // Representative stock photo (Pixabay) for Discover and social cards; see pipeline/lib/image.mjs.
+    image: z.object({ src: z.string(), credit: z.string() }).optional(),
     author: z.string(),
     published: z.coerce.date(),
     updated: z.coerce.date().optional(),

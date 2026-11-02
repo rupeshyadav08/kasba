@@ -60,6 +60,7 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -71,7 +72,7 @@ jobs:
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
-          git add -A pipeline/state.json pipeline/drafts pipeline/inbox src/content/stories
+          git add -A pipeline/state.json pipeline/drafts pipeline/inbox src/content/stories public/img/s
           git diff --cached --quiet && exit 0
           if [ "${{ steps.pipeline.outputs.deploy }}" = "true" ]; then
             git commit -m "Put ${{ steps.pipeline.outputs.live }} stories live"
