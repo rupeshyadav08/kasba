@@ -75,6 +75,24 @@
     "linkPattern": "sci\\.gov\\.in/press-release-.+"
   },
   {
+    "id": "ssc",
+    "name": "SSC (Staff Selection Commission)",
+    "type": "rss",
+    "lang": "en",
+    "url": "https://kasba-watcher.rupeshyadavoffical.workers.dev/feed/ssc",
+    "via": "https://kasba-watcher.rupeshyadavoffical.workers.dev/file/ssc?u=",
+    "auto": true
+  },
+  {
+    "id": "uppsc",
+    "name": "UPPSC",
+    "type": "rss",
+    "lang": "en",
+    "url": "https://kasba-watcher.rupeshyadavoffical.workers.dev/feed/uppsc",
+    "auto": true,
+    "feedText": true
+  },
+  {
     "id": "bpsc",
     "name": "BPSC (Bihar Public Service Commission)",
     "type": "page",

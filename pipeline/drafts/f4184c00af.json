@@ -1,0 +1,94 @@
+{
+  "id": "f4184c00af",
+  "createdAt": "2026-11-02T18:13:55.094Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "CBSE",
+    "title": "Correction of LOC data 2026-27 - reg.",
+    "link": "https://www.cbse.gov.in/cbsenew/documents/LOC_Correction_2026_27_02112026.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "school students documents form",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Correction of LOC data 2026-27 - reg.",
+    "sourceDate": "2026-11-02",
+    "hi": {
+      "title": "CBSE Class 10, 12: LOC डेटा में सुधार का मौका, जानें क्या करना है",
+      "summary": "CBSE ने Class X और XII के LOC डेटा में सुधार के लिए स्कूलों को एक correction window दी है। इसका असर उन छात्रों पर है जिनके नाम, जन्मतिथि या विषय में गलती है।",
+      "meaning": "अगर आपके बच्चे Class 10 या 12 में CBSE से पढ़ रहे हैं, तो स्कूल से LOC की जानकारी जाँच लें। नाम, जन्मतिथि, माता-पिता का नाम और विषय ठीक से भरे हैं या नहीं, यह स्कूल से पूछें। सुधार की यह आख़िरी बताई गई छूट है, इसके बाद बदलाव नहीं होगा।",
+      "keyFacts": [
+        "CBSE ने Class X और XII, 2026-27 के LOC डेटा में सुधार के लिए स्कूलों को मौका दिया है।",
+        "सुधार नाम, माता-पिता/अभिभावक का नाम, जन्मतिथि और चुने गए विषय में हो सकता है।",
+        "सुधार की अवधि के बाद Class X और XII में कोई बदलाव नहीं किया जाएगा।",
+        "जन्मतिथि सही हो और पासपोर्ट हो तो उसमें दी जानकारी से मिलान कर लें।",
+        "LOC डेटा सही रखने की ज़िम्मेदारी अभिभावकों की बताई गई है।"
+      ],
+      "faq": [
+        {
+          "q": "CBSE LOC डेटा में सुधार कब तक हो सकता है?",
+          "a": "सुधार के लिए CBSE ने एक तय शेड्यूल दिया है, जो स्कूलों को भेजा गया है। सही तारीख़ के लिए अपने स्कूल से संपर्क करें, क्योंकि इसके बाद कोई बदलाव नहीं होगा।"
+        },
+        {
+          "q": "LOC में किन बातों का सुधार हो सकता है?",
+          "a": "नाम, माता/पिता/अभिभावक का नाम, जन्मतिथि और चुने गए विषय में गलती हो तो सुधार हो सकता है। स्कूल या छात्र को गलती मिलने पर यह सुधार किया जा सकता है।"
+        },
+        {
+          "q": "LOC डेटा कौन भरता है?",
+          "a": "LOC डेटा स्कूल भरते हैं। CBSE ने स्कूलों से कहा है कि वे इस सर्कुलर की जानकारी छात्रों और अभिभावकों तक पहुँचाएँ।"
+        },
+        {
+          "q": "क्या सुधार के बाद फिर बदलाव हो सकेगा?",
+          "a": "नहीं। CBSE ने साफ़ कहा है कि सुधार की अवधि के बाद Class X और XII में कोई बदलाव नहीं किया जाएगा।"
+        },
+        {
+          "q": "अभिभावकों को क्या ध्यान रखना चाहिए?",
+          "a": "अपने बच्चे का नाम पूरा (छोटा नाम नहीं), जन्मतिथि, माता-पिता का नाम और विषय ठीक से जाँचें। पासपोर्ट हो तो उसमें दी जानकारी से मिलान करें।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nCBSE ने Class X और XII, 2026-27 के List of Candidates (LOC) डेटा में सुधार के लिए स्कूलों को एक correction window दी है। यह उस पहले LOC नोटिस और उसके बाद भेजे गए reminders की अगली कड़ी है, जिनमें स्कूलों से सही डेटा भरने को कहा गया था।\n\nबोर्ड ने पहले बताया था कि LOC जमा करने की आख़िरी तारीख़ के बाद स्कूल हर छात्र के लिए एक data verification slip बनाएँगे। अगर इसमें छात्र की जानकारी गलत मिले, तो सुधार की इस अवधि में उसे ठीक किया जा सकता है।\n\n## किसे फ़ायदा होगा\n\nइसका सीधा फ़ायदा उन छात्रों को है जिनके LOC में नाम, माता/पिता/अभिभावक का नाम, जन्मतिथि या चुना गया विषय गलत भरा गया है। स्कूल या छात्र को गलती दिखे तो सुधार की अवधि में उसे ठीक कराया जा सकता है।\n\nCBSE ने कहा है कि इससे परीक्षा का काम सुचारु रूप से चलाने में मदद मिलेगी। बोर्ड ने यह भी साफ़ किया है कि सुधार की अवधि के बाद Class X और XII में कोई बदलाव नहीं किया जाएगा।\n\n## अभिभावकों से क्या कहा गया है\n\nCBSE ने अभिभावकों से कहा है कि वे जाँच लें कि उनके बच्चे का नाम, जन्मतिथि, माता का नाम और पिता का नाम LOC में सही भरा है या नहीं। नाम छोटा नहीं, पूरा (expanded form) भरा होना चाहिए, क्योंकि आगे कई जगहों पर पूरे नाम वाले दस्तावेज़ माँगे जाते हैं।\n\nअगर बच्चा आगे विदेश जाने की सोच रहा है तो surname भरा होना चाहिए, क्योंकि कई देशों में यह ज़रूरी होता है। जन्मतिथि हर तरह से सही हो और अगर बच्चे का पासपोर्ट बना है तो उसमें दी जानकारी से मिलान कर लिया जाए। दोनों कक्षाओं के LOC में विषय ध्यान से भरे जाएँ, क्योंकि सुधार की अवधि के बाद विषय में बदलाव नहीं होगा। बोर्ड ने कहा है कि LOC में भरी गई जानकारी सही होने की ज़िम्मेदारी अभिभावकों की है।\n\n## अब क्या करें\n\nस्कूलों से कहा गया है कि वे इस सर्कुलर की जानकारी सभी संबंधित छात्रों और अभिभावकों तक पहुँचाएँ और सुधार तय शेड्यूल के अनुसार ही जमा करें। सुधार की तारीख़ें और आगे की जानकारी के लिए अपने स्कूल से संपर्क करें या CBSE की वेबसाइट www.cbse.gov.in देखें।"
+    },
+    "en": {
+      "title": "CBSE Class 10, 12: LOC data correction window open for schools",
+      "summary": "CBSE has given schools a correction window to fix errors in the LOC data for Classes X and XII, 2026-27. It affects students whose name, date of birth or subjects are wrongly entered.",
+      "meaning": "If your child studies in Class 10 or 12 under CBSE, check the LOC details with the school. Ask whether the name, date of birth, parents' names and subjects are entered correctly. This is the correction chance CBSE has announced, and no change will be allowed after it.",
+      "keyFacts": [
+        "CBSE has given schools a chance to correct LOC data for Classes X and XII, 2026-27.",
+        "Corrections can be made to name, parent/guardian name, date of birth and subjects offered.",
+        "After the correction schedule, no change will be made in Classes X and XII.",
+        "Parents should check the date of birth and match details with the passport, if one has been issued.",
+        "CBSE says it is the parents' responsibility that the LOC data is correct."
+      ],
+      "faq": [
+        {
+          "q": "When can CBSE LOC data be corrected?",
+          "a": "CBSE has given a fixed schedule for corrections, which has been sent to schools. Ask your school for the exact dates, because no change will be allowed after that."
+        },
+        {
+          "q": "What can be corrected in the LOC?",
+          "a": "Errors in name, father/mother/guardian name, date of birth or subjects offered can be corrected. The school or candidate can get this done if a mistake is found."
+        },
+        {
+          "q": "Who fills the LOC data?",
+          "a": "Schools fill the LOC data. CBSE has asked schools to bring this circular to the notice of all students and parents."
+        },
+        {
+          "q": "Can changes be made after the correction window?",
+          "a": "No. CBSE has clearly said that no correction will be made in Classes X and XII after the correction schedule."
+        },
+        {
+          "q": "What should parents check?",
+          "a": "Check that the child's full name (not a short form), date of birth, parents' names and subjects are correct. If a passport exists, match the details with it."
+        }
+      ],
+      "body": "## What has happened\n\nCBSE has given schools a correction window to fix errors in the List of Candidates (LOC) data for Classes X and XII, 2026-27. This follows the earlier LOC notification and the reminders sent after it, in which schools were asked to submit accurate data.\n\nThe board had said earlier that after the last date for LOC submission, schools would generate a data verification slip for each candidate. If the school or candidate finds any detail wrong, it can be corrected during this correction schedule.\n\n## Who benefits\n\nThis directly helps students whose LOC has a wrong name, father/mother/guardian name, date of birth or subject offered. If the school or student spots a mistake, it can be fixed during the correction window.\n\nCBSE said this will also help in the smooth conduct of examinations. The board made clear that after the correction schedule, no change will be made in Classes X and XII.\n\n## What parents are asked to do\n\nCBSE has asked parents to check whether their child's name, date of birth, mother's name and father's name are correctly filled in the LOC. Names should be in expanded form, not short names, because documents in extended form are required at many places later.\n\nIf the child plans to go abroad, the surname should be given, as several countries require it. The date of birth should be correct in all respects, and if a passport has been issued, the details should be checked against it. Subjects should be filled with care in the LOC of both classes, as no change will be accepted after the correction schedule. The board said it is the parents' responsibility that the data submitted in the LOC is correct.\n\n## What to do now\n\nSchools have been asked to bring this circular to the notice of all concerned students and parents and to submit corrections strictly as per the schedule. For the correction dates and further details, contact your school or check the CBSE website, www.cbse.gov.in."
+    }
+  }
+}

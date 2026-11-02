@@ -1,0 +1,86 @@
+{
+  "id": "2376d41e2c",
+  "createdAt": "2026-11-02T18:12:12.671Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Appeal No. 7130 of 2026 filed by Mohammad Akbar",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/appeal-no-7130-of-2026-filed-by-mohammad-akbar_105554.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "court papers desk",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Appeal No. 7130 of 2026 filed by Mohammad Akbar",
+    "sourceDate": "2026-11-02",
+    "hi": {
+      "title": "PACL रिफंड: SEBI की अपीलीय अधिकारी ने RTI अपील खारिज की, Lodha Committee से संपर्क की सलाह",
+      "summary": "SEBI की अपीलीय अधिकारी रुचि चोजर ने 2 नवंबर 2026 को मोहम्मद अकबर की RTI अपील खारिज कर दी। यह अपील PACL निवेशक के उस सवाल से जुड़ी थी कि claim form में गलती से 'Land allotted' में Yes भरने पर सुधार हो सकता है या नहीं।",
+      "meaning": "यह आदेश उन PACL निवेशकों के लिए है जिनका claim form किसी गलती की वजह से आगे नहीं बढ़ पाया। आदेश कहता है कि ऐसे मामलों की जानकारी SEBI के पास नहीं है और रिफंड से जुड़ी सारी बातचीत Justice (Retd.) R.M. Lodha Committee देखती है। अगर आपका claim भी अटका है तो आपको उसी Committee से संपर्क करना चाहिए। SEBI की वेबसाइट पर PACL से जुड़े Public Notice, Press Release, Status Report और FAQ देखे जा सकते हैं।",
+      "keyFacts": [
+        "अपील संख्या 7130 of 2026, अपीलकर्ता मोहम्मद अकबर।",
+        "अपीलकर्ता ने 2 सितंबर 2026 को RTI आवेदन दिया था।",
+        "SEBI ने 22 सितंबर 2026 को जवाब दिया; अपील 8 अक्टूबर 2026 को दर्ज हुई।",
+        "आदेश की तारीख 2 नवंबर 2026 है और अपील खारिज की गई।",
+        "PACL मामले में संपत्ति बेचने और निवेशकों को पैसा लौटाने की जिम्मेदारी Justice (Retd.) R.M. Lodha Committee के पास है।"
+      ],
+      "faq": [
+        {
+          "q": "PACL का रिफंड कौन देखता है?",
+          "a": "Justice (Retd.) R.M. Lodha Committee। आदेश के अनुसार PACL की संपत्ति बेचने और निवेशकों को पैसा लौटाने की जिम्मेदारी इसी Committee के पास है।"
+        },
+        {
+          "q": "क्या SEBI मेरे PACL claim form में 'Land allotted' वाली गलती सुधार सकता है?",
+          "a": "आदेश के अनुसार इस तरह की जानकारी SEBI के पास नहीं है। SEBI ने कहा कि रिफंड से जुड़ी सारी बातचीत Lodha Committee देखती है, इसलिए उसी से संपर्क करें।"
+        },
+        {
+          "q": "PACL से जुड़ी जानकारी कहां मिलेगी?",
+          "a": "SEBI की वेबसाइट पर। आदेश में कहा गया है कि PACL मामले के Public Notice, Press Release, Status Report और FAQ वहां उपलब्ध हैं।"
+        },
+        {
+          "q": "क्या इस अपील से मोहम्मद अकबर का claim दोबारा शुरू होगा?",
+          "a": "आदेश में ऐसा कुछ नहीं कहा गया। अपीलीय अधिकारी ने SEBI के जवाब में कोई कमी नहीं पाई और अपील खारिज कर दी।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nSEBI की अपीलीय अधिकारी रुचि चोजर ने 2 नवंबर 2026 को मोहम्मद अकबर की RTI अपील खारिज कर दी। यह अपील PACL Limited के एक निवेशक ने दायर की थी। आदेश के अनुसार अपीलकर्ता ने 2 सितंबर 2026 को RTI आवेदन दिया था और SEBI ने 22 सितंबर 2026 को उसका जवाब दिया। इसके बाद 8 अक्टूबर 2026 को अपील दर्ज हुई।\n\n## निवेशक का सवाल क्या था\n\nआदेश के अनुसार अपीलकर्ता ने बताया कि उसका PACL claim आगे नहीं बढ़ पाया क्योंकि claim form में 'Land allotted' वाले कॉलम में गलती से Yes भर गया था। उसने कहा कि उसे PACL से कोई ज़मीन नहीं मिली। उसने पूछा कि क्या इस गलती को Yes से No में सुधारा जा सकता है, अगर हां तो क्या तरीका है, और क्या सुधार के बाद उसका claim दोबारा शुरू हो सकता है। उसने यह भी पूछा कि इस तरह के सुधार के लिए कोई नियम, सर्कुलर या आदेश है या नहीं।\n\n## SEBI ने क्या जवाब दिया\n\nआदेश के अनुसार SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है। SEBI ने बताया कि रिफंड की स्थिति से जुड़ी सारी बातचीत Justice (Retd.) R.M. Lodha Committee देखती है और अपीलकर्ता को उसी Committee से संपर्क करना चाहिए। SEBI ने यह भी बताया कि PACL मामले के Public Notice, Press Release, Status Report और FAQ उसकी वेबसाइट पर उपलब्ध हैं।\n\n## अपीलीय अधिकारी ने क्या कहा\n\nअपीलीय अधिकारी ने आदेश में लिखा कि SEBI ने साफ कहा है कि यह जानकारी उसके पास नहीं है। उन्होंने Central Information Commission के 8 जुलाई 2013 के एक फैसले का हवाला दिया, जिसमें कहा गया था कि अगर जानकारी किसी के पास नहीं है तो वह बनाई नहीं जा सकती। इस आधार पर उन्हें SEBI के जवाब में कोई कमी नहीं मिली।\n\n## Lodha Committee क्या है\n\nआदेश के अनुसार यह Committee सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी। इसके अध्यक्ष भारत के पूर्व मुख्य न्यायाधीश आर.एम. लोधा हैं। Committee के पास PACL की संपत्ति बेचने और निवेशकों को पैसा लौटाने की जिम्मेदारी है।\n\n## अब क्या करें\n\nअगर आपका PACL claim भी किसी गलती की वजह से अटका है तो आदेश के अनुसार आपको Lodha Committee से संपर्क करना चाहिए। ताज़ा जानकारी के लिए SEBI की वेबसाइट पर PACL से जुड़े Public Notice, Press Release, Status Report और FAQ देख सकते हैं।"
+    },
+    "en": {
+      "title": "PACL refund: SEBI appellate authority dismisses RTI appeal, directs investor to Lodha Committee",
+      "summary": "SEBI's appellate authority Ruchi Chojer dismissed Mohammad Akbar's RTI appeal on 2 November 2026. The appeal concerned whether a PACL investor can correct a mistakenly filled 'Land allotted' field in his claim form.",
+      "meaning": "This order matters to PACL investors whose claims got stuck because of a mistake in the claim form. It says SEBI does not hold this information and that all refund-related communication is handled by the Justice (Retd.) R.M. Lodha Committee. If your claim is stuck, the order directs you to that Committee. PACL public notices, press releases, status reports and FAQs are available on SEBI's website.",
+      "keyFacts": [
+        "Appeal No. 7130 of 2026, filed by Mohammad Akbar.",
+        "The RTI application was dated 2 September 2026.",
+        "SEBI replied on 22 September 2026; the appeal was filed on 8 October 2026.",
+        "The order is dated 2 November 2026 and the appeal was dismissed.",
+        "Disposal of PACL properties and repayment to investors is with the Justice (Retd.) R.M. Lodha Committee."
+      ],
+      "faq": [
+        {
+          "q": "Who handles PACL refunds?",
+          "a": "The Justice (Retd.) R.M. Lodha Committee. According to the order, this Committee is responsible for disposing of PACL's properties and repaying investors."
+        },
+        {
+          "q": "Can SEBI correct the 'Land allotted' mistake in my PACL claim form?",
+          "a": "According to the order, SEBI does not have this information. SEBI said all refund-related communication is handled by the Lodha Committee, so investors should approach it."
+        },
+        {
+          "q": "Where can I find information about the PACL matter?",
+          "a": "On SEBI's website. The order notes that PACL public notices, press releases, status reports and FAQs are available there."
+        },
+        {
+          "q": "Will this appeal restart Mohammad Akbar's claim?",
+          "a": "The order does not say so. The appellate authority found no deficiency in SEBI's reply and dismissed the appeal."
+        }
+      ],
+      "body": "## What happened\n\nSEBI's appellate authority under the RTI Act, Ruchi Chojer, dismissed an appeal filed by Mohammad Akbar on 2 November 2026. The appeal was filed by an investor in PACL Limited. According to the order, the RTI application was dated 2 September 2026 and SEBI replied on 22 September 2026. The appeal was then filed on 8 October 2026.\n\n## What the investor asked\n\nAccording to the order, the appellant said his PACL claim could not be processed because the 'Land allotted' field in his claim form was filled as Yes by mistake. He said he had not been allotted any land by PACL. He asked whether this field can be corrected from Yes to No, what the procedure is if correction is allowed, and whether his claim can be reopened or reprocessed after correction. He also asked for the rule, circular, guideline or order under which such correction is permitted or not permitted.\n\n## What SEBI replied\n\nAccording to the order, SEBI said the information sought is not available with it. SEBI said all communication regarding refund status is handled by the Justice (Retd.) R.M. Lodha Committee and advised the appellant to approach that Committee. SEBI also said that PACL public notices, press releases, status reports and FAQs are available on its website.\n\n## What the appellate authority said\n\nThe appellate authority noted that SEBI had clearly stated the information is not available with it. She referred to a Central Information Commission decision of 8 July 2013, which held that if an authority does not have the information, it cannot invent it. On this basis, she found no deficiency in SEBI's response.\n\n## What the Lodha Committee is\n\nAccording to the order, the Committee was constituted pursuant to a Supreme Court order dated 2 February 2016. It is chaired by Justice R.M. Lodha, former Chief Justice of India. The Committee is entrusted with the disposal of PACL's properties and repayment to investors.\n\n## What investors can do\n\nIf your PACL claim is stuck because of a mistake in the form, the order directs you to the Lodha Committee. For updates, you can check PACL public notices, press releases, status reports and FAQs on SEBI's website."
+    }
+  }
+}

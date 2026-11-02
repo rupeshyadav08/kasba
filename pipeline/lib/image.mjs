@@ -3,7 +3,6 @@
 // scene words, so the page labels it "सांकेतिक तस्वीर" (representative image): it sets the scene
 // and never claims to show the event or a real person. Saved as public/img/s/<storyId>.webp.
 import { mkdirSync } from 'node:fs';
-import sharp from 'sharp';
 
 const root = new URL('../../', import.meta.url);
 const topics = {
@@ -15,6 +14,9 @@ const topics = {
 export async function storyImage(draft, storyId) {
   const key = process.env.PIXABAY_API_KEY;
   if (!key) return null;
+  // Loaded here, not at the top, so a missing sharp only costs the picture, never the whole run.
+  let sharp;
+  try { sharp = (await import('sharp')).default; } catch { return null; }
   const queries = [draft.story.imageQuery, topics[draft.story.category]].filter(Boolean);
   for (const q of queries) {
     const url = `https://pixabay.com/api/?key=${key}&q=${encodeURIComponent(q)}&image_type=photo&orientation=horizontal`

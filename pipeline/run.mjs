@@ -144,7 +144,7 @@ async function newItems() {
       const body = await get(src.url);
       const feed = src.type === 'page' ? parsePage(body, src.url, src.linkPattern) : parseRss(body);
       if (feed.some((it) => state.seen[it.link])) knownSources.add(src.id);
-      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind });
+      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind, via: src.via, feedText: src.feedText });
     } catch (e) {
       summary.errors.push(`${src.id}: ${e.message}`);
     }
@@ -199,8 +199,10 @@ async function draftNew() {
     try {
       let text = it.description;
       let ocr = false;
-      try {
-        const notice = await noticeText(it.link);
+      // feedText: the feed's description is the notice (UPPSC's notice pages hold no text).
+      if (!it.feedText) try {
+        // Boards that refuse GitHub's servers are read through the Kasba watcher (src.via).
+        const notice = await noticeText(it.via ? `${it.via}${encodeURIComponent(it.link)}` : it.link);
         // RBI answers foreign servers with a CAPTCHA page; the feed's own description is then the better text.
         if (!/captcha/i.test(notice.text) || notice.text.length > 5 * text.length) ({ text, ocr } = notice);
         text = text.slice(0, 12000);
