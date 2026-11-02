@@ -140,7 +140,7 @@ async function newItems() {
     try {
       const body = await get(src.url);
       const feed = src.type === 'page' ? parsePage(body, src.url, src.linkPattern) : parseRss(body);
-      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind });
+      for (const it of feed) if (!state.seen[it.link]) items.push({ ...it, name: src.name, sourceId: src.id, lang: src.lang, kind: src.kind, via: src.via });
     } catch (e) {
       summary.errors.push(`${src.id}: ${e.message}`);
     }
@@ -191,7 +191,8 @@ async function draftNew() {
       let text = it.description;
       let ocr = false;
       try {
-        const notice = await noticeText(it.link);
+        // Boards that refuse GitHub's servers are read through the Kasba watcher (src.via).
+        const notice = await noticeText(it.via ? `${it.via}${encodeURIComponent(it.link)}` : it.link);
         // RBI answers foreign servers with a CAPTCHA page; the feed's own description is then the better text.
         if (!/captcha/i.test(notice.text) || notice.text.length > 5 * text.length) ({ text, ocr } = notice);
         text = text.slice(0, 12000);

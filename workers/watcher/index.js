@@ -6,8 +6,10 @@
 //
 // Secrets (set by .github/workflows/watcher.yml): GITHUB_TOKEN (Actions: write on the repo).
 // GET /status shows the last check of every board; GET /links/<id> the notices last seen there;
-// GET /page/<id> fetches that board's page now, so the pipeline (on GitHub's servers, which some
-// boards refuse) can read boards that answer Cloudflare.
+// GET /page/<id> fetches that board's page now. GET /feed/<id> is an RSS feed of a board's latest
+// notices (SSC from its data feed, UPPSC from its advertisement table) and GET /file/<id>?u=<url>
+// fetches one notice from that board, so the pipeline (on GitHub's servers, which these boards
+// refuse) can turn them into stories. Only listed boards' own addresses are ever fetched.
 
 const BOARDS = [
   // Already Kasba sources: a new item here becomes a story in the run this starts.
@@ -16,9 +18,11 @@ const BOARDS = [
   { id: 'nta', url: 'https://nta.ac.in/NoticeBoardArchive', probeOnly: true },
   { id: 'cbse', url: 'https://www.cbse.gov.in/cbsenew/cbse.html', probeOnly: true },
   // Not sources yet (they refuse GitHub's servers); watched to learn whether Cloudflare reaches them.
-  { id: 'ssc', url: 'https://ssc.gov.in/', probeOnly: true },
+  // Sources through /feed: their notices are read from the feed, not the page's links.
+  { id: 'ssc', url: 'https://ssc.gov.in/', feed: true },
+  { id: 'uppsc', url: 'https://uppsc.up.nic.in/', feed: true },
+  // Not sources (they refuse GitHub's servers and Cloudflare); watched to see if that changes.
   { id: 'upsssc', url: 'https://upsssc.gov.in/', probeOnly: true },
-  { id: 'uppsc', url: 'https://uppsc.up.nic.in/', probeOnly: true },
   { id: 'ibps', url: 'https://www.ibps.in/', probeOnly: true },
   { id: 'bpsc', url: 'https://bpsc.bihar.gov.in/', probeOnly: true },
   { id: 'mppsc', url: 'https://mppsc.mp.gov.in/', probeOnly: true },
@@ -47,18 +51,99 @@ function links(html, base) {
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; KasbaWatcher/1.0; +https://kasba.co.in/about)', From: 'admin@kasba.co.in' };
 
+const strip = (h) => h.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+const DAY = 86400e3;
+
+// SSC's site is an app that loads its notices from a JSON API; notices and results are two lists.
+async function sscFeed() {
+  const api = 'https://ssc.gov.in/api/general-website/portal';
+  const q = 'page=1&limit=15&key=createdAt&order=DESC&isPaginationRequired=false&isAttachment=true&language=english'
+    + '&attributes=id,headline,examId,contentType,startDate,endDate,language,createdAt';
+  const items = [];
+  for (const [path, type] of [['notice-boards', 'notice-boards'], ['records', 'results']]) {
+    const res = await fetch(`${api}/${path}?${q}&contentType=${type}`, { headers: { ...UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
+    if (!res.ok) throw new Error(`SSC ${type}: ${res.status}`);
+    for (const n of (await res.json()).data ?? []) {
+      const file = n.attachments?.[0]?.path;
+      if (!n.headline || !file) continue;
+      items.push({
+        title: strip(n.headline).slice(0, 300),
+        link: `https://ssc.gov.in/api/attachment/${file.replace(/\\/g, '/').replace(/^\/+/, '')}`,
+        date: n.createdAt ? new Date(n.createdAt) : null,
+      });
+    }
+  }
+  return items.sort((a, b) => (b.date ?? 0) - (a.date ?? 0));
+}
+
+// UPPSC lists open recruitments in a server-made table; each advertisement has its own ID.
+async function uppscFeed() {
+  const url = 'https://uppsc.up.nic.in/CandidatePages/Notifications.aspx';
+  const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(20000) });
+  if (!res.ok) throw new Error(`UPPSC: ${res.status}`);
+  const html = await res.text();
+  const items = new Map();
+  for (const [row] of html.matchAll(/<tr[\s>][\s\S]*?<\/tr>/gi)) {
+    const href = row.match(/href\s*=\s*["']([^"']*View_Advertisement\.aspx\?ID=(\d+)[^"']*)["']/i);
+    if (!href || items.has(href[2])) continue;
+    const cells = [...row.matchAll(/<td[\s\S]*?<\/td>/gi)].map(([c]) => strip(c)).filter(Boolean);
+    const d = row.match(/(\d{2})\/(\d{2})\/(20\d{2})/);
+    items.set(href[2], {
+      title: `UPPSC: ${cells.join(' | ')}`.slice(0, 300),
+      link: new URL(href[1].replace(/&amp;/g, '&'), url).toString(),
+      date: d ? new Date(`${d[3]}-${d[2]}-${d[1]}T00:00:00+05:30`) : null,
+    });
+  }
+  return [...items.values()];
+}
+
+const FEEDS = { ssc: sscFeed, uppsc: uppscFeed };
+
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+// Only fresh notices go out, so a new source does not hand the pipeline its whole archive.
+function rss(id, items) {
+  const fresh = items.filter((i) => !i.date || Date.now() - i.date < 14 * DAY).slice(0, 20);
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>${id}</title>\n${fresh.map((i) =>
+    `<item><title>${esc(i.title)}</title><link>${esc(i.link)}</link>${i.date ? `<pubDate>${i.date.toUTCString()}</pubDate>` : ''}</item>`).join('\n')}\n</channel></rss>`;
+}
+
+// Kasba respects robots.txt, here as in the pipeline.
+async function robotsAllow(url) {
+  const { origin, pathname } = new URL(url);
+  try {
+    const res = await fetch(`${origin}/robots.txt`, { headers: UA, signal: AbortSignal.timeout(10000) });
+    if (!res.ok) return true;
+    let applies = false;
+    for (const line of (await res.text()).split(/\r?\n/)) {
+      const [k, ...rest] = line.split(':');
+      const key = k.trim().toLowerCase();
+      const val = rest.join(':').trim();
+      if (key === 'user-agent') applies = val === '*' || /kasba/i.test(val);
+      else if (applies && key === 'disallow' && val && pathname.startsWith(val.replace(/\*.*$/, ''))) return false;
+    }
+  } catch {}
+  return true;
+}
+
 async function checkBoard(board, env) {
   const seenKey = `seen:${board.id}`;
   const status = { id: board.id, at: new Date().toISOString() };
   try {
-    const res = await fetch(board.url, {
-      headers: UA,
-      cf: { cacheTtl: 0 },
-      signal: AbortSignal.timeout(20000),
-    });
-    status.http = res.status;
-    if (!res.ok) return status;
-    const now = links(await res.text(), board.url);
+    let now;
+    if (board.feed) {
+      now = (await FEEDS[board.id]()).map((i) => ({ t: i.title, h: i.link }));
+      status.http = 200;
+    } else {
+      const res = await fetch(board.url, {
+        headers: UA,
+        cf: { cacheTtl: 0 },
+        signal: AbortSignal.timeout(20000),
+      });
+      status.http = res.status;
+      if (!res.ok) return status;
+      now = links(await res.text(), board.url);
+    }
     status.links = now.length;
     const before = JSON.parse((await env.WATCH.get(seenKey)) ?? 'null');
     // Older entries were plain strings; newer ones are {t, h}.
@@ -106,6 +191,19 @@ export default {
     if (kind === 'page' && board) {
       const res = await fetch(board.url, { headers: UA, signal: AbortSignal.timeout(25000) });
       return new Response(res.body, { status: res.status, headers: { 'Content-Type': res.headers.get('Content-Type') ?? 'text/html' } });
+    }
+    if (kind === 'feed' && FEEDS[id]) {
+      const items = await FEEDS[id]();
+      return new Response(rss(id, items), { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } });
+    }
+    // One notice from a listed board's own site, for the pipeline to read.
+    if (kind === 'file' && board) {
+      let target;
+      try { target = new URL(new URL(request.url).searchParams.get('u')); } catch {}
+      if (!target || target.protocol !== 'https:' || target.hostname !== new URL(board.url).hostname) return new Response('not allowed', { status: 403 });
+      if (!(await robotsAllow(target.toString()))) return new Response('robots.txt disallows', { status: 403 });
+      const res = await fetch(target, { headers: UA, signal: AbortSignal.timeout(25000) });
+      return new Response(res.body, { status: res.status, headers: { 'Content-Type': res.headers.get('Content-Type') ?? 'application/octet-stream' } });
     }
     return new Response('Kasba result watcher', { status: 200 });
   },
