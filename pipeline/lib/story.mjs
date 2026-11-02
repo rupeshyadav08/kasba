@@ -1,5 +1,6 @@
 // Checks a model draft against Kasba's story schema and writes the Markdown files.
 import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { storyImage } from './image.mjs';
 import { categories } from './prompt.mjs';
 
 const root = new URL('../../', import.meta.url);
@@ -69,6 +70,7 @@ export function toMarkdown(draft, lang, { storyId, author, published, auto = fal
     ...(draft.story.state ? [`state: ${draft.story.state}`] : []),
     ...(draft.story.districts?.length ? ['districts:', ...draft.story.districts.map((x) => `  - ${x}`)] : []),
     ...(draft.story.deadline ? ['deadline:', `  date: ${draft.story.deadline.date}`, `  label: ${q(draft.story.deadline[`label_${lang}`])}`] : []),
+    ...(draft.image ? ['image:', `  src: ${q(draft.image.src)}`, `  credit: ${q(draft.image.credit)}`] : []),
     `author: ${q(author[lang])}`,
     ...(auto ? ['autoPublished: true'] : []),
     `published: ${published}`,
@@ -80,8 +82,9 @@ export function toMarkdown(draft, lang, { storyId, author, published, auto = fal
   return lines.join('\n');
 }
 
-export function publish(draft, author, { auto = false } = {}) {
+export async function publish(draft, author, { auto = false } = {}) {
   const storyId = uniqueId(slugify(draft.story.en.title));
+  draft.image = await storyImage(draft, storyId).catch((e) => { console.log('image', e.message); return null; });
   const published = istNow();
   for (const lang of ['hi', 'en']) {
     writeFileSync(new URL(`src/content/stories/${lang}/${storyId}.md`, root), toMarkdown(draft, lang, { storyId, author, published, auto }));
@@ -97,5 +100,6 @@ export function unpublish(storyId) {
     const f = new URL(`src/content/stories/${lang}/${storyId}.md`, root);
     if (existsSync(f)) { rmSync(f); gone = true; }
   }
+  rmSync(new URL(`public/img/s/${storyId}.webp`, root), { force: true });
   return gone;
 }

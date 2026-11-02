@@ -110,7 +110,7 @@ async function applyDecisions() {
     const draft = JSON.parse(readFileSync(draftPath(id), 'utf8'));
     await tg.clearButtons(cb.message.chat.id, cb.message.message_id);
     if (action === 'a') {
-      const storyId = publish(draft, config.author);
+      const storyId = await publish(draft, config.author);
       summary.published.push(storyId);
       await tg.answer(cb.id, '✅ मंज़ूर, अगले अपडेट में साइट पर');
       await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(अगले अपडेट में साइट पर)`);
@@ -228,7 +228,7 @@ async function draftNew() {
       // Routine notices from trusted text sources go live at once; the editor gets a Remove button.
       const auto = sources.find((s) => s.id === it.sourceId)?.auto && story.sensitive === false && !ocr && story.storyType !== 'record';
       if (auto) {
-        const storyId = publish(draft, config.author, { auto: true });
+        const storyId = await publish(draft, config.author, { auto: true });
         summary.published.push(storyId);
         summary.autoPublished.push(storyId);
         await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (अगले अपडेट में साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
