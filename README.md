@@ -2,7 +2,7 @@
 
 Hindi-first news for small-town India: official updates explained simply, with "what this means for you".
 
-- Site: Astro static site on Cloudflare Pages (coming in week 2)
+- Site: Astro static site on Cloudflare Pages, live at https://kasba.co.in
 - Content: Markdown files in `src/content/` (one file per story)
 - Pipeline: scheduled GitHub Actions job (`pipeline/`) that fetches official sources, drafts with an AI model (DeepSeek for now, set in `pipeline/config.json`), and waits for editor approval on Telegram
 
@@ -26,7 +26,7 @@ Files marked `sample: true` exist only to show the layout and will be deleted be
 
 ## News pipeline
 
-`.github/workflows/pipeline.yml` runs `node pipeline/run.mjs` every hour from 6:00 to 22:00 India time (and on demand from the Actions tab, with a "draft only" option).
+`.github/workflows/pipeline.yml` runs `node pipeline/run.mjs` three times a day (about 7:45, 13:15 and 19:15 India time), straight away when the editor taps Approve or Reject on Telegram (and on demand from the Actions tab, with a "draft only" option).
 
 Each run:
 1. Reads the editor's ✅ Approve / ❌ Reject taps from Telegram. Approved drafts become story files in `src/content/stories/` and are committed, which makes Cloudflare rebuild the site.
