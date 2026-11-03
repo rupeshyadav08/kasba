@@ -2883,11 +2883,12 @@
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_vacancies_24102026.pdf": "2026-11-02",
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_23102026.pdf": "2026-11-02",
     "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx#z9a4t9": "2026-11-02",
-    "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc#e1qio4": "2026-11-02"
+    "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc#e1qio4": "2026-11-02",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331871": "2026-11-03"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-02T18:16:34.607Z",
+    "last": "2026-11-03T03:28:08.411Z",
     "pending": []
   },
   "sources": [
