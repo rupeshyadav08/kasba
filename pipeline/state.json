@@ -2884,12 +2884,15 @@
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_23102026.pdf": "2026-11-02",
     "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx#z9a4t9": "2026-11-02",
     "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc#e1qio4": "2026-11-02",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331871": "2026-11-03"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331871": "2026-11-03",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63903": "2026-11-03"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-03T03:28:08.411Z",
-    "pending": []
+    "pending": [
+      "dsssb-urdu-academy-skill-test-junior-assistant-and-stenograp"
+    ]
   },
   "sources": [
     "pib-hi",
