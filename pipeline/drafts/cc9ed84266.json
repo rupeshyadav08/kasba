@@ -1,0 +1,96 @@
+{
+  "id": "cc9ed84266",
+  "createdAt": "2026-11-03T14:50:17.347Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "राष्ट्रीय मानवाधिकार आयोग ने मध्य प्रदेश और राजस्थान के सीमावर्ती जिलों से महाराष्ट्र के शहरों में बालिकाओं की बिक्री और तस्करी की खबरों पर स्वत: संज्ञान लिया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332225"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "empty village road india",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "राष्ट्रीय मानवाधिकार आयोग ने मध्य प्रदेश और राजस्थान के सीमावर्ती जिलों से महाराष्ट्र के शहरों में बालिकाओं की बिक्री और तस्करी की खबरों पर स्वत: संज्ञान लिया",
+    "sourceDate": "2026-11-03",
+    "hi": {
+      "title": "NHRC ने बालिकाओं की बिक्री और तस्करी की खबरों पर लिया संज्ञान, तीन राज्यों से दो हफ़्ते में रिपोर्ट मांगी",
+      "summary": "राष्ट्रीय मानवाधिकार आयोग (NHRC) ने 3 नवंबर 2026 को मीडिया रिपोर्ट के आधार पर बालिकाओं की बिक्री और तस्करी के मामले पर स्वत: संज्ञान लिया है। आयोग ने मध्य प्रदेश, राजस्थान और महाराष्ट्र के मुख्य सचिवों और पुलिस महानिदेशकों को दो सप्ताह के भीतर विस्तृत रिपोर्ट देने का नोटिस भेजा है।",
+      "meaning": "यह मामला सीधे तौर पर आम लोगों के किसी काम, फ़ॉर्म या आवेदन से जुड़ा नहीं है, इसलिए आपको कुछ करने की ज़रूरत नहीं है। यह खबर उन रिपोर्टों पर आधारित है जिनमें मध्य प्रदेश और राजस्थान के सीमावर्ती जिलों से बालिकाओं को बेचे जाने और महाराष्ट्र के शहरों में तस्करी की बात कही गई है। आयोग ने तीनों राज्यों से जानकारी मांगी है; अभी यह जांच का विषय है, किसी पर कोई फैसला नहीं हुआ है।",
+      "keyFacts": [
+        "NHRC ने 30 अक्टूबर 2026 की मीडिया रिपोर्ट पर संज्ञान लिया।",
+        "रिपोर्ट के मुताबिक बालिकाओं को 3 लाख से 5 लाख रुपये तक में बिचौलियों को बेचा जाता है।",
+        "फर्जी गोद दस्तावेजों के ज़रिए बालिकाओं को दूसरी जगह ले जाने की बात रिपोर्ट में है।",
+        "वयस्क होने पर पहचान बदलकर महाराष्ट्र के शहरों में 35 लाख से 40 लाख रुपये तक में बेचने की बात कही गई है।",
+        "मध्य प्रदेश, राजस्थान और महाराष्ट्र के मुख्य सचिवों व DGP को दो सप्ताह में रिपोर्ट देने का नोटिस।",
+        "मीडिया रिपोर्ट में तस्करी की चार विशिष्ट घटनाओं का ज़िक्र है।"
+      ],
+      "faq": [
+        {
+          "q": "NHRC ने किस खबर पर संज्ञान लिया है?",
+          "a": "30 अक्टूबर 2026 को प्रकाशित मीडिया रिपोर्ट पर। इस रिपोर्ट में मध्य प्रदेश और राजस्थान के सीमावर्ती जिलों से बालिकाओं की बिक्री और महाराष्ट्र के शहरों में तस्करी की बात कही गई है।"
+        },
+        {
+          "q": "NHRC ने किसे नोटिस भेजा है?",
+          "a": "मध्य प्रदेश, राजस्थान और महाराष्ट्र के मुख्य सचिवों तथा पुलिस महानिदेशकों को। आयोग ने उनसे दो सप्ताह के भीतर विस्तृत रिपोर्ट मांगी है।"
+        },
+        {
+          "q": "क्या इससे आम लोगों को कुछ करना है?",
+          "a": "नहीं। यह आयोग की ओर से राज्य सरकारों को भेजा गया नोटिस है, इसमें आम नागरिकों के लिए कोई आवेदन या समय-सीमा नहीं दी गई है।"
+        },
+        {
+          "q": "क्या इस मामले में किसी को दोषी माना गया है?",
+          "a": "नहीं। आयोग ने मीडिया रिपोर्ट के आधार पर जानकारी मांगी है और कहा है कि अगर रिपोर्ट की बातें सही हैं तो यह बालिकाओं के मानवाधिकारों के उल्लंघन का गंभीर मामला है।"
+        },
+        {
+          "q": "रिपोर्ट में किन रकमों का ज़िक्र है?",
+          "a": "रिपोर्ट के मुताबिक बालिकाओं को 3 लाख से 5 लाख रुपये तक में बिचौलियों को बेचा जाता है और महाराष्ट्र के शहरों में 35 लाख से 40 लाख रुपये तक में बेचने की बात कही गई है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nराष्ट्रीय मानवाधिकार आयोग (NHRC) ने 30 अक्टूबर 2026 को छपी एक मीडिया रिपोर्ट पर स्वत: संज्ञान लिया है। आयोग के मुताबिक इस रिपोर्ट में कहा गया है कि मध्य प्रदेश और राजस्थान की सीमा से लगे कई जिलों में नाबालिग बालिकाओं को उनके माता-पिता बिचौलियों को बेच देते हैं।\n\nआयोग ने 3 नवंबर 2026 को जारी अपनी विज्ञप्ति में यह जानकारी दी है।\n\n## रिपोर्ट में क्या कहा गया है\n\nविज्ञप्ति के अनुसार रिपोर्ट में बताया गया है कि गरीबी और अन्य कारणों से माता-पिता अपनी बेटियों को 3 लाख रुपये से 5 लाख रुपये तक में बिचौलियों को बेच देते हैं। इसके बाद बिचौलिए गोद लिए बच्चे दिखाने वाले फर्जी दस्तावेजों के सहारे इन बच्चियों को दूसरी जगह ले जाकर उनकी तस्करी करते हैं।\n\nरिपोर्ट के मुताबिक वयस्क होने पर उनकी व्यक्तिगत जानकारी बदलकर पहचान छिपाई जाती है और महाराष्ट्र के अलग-अलग शहरों में देह व्यापार के लिए उन्हें 35 लाख रुपये से 40 लाख रुपये तक में बेचा जाता है। रिपोर्ट में ऐसी चार विशिष्ट घटनाओं का भी ज़िक्र है।\n\n## आयोग ने क्या कहा\n\nआयोग ने कहा है कि अगर समाचार रिपोर्ट में दी गई जानकारी सही है, तो यह पीड़ित बालिकाओं के मानवाधिकारों के उल्लंघन से जुड़ा गंभीर मुद्दा है। इसी वजह से आयोग ने मध्य प्रदेश, राजस्थान और महाराष्ट्र के मुख्य सचिवों तथा पुलिस महानिदेशकों को नोटिस जारी कर दो सप्ताह के भीतर विस्तृत रिपोर्ट मांगी है।\n\n## आगे क्या होगा\n\nअभी यह सिर्फ़ जानकारी मांगे जाने की स्थिति है। तीनों राज्यों की ओर से रिपोर्ट आने के बाद ही आयोग आगे का कोई कदम तय करेगा। विज्ञप्ति में यह नहीं बताया गया है कि रिपोर्ट कहां भेजनी है या आयोग इस मामले में और क्या कार्रवाई करेगा।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nइस नोटिस में आम नागरिकों के लिए कोई आवेदन, फ़ॉर्म या समय-सीमा नहीं दी गई है, इसलिए पाठकों को कुछ करने की ज़रूरत नहीं है। यह मामला अभी जांच और जानकारी जुटाने के चरण में है; किसी पर कोई आरोप साबित नहीं हुआ है।"
+    },
+    "en": {
+      "title": "NHRC takes note of reports of girls being sold, trafficked; seeks report from 3 states in two weeks",
+      "summary": "The National Human Rights Commission (NHRC) on 3 November 2026 took suo motu cognisance of media reports about girls being sold and trafficked. It has sent notices to the Chief Secretaries and Directors General of Police of Madhya Pradesh, Rajasthan and Maharashtra, asking for a detailed report within two weeks.",
+      "meaning": "This does not ask anything of ordinary readers: there is no form, application or deadline for the public. The story is based on media reports that girls from districts bordering Madhya Pradesh and Rajasthan are sold and trafficked to cities in Maharashtra. The Commission has only sought information from three state governments; no finding has been made against anyone.",
+      "keyFacts": [
+        "NHRC acted on a media report published on 30 October 2026.",
+        "According to the report, girls are sold to middlemen for Rs 3 lakh to Rs 5 lakh.",
+        "The report says fake adoption documents are used to move the girls elsewhere.",
+        "It says their identities are changed on adulthood and they are sold in Maharashtra cities for Rs 35 lakh to Rs 40 lakh.",
+        "Notices sent to Chief Secretaries and DGPs of Madhya Pradesh, Rajasthan and Maharashtra for a report within two weeks.",
+        "The media report mentions four specific trafficking incidents."
+      ],
+      "faq": [
+        {
+          "q": "What report did NHRC take note of?",
+          "a": "A media report published on 30 October 2026. It said girls from districts bordering Madhya Pradesh and Rajasthan are sold and trafficked to cities in Maharashtra."
+        },
+        {
+          "q": "Who has NHRC sent notices to?",
+          "a": "The Chief Secretaries and Directors General of Police of Madhya Pradesh, Rajasthan and Maharashtra. The Commission asked them for a detailed report within two weeks."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No. This is a notice from the Commission to state governments and gives no application or deadline for citizens."
+        },
+        {
+          "q": "Has anyone been held guilty in this matter?",
+          "a": "No. The Commission has sought information based on media reports and said that if the report is correct, it raises a serious issue of violation of the rights of the affected girls."
+        },
+        {
+          "q": "What amounts does the report mention?",
+          "a": "According to the report, girls are sold to middlemen for Rs 3 lakh to Rs 5 lakh, and are sold in Maharashtra cities for Rs 35 lakh to Rs 40 lakh."
+        }
+      ],
+      "body": "## What has happened\n\nThe National Human Rights Commission (NHRC) has taken suo motu cognisance of a media report published on 30 October 2026. According to the Commission, the report said that in several districts bordering Madhya Pradesh and Rajasthan, minor girls are sold by their parents to middlemen.\n\nThe Commission shared this in a release issued on 3 November 2026.\n\n## What the report says\n\nAs per the release, the report said that parents sell their daughters to middlemen for Rs 3 lakh to Rs 5 lakh, citing poverty and other reasons. The middlemen then use fake documents showing the children as adopted to move them elsewhere and traffic them.\n\nAccording to the report, on adulthood their personal details are changed to hide their identity, and they are sold for sex work in various cities of Maharashtra for Rs 35 lakh to Rs 40 lakh. The report mentions four specific incidents of trafficking.\n\n## What the Commission said\n\nThe Commission said that if the information in the media report is correct, it raises a serious issue of violation of the human rights of the affected girls. It has therefore sent notices to the Chief Secretaries and Directors General of Police of Madhya Pradesh, Rajasthan and Maharashtra, asking for a detailed report within two weeks.\n\n## What happens next\n\nAt this stage, the Commission has only sought information. Any further step will be decided after the states send their reports. The release does not say where the report must be sent or what action the Commission may take next.\n\n## What this means for ordinary people\n\nThe notice gives no application, form or deadline for citizens, so readers do not need to do anything. The matter is at the stage of information-gathering; no allegation has been proved against anyone."
+    }
+  }
+}

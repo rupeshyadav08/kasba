@@ -1,0 +1,86 @@
+{
+  "id": "e084df27ab",
+  "createdAt": "2026-11-03T14:52:48.179Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Duplicate Score Card",
+    "link": "https://nta.ac.in/Download/Notice/NTA_Corrigendum_Duplicate_Scorecard.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "exam documents desk",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Duplicate Score Card",
+    "sourceDate": "2026-11-02",
+    "hi": {
+      "title": "NTA Duplicate Scorecard 2026: अब पुलिस रिपोर्ट ज़रूरी नहीं, fee का तरीका भी बदला",
+      "summary": "NTA ने 2 नवंबर 2026 को duplicate scorecard बनवाने की प्रक्रिया में बदलाव की अधिसूचना जारी की। इससे वे उम्मीदवार प्रभावित होंगे जिनका scorecard खो गया या खराब हो गया है और जो उसकी दूसरी कॉपी चाहते हैं।",
+      "meaning": "अगर आपका NTA का scorecard खो गया, चोरी हो गया या खराब हो गया है और आप दूसरी कॉपी लेना चाहते हैं, तो अब आपको पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं है। रिपोर्ट सिर्फ तब देनी है जब आपने खुद दर्ज कराई हो। fee अब NTA के portal से जुड़े online payment gateway से NEFT के ज़रिए या Demand Draft से दी जा सकती है। ध्यान रखें कि duplicate scorecard सिर्फ electronic कॉपी में मिलेगा, उसकी छपी हुई कॉपी नहीं मिलेगी।",
+      "keyFacts": [
+        "NTA ने 2 नवंबर 2026 को corrigendum जारी किया, जो 7 सितंबर 2026 के office memorandum में बदलाव करता है।",
+        "पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं, सिर्फ तब दें जब रिपोर्ट दर्ज कराई हो।",
+        "fee NTA portal के online payment gateway से NEFT द्वारा Canara Bank के खाते में जमा कर सकते हैं।",
+        "online payment संभव न हो तो 'National Testing Agency' के नाम का Demand Draft, New Delhi में देय, दिया जा सकता है।",
+        "duplicate scorecard की छपी हुई (physical) कॉपी नहीं मिलेगी, यह electronic document है।"
+      ],
+      "faq": [
+        {
+          "q": "NTA duplicate scorecard के लिए पुलिस रिपोर्ट ज़रूरी है क्या?",
+          "a": "नहीं, अब पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं है। यह रिपोर्ट सिर्फ तब देनी है जब आपने खुद रिपोर्ट दर्ज कराई हो।"
+        },
+        {
+          "q": "Duplicate scorecard की fee कैसे जमा करें?",
+          "a": "fee NTA portal के online payment gateway से NEFT के ज़रिए Canara Bank के खाते में जमा की जा सकती है। अगर online payment संभव न हो तो 'National Testing Agency' के नाम का Demand Draft, New Delhi में देय, दिया जा सकता है।"
+        },
+        {
+          "q": "क्या duplicate scorecard की छपी हुई कॉपी मिल सकती है?",
+          "a": "नहीं, duplicate scorecard की physical copy नहीं मिलती। यह electronically तैयार होने वाला document है।"
+        },
+        {
+          "q": "आवेदन फॉर्म में किन बातों को काट सकते हैं?",
+          "a": "अगर आपके मामले में scorecard खोने, चोरी होने, खराब होने या नष्ट होने, पुलिस रिपोर्ट, scorecard ढूंढने की कोशिश या original जमा करने की बात लागू नहीं होती, तो आप उन हिस्सों को काट सकते हैं और असली कारण लिख सकते हैं।"
+        }
+      ],
+      "body": "## क्या बदला है\n\nNTA ने 2 नवंबर 2026 को एक corrigendum जारी किया है, जो 7 सितंबर 2026 के उस office memorandum (OM) में सुधार करता है जो duplicate scorecard बनवाने की प्रक्रिया के बारे में था। अब पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं रहेगा। यह रिपोर्ट सिर्फ तब देनी होगी जब आवेदक ने खुद रिपोर्ट दर्ज कराई हो।\n\nOM के कुछ पैराग्राफ (5.2, 5.3 और 7.3) हटा दिए गए हैं। fee देने का तरीका भी साफ किया गया है। अब fee NTA portal से जुड़े online payment gateway से NEFT के ज़रिए Canara Bank के खाते में जमा की जा सकती है। जहां online payment संभव न हो, वहां 'National Testing Agency' के नाम का Demand Draft, जो New Delhi में देय हो, दिया जा सकता है।\n\n## किसे फ़ायदा होगा\n\nयह बदलाव उन उम्मीदवारों के लिए है जिनका NTA का scorecard खो गया, चोरी हो गया, खराब हो गया या नष्ट हो गया है और जो उसकी दूसरी कॉपी चाहते हैं। अब उन्हें हर हाल में पुलिस या दूतावास की रिपोर्ट नहीं देनी पड़ेगी।\n\n## आवेदन में क्या ध्यान रखें\n\nअनुलग्नक I, II और III के आवेदन फॉर्म, affidavit और indemnity-cum-undertaking को इन सुधारों के हिसाब से पढ़ा जाएगा। scorecard खोने, चोरी होने, खराब होने या नष्ट होने, पुलिस या दूतावास की रिपोर्ट, scorecard ढूंढने की कोशिश और original जमा करने से जुड़े हिस्से सिर्फ तब लागू होंगे जब वे आपके मामले में सही हों। जो हिस्से लागू नहीं होते, आवेदक उन्हें काट सकता है और असली कारण लिख सकता है।\n\n## छपी कॉपी मिलेगी या नहीं\n\nनहीं। duplicate scorecard एक electronically तैयार होने वाला document है, इसलिए उसकी physical copy नहीं दी जा सकती। OM की बाकी बातें पहले की तरह ही रहेंगी।"
+    },
+    "en": {
+      "title": "NTA Duplicate Scorecard 2026: No police report needed now, fee payment method changed",
+      "summary": "NTA issued a corrigendum on 2 November 2026 changing the procedure for getting a duplicate scorecard. It affects candidates whose scorecard is lost or damaged and who want a second copy.",
+      "meaning": "If your NTA scorecard is lost, stolen or damaged and you want a duplicate, you no longer need to submit a police or embassy report. A report is needed only if you have lodged one yourself. The fee can now be paid through the online payment gateway on the NTA portal by NEFT, or by Demand Draft if online payment is not possible. Note that the duplicate scorecard is an electronic document; no printed copy will be given.",
+      "keyFacts": [
+        "NTA issued the corrigendum on 2 November 2026, amending the office memorandum dated 7 September 2026.",
+        "A police or embassy report is not mandatory; it is needed only if the applicant has lodged one.",
+        "The fee can be paid by NEFT to the Canara Bank account through the NTA portal's online payment gateway.",
+        "If online payment is not feasible, a Demand Draft in favour of 'National Testing Agency', payable at New Delhi, can be used.",
+        "No physical copy of the duplicate scorecard will be provided as it is an electronically generated document."
+      ],
+      "faq": [
+        {
+          "q": "Is a police report required for an NTA duplicate scorecard?",
+          "a": "No, a police or embassy report is no longer mandatory. It is required only if the applicant has lodged a report."
+        },
+        {
+          "q": "How do I pay the fee for a duplicate scorecard?",
+          "a": "The fee can be paid by NEFT through the online payment gateway integrated with the NTA portal. If online payment is not feasible, a Demand Draft in favour of 'National Testing Agency', payable at New Delhi, can be used."
+        },
+        {
+          "q": "Can I get a printed copy of the duplicate scorecard?",
+          "a": "No, no physical copy can be provided. The duplicate scorecard is an electronically generated document."
+        },
+        {
+          "q": "What can I strike out in the application form?",
+          "a": "If portions about loss, theft, mutilation, damage or destruction of the scorecard, a police or embassy report, efforts to trace the scorecard or surrender of the original do not apply to you, you may strike them out and state the actual reason."
+        }
+      ],
+      "body": "## What has changed\n\nNTA issued a corrigendum on 2 November 2026 amending its office memorandum (OM) dated 7 September 2026 on the procedure for issuing a duplicate scorecard. A police or embassy report is no longer mandatory; it is to be furnished only if the applicant has lodged a report.\n\nSome paragraphs of the OM (5.2, 5.3 and 7.3) have been deleted. The fee payment method has also been clarified. The fee is to be paid through the online payment gateway integrated with the NTA portal by NEFT to a Canara Bank account. Where online payment is not feasible, a Demand Draft in favour of 'National Testing Agency', payable at New Delhi, may be used.\n\n## Who is affected\n\nThis change is for candidates whose NTA scorecard is lost, stolen, damaged or destroyed and who want a duplicate copy. They will no longer have to submit a police or embassy report in every case.\n\n## What to keep in mind in the application\n\nThe application form, affidavit and indemnity-cum-undertaking in Annexures I, II and III are to be read in line with these corrections. Portions relating to loss, theft, mutilation, damage or destruction of the scorecard, lodging a police or embassy report, efforts to trace the scorecard and surrender of the original apply only where relevant. An applicant may strike out portions that do not apply and state the actual reason.\n\n## Will a printed copy be given\n\nNo. The duplicate scorecard is an electronically generated document, so no physical copy can be provided. All other contents of the OM remain unchanged."
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "ca38742006",
+  "createdAt": "2026-11-03T14:54:04.804Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Corrigendum to Office Memorandum F.No. NTA/OM/D/88/2026-ED-II dated 17.09.2026 regarding the procedure for issuance of Duplicate Scorecard",
+    "link": "https://nta.ac.in/Download/Notice/Notice_20261103113641.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "exam documents desk",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Corrigendum to Office Memorandum F.No. NTA/OM/D/88/2026-ED-II dated 17.09.2026 regarding the procedure for issuance of Duplicate Scorecard",
+    "sourceDate": "2026-11-02",
+    "hi": {
+      "title": "NTA Duplicate Scorecard: अब पुलिस रिपोर्ट ज़रूरी नहीं, फीस NEFT से भी",
+      "summary": "NTA ने 2 नवंबर 2026 को एक करेक्टिव नोटिस जारी कर डुप्लीकेट स्कोरकार्ड के नियमों में बदलाव किए हैं। इसका फ़ायदा उन उम्मीदवारों को मिलेगा जिनका स्कोरकार्ड खो गया है या खराब हो गया है और जो नया स्कोरकार्ड चाहते हैं।",
+      "meaning": "अगर आपका NTA का स्कोरकार्ड खो गया, चोरी हो गया या खराब हो गया है और आप डुप्लीकेट स्कोरकार्ड लेना चाहते हैं, तो अब आपको पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं है। रिपोर्ट सिर्फ़ तब देनी है जब आपने खुद ऐसी रिपोर्ट दर्ज कराई हो। फीस आप NTA पोर्टल के ऑनलाइन पेमेंट गेटवे से या NEFT से Canara Bank के खाते में जमा कर सकते हैं। अगर ऑनलाइन पेमेंट नहीं हो पा रहा है, तो 'National Testing Agency' के नाम का डिमांड ड्राफ्ट नई दिल्ली में देय बनाकर भेज सकते हैं। ध्यान रखें कि डुप्लीकेट स्कोरकार्ड की फिज़िकल कॉपी नहीं मिलेगी, क्योंकि यह इलेक्ट्रॉनिक तरीके से बनने वाला दस्तावेज़ है।",
+      "keyFacts": [
+        "करेक्टिव नोटिस की तारीख: 2 नवंबर 2026",
+        "पुलिस/दूतावास रिपोर्ट देना ज़रूरी नहीं, सिर्फ़ तब दें जब रिपोर्ट दर्ज कराई हो",
+        "फीस NTA पोर्टल के ऑनलाइन गेटवे या NEFT से जमा कर सकते हैं",
+        "NEFT के लिए बैंक: Canara Bank, खाता नाम: National Testing Agency, खाता संख्या: 868820009080, IFSC: CNRB0000268",
+        "ऑनलाइन पेमेंट न हो तो 'National Testing Agency' के नाम का डिमांड ड्राफ्ट नई दिल्ली में देय",
+        "डुप्लीकेट स्कोरकार्ड की फिज़िकल कॉपी नहीं मिलेगी"
+      ],
+      "faq": [
+        {
+          "q": "NTA डुप्लीकेट स्कोरकार्ड के लिए पुलिस रिपोर्ट देना ज़रूरी है?",
+          "a": "नहीं, अब यह ज़रूरी नहीं है। करेक्टिव नोटिस के मुताबिक रिपोर्ट सिर्फ़ तब देनी है जब आवेदक ने खुद पुलिस या दूतावास में रिपोर्ट दर्ज कराई हो।"
+        },
+        {
+          "q": "डुप्लीकेट स्कोरकार्ड की फीस कैसे जमा करें?",
+          "a": "फीस NTA पोर्टल के ऑनलाइन पेमेंट गेटवे से या NEFT से जमा कर सकते हैं। NEFT के लिए बैंक का नाम Canara Bank, खाता नाम National Testing Agency, खाता संख्या 868820009080 और IFSC कोड CNRB0000268 है।"
+        },
+        {
+          "q": "अगर ऑनलाइन पेमेंट नहीं हो पा रहा है तो क्या करें?",
+          "a": "ऐसी स्थिति में फीस 'National Testing Agency' के नाम का डिमांड ड्राफ्ट बनाकर भेज सकते हैं। यह डिमांड ड्राफ्ट नई दिल्ली में देय होना चाहिए।"
+        },
+        {
+          "q": "क्या डुप्लीकेट स्कोरकार्ड की फिज़िकल कॉपी मिल सकती है?",
+          "a": "नहीं, फिज़िकल कॉपी नहीं मिलेगी। नोटिस के अनुसार डुप्लीकेट स्कोरकार्ड इलेक्ट्रॉनिक तरीके से बनने वाला दस्तावेज़ है।"
+        },
+        {
+          "q": "अगर स्कोरकार्ड खोया नहीं है, बस खराब हुआ है तो फॉर्म में क्या लिखें?",
+          "a": "नोटिस कहता है कि आवेदक फॉर्म में उन हिस्सों को काट सकता है जो उस पर लागू नहीं होते और असली कारण लिख सकता है। खोने, चोरी, खराब होने जैसे हिस्से सिर्फ़ तब भरें जब वे आप पर लागू हों।"
+        }
+      ],
+      "body": "नेशनल टेस्टिंग एजेंसी (NTA) ने 2 नवंबर 2026 को एक करेक्टिव नोटिस जारी किया है। यह नोटिस 7 सितंबर 2026 के उस ऑफ़िस मेमोरेंडम में सुधार करता है जो डुप्लीकेट स्कोरकार्ड जारी करने की प्रक्रिया के बारे में था। NTA उच्च शिक्षा विभाग, शिक्षा मंत्रालय के तहत काम करने वाला संगठन है और देशभर की कई परीक्षाएं कराता है।\n\n## क्या बदला है\n\nसबसे बड़ा बदलाव यह है कि अब डुप्लीकेट स्कोरकार्ड के लिए पुलिस या दूतावास की रिपोर्ट देना ज़रूरी नहीं है। नोटिस के मुताबिक यह रिपोर्ट सिर्फ़ तब देनी है जब आवेदक ने खुद ऐसी रिपोर्ट दर्ज कराई हो। इसके अलावा पुराने ऑफ़िस मेमोरेंडम के पैराग्राफ 5.2, 5.3 और 7.3 को हटा दिया गया है।\n\nफीस जमा करने के तरीके भी साफ़ किए गए हैं। फीस NTA पोर्टल के ऑनलाइन पेमेंट गेटवे से या NEFT से जमा की जा सकती है। NEFT के लिए बैंक का नाम Canara Bank, खाता नाम National Testing Agency, खाता संख्या 868820009080 और IFSC कोड CNRB0000268 दिया गया है। जहां ऑनलाइन पेमेंट संभव न हो, वहां 'National Testing Agency' के नाम का डिमांड ड्राफ्ट नई दिल्ली में देय बनाकर भेजा जा सकता है।\n\n## फिज़िकल कॉपी नहीं मिलेगी\n\nनोटिस में साफ़ कहा गया है कि डुप्लीकेट स्कोरकार्ड की फिज़िकल कॉपी नहीं दी जा सकती, क्योंकि यह इलेक्ट्रॉनिक तरीके से बनने वाला दस्तावेज़ है।\n\n## आवेदन फॉर्म में क्या बदलाव\n\nनोटिस के साथ दिए गए एनेक्सर I, II और III यानी आवेदन फॉर्म, शपथ पत्र और इंडेम्निटी-कम-अंडरटेकिंग को इन सुधारों के हिसाब से पढ़ा जाएगा। स्कोरकार्ड खोने, चोरी होने, खराब होने या नष्ट होने, पुलिस या दूतावास में रिपोर्ट दर्ज कराने, स्कोरकार्ड ढूंढने की कोशिश और ओरिजिनल जमा करने से जुड़े हिस्से सिर्फ़ तब भरने हैं जब वे आवेदक पर लागू हों। आवेदक जो हिस्से लागू नहीं होते, उन्हें काट सकता है और असली कारण लिख सकता है।\n\n## किसे फ़ायदा होगा\n\nइसका फ़ायदा उन उम्मीदवारों को होगा जिनका NTA का स्कोरकार्ड खो गया है, चोरी हो गया है या खराब हो गया है और जो डुप्लीकेट स्कोरकार्ड के लिए आवेदन करना चाहते हैं। अब उन्हें हर हाल में पुलिस रिपोर्ट देने की ज़रूरत नहीं पड़ेगी।\n\n## कहां मिलेगी जानकारी\n\nनोटिस में कहा गया है कि यह करेक्टिव नोटिस NTA की आधिकारिक वेबसाइट पर ऑफ़िस मेमोरेंडम के साथ प्रकाशित किया जाएगा। ज़्यादा जानकारी के लिए उम्मीदवार NTA की वेबसाइट देख सकते हैं।"
+    },
+    "en": {
+      "title": "NTA Duplicate Scorecard: No police report needed now, fee can be paid via NEFT",
+      "summary": "The NTA issued a corrigendum on 2 November 2026 changing the rules for getting a duplicate scorecard. It will help candidates whose scorecard is lost or damaged and who want a new one.",
+      "meaning": "If your NTA scorecard is lost, stolen or damaged and you want a duplicate, you no longer have to submit a police or embassy report. A report is needed only if you have actually lodged one. The fee can be paid through the online payment gateway on the NTA portal or by NEFT to a Canara Bank account. If online payment is not possible, a Demand Draft in favour of 'National Testing Agency' payable at New Delhi can be sent. Note that no physical copy of the duplicate scorecard will be given, as it is an electronically generated document.",
+      "keyFacts": [
+        "Corrigendum dated 2 November 2026",
+        "Police/embassy report not mandatory; furnish only if a report has been lodged",
+        "Fee can be paid via NTA portal's online gateway or by NEFT",
+        "NEFT details: Canara Bank, account holder National Testing Agency, account no. 868820009080, IFSC CNRB0000268",
+        "If online payment is not feasible, Demand Draft in favour of 'National Testing Agency' payable at New Delhi",
+        "No physical copy of the duplicate scorecard will be provided"
+      ],
+      "faq": [
+        {
+          "q": "Is a police report required for an NTA duplicate scorecard?",
+          "a": "No, it is no longer mandatory. According to the corrigendum, a report is to be furnished only if the applicant has lodged one."
+        },
+        {
+          "q": "How do I pay the fee for a duplicate scorecard?",
+          "a": "The fee can be paid through the online payment gateway integrated with the NTA portal or by NEFT. For NEFT, the bank is Canara Bank, account holder National Testing Agency, account number 868820009080 and IFSC code CNRB0000268."
+        },
+        {
+          "q": "What if online payment is not possible?",
+          "a": "In that case, the fee may be remitted by a Demand Draft drawn in favour of 'National Testing Agency' and payable at New Delhi."
+        },
+        {
+          "q": "Can I get a physical copy of the duplicate scorecard?",
+          "a": "No, a physical copy cannot be provided. The notice says the duplicate scorecard is an electronically generated document."
+        },
+        {
+          "q": "What should I write in the form if my scorecard is damaged, not lost?",
+          "a": "The notice says the applicant may strike out portions that are not applicable and state the actual reason. Portions about loss, theft, mutilation, damage or destruction apply only where relevant."
+        }
+      ],
+      "body": "The National Testing Agency (NTA) issued a corrigendum on 2 November 2026. It corrects an Office Memorandum dated 7 September 2026 that laid down the procedure for issuing duplicate scorecards. The NTA is an autonomous organisation under the Department of Higher Education, Ministry of Education, and conducts several examinations across the country.\n\n## What has changed\n\nThe biggest change is that a police or embassy report is no longer mandatory for a duplicate scorecard. According to the notice, such a report is to be furnished only if the applicant has lodged one. Paragraphs 5.2, 5.3 and 7.3 of the earlier Office Memorandum have been deleted.\n\nThe fee payment options have also been clarified. The fee can be paid through the online payment gateway integrated with the NTA portal or by NEFT. For NEFT, the bank is Canara Bank, account holder name National Testing Agency, account number 868820009080 and IFSC code CNRB0000268. Where online payment is not feasible, a Demand Draft drawn in favour of 'National Testing Agency' and payable at New Delhi may be sent.\n\n## No physical copy\n\nThe notice states clearly that no physical copy of the duplicate scorecard can be provided, as it is an electronically generated document.\n\n## Changes in the application form\n\nAnnexures I, II and III — the application form, affidavit and indemnity-cum-undertaking — are to be read in line with these corrections. Portions relating to loss, theft, mutilation, damage or destruction of the scorecard, lodging a police or embassy report, efforts to trace the scorecard and surrender of the original apply only where relevant. The applicant may strike out portions that do not apply and state the actual reason.\n\n## Who benefits\n\nThis will help candidates whose NTA scorecard is lost, stolen or damaged and who want to apply for a duplicate. They will no longer have to submit a police report in every case.\n\n## Where to find more\n\nThe notice says the corrigendum will be published on the official NTA website alongside the Office Memorandum. Candidates can check the NTA website for more information."
+    }
+  }
+}
