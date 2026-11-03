@@ -2889,10 +2889,8 @@
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-03T03:28:08.411Z",
-    "pending": [
-      "dsssb-urdu-academy-skill-test-junior-assistant-and-stenograp"
-    ]
+    "last": "2026-11-03T09:37:32.277Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
