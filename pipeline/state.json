@@ -2933,18 +2933,18 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_35229b31-c32a-443d-bb69-69874b92370b.pdf": "2026-11-03",
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_03112026.pdf": "2026-11-03",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332278": "2026-11-03",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332275": "2026-11-03"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332275": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332287": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332290": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332285": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332284": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332291": "2026-11-03",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332289": "2026-11-03"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-03T14:54:25.310Z",
-    "pending": [
-      "aissee-2027-apply-by-2-december-for-admission-to-class-6-and",
-      "nta-duplicate-scorecard-2026-no-police-report-needed-now-fee",
-      "nhrc-takes-note-of-reports-of-girls-being-sold-trafficked-se",
-      "dsssb-pgt-sociology-result-2026-2-more-candidates-provisiona",
-      "nta-duplicate-scorecard-no-police-report-needed-now-fee-can"
-    ]
+    "last": "2026-11-03T20:19:34.203Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
