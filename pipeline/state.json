@@ -2992,11 +2992,16 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_e7fe8c89-0917-4884-bd16-c3f9d01c9ad4.pdf": "2026-11-04",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_cccc2312-6da3-4b52-8588-c0fd4767aea2.pdf": "2026-11-04",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_9e2ef58c-3474-4c4f-84a9-df69b60d1189.pdf": "2026-11-04",
-    "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx#tzmsnu": "2026-11-04"
+    "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx#tzmsnu": "2026-11-04",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332805": "2026-11-04",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332803": "2026-11-04",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332801": "2026-11-04",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_04112026.pdf": "2026-11-04",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/circular_04112026.pdf": "2026-11-04"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-04T15:51:25.306Z",
+    "last": "2026-11-04T20:37:08.344Z",
     "pending": []
   },
   "sources": [
