@@ -1,0 +1,95 @@
+{
+  "id": "49621cd824",
+  "createdAt": "2026-11-04T15:51:07.913Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Order in the matter of certain Investment Advisers",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/order-in-the-matter-of-certain-investment-advisers_105587.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": false,
+    "category": "money",
+    "imageQuery": "stock market chart screen",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Order in the matter of certain Investment Advisers",
+    "sourceDate": "2026-11-04",
+    "hi": {
+      "title": "SEBI ने 8 investment advisers का registration रद्द किया: Karvy समेत ये कंपनियाँ शामिल",
+      "summary": "SEBI ने 4 नवंबर 2026 के आदेश में 8 investment advisers का registration रद्द कर दिया, क्योंकि इन्होंने तय समय पर renewal fee नहीं दी थी। यह उन निवेशकों के लिए ज़रूरी है जो इन कंपनियों से investment सलाह ले रहे हैं।",
+      "meaning": "अगर आप इन 8 कंपनियों में से किसी से investment सलाह ले रहे हैं, तो अब उनका SEBI registration मान्य नहीं है। आपको अपनी सलाह और पैसे के लेन-देन को लेकर सतर्क रहना चाहिए और कंपनी से सीधे संपर्क करके जानना चाहिए कि आपके records और पैसे का क्या होगा। SEBI ने कहा है कि कंपनियाँ अपने ग्राहकों की सेवा जारी रखने और शिकायतें सुनने की ज़िम्मेदारी से मुक्त नहीं हैं।",
+      "keyFacts": [
+        "SEBI ने 8 investment advisers के registration 4 नवंबर 2026 से रद्द किए।",
+        "कंपनियों ने हर पाँच साल में देनी वाली renewal fee नहीं दी थी।",
+        "Karvy Investment Advisory Services का registration 3 जुलाई 2014 को मिला था और 3 जुलाई 2019 से fee बकाया थी।",
+        "IDFC Alternatives और Indianivesh Investment Managers ने खुद अपना registration रद्द करने की बात कही थी।",
+        "registration रद्द होने के बाद भी कंपनियाँ पुराने कामों के लिए ज़िम्मेदार रहेंगी।"
+      ],
+      "faq": [
+        {
+          "q": "SEBI ने किन कंपनियों का registration रद्द किया?",
+          "a": "SEBI ने 8 कंपनियों का registration रद्द किया: Karvy Investment Advisory Services, Sagacis Investment Advisor, Tathastu Investment Adviser, Quant Capital, Arkanis Capital, IRA Wealth Advisor, IDFC Alternatives और Indianivesh Investment Managers।",
+          "a_en": ""
+        },
+        {
+          "q": "registration क्यों रद्द हुआ?",
+          "a": "इन कंपनियों ने SEBI के नियमों के मुताबिक हर पाँच साल में renewal fee नहीं दी थी, जिससे उनका registration मान्य नहीं रहा।"
+        },
+        {
+          "q": "क्या मेरे पैसे सुरक्षित हैं?",
+          "a": "SEBI के आदेश में यह नहीं कहा गया है कि निवेशकों के पैसे का क्या होगा। आदेश में सिर्फ यह कहा गया है कि कंपनियाँ अपने ग्राहकों के records, पैसे और शिकायतों को संभालने की ज़िम्मेदारी से मुक्त नहीं हैं।"
+        },
+        {
+          "q": "अगर मैं इन कंपनियों से सलाह ले रहा हूँ तो क्या करूँ?",
+          "a": "आपको कंपनी से सीधे संपर्क करके अपनी सलाह और पैसे के बारे में जानकारी लेनी चाहिए। SEBI ने कहा है कि कंपनियाँ ग्राहकों की शिकायतें सुनने और सेवा जारी रखने की ज़िम्मेदारी निभाएँ।"
+        },
+        {
+          "q": "क्या कंपनियों पर पुराने मामलों में कार्रवाई हो सकती है?",
+          "a": "हाँ, SEBI ने कहा है कि registration रद्द होने के बाद भी कंपनियाँ उन कामों के लिए ज़िम्मेदार रहेंगी जो उन्होंने investment adviser के तौर पर किए या नहीं किए।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI ने 4 नवंबर 2026 के एक आदेश में 8 investment advisers का registration रद्द कर दिया है। ये कंपनियाँ SEBI के साथ investment adviser के तौर पर registered थीं। आदेश के मुताबिक, इन कंपनियों ने हर पाँच साल में देनी वाली renewal fee नहीं दी थी, जिससे उनका registration मान्य नहीं रहा।\n\nजिन कंपनियों का registration रद्द हुआ है, उनमें Karvy Investment Advisory Services, Sagacis Investment Advisor, Tathastu Investment Adviser, Quant Capital, Arkanis Capital, IRA Wealth Advisor, IDFC Alternatives और Indianivesh Investment Managers शामिल हैं।\n\n## किसे फ़ायदा या नुकसान होगा\n\nयह आदेश उन निवेशकों के लिए ज़रूरी है जो इन कंपनियों से investment सलाह ले रहे हैं। अब इन कंपनियों का SEBI registration मान्य नहीं है। SEBI ने कहा है कि registration रद्द होने के बाद भी कंपनियाँ अपने ग्राहकों के records और पैसे संभालने, शिकायतें सुनने और सेवा जारी रखने की ज़िम्मेदारी से मुक्त नहीं हैं।\n\n## कंपनियों ने क्या कहा\n\nSEBI ने बताया कि छह कंपनियों ने उसके notice का कोई जवाब नहीं दिया। IDFC Alternatives और Indianivesh Investment Managers ने अपने जवाब में कहा कि उनका registration रद्द कर दिया जाए।\n\n## आगे क्या\n\nSEBI ने कहा है कि registration रद्द होने के बाद भी कंपनियाँ उन कामों के लिए ज़िम्मेदार रहेंगी जो उन्होंने investment adviser के तौर पर किए या नहीं किए। आदेश की एक कॉपी BSE Limited को भी भेजी गई है, जो investment advisers की निगरानी करने वाली संस्था है।\n\nअगर आप इनमें से किसी कंपनी से सलाह ले रहे हैं, तो कंपनी से सीधे संपर्क करके अपने records और पैसे के बारे में जानकारी लें।"
+    },
+    "en": {
+      "title": "SEBI cancels registration of 8 investment advisers, including Karvy",
+      "summary": "SEBI on November 4, 2026 cancelled the registration of eight investment advisers because they did not pay their renewal fees. This matters to investors who take advice from these companies.",
+      "meaning": "If you are taking investment advice from any of these eight companies, their SEBI registration is no longer valid. You should be careful about your advice and money, and contact the company directly to ask what will happen to your records and funds. SEBI said the companies must still serve their clients and address complaints.",
+      "keyFacts": [
+        "SEBI cancelled the registration of 8 investment advisers with effect from November 4, 2026.",
+        "The companies had not paid the renewal fee due every five years.",
+        "Karvy Investment Advisory Services was registered on July 3, 2014, and its fee was unpaid from July 3, 2019.",
+        "IDFC Alternatives and Indianivesh Investment Managers had asked SEBI to cancel their registration.",
+        "The companies remain liable for anything done or omitted while they were registered."
+      ],
+      "faq": [
+        {
+          "q": "Which companies' registration did SEBI cancel?",
+          "a": "SEBI cancelled the registration of eight companies: Karvy Investment Advisory Services, Sagacis Investment Advisor, Tathastu Investment Adviser, Quant Capital, Arkanis Capital, IRA Wealth Advisor, IDFC Alternatives and Indianivesh Investment Managers."
+        },
+        {
+          "q": "Why was the registration cancelled?",
+          "a": "The companies did not pay the renewal fee required every five years under SEBI rules, so their registration ceased to be in force."
+        },
+        {
+          "q": "Is my money safe?",
+          "a": "The SEBI order does not say what will happen to investors' money. It only says the companies must still maintain records, handle investor grievances and continue service to their clients."
+        },
+        {
+          "q": "What should I do if I take advice from these companies?",
+          "a": "You should contact the company directly to ask about your advice and money. SEBI said the companies must address investor grievances and continue service to their clients."
+        },
+        {
+          "q": "Can action be taken against the companies for past matters?",
+          "a": "Yes. SEBI said the companies remain liable for anything done or omitted while they were registered as investment advisers."
+        }
+      ],
+      "body": "## What happened\n\nSEBI, in an order dated November 4, 2026, cancelled the registration of eight investment advisers. These companies were registered with SEBI as investment advisers. According to the order, they did not pay the renewal fee due every five years, so their registration ceased to be in force.\n\nThe companies whose registration was cancelled are Karvy Investment Advisory Services, Sagacis Investment Advisor, Tathastu Investment Adviser, Quant Capital, Arkanis Capital, IRA Wealth Advisor, IDFC Alternatives and Indianivesh Investment Managers.\n\n## Who is affected\n\nThis order matters to investors who take investment advice from these companies. Their SEBI registration is no longer valid. SEBI said that even after cancellation, the companies must maintain records, handle investor grievances, transfer client records, funds or securities, and continue service to their clients.\n\n## What the companies said\n\nSEBI said six of the companies did not reply to its notice. IDFC Alternatives and Indianivesh Investment Managers said in their replies that their registration may be cancelled.\n\n## What next\n\nSEBI said the companies remain liable for anything done or omitted while they were registered as investment advisers. A copy of the order has been sent to BSE Limited, which is the administration and supervisory body for investment advisers.\n\nIf you take advice from any of these companies, contact the company directly to ask about your records and money."
+    }
+  }
+}
