@@ -1,0 +1,88 @@
+{
+  "id": "8d28754de2",
+  "createdAt": "2026-11-05T15:51:25.765Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "नशे की लत से एक स्वस्थ और अधिक स्वतंत्र जीवन की ओर",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333266"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "health",
+    "imageQuery": "counselling session rehabilitation centre",
+    "state": "up",
+    "districts": [
+      "sultanpur"
+    ],
+    "deadline": null,
+    "sourceTitle": "नशे की लत से एक स्वस्थ और अधिक स्वतंत्र जीवन की ओर",
+    "sourceDate": "2026-11-05",
+    "hi": {
+      "title": "Sultanpur के युवक ने DDAC की मदद से नशे की लत छोड़ी: मंत्रालय ने बताई पुनर्वास की कहानी",
+      "summary": "सामाजिक न्याय एवं अधिकारिता मंत्रालय ने 5 नवंबर 2026 को सुल्तानपुर के जिला नशा मुक्ति केंद्र (DDAC) से ठीक हुए एक 23 वर्षीय युवक की कहानी जारी की। यह बताती है कि नशा छोड़ने के लिए मेडिकल इलाज, परामर्श और सहयोग मिलकर कैसे काम करते हैं।",
+      "meaning": "यह खबर उन लोगों और परिवारों के लिए है जो नशे की लत से जूझ रहे हैं। सुल्तानपुर जिले में जिला नशा मुक्ति केंद्र (DDAC) के जरिए मेडिकल इलाज, दवाइयाँ, रहने की जगह, भोजन, परामर्श और योग जैसी मदद मिलती है। अगर आप या आपका कोई अपना इस समस्या में है, तो जिले के DDAC से संपर्क कर सकते हैं।",
+      "keyFacts": [
+        "23 वर्षीय अमित (बदला हुआ नाम) सुल्तानपुर जिले के रहने वाले हैं और स्नातक हैं।",
+        "30 मई 2025 को उन्हें सुल्तानपुर के जिला नशा मुक्ति केंद्र (DDAC) से मदद मिली।",
+        "केंद्र ने मेडिकल इलाज, समय पर दवाइयाँ, स्वास्थ्य सुविधाएँ, सुरक्षित रहने की जगह, पौष्टिक भोजन और व्यावसायिक मार्गदर्शन दिया।",
+        "परामर्श सत्र, प्रेरणादायक गतिविधियाँ, योग और कर्मचारियों से नियमित बातचीत से भावनात्मक सहयोग मिला।",
+        "अब वह अपना नियमित काम फिर से कर रहे हैं और आर्थिक रूप से आत्मनिर्भर हो रहे हैं।"
+      ],
+      "faq": [
+        {
+          "q": "DDAC क्या है?",
+          "a": "DDAC यानी जिला नशा मुक्ति केंद्र। सामाजिक न्याय एवं अधिकारिता मंत्रालय की पुनर्वास सेवाओं के अंतर्गत यह केंद्र नशे की लत से जूझ रहे लोगों की मदद करता है।"
+        },
+        {
+          "q": "DDAC में कौन-कौन सी सुविधाएँ मिलती हैं?",
+          "a": "विज्ञप्ति के अनुसार केंद्र मेडिकल इलाज, समय पर दवाइयाँ, स्वास्थ्य सुविधाएँ, रहने के लिए सुरक्षित जगह, पौष्टिक भोजन और व्यावसायिक मार्गदर्शन देता है। इसके साथ परामर्श सत्र, प्रेरणादायक गतिविधियाँ, योग और कर्मचारियों से नियमित बातचीत भी होती है।"
+        },
+        {
+          "q": "सुल्तानपुर में नशा छोड़ने के लिए कहाँ मदद मिलेगी?",
+          "a": "सुल्तानपुर के जिला नशा मुक्ति केंद्र (DDAC) में। विज्ञप्ति में बताया गया है कि इसी केंद्र से अमित को इलाज और पुनर्वास में मदद मिली।"
+        },
+        {
+          "q": "क्या नशा छोड़ने के बाद लोग फिर से काम कर पाते हैं?",
+          "a": "विज्ञप्ति में बताए गए अमित के उदाहरण में, इलाज और लगातार सहयोग के बाद उन्होंने अपना नियमित काम फिर से शुरू किया और आर्थिक रूप से आत्मनिर्भर हो रहे हैं।"
+        }
+      ],
+      "body": "सामाजिक न्याय एवं अधिकारिता मंत्रालय ने 5 नवंबर 2026 को सुल्तानपुर, उत्तर प्रदेश के एक युवक की नशा छोड़ने की कहानी जारी की। विज्ञप्ति में उसे 23 वर्षीय अमित (बदला हुआ नाम) बताया गया है। मंत्रालय के अनुसार उसकी मदद सुल्तानपुर के जिला नशा मुक्ति केंद्र (DDAC) से हुई, जो मंत्रालय की पुनर्वास सेवाओं के अंतर्गत आता है।\n\n## क्या हुआ था\n\nविज्ञप्ति के मुताबिक अमित स्नातक हैं और अंशकालिक काम करते थे। नशे की लत के कारण उन्हें व्यक्तिगत, सामाजिक और आर्थिक परेशानियों का सामना करना पड़ा। इसका असर उनके शारीरिक स्वास्थ्य, दिनचर्या, मानसिक स्थिति और निजी रिश्तों पर पड़ा। वे काम में स्थिरता नहीं बना पा रहे थे और आर्थिक तंगी से जूझ रहे थे। विज्ञप्ति में यह भी कहा गया है कि सामाजिक कलंक और सीमित सहयोग से उनका आत्मविश्वास कमजोर पड़ा।\n\n## मदद कब और कैसे मिली\n\nविज्ञप्ति के अनुसार 30 मई 2025 को अमित को सुल्तानपुर के DDAC से मदद मिली। केंद्र ने उन्हें मेडिकल इलाज, समय पर दवाइयाँ, स्वास्थ्य सुविधाएँ, रहने के लिए सुरक्षित जगह, पौष्टिक भोजन और व्यावसायिक मार्गदर्शन दिया। मेडिकल देखभाल के साथ-साथ परामर्श सत्र, प्रेरणादायक गतिविधियाँ, योग और देखभाल करने वालों तथा केंद्र के कर्मचारियों से नियमित बातचीत के जरिए भावनात्मक और मनोवैज्ञानिक सहयोग भी मिलता रहा।\n\n## अब क्या स्थिति है\n\nविज्ञप्ति में बताया गया है कि इस पुनर्वास कार्यक्रम से अमित ने धीरे-धीरे अपनी सेहत सुधारी, अनुशासन बनाया और आत्मविश्वास वापस पाया। नियमित परामर्श और लगातार मिले प्रोत्साहन से उनकी मानसिक स्थिति मजबूत हुई और सामाजिक व्यवहार बेहतर हुआ। केंद्र के सहयोगी माहौल ने उन्हें परिवार के साथ रिश्ते सुधारने और समाज में फिर से घुलने-मिलने में भी मदद की। अब वे अपना नियमित काम फिर से कर रहे हैं और आर्थिक रूप से आत्मनिर्भर हो रहे हैं।\n\n## किसे फ़ायदा होगा\n\nयह विज्ञप्ति उन लोगों और परिवारों के लिए उपयोगी जानकारी देती है जो नशे की लत से जूझ रहे हैं। इसमें बताया गया है कि समय पर चिकित्सा सहायता, पूरा पुनर्वास और लगातार भावनात्मक सहयोग मिलने से व्यक्ति लत से बाहर निकल सकता है। विज्ञप्ति में यह भी कहा गया है कि नशा मुक्ति और पुनर्वास सेवाओं तक आसान पहुँच बहुत जरूरी है।\n\n## आगे क्या करें\n\nअगर आप या आपके परिवार का कोई सदस्य नशे की लत से परेशान है, तो अपने जिले के जिला नशा मुक्ति केंद्र (DDAC) से संपर्क कर सकते हैं। विज्ञप्ति में दिए गए उदाहरण से पता चलता है कि केंद्र में इलाज, रहने की जगह, भोजन, परामर्श और योग जैसी सुविधाएँ मिलती हैं।"
+    },
+    "en": {
+      "title": "Sultanpur youth beat drug addiction with DDAC help, says Social Justice Ministry",
+      "summary": "The Ministry of Social Justice and Empowerment on 5 November 2026 shared the story of a 23-year-old from Sultanpur who recovered with help from the district de-addiction centre (DDAC). It shows how medical care, counselling and steady support work together.",
+      "meaning": "This matters to people and families dealing with drug addiction. In Sultanpur district, the District De-addiction Centre (DDAC) offers medical treatment, medicines, a safe place to stay, nutritious food, counselling and yoga. If you or someone you know needs help, you can approach the DDAC in your district.",
+      "keyFacts": [
+        "Amit (name changed), 23, is a graduate from Sultanpur district.",
+        "He received help from Sultanpur's District De-addiction Centre (DDAC) on 30 May 2025.",
+        "The centre provided medical treatment, timely medicines, health facilities, safe accommodation, nutritious food and vocational guidance.",
+        "Counselling sessions, motivational activities, yoga and regular talks with caregivers and staff gave emotional support.",
+        "He has now resumed his regular work and is becoming financially self-reliant."
+      ],
+      "faq": [
+        {
+          "q": "What is a DDAC?",
+          "a": "DDAC stands for District De-addiction Centre. Under the rehabilitation services of the Ministry of Social Justice and Empowerment, it helps people struggling with drug addiction."
+        },
+        {
+          "q": "What help does a DDAC provide?",
+          "a": "According to the release, the centre provides medical treatment, timely medicines, health facilities, a safe place to stay, nutritious food and vocational guidance. It also offers counselling sessions, motivational activities, yoga and regular interaction with staff."
+        },
+        {
+          "q": "Where can someone in Sultanpur get help to quit drugs?",
+          "a": "At Sultanpur's District De-addiction Centre (DDAC). The release says this is the centre that helped Amit with treatment and rehabilitation."
+        },
+        {
+          "q": "Can people return to work after recovery?",
+          "a": "In Amit's case described in the release, he resumed his regular work and is becoming financially self-reliant after treatment and continued support."
+        }
+      ],
+      "body": "The Ministry of Social Justice and Empowerment on 5 November 2026 released the story of a young man from Sultanpur, Uttar Pradesh, who came out of drug addiction. The release calls him Amit (name changed), aged 23. According to the ministry, he was helped by Sultanpur's District De-addiction Centre (DDAC), which works under the ministry's rehabilitation services.\n\n## What had happened\n\nThe release says Amit is a graduate who worked part-time. Addiction had brought him personal, social and financial problems. It affected his physical health, daily routine, mental state and personal relationships. He could not find stability in his work and faced financial hardship. The release also says social stigma and limited support weakened his confidence.\n\n## When and how help came\n\nAccording to the release, Amit received help from Sultanpur's DDAC on 30 May 2025. The centre gave him medical treatment, timely medicines, health facilities, a safe place to stay, nutritious food and vocational guidance. Along with medical care, he received emotional and psychological support through counselling sessions, motivational activities, yoga and regular talks with caregivers and centre staff.\n\n## Where he stands now\n\nThe release says the structured rehabilitation programme helped Amit gradually improve his health, build discipline and regain confidence. Regular counselling and constant encouragement strengthened his mental state and improved his social behaviour. The centre's supportive environment also helped him repair ties with his family and rejoin society. He has now resumed his regular work and is becoming financially self-reliant.\n\n## Who benefits\n\nThe release is useful for people and families dealing with addiction. It says timely medical help, full rehabilitation and continuous emotional support can help a person come out of addiction. It also says easy access to de-addiction and rehabilitation services is important.\n\n## What to do next\n\nIf you or a family member is struggling with addiction, you can approach the District De-addiction Centre (DDAC) in your district. The example in the release shows that centres offer treatment, accommodation, food, counselling and yoga."
+    }
+  }
+}

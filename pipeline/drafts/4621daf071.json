@@ -1,0 +1,98 @@
+{
+  "id": "4621daf071",
+  "createdAt": "2026-11-05T15:55:37.972Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Public Notice for Extension of Last Date for Submission of Online Application Form for Joint CSIR-UGC NET December 2026",
+    "link": "https://nta.ac.in/Download/Notice/Notice_20261105175642.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "students writing exam",
+    "state": null,
+    "districts": [],
+    "deadline": {
+      "date": "2026-11-09",
+      "label_hi": "Joint CSIR-UGC NET December 2026 के ऑनलाइन आवेदन की last date (शाम 1:50 बजे तक)",
+      "label_en": "Last date for online application for Joint CSIR-UGC NET December 2026 (up to 1:50 PM)"
+    },
+    "sourceTitle": "Public Notice for Extension of Last Date for Submission of Online Application Form for Joint CSIR-UGC NET December 2026",
+    "sourceDate": "2026-11-05",
+    "hi": {
+      "title": "Joint CSIR-UGC NET December 2026: आवेदन की last date बढ़कर 9 नवंबर, बिना late fee",
+      "summary": "NTA ने Joint CSIR-UGC NET December 2026 के ऑनलाइन आवेदन की last date बढ़ाकर 9 नवंबर 2026 कर दी है। यह छूट उन अभ्यर्थियों के लिए है जो अब तक फ़ॉर्म या फ़ीस पूरी नहीं कर पाए हैं।",
+      "meaning": "अगर आप Joint CSIR-UGC NET December 2026 का फ़ॉर्म भरना चाहते हैं और अब तक नहीं भर पाए हैं, तो अब 9 नवंबर 2026 शाम 1:50 बजे तक बिना late fee के आवेदन कर सकते हैं। परीक्षा फ़ीस का भुगतान भी इसी समय सीमा तक पूरा करना होगा। NTA ने अभ्यर्थियों से कहा है कि आख़िरी समय की तकनीकी दिक्कतों से बचने के लिए फ़ॉर्म जल्दी पूरा करें।",
+      "keyFacts": [
+        "ऑनलाइन आवेदन की नई last date: 9 नवंबर 2026, शाम 1:50 बजे तक",
+        "परीक्षा फ़ीस जमा करने की last date भी 9 नवंबर 2026, शाम 1:50 बजे तक",
+        "इस बार बढ़ी हुई तारीख़ पर late fee नहीं लगेगी",
+        "परीक्षा Computer Based Test (CBT) तरीक़े से होगी",
+        "बाकी सभी नियम और शर्तें पहले जैसी ही रहेंगी"
+      ],
+      "faq": [
+        {
+          "q": "Joint CSIR-UGC NET December 2026 की last date क्या है?",
+          "a": "9 नवंबर 2026, शाम 1:50 बजे तक। NTA ने यह तारीख़ बढ़ाकर बिना late fee के आवेदन की सुविधा दी है।"
+        },
+        {
+          "q": "क्या फ़ीस भरने की तारीख़ भी बदली है?",
+          "a": "हाँ, परीक्षा फ़ीस का सफल भुगतान भी 9 नवंबर 2026 शाम 1:50 बजे तक ही हो सकेगा।"
+        },
+        {
+          "q": "क्या बढ़ी हुई तारीख़ पर late fee लगेगी?",
+          "a": "नहीं। NTA ने साफ़ कहा है कि इस बढ़ी हुई तारीख़ तक आवेदन बिना late fee के लिए जा सकते हैं।"
+        },
+        {
+          "q": "Joint CSIR-UGC NET किस लिए होती है?",
+          "a": "यह परीक्षा भारतीय नागरिकों की Junior Research Fellowship और Assistant Professor पद के लिए योग्यता, Assistant Professor पद और Ph.D. में दाख़िले, या सिर्फ़ Ph.D. में दाख़िले के लिए योग्यता तय करती है।"
+        },
+        {
+          "q": "ज़्यादा जानकारी कहाँ मिलेगी?",
+          "a": "NTA की वेबसाइट nta.ac.in और csirnet.nta.nic.in पर। NTA ने अभ्यर्थियों से इन वेबसाइटों पर नियमित रूप से देखते रहने को कहा है।"
+        }
+      ],
+      "body": "## क्या बदला है\n\nNational Testing Agency (NTA) ने Joint CSIR-UGC NET December 2026 परीक्षा के ऑनलाइन आवेदन की last date बढ़ा दी है। अब अभ्यर्थी 9 नवंबर 2026 शाम 1:50 बजे तक फ़ॉर्म भर सकते हैं। इस बढ़ी हुई तारीख़ तक आवेदन पर कोई late fee नहीं लगेगी।\n\nसाथ ही परीक्षा फ़ीस के सफल भुगतान की last date भी 9 नवंबर 2026 शाम 1:50 बजे तक ही रखी गई है। यानी फ़ॉर्म भरने और फ़ीस जमा करने, दोनों का समय एक ही है।\n\n## यह छूट किसके लिए है\n\nNTA ने यह छूट उन अभ्यर्थियों के लिए दी है जो अब तक अपना आवेदन पूरा नहीं कर पाए हैं। नोटिस में कहा गया है कि यह फ़ैसला अभ्यर्थियों के हित में लिया गया है।\n\n## परीक्षा किस लिए होती है\n\nJoint CSIR-UGC NET परीक्षा भारतीय नागरिकों की योग्यता तय करने के लिए होती है। इसके ज़रिए तीन चीज़ों के लिए चयन होता है — Junior Research Fellowship का अवार्ड और Assistant Professor के पद पर नियुक्ति, Assistant Professor के पद पर नियुक्ति और Ph.D. में दाख़िला, या सिर्फ़ Ph.D. में दाख़िला। यह परीक्षा Computer Based Test (CBT) तरीक़े से होती है, यानी कंप्यूटर पर।\n\n## आवेदन करते समय क्या ध्यान रखें\n\nNTA ने अभ्यर्थियों से कहा है कि वे अपना आवेदन तय तारीख़ से काफ़ी पहले पूरा कर लें, ताकि आख़िरी समय में किसी तकनीकी दिक्कत का सामना न करना पड़े।\n\nनोटिस के मुताबिक़, Information Bulletin और पहले जारी Public Notice में दी गई बाकी सभी शर्तें पहले की तरह ही लागू रहेंगी। यानी योग्यता, पाठ्यक्रम और आवेदन के नियमों में कोई बदलाव नहीं हुआ है।\n\n## जानकारी कहाँ मिलेगी\n\nअभ्यर्थियों को NTA की वेबसाइट nta.ac.in और csirnet.nta.nic.in पर नियमित रूप से देखते रहने की सलाह दी गई है, ताकि ताज़ा अपडेट मिलते रहें।"
+    },
+    "en": {
+      "title": "Joint CSIR-UGC NET December 2026: last date extended to 9 November, no late fee",
+      "summary": "NTA has extended the last date for online applications for Joint CSIR-UGC NET December 2026 to 9 November 2026. The extension, without any late fee, is for candidates who have not yet completed their application.",
+      "meaning": "If you want to apply for Joint CSIR-UGC NET December 2026 and have not done so yet, you can now apply without late fee until 1:50 PM on 9 November 2026. The examination fee must also be paid within this same deadline. NTA has advised candidates to finish well before the deadline to avoid last-minute technical problems.",
+      "keyFacts": [
+        "New last date for online application: 9 November 2026, up to 1:50 PM",
+        "Last date for successful payment of examination fee: also 9 November 2026, up to 1:50 PM",
+        "No late fee applies for applying by the extended date",
+        "The exam is held in Computer Based Test (CBT) mode",
+        "All other terms and conditions remain unchanged"
+      ],
+      "faq": [
+        {
+          "q": "What is the last date for Joint CSIR-UGC NET December 2026?",
+          "a": "9 November 2026, up to 1:50 PM. NTA has extended the date and allowed applications without late fee."
+        },
+        {
+          "q": "Has the fee payment date also changed?",
+          "a": "Yes. The successful transaction of the examination fee must also be completed by 9 November 2026 up to 1:50 PM."
+        },
+        {
+          "q": "Is there a late fee for applying by the extended date?",
+          "a": "No. NTA has stated that applications can be submitted up to the revised date without any late fee."
+        },
+        {
+          "q": "What is Joint CSIR-UGC NET held for?",
+          "a": "It determines the eligibility of Indian nationals for the award of Junior Research Fellowship and appointment as Assistant Professor, for appointment as Assistant Professor and admission to Ph.D., or for admission to Ph.D. only."
+        },
+        {
+          "q": "Where can I get more information?",
+          "a": "On the official NTA websites nta.ac.in and csirnet.nta.nic.in. NTA has advised candidates to check these websites regularly for updates."
+        }
+      ],
+      "body": "## What has changed\n\nThe National Testing Agency (NTA) has extended the last date for submitting the online application form for Joint CSIR-UGC NET December 2026. Candidates can now apply until 1:50 PM on 9 November 2026, and no late fee will be charged for applications made by this revised date.\n\nThe last date for successful transaction of the examination fee is also 9 November 2026 up to 1:50 PM. In other words, both the form and the fee must be completed within the same deadline.\n\n## Who the extension is for\n\nAccording to the notice, the extension has been given in the interest of candidates who have not yet completed their application process. The decision is meant to help them finish applying.\n\n## What the exam is for\n\nJoint CSIR-UGC NET determines the eligibility of Indian nationals for three purposes: the award of Junior Research Fellowship and appointment as Assistant Professor; appointment as Assistant Professor and admission to Ph.D.; or admission to Ph.D. only. The examination is conducted in Computer Based Test (CBT) mode.\n\n## What candidates should keep in mind\n\nNTA has advised candidates to complete their application well before the revised deadline so that they do not face any last-minute technical difficulties.\n\nThe notice states that all other terms and conditions mentioned in the Information Bulletin and the earlier Public Notice remain unchanged. This means the eligibility rules, syllabus and application conditions stay as before.\n\n## Where to get updates\n\nCandidates are advised to regularly visit the official NTA websites nta.ac.in and csirnet.nta.nic.in for the latest updates."
+    }
+  }
+}
