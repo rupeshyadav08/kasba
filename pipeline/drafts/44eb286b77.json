@@ -1,0 +1,96 @@
+{
+  "id": "44eb286b77",
+  "createdAt": "2026-11-06T15:28:11.083Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Appeal No. 7144 of 2026 filed by Dhanni Devi Panwar",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/appeal-no-7144-of-2026-filed-by-dhanni-devi-panwar_105662.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "official documents desk",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Appeal No. 7144 of 2026 filed by Dhanni Devi Panwar",
+    "sourceDate": "2026-11-06",
+    "hi": {
+      "title": "PACL रिफंड: SEBI की अपीलीय अधिकारी ने RTI अपील खारिज की, Lodha Committee से संपर्क की सलाह",
+      "summary": "SEBI की अपीलीय अधिकारी ने 6 नवंबर 2026 को Dhanni Devi Panwar की RTI अपील खारिज कर दी। यह मामला PACL में बकाया भुगतान और Claim application status से जुड़ी जानकारी का था।",
+      "meaning": "अगर आपका भी PACL में पैसा फंसा है और आप रिफंड की स्थिति जानना चाहते हैं, तो यह आदेश बताता है कि ऐसी जानकारी SEBI के पास नहीं है। रिफंड से जुड़ी जानकारी Justice (Retd.) R.M. Lodha Committee देखती है, इसलिए आपको उसी Committee से संपर्क करना चाहिए। SEBI की वेबसाइट पर PACL से जुड़े Public Notice, Press Release, Status Report और FAQ देखे जा सकते हैं।",
+      "keyFacts": [
+        "अपील संख्या 7144 of 2026, आदेश की तारीख 6 नवंबर 2026",
+        "अपीलकर्ता ने 15 सितंबर 2026 को RTI आवेदन दिया, जो SEBI को 17 सितंबर 2026 को मिला",
+        "SEBI ने 29 सितंबर 2026 को जवाब दिया, अपील 9 अक्टूबर 2026 की दिनांकित है",
+        "अपीलकर्ता ने PACL में 14,850 रुपये की रसीद और 329 भुगतान का ज़िक्र किया",
+        "SEBI ने कहा कि यह जानकारी उसके पास नहीं है, रिफंड की जानकारी Lodha Committee देखती है",
+        "Lodha Committee का गठन सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर हुआ"
+      ],
+      "faq": [
+        {
+          "q": "PACL रिफंड की जानकारी कहाँ से मिलेगी?",
+          "a": "Justice (Retd.) R.M. Lodha Committee से। SEBI की अपीलीय अधिकारी ने कहा कि रिफंड स्थिति से जुड़ी सारी जानकारी यही Committee देखती है।"
+        },
+        {
+          "q": "क्या SEBI के पास PACL रिफंड की जानकारी है?",
+          "a": "नहीं। आदेश के अनुसार SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है।"
+        },
+        {
+          "q": "PACL से जुड़े दस्तावेज़ कहाँ देख सकते हैं?",
+          "a": "SEBI की वेबसाइट पर। आदेश में कहा गया है कि PACL Matters से जुड़े Public Notice, Press Release, Status Report और FAQ वहाँ उपलब्ध हैं।"
+        },
+        {
+          "q": "Lodha Committee क्या है?",
+          "a": "यह Justice (Retd.) R.M. Lodha की अध्यक्षता वाली Committee है, जिसका गठन सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर हुआ। आदेश के अनुसार PACL की संपत्ति के निपटान और निवेशकों को भुगतान की ज़िम्मेदारी इसी Committee के पास है।"
+        },
+        {
+          "q": "इस अपील का क्या नतीजा निकला?",
+          "a": "अपील खारिज कर दी गई। अपीलीय अधिकारी ने SEBI के जवाब में कोई कमी नहीं पाई।"
+        }
+      ],
+      "body": "## क्या मामला है\n\nSEBI की अपीलीय अधिकारी के सामने Dhanni Devi Panwar की एक RTI अपील आई थी। अपीलकर्ता ने 15 सितंबर 2026 को RTI आवेदन दिया, जो SEBI को 17 सितंबर 2026 को मिला। SEBI ने 29 सितंबर 2026 को इसका जवाब दिया। इसके बाद अपीलकर्ता ने 9 अक्टूबर 2026 की अपील दायर की, जो 13 अक्टूबर 2026 को अपीलीय अधिकारी के कार्यालय को मिली।\n\n## अपीलकर्ता ने क्या मांगा\n\nआदेश के अनुसार अपीलकर्ता ने PACL में बकाया भुगतान से जुड़ी जानकारी मांगी। उसने अपनी रसीद का कुल अमाउंट 14,850 रुपये बताया और कहा कि उसे 329 भुगतान बताए गए हैं। उसने अनुरोध किया कि उसकी Claim application status का edit option खोला जाए, ताकि वह अपनी रसीदें और दस्तावेज़ जमा कर सके और उसका भुगतान हो सके।\n\n## SEBI ने क्या जवाब दिया\n\nआदेश के अनुसार SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है। SEBI ने बताया कि रिफंड स्थिति से जुड़ी सारी जानकारी Justice (Retd.) R.M. Lodha Committee देखती है और अपीलकर्ता को उसी Committee से संपर्क करना चाहिए। SEBI ने यह भी बताया कि PACL Matters से जुड़े Public Notice, Press Release, Status Report और FAQ उसकी वेबसाइट पर उपलब्ध हैं।\n\n## अपीलीय अधिकारी ने क्या कहा\n\nअपीलीय अधिकारी ने अपने आदेश में लिखा कि SEBI ने साफ कहा है कि मांगी गई जानकारी उसके पास नहीं है। आदेश में Central Information Commission के 8 जुलाई 2013 के एक फैसले का ज़िक्र है, जिसमें कहा गया था कि अगर SEBI के पास कोई जानकारी नहीं है, तो CPIO उसे बना नहीं सकता। इस आधार पर अपीलीय अधिकारी ने SEBI के जवाब में कोई कमी नहीं पाई।\n\n## Lodha Committee क्या है\n\nआदेश के अनुसार PACL की संपत्ति के निपटान और निवेशकों को भुगतान की ज़िम्मेदारी Justice (Retd.) R.M. Lodha Committee के पास है। यह Committee सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी और इसके अध्यक्ष सुप्रीम कोर्ट के पूर्व Chief Justice R.M. Lodha हैं।\n\n## अब क्या हुआ\n\nअपीलीय अधिकारी ने 6 नवंबर 2026 के अपने आदेश में कहा कि SEBI के फैसले में दखल देने की ज़रूरत नहीं है और अपील खारिज की जा रही है।"
+    },
+    "en": {
+      "title": "PACL refund: SEBI appellate authority dismisses RTI appeal, directs investor to Lodha Committee",
+      "summary": "SEBI's appellate authority on 6 November 2026 dismissed an RTI appeal filed by Dhanni Devi Panwar. The appeal concerned information about pending PACL payments and her claim application status.",
+      "meaning": "If your money is also stuck in PACL and you want to know your refund status, this order says SEBI does not hold that information. Refund-related information is handled by the Justice (Retd.) R.M. Lodha Committee, so you should approach that Committee. PACL public notices, press releases, status reports and FAQs can be seen on SEBI's website.",
+      "keyFacts": [
+        "Appeal No. 7144 of 2026, order dated 6 November 2026",
+        "Appellant filed an RTI application on 15 September 2026, received by SEBI on 17 September 2026",
+        "SEBI replied on 29 September 2026; the appeal is dated 9 October 2026",
+        "Appellant cited PACL receipts totalling Rs 14,850 and said she was told of 329 payments",
+        "SEBI said the information is not available with it; refund status is handled by the Lodha Committee",
+        "The Lodha Committee was constituted under the Supreme Court's order of 2 February 2016"
+      ],
+      "faq": [
+        {
+          "q": "Where can I get PACL refund information?",
+          "a": "From the Justice (Retd.) R.M. Lodha Committee. SEBI's appellate authority said all communication regarding refund status is handled by this Committee."
+        },
+        {
+          "q": "Does SEBI have PACL refund information?",
+          "a": "No. According to the order, SEBI said the information sought is not available with it."
+        },
+        {
+          "q": "Where can I see PACL documents?",
+          "a": "On SEBI's website. The order says PACL Matters public notices, press releases, status reports and FAQs are available there."
+        },
+        {
+          "q": "What is the Lodha Committee?",
+          "a": "It is a committee chaired by Justice (Retd.) R.M. Lodha, constituted under the Supreme Court's order of 2 February 2016. According to the order, it is entrusted with disposal of PACL properties and repayment to investors."
+        },
+        {
+          "q": "What was the outcome of this appeal?",
+          "a": "The appeal was dismissed. The appellate authority found no deficiency in SEBI's response."
+        }
+      ],
+      "body": "## What was the matter\n\nAn RTI appeal by Dhanni Devi Panwar came before SEBI's appellate authority. The appellant filed an RTI application on 15 September 2026, which SEBI received on 17 September 2026. SEBI responded on 29 September 2026. The appellant then filed an appeal dated 9 October 2026, received by the Office of the Appellate Authority on 13 October 2026.\n\n## What the appellant sought\n\nAccording to the order, the appellant sought information about pending payment in PACL. She stated the total amount of her receipts as Rs 14,850 and said she had been told of 329 payments. She requested that the edit option of her claim application status be opened so that she could submit all her receipts and documents and get paid.\n\n## What SEBI replied\n\nAccording to the order, SEBI said the information sought is not available with it. SEBI stated that all communication regarding refund status is handled by the Justice (Retd.) R.M. Lodha Committee and advised the appellant to approach that Committee. SEBI also said details of PACL Matters, including public notices, press releases, status reports and FAQs, are available on its website.\n\n## What the appellate authority said\n\nThe appellate authority noted that SEBI had categorically stated the requested information is not available with it. The order refers to a Central Information Commission decision of 8 July 2013, which held that if SEBI does not have such information, the CPIO cannot invent one. On this basis, the appellate authority found no deficiency in SEBI's response.\n\n## What the Lodha Committee is\n\nAccording to the order, the responsibility of disposal of PACL properties and repayment to investors is entrusted with the Justice (Retd.) R.M. Lodha Committee. The Committee was constituted under the Supreme Court's order of 2 February 2016 and is chaired by former Chief Justice of India R.M. Lodha.\n\n## What happens now\n\nIn its order dated 6 November 2026, the appellate authority said there was no need to interfere with SEBI's decision and dismissed the appeal."
+    }
+  }
+}
