@@ -3083,12 +3083,18 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63934": "2026-11-06",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63933": "2026-11-06",
     "https://nta.ac.in/Download/Notice/Notice_20261106103320.pdf": "2026-11-06",
-    "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=#ebj25v": "2026-11-06"
+    "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=#ebj25v": "2026-11-06",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333552": "2026-11-06",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63937": "2026-11-06",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_b1516124-13e8-4ca4-8fe6-92d508fd3c59.pdf": "2026-11-06",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_604be448-f39e-4d93-bd01-8ea5d84df6c9.pdf": "2026-11-06"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-06T09:30:57.710Z",
-    "pending": []
+    "pending": [
+      "swayam-july-2026-semester-exam-correction-window-open-till-7"
+    ]
   },
   "sources": [
     "pib-hi",
