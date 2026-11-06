@@ -3152,11 +3152,14 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_710b8c56-4e3f-4b27-9410-3b7300a91b7a.pdf": "2026-11-06",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_39f620e8-b67d-4d37-8384-40e2e774dfb2.pdf": "2026-11-06",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bd12ffa5-004c-4caa-8dd8-e75237f8ab75.pdf": "2026-11-06",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf": "2026-11-06"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf": "2026-11-06",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333806": "2026-11-06",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333813": "2026-11-06",
+    "https://nta.ac.in/Download/Notice/Notice_20261106205348.pdf": "2026-11-06"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-06T15:30:48.412Z",
+    "last": "2026-11-06T20:08:57.219Z",
     "pending": []
   },
   "sources": [
