@@ -1,0 +1,96 @@
+{
+  "id": "abd31d2d5d",
+  "createdAt": "2026-11-07T14:23:02.379Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "पीएसयू तेल विपणन कंपनियों द्वारा आपूर्ति किया जाने वाला ई20 पेट्रोल तय गुणवत्ता मानकों को पूरा करता है; 27 राज्यों और केंद्र शासित प्रदेशों से लिए गए 893 नमूने मानकों के अनुरूप पाए गए",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333951"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "petrol pump fuel nozzle",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "पीएसयू तेल विपणन कंपनियों द्वारा आपूर्ति किया जाने वाला ई20 पेट्रोल तय गुणवत्ता मानकों को पूरा करता है; 27 राज्यों और केंद्र शासित प्रदेशों से लिए गए 893 नमूने मानकों के अनुरूप पाए गए",
+    "sourceDate": "2026-11-07",
+    "hi": {
+      "title": "E20 पेट्रोल पर सरकार का बयान: 893 नमूने मानकों पर खरे, कर्नाटक के दावे पर सवाल",
+      "summary": "पेट्रोलियम मंत्रालय ने 7 नवंबर 2026 को बताया कि तीन सरकारी तेल कंपनियों के E20 पेट्रोल के 893 नमूने तय गुणवत्ता मानकों पर खरे उतरे हैं। यह बयान कर्नाटक सरकार के उस दावे के बाद आया है, जिसमें कुछ पंपों पर पेट्रोल में 26% से 31% तक इथेनॉल बताया गया था।",
+      "meaning": "आम उपभोक्ता के लिए इस बयान में करने या भरने के लिए कुछ नहीं है। यह सरकार और तेल कंपनियों की ओर से ईंधन की गुणवत्ता पर आए एक सवाल का जवाब है। अगर आपको अपने पंप पर ईंधन की गुणवत्ता पर शक हो, तो यह बयान बताता है कि नमूना लेने और जांच की एक तय प्रक्रिया है, जिस पर सवाल उठाए गए हैं।",
+      "keyFacts": [
+        "27 राज्यों और केंद्र शासित प्रदेशों से E20 ईंधन के 893 नमूने लिए गए",
+        "सभी 893 नमूनों में इथेनॉल 19–21% की तय सीमा में मिला",
+        "कर्नाटक के सभी 56 नमूनों में इथेनॉल 19% से 20% के बीच, औसत 19.30%",
+        "कर्नाटक सरकार ने कुछ पंपों पर 26% से 31% इथेनॉल होने का दावा किया था",
+        "नमूना प्रक्रिया के लिए छह-छह नमूने लेने का नियम है, जिन पर सभी पक्षों के हस्ताक्षर जरूरी हैं",
+        "बयान की तारीख: 7 नवंबर 2026"
+      ],
+      "faq": [
+        {
+          "q": "E20 पेट्रोल में इथेनॉल कितना होना चाहिए?",
+          "a": "तय सीमा 19% से 21% है। मंत्रालय के मुताबिक 893 नमूनों में इथेनॉल इसी दायरे में मिला।"
+        },
+        {
+          "q": "कर्नाटक में क्या दावा किया गया था?",
+          "a": "कर्नाटक सरकार के खाद्य, नागरिक आपूर्ति, उपभोक्ता मामले और विधिक माप विज्ञान विभाग ने कहा था कि राज्य के कुछ खुदरा केंद्रों पर बेचे जा रहे पेट्रोल में 26% से 31% तक इथेनॉल है।"
+        },
+        {
+          "q": "तेल कंपनियों ने इस दावे पर क्या कहा?",
+          "a": "इंडियन ऑयल, बीपीसीएल और एचपीसीएल ने कहा कि ये दावे तय कानूनी और तकनीकी प्रक्रिया से की गई जांच से मेल नहीं खाते। उन्होंने नमूना लेने और परीक्षण के तरीके पर भी सवाल उठाए।"
+        },
+        {
+          "q": "क्या इससे मेरे वाहन या माइलेज पर असर पड़ेगा?",
+          "a": "बयान में कहा गया है कि E20 के लिए तैयार वाहनों के माइलेज में लगभग 1–2% और कुछ अन्य वाहनों में 3–6% तक कमी आ सकती है। यह आंकड़े मंत्रालय ने 12 अगस्त 2025 के अपने पुराने बयान के हवाले से दिए हैं।"
+        },
+        {
+          "q": "क्या मुझे कुछ करना है?",
+          "a": "नहीं। यह बयान कर्नाटक सरकार के दावे का जवाब है और इसमें आम लोगों के लिए कोई आवेदन, तारीख या निर्देश नहीं है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nपेट्रोलियम और प्राकृतिक गैस मंत्रालय ने 7 नवंबर 2026 को एक बयान जारी किया। इसमें बताया गया है कि सरकारी तेल विपणन कंपनियां (ओएमसी) जो E20 पेट्रोल बेचती हैं, वह तय गुणवत्ता मानकों को पूरा करता है।\n\nयह बयान कर्नाटक सरकार के उस प्रेस नोट के बाद आया है, जिसमें कहा गया था कि राज्य के कुछ खुदरा केंद्रों पर बेचे जा रहे पेट्रोल में 26% से 31% तक इथेनॉल है।\n\n## नमूनों की जांच में क्या निकला\n\nमंत्रालय के मुताबिक, ओएमसी और सेंटर फॉर हाई टेक्नोलॉजी (सीएचटी) की गुणवत्ता निगरानी में 27 राज्यों और केंद्र शासित प्रदेशों से E20 ईंधन के 893 नमूने लिए गए। इनमें इंडियन ऑयल के 330, बीपीसीएल के 280 और एचपीसीएल के 283 नमूने शामिल थे।\n\nजांच रिफाइनरी और ओएमसी की गुणवत्ता-नियंत्रण प्रयोगशालाओं में हुई। सभी 893 नमूनों में इथेनॉल 19–21% की तय सीमा के भीतर पाया गया। कर्नाटक में जांचे गए सभी 56 नमूनों में इथेनॉल 19% से 20% के बीच था, जिसका औसत 19.30% रहा।\n\n## तेल कंपनियों ने क्या सवाल उठाए\n\nतीनों कंपनियों ने कहा कि कर्नाटक के दावे तय कानूनी और तकनीकी प्रक्रिया से की गई जांच से मेल नहीं खाते। उन्होंने अक्टूबर 2026 की नमूना प्रक्रिया पर चिंता जताई, जिसमें कंपनियों के प्रतिनिधि मौजूद नहीं थे।\n\nकंपनियों के मुताबिक, नियम के तहत एक-एक लीटर के छह नमूने लिए जाते हैं, जिन पर सभी पक्षों के हस्ताक्षर होते हैं। उन्होंने कहा कि उन्हें रिटेंशन सैंपल, आउटलेट-वार जानकारी और प्रयोगशाला रिपोर्ट नहीं मिलीं। उनका यह भी कहना है कि नतीजे तय प्रयोगशाला की बजाय किसी थर्ड-पार्टी प्रयोगशाला के प्रमाणपत्रों पर आधारित हैं।\n\n## माइलेज और खर्च के दावों पर क्या कहा गया\n\nबयान में उपभोक्ताओं के सालाना लगभग ₹62,000 करोड़ के माइलेज नुकसान और वाहन मरम्मत पर लगभग ₹39,000 करोड़ खर्च के दावों को सावधानी से जांचने की बात कही गई है।\n\nमंत्रालय ने अपने 12 अगस्त 2025 के बयान का हवाला दिया, जिसमें कहा गया था कि E20 के लिए तैयार वाहनों के माइलेज में लगभग 1–2% और कुछ अन्य वाहनों में 3–6% तक कमी आ सकती है।\n\n## आगे क्या मांग की गई\n\nतीनों ओएमसी ने कर्नाटक सरकार से नमूनों से जुड़े दस्तावेज, आउटलेट-वार प्रयोगशाला रिपोर्ट और परीक्षण पद्धति का विवरण साझा करने का अनुरोध किया है। साथ ही राज्य सरकार और ओएमसी के प्रतिनिधियों की मौजूदगी में अधिकृत प्रयोगशाला में स्वतंत्र परीक्षण की मांग की है।"
+    },
+    "en": {
+      "title": "Centre says E20 petrol met quality norms in 893 samples, questions Karnataka's claim",
+      "summary": "The Petroleum Ministry said on 7 November 2026 that 893 samples of E20 petrol supplied by the three state-run oil marketing companies met the prescribed quality standards. The statement came after Karnataka claimed some retail outlets sold petrol with 26% to 31% ethanol.",
+      "meaning": "There is nothing for an ordinary consumer to apply for or do based on this statement. It is the Centre's and the oil companies' reply to a question raised about fuel quality. If you ever doubt the fuel at your pump, the statement shows there is a fixed sampling and testing process, and that process itself is now being questioned.",
+      "keyFacts": [
+        "893 samples of E20 fuel taken from 27 states and union territories",
+        "Ethanol in all 893 samples was within the prescribed 19–21% range",
+        "All 56 Karnataka samples had 19% to 20% ethanol, average 19.30%",
+        "Karnataka had claimed 26% to 31% ethanol at some retail outlets",
+        "Rules require six one-litre samples, signed by all parties",
+        "Statement dated 7 November 2026"
+      ],
+      "faq": [
+        {
+          "q": "How much ethanol should E20 petrol contain?",
+          "a": "The prescribed range is 19% to 21%. The ministry says all 893 samples fell within this range."
+        },
+        {
+          "q": "What did Karnataka claim?",
+          "a": "Karnataka's Department of Food, Civil Supplies, Consumer Affairs and Legal Metrology said petrol sold at some retail outlets in the state contained 26% to 31% ethanol."
+        },
+        {
+          "q": "How did the oil companies respond?",
+          "a": "Indian Oil, BPCL and HPCL said the claims do not match checks done under the prescribed legal and technical process. They also raised concerns about the sampling and testing method used."
+        },
+        {
+          "q": "Will this affect my vehicle or mileage?",
+          "a": "The statement says mileage may drop by about 1–2% in vehicles made for E20 and by about 3–6% in some other vehicles, figures it cites from its own 12 August 2025 statement."
+        },
+        {
+          "q": "Do I need to do anything?",
+          "a": "No. This is a reply to Karnataka's claim and contains no application, deadline or instruction for ordinary people."
+        }
+      ],
+      "body": "## What happened\n\nThe Ministry of Petroleum and Natural Gas issued a statement on 7 November 2026 saying that E20 petrol supplied by the state-run oil marketing companies (OMCs) meets the prescribed quality standards.\n\nThe statement followed a Karnataka government press note claiming that petrol sold at some retail outlets in the state contained 26% to 31% ethanol.\n\n## What the sample checks found\n\nAccording to the ministry, quality monitoring by the OMCs and the Centre for High Technology (CHT) covered 893 samples of E20 fuel from 27 states and union territories. These included 330 samples from Indian Oil, 280 from BPCL and 283 from HPCL.\n\nThe samples were tested at refinery and OMC quality-control laboratories. Ethanol in all 893 samples was within the prescribed 19–21% range. In Karnataka, all 56 samples tested had ethanol between 19% and 20%, with an average of 19.30%.\n\n## What the oil companies questioned\n\nThe three companies said the Karnataka claims do not match checks carried out under the prescribed legal and technical process. They raised concerns about the October 2026 sampling exercise, in which company representatives were not present.\n\nUnder the rules, six one-litre samples are drawn and signed by all parties, the companies said. They said they did not receive the retention samples, outlet-wise details or laboratory reports. They also said the results rest on certificates from a third-party laboratory rather than the prescribed laboratory.\n\n## On mileage and repair cost claims\n\nThe statement says claims of about ₹62,000 crore in annual mileage loss to consumers and about ₹39,000 crore spent on vehicle repairs need careful examination.\n\nThe ministry cited its own statement of 12 August 2025, which said mileage may drop by about 1–2% in vehicles made for E20 and by about 3–6% in some other vehicles.\n\n## What is being asked now\n\nThe three OMCs have asked the Karnataka government to share all documents related to the samples, outlet-wise laboratory reports and details of the testing method used. They have also sought independent testing at an authorised laboratory in the presence of state government and OMC representatives."
+    }
+  }
+}
