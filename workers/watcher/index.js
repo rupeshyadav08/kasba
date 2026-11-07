@@ -215,7 +215,16 @@ const NEWS_SLOTS = ['02:00', '07:30', '13:30'];
 async function startPipelines(env, at) {
   const slot = at.toISOString().slice(11, 16);
   const runs = [['pipeline-india.yml'], ...(NEWS_SLOTS.includes(slot) ? [['pipeline.yml']] : [])];
-  for (const [wf] of runs) console.log('start', wf, (await dispatch(env, wf)).status);
+  // GitHub answers 204 when a run was started. Anything else (a token without Actions write, an
+  // expired token) is kept in KV and shown at /dispatch, because Worker logs need a Cloudflare login.
+  const log = [];
+  for (const [wf] of runs) {
+    const res = await dispatch(env, wf);
+    const entry = { wf, at: at.toISOString(), status: res.status, ...(res.status === 204 ? {} : { body: (await res.text()).slice(0, 300) }) };
+    console.log('start', JSON.stringify(entry));
+    log.push(entry);
+  }
+  await env.WATCH.put('dispatch', JSON.stringify(log));
 }
 
 async function run(env) {
@@ -236,6 +245,7 @@ export default {
     const path = new URL(request.url).pathname;
     const json = { headers: { 'Content-Type': 'application/json; charset=utf-8' } };
     if (path === '/status') return new Response((await env.WATCH.get('status')) ?? '{}', json);
+    if (path === '/dispatch') return new Response((await env.WATCH.get('dispatch')) ?? '[]', json);
     const [, kind, id] = path.split('/');
     const board = BOARDS.find((b) => b.id === id);
     if (kind === 'links' && board) return new Response((await env.WATCH.get(`seen:${id}`)) ?? '[]', json);

@@ -1,8 +1,14 @@
 name: News pipeline
 
-# Started by the result watcher's cron (workers/watcher/index.js, startPipelines), which runs on
-# time; GitHub's own schedule ran hours late or not at all on 2-3 Nov 2026.
+# Started on time by the result watcher's cron (workers/watcher/index.js, startPipelines).
+# GitHub's own schedule (late or skipped on 2-3 Nov 2026) stays as a back-up in case the Worker's
+# token stops working; the news-pipeline group below keeps the two from running at once, and a
+# second run finds nothing new.
 on:
+  schedule:
+    - cron: '17 2 * * *'  # about 7:45 India time
+    - cron: '47 7 * * *'  # about 13:15
+    - cron: '47 13 * * *' # about 19:15
   workflow_dispatch:
     inputs:
       dry_run:
