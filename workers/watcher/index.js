@@ -195,26 +195,42 @@ async function checkBoard(board, env) {
   return status;
 }
 
+function dispatch(env, workflow, inputs = {}) {
+  return fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${workflow}/dispatches`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: 'application/vnd.github+json',
+      'User-Agent': 'kasba-watcher', 'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ ref: 'main', inputs }),
+  });
+}
+
+// GitHub's own schedule ran hours late on 2-3 Nov 2026 (a 7:47 am run started after 11 am, the
+// India runner's half-hourly runs never started), so this Worker's cron, which is on time, starts
+// the pipelines instead: the main news run three times a day (UTC slots below, about 7:30 am,
+// 1 pm and 7 pm India time) and the India runner's run every 30 minutes.
+const NEWS_SLOTS = ['02:00', '07:30', '13:30'];
+
+async function startPipelines(env, at) {
+  const slot = at.toISOString().slice(11, 16);
+  const runs = [['pipeline-india.yml'], ...(NEWS_SLOTS.includes(slot) ? [['pipeline.yml']] : [])];
+  for (const [wf] of runs) console.log('start', wf, (await dispatch(env, wf)).status);
+}
+
 async function run(env) {
   const results = await Promise.all(BOARDS.map((b) => checkBoard(b, env)));
   const trigger = results.filter((r, i) => !BOARDS[i].probeOnly && r.urgent?.length);
   if (trigger.length) {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/pipeline.yml/dispatches`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: 'application/vnd.github+json',
-        'User-Agent': 'kasba-watcher', 'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ ref: 'main', inputs: { urgent: true } }),
-    });
+    const res = await dispatch(env, 'pipeline.yml', { urgent: true });
     console.log('dispatch', res.status, trigger.map((t) => `${t.id}: ${t.urgent[0]}`).join(' | '));
   }
   await env.WATCH.put('status', JSON.stringify({ at: new Date().toISOString(), triggered: trigger.map((t) => t.id), results }));
 }
 
 export default {
-  async scheduled(_event, env, ctx) {
-    ctx.waitUntil(run(env));
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(Promise.all([run(env), startPipelines(env, new Date(event.scheduledTime))]));
   },
   async fetch(request, env) {
     const path = new URL(request.url).pathname;

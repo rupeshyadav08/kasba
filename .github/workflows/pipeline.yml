@@ -1,13 +1,8 @@
 name: News pipeline
 
+# Started by the result watcher's cron (workers/watcher/index.js, startPipelines), which runs on
+# time; GitHub's own schedule ran hours late or not at all on 2-3 Nov 2026.
 on:
-  schedule:
-    # Three batched runs a day (Rupesh, 1 Nov 2026). GitHub delays or drops scheduled runs at busy
-    # minutes like :00 and :30, so these ask at quieter minutes. Taps on Telegram still start a run
-    # at once through the webhook, and every trigger shares the news-pipeline group below.
-    - cron: '17 2 * * *'  # about 7:45 India time
-    - cron: '47 7 * * *'  # about 13:15
-    - cron: '47 13 * * *' # about 19:15
   workflow_dispatch:
     inputs:
       dry_run:
