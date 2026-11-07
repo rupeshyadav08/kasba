@@ -25,6 +25,10 @@ on:
         description: 'Which of that run''s videos (1-3; blank for runs that made one)'
         type: string
         default: ''
+      sample:
+        description: 'Sample only: one video to Telegram, never uploaded, story not marked as used'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -70,6 +74,7 @@ jobs:
           pip install -q edge-tts
       - name: Make the videos and send them to the editor
         run: |
+          if [ "${{ inputs.sample }}" = true ]; then SHORT_OUT=short/1/ SHORT_LABEL='(नया हुक)' node scripts/make-short.mjs ${{ inputs.story }}; git checkout -- pipeline/shorts.json; exit; fi
           if [ -n "${{ inputs.story }}" ]; then SHORT_OUT=short/1/ SHORT_ASK=${ASK:+$ASK-1} node scripts/make-short.mjs ${{ inputs.story }}; exit; fi
           # Each pass logs its story in pipeline/shorts.json, so the next one picks a different story.
           for n in 1 2 3; do
@@ -81,7 +86,7 @@ jobs:
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           SHORT_TONE: hinglish
           SHORT_RATE: +5%
-          ASK: ${{ vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
+          ASK: ${{ !inputs.sample && vars.SHORTS_AUTO != 'true' && github.run_id || '' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - uses: actions/upload-artifact@v4
@@ -102,7 +107,7 @@ jobs:
           git commit -m "[skip ci] Shorts log"
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
       - name: Upload to YouTube (no tap needed)
-        if: ${{ vars.SHORTS_AUTO == 'true' }}
+        if: ${{ vars.SHORTS_AUTO == 'true' && !inputs.sample }}
         run: for d in short/*/; do [ -f "$d/meta.json" ] && SHORT_DIR=$d node scripts/youtube-upload.mjs; done
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
