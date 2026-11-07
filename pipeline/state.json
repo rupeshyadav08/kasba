@@ -3155,11 +3155,22 @@
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf": "2026-11-06",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333806": "2026-11-06",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333813": "2026-11-06",
-    "https://nta.ac.in/Download/Notice/Notice_20261106205348.pdf": "2026-11-06"
+    "https://nta.ac.in/Download/Notice/Notice_20261106205348.pdf": "2026-11-06",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333921": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333911": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333895": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333918": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333874": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333883": "2026-11-07",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333877": "2026-11-07",
+    "https://nta.ac.in/Download/Notice/Notice_20261107140555.pdf": "2026-11-07",
+    "https://nta.ac.in/Download/Notice/Notice_20261107140457.pdf": "2026-11-07",
+    "https://nta.ac.in/Download/Notice/Notice_20261107122142.pdf": "2026-11-07",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_1130c725-8d0f-4d13-9610-90407907dc8e.pdf": "2026-11-07"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-07T04:07:02.056Z",
+    "last": "2026-11-07T08:53:29.416Z",
     "pending": []
   },
   "sources": [
