@@ -1,6 +1,6 @@
 name: Shorts
 
-# Twice a day: makes three ~35-second vertical videos from recent stories (one setup, three
+# Twice a day: makes three 15-30 second vertical videos from recent stories (one setup, three
 # renders) and sends each to the editor on Telegram with Post/Skip buttons. Six a day also fits
 # YouTube's default API quota of about six uploads. A Post tap reaches functions/api/telegram.js, which
 # starts this workflow again with `upload` set to the run that made the video; that run's video is

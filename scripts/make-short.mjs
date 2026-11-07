@@ -25,9 +25,16 @@ const fresh = stories.filter((s) => !used.has(s.storyId) && Date.now() - new Dat
 // Only practical topics: on YouTube and Google, jobs, exams, deadlines and schemes are what
 // people watch; ministry reviews and diplomatic news get no views (Kasba channel, Oct 2026).
 const practical = fresh.filter((s) => ['jobs-exams', 'schemes', 'farming', 'money'].includes(s.category));
+// Festival timing: in the 3 days before a festival (pipeline/festivals.json, 2027 dates approximate),
+// a story that mentions it (holiday, special trains, ...) goes first. Reels that ride a festival get
+// the most shares (seen on big Instagram channels, Nov 2026).
+const festivals = existsSync('pipeline/festivals.json') ? JSON.parse(readFileSync('pipeline/festivals.json', 'utf8')) : [];
+const festival = festivals.find((f) => f.date >= today && (Date.parse(f.date) - Date.parse(today)) / 864e5 <= 3);
+const mentions = (s) => festival && festival.words.some((w) => `${s.title} ${s.summary}`.toLowerCase().includes(w.toLowerCase()));
 const story = process.argv[2]
   ? stories.find((s) => s.storyId === process.argv[2])
-  : practical.find((s) => String(s.deadline?.date ?? '') >= today) ?? practical.find((s) => s.category === 'jobs-exams') ?? practical[0];
+  : fresh.find(mentions) ?? practical.find((s) => String(s.deadline?.date ?? '') >= today) ?? practical.find((s) => s.category === 'jobs-exams') ?? practical[0];
+const festivalLine = festival && story && mentions(story) ? festival.name : '';
 if (!story) {
   console.log(process.argv[2] ? `No story ${process.argv[2]}` : 'No new story for a Short');
   process.exit(process.argv[2] ? 1 : 0);
@@ -56,9 +63,12 @@ async function writeScript() {
     : process.env.SHORT_TONE === 'calm'
     ? 'शांत, अपनापन भरी बोलचाल की हिंदी, जैसे कोई बड़ा भाई या दीदी प्यार से समझा रहे हों: छोटे वाक्य, "आप" से बात, कोई हड़बड़ी या शोर नहीं, विस्मय चिह्न नहीं। वाक्यों के बीच ठहराव के लिए "..." लगाओ।'
     : 'बोलचाल की हिंदी, जैसे कोई जानकार दोस्त जोश से बता रहा हो: छोटे वाक्य, सीधे "आप" से बात, बीच में "ध्यान दीजिए", "याद रखिए" जैसे शब्द, सवाल और विस्मय (!)।'}
-अंक शब्दों में नहीं, अंकों में लिखो; अंग्रेज़ी नाम (JEE, NTA) वैसे ही। पहला दृश्य एक ठोस हुक हो
-(जैसे "आख़िरी तारीख़ 22 नवंबर"), फिर 3 दृश्य काम की बातें, आख़िरी दृश्य "पूरी ख़बर kasba.co.in पर"।
-हर दृश्य: screen = स्क्रीन पर 4-9 शब्द, voice = बोलने के लिए 1-2 छोटे वाक्य। कुल voice 60-75 शब्द।
+अंक शब्दों में नहीं, अंकों में लिखो; अंग्रेज़ी नाम (JEE, NTA) वैसे ही।
+हुक सबसे ज़रूरी है: लोग पहले 2 सेकंड में तय करते हैं कि रुकें या आगे बढ़ें। पहला दृश्य सीधे सबसे बड़ी बात से शुरू हो:
+voice ज़्यादा से ज़्यादा 7 शब्द, screen 2-5 शब्द, कोई अंक/तारीख़/रकम हो तो वही (जैसे "22 नवंबर. आख़िरी मौक़ा." या "1,265 पोस्ट. Railway में भर्ती.")।
+पहले दृश्य में "नमस्कार", चैनल का नाम, "आज की ख़बर", "जानिए" जैसी भूमिका बिल्कुल नहीं।${festivalLine ? ` यह ख़बर ${festivalLine} से जुड़ी है; हुक में ${festivalLine} का ज़िक्र करो, पर सिर्फ़ ख़बर के तथ्यों के साथ।` : ''}
+फिर 2-3 दृश्य काम की बातें, आख़िरी दृश्य "पूरी ख़बर kasba.co.in पर"।
+हर दृश्य: screen = स्क्रीन पर 3-8 शब्द, voice = 1-2 छोटे वाक्य। कुल voice 45-60 शब्द, ताकि वीडियो 30 सेकंड से छोटा रहे।
 bg = स्टॉक वीडियो खोजने के लिए 2-3 English शब्द जो ख़बर के माहौल से मेल खाएँ (जैसे "students exam hall", "farmer field", "train railway"); किसी असली व्यक्ति का नाम नहीं।
 सिर्फ़ JSON लौटाओ: {"bg":"...","scenes":[{"screen":"...","voice":"..."}]}`;
   const user = JSON.stringify({ title: story.title, summary: story.summary, meaning: story.meaning, keyFacts: story.keyFacts, deadline: story.deadline });
@@ -86,11 +96,13 @@ const page = (scene, i, n, secs, start, total) => {
   const hook = i === 0;
   const last = i === n - 1;
   const words = scene.screen.split(/\s+/);
-  const stagger = Math.min(0.22, (secs * 0.45) / words.length);
+  // The hook has to read within 2 seconds: its words land almost together, the rest pop in one by one.
+  const stagger = hook ? 0.06 : Math.min(0.22, (secs * 0.45) / words.length);
+  const lead = hook ? 0 : 0.25;
   let marks = 0; // highlight at most two numbers, or the card turns yellow
   const h1 = words.map((w, k) => {
-    const t = (0.25 + k * stagger).toFixed(2);
-    const word = /\d/.test(w) && marks++ < 2 ? `<mark style="animation-delay:${(0.25 + words.length * stagger + 0.1).toFixed(2)}s">${esc(w)}</mark>` : esc(w);
+    const t = (lead + k * stagger).toFixed(2);
+    const word = /\d/.test(w) && marks++ < 2 ? `<mark style="animation-delay:${(lead + words.length * stagger + 0.1).toFixed(2)}s">${esc(w)}</mark>` : esc(w);
     return `<span class="w" style="animation-delay:${t}s">${word}</span>`;
   }).join(' ');
   return `<!doctype html><html lang="hi"><head><meta charset="utf-8"><style>
@@ -125,7 +137,10 @@ ${footage ? '.blob { display: none; } .logo, .foot { color: #fff; text-shadow: 0
 .card { ${hook ? '' : 'background: #fff; border-radius: 40px; padding: 70px 64px; box-shadow: 0 30px 80px rgba(0,0,0,0.10); border-left: 16px solid ' + (colours[story.category] ?? '#3d434a') + ';'}
   animation: cardIn 0.6s cubic-bezier(.2,1.2,.4,1) both; width: 100%; }
 @keyframes cardIn { from { transform: translateX(${hook ? 0 : 140}px) scale(${hook ? 0.92 : 1}); opacity: 0; } to { transform: none; opacity: 1; } }
-h1 { font-family: NSD; font-weight: 700; font-size: ${scene.screen.length > 60 ? 84 : hook ? 112 : 96}px; line-height: 1.3; }
+h1 { font-family: NSD; font-weight: 700; font-size: ${scene.screen.length > 60 ? 84 : hook ? 132 : 96}px; line-height: 1.3; }
+${hook ? `.top { visibility: hidden; } .card { animation: punch 0.35s cubic-bezier(.2,1.4,.4,1) both, zoom ${secs}s linear 0.35s both; }
+@keyframes punch { from { transform: scale(1.35); opacity: 0.2; } to { transform: none; opacity: 1; } }
+@keyframes zoom { to { transform: scale(1.06); } }` : ''}
 .w { display: inline-block; animation: pop 0.45s cubic-bezier(.2,1.6,.4,1) both; }
 @keyframes pop { from { transform: translateY(40px) scale(0.6); opacity: 0; } to { transform: none; opacity: 1; } }
 mark { color: inherit; padding: 0 10px; border-radius: 10px; background-image: linear-gradient(${hook ? '#ffd23f, #ffd23f' : '#ffe27a, #ffe27a'}); background-repeat: no-repeat; background-position: left center;
@@ -152,7 +167,7 @@ ${last ? '<div class="follow">🔔 फ़ॉलो करें</div>' : due ? `
 
 const script = await writeScript();
 console.log(JSON.stringify(script, null, 2));
-const scenes = script.scenes.slice(0, 6);
+const scenes = script.scenes.slice(0, 5);
 
 // Voice first: each scene lasts as long as its narration plus a short breath.
 // Sarvam's Bulbul voices (made for Indian languages and Hinglish) when SARVAM_API_KEY is set,
@@ -181,6 +196,13 @@ const durations = [];
 for (const [i, scene] of scenes.entries()) {
   await speak(scene.voice, `${out}s${i}.mp3`);
   durations.push(Number(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `${out}s${i}.mp3`]).toString()) + 0.45);
+}
+// 15-30 seconds: past 30 s, drop middle scenes (never the hook or the closing line).
+while (durations.reduce((a, b) => a + b, 0) > 30 && scenes.length > 3) {
+  const k = scenes.length - 2;
+  scenes.splice(k, 1);
+  durations.splice(k, 1);
+  for (let j = k; j < scenes.length; j++) execFileSync('mv', [`${out}s${j + 1}.mp3`, `${out}s${j}.mp3`]);
 }
 const total = durations.reduce((a, b) => a + b, 0);
 
