@@ -27,13 +27,16 @@ def plan():
     used = {p["story"] for p in posted}
     taken = {p["publishAt"] for p in posted}
     now = dt.datetime.now(IST)
+    # Fill every slot in the next STORY_DAYS days (default 2), so a day's worth is always queued
+    # ahead and one failed run doesn't leave a gap.
+    days = int(os.environ.get("STORY_DAYS", "2"))
     slots = []
     for s in os.environ.get("STORY_SLOTS", "22:00,05:30").split(","):
         h, m = map(int, s.strip().split(":"))
-        t = now.replace(hour=h, minute=m, second=0, microsecond=0)
-        if t < now + dt.timedelta(minutes=50):
-            t += dt.timedelta(days=1)
-        slots.append(t)
+        for d in range(days + 1):
+            t = now.replace(hour=h, minute=m, second=0, microsecond=0) + dt.timedelta(days=d)
+            if now + dt.timedelta(minutes=50) <= t <= now + dt.timedelta(days=days):
+                slots.append(t)
     slots.sort()
     stories = [os.path.splitext(os.path.basename(f))[0] for f in sorted(glob.glob("stories/*.json"))
                if not f.endswith("posted.json")]
