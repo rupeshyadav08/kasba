@@ -27,6 +27,10 @@ on:
         description: 'Add a Sarvam voiceover from cinema/<video>.voice.txt'
         type: boolean
         default: false
+      sound:
+        description: 'Add AI sound effects (MMAudio) and music (MusicGen) from cinema/<video>.sound.json'
+        type: boolean
+        default: false
       language:
         description: 'Voiceover language (en-IN, hi-IN, ...)'
         type: string
@@ -76,8 +80,16 @@ jobs:
           done
           ffmpeg -y -loglevel error $inputs -filter_complex "${graph%;}" -map "$prev" -c:v libx264 -crf 18 -pix_fmt yuv420p -movflags +faststart video.mp4
           ffprobe -v error -show_entries format=duration -of csv=p=0 video.mp4
+      - name: Make the sound on Modal
+        if: inputs.sound
+        run: |
+          modal run gpu/sound.py --clips clips/ --plan cinema/${{ inputs.video }}.sound.json --out sound/
+          python scripts/cinema-sound.py clips/ sound/ "${{ inputs.trim }}"
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
       - name: Trim and voiceover
-        if: inputs.voice || inputs.trim != '0'
+        if: (!inputs.sound) && (inputs.voice || inputs.trim != '0')
         run: |
           if [ "${{ inputs.voice }}" = "true" ]; then
             python scripts/cinema-voice.py cinema/${{ inputs.video }}.voice.txt "${{ inputs.trim }}" "${{ inputs.language }}"
@@ -90,14 +102,20 @@ jobs:
         with:
           name: cinema-${{ inputs.video }}${{ inputs.from_run != '' && '-edit' || '' }}
           path: |
-            video.mp4
+            video*.mp4
             clips/
+            sound/
           retention-days: 14
       - name: Send to the editor
         run: |
           curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVideo" \
             -F chat_id="$TELEGRAM_CHAT_ID" -F supports_streaming=true -F video=@video.mp4 \
-            -F caption="🎬 AI cinema test: ${{ inputs.video }} (कहीं पोस्ट नहीं हुआ; music app में जोड़ें)"
+            -F caption="🎬 AI cinema test: ${{ inputs.video }}${{ inputs.sound && ' (effects + music)' || '' }} (कहीं पोस्ट नहीं हुआ)"
+          if [ -f video-sfx.mp4 ]; then
+            curl -sS -o /dev/null -w 'telegram %{http_code}\n' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVideo" \
+              -F chat_id="$TELEGRAM_CHAT_ID" -F supports_streaming=true -F video=@video-sfx.mp4 \
+              -F caption="🎬 ${{ inputs.video }}: effects only, no music (कहीं पोस्ट नहीं हुआ)"
+          fi
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
