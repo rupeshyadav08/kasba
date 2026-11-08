@@ -52,8 +52,15 @@ def say_kokoro(text, voice, path, lang):
 
 
 def say_edge(text, voice, path):
+    import time
+
     mp3 = path + ".mp3"
-    run("edge-tts", "--voice", voice, "--rate", "+8%", "--text", text, "--write-media", mp3)
+    for attempt in range(4):  # Microsoft's service now and then sends no audio; try again
+        if subprocess.run(["edge-tts", "--voice", voice, "--rate", "+8%", "--text", text, "--write-media", mp3]).returncode == 0:
+            break
+        time.sleep(3 * (attempt + 1))
+    else:
+        raise RuntimeError(f"edge-tts gave no audio for: {text}")
     run("ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "24000", "-ac", "1", path)
 
 
@@ -251,5 +258,12 @@ def build(spec_path, imgs, out, voice):
 if __name__ == "__main__":
     spec_path, imgs, out, *voices = sys.argv[1:]
     os.makedirs(out, exist_ok=True)
+    failed = []
     for v in voices or ["kokoro:am_michael"]:
-        build(spec_path, imgs, out, v)
+        try:  # one voice failing shouldn't lose the others
+            build(spec_path, imgs, out, v)
+        except Exception as e:  # noqa: BLE001
+            print("FAILED", spec_path, v, e)
+            failed.append(v)
+    if failed and len(failed) == len(voices or [1]):
+        sys.exit(1)

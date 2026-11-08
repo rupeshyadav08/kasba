@@ -53,8 +53,9 @@ jobs:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
       - name: Send to the editor
+        if: always()
         run: |
-          for f in out/*.mp4; do
+          for f in out/*.mp4; do [ -f "$f" ] || continue;
             curl -sS -o /dev/null -w "telegram %{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVideo" \
               -F chat_id="$TELEGRAM_CHAT_ID" -F supports_streaming=true -F video=@$f \
               -F caption="🎬 Story Short test: $(basename $f .mp4) (not posted anywhere)"
@@ -63,6 +64,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Keep the videos on the media branch
+        if: always()
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
@@ -79,5 +81,7 @@ jobs:
         if: always()
         with:
           name: story-shorts
-          path: out/
+          path: |
+            out/*.mp4
+            out/*.meta.json
           retention-days: 14
