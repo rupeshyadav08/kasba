@@ -17,8 +17,11 @@ image = (
     .apt_install("git", "ffmpeg")
     .run_commands(
         "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124",
-        "git clone https://github.com/hkchengrex/MMAudio /mmaudio && cd /mmaudio && pip install -e .",
-        "pip install transformers==4.46.3 scipy",
+        # Pin torch so MMAudio's loose "torch>=2.5.1" doesn't pull a newer torch that breaks torchaudio.
+        "printf 'torch==2.5.1\\ntorchvision==0.20.1\\ntorchaudio==2.5.1\\n' > /tmp/pin.txt",
+        "git clone https://github.com/hkchengrex/MMAudio /mmaudio && cd /mmaudio && "
+        "pip install -e . -c /tmp/pin.txt --extra-index-url https://download.pytorch.org/whl/cu124",
+        "pip install transformers==4.46.3 scipy -c /tmp/pin.txt --extra-index-url https://download.pytorch.org/whl/cu124",
     )
     .env({"HF_HOME": "/cache/hf"})
 )
