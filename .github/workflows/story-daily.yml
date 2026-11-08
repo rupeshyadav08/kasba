@@ -1,0 +1,92 @@
+name: Story Shorts daily
+
+# Two English story Shorts a day for the YouTube channel. Runs in the Indian evening, makes the next
+# stories from stories/ (gpu/story_images.py on Modal + scripts/story-short.py) and uploads them as
+# scheduled videos: YouTube itself makes each one public at its slot (repo variable STORY_SLOTS,
+# IST, default "22:00,05:30"), so late GitHub runs don't move the posting time. A back-up run an
+# hour later does nothing if the slots are already filled. stories/posted.json is the log.
+# Voice: repo variable STORY_VOICE (default edge:en-US-AndrewMultilingualNeural; Kokoro if that fails). Set STORY_PAUSE=true to stop.
+on:
+  schedule:
+    - cron: '30 12 * * *' # 6:00 pm IST
+    - cron: '45 13 * * *' # back-up, 7:15 pm IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: story-daily
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: vars.STORY_PAUSE != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      STORY_SLOTS: ${{ vars.STORY_SLOTS || '22:00,05:30' }}
+      VOICE: ${{ vars.STORY_VOICE || 'edge:en-US-AndrewMultilingualNeural' }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Plan
+        id: plan
+        run: |
+          python3 scripts/story-queue.py plan | tee plan.txt
+          echo "count=$(wc -l < plan.txt)" >> "$GITHUB_OUTPUT"
+          left=$(python3 -c "import glob,json,os;p=json.load(open('stories/posted.json')) if os.path.exists('stories/posted.json') else [];print(len([f for f in glob.glob('stories/*.json') if not f.endswith('posted.json')])-len(p)-$(wc -l < plan.txt))")
+          echo "left after this run: $left"
+          if [ "$left" -lt 4 ]; then
+            curl -sS -o /dev/null "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d chat_id="$TELEGRAM_CHAT_ID" \
+              --data-urlencode text="📚 Story Shorts: only $left stories left in the bank. Ask Claude for more."
+          fi
+      - uses: actions/setup-python@v5
+        if: steps.plan.outputs.count != '0'
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        if: steps.plan.outputs.count != '0'
+        with:
+          node-version: 24
+      - name: Install
+        if: steps.plan.outputs.count != '0'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng fonts-noto-core >/dev/null
+          mkdir -p scripts/fonts
+          curl -sSL -o scripts/fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf
+          pip install -q "modal>=1.6,<2" "kokoro>=0.9.4" soundfile edge-tts
+      - name: Make and upload
+        if: steps.plan.outputs.count != '0'
+        run: |
+          set -e
+          git config user.name "kasba-pipeline"
+          git config user.email "admin@kasba.co.in"
+          while read -r s at; do
+            [ -n "$s" ] || continue
+            modal run gpu/story_images.py --spec stories/$s.json --out imgs/$s/ --seed 3
+            python scripts/story-short.py stories/$s.json imgs/$s/ out/ "$VOICE" || python scripts/story-short.py stories/$s.json imgs/$s/ out/ kokoro:am_michael
+            mkdir -p post/$s
+            f=out/$s-${VOICE#*:}.mp4; [ -f "$f" ] || f=out/$s-am_michael.mp4
+            cp "$f" post/$s/short.mp4
+            cp out/$s.meta.json post/$s/meta.json
+            SHORT_DIR=post/$s/ YT_PUBLISH_AT=$at node scripts/youtube-upload.mjs
+            python3 scripts/story-queue.py mark $s $at
+            git add stories/posted.json
+            git commit -qm "[skip ci] Story Short scheduled: $s"
+            for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          done < plan.txt
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.plan.outputs.count != '0'
+        with:
+          name: story-daily
+          path: post/
+          retention-days: 7

@@ -251,7 +251,8 @@ def build(spec_path, imgs, out, voice):
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final)
     print("made", final, round(duration(final), 1), "s")
 
-    meta = {"title": spec["title"], "description": spec.get("description", ""), "tags": spec.get("tags", [])}
+    meta = {"title": spec["title"], "description": spec.get("description", ""), "tags": spec.get("tags", []),
+            "lang": spec.get("lang", "en"), "categoryId": spec.get("categoryId", "24")}
     json.dump(meta, open(f"{out}{name}.meta.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
