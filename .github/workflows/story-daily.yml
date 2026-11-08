@@ -64,9 +64,10 @@ jobs:
           set -e
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
-          while read -r s at; do
+          # Read the plan on fd 3: modal and ffmpeg read stdin and would swallow the next lines.
+          while read -r s at <&3; do
             [ -n "$s" ] || continue
-            modal run gpu/story_images.py --spec stories/$s.json --out imgs/$s/ --seed 3
+            modal run gpu/story_images.py < /dev/null --spec stories/$s.json --out imgs/$s/ --seed 3
             python scripts/story-short.py stories/$s.json imgs/$s/ out/ "$VOICE" || python scripts/story-short.py stories/$s.json imgs/$s/ out/ kokoro:am_michael
             mkdir -p post/$s
             f=out/$s-${VOICE#*:}.mp4; [ -f "$f" ] || f=out/$s-am_michael.mp4
@@ -77,7 +78,7 @@ jobs:
             git add stories/posted.json
             git commit -qm "[skip ci] Story Short scheduled: $s"
             for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
-          done < plan.txt
+          done 3< plan.txt
         env:
           MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
           MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
