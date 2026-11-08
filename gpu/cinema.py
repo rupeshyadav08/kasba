@@ -21,7 +21,9 @@ image = (
         "cd /wan && grep -v flash_attn requirements.txt > /tmp/req.txt && pip install -r /tmp/req.txt",
         # Prebuilt wheel for torch 2.5 / CUDA 12 / Python 3.11: compiling flash-attn took 45 min and then failed (no clang++).
         "pip install https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl",
-        "pip install decord peft",
+        "pip install decord peft librosa",
+        # Text-to-video never uses the speech/animate pipelines; stop their extra packages breaking `import wan`.
+        """python -c "import re; p='/wan/wan/__init__.py'; s=open(p).read(); s=re.sub(r'^(from \\.(speech2video|animate) import \\w+)$', r'try:\\n    \\1\\nexcept ImportError:\\n    pass', s, flags=re.M); open(p, 'w').write(s)" """,
         "pip install 'huggingface_hub[cli]'",
     )
 )
