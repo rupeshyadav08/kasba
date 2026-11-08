@@ -32,6 +32,7 @@ n = 0
 # --- picture + clip sound, shot by shot
 v_prev = a_prev = None
 t = 0.0  # running timeline length
+starts = []  # where each shot starts on the timeline
 for i, s in enumerate(e["shots"]):
     args += ["-i", os.path.join(cd, s["file"])]
     d = s["out"] - s["in"]
@@ -42,19 +43,26 @@ for i, s in enumerate(e["shots"]):
               f"aformat=channel_layouts=stereo,volume={e.get('clip_db', 0)}dB[a{i}]")
     n += 1
     if v_prev is None:
+        starts.append(0.0)
         v_prev, a_prev, t = f"v{i}", f"a{i}", d
         continue
     if s.get("join", "cut") == "dissolve":
         L = s.get("join_len", 1.0)
+        starts.append(t - L)
         fc.append(f"[{v_prev}][v{i}]xfade=transition=fade:duration={L}:offset={t - L:.3f}[vx{i}]")
         fc.append(f"[{a_prev}][a{i}]acrossfade=d={L}:c1=tri:c2=tri[ax{i}]")
         t = t - L + d
     else:
+        starts.append(t)
         fc.append(f"[{v_prev}][{a_prev}][v{i}][a{i}]concat=n=2:v=1:a=1[vc{i}][ax{i}]")
         fc.append(f"[vc{i}]settb=1/24,fps=24[vx{i}]")
         t = t + d
     v_prev, a_prev = f"vx{i}", f"ax{i}"
 total = t
+
+def when(x):  # "at" is on the timeline, or relative to a shot when "shot" is given
+    return max(0.0, starts[x["shot"]] + x["at"] if "shot" in x else x["at"])
+
 
 # --- end card (fade to black + title)
 ec = e.get("end_card")
@@ -80,7 +88,7 @@ if narr:
     labels = []
     for k, ln in enumerate(narr):
         args += ["-i", os.path.join(nd, ln["file"])]
-        ms = int(ln["at"] * 1000)
+        ms = int(when(ln) * 1000)
         fc.append(f"[{n}:a]aresample=48000,aformat=channel_layouts=stereo,volume={ln.get('db', 0)}dB,"
                   f"adelay={ms}|{ms}[n{k}]")
         labels.append(f"[n{k}]")
@@ -92,7 +100,7 @@ if mus:
     labels = []
     for k, m in enumerate(mus):
         args += ["-i", os.path.join(md, m["file"])]
-        ms = int(m["at"] * 1000)
+        ms = int(when(m) * 1000)
         fo = m.get("fade_out", 2)
         fc.append(f"[{n}:a]atrim={m.get('in', 0)}:{m.get('in', 0) + m['len']},asetpts=PTS-STARTPTS,aresample=48000,"
                   f"aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-2,afade=t=in:d={m.get('fade_in', 1)},"
@@ -115,3 +123,5 @@ cmd = ["ffmpeg", "-y", "-v", "error", *args, "-filter_complex", ";".join(fc), "-
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", out]
 subprocess.run(cmd, check=True)
 print(f"{out}: {total:.1f} s")
+for i, (s0, sh) in enumerate(zip(starts, e["shots"])):
+    print(f"  shot {i:2d} {sh['file']:<22} starts {s0:6.1f} s")
