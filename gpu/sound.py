@@ -78,3 +78,39 @@ def main(clips: str, plan: str, out: str = "sound/", seed: int = 7):
     for name, data in result.items():
         open(f"{out}{name}", "wb").write(data)
         print("saved", f"{out}{name}")
+
+
+@app.function(image=image, gpu="L40S", volumes={"/cache": cache}, timeout=3600)
+def music(cues: list[dict], seed: int) -> dict:
+    """Music cues only (no clips): [{"id": "m1", "prompt": "...", "seconds": 30}, ...] -> {"m1.wav": bytes}."""
+    import io
+
+    import scipy.io.wavfile
+    import torch
+    from transformers import AutoProcessor, MusicgenForConditionalGeneration
+
+    proc = AutoProcessor.from_pretrained("facebook/musicgen-medium")
+    model = MusicgenForConditionalGeneration.from_pretrained("facebook/musicgen-medium").to("cuda")
+    rate = model.config.audio_encoder.sampling_rate
+    out = {}
+    for i, cue in enumerate(cues):
+        torch.manual_seed(seed + i)
+        inputs = proc(text=[cue["prompt"]], padding=True, return_tensors="pt").to("cuda")
+        audio = model.generate(**inputs, do_sample=True, guidance_scale=3.5,
+                               max_new_tokens=int(min(cue.get("seconds", 30), 30) * 50))
+        buf = io.BytesIO()
+        scipy.io.wavfile.write(buf, rate, audio[0, 0].float().cpu().numpy())
+        out[f"{cue['id']}.wav"] = buf.getvalue()
+        print("music cue", cue["id"], "done")
+    cache.commit()
+    return out
+
+
+@app.local_entrypoint()
+def music_main(plan: str, out: str = "audio/", seed: int = 7):
+    # modal run gpu/sound.py::music_main --plan cinema/mira-ep1.audio.json --out audio/
+    result = music.remote(json.load(open(plan))["music"], seed)
+    os.makedirs(out, exist_ok=True)
+    for name, data in result.items():
+        open(f"{out}{name}", "wb").write(data)
+        print("saved", f"{out}{name}")

@@ -35,13 +35,51 @@ on:
         description: 'Voiceover language (en-IN, hi-IN, ...)'
         type: string
         default: en-IN
+      audio:
+        description: 'Only make narrator lines (Kokoro) and music cues (MusicGen) from cinema/<audio>.audio.json; commits them to this branch'
+        type: string
+        default: ''
 
 permissions:
   contents: read
   actions: read
 
 jobs:
+  audio:
+    if: inputs.audio != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Narrator lines (Kokoro, CPU)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng >/dev/null
+          pip install -q "kokoro>=0.9" soundfile
+          python scripts/cinema-narrate.py cinema/${{ inputs.audio }}.audio.json audio/
+      - name: Music cues (MusicGen on Modal)
+        run: |
+          pip install -q "modal>=1.6,<2"
+          modal run gpu/sound.py::music_main --plan cinema/${{ inputs.audio }}.audio.json --out audio/ --seed ${{ inputs.seed }}
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+      - name: Save to this branch
+        run: |
+          mkdir -p cinema/out/${{ inputs.audio }}
+          for f in $(find audio -name '*.wav'); do
+            ffmpeg -y -loglevel error -i "$f" -c:a libmp3lame -q:a 2 "cinema/out/${{ inputs.audio }}/$(echo ${f#audio/} | tr / -).mp3"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add cinema/out && git commit -m "[skip ci] Audio for ${{ inputs.audio }}" && git push
+
   make:
+    if: inputs.audio == ''
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:

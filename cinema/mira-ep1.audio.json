@@ -1,0 +1,21 @@
+{
+  "voices": ["bf_emma", "af_heart", "bf_isabella"],
+  "speed": 0.92,
+  "narration": [
+    {"id": "n01", "text": "When I was ten, everyone in Little Ridge said the hill was just a hill."},
+    {"id": "n02", "text": "Papa couldn't come home for the Bell Festival. Again."},
+    {"id": "n03", "text": "Nani said the bell was Grandpa's. He found it on top of the hill, a long time ago."},
+    {"id": "n04", "text": "So I climbed to the top, where the city lights look closest."},
+    {"id": "n05", "text": "And I rang it, as hard as I could."},
+    {"id": "n06", "text": "The hill opened its eye."},
+    {"id": "n07", "text": "I should have run. But he didn't look angry. He looked... lonely. Like me."},
+    {"id": "n08", "text": "The next morning... the hill was gone."}
+  ],
+  "music": [
+    {"id": "m1-night", "seconds": 30, "prompt": "gentle mysterious orchestral night music for a family fantasy film, soft celesta, low strings, distant wordless choir, magical and calm, slow tempo"},
+    {"id": "m2-morning", "seconds": 30, "prompt": "warm tender piano and cello for a family animated film, gentle and a little sad, slow tempo, emotional"},
+    {"id": "m3-climb", "seconds": 30, "prompt": "hopeful adventurous orchestral score for a family animated film, light pizzicato strings building, flute melody, warm, medium tempo"},
+    {"id": "m4-wonder", "seconds": 30, "prompt": "awe-inspiring orchestral swell for a family fantasy film, deep low brass and wordless choir, wonder and magic, then gentle warm strings, slow"},
+    {"id": "m5-ending", "seconds": 30, "prompt": "quiet mysterious orchestral ending for a family fantasy film, soft string tremolo, a single small bell, gentle suspense, slow"}
+  ]
+}
