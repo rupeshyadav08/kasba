@@ -1,0 +1,42 @@
+name: YouTube tools
+
+# Manual only. check = list permissions, channel details and every upload (changes nothing).
+# archive = set all public/unlisted uploads to private. channel = update the channel's details.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        type: choice
+        options: [check, archive, channel]
+        default: check
+      title:
+        description: 'channel: new channel name (blank keeps it)'
+        type: string
+        default: ''
+      description:
+        description: 'channel: new description (blank keeps it)'
+        type: string
+        default: ''
+      keywords:
+        description: 'channel: new keywords (blank keeps them)'
+        type: string
+        default: ''
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/youtube-tools.mjs
+        env:
+          ACTION: ${{ inputs.action }}
+          CH_TITLE: ${{ inputs.title }}
+          CH_DESCRIPTION: ${{ inputs.description }}
+          CH_KEYWORDS: ${{ inputs.keywords }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
