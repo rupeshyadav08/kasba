@@ -37,6 +37,7 @@ if (!token.access_token) {
 }
 
 // Resumable upload: first the video's details, then the file to the URL YouTube hands back.
+const publishAt = process.env.YT_PUBLISH_AT || '';
 const size = statSync(file).size;
 const start = await fetch('https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status', {
   method: 'POST',
@@ -47,10 +48,15 @@ const start = await fetch('https://www.googleapis.com/upload/youtube/v3/videos?u
   body: JSON.stringify({
     snippet: {
       title: meta.title, description: meta.description, tags: meta.tags,
-      categoryId: '25', defaultLanguage: 'hi', defaultAudioLanguage: 'hi',
+      categoryId: meta.categoryId ?? '25', defaultLanguage: meta.lang ?? 'hi', defaultAudioLanguage: meta.lang ?? 'hi',
     },
-    // The voice is AI-made, which YouTube asks channels to declare.
-    status: { privacyStatus: process.env.YT_PRIVACY ?? 'public', selfDeclaredMadeForKids: false, containsSyntheticMedia: true },
+    // The voice is AI-made, which YouTube asks channels to declare. YT_PUBLISH_AT (ISO time) uploads
+    // it private and lets YouTube make it public at that moment.
+    status: {
+      privacyStatus: publishAt ? 'private' : process.env.YT_PRIVACY ?? 'public',
+      ...(publishAt && { publishAt }),
+      selfDeclaredMadeForKids: false, containsSyntheticMedia: true,
+    },
   }),
 });
 if (!start.ok) {
@@ -66,6 +72,7 @@ if (!put.ok) {
   throw new Error(`upload ${put.status}: ${JSON.stringify(video)}`);
 }
 console.log('youtube', video.id, video.status?.privacyStatus);
-const locked = video.status?.privacyStatus === 'private' && (process.env.YT_PRIVACY ?? 'public') !== 'private';
-await tell(`▶️ YouTube पर पहुँच गया: https://youtube.com/shorts/${video.id}${locked
+const locked = !publishAt && video.status?.privacyStatus === 'private' && (process.env.YT_PRIVACY ?? 'public') !== 'private';
+const when = publishAt ? `\n🕒 Public at ${new Date(publishAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'medium', timeStyle: 'short' })} IST` : '';
+await tell(`▶️ YouTube पर पहुँच गया: https://youtube.com/shorts/${video.id}${when}${locked
   ? '\nअभी Private है (YouTube की मंज़ूरी बाकी)। YouTube Studio में Public कर दें।' : ''}`);
