@@ -6,11 +6,11 @@ name: Shorts
 # starts this workflow again with `upload` set to the run that made the video; that run's video is
 # then uploaded to YouTube. Repo variable SHORTS_AUTO=true skips the tap and uploads straight away.
 on:
-  schedule:
-    # GitHub delays scheduled runs by hours or drops them, so each slot has a back-up an hour and
-    # a half later; the check job skips a run when a Short was made in the last 3.5 hours.
-    - cron: '41 3,12 * * *' # about 9:10 and 18:10 India time
-    - cron: '13 5,14 * * *'
+  # Paused 9 Nov 2026 at Rupesh's request (Kasba is a website only for now; saves DeepSeek and
+  # Sarvam spend). To restart, put back:
+  # schedule:
+  #   - cron: '41 3,12 * * *' # about 9:10 and 18:10 India time
+  #   - cron: '13 5,14 * * *' # back-up slot; the check job skips a run if a Short was made in the last 3.5 hours
   workflow_dispatch:
     inputs:
       story:
