@@ -19,6 +19,7 @@ image = (
         "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124",
         "git clone https://github.com/Wan-Video/Wan2.2 /wan",
         "cd /wan && grep -v flash_attn requirements.txt > /tmp/req.txt && pip install -r /tmp/req.txt",
+        "pip install decord peft",
         "pip install packaging ninja && pip install flash-attn==2.7.4.post1 --no-build-isolation",
         "pip install 'huggingface_hub[cli]'",
     )
