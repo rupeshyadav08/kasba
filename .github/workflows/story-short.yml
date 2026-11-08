@@ -1,0 +1,83 @@
+name: Story Shorts
+
+# Faceless cartoon story Shorts for the YouTube channel (not Kasba news). stories/<name>.json is
+# the script; gpu/story_images.py draws one picture per shot on Modal (free monthly credit) and
+# scripts/story-short.py adds the voice, word-by-word captions, the 2-second hook and sound
+# effects. Each video goes to the editor on Telegram and to the media/story-shorts branch.
+# Nothing is posted to YouTube.
+on:
+  workflow_dispatch:
+    inputs:
+      stories:
+        description: 'Story names in stories/ (without .json), separated by spaces'
+        type: string
+        default: eiffel-tower-sold
+      voices:
+        description: 'Voices to try (kokoro:<voice> or edge:<voice>), separated by spaces'
+        type: string
+        default: 'kokoro:am_michael edge:en-US-AndrewMultilingualNeural'
+      seed:
+        description: 'Picture seed (change it for different pictures)'
+        type: string
+        default: '3'
+
+permissions:
+  contents: write
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng fonts-noto-core >/dev/null
+          mkdir -p scripts/fonts
+          curl -sSL -o scripts/fonts/Anton-Regular.ttf https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf
+          pip install -q "modal>=1.6,<2" "kokoro>=0.9.4" soundfile edge-tts
+      - name: Make the pictures and the videos
+        run: |
+          set -e
+          mkdir -p out
+          for s in ${{ inputs.stories }}; do
+            modal run gpu/story_images.py --spec stories/$s.json --out imgs/$s/ --seed ${{ inputs.seed }}
+            python scripts/story-short.py stories/$s.json imgs/$s/ out/ ${{ inputs.voices }}
+          done
+          ls -la out
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+      - name: Send to the editor
+        run: |
+          for f in out/*.mp4; do
+            curl -sS -o /dev/null -w "telegram %{http_code}\n" "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendVideo" \
+              -F chat_id="$TELEGRAM_CHAT_ID" -F supports_streaming=true -F video=@$f \
+              -F caption="🎬 Story Short test: $(basename $f .mp4) (not posted anywhere)"
+          done
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Keep the videos on the media branch
+        run: |
+          git config user.name "kasba-pipeline"
+          git config user.email "admin@kasba.co.in"
+          mkdir -p /tmp/media && cp out/*.mp4 out/*.meta.json /tmp/media/
+          for s in ${{ inputs.stories }}; do mkdir -p /tmp/media/imgs-$s && cp imgs/$s/*.png /tmp/media/imgs-$s/; done
+          git fetch -q origin media/story-shorts && git checkout -q -B media origin/media/story-shorts || git checkout -q --orphan media
+          git rm -rq --cached . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          mkdir -p run-${{ github.run_id }} && cp -r /tmp/media/* run-${{ github.run_id }}/
+          git add run-${{ github.run_id }}
+          git commit -qm "Story Shorts run ${{ github.run_id }}"
+          git push -q origin HEAD:media/story-shorts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: story-shorts
+          path: out/
+          retention-days: 14
