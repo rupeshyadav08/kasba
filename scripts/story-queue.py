@@ -6,7 +6,7 @@
 
 Slots are IST clock times from STORY_SLOTS (default "22:00,05:30"). A slot counts as open when it is
 at least 50 minutes away (time to render and upload) and no posted story already holds it, so a
-back-up run on the same day does nothing. Stories are used in file-name order, skipping posted ones.
+back-up run on the same day does nothing. Stories go in stories/order.txt order, then file-name order, skipping posted ones.
 """
 import datetime as dt
 import glob
@@ -37,7 +37,10 @@ def plan():
     slots.sort()
     stories = [os.path.splitext(os.path.basename(f))[0] for f in sorted(glob.glob("stories/*.json"))
                if not f.endswith("posted.json")]
-    queue = [s for s in stories if s not in used]
+    # stories/order.txt (one name per line) goes first; the rest follow in file-name order.
+    first = [l.strip() for l in open("stories/order.txt")] if os.path.exists("stories/order.txt") else []
+    first = [s for s in first if s in stories]
+    queue = [s for s in first + [s for s in stories if s not in first] if s not in used]
     for t in slots:
         iso = t.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         if iso in taken or not queue:
