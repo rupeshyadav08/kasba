@@ -136,6 +136,7 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Cap,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,-1,0,0,0,100,100,1,0,1,7,3,5,70,70,0,1
 Style: Hook,{font},{size + 18},&H0000E5FF,&H0000E5FF,&H00000000,&HC0000000,-1,0,0,0,100,100,1,0,1,9,4,8,60,60,230,1
+Style: Share,{font},{size - 22},&H0000E5FF,&H0000E5FF,&H00000000,&HC0000000,-1,0,0,0,100,100,1,0,1,9,4,8,60,60,230,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -144,6 +145,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     hook = spec.get("hook")
     if hook:  # the hook sits at the top for the first 2.2 s and pops in
         ev.append(f"Dialogue: 2,{ass_time(0)},{ass_time(2.2)},Hook,,0,0,0,,{{\\fscx60\\fscy60\\t(0,140,\\fscx100\\fscy100)}}{hook.upper() if spec.get('lang') != 'hi' else hook}")
+    share = spec.get("share")
+    if share and line_times:  # "send this to..." on screen for the last 3 s: sends are the strongest signal
+        end = line_times[-1][1]
+        ev.append(f"Dialogue: 2,{ass_time(max(end - 3.0, 0))},{ass_time(end + 0.3)},Share,,0,0,0,,{{\\fscx70\\fscy70\\t(0,160,\\fscx100\\fscy100)}}{share.upper() if spec.get('lang') != 'hi' else share}")
     for (start, end), line in zip(line_times, spec["lines"]):
         words = line["say"].split()
         weights = [len(re.sub(r"\W", "", w)) + 2 for w in words]

@@ -54,14 +54,14 @@
    ]
   },
   {
-   "say": "Today there are statues of Wojtek in Scotland and Poland. Would you want a bear in your army?",
+   "say": "Statues of him stand in Scotland and Poland, because",
    "shots": [
     "a bronze statue of a bear and a soldier in a city park",
     "{hero} waving goodbye at sunset"
    ]
   }
  ],
- "description": "Wojtek was a Syrian brown bear adopted by soldiers of the Polish II Corps in 1942, officially enlisted, and said to carry ammunition at Monte Cassino. He lived out his life at Edinburgh Zoo. A true story.\n\nSources: Imperial War Museums; Wikipedia: Wojtek (bear).\n\nMade with AI-assisted pictures and voice.\n\n#shorts #truestory #history",
+ "description": "True story: Wojtek the bear was an official soldier in the Polish army during World War Two.\n\nWould you want a bear in your army? Tell us in the comments.\n\nWojtek was a Syrian brown bear adopted by soldiers of the Polish II Corps in 1942, officially enlisted, and said to carry ammunition at Monte Cassino. He lived out his life at Edinburgh Zoo. A true story.\n\nSources: Imperial War Museums; Wikipedia: Wojtek (bear).\n\nMade with AI-assisted pictures and voice.\n\n#shorts #truestory #ww2 #animals",
  "tags": [
   "wojtek",
   "soldier bear",
@@ -70,5 +70,6 @@
   "true story",
   "animals",
   "shorts"
- ]
+ ],
+ "share": "Send this to an animal lover"
 }

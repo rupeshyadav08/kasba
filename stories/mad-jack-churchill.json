@@ -54,14 +54,14 @@
    ]
   },
   {
-   "say": "A real person, not a movie character. Would you follow him into battle?",
+   "say": "A real person, not a movie character. Because",
    "shots": [
     "{hero} silhouetted against a sunset with bow and sword",
     "a longbow and sword resting against a wooden chair"
    ]
   }
  ],
- "description": "British officer 'Mad Jack' Churchill carried a longbow, a broadsword and bagpipes in WWII, is credited with one of the last recorded bow kills in war (1940), and escaped from captivity. A true story.\n\nSources: National Army Museum; Wikipedia: Jack Churchill.\n\nMade with AI-assisted pictures and voice.\n\n#shorts #truestory #history",
+ "description": "True story: Mad Jack Churchill fought in World War Two with a longbow, a sword and bagpipes.\n\nWould you follow him into battle? Tell us in the comments.\n\nBritish officer 'Mad Jack' Churchill carried a longbow, a broadsword and bagpipes in WWII, is credited with one of the last recorded bow kills in war (1940), and escaped from captivity. A true story.\n\nSources: National Army Museum; Wikipedia: Jack Churchill.\n\nMade with AI-assisted pictures and voice.\n\n#shorts #truestory #ww2 #history",
  "tags": [
   "mad jack churchill",
   "ww2",
@@ -69,5 +69,6 @@
   "true story",
   "history",
   "shorts"
- ]
+ ],
+ "share": "Send this to someone who'd bring a sword to a gunfight"
 }
