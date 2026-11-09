@@ -13,4 +13,4 @@ Each `<name>.json` here becomes one Short on the YouTube channel (and the same f
   has none).
 - **Description.** First line = searchable keywords ("True story: ..."), second line = a comment question, then
   the longer summary, sources, the AI note, and 3-5 specific hashtags (always `#shorts #truestory` + 2 topical).
-- **Length.** 8 lines ≈ 40-50 s.
+- **Length.** 7 lines, about 100 words ≈ 30-35 s. Emu War (117 words, 38 s) averaged 22 s watched on Instagram (58%); shorter keeps more people to the end.

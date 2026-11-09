@@ -33,13 +33,6 @@
    ]
   },
   {
-   "say": "Search teams, leaflets, even letters from his family could not convince him.",
-   "shots": [
-    "a search party with megaphones walking through the jungle",
-    "{hero} hiding behind a tree watching the search party"
-   ]
-  },
-  {
    "say": "In 1974, a young Japanese traveller named Norio Suzuki found him, and became his friend.",
    "shots": [
     "a young backpacker with a sleeping bag meeting {hero} in a jungle clearing",
@@ -47,7 +40,7 @@
    ]
   },
   {
-   "say": "Onoda said he would only stop if his commander ordered it. So his old commander flew to the island, and did.",
+   "say": "He would only stop if his commander ordered it. So his old commander flew out, and did.",
    "shots": [
     "an old man in a suit reading a paper order aloud in the jungle",
     "{hero} saluting, tears in his eyes"
