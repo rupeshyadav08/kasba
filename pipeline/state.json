@@ -3204,11 +3204,16 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63947": "2026-11-09",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63946": "2026-11-09",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63945": "2026-11-09",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63944": "2026-11-09"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63944": "2026-11-09",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334339": "2026-11-09",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334325": "2026-11-09",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334323": "2026-11-09",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334326": "2026-11-09",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63948": "2026-11-09"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-08T18:31:45.038Z",
+    "last": "2026-11-09T09:56:24.219Z",
     "pending": []
   },
   "sources": [
