@@ -6,6 +6,8 @@ name: Story Shorts daily
 # IST, default "22:00,05:30"), so late GitHub runs don't move the posting time. A back-up run an
 # hour later does nothing if the slots are already filled. stories/posted.json is the log.
 # Voice: repo variable STORY_VOICE (default edge:en-US-AndrewMultilingualNeural; Kokoro if that fails). Set STORY_PAUSE=true to stop.
+# Started on time by the result watcher's Worker cron (workers/watcher/index.js, STORY_SLOTS); the
+# GitHub cron below is only a fallback, since GitHub's schedule here is often hours late or skipped.
 on:
   schedule:
     - cron: '30 12 * * *' # 6:00 pm IST

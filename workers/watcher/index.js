@@ -211,10 +211,14 @@ function dispatch(env, workflow, inputs = {}) {
 // the pipelines instead: the main news run three times a day (UTC slots below, about 7:30 am,
 // 1 pm and 7 pm India time) and the India runner's run every 30 minutes.
 const NEWS_SLOTS = ['02:00', '07:30', '13:30'];
+// Story Shorts (story-daily.yml): 6 pm IST, plus 7 pm IST as a back-up. GitHub's own cron for it
+// never started on 9 Nov 2026. A run with nothing left to schedule exits in seconds.
+const STORY_SLOTS = ['12:30', '13:30'];
 
 async function startPipelines(env, at) {
   const slot = at.toISOString().slice(11, 16);
-  const runs = [['pipeline-india.yml'], ...(NEWS_SLOTS.includes(slot) ? [['pipeline.yml']] : [])];
+  const runs = [['pipeline-india.yml'], ...(NEWS_SLOTS.includes(slot) ? [['pipeline.yml']] : []),
+    ...(STORY_SLOTS.includes(slot) ? [['story-daily.yml']] : [])];
   // GitHub answers 204 when a run was started. Anything else (a token without Actions write, an
   // expired token) is kept in KV and shown at /dispatch, because Worker logs need a Cloudflare login.
   const log = [];
