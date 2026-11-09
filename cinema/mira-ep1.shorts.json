@@ -1,0 +1,129 @@
+{
+  "episode": "/mnt/project-files/ai-channel/mira/Mira-and-the-Sleeping-Giant-Ep1.mp4",
+  "srt": "/mnt/project-files/ai-channel/mira/Mira-Ep1-English.srt",
+  "out_dir": "/mnt/project-files/ai-channel/mira/shorts-ep1",
+  "end_tag": [
+    "FULL EPISODE ON YOUTUBE",
+    "COLOSSAL TALES"
+  ],
+  "shorts": [
+    {
+      "id": "ep1-short1-bell",
+      "hook": [
+        "SHE RANG AN OLD BELL...",
+        "AND THE HILL WOKE UP"
+      ],
+      "pieces": [
+        {
+          "in": 5.0,
+          "out": 7.6,
+          "x": [
+            [5.0, 0.5]
+          ],
+          "subs": false
+        },
+        {
+          "in": 44.0,
+          "out": 76.0,
+          "x": [
+            [44, 0.46],
+            [47, 0.42],
+            [50, 0.38],
+            [53.9, 0.5],
+            [62, 0.5],
+            [66, 0.62],
+            [69, 0.74],
+            [71.5, 0.5],
+            [73.9, 0.3],
+            [76, 0.3]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ep1-short2-lonely",
+      "hook": [
+        "THE HILL HAD A FACE...",
+        "AND HE WAS LONELY"
+      ],
+      "pieces": [
+        {
+          "in": 73.9,
+          "out": 106.0,
+          "x": [
+            [73.9, 0.3],
+            [76.4, 0.3],
+            [77.4, 0.72],
+            [80.5, 0.72],
+            [82, 0.3],
+            [88, 0.3],
+            [91, 0.68],
+            [95, 0.68],
+            [96.9, 0.6],
+            [106, 0.62]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ep1-short3-papa",
+      "hook": [
+        "PAPA COULDN'T COME HOME",
+        "SO NANI GAVE HER THIS"
+      ],
+      "pieces": [
+        {
+          "in": 31.0,
+          "out": 33.4,
+          "x": [
+            [31, 0.45]
+          ],
+          "subs": false
+        },
+        {
+          "in": 17.1,
+          "out": 44.0,
+          "x": [
+            [17.1, 0.4],
+            [22, 0.4],
+            [24, 0.3],
+            [27.1, 0.42],
+            [33, 0.42],
+            [36, 0.5],
+            [40, 0.6],
+            [44, 0.6]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ep1-short4-gone",
+      "hook": [
+        "THE NEXT MORNING...",
+        "THE HILL WAS GONE"
+      ],
+      "pieces": [
+        {
+          "in": 127.0,
+          "out": 129.0,
+          "x": [
+            [127, 0.5]
+          ],
+          "subs": false
+        },
+        {
+          "in": 106.1,
+          "out": 131.4,
+          "x": [
+            [106.1, 0.5],
+            [112.5, 0.55],
+            [117, 0.62],
+            [122.5, 0.4],
+            [126, 0.5],
+            [131.4, 0.5]
+          ]
+        }
+      ]
+    }
+  ]
+}
