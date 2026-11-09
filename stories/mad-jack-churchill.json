@@ -40,13 +40,6 @@
    ]
   },
   {
-   "say": "He was captured, and escaped from a prison camp.",
-   "shots": [
-    "{hero} crawling under barbed wire at night",
-    "{hero} walking along a railway line at dawn, free"
-   ]
-  },
-  {
    "say": "He later said that any officer who went into action without his sword was improperly dressed.",
    "shots": [
     "{hero} straightening his uniform with his sword in front of a mirror",

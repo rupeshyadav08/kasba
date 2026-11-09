@@ -19,21 +19,14 @@
    ]
   },
   {
-   "say": "A lightning storm hit the plane, and it broke apart in the sky.",
+   "say": "A lightning storm broke the plane apart, and she fell, still strapped to her seat.",
    "shots": [
     "a plane in a dark thunderstorm, lightning bolts all around",
-    "dark storm clouds with flashes of lightning"
+    "{hero} in her seat crashing through giant rainforest trees and vines"
    ]
   },
   {
-   "say": "Juliane fell, still strapped to her seat. The thick trees broke her fall.",
-   "shots": [
-    "{hero} in her seat crashing through giant rainforest trees and vines",
-    "{hero} waking up on the forest floor under huge leaves"
-   ]
-  },
-  {
-   "say": "She had a broken collarbone, one sandal, and no map. But her father, a biologist, had taught her something.",
+   "say": "She had a broken collarbone, one sandal, and no map. But her father had taught her something.",
    "shots": [
     "{hero} standing up holding her shoulder in a dark jungle",
     "a memory scene of a father showing a map of rivers to his daughter"
@@ -47,7 +40,7 @@
    ]
   },
   {
-   "say": "For eleven days she waded downstream, until she found a hut, and loggers who brought her to safety.",
+   "say": "For eleven days she waded downstream, until loggers found her and brought her to safety.",
    "shots": [
     "{hero} finding a small wooden hut by a riverbank",
     "friendly loggers in a canoe helping {hero}, sunlight through trees"

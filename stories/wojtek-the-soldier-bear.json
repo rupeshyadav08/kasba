@@ -19,14 +19,14 @@
    ]
   },
   {
-   "say": "He grew up with the troops. He wrestled with them, drank from bottles, and slept beside them in their tents.",
+   "say": "He grew up with the troops, wrestling with them and sleeping beside them in their tents.",
    "shots": [
     "{hero} play wrestling with laughing soldiers in the sand",
     "{hero} sleeping in a big army tent between soldiers"
    ]
   },
   {
-   "say": "To bring him on a ship to Italy, the army made him an official soldier, with a name, rank and number.",
+   "say": "To bring him on a ship to Italy, the army made him an official soldier.",
    "shots": [
     "an officer stamping a document while {hero} watches curiously",
     "{hero} walking up the ramp of a ship with soldiers"
@@ -37,13 +37,6 @@
    "shots": [
     "{hero} carrying a wooden crate on his shoulder up a rocky mountain path",
     "soldiers cheering {hero} near army trucks"
-   ]
-  },
-  {
-   "say": "His unit even made him their badge: a bear holding an artillery shell.",
-   "shots": [
-    "a round army badge with a bear carrying a shell, embroidered, close-up",
-    "soldiers proudly wearing the bear badge on their sleeves"
    ]
   },
   {

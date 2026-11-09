@@ -19,17 +19,10 @@
    ]
   },
   {
-   "say": "There was a banner saying, welcome time travellers. But he didn't send out any invitations.",
+   "say": "There was a banner saying, welcome time travellers. But he only sent the invitations after the party was over.",
    "shots": [
     "a big banner over a doorway in a party room, balloons, warm light, no readable letters",
-    "{hero} with a sly smile next to a closed door"
-   ]
-  },
-  {
-   "say": "He only sent the invitations after the party was over.",
-   "shots": [
-    "an elegant invitation card with a gold clock on it on a desk, quill pen",
-    "a postman putting a glowing invitation into an old post box at night"
+    "an elegant invitation card with a gold clock on it on a desk, quill pen"
    ]
   },
   {
