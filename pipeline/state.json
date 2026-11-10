@@ -3232,11 +3232,18 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334459": "2026-11-09",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334441": "2026-11-09",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63952": "2026-11-09",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63951": "2026-11-09"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63951": "2026-11-09",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334564": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334520": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334561": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334544": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334540": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334517": "2026-11-10",
+    "https://nta.ac.in/Download/Notice/Notice_20261110115638.pdf": "2026-11-10"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-09T17:51:33.630Z",
+    "last": "2026-11-10T07:32:47.978Z",
     "pending": []
   },
   "sources": [
