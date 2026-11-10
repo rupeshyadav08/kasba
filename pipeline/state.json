@@ -3239,11 +3239,21 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334544": "2026-11-10",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334540": "2026-11-10",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334517": "2026-11-10",
-    "https://nta.ac.in/Download/Notice/Notice_20261110115638.pdf": "2026-11-10"
+    "https://nta.ac.in/Download/Notice/Notice_20261110115638.pdf": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334606": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334608": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334598": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334572": "2026-11-10",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334604": "2026-11-10",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_2edce4da-737e-4336-be66-e7a0a750b044.pdf": "2026-11-10",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_0abfaf6f-7006-48ad-81a5-96fa1aff8613.pdf": "2026-11-10",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_51bb0969-f697-44bd-8091-b9354e94dbc6.pdf": "2026-11-10",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_b8cd8eb3-8164-40ed-a879-937fbb09f274.pdf": "2026-11-10",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_c967b3d2-f41f-41d7-bec5-0c2c36bf58e5.pdf": "2026-11-10"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-10T07:32:47.978Z",
+    "last": "2026-11-10T10:01:18.525Z",
     "pending": []
   },
   "sources": [
