@@ -1,0 +1,96 @@
+{
+  "id": "45659e628c",
+  "createdAt": "2026-11-10T13:33:35.960Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "राजस्व खुफिया निदेशालय ने भोपाल में 6.642 किलोग्राम एम्फेटामाइन जब्त किया; ड्रग तस्कर गिरफ्तार",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334659"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "police seized packets evidence table",
+    "state": "mp",
+    "districts": [
+      "bhopal"
+    ],
+    "deadline": null,
+    "sourceTitle": "राजस्व खुफिया निदेशालय ने भोपाल में 6.642 किलोग्राम एम्फेटामाइन जब्त किया; ड्रग तस्कर गिरफ्तार",
+    "sourceDate": "2026-11-10",
+    "hi": {
+      "title": "DRi ने भोपाल में 6.642 किलो एम्फेटामाइन जब्त किया, एक तस्कर गिरफ्तार",
+      "summary": "राजस्व खुफिया निदेशालय (DRI) ने 5 नवंबर 2026 को दिल्ली से भोपाल जा रही बस में एक यात्री के बैग से 6.642 किलोग्राम एम्फेटामाइन जब्त किया और उसे गिरफ्तार कर लिया। यह कार्रवाई उन यात्रियों के लिए एक चेतावनी है जो बस या ट्रेन से सफर करते हैं और किसी का सामान ढोने को कहा जाए।",
+      "meaning": "आम लोगों को इस मामले में कुछ करने की जरूरत नहीं है, लेकिन यह याद रखें कि किसी अजनबी का बैग या पैकेट अपने साथ ले जाना कानूनी मुसीबत में डाल सकता है। अगर कोई पैसे के लालच में ऐसा सामान ढोने को कहे तो मना करें।",
+      "keyFacts": [
+        "जब्त एम्फेटामाइन का वजन 6.642 किलोग्राम था",
+        "कार्रवाई 5 नवंबर 2026 को दिल्ली से भोपाल जा रही बस में हुई",
+        "बैग में छिपाए तीन प्लास्टिक पैकेट मिले, जिनमें सफेद क्रिस्टलीय पदार्थ था",
+        "NDPS फील्ड टेस्ट किट से एम्फेटामाइन की पुष्टि हुई",
+        "आरोपी बेंगलुरु पुलिस के एक अन्य NDPS मामले में जमानत पर बाहर था"
+      ],
+      "faq": [
+        {
+          "q": "भोपाल में कितनी एम्फेटामाइन जब्त हुई?",
+          "a": "6.642 किलोग्राम। यह सामान दिल्ली से भोपाल जा रही बस में एक यात्री के बैग से मिला।"
+        },
+        {
+          "q": "एम्फेटामाइन क्या है?",
+          "a": "यह एक मनःप्रभावी पदार्थ है, यानी ऐसा पदार्थ जो दिमाग और व्यवहार पर असर डालता है। यह NDPS अधिनियम, 1985 के तहत नियंत्रित है।"
+        },
+        {
+          "q": "आरोपी के खिलाफ क्या कार्रवाई हुई?",
+          "a": "जब्त एम्फेटामाइन को कब्जे में लिया गया और आरोपी यात्री को NDPS अधिनियम के प्रावधानों के तहत गिरफ्तार कर लिया गया।"
+        },
+        {
+          "q": "क्या आरोपी पहले भी किसी मामले में था?",
+          "a": "जांच में पता चला कि वह बेंगलुरु पुलिस के एक अन्य NDPS मामले में जमानत पर बाहर था।"
+        },
+        {
+          "q": "DRI क्या है?",
+          "a": "राजस्व खुफिया निदेशालय वित्त मंत्रालय के अधीन काम करने वाली खुफिया एजेंसी है, जो तस्करी जैसे मामलों में कार्रवाई करती है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराजस्व खुफिया निदेशालय (DRI) के अधिकारियों ने खास खुफिया जानकारी के आधार पर 5 नवंबर 2026 को दिल्ली से भोपाल जा रही बस में सफर कर रहे एक यात्री को रोका। उसका सामान जांचा गया तो बैग में छिपाकर रखे तीन चमकीले चांदी जैसे रंग के प्लास्टिक पैकेट मिले। इनमें सफेद रंग का क्रिस्टलीय पदार्थ था, जिसका कुल वजन 6.642 किलोग्राम निकला।\n\n## कैसे पकड़ा गया\n\nबरामद पदार्थ की जांच NDPS फील्ड टेस्ट किट से की गई। इस जांच में एम्फेटामाइन होने की पुष्टि हुई। एम्फेटामाइन एक मनःप्रभावी पदार्थ है, यानी ऐसा पदार्थ जो दिमाग और व्यवहार पर असर डालता है। यह स्वापक औषधि एवं मनःप्रभावी पदार्थ अधिनियम, 1985 के तहत नियंत्रित है, यानी इसका रखना और ढोना कानून के दायरे में आता है।\n\n## आरोपी के खिलाफ कार्रवाई\n\nNDPS अधिनियम, 1985 के संबंधित प्रावधानों के तहत जब्त एम्फेटामाइन को कब्जे में ले लिया गया। आरोपी यात्री को भी इसी अधिनियम के प्रावधानों के तहत गिरफ्तार कर लिया गया।\n\n## जांच में और क्या पता चला\n\nआगे की जांच में सामने आया कि गिरफ्तार व्यक्ति बेंगलुरु पुलिस द्वारा दर्ज एक अन्य NDPS मामले में पहले से जमानत पर बाहर था। विज्ञप्ति के अनुसार यह बात मादक पदार्थों की तस्करी में उसकी कथित बार-बार संलिप्तता की ओर संकेत करती है।\n\n## आम यात्री के लिए क्या मतलब\n\nइस मामले में आम लोगों को कुछ करने की जरूरत नहीं है। लेकिन यह घटना याद दिलाती है कि बस या ट्रेन में किसी अजनबी का बैग, पैकेट या पार्सल अपने नाम से ले जाना खतरनाक हो सकता है। अगर कोई पैसे का लालच देकर ऐसा सामान ढोने को कहे, तो साफ मना करें।\n\nDRI ने अपनी विज्ञप्ति में कहा कि वह खुफिया जानकारी के आधार पर कार्रवाई और लगातार प्रवर्तन के जरिए मादक पदार्थों की तस्करी करने वाले नेटवर्क को तोड़ने और ऐसे काम में शामिल लोगों के खिलाफ सख्त कार्रवाई करने के लिए प्रतिबद्ध है।"
+    },
+    "en": {
+      "title": "DRI seizes 6.642 kg amphetamine in Bhopal, arrests one drug trafficker",
+      "summary": "The Directorate of Revenue Intelligence (DRI) seized 6.642 kg of amphetamine from a passenger's bag on a Delhi-to-Bhopal bus on 5 November 2026 and arrested him. The case is a reminder for bus and train travellers never to carry a stranger's bag or packet.",
+      "meaning": "Ordinary people do not need to do anything about this case. But it is a reminder that carrying someone else's bag or parcel can land you in legal trouble, so refuse if a stranger offers money to carry something.",
+      "keyFacts": [
+        "6.642 kg of amphetamine was seized",
+        "The action was taken on 5 November 2026 on a Delhi-to-Bhopal bus",
+        "Three plastic packets hidden in the bag held a white crystalline substance",
+        "An NDPS field test kit confirmed the substance was amphetamine",
+        "The accused was already out on bail in another NDPS case registered by Bengaluru Police"
+      ],
+      "faq": [
+        {
+          "q": "How much amphetamine was seized in Bhopal?",
+          "a": "6.642 kg. The substance was found in the bag of a passenger travelling on a bus from Delhi to Bhopal."
+        },
+        {
+          "q": "What is amphetamine?",
+          "a": "It is a psychotropic substance, meaning it affects the mind and behaviour. It is controlled under the NDPS Act, 1985."
+        },
+        {
+          "q": "What action was taken against the accused?",
+          "a": "The seized amphetamine was taken into custody and the accused passenger was arrested under the provisions of the NDPS Act."
+        },
+        {
+          "q": "Was the accused involved in any earlier case?",
+          "a": "The investigation found he was already out on bail in another NDPS case registered by Bengaluru Police."
+        },
+        {
+          "q": "What is the DRI?",
+          "a": "The Directorate of Revenue Intelligence is an intelligence agency under the Ministry of Finance that acts on cases such as smuggling."
+        }
+      ],
+      "body": "## What happened\n\nActing on specific intelligence, officers of the Directorate of Revenue Intelligence (DRI) stopped a passenger travelling on a bus from Delhi to Bhopal on 5 November 2026. When his luggage was checked, officers found three shiny silver-coloured plastic packets hidden in his bag. The packets held a white crystalline substance weighing a total of 6.642 kg.\n\n## How it was confirmed\n\nThe recovered substance was tested with an NDPS field test kit, which confirmed it was amphetamine. Amphetamine is a psychotropic substance, meaning it affects the mind and behaviour, and it is controlled under the Narcotic Drugs and Psychotropic Substances Act, 1985.\n\n## Action against the accused\n\nThe seized amphetamine was taken into custody under the relevant provisions of the NDPS Act, 1985, and the accused passenger was arrested under the Act.\n\n## What the probe found\n\nFurther investigation revealed that the arrested person was already out on bail in another NDPS case registered by Bengaluru Police. According to the release, this points to his alleged repeated involvement in drug trafficking activities.\n\n## What it means for ordinary travellers\n\nOrdinary people have nothing to do in this case. But it is a reminder that carrying a stranger's bag, packet or parcel on a bus or train can put you in serious legal trouble. If someone offers money to carry something for them, refuse clearly.\n\nThe DRI said in its release that it is committed to dismantling drug trafficking networks through intelligence-based action and sustained enforcement, and to taking strict action against those involved in the illegal narcotics trade."
+    }
+  }
+}

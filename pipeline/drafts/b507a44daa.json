@@ -1,0 +1,96 @@
+{
+  "id": "b507a44daa",
+  "createdAt": "2026-11-10T13:33:55.122Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "राजस्व खुफिया निदेशालय ने जवाहरलाल नेहरू पोर्ट अथॉरिटी बंदरगाह पर 4 करोड़ रुपये से अधिक मूल्य की लगभग 13 हजार ई-सिगरेट जब्त कीं",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334658"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "health",
+    "imageQuery": "shipping container port cargo",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "राजस्व खुफिया निदेशालय ने जवाहरलाल नेहरू पोर्ट अथॉरिटी बंदरगाह पर 4 करोड़ रुपये से अधिक मूल्य की लगभग 13 हजार ई-सिगरेट जब्त कीं",
+    "sourceDate": "2026-11-10",
+    "hi": {
+      "title": "JNPT बंदरगाह पर 13 हजार ई-सिगरेट जब्त: कीमत 4 करोड़ से ज़्यादा",
+      "summary": "राजस्व खुफिया निदेशालय (DRI) ने 10 नवंबर 2026 को नवी मुंबई के जवाहरलाल नेहरू पोर्ट पर एक खेप से करीब 13 हजार ई-सिगरेट जब्त कीं। इनकी कीमत 4 करोड़ रुपये से ज़्यादा बताई गई है, और भारत में ई-सिगरेट पहले से प्रतिबंधित है।",
+      "meaning": "आम लोगों को इस खबर से कोई फ़ॉर्म भरने या पैसा देने की ज़रूरत नहीं है। यह याद रखने वाली बात है कि भारत में ई-सिगरेट और इलेक्ट्रॉनिक निकोटीन वाली चीज़ें प्रतिबंधित हैं, इसलिए इन्हें खरीदना, बेचना या मंगाना कानूनी रूप से मना है। अगर कहीं ऐसी चीज़ें बिकती दिखें तो उसकी जानकारी संबंधित विभाग को दी जा सकती है।",
+      "keyFacts": [
+        "10 नवंबर 2026 को JNPT बंदरगाह, नवी मुंबई पर कार्रवाई",
+        "कुल करीब 13 हजार ई-सिगरेट जब्त",
+        "6 हजार UTO Thanoz और 7 हजार UTO Lens ब्रांड की ई-सिगरेट बरामद",
+        "खेप को गलत तरीके से मॉप रॉड (पोछा डंडा) बताया गया था",
+        "जब्त माल की कीमत 4 करोड़ रुपये से ज़्यादा",
+        "2026-27 में DRI ने अब तक करीब 3 लाख 55 हजार ई-सिगरेट जब्त कीं, कीमत 135 करोड़ रुपये से ज़्यादा"
+      ],
+      "faq": [
+        {
+          "q": "भारत में ई-सिगरेट पर प्रतिबंध कब से है?",
+          "a": "2019 से। सरकार ने जन स्वास्थ्य की वजह से इलेक्ट्रॉनिक सिगरेट निषेध अधिनियम लागू किया था, जो ई-सिगरेट के उत्पादन, आयात, निर्यात, परिवहन, बिक्री, वितरण, भंडारण और विज्ञापन पर रोक लगाता है।"
+        },
+        {
+          "q": "JNPT बंदरगाह पर क्या जब्त हुआ?",
+          "a": "करीब 13 हजार ई-सिगरेट जब्त हुईं, जिनकी कीमत 4 करोड़ रुपये से ज़्यादा आंकी गई है। इनमें 6 हजार UTO Thanoz और 7 हजार UTO Lens ब्रांड की ई-सिगरेट शामिल हैं।"
+        },
+        {
+          "q": "ई-सिगरेट की खेप कैसे छिपाई गई थी?",
+          "a": "खेप को मॉप रॉड यानी पोछा लगाने के डंडे के नाम पर घोषित किया गया था। जांच में ई-सिगरेट कंटेनर के निचले हिस्से में छिपाकर रखी मिलीं।"
+        },
+        {
+          "q": "इस साल DRI ने कितनी ई-सिगरेट पकड़ी है?",
+          "a": "वित्त वर्ष 2026-27 में DRI ने महाराष्ट्र, गुजरात, दिल्ली और पश्चिम बंगाल के बंदरगाहों, हवाई अड्डों और अंतर्देशीय कंटेनर डिपो में कार्रवाई करते हुए करीब 3 लाख 55 हजार ई-सिगरेट जब्त की हैं। इनकी कीमत 135 करोड़ रुपये से ज़्यादा बताई गई है।"
+        },
+        {
+          "q": "क्या आम आदमी को कुछ करना है?",
+          "a": "नहीं, इस खबर में आम लोगों के लिए कोई आवेदन या तारीख नहीं है। बस यह जानना ज़रूरी है कि ई-सिगरेट प्रतिबंधित है और इसे खरीदना या बेचना मना है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराजस्व खुफिया निदेशालय (DRI) को एक खास सूचना मिली थी कि जवाहरलाल नेहरू पोर्ट अथॉरिटी (JNPT) बंदरगाह, नवी मुंबई पर आयात की एक खेप में ई-सिगरेट हो सकती है। 10 नवंबर 2026 को अधिकारियों ने उस कंटेनर को पकड़ा और उसकी गहन जांच की।\n\nकागज़ों में इस खेप को मॉप रॉड यानी पोछा लगाने का डंडा बताया गया था। जांच में पता चला कि कंटेनर के निचले हिस्से में छिपाकर ई-सिगरेट रखी गई थीं।\n\n## क्या बरामद हुआ\n\nकंटेनर से 6 हजार UTO Thanoz और 7 हजार UTO Lens ब्रांड की ई-सिगरेट मिलीं। इस तरह कुल करीब 13 हजार ई-सिगरेट बरामद हुईं। इनकी कीमत 4 करोड़ रुपये से ज़्यादा आंकी गई है।\n\nई-सिगरेट के साथ जो कवर कार्गो यानी आड़ में घोषित माल था, उसे भी सीमा शुल्क अधिनियम की संबंधित धाराओं के तहत जब्त कर लिया गया।\n\n## ई-सिगरेट पर रोक क्यों है\n\nभारत में इलेक्ट्रॉनिक सिगरेट और हर तरह की इलेक्ट्रॉनिक निकोटीन प्रणाली प्रतिबंधित है। सरकार ने 2019 में इलेक्ट्रॉनिक सिगरेट निषेध अधिनियम लागू किया था, जिसमें इनके उत्पादन, निर्माण, आयात, निर्यात, परिवहन, बिक्री, वितरण, भंडारण और विज्ञापन पर रोक है। मकसद जन स्वास्थ्य बचाना और लोगों को इनके नुकसान से बचाना बताया गया है।\n\n## इस साल की कार्रवाई\n\nवित्त वर्ष 2026-27 में DRI ने महाराष्ट्र, गुजरात, दिल्ली और पश्चिम बंगाल के अलग-अलग बंदरगाहों, हवाई अड्डों और अंतर्देशीय कंटेनर डिपो में कार्रवाई की है। इनमें करीब 3 लाख 55 हजार ई-सिगरेट जब्त की गईं, जिनकी कीमत 135 करोड़ रुपये से ज़्यादा बताई गई है।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nइस खबर में आम नागरिकों के लिए कोई फ़ॉर्म, आवेदन या तारीख नहीं है। लेकिन यह याद रखना ज़रूरी है कि ई-सिगरेट कानूनी रूप से प्रतिबंधित है। इसे खरीदना, बेचना, रखना या मंगाना मना है।"
+    },
+    "en": {
+      "title": "13,000 e-cigarettes worth over Rs 4 crore seized at JNPT port",
+      "summary": "The Directorate of Revenue Intelligence (DRI) seized about 13,000 e-cigarettes from a consignment at Jawaharlal Nehru Port Authority in Navi Mumbai on 10 November 2026. The seized goods are valued at more than Rs 4 crore, and e-cigarettes are banned in India.",
+      "meaning": "Ordinary readers do not need to apply for anything or pay anything because of this news. What matters is that e-cigarettes and electronic nicotine systems are banned in India, so buying, selling or ordering them is not allowed. If you see such products being sold, you can inform the concerned department.",
+      "keyFacts": [
+        "Action at JNPT port, Navi Mumbai, on 10 November 2026",
+        "About 13,000 e-cigarettes seized in total",
+        "6,000 UTO Thanoz and 7,000 UTO Lens brand e-cigarettes found",
+        "Consignment was wrongly declared as mop rods",
+        "Seized goods valued at more than Rs 4 crore",
+        "In 2026-27, DRI has seized about 3.55 lakh e-cigarettes worth over Rs 135 crore"
+      ],
+      "faq": [
+        {
+          "q": "Since when are e-cigarettes banned in India?",
+          "a": "Since 2019. The government brought the Prohibition of Electronic Cigarettes Act for public health, which bans their production, import, export, transport, sale, distribution, storage and advertisement."
+        },
+        {
+          "q": "What was seized at JNPT port?",
+          "a": "About 13,000 e-cigarettes were seized, valued at more than Rs 4 crore. These include 6,000 UTO Thanoz and 7,000 UTO Lens brand e-cigarettes."
+        },
+        {
+          "q": "How was the e-cigarette consignment hidden?",
+          "a": "The consignment was declared as mop rods. During the search, the e-cigarettes were found hidden in the lower part of the container."
+        },
+        {
+          "q": "How many e-cigarettes has DRI seized this year?",
+          "a": "In financial year 2026-27, DRI has seized about 3.55 lakh e-cigarettes in actions at ports, airports and inland container depots in Maharashtra, Gujarat, Delhi and West Bengal. These are valued at more than Rs 135 crore."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No, this news has no application or deadline for the public. It is simply important to know that e-cigarettes are banned and buying or selling them is not allowed."
+        }
+      ],
+      "body": "## What happened\n\nThe Directorate of Revenue Intelligence (DRI) received a specific input that an imported consignment at Jawaharlal Nehru Port Authority (JNPT) in Navi Mumbai might contain e-cigarettes. On 10 November 2026, officials intercepted the container and carried out a detailed search.\n\nOn paper, the consignment was declared as mop rods. The search found e-cigarettes hidden in the lower part of the container.\n\n## What was found\n\nThe container yielded 6,000 UTO Thanoz and 7,000 UTO Lens brand e-cigarettes, about 13,000 in all. Their value is estimated at more than Rs 4 crore.\n\nThe cover cargo, the goods declared to hide the e-cigarettes, was also seized under the relevant sections of the Customs Act.\n\n## Why e-cigarettes are banned\n\nElectronic cigarettes and all kinds of electronic nicotine systems are prohibited in India. In 2019 the government brought the Prohibition of Electronic Cigarettes Act, which bans their production, manufacture, import, export, transport, sale, distribution, storage and advertisement. The stated aim is to protect public health and people from their harmful effects.\n\n## Action this year\n\nIn financial year 2026-27, DRI has acted at various ports, airports and inland container depots in Maharashtra, Gujarat, Delhi and West Bengal. It has seized about 3.55 lakh e-cigarettes, valued at more than Rs 135 crore.\n\n## What this means for ordinary people\n\nThis news has no form, application or deadline for citizens. But it is a reminder that e-cigarettes are banned by law, and buying, selling, keeping or ordering them is not allowed."
+    }
+  }
+}
