@@ -1,0 +1,90 @@
+{
+  "id": "1db78eaa2b",
+  "createdAt": "2026-11-11T13:32:58.335Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "केंद्रीय नारकोटिक्स ब्यूरो ने उत्तर प्रदेश के मऊ में मेफेड्रोन की गुप्त प्रयोगशाला का भंडाफोड़ किया; 11.7 किलोग्राम मेफेड्रोन, पूर्ववर्ती रसायन और प्रयोगशाला के उपकरण जब्त किए; ऑपरेशन वज्र 3.0 के तहत दो संदिग्धों को गिरफ्तार किया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335083"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "police seized chemicals laboratory",
+    "state": "up",
+    "districts": [
+      "mau"
+    ],
+    "deadline": null,
+    "sourceTitle": "केंद्रीय नारकोटिक्स ब्यूरो ने उत्तर प्रदेश के मऊ में मेफेड्रोन की गुप्त प्रयोगशाला का भंडाफोड़ किया; 11.7 किलोग्राम मेफेड्रोन, पूर्ववर्ती रसायन और प्रयोगशाला के उपकरण जब्त किए; ऑपरेशन वज्र 3.0 के तहत दो संदिग्धों को गिरफ्तार किया",
+    "sourceDate": "2026-11-11",
+    "hi": {
+      "title": "मऊ में मेफेड्रोन की गुप्त प्रयोगशाला पकड़ी: 11.7 किलो ड्रग जब्त, 2 गिरफ्तार",
+      "summary": "केंद्रीय नारकोटिक्स ब्यूरो (CBN) ने 8 नवंबर 2026 को उत्तर प्रदेश के मऊ जिले के ताजोपुर औद्योगिक क्षेत्र में मेफेड्रोन बनाने वाली गुप्त प्रयोगशाला का भंडाफोड़ किया। इस कार्रवाई में 11.7 किलोग्राम मेफेड्रोन और दो संदिग्ध गिरफ्तार किए गए।",
+      "meaning": "यह कार्रवाई मऊ और आसपास के इलाकों में अवैध ड्रग बनाने और बेचने के नेटवर्क पर लगी एक कार्रवाई है। आम लोगों को कोई फॉर्म नहीं भरना है और कोई तारीख नहीं निभानी है। अगर आपको अपने इलाके में किसी संदिग्ध जगह पर ऐसी गतिविधि दिखे, तो पुलिस या CBN को सूचना दे सकते हैं।",
+      "keyFacts": [
+        "कार्रवाई की तारीख: 8 नवंबर 2026, ऑपरेशन वज्र 3.0 के तहत",
+        "जगह: ताजोपुर औद्योगिक क्षेत्र, मऊ जिला, उत्तर प्रदेश",
+        "जब्त: 11.7 किलोग्राम मेफेड्रोन (MD)",
+        "जब्त: 20.9 किलोग्राम 2-ब्रोमो-4-मेथाइलप्रोपियोफेनोन और 3.5 किलोग्राम एसिटिक एनहाइड्राइड",
+        "दो संदिग्धों को NDPS अधिनियम, 1985 के तहत गिरफ्तार किया गया",
+        "2026 में अब तक CBN ने छह गुप्त प्रयोगशालाएं पकड़ी हैं"
+      ],
+      "faq": [
+        {
+          "q": "मऊ में कितना मेफेड्रोन जब्त हुआ?",
+          "a": "11.7 किलोग्राम मेफेड्रोन जब्त हुआ। यह ड्रग प्रोसेसिंग के अलग-अलग चरणों में बरामद किया गया।"
+        },
+        {
+          "q": "कितने लोगों को गिरफ्तार किया गया?",
+          "a": "दो संदिग्धों को गिरफ्तार किया गया। इनके खिलाफ NDPS अधिनियम, 1985 के तहत कार्रवाई की गई है।"
+        },
+        {
+          "q": "यह कार्रवाई किस ऑपरेशन के तहत हुई?",
+          "a": "यह कार्रवाई ऑपरेशन वज्र 3.0 के तहत हुई। इसमें CBN की मध्य प्रदेश और उत्तर प्रदेश इकाइयों की संयुक्त टीम शामिल थी।"
+        },
+        {
+          "q": "2026 में CBN ने अब तक कितनी गुप्त प्रयोगशालाएं पकड़ी हैं?",
+          "a": "2026 में अब तक छह गुप्त प्रयोगशालाएं पकड़ी गई हैं। इनमें 130.2 किलोग्राम मेफेड्रोन और 1,465.4 किलोग्राम/लीटर पूर्ववर्ती रसायन जब्त किए गए हैं।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nकेंद्रीय नारकोटिक्स ब्यूरो (CBN) ने उत्तर प्रदेश के मऊ जिले के ताजोपुर औद्योगिक क्षेत्र में एक गुप्त प्रयोगशाला पकड़ी, जहां मेफेड्रोन (MD) बनाया जा रहा था। यह कार्रवाई 8 नवंबर 2026 को ऑपरेशन वज्र 3.0 के तहत की गई। CBN की मध्य प्रदेश इकाई को इसकी खुफिया जानकारी मिली थी, जिसके बाद मध्य प्रदेश और उत्तर प्रदेश इकाइयों की संयुक्त टीम ने मिलकर कार्रवाई की।\n\n## क्या-क्या जब्त हुआ\n\nप्रयोगशाला से 11.7 किलोग्राम मेफेड्रोन बरामद हुआ। इसके अलावा 20.9 किलोग्राम 2-ब्रोमो-4-मेथाइलप्रोपियोफेनोन जब्त किया गया, जो मेफेड्रोन बनाने में इस्तेमाल होने वाला एक प्रमुख पूर्ववर्ती रसायन है। 3.5 किलोग्राम एसिटिक एनहाइड्राइड और लगभग 119.9 किलोग्राम/लीटर अन्य रसायन, सॉल्वेंट और प्रोसेसिंग रिएजेंट भी जब्त किए गए।\n\nप्रयोगशाला के पूरे ढांचे को भी जब्त कर नष्ट कर दिया गया, जिसमें औद्योगिक ग्राइंडर और मिक्सर, स्टील के टैंक और पात्र, हीटिंग उपकरण, कांच के रिएक्शन और आसवन उपकरण, तापमान मापने वाले यंत्र और वोल्टेज बैलेंसर शामिल थे। व्यक्तिगत सुरक्षा उपकरण (PPE) भी जब्त किए गए।\n\n## किस पर कार्रवाई हुई\n\nइस अवैध निर्माण नेटवर्क में शामिल दो व्यक्तियों को NDPS अधिनियम, 1985 के तहत गिरफ्तार किया गया है। जब्ती और आगे की कानूनी कार्रवाई इसी अधिनियम के प्रावधानों के तहत की गई है। CBN के मुताबिक, पूरे अंतरराज्यीय नेटवर्क, पूर्ववर्ती रसायन के स्रोत, वित्तीय संबंधों और ड्रग के वितरण के संभावित रास्तों का पता लगाने के लिए जांच जारी है।\n\n## इसका क्या असर होगा\n\nCBN ने कहा है कि इस प्रयोगशाला को ध्वस्त करने से बड़ी मात्रा में अवैध मेफेड्रोन के आगे बनने और बंटने को रोकने में मदद मिली है। साथ ही अंतरराज्यीय सिंथेटिक ड्रग नेटवर्क को भी झटका लगा है।\n\n## 2026 में अब तक क्या हुआ\n\nCBN के अनुसार, 2026 में अब तक छह गुप्त प्रयोगशालाओं का भंडाफोड़ किया गया है। इन कार्रवाइयों में 130.2 किलोग्राम मेफेड्रोन और 1,465.4 किलोग्राम/लीटर पूर्ववर्ती रसायन जब्त किए गए हैं, और इन मामलों में 20 संदिग्धों को गिरफ्तार किया गया है।\n\n## आम लोगों के लिए क्या मतलब है\n\nइस खबर में आम नागरिकों के लिए कोई आवेदन, फॉर्म या तारीख नहीं है। यह ड्रग तस्करी के खिलाफ एक कानूनी कार्रवाई है। अगर किसी को अपने आसपास ऐसी संदिग्ध गतिविधि दिखे, तो वह स्थानीय पुलिस या CBN को सूचना दे सकता है।"
+    },
+    "en": {
+      "title": "Mau drug lab busted: 11.7 kg meth seized, 2 held under Operation Vajra 3.0",
+      "summary": "The Central Bureau of Narcotics (CBN) busted a secret laboratory making methamphetamine in Tajopur industrial area of Mau district, Uttar Pradesh, on 8 November 2026. The operation seized 11.7 kg of methamphetamine and led to the arrest of two suspects.",
+      "meaning": "This is a drug-enforcement action in and around Mau district, not a scheme or notice that asks ordinary people to apply or act by a date. Residents do not need to fill any form or meet any deadline. If you see suspicious activity in your area, you can inform the local police or the CBN.",
+      "keyFacts": [
+        "Operation date: 8 November 2026, under Operation Vajra 3.0",
+        "Location: Tajopur industrial area, Mau district, Uttar Pradesh",
+        "Seized: 11.7 kg of methamphetamine (MD)",
+        "Seized: 20.9 kg of 2-bromo-4-methylpropiophenone and 3.5 kg of acetic anhydride",
+        "Two suspects arrested under the NDPS Act, 1985",
+        "CBN has busted six secret labs so far in 2026"
+      ],
+      "faq": [
+        {
+          "q": "How much methamphetamine was seized in Mau?",
+          "a": "11.7 kg of methamphetamine was seized. It was recovered at different stages of processing."
+        },
+        {
+          "q": "How many people were arrested?",
+          "a": "Two suspects were arrested. Action against them was taken under the NDPS Act, 1985."
+        },
+        {
+          "q": "Under which operation was this action taken?",
+          "a": "The action was taken under Operation Vajra 3.0. A joint team of CBN's Madhya Pradesh and Uttar Pradesh units carried it out."
+        },
+        {
+          "q": "How many secret labs has the CBN busted in 2026 so far?",
+          "a": "Six secret labs have been busted so far in 2026. These operations seized 130.2 kg of methamphetamine and 1,465.4 kg/litre of precursor chemicals."
+        }
+      ],
+      "body": "## What happened\n\nThe Central Bureau of Narcotics (CBN) busted a secret laboratory making methamphetamine (MD) in the Tajopur industrial area of Mau district, Uttar Pradesh. The action was taken on 8 November 2026 under Operation Vajra 3.0. The CBN's Madhya Pradesh unit developed the specific intelligence, after which a joint team of its Madhya Pradesh and Uttar Pradesh units carried out the coordinated operation.\n\n## What was seized\n\nThe lab yielded 11.7 kg of methamphetamine at various stages of processing. The team also seized 20.9 kg of 2-bromo-4-methylpropiophenone, a key precursor chemical used to make methamphetamine. Along with this, 3.5 kg of acetic anhydride and about 119.9 kg/litre of other chemicals, solvents and processing reagents, including dichloromethane, hydrochloric acid, sodium bicarbonate, sodium chloride and organic amines, were seized.\n\nThe entire infrastructure of the secret lab was seized and destroyed. This included industrial grinders and mixers, steel tanks and vessels, heating equipment, glass reaction and distillation equipment, temperature measuring instruments and voltage balancers. Personal protective equipment (PPE) was also seized.\n\n## Who faces action\n\nTwo persons linked to the illegal manufacturing network were arrested under the NDPS Act, 1985. The seizure and all subsequent legal action were carried out under the provisions of this Act and laid-down legal procedure. According to the CBN, further investigation is on to trace the wider interstate network, the source of the precursor chemicals, financial links and possible routes for distributing the drugs.\n\n## What difference this makes\n\nThe CBN said destroying this secret lab has helped stop the further manufacture and distribution of a large quantity of illegal methamphetamine. It has also dealt a blow to the interstate synthetic drug network.\n\n## The wider picture in 2026\n\nAccording to the CBN, six secret laboratories have been busted so far in 2026. These operations led to the seizure of 130.2 kg of methamphetamine and 1,465.4 kg/litre of precursor chemicals, and 20 suspects were arrested in these cases.\n\n## What it means for ordinary people\n\nThis news does not ask ordinary citizens to apply for anything or meet any deadline. It is a legal enforcement action against drug trafficking. If anyone notices suspicious activity nearby, they can inform the local police or the CBN."
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "0b5e52bb72",
+  "createdAt": "2026-11-11T13:32:08.829Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "सड़क उपयोगकर्ता के साथ दुर्व्यवहार करने पर भारतीय राष्ट्रीय राजमार्ग प्राधिकरण (एनएचएआई) ने बिजवासन उपयोगकर्ता शुल्क संग्रहण एजेंसी को एक महीने के लिए प्रतिबंधित कर दिया है",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335090"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "highway toll plaza barrier",
+    "state": "delhi",
+    "districts": [
+      "south-west-delhi"
+    ],
+    "deadline": {
+      "date": "2026-11-14",
+      "label_hi": "शुल्क प्लाज़ा का कार्यभार नई एजेंसी को सौंपने की तारीख",
+      "label_en": "Date to hand over charge of the toll plaza to the new agency"
+    },
+    "sourceTitle": "सड़क उपयोगकर्ता के साथ दुर्व्यवहार करने पर भारतीय राष्ट्रीय राजमार्ग प्राधिकरण (एनएचएआई) ने बिजवासन उपयोगकर्ता शुल्क संग्रहण एजेंसी को एक महीने के लिए प्रतिबंधित कर दिया है",
+    "sourceDate": "2026-11-11",
+    "hi": {
+      "title": "बिजवासन टोल प्लाज़ा: दुर्व्यवहार पर एजेंसी पर 15 लाख जुर्माना, एक महीने का प्रतिबंध",
+      "summary": "एनएचएआई ने 11 नवंबर 2026 को बिजवासन टोल प्लाज़ा की शुल्क संग्रहण एजेंसी 'मेसर्स रिद्धि सिद्धि एसोसिएट्स' पर 15 लाख रुपये का जुर्माना लगाया और उसे एक महीने के लिए अपने टेंडरों से रोक दिया। यह कार्रवाई 5 नवंबर 2026 को सड़क उपयोगकर्ताओं के साथ कर्मचारियों के दुर्व्यवहार के बाद हुई है।",
+      "meaning": "यह फैसला उन लोगों से जुड़ा है जो NH-248BB पर बिजवासन टोल प्लाज़ा से गुज़रते हैं। आम यात्रियों को कुछ करने की ज़रूरत नहीं; एजेंसी को 14 नवंबर 2026 तक प्लाज़ा का कार्यभार नई एजेंसी को सौंपना है, इसलिए वहाँ कामकाज में बदलाव दिख सकता है। टोल पर किसी भी दुर्व्यवहार की शिकायत एनएचएआई तक पहुँचाई जा सकती है।",
+      "keyFacts": [
+        "एजेंसी का नाम: मेसर्स रिद्धि सिद्धि एसोसिएट्स",
+        "जुर्माना: 15 लाख रुपये",
+        "प्रतिबंध: एक महीने के लिए एनएचएआई के मौजूदा या भविष्य के टेंडर में भाग लेने से रोक",
+        "घटना: 5 नवंबर 2026, बिजवासन शुल्क प्लाज़ा, NH-248BB",
+        "कारण बताओ नोटिस: एजेंसी और उसके मालिकों/निदेशकों को एक साल के लिए भविष्य के टेंडर से रोकने का प्रस्ताव",
+        "कार्यभार सौंपने की तारीख: 14 नवंबर 2026"
+      ],
+      "faq": [
+        {
+          "q": "बिजवासन टोल प्लाज़ा पर क्या हुआ?",
+          "a": "5 नवंबर 2026 को एजेंसी के कर्मचारियों ने सड़क उपयोगकर्ताओं के साथ दुर्व्यवहार किया। इसी के आधार पर एनएचएआई ने कार्रवाई की।"
+        },
+        {
+          "q": "एजेंसी पर कितना जुर्माना लगा?",
+          "a": "15 लाख रुपये का जुर्माना लगाया गया है। साथ ही एजेंसी को एक महीने के लिए एनएचएआई के टेंडर से रोक दिया गया है।"
+        },
+        {
+          "q": "क्या एजेंसी हमेशा के लिए बैन है?",
+          "a": "नहीं। अभी एक महीने का प्रतिबंध है। कारण बताओ नोटिस में एजेंसी और उसके मालिकों/निदेशकों को एक साल के लिए भविष्य के टेंडर से रोकने का प्रस्ताव है।"
+        },
+        {
+          "q": "टोल प्लाज़ा का काम कब तक नई एजेंसी को मिलेगा?",
+          "a": "एनएचएआई ने एजेंसी को 14 नवंबर 2026 को शुल्क प्लाज़ा का कार्यभार नई एजेंसी को सौंपने का निर्देश दिया है।"
+        },
+        {
+          "q": "टोल पर दुर्व्यवहार हो तो क्या करें?",
+          "a": "एनएचएआई ने साफ कहा है कि टोल प्लाज़ा पर दुर्व्यवहार या अनुशासनहीनता बर्दाश्त नहीं की जाएगी। शिकायत एनएचएआई तक पहुँचाई जा सकती है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nभारतीय राष्ट्रीय राजमार्ग प्राधिकरण (एनएचएआई) ने बिजवासन शुल्क प्लाज़ा की शुल्क संग्रहण एजेंसी 'मेसर्स रिद्धि सिद्धि एसोसिएट्स' के खिलाफ कार्रवाई की है। एजेंसी पर 15 लाख रुपये का जुर्माना लगाया गया है और उसे एक महीने के लिए एनएचएआई के किसी भी मौजूदा या भविष्य के टेंडर में भाग लेने से रोक दिया गया है।\n\nएनएचएआई के मुताबिक यह कार्रवाई 5 नवंबर 2026 को NH-248BB पर स्थित बिजवासन शुल्क प्लाज़ा पर एजेंसी के कर्मचारियों द्वारा सड़क उपयोगकर्ताओं के साथ किए गए दुर्व्यवहार के कारण की गई है।\n\n## एजेंसी पर और क्या कार्रवाई हुई\n\nघटना की गंभीरता को देखते हुए एनएचएआई ने एक कारण बताओ नोटिस भी जारी किया है। इसमें एजेंसी और उसके मालिकों/निदेशकों को एक साल के लिए एनएचएआई के भविष्य के टेंडरों में भाग लेने से प्रतिबंधित करने का प्रस्ताव दिया गया है।\n\nएजेंसी को यह भी निर्देश दिया गया है कि वह 14 नवंबर 2026 को शुल्क प्लाज़ा का कार्यभार नई एजेंसी को सौंप दे।\n\n## एनएचएआई ने कारण क्या बताया\n\nअनुबंध समझौते के अनुसार शुल्क संग्रहण एजेंसी की ज़िम्मेदारी है कि शुल्क प्लाज़ा पर तैनात उसके कर्मचारी उचित आचरण, अनुशासन और व्यवहार बनाए रखें। एनएचएआई ने कहा कि यह घटना दर्शाती है कि एजेंसी अनुशासन बनाए रखने, उचित निगरानी करने और अनुबंध की शर्तों का पालन कराने में पूरी तरह विफल रही।\n\n## आम यात्रियों के लिए इसका क्या मतलब है\n\nयह कार्रवाई सीधे उस एजेंसी के खिलाफ है, इसलिए आम यात्रियों को कोई फ़ॉर्म नहीं भरना है और कोई पैसा नहीं देना है। लेकिन जो लोग इस टोल प्लाज़ा से गुज़रते हैं, उन्हें 14 नवंबर 2026 के आसपास कामकाज में बदलाव दिख सकता है, क्योंकि प्लाज़ा का कार्यभार नई एजेंसी को सौंपा जाना है।\n\nएनएचएआई ने दोहराया है कि वह राष्ट्रीय राजमार्ग के सभी उपयोगकर्ताओं को सुरक्षित और सुगम यात्रा देना चाहता है और टोल प्लाज़ा पर किसी भी तरह के दुर्व्यवहार या अनुशासनहीनता को बर्दाश्त नहीं किया जाएगा।"
+    },
+    "en": {
+      "title": "Bijwasan toll plaza: NHAI fines agency Rs 15 lakh, bans it for a month over misbehaviour",
+      "summary": "NHAI on 11 November 2026 fined the Bijwasan toll collection agency, M/s Riddhi Siddhi Associates, Rs 15 lakh and barred it for one month from its tenders. The action follows misbehaviour by the agency's staff with road users on 5 November 2026.",
+      "meaning": "This affects people who use the Bijwasan toll plaza on NH-248BB. Ordinary travellers have nothing to fill or pay; the agency has been told to hand over charge of the plaza to a new agency on 14 November 2026, so some change in operations may be visible there. Any misbehaviour at a toll plaza can be reported to NHAI.",
+      "keyFacts": [
+        "Agency: M/s Riddhi Siddhi Associates",
+        "Fine: Rs 15 lakh",
+        "Ban: one month from taking part in any current or future NHAI tender",
+        "Incident: 5 November 2026 at Bijwasan toll plaza, NH-248BB",
+        "Show-cause notice: proposes banning the agency and its owners/directors from future tenders for one year",
+        "Handover date: 14 November 2026"
+      ],
+      "faq": [
+        {
+          "q": "What happened at Bijwasan toll plaza?",
+          "a": "On 5 November 2026 the agency's staff misbehaved with road users. NHAI took action on that basis."
+        },
+        {
+          "q": "How much fine was imposed on the agency?",
+          "a": "A fine of Rs 15 lakh was imposed. The agency has also been barred for one month from NHAI tenders."
+        },
+        {
+          "q": "Is the agency banned permanently?",
+          "a": "No. The current ban is for one month. The show-cause notice proposes barring the agency and its owners/directors from future tenders for one year."
+        },
+        {
+          "q": "When will the new agency take charge of the toll plaza?",
+          "a": "NHAI has directed the agency to hand over charge of the toll plaza to the new agency on 14 November 2026."
+        },
+        {
+          "q": "What should I do if I face misbehaviour at a toll plaza?",
+          "a": "NHAI has said misbehaviour or indiscipline at toll plazas will not be tolerated. A complaint can be taken to NHAI."
+        }
+      ],
+      "body": "## What happened\n\nThe National Highways Authority of India (NHAI) has acted against M/s Riddhi Siddhi Associates, the user fee collection agency at the Bijwasan toll plaza. The agency has been fined Rs 15 lakh and barred for one month from taking part in any current or future NHAI tender.\n\nAccording to NHAI, the action was taken because the agency's staff misbehaved with road users at the Bijwasan toll plaza on NH-248BB on 5 November 2026.\n\n## What else was done\n\nLooking at the seriousness of the incident, NHAI has also issued a show-cause notice. It proposes banning the agency and its owners/directors from taking part in NHAI's future tenders for one year.\n\nThe agency has also been directed to hand over charge of the toll plaza to a new agency on 14 November 2026.\n\n## What NHAI said was the reason\n\nUnder the contract agreement, the user fee collection agency is responsible for making sure its staff posted at the toll plaza keep proper conduct, discipline and behaviour. NHAI said the incident shows the agency completely failed to maintain discipline, keep proper supervision and enforce the terms of the contract.\n\n## What this means for ordinary travellers\n\nThe action is against the agency, so ordinary travellers do not have to fill any form or pay anything. But people who use this toll plaza may see some change in operations around 14 November 2026, when charge is to be handed over to a new agency.\n\nNHAI repeated that it is committed to giving all national highway users a safe and smooth travel experience, and that misbehaviour or indiscipline at toll plazas will not be tolerated at all."
+    }
+  }
+}
