@@ -3291,11 +3291,13 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334875": "2026-11-11",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63955": "2026-11-11",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63954": "2026-11-11",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63953": "2026-11-11"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63953": "2026-11-11",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334941": "2026-11-11",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63956": "2026-11-11"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-10T20:38:04.798Z",
+    "last": "2026-11-11T09:33:38.836Z",
     "pending": []
   },
   "sources": [
