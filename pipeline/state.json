@@ -3391,11 +3391,20 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_0bae8404-8e79-40e1-9b31-0544215d6a8c.pdf": "2026-11-12",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_47b8610a-93a9-4ab6-979e-58ae8af95af9.pdf": "2026-11-12",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_60bdacfe-ca98-4696-8562-17b52318a603.pdf": "2026-11-12",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_d1577be0-517f-40d5-ba92-29a737d252a6.pdf": "2026-11-12"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_d1577be0-517f-40d5-ba92-29a737d252a6.pdf": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335606": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335611": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335614": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335607": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335571": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335618": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335573": "2026-11-12",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335581": "2026-11-12",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63965": "2026-11-12"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-12T13:36:25.617Z",
+    "last": "2026-11-12T16:19:51.654Z",
     "pending": []
   },
   "sources": [
