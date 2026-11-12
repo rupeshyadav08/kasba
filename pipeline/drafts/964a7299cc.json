@@ -1,0 +1,96 @@
+{
+  "id": "964a7299cc",
+  "createdAt": "2026-11-12T13:31:57.503Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "राजस्व खुफिया निदेशालय के अधिकारियों ने सिएरा लियोन से नई दिल्ली पहुंची एक महिला यात्री के कब्ज़े से 22 किलोग्राम कोकीन जब्त की",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335557"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "airport customs baggage check",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "राजस्व खुफिया निदेशालय के अधिकारियों ने सिएरा लियोन से नई दिल्ली पहुंची एक महिला यात्री के कब्ज़े से 22 किलोग्राम कोकीन जब्त की",
+    "sourceDate": "2026-11-12",
+    "hi": {
+      "title": "Delhi Airport: सिएरा लियोन से आई महिला यात्री से 22 किलो कोकीन जब्त, DRI ने किया गिरफ्तार",
+      "summary": "राजस्व खुफिया निदेशालय (DRI) ने 12 नवंबर 2026 को नई दिल्ली पहुंची सिएरा लियोन की एक महिला यात्री से 22 किलोग्राम कोकीन जब्त की और उसे गिरफ्तार किया। यह कार्रवाई उस यात्री पर है जिसने खुद को राजनयिक कूरियर बताकर हवाई अड्डे की जांच से बचने की कोशिश की।",
+      "meaning": "यह खबर आम यात्रियों के रोज़मर्रा के काम से सीधे जुड़ी नहीं है और उन्हें कुछ करने की ज़रूरत नहीं है। यह बताती है कि हवाई अड्डों पर जांच एजेंसियां तस्करी पकड़ने के लिए सतर्क हैं। अगर कोई आपसे विदेश से कोई पैकेज या बॉक्स लाने-ले जाने को कहे, तो उसका सामान अपने नाम पर न लें।",
+      "keyFacts": [
+        "22 किलोग्राम कोकीन जब्त की गई, जो 22 पैकेट में थी।",
+        "यात्री सिएरा लियोन से नई दिल्ली पहुंची थी।",
+        "महिला ने खुद को राजनयिक कूरियर बताया और संयुक्त राष्ट्र के कूरियर होने का दावा करने वाले दस्तावेज दिखाए।",
+        "बरामद पदार्थ की मौके पर जांच में कोकीन होने की पुष्टि हुई।",
+        "सभी पैकेट NDPS अधिनियम, 1985 के तहत जब्त किए गए और महिला को उसी कानून के तहत गिरफ्तार कर न्यायालय में पेश किया गया।",
+        "जब्त कोकीन की अंतरराष्ट्रीय अवैध बाजार में कीमत कई करोड़ रुपये आंकी गई है।"
+      ],
+      "faq": [
+        {
+          "q": "Delhi Airport पर कितनी कोकीन जब्त हुई?",
+          "a": "22 किलोग्राम कोकीन जब्त हुई। यह 22 पैकेट में थी, जो ब्रीफकेस जैसे बॉक्स में प्लास्टिक की कई परतों में छिपाई गई थी।"
+        },
+        {
+          "q": "महिला यात्री कहां से आई थी?",
+          "a": "वह पश्चिमी अफ़्रीकी देश सिएरा लियोन से नई दिल्ली पहुंची थी। DRI अधिकारियों ने उसे रोककर उसके सामान की जांच की।"
+        },
+        {
+          "q": "यात्री ने खुद को राजनयिक क्यों बताया?",
+          "a": "विज्ञप्ति के अनुसार उसने खुद को राजनयिक कूरियर बताया और संयुक्त राष्ट्र के कूरियर होने का दावा करने वाले दस्तावेज दिखाए। DRI ने कहा कि ये दस्तावेज पहली नज़र में ही जाली लगे और जांच से बचने के लिए इस्तेमाल किए गए।"
+        },
+        {
+          "q": "महिला के खिलाफ कौन-सा कानून लगाया गया?",
+          "a": "मामला स्वापक औषधि और मन:प्रभावी पदार्थ (NDPS) अधिनियम, 1985 के तहत है। इसी कानून के तहत कोकीन जब्त की गई और महिला को गिरफ्तार कर सक्षम न्यायालय में पेश किया गया।"
+        },
+        {
+          "q": "क्या आम यात्रियों को कुछ करना है?",
+          "a": "नहीं, इस खबर से आम यात्रियों को कोई काम नहीं करना है। यह हवाई अड्डे पर जांच एजेंसी की कार्रवाई की जानकारी है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराजस्व खुफिया निदेशालय (DRI) के अधिकारियों ने नई दिल्ली हवाई अड्डे पर सिएरा लियोन से आई एक विदेशी महिला यात्री को रोका। उसके पास से 22 किलोग्राम कोकीन जब्त की गई। विज्ञप्ति के अनुसार जब्त कोकीन की अंतरराष्ट्रीय अवैध बाजार में कीमत कई करोड़ रुपये आंकी गई है।\n\n## कैसे पकड़ी गई तस्करी\n\nविज्ञप्ति के मुताबिक महिला ने खुद को राजनयिक कूरियर बताया। उसके पास एक बड़ा ब्रीफकेस जैसा बॉक्स था, जिस पर राजनयिक डाक और बिना अनुमति न खोलें जैसे निशान लगे थे। उसने कुछ दस्तावेज भी दिखाए, जिनमें दावा था कि सामान संयुक्त राष्ट्र के राजनयिक कूरियर का है। DRI ने कहा कि ये दस्तावेज पहली नज़र में ही जाली लगे और जांच से बचने के लिए इस्तेमाल किए गए।\n\nअधिकारियों ने विशेष सूचना के आधार पर तय प्रक्रिया से ब्रीफकेस की गहन जांच की। इसमें प्लास्टिक की कई परतों में छिपाए गए 22 पैकेट मिले। इनमें सफेद रंग का ईंट के आकार का पदार्थ था, जिसकी मौके पर जांच में कोकीन होने की पुष्टि हुई।\n\n## कानूनी कार्रवाई\n\nकोकीन के सभी 22 पैकेट स्वापक औषधि और मन:प्रभावी पदार्थ (NDPS) अधिनियम, 1985 के प्रावधानों के तहत जब्त किए गए। महिला यात्री को भी इसी कानून के तहत गिरफ्तार कर सक्षम न्यायालय में पेश किया गया। NDPS अधिनियम देश में नशीले पदार्थों से जुड़े अपराधों और उनकी जांच से जुड़ा कानून है।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nइस खबर से आम यात्रियों को कोई फ़ॉर्म नहीं भरना है और कोई तारीख़ नहीं है जिस तक कुछ करना हो। यह हवाई अड्डे पर जांच एजेंसी की कार्रवाई की जानकारी है। DRI ने कहा है कि वह तस्करी के नए तरीकों का पर्दाफाश करने और अवैध कामों के लिए संस्थागत विशेषाधिकारों का दुरुपयोग करने वाले अंतरराष्ट्रीय गिरोहों के खिलाफ कार्रवाई के लिए प्रतिबद्ध है।"
+    },
+    "en": {
+      "title": "Delhi Airport: DRI seizes 22 kg cocaine from woman flyer from Sierra Leone, arrests her",
+      "summary": "The Directorate of Revenue Intelligence (DRI) on 12 November 2026 seized 22 kg of cocaine from a woman passenger who arrived in New Delhi from Sierra Leone, and arrested her. The notice says she posed as a diplomatic courier to avoid airport checks.",
+      "meaning": "This news does not ask anything of ordinary travellers and is not directly about their daily life. It shows that airport agencies stay alert to drug smuggling. If someone asks you to carry a package or box from abroad in your name, do not agree.",
+      "keyFacts": [
+        "22 kg of cocaine was seized, packed in 22 packets.",
+        "The passenger had arrived in New Delhi from Sierra Leone.",
+        "She claimed to be a diplomatic courier and showed papers claiming the consignment was a United Nations diplomatic courier's.",
+        "An on-the-spot test confirmed the white, brick-shaped substance was cocaine.",
+        "All packets were seized under the NDPS Act, 1985, and she was arrested under the same law and produced before a competent court.",
+        "The seized cocaine is estimated to be worth several crore rupees in the international illegal market."
+      ],
+      "faq": [
+        {
+          "q": "How much cocaine was seized at Delhi Airport?",
+          "a": "22 kg of cocaine was seized. It was in 22 packets hidden in several layers of plastic inside a briefcase-like box."
+        },
+        {
+          "q": "Where had the woman passenger come from?",
+          "a": "She had arrived in New Delhi from the West African country Sierra Leone. DRI officers stopped her and checked her baggage."
+        },
+        {
+          "q": "Why did the passenger claim to be a diplomat?",
+          "a": "According to the release, she described herself as a diplomatic courier and showed documents claiming the consignment belonged to a United Nations diplomatic courier. DRI said the papers looked fake at first glance and were used to avoid checks."
+        },
+        {
+          "q": "Which law applies in this case?",
+          "a": "The case is under the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985. The cocaine was seized and the woman was arrested under this law and produced before a competent court."
+        },
+        {
+          "q": "Do ordinary travellers need to do anything?",
+          "a": "No, there is nothing for ordinary travellers to do. This is information about an enforcement action at the airport."
+        }
+      ],
+      "body": "## What happened\n\nOfficers of the Directorate of Revenue Intelligence (DRI) stopped a foreign woman passenger who arrived in New Delhi from Sierra Leone. According to the release, 22 kg of cocaine was seized from her. The seized cocaine is estimated to be worth several crore rupees in the international illegal market.\n\n## How the smuggling was caught\n\nThe release says the woman described herself as a diplomatic courier. She carried a large briefcase-like box marked as diplomatic mail and \"do not open without permission\". She also showed documents claiming the consignment belonged to a United Nations diplomatic courier. DRI said the papers looked fake at first glance and were used to avoid checks.\n\nActing on specific information and following set procedure, officers examined the briefcase closely. They found 22 packets hidden in several layers of plastic. The white, brick-shaped substance in them was tested on the spot and confirmed to be cocaine.\n\n## The legal action\n\nAll 22 packets were seized under the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985. The woman was arrested under the same law and produced before a competent court. The NDPS Act is the country's law dealing with narcotic drugs and related offences and their investigation.\n\n## What it means for ordinary people\n\nThere is no form to fill and no deadline for ordinary travellers in this news. It is information about an enforcement action at the airport. DRI said it is committed to exposing new smuggling methods and acting against international gangs that misuse institutional privileges for illegal work."
+    }
+  }
+}

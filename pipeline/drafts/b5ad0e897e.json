@@ -1,0 +1,86 @@
+{
+  "id": "b5ad0e897e",
+  "createdAt": "2026-11-12T13:34:56.227Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Appeal No. 7154 of 2026 filed by Imran",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/appeal-no-7154-of-2026-filed-by-imran_105726.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "documents paperwork desk",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Appeal No. 7154 of 2026 filed by Imran",
+    "sourceDate": "2026-11-12",
+    "hi": {
+      "title": "PACL मामला: SEBI की अपीलीय अधिकारी ने Imran की RTI अपील ख़ारिज की",
+      "summary": "SEBI की अपीलीय अधिकारी रुचि चोजर ने 12 नवंबर 2026 को Imran की RTI अपील ख़ारिज कर दी। यह अपील PACL Limited के निवेशक की उस शिकायत से जुड़ी थी, जिसमें उन्होंने कहा था कि उन्होंने गलती से 'Land allotted' में 'Yes' चुन लिया था।",
+      "meaning": "यह फ़ैसला सिर्फ़ उस व्यक्ति की RTI अपील पर है, जिसने PACL के अपने क्लेम में 'Land allotted' विकल्प गलती से 'Yes' भर दिया था। आम निवेशकों या आम लोगों को इससे कोई सीधा काम नहीं करना है। अगर आपका PACL से जुड़ा कोई मामला है, तो SEBI की वेबसाइट पर PACL से जुड़े Public Notices, Press Releases, Status Report और FAQs देख सकते हैं।",
+      "keyFacts": [
+        "अपील संख्या 7154/2026, अपीलकर्ता Imran, जवाब CPIO, SEBI, मुंबई।",
+        "Imran ने 16 सितंबर 2026 को RTI आवेदन दिया था; SEBI ने 23 सितंबर 2026 को जवाब दिया।",
+        "Imran ने 18 अक्टूबर 2026 को अपील दायर की (Reg. No. SEBIH/A/E/26/00400)।",
+        "SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है।",
+        "अपीलीय अधिकारी ने 12 नवंबर 2026 को अपील ख़ारिज की।"
+      ],
+      "faq": [
+        {
+          "q": "PACL निवेशक Imran की RTI अपील का क्या नतीजा निकला?",
+          "a": "अपील ख़ारिज कर दी गई। SEBI की अपीलीय अधिकारी रुचि चोजर ने 12 नवंबर 2026 के आदेश में कहा कि SEBI के जवाब में कोई कमी नहीं है।"
+        },
+        {
+          "q": "SEBI ने Imran को क्या जानकारी देने से मना किया?",
+          "a": "SEBI ने कहा कि उसके पास मांगी गई जानकारी नहीं है। Imran ने पूछा था कि क्या 'Land allotted' विकल्प को 'Yes' से 'No' में सुधारने और क्लेम को फिर से चलाने का कोई तरीका है।"
+        },
+        {
+          "q": "PACL मामले में निवेशकों के पैसे और संपत्ति का ज़िम्मा किसके पास है?",
+          "a": "आदेश के अनुसार, संपत्ति के निपटान और निवेशकों को भुगतान की ज़िम्मेदारी जस्टिस (रिटायर्ड) आर. एम. लोधा कमेटी के पास है। यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी।"
+        },
+        {
+          "q": "PACL से जुड़ी जानकारी कहाँ मिल सकती है?",
+          "a": "SEBI की वेबसाइट पर PACL से जुड़े Public Notices, Press Releases, Status Report और FAQs उपलब्ध हैं। आदेश में भी यही बताया गया है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nSEBI की अपीलीय अधिकारी (RTI Act के तहत) रुचि चोजर ने 12 नवंबर 2026 को Imran की अपील संख्या 7154/2026 ख़ारिज कर दी। यह अपील PACL Limited के एक निवेशक ने दायर की थी।\n\nआदेश के अनुसार, Imran ने 16 सितंबर 2026 को RTI आवेदन दिया था। SEBI के CPIO, मुंबई ने 23 सितंबर 2026 को जवाब दिया। इसके बाद Imran ने 18 अक्टूबर 2026 को अपील दायर की।\n\n## Imran ने क्या पूछा था\n\nआदेश में दिए गए आवेदन के मुताबिक, Imran ने कहा कि उनका PACL सर्टिफिकेट नंबर U01635xxxx है। उनका क्लेम आगे नहीं बढ़ पाया, क्योंकि क्लेम फ़ॉर्म में 'Land allotted' वाले कॉलम में उन्होंने गलती से 'Yes' चुन लिया था। उन्होंने कहा कि उन्हें PACL से कोई ज़मीन नहीं मिली है।\n\nउन्होंने पूछा कि क्या इस कॉलम को 'Yes' से 'No' में सुधारने का कोई प्रावधान है, अगर हाँ तो पूरी प्रक्रिया क्या है, और क्या उनका क्लेम सुधार के बाद फिर से खोला या चलाया जा सकता है। उन्होंने यह भी पूछा कि इसके लिए कौन-सा नियम, सर्कुलर, गाइडलाइन या आदेश है, और क्या वे कोई घोषणा-पत्र या शपथ-पत्र दे सकते हैं।\n\n## SEBI ने क्या जवाब दिया\n\nआदेश के अनुसार, SEBI ने कहा कि मांगी गई जानकारी उसके पास नहीं है। SEBI ने यह भी बताया कि PACL मामले से जुड़े Public Notices, Press Releases, Status Report और FAQs उसकी वेबसाइट पर उपलब्ध हैं।\n\nImran ने अपील में आरोप लगाया कि उन्हें अधूरी, भ्रामक या गलत जानकारी दी गई।\n\n## अपीलीय अधिकारी ने क्या कहा\n\nअपीलीय अधिकारी ने आदेश में लिखा कि SEBI ने साफ़ कहा है कि मांगी गई जानकारी उसके पास नहीं है। उन्होंने Central Information Commission (CIC) के 8 जुलाई 2013 के एक फ़ैसले (Sh. Pattipati Rama Murthy vs. CPIO, SEBI) का हवाला दिया, जिसमें कहा गया था कि अगर जानकारी SEBI के पास नहीं है, तो CPIO उसे बना नहीं सकता। इसलिए उन्हें SEBI के जवाब में कोई कमी नहीं मिली।\n\n## PACL मामले में भुगतान कौन देखता है\n\nआदेश के अनुसार, PACL की संपत्तियों के निपटान और निवेशकों को पैसे लौटाने की ज़िम्मेदारी जस्टिस (रिटायर्ड) आर. एम. लोधा कमेटी के पास है। यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी। आदेश में यह भी कहा गया है कि Imran PACL से जुड़ी जानकारी SEBI की वेबसाइट पर देख सकते हैं।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nयह आदेश सिर्फ़ Imran की RTI अपील पर है। इससे आम निवेशकों या आम जनता को कोई नई अर्जी लगाने, पैसे मांगने या कोई तारीख़ भरने की ज़रूरत नहीं है। अगर किसी का PACL से जुड़ा मामला है, तो वे SEBI की वेबसाइट पर PACL से जुड़े Public Notices, Press Releases, Status Report और FAQs देख सकते हैं।"
+    },
+    "en": {
+      "title": "PACL case: SEBI appellate authority dismisses Imran's RTI appeal",
+      "summary": "SEBI's appellate authority, Ruchi Chojer, dismissed Imran's RTI appeal on 12 November 2026. The appeal concerned a PACL Limited investor who said he had mistakenly selected 'Yes' in the 'Land allotted' field of his claim.",
+      "meaning": "This order only decides one person's RTI appeal about a PACL claim where 'Yes' was mistakenly selected in the 'Land allotted' field. Ordinary investors or the general public do not need to do anything because of it. If you have a PACL-related matter, you can check SEBI's website for PACL Public Notices, Press Releases, Status Reports and FAQs.",
+      "keyFacts": [
+        "Appeal No. 7154 of 2026, appellant Imran, respondent CPIO, SEBI, Mumbai.",
+        "Imran filed an RTI application on 16 September 2026; SEBI replied on 23 September 2026.",
+        "Imran filed the appeal on 18 October 2026 (Reg. No. SEBIH/A/E/26/00400).",
+        "SEBI said the information sought is not available with it.",
+        "The appellate authority dismissed the appeal on 12 November 2026."
+      ],
+      "faq": [
+        {
+          "q": "What was the outcome of PACL investor Imran's RTI appeal?",
+          "a": "The appeal was dismissed. SEBI's appellate authority Ruchi Chojer said in the 12 November 2026 order that there was no deficiency in SEBI's response."
+        },
+        {
+          "q": "What information did SEBI say it did not have?",
+          "a": "SEBI said the information sought is not available with it. Imran had asked whether the 'Land allotted' field could be corrected from 'Yes' to 'No' and his claim reopened or reprocessed."
+        },
+        {
+          "q": "Who is responsible for disposing of PACL properties and repaying investors?",
+          "a": "According to the order, the responsibility is with the Justice (Retd.) R. M. Lodha Committee. The committee was constituted pursuant to the Supreme Court's order dated 2 February 2016."
+        },
+        {
+          "q": "Where can I find information about PACL?",
+          "a": "PACL-related Public Notices, Press Releases, Status Reports and FAQs are available on SEBI's website, as the order notes."
+        }
+      ],
+      "body": "## What happened\n\nSEBI's appellate authority under the RTI Act, Ruchi Chojer, dismissed Imran's appeal No. 7154 of 2026 on 12 November 2026. The appeal was filed by an investor in PACL Limited.\n\nAccording to the order, Imran filed an RTI application on 16 September 2026. SEBI's CPIO, Mumbai, responded on 23 September 2026. Imran then filed the appeal on 18 October 2026.\n\n## What Imran asked\n\nAs recorded in the order, Imran said his PACL certificate number is U01635xxxx. His claim could not be processed further because he had selected 'Yes' in the 'Land allotted' field of the claim application by mistake. He said he had not been allotted any land by PACL.\n\nHe asked whether there is any provision to correct the field from 'Yes' to 'No', and if so, the complete procedure for correction and for reopening or reprocessing the claim. He also asked whether his claim could be reopened after correction, which rule, circular, guideline or order permits or bars such correction, whether he could submit a declaration or affidavit, and which authority he should approach.\n\n## What SEBI replied\n\nAccording to the order, SEBI said the information sought is not available with it. SEBI also informed him that details of PACL matters, including Public Notices, Press Releases, Status Reports and FAQs, are available on SEBI's website.\n\nIn his appeal, Imran said he had been given incomplete, misleading or false information.\n\n## What the appellate authority said\n\nThe appellate authority noted that SEBI had clearly stated that the requested information is not available with it. She referred to a Central Information Commission (CIC) decision dated 8 July 2013 in Sh. Pattipati Rama Murthy vs. CPIO, SEBI, which held that if SEBI does not have the information, the CPIO cannot invent it. She found no deficiency in SEBI's response.\n\n## Who handles PACL repayments\n\nThe order notes that the responsibility of disposal of properties and repayment to investors is entrusted with the Justice (Retd.) R. M. Lodha Committee. The committee was constituted pursuant to the Supreme Court's order dated 2 February 2016. The order also says Imran may be guided by the PACL-related information available on SEBI's website.\n\n## What this means for ordinary people\n\nThis order only decides Imran's RTI appeal. Ordinary investors or the general public do not need to file anything, claim anything or meet any date because of it. If you have a PACL-related matter, you can check SEBI's website for PACL Public Notices, Press Releases, Status Reports and FAQs."
+    }
+  }
+}

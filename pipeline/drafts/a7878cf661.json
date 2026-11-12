@@ -1,0 +1,94 @@
+{
+  "id": "a7878cf661",
+  "createdAt": "2026-11-12T13:35:25.971Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Appeal No. 7150 of 2026 filed by Nirvesh Devi",
+    "link": "https://www.sebi.gov.in/enforcement/orders/nov-2026/appeal-no-7150-of-2026-filed-by-nirvesh-devi_105720.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "court documents gavel",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Appeal No. 7150 of 2026 filed by Nirvesh Devi",
+    "sourceDate": "2026-11-12",
+    "hi": {
+      "title": "PACL निवेशक की RTI अपील खारिज: SEBI ने कहा जानकारी उसके पास नहीं",
+      "summary": "SEBI की अपीलीय अधिकारी रुचि चोजर ने 12 नवंबर 2026 को PACL निवेशक निर्वेश देवी की RTI अपील खारिज कर दी। यह मामला उन निवेशकों से जुड़ा है जो PACL में पैसा लगाकर जमीन या रिफंड की जानकारी मांग रहे हैं।",
+      "meaning": "यह फैसला उन लोगों के लिए है जिन्होंने PACL में निवेश किया है और अपनी जमीन या पैसे की जानकारी चाहते हैं। SEBI ने साफ किया है कि PACL से जुड़ी जानकारी उसके पास नहीं है, इसलिए उससे यह जानकारी नहीं मिल सकती। निवेशकों को SEBI की वेबसाइट पर PACL से जुड़े स्टेटस रिपोर्ट, सवाल-जवाब और सार्वजनिक सूचनाएं देखनी चाहिए।",
+      "keyFacts": [
+        "अपील संख्या 7150/2026 निर्वेश देवी ने दायर की थी।",
+        "SEBI को यह आवेदन 1 सितंबर 2026 को मिला था।",
+        "SEBI ने 22 सितंबर 2026 को जवाब दिया था।",
+        "अपील 15 अक्टूबर 2026 को दायर की गई थी।",
+        "12 नवंबर 2026 को अपील खारिज की गई।"
+      ],
+      "faq": [
+        {
+          "q": "PACL में निवेश किया है, मेरी जमीन या पैसे की जानकारी कहां मिलेगी?",
+          "a": "SEBI के अनुसार यह जानकारी उसके पास नहीं है। SEBI की वेबसाइट पर PACL मामले से जुड़े स्टेटस रिपोर्ट, सार्वजनिक सूचनाएं और सवाल-जवाब देखे जा सकते हैं।",
+          "q_en": "I invested in PACL. Where can I get information about my land or money?"
+        },
+        {
+          "q": "PACL मामले में संपत्ति बेचने और पैसे लौटाने की जिम्मेदारी किसके पास है?",
+          "a": "आदेश के अनुसार यह जिम्मेदारी जस्टिस (रिटायर्ड) आर. एम. लोधा कमेटी के पास है। यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी।",
+          "q_en": "Who is responsible for selling assets and returning money in the PACL matter?"
+        },
+        {
+          "q": "क्या SEBI ने निर्वेश देवी को जानकारी देने से मना कर दिया?",
+          "a": "SEBI ने कहा कि मांगी गई जानकारी उसके पास उपलब्ध नहीं है। अपीलीय अधिकारी ने SEBI के जवाब में कोई कमी नहीं पाई और अपील खारिज कर दी।",
+          "q_en": "Did SEBI refuse to give information to Nirvesh Devi?"
+        },
+        {
+          "q": "क्या इस अपील से PACL निवेशकों को पैसा मिल जाएगा?",
+          "a": "नहीं, यह आदेश सिर्फ RTI अपील के बारे में है। इसमें पैसे लौटाने का कोई आदेश नहीं दिया गया है।",
+          "q_en": "Will this appeal get PACL investors their money back?"
+        }
+      ],
+      "body": "## क्या है यह मामला\n\nनिर्वेश देवी ने SEBI से सूचना का अधिकार (RTI) के तहत PACL में अपने निवेश की जानकारी मांगी थी। उन्होंने पूछा था कि उनकी जमीन का क्या हुआ और उन्हें पैसे कब मिलेंगे। SEBI ने 22 सितंबर 2026 को जवाब दिया कि यह जानकारी उसके पास नहीं है। इसके बाद निर्वेश देवी ने 15 अक्टूबर 2026 को अपील दायर की।\n\n## SEBI ने क्या कहा\n\nSEBI की अपीलीय अधिकारी रुचि चोजर ने 12 नवंबर 2026 के आदेश में कहा कि SEBI के पास मांगी गई जानकारी नहीं है। उन्होंने केंद्रीय सूचना आयोग (CIC) के 2013 के एक फैसले का हवाला दिया, जिसमें कहा गया था कि अगर किसी विभाग के पास जानकारी नहीं है तो वह उसे बना नहीं सकता।\n\n## PACL मामले में किसके पास है जिम्मेदारी\n\nआदेश के अनुसार PACL की संपत्ति बेचने और निवेशकों को पैसे लौटाने की जिम्मेदारी जस्टिस (रिटायर्ड) आर. एम. लोधा कमेटी के पास है। यह कमेटी सुप्रीम कोर्ट के 2 फरवरी 2016 के आदेश पर बनाई गई थी। SEBI ने कहा कि PACL से जुड़ी स्टेटस रिपोर्ट, सवाल-जवाब, प्रेस रिलीज और सार्वजनिक सूचनाएं उसकी वेबसाइट पर उपलब्ध हैं।\n\n## निवेशकों को क्या करना चाहिए\n\nजिन निवेशकों ने PACL में पैसा लगाया है, वे SEBI की वेबसाइट पर PACL से जुड़ी जानकारी देख सकते हैं। इस आदेश में पैसे लौटाने या जमीन देने के बारे में कोई नया निर्देश नहीं दिया गया है। यह आदेश सिर्फ RTI अपील का निपटारा है।"
+    },
+    "en": {
+      "title": "PACL investor's RTI appeal dismissed: SEBI says it does not have the information",
+      "summary": "SEBI's appellate authority Ruchi Chojer dismissed PACL investor Nirvesh Devi's RTI appeal on November 12, 2026. The case relates to investors who put money in PACL and are seeking information about land or refunds.",
+      "meaning": "This order is for people who invested in PACL and want information about their land or money. SEBI has made clear that it does not have PACL-related information, so it cannot provide it. Investors should check PACL status reports, FAQs and public notices on SEBI's website.",
+      "keyFacts": [
+        "Appeal No. 7150/2026 was filed by Nirvesh Devi.",
+        "SEBI received the application on September 1, 2026.",
+        "SEBI replied on September 22, 2026.",
+        "The appeal was filed on October 15, 2026.",
+        "The appeal was dismissed on November 12, 2026."
+      ],
+      "faq": [
+        {
+          "q": "I invested in PACL. Where can I get information about my land or money?",
+          "a": "According to SEBI, it does not have this information. PACL status reports, public notices and FAQs are available on SEBI's website.",
+          "q_hi": "PACL में निवेश किया है, मेरी जमीन या पैसे की जानकारी कहां मिलेगी?"
+        },
+        {
+          "q": "Who is responsible for selling assets and returning money in the PACL matter?",
+          "a": "According to the order, this responsibility lies with the Justice (Retd.) R. M. Lodha Committee. The committee was constituted pursuant to the Supreme Court's order dated February 2, 2016.",
+          "q_hi": "PACL मामले में संपत्ति बेचने और पैसे लौटाने की जिम्मेदारी किसके पास है?"
+        },
+        {
+          "q": "Did SEBI refuse to give information to Nirvesh Devi?",
+          "a": "SEBI said the requested information is not available with it. The appellate authority found no deficiency in SEBI's response and dismissed the appeal.",
+          "q_hi": "क्या SEBI ने निर्वेश देवी को जानकारी देने से मना कर दिया?"
+        },
+        {
+          "q": "Will this appeal get PACL investors their money back?",
+          "a": "No, this order is only about the RTI appeal. It does not order any refund.",
+          "q_hi": "क्या इस अपील से PACL निवेशकों को पैसा मिल जाएगा?"
+        }
+      ],
+      "body": "## What is this case about\n\nNirvesh Devi had sought information from SEBI under the Right to Information (RTI) Act about her investment in PACL. She asked what happened to her land and when she would get her money. SEBI replied on September 22, 2026, that it does not have this information. Nirvesh Devi then filed an appeal on October 15, 2026.\n\n## What SEBI said\n\nIn her order dated November 12, 2026, SEBI's appellate authority Ruchi Chojer said SEBI does not have the requested information. She cited a 2013 decision of the Central Information Commission (CIC), which held that if a department does not have information, it cannot invent it.\n\n## Who is responsible in the PACL matter\n\nAccording to the order, the responsibility of disposing of PACL's properties and repaying investors lies with the Justice (Retd.) R. M. Lodha Committee. The committee was constituted pursuant to the Supreme Court's order dated February 2, 2016. SEBI said PACL status reports, FAQs, press releases and public notices are available on its website.\n\n## What investors should do\n\nInvestors who put money in PACL can check PACL-related information on SEBI's website. This order does not give any new direction about refunds or land allotment. It only disposes of the RTI appeal."
+    }
+  }
+}
