@@ -3400,7 +3400,10 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335618": "2026-11-12",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335573": "2026-11-12",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335581": "2026-11-12",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63965": "2026-11-12"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63965": "2026-11-12",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63968": "2026-11-13",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63967": "2026-11-13",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63966": "2026-11-13"
   },
   "telegramOffset": 406796360,
   "deploy": {
