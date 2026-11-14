@@ -1,0 +1,96 @@
+{
+  "id": "58161f39f0",
+  "createdAt": "2026-11-14T09:04:51.506Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "डीआरआई ने वैध डाक व्यापार चैनलों का दुरुपयोग करने के एक सिंडिकेट के प्रयास को विफल करते हुए यूरोप से डाक पार्सल में छिपाकर रखी 10.8 किलोग्राम एम्फ़ैटेमिन जब्त किया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336156"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "post office parcels sorting",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "डीआरआई ने वैध डाक व्यापार चैनलों का दुरुपयोग करने के एक सिंडिकेट के प्रयास को विफल करते हुए यूरोप से डाक पार्सल में छिपाकर रखी 10.8 किलोग्राम एम्फ़ैटेमिन जब्त किया",
+    "sourceDate": "2026-11-14",
+    "hi": {
+      "title": "डीआरआई ने यूरोप से आए डाक पार्सल में छिपी 10.8 किलोग्राम एम्फ़ैटेमिन जब्त की",
+      "summary": "डायरेक्टरेट ऑफ़ रेवेन्यू इंटेलिजेंस (डीआरआई) ने 14 नवंबर 2026 को बताया कि उसने नई दिल्ली के विदेश डाकघर में एक पार्सल से 10.8 किलोग्राम एम्फ़ैटेमिन जब्त किया। यह कार्रवाई उन लोगों के लिए कोई सीधी बात नहीं है जो आम डाक से सामान भेजते या मंगाते हैं, लेकिन यह दिखाती है कि डाक के ज़रिए होने वाली तस्करी पर नज़र रखी जा रही है।",
+      "meaning": "आम नागरिकों को इस खबर में कुछ करने या भरने की ज़रूरत नहीं है। यह एक जब्ती की खबर है, कोई नई नियम या समय-सीमा नहीं। जो लोग विदेश से डाक से सामान मंगाते हैं, उन्हें बस यह ध्यान रखना चाहिए कि पार्सल में सामान की सही घोषणा हो और कोई प्रतिबंधित चीज़ न भेजी जाए।",
+      "keyFacts": [
+        "10.8 किलोग्राम एम्फ़ैटेमिन जब्त किया गया",
+        "पार्सल एक यूरोपीय देश से आया था और उसमें कपड़े होने की घोषणा थी",
+        "कार्टन के चारों किनारों पर दो-दो प्लास्टिक पाउच छिपाए गए थे, कुल आठ पैकेट मिले",
+        "पैकेट गुलाबी रंग के पाउडर वाले थे और एम्फ़ैटेमिन के लिए पॉज़िटिव पाए गए",
+        "जब्ती एनडीपीएस अधिनियम, 1985 के प्रावधानों के तहत की गई",
+        "जांच जारी है ताकि पीछे का बड़ा नेटवर्क पकड़ा जा सके"
+      ],
+      "faq": [
+        {
+          "q": "डीआरआई ने कितनी एम्फ़ैटेमिन जब्त की?",
+          "a": "10.8 किलोग्राम एम्फ़ैटेमिन जब्त की गई। यह पार्सल नई दिल्ली के विदेश डाकघर में रोका गया था।"
+        },
+        {
+          "q": "पार्सल कहां से आया था?",
+          "a": "पार्सल एक यूरोपीय देश से आया था। उसमें कपड़े होने की घोषणा की गई थी।"
+        },
+        {
+          "q": "पार्सल में सामान कैसे छिपाया गया था?",
+          "a": "शिपिंग कार्टन के चारों किनारों में से हर किनारे पर दो प्लास्टिक पाउच छिपाए गए थे। इस तरह कुल आठ पैकेट मिले, जिनमें गुलाबी पाउडर था।"
+        },
+        {
+          "q": "क्या इस मामले में कोई गिरफ्तार हुआ है?",
+          "a": "जारी विज्ञप्ति में गिरफ्तारी के बारे में कुछ नहीं कहा गया है। विज्ञप्ति में सिर्फ़ यह बताया गया है कि आगे की जांच चल रही है।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं, आम लोगों को इस मामले में कुछ करने की ज़रूरत नहीं है। यह डीआरआई की एक कार्रवाई की खबर है।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nडायरेक्टरेट ऑफ़ रेवेन्यू इंटेलिजेंस (डीआरआई) ने बताया है कि उसने एक अंतरराष्ट्रीय मादक पदार्थ तस्करी की कोशिश रोक दी। नई दिल्ली के विदेश डाकघर में एक संदिग्ध पार्सल रोका गया, जो एक यूरोपीय देश से आया था। इस पार्सल में 10.8 किलोग्राम एम्फ़ैटेमिन मिली, जिसे जब्त कर लिया गया।\n\n## पार्सल में क्या मिला\n\nपार्सल के कागज़ों में लिखा था कि उसमें कपड़े हैं। शुरुआती जांच में शिपिंग कार्टन के अंदर आम घरेलू कपड़े ही दिखे। लेकिन जब पैकेजिंग को ध्यान से देखा गया, तो पता चला कि कार्टन के चारों किनारों में से हर किनारे पर दो प्लास्टिक पाउच छिपाए गए थे। इस तरह कुल आठ पैकेट मिले, जिनमें गुलाबी रंग का पाउडर था। जांच में यह पाउडर एम्फ़ैटेमिन निकला।\n\n## किस कानून के तहत कार्रवाई\n\nये सभी आठ पैकेट नारकोटिक ड्रग्स एंड साइकोट्रोपिक सब्सटेंस (एनडीपीएस) अधिनियम, 1985 के प्रासंगिक प्रावधानों के तहत जब्त किए गए हैं। यह कानून देश में प्रतिबंधित नशीले पदार्थों से जुड़े मामलों के लिए है।\n\n## आगे क्या\n\nडीआरआई ने कहा है कि इस ऑपरेशन के पीछे के बड़े नेटवर्क का पता लगाने के लिए आगे की जांच चल रही है। विज्ञप्ति में यह भी कहा गया है कि डीआरआई वैध व्यापार की आड़ में चल रहे गैर-कानूनी नेटवर्क को पकड़ने और रोकने के लिए काम करता रहेगा।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nइस खबर में आम नागरिकों के लिए कोई फ़ॉर्म, आवेदन या तारीख नहीं है। यह सिर्फ़ एक जब्ती की जानकारी है। जो लोग विदेश से डाक से सामान मंगाते हैं, उनके लिए यह याद दिलाने वाली बात है कि पार्सल में सामान की सही जानकारी दें और किसी प्रतिबंधित चीज़ को भेजने या मंगाने की कोशिश न करें।"
+    },
+    "en": {
+      "title": "DRI seizes 10.8 kg amphetamine hidden in postal parcel from Europe",
+      "summary": "The Directorate of Revenue Intelligence (DRI) said on 14 November 2026 that it seized 10.8 kg of amphetamine from a parcel at the Foreign Post Office in New Delhi. This does not ask anything of ordinary people who send or receive post, but it shows that smuggling through postal channels is being watched.",
+      "meaning": "Ordinary citizens do not need to do anything because of this news. It is a seizure report, not a new rule or deadline. People who receive parcels from abroad should simply make sure the contents are declared correctly and that nothing prohibited is sent.",
+      "keyFacts": [
+        "10.8 kg of amphetamine was seized",
+        "The parcel came from a European country and was declared to contain clothes",
+        "Two plastic pouches were hidden on each of the carton's four sides, making eight packets in all",
+        "The packets held a pink powder that tested positive for amphetamine",
+        "The seizure was made under provisions of the NDPS Act, 1985",
+        "Further investigation is on to trace the wider network"
+      ],
+      "faq": [
+        {
+          "q": "How much amphetamine did the DRI seize?",
+          "a": "10.8 kg of amphetamine was seized. The parcel was stopped at the Foreign Post Office in New Delhi."
+        },
+        {
+          "q": "Where did the parcel come from?",
+          "a": "The parcel came from a European country. It was declared to contain clothes."
+        },
+        {
+          "q": "How was the substance hidden in the parcel?",
+          "a": "Two plastic pouches were hidden on each of the four sides of the shipping carton. In all, eight packets containing a pink powder were found."
+        },
+        {
+          "q": "Has anyone been arrested in this case?",
+          "a": "The release does not say anything about arrests. It only says that further investigation is under way."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No, ordinary people do not need to do anything in this matter. This is a report of action by the DRI."
+        }
+      ],
+      "body": "## What happened\n\nThe Directorate of Revenue Intelligence (DRI) has said it stopped an attempt to smuggle narcotics into India. A suspicious parcel that came from a European country was stopped at the Foreign Post Office in New Delhi. It contained 10.8 kg of amphetamine, which was seized.\n\n## What was found in the parcel\n\nThe parcel's papers said it contained clothes. An initial check found ordinary household clothes packed inside a shipping carton. But a closer look at the packaging showed that two plastic pouches had been hidden on each of the carton's four sides. In all, eight packets were found, holding a pink powder. Testing showed the powder was amphetamine.\n\n## Under which law action was taken\n\nAll eight packets were seized under the relevant provisions of the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985. This law deals with cases involving prohibited narcotic substances in the country.\n\n## What happens next\n\nThe DRI said further investigation is under way to trace the wider network behind the operation. The release also said the DRI will keep working to find and stop illegal networks running under the cover of legitimate trade.\n\n## What this means for ordinary people\n\nThere is no form, application or date for ordinary citizens in this news. It is only information about a seizure. For people who receive parcels from abroad by post, it is a reminder to declare the contents correctly and not to send or order anything prohibited."
+    }
+  }
+}
