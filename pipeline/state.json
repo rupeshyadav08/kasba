@@ -3455,11 +3455,23 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_3ce52671-9f63-4387-9800-51b001c93e98.pdf": "2026-11-13",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b5c52a9e-9099-45bf-b6e6-249c39355c40.pdf": "2026-11-13",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_a15c63b7-01df-419f-ab4d-75a913d524be.pdf": "2026-11-13",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/City%20live%20CPO%20Exam%20notice_13112026.pdf": "2026-11-13"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/City%20live%20CPO%20Exam%20notice_13112026.pdf": "2026-11-13",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336097": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336085": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336098": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336043": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336040": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336042": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335995": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336019": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336017": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336044": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335996": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335992": "2026-11-14"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-13T13:37:28.148Z",
+    "last": "2026-11-14T02:03:22.196Z",
     "pending": []
   },
   "sources": [
