@@ -3489,12 +3489,20 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336180": "2026-11-14",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336191": "2026-11-14",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336219": "2026-11-14",
-    "https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf": "2026-11-14"
+    "https://nta.ac.in/Download/Notice/Notice_20261114165715.pdf": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336299": "2026-11-14",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336283": "2026-11-14",
+    "https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf": "2026-11-14",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_f171c50d-e04e-404c-bdb3-6808a4e4ec8e.pdf": "2026-11-14",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_18c55f8d-e1be-46be-bdbd-adc637b61798.pdf": "2026-11-14",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_6d07ac56-8708-41e2-aaab-2143623338b2.pdf": "2026-11-14"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-14T13:33:52.998Z",
-    "pending": []
+    "pending": [
+      "nss-holds-block-level-sports-events-across-india-87-481-peop"
+    ]
   },
   "sources": [
     "pib-hi",

@@ -1,0 +1,100 @@
+{
+  "id": "069a7309f4",
+  "createdAt": "2026-11-14T14:32:59.782Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Inviting Online Applications for SHRESHTA (NETS) – 2027",
+    "link": "https://nta.ac.in/Download/Notice/Notice_20261114192445.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "students writing exam paper",
+    "state": null,
+    "districts": [],
+    "deadline": {
+      "date": "2026-11-30",
+      "label_hi": "आवेदन की last date: 30 नवंबर 2026, शाम 5 बजे तक",
+      "label_en": "Last date to apply: 30 November 2026, up to 5 PM"
+    },
+    "sourceTitle": "Inviting Online Applications for SHRESHTA (NETS) – 2027",
+    "sourceDate": "2026-11-14",
+    "hi": {
+      "title": "SHRESHTA (NETS) 2027: SC और DNT छात्रों के लिए Class 9 में मुफ़्त पढ़ाई, 30 नवंबर तक करें apply",
+      "summary": "National Testing Agency (NTA) ने SHRESHTA (NETS) 2027 परीक्षा के लिए ऑनलाइन आवेदन मांगे हैं, जिससे चुने गए छात्रों को निजी आवासीय स्कूलों में Class 9 में पढ़ाई का पूरा खर्च केंद्र सरकार उठाएगी। यह मौका मेधावी अनुसूचित जाति (SC) और डी-नोटिफाइड ट्राइब्स (DNT) के लड़के और लड़कियों दोनों के लिए है।",
+      "meaning": "अगर आप SC या DNT समुदाय से हैं और आपका बच्चा मेधावी है, तो यह योजना उसकी Class 9 की पढ़ाई किसी अच्छे निजी आवासीय स्कूल में, बिना खर्च के करा सकती है। आवेदन सिर्फ़ ऑनलाइन होगा और 30 नवंबर 2026 शाम 5 बजे तक भरना है। आवेदन से पहले NTA की वेबसाइट पर Information Bulletin पढ़ लें, क्योंकि पात्रता और बाकी नियम उसी में दिए हैं।",
+      "keyFacts": [
+        "कुल लगभग 2,400 छात्र चुने जाएंगे — 260 SC और 240 DNT",
+        "आवेदन: 14 नवंबर 2026 से 30 नवंबर 2026, शाम 5 बजे तक",
+        "आवेदन में सुधार: 1 दिसंबर 2026 से 4 दिसंबर 2026, शाम 5 बजे तक",
+        "परीक्षा: 10 जनवरी 2027 (रविवार), दोपहर 2 बजे से शाम 5 बजे तक",
+        "परीक्षा 92 शहरों में, पेन-एंड-पेपर (OMR) तरीके से, हिंदी और अंग्रेज़ी दोनों में",
+        "एडमिट कार्ड NTA की वेबसाइट से 5 जनवरी 2027 से डाउनलोड होंगे"
+      ],
+      "faq": [
+        {
+          "q": "SHRESHTA (NETS) 2027 के लिए आवेदन की last date क्या है?",
+          "a": "30 नवंबर 2026, शाम 5 बजे तक। आवेदन 14 नवंबर 2026 से ऑनलाइन शुरू हुए हैं और सिर्फ़ NTA की वेबसाइट पर ही भरे जाएंगे।"
+        },
+        {
+          "q": "SHRESHTA योजना किसके लिए है?",
+          "a": "यह योजना मेधावी अनुसूचित जाति (SC) और डी-नोटिफाइड ट्राइब्स (DNT) के लड़के और लड़कियों के लिए है। DNT वे हैं जो SC, ST और OBC में शामिल नहीं हैं।"
+        },
+        {
+          "q": "SHRESHTA में कितने छात्र चुने जाएंगे?",
+          "a": "लगभग 2,400 छात्र — जिनमें 260 SC और 240 DNT शामिल हैं। चुने गए छात्रों को Class 9 में निजी आवासीय स्कूलों में दाखिला मिलेगा और पढ़ाई का पूरा खर्च केंद्र सरकार उठाएगी।"
+        },
+        {
+          "q": "SHRESHTA 2027 परीक्षा कब और कैसे होगी?",
+          "a": "परीक्षा 10 जनवरी 2027 (रविवार) को दोपहर 2 बजे से शाम 5 बजे तक होगी। यह पेन-एंड-पेपर (OMR शीट) तरीके से 92 शहरों में होगी और पेपर हिंदी व अंग्रेज़ी दोनों में मिलेगा।"
+        },
+        {
+          "q": "SHRESHTA के बारे में ज़्यादा जानकारी या मदद कहाँ से मिलेगी?",
+          "a": "पूरी जानकारी NTA की वेबसाइट https://exams.nta.nic.in/shreshta/ पर Information Bulletin में है। मदद के लिए NTA हेल्प डेस्क के नंबर 011-40759000 या 69227700 पर कॉल कर सकते हैं या shreshta@nta.ac.in पर मेल लिख सकते हैं।"
+        }
+      ],
+      "body": "## क्या है यह परीक्षा\n\nNational Testing Agency (NTA) ने Ministry of Social Justice and Empowerment की ओर से SHRESHTA (NETS) 2027 परीक्षा के लिए ऑनलाइन आवेदन मांगे हैं। SHRESHTA का पूरा नाम Scheme for Residential Education for Students in High Schools in Targeted Areas है। इसका मक़सद मेधावी अनुसूचित जाति (SC) और डी-नोटिफाइड ट्राइब्स (DNT) के छात्रों को अच्छे निजी आवासीय स्कूलों में पढ़ाई का मौका देना है। इसमें लड़के और लड़कियाँ दोनों शामिल हैं।\n\n## किसे फ़ायदा होगा\n\nयोजना के तहत लगभग 2,400 छात्र चुने जाएंगे, जिनमें 260 SC और 240 DNT छात्र बताए गए हैं। चुने गए छात्रों को Class 9 में दाखिला मिलेगा और पढ़ाई का पूरा खर्च केंद्र सरकार उठाएगी। ध्यान रहे कि DNT का मतलब उन समुदायों से है जो SC, ST और OBC में शामिल नहीं हैं।\n\n## आवेदन कब और कैसे करें\n\nऑनलाइन आवेदन 14 नवंबर 2026 से 30 नवंबर 2026 तक, शाम 5 बजे तक भरे जा सकते हैं। आवेदन सिर्फ़ https://exams.nta.nic.in/shreshta/ पर ही होंगे। NTA ने कहा है कि फ़ॉर्म ध्यान से भरें और पहले Information Bulletin पढ़ लें, क्योंकि योजना की अवधि, माध्यम, पाठ्यक्रम, पात्रता, सीटों की संख्या, परीक्षा शहर और पास होने के नियम उसी में दिए हैं।\n\nअगर फ़ॉर्म में कुछ ग़लत भर गया हो, तो 1 दिसंबर 2026 से 4 दिसंबर 2026 तक, शाम 5 बजे तक वेबसाइट पर सुधार किया जा सकता है।\n\n## परीक्षा कैसे होगी\n\nपरीक्षा 10 जनवरी 2027 (रविवार) को दोपहर 2 बजे से शाम 5 बजे तक होगी। यह देश के 92 शहरों में पेन-एंड-पेपर तरीके से होगी, यानी OMR शीट पर जवाब भरे जाएंगे। सवाल बहुविकल्पीय (MCQ) होंगे और पेपर हिंदी व अंग्रेज़ी दोनों में मिलेगा। परीक्षा शहर की जानकारी 20 दिसंबर 2026 को दी जाएगी और एडमिट कार्ड 5 जनवरी 2027 से NTA की वेबसाइट से डाउनलोड किए जा सकेंगे। नतीजे की तारीख़ बाद में वेबसाइट पर बताई जाएगी।\n\n## आगे क्या करें\n\nछात्रों और अभिभावकों को सलाह दी गई है कि वे NTA की वेबसाइट पर नई जानकारी देखते रहें। किसी भी सवाल के लिए NTA हेल्प डेस्क के नंबर 011-40759000 या 69227700 पर कॉल कर सकते हैं, या shreshta@nta.ac.in पर मेल लिख सकते हैं।"
+    },
+    "en": {
+      "title": "SHRESHTA (NETS) 2027: free Class 9 study for SC and DNT students, apply by 30 November",
+      "summary": "The National Testing Agency (NTA) has invited online applications for the SHRESHTA (NETS) 2027 exam, under which selected students get admission in Class 9 at private residential schools with the entire cost funded by the Central Government. The scheme is for meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students, both boys and girls.",
+      "meaning": "If your child is from the SC or DNT community and is a bright student, this scheme can pay for Class 9 at a reputed private residential school. Applications are online only and must be submitted by 30 November 2026, 5 PM. Read the Information Bulletin on the NTA website before applying, as the eligibility rules and other details are given there.",
+      "keyFacts": [
+        "About 2,400 students to be selected — 260 SC and 240 DNT",
+        "Apply online from 14 November 2026 to 30 November 2026, up to 5 PM",
+        "Correction in application form: 1 December 2026 to 4 December 2026, up to 5 PM",
+        "Exam on 10 January 2027 (Sunday), 2 PM to 5 PM",
+        "Exam in 92 cities, pen-and-paper (OMR) mode, in Hindi and English",
+        "Admit cards downloadable from the NTA website from 5 January 2027"
+      ],
+      "faq": [
+        {
+          "q": "What is the last date to apply for SHRESHTA (NETS) 2027?",
+          "a": "30 November 2026, up to 5 PM. Applications opened online on 14 November 2026 and can be filled only on the NTA website."
+        },
+        {
+          "q": "Who is the SHRESHTA scheme for?",
+          "a": "It is for meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students, both boys and girls. DNT refers to communities not covered under SC, ST and OBC categories."
+        },
+        {
+          "q": "How many students are selected under SHRESHTA?",
+          "a": "About 2,400 students, including 260 SC and 240 DNT students. Selected students get admission in Class 9 at private residential schools, with the entire cost of education funded by the Central Government."
+        },
+        {
+          "q": "When and how will the SHRESHTA 2027 exam be held?",
+          "a": "The exam will be held on 10 January 2027 (Sunday) from 2 PM to 5 PM. It will be a pen-and-paper test on OMR sheets in 92 cities, with the paper in both Hindi and English."
+        },
+        {
+          "q": "Where can I get more information or help about SHRESHTA?",
+          "a": "Full details are in the Information Bulletin on https://exams.nta.nic.in/shreshta/. For help, call the NTA Help Desk at 011-40759000 or 69227700, or write to shreshta@nta.ac.in."
+        }
+      ],
+      "body": "## What is this exam\n\nThe National Testing Agency (NTA), on behalf of the Ministry of Social Justice and Empowerment, has invited online applications for the SHRESHTA (NETS) 2027 examination. SHRESHTA stands for Scheme for Residential Education for Students in High Schools in Targeted Areas. Its aim is to give meritorious Scheduled Caste (SC) and De-notified Tribes (DNT) students a chance to study at reputed private residential schools. Both boys and girls are covered.\n\n## Who benefits\n\nAbout 2,400 students will be selected under the scheme, of whom 260 are SC and 240 DNT students. Selected students get admission in Class 9, and the entire cost of their education is funded by the Central Government. Note that DNT means communities not covered under SC, ST and OBC categories.\n\n## How and when to apply\n\nOnline applications can be submitted from 14 November 2026 to 30 November 2026, up to 5 PM. Applications are accepted only at https://exams.nta.nic.in/shreshta/. The NTA has asked candidates to fill the form carefully and to read the Information Bulletin first, because the scheme's duration, medium, syllabus, eligibility criteria, tentative intake, exam cities and passing requirements are given there.\n\nIf something in the form is filled in wrongly, it can be corrected on the website from 1 December 2026 to 4 December 2026, up to 5 PM.\n\n## How the exam will be held\n\nThe exam will be held on 10 January 2027 (Sunday) from 2 PM to 5 PM. It will be a pen-and-paper test on OMR sheets in 92 cities across India. The questions will be multiple choice (MCQ) and the paper will be in both Hindi and English. The city of examination will be intimated on 20 December 2026, and admit cards can be downloaded from the NTA website from 5 January 2027. The result date will be announced on the website later.\n\n## What to do next\n\nCandidates and their parents have been advised to keep visiting the NTA website for the latest updates. For any query, they can call the NTA Help Desk at 011-40759000 or 69227700, or write to shreshta@nta.ac.in."
+    }
+  }
+}
