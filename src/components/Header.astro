@@ -17,20 +17,15 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
 <header class="masthead">
   <div class="bar">
     <div class="left">
-      <a class="listen" href={`${p}/briefing`} aria-label={L.briefing}>
-        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2Zm16 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z"/></svg>
-        <span>{L.briefing}</span>
-        <span class="play" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4v16l13-8z"/></svg></span>
-      </a>
+      <details class="district">
+        <summary class="pill">{L.chooseDistrict} <span aria-hidden="true">⌄</span></summary>
+        <div class="pop"><LocalStrip lang={lang} variant="pop" /></div>
+      </details>
     </div>
     <a href={home} class="logo">
       <span class="logo-main">कस्बा<svg class="pin" viewBox="0 0 32 44" aria-hidden="true"><path d="M16 1C7.7 1 1 7.7 1 16c0 11.3 15 27 15 27s15-15.7 15-27C31 7.7 24.3 1 16 1Z" fill="currentColor"/><circle cx="16" cy="16" r="6" class="pin-dot"/></svg></span><span class="logo-sub">{lang === 'hi' ? 'KASBA' : 'KASBA'}</span>
     </a>
     <div class="right">
-      <details class="district">
-        <summary class="pill">{L.chooseDistrict} <span aria-hidden="true">⌄</span></summary>
-        <div class="pop"><LocalStrip lang={lang} variant="pop" /></div>
-      </details>
       <a href={other} class="lang" hreflang={lang === 'hi' ? 'en' : 'hi'}>{L.switchLang}</a>
       <details class="menu">
         <summary aria-label={L.sections}><span></span><span></span><span></span></summary>
@@ -56,7 +51,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   </nav>
   {latest.length > 0 && (
     <div class="ticker">
-      <span class="start">{lang === 'hi' ? 'आज की शुरुआत यहाँ से' : 'Start the day here'}</span>
+      <span class="start">{lang === 'hi' ? 'ताज़ा' : 'Latest'}</span>
       <ul>{latest.map((s) => <li><a href={storyPath(lang, s.data.storyId)}>{s.data.title}</a></li>)}</ul>
       <a class="arrow" href={latest[0] ? storyPath(lang, latest[0].data.storyId) : home} aria-label={L.latest}>→</a>
     </div>
@@ -67,11 +62,6 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   @media (min-width: 740px) { .bar { padding: 1.25rem 1.6rem; } }
   .left, .right { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
   .right { justify-content: flex-end; }
-  .listen { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 0.35rem 0 0.9rem; border-radius: 999px; background: var(--dark); color: #fff; font-size: 0.95rem; white-space: nowrap; }
-  .listen > span:not(.play) { display: none; }
-  @media (min-width: 900px) { .listen > span:not(.play) { display: inline; } }
-  .play { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; color: #111; }
-  .listen:hover .play { transform: scale(1.06); }
   .logo { display: flex; flex-direction: column; align-items: center; line-height: 1; }
   .logo-main { font-family: var(--display); font-weight: 600; font-size: 2.1rem; letter-spacing: 0; display: inline-flex; align-items: flex-start; }
   .pin { width: 0.34em; height: 0.47em; margin: -0.05em 0 0 0.06em; color: #c8102e; }
@@ -82,7 +72,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   @media (min-width: 1000px) { .district { display: block; } }
   .district summary { list-style: none; cursor: pointer; font-size: 0.95rem; white-space: nowrap; }
   .district summary::-webkit-details-marker { display: none; }
-  .pop { position: absolute; right: 0; top: 52px; z-index: 20; width: 22rem; background: var(--bg); border-radius: var(--r-tile); box-shadow: 0 12px 40px rgb(0 0 0 / 0.14); padding: 1rem 1.1rem 0.4rem; }
+  .pop { position: absolute; left: 0; top: 52px; z-index: 20; width: 22rem; background: var(--bg); border-radius: var(--r-tile); box-shadow: 0 12px 40px rgb(0 0 0 / 0.14); padding: 1rem 1.1rem 0.4rem; }
   .lang { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; font-family: var(--sans); font-weight: 600; }
   .menu { position: relative; }
   .menu summary { list-style: none; cursor: pointer; width: 44px; height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 6px; padding: 0 8px; }
@@ -104,7 +94,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
 
   .ticker { display: flex; align-items: center; gap: 1rem; background: var(--dark); color: #fff; padding: 0 1rem; min-height: 48px; margin-top: 0.4rem; }
   @media (min-width: 740px) { .ticker { padding: 0 1.6rem; min-height: 54px; } }
-  .start { font-style: italic; white-space: nowrap; flex: 0 0 auto; color: #fff; font-size: 0.95rem; }
+  .start { white-space: nowrap; flex: 0 0 auto; color: #fff; font-family: var(--sans); font-weight: 600; font-size: 0.85rem; background: var(--hl-red); padding: 0.1rem 0.6rem; border-radius: 4px; }
   .ticker ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; mask-image: linear-gradient(to right, #000 85%, transparent); }
   .ticker li { white-space: nowrap; color: #d9d9d9; }
   .ticker li + li::before { content: '·'; padding: 0 0.75rem; color: #8a8a8a; }

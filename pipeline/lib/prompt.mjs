@@ -32,6 +32,7 @@ Some sources are official RECORDS of a dispute or controversy: court judgments a
 For a record, "relevant" is true if the matter is of public interest or affects ordinary people; routine listings, adjournments and administrative notices are false.
 
 Decide "relevant": true only if the notice affects ordinary people's money, jobs, exams, farming, health, weather safety, sports (trials, selections, results of Indian players and teams, sports schemes, scholarships and facilities), welfare schemes, documents or daily life. Mark false for ceremonies, meetings, visits, speeches, award functions, routine market operations, enforcement orders against one company, tenders, appointments and transfers. Also mark false (Kasba's readers do not open these): ministers or officials reviewing preparedness or progress, bilateral or international cooperation, MoUs and summits, conferences and workshops, commemorative stamps, coins and observance days, national rankings or records that ask nothing of readers, and industry or trade statistics. A notice of these kinds is relevant only if it also announces something readers can apply for, claim, attend, or must do or avoid.
+Ask one more question before saying true: would a reader in a small town of UP, Bihar, MP or Delhi search for this, or act on it? Mark false for campaigns, appeals, anniversaries, "edition" milestones, launches of logos, mascots, apps or portals for officials, events in one far-away city or another state that these readers cannot attend, and progress figures ("X crore reached") with nothing new to claim. Recruitment, exam dates, admit cards, answer keys, results, scheme money, eligibility, last dates, prices, subsidies, weather warnings and rule changes that touch a household are what Kasba is for.
 If relevant is false, return only {"relevant": false, "reason": "..."}.
 
 Otherwise return this JSON object and nothing else:
@@ -39,15 +40,15 @@ Otherwise return this JSON object and nothing else:
   "relevant": true,
   "storyType": "record" for a court judgment or order or another official record of a dispute, otherwise "notice",
   "sensitive": true if the story touches crime, accidents or deaths, courts or police, elections, politics or a party or politician, religion or caste, protests or unrest, a disease outbreak or health scare, an allegation against anyone, or anything else an editor should check before it goes live; false only for routine notices such as scheme rules, exam dates, results, deadlines, rates and weather. When unsure, true,
-  "category": one of ${JSON.stringify(categories)},
-  "imageQuery": 2-4 plain English words for a stock photo that sets the scene without showing any real person or the event itself, e.g. "students writing exam", "farmer wheat field", "railway station platform", "bank passbook",
+  "category": one of ${JSON.stringify(categories)}. Pick by what the reader would look for: "sports" only for sport and physical games; "weather" only for weather, disasters and air quality; music, culture, fairs, railways, documents and anything that fits nowhere else is "nation",
+  "imageQuery": 2-4 plain English words for a stock photo that sets the scene without showing any real person or the event itself. It must look like India and like the subject: name a thing or place a reader would recognise ("indian students exam hall", "wheat field india", "indian railway station", "indian rupee notes", "india cricket ground"), never an abstract idea ("opportunity", "growth"), and never something that would return a foreign scene,
   "state": "up" (Uttar Pradesh), "bihar", "mp" (Madhya Pradesh) or "delhi" if the notice is specifically about that state, else null,
   "districts": district slugs from this list only if the notice names those districts of that state, else []: ${districtSlugs.join(', ')},
   "deadline": {"date": "YYYY-MM-DD", "label_hi": "...", "label_en": "..."} only if the notice states a last date readers must act by, else null. Copy the date exactly as written. If the notice only says "today is the last date" or "N days are left", work it out from the notice's own date,
   "sourceTitle": the notice's own title,
   "sourceDate": "YYYY-MM-DD" date of the notice if stated, else null,
   "hi": {
-    "title": headline, max 100 characters,
+    "title": headline, max 80 characters. Search results show only about the first 60, so the name people search for and the main fact come first,
     "summary": 2 sentences, max 280 characters,
     "meaning": 2 to 4 sentences,
     "keyFacts": 3 to 6 short facts, each with its number or date where the notice gives one,

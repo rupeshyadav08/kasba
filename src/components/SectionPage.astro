@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import StoryCard from './StoryCard.astro';
-import { categories, secColor, sectionPath, storyPath, t, type Lang, type Section } from '../lib/i18n';
+import { categories, sectionAbout, secColor, sectionPath, storyPath, t, type Lang, type Section } from '../lib/i18n';
 interface Props { lang: Lang; category: Section }
 const { lang, category } = Astro.props;
 const stories = (await getCollection('stories', ({ data }) => data.lang === lang && data.category === category))
@@ -28,8 +28,8 @@ const jsonLd = [
   },
 ];
 ---
-<Base lang={lang} title={`${name} | Kasba`} section={category}
-  description={lang === 'hi' ? `${name}: आधिकारिक सूचनाएँ, आसान भाषा में` : `${name}: official updates in simple language`} altPath={alt} jsonLd={jsonLd}>
+<Base lang={lang} title={lang === 'hi' ? `${name} की ताज़ा ख़बरें | कस्बा (Kasba)` : `${name}: latest news | Kasba`} section={category}
+  description={sectionAbout[category][lang]} altPath={alt} jsonLd={jsonLd}>
   <main class="page section" style={secColor(category)}>
     <h1 class="serif">{name}</h1>
     {!lead && <p class="muted">{t[lang].soon}</p>}
