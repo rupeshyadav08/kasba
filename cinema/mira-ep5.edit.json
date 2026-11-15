@@ -1,0 +1,177 @@
+{
+ "clips_dir": "/mnt/project-files/ai-channel/mira/ep5",
+ "narr_dir": "/mnt/project-files/ai-channel/mira/narrator",
+ "music_dir": "/home/user/kasba/cinema/out/mira-ep1",
+ "zoom": 1.04,
+ "music_db": -18,
+ "shots": [
+  {
+   "file": "ep5-A1.mp4",
+   "in": 0,
+   "out": 10
+  },
+  {
+   "file": "ep5-A2.mp4",
+   "in": 0,
+   "out": 8.0
+  },
+  {
+   "file": "ep5-B1.mp4",
+   "in": 0,
+   "out": 10,
+   "join": "dissolve",
+   "join_len": 1.2
+  },
+  {
+   "file": "ep5-B2.mp4",
+   "in": 0,
+   "out": 8.0
+  },
+  {
+   "file": "ep5-C1.mp4",
+   "in": 0,
+   "out": 10,
+   "join": "dissolve",
+   "join_len": 0.8
+  },
+  {
+   "file": "ep5-C2.mp4",
+   "in": 0,
+   "out": 8.0
+  },
+  {
+   "file": "ep5-C3.mp4",
+   "in": 0,
+   "out": 7.93
+  },
+  {
+   "file": "ep5-D1.mp4",
+   "in": 0,
+   "out": 7.93,
+   "join": "dissolve",
+   "join_len": 0.8
+  },
+  {
+   "file": "ep5-D2.mp4",
+   "in": 0,
+   "out": 7.93
+  },
+  {
+   "file": "ep5-D3.mp4",
+   "in": 0,
+   "out": 10
+  },
+  {
+   "file": "ep5-E1.mp4",
+   "in": 0,
+   "out": 7.93
+  },
+  {
+   "file": "ep5-E2.mp4",
+   "in": 0,
+   "out": 5.0
+  },
+  {
+   "file": "ep5-E3.mp4",
+   "in": 0,
+   "out": 8.0
+  },
+  {
+   "file": "ep5-F1.mp4",
+   "in": 0,
+   "out": 10,
+   "join": "dissolve",
+   "join_len": 1.2
+  },
+  {
+   "file": "ep5-F2.mp4",
+   "in": 0,
+   "out": 7.93
+  },
+  {
+   "file": "endcard-ep5.mp4",
+   "in": 0,
+   "out": 10,
+   "join": "dissolve",
+   "join_len": 1.0
+  }
+ ],
+ "narration": [
+  {
+   "file": "ep5-narr-n01.wav",
+   "shot": 1,
+   "at": 0.8
+  },
+  {
+   "file": "ep5-narr-n02.wav",
+   "shot": 4,
+   "at": 1.5
+  },
+  {
+   "file": "ep5-narr-n03.wav",
+   "shot": 6,
+   "at": 0.8
+  },
+  {
+   "file": "ep5-narr-n04.wav",
+   "shot": 9,
+   "at": 5.0
+  },
+  {
+   "file": "ep5-narr-n05.wav",
+   "shot": 14,
+   "at": 0.3
+  }
+ ],
+ "music": [
+  {
+   "file": "m1-night.wav.mp3",
+   "shot": 0,
+   "at": 0,
+   "len": 19,
+   "fade_in": 2,
+   "fade_out": 3
+  },
+  {
+   "file": "m2-morning.wav.mp3",
+   "shot": 2,
+   "at": -1,
+   "len": 18,
+   "fade_in": 2,
+   "fade_out": 3
+  },
+  {
+   "file": "m3-climb.wav.mp3",
+   "shot": 4,
+   "at": -1,
+   "len": 26,
+   "fade_in": 2,
+   "fade_out": 3
+  },
+  {
+   "file": "m4-wonder.wav.mp3",
+   "shot": 7,
+   "at": -1,
+   "len": 26,
+   "fade_in": 2,
+   "fade_out": 3
+  },
+  {
+   "file": "m5-ending.wav.mp3",
+   "shot": 10,
+   "at": 0,
+   "len": 21,
+   "fade_in": 2,
+   "fade_out": 3
+  },
+  {
+   "file": "m5-ending.wav.mp3",
+   "shot": 13,
+   "at": -1,
+   "len": 22,
+   "fade_in": 2,
+   "fade_out": 4,
+   "in": 10
+  }
+ ]
+}
