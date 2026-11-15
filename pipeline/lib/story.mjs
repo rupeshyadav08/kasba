@@ -35,8 +35,14 @@ export function check(d) {
   return p;
 }
 
-export const slugify = (s) =>
-  s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').slice(0, 60).replace(/^-+|-+$/g, '') || 'story';
+// The address of a story: at most 60 characters, ending on a whole word ("...ahead-of-schedule"
+// is cut to "...ahead-of", never to "...ahead-of-sch").
+export const slugify = (s) => {
+  const full = s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  if (full.length <= 60) return full || 'story';
+  const cut = full.slice(0, 61);
+  return cut.slice(0, cut.lastIndexOf('-') > 30 ? cut.lastIndexOf('-') : 60).replace(/-+$/g, '');
+};
 
 export function uniqueId(base) {
   let id = base;
