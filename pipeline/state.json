@@ -3543,14 +3543,16 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336636": "2026-11-15",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336616": "2026-11-15",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336653": "2026-11-15",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336638": "2026-11-15"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336638": "2026-11-15",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336700": "2026-11-15",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336699": "2026-11-15",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336675": "2026-11-15",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336676": "2026-11-15"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-15T13:33:13.169Z",
-    "pending": [
-      "pune-groundwork-begins-for-nhec-cooperative-plant-bharat-tax"
-    ]
+    "last": "2026-11-15T19:29:29.166Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
