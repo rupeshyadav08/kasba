@@ -131,5 +131,45 @@
     "linkPattern": "^https://dsssb\\.delhi\\.gov\\.in/sites/default/files/DSSSB/circulars-orders/.+\\.pdf$",
     "india": true,
     "auto": true
+  },
+  {
+    "id": "up-police",
+    "name": "UP Police Recruitment Board (UPPRPB)",
+    "type": "page",
+    "lang": "hi",
+    "url": "https://uppbpb.gov.in/",
+    "linkPattern": "^https://uppbpb\\.gov\\.in/FilesUploaded/Notice/.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "bihar-police",
+    "name": "CSBC Bihar (Bihar Police recruitment)",
+    "type": "page",
+    "lang": "hi",
+    "url": "https://csbc.bihar.gov.in/",
+    "linkPattern": "^https://csbc\\.bihar\\.gov\\.in/Advt/.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "mp-board",
+    "name": "MP Board (MPBSE)",
+    "type": "page",
+    "lang": "hi",
+    "url": "https://mpbse.nic.in/",
+    "linkPattern": "^https://mpbse\\.nic\\.in/Bse_.+\\.pdf$",
+    "india": true,
+    "auto": true
+  },
+  {
+    "id": "imd-press",
+    "name": "IMD (India Meteorological Department)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://mausam.imd.gov.in/",
+    "linkPattern": "^https://mausam\\.imd\\.gov\\.in/Forecast/marquee_data/Press[^/]*release[^/]*\\.pdf$",
+    "india": true,
+    "auto": true
   }
 ]
