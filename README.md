@@ -34,6 +34,8 @@ Each run:
 
 The job runs on GitHub's servers. PIB, CBSE and the Supreme Court site refuse any request whose User-Agent names a bot, so the pipeline sends Node's default User-Agent with a `From: admin@kasba.co.in` header. Scanned PDFs are read with OCR (tesseract, Hindi + English). RBI's PDF host shows any program a CAPTCHA, so RBI notices are read from the page itself. Sources marked `"india": true` (none today) would be read by `.github/workflows/pipeline-india.yml` on a self-hosted runner in India labelled `kasba-india` (Rupesh's Mac), with its own `pipeline/state-india.json`. `probe_urls` prints what the pipeline sees on given pages (`pipeline/probe.mjs`).
 
+State and weather sources read by the India runner (`"india": true`): BPSC, IBPS, DSSSB, the UP Police recruitment board, CSBC (Bihar Police), MP Board and IMD press releases.
+
 Sources: PIB (Hindi), RBI press releases and notifications, SEBI, CBSE, NTA, UP Board, the UP Information Department and Supreme Court press releases (`pipeline/sources.json`; RSS feeds or listing pages with a link pattern; PDFs are read with `pdftotext`). Sites whose robots.txt asks bots to stay away (UPSC, UPPSC, UPSSSC, NDMA Sachet) are not read. The editor can also send any official (gov.in, nic.in and similar) link to the bot, and the next run drafts it.
 
 Secrets it needs (GitHub Actions secrets): `DEEPSEEK_API_KEY` (or `ANTHROPIC_API_KEY` if `provider` is switched to `anthropic`), `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. Only taps from `TELEGRAM_CHAT_ID` count.
