@@ -5,6 +5,7 @@ import StoryCard from './StoryCard.astro';
 import SectionBlock from './SectionBlock.astro';
 import LocalHeadlines from './LocalHeadlines.astro';
 import { upcomingDeadlines } from '../lib/deadlines';
+import { examPath } from '../lib/exams';
 import { categories, dateFmt, secColor, sectionOrder, storyPath, t, type Lang } from '../lib/i18n';
 import { org } from '../lib/site';
 interface Props { lang: Lang }
@@ -21,6 +22,9 @@ const inSection = (sec: string) => {
   const fresh = all.filter((s) => !top.has(s.data.storyId));
   return fresh.length >= 3 ? fresh : all;
 };
+// Always-updated guide pages, linked from the home page so readers and search engines find them.
+const guides = (await getCollection('exams', ({ data }) => data.lang === lang)).sort((a, b) => a.data.order - b.data.order);
+const chip = (name: string) => name.split(/[:(]/)[0].trim();
 const timeFmt = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-IN', { day: 'numeric', month: 'short', timeZone: 'Asia/Kolkata' });
 const L = t[lang];
 const deadlines = (await upcomingDeadlines(lang)).slice(0, 4);
@@ -94,6 +98,14 @@ const jsonLd = [
       <span class="b-go" aria-hidden="true">→</span>
     </a>
 
+    <nav class="guides" aria-labelledby="guides-h">
+      <header>
+        <h2 id="guides-h" class="serif">{lang === 'hi' ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides'}</h2>
+        <a class="pill" href={examPath(lang)}>{lang === 'hi' ? 'सभी गाइड' : 'All guides'} →</a>
+      </header>
+      <ul>{guides.map((g) => <li><a href={examPath(lang, g.data.examId)}>{chip(g.data.name)}</a></li>)}</ul>
+    </nav>
+
     <LocalHeadlines lang={lang} limit={4} />
 
     {sectionOrder.filter((sec) => stories.some((s) => s.data.category === sec)).map((sec) => (
@@ -141,6 +153,18 @@ const jsonLd = [
   .when { margin-top: auto; font-family: var(--sans); font-size: 0.82rem; color: var(--muted); }
   .tile:hover .what { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
+  .guides { display: grid; gap: 0.8rem; }
+  .guides header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 0 0.25rem; }
+  .guides h2 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; }
+  .guides .pill { font-size: 0.95rem; white-space: nowrap; }
+  .guides ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .guides li a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem; border-radius: 999px; background: var(--card); font-family: var(--sans); font-size: 0.98rem; }
+  .guides li a:hover { background: var(--text); color: var(--bg); }
+  /* On a phone the chips scroll sideways in two rows instead of filling the screen. */
+  @media (max-width: 739px) {
+    .guides ul { display: grid; grid-auto-flow: column; grid-template-rows: repeat(3, auto); justify-content: start; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--gap)); padding: 0 var(--gap); }
+    .guides li a { white-space: nowrap; }
+  }
   .briefing { display: flex; align-items: center; gap: 1rem; background: var(--card); border-radius: var(--r-card); padding: 1rem 1.2rem; }
   .b-icon { flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: var(--bg); }
   .b-body { display: flex; flex-direction: column; flex: 1; min-width: 0; }
