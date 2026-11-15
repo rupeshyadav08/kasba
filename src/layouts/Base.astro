@@ -88,6 +88,18 @@ const enUrl = lang === 'en' ? canonical : alt;
   <slot />
   <Footer lang={lang} />
   </div>
+  <script is:inline>
+    // Fresh stories show "3 घंटे पहले" instead of a date; the page itself is built only every couple of hours.
+    (() => {
+      const hi = document.documentElement.lang === 'hi', now = Date.now();
+      for (const el of document.querySelectorAll('time[data-ago]')) {
+        const m = Math.round((now - Date.parse(el.dateTime)) / 60000);
+        if (!(m >= 0 && m < 24 * 60)) continue;
+        const h = Math.round(m / 60);
+        el.textContent = m < 60 ? `${Math.max(m, 1)} ${hi ? 'मिनट पहले' : 'min ago'}` : `${h} ${hi ? 'घंटे पहले' : h === 1 ? 'hour ago' : 'hours ago'}`;
+      }
+    })();
+  </script>
   <script is:inline>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>

@@ -56,7 +56,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
   </nav>
   {latest.length > 0 && (
     <div class="ticker">
-      <span class="start">{lang === 'hi' ? 'आज की शुरुआत यहाँ से' : 'Start the day here'}</span>
+      <span class="start">{lang === 'hi' ? 'ताज़ा' : 'Latest'}</span>
       <ul>{latest.map((s) => <li><a href={storyPath(lang, s.data.storyId)}>{s.data.title}</a></li>)}</ul>
       <a class="arrow" href={latest[0] ? storyPath(lang, latest[0].data.storyId) : home} aria-label={L.latest}>→</a>
     </div>
@@ -104,7 +104,7 @@ const latest = (await getCollection('stories', ({ data }) => data.lang === lang)
 
   .ticker { display: flex; align-items: center; gap: 1rem; background: var(--dark); color: #fff; padding: 0 1rem; min-height: 48px; margin-top: 0.4rem; }
   @media (min-width: 740px) { .ticker { padding: 0 1.6rem; min-height: 54px; } }
-  .start { font-style: italic; white-space: nowrap; flex: 0 0 auto; color: #fff; font-size: 0.95rem; }
+  .start { white-space: nowrap; flex: 0 0 auto; color: #fff; font-family: var(--sans); font-weight: 600; font-size: 0.85rem; background: var(--hl-red); padding: 0.1rem 0.6rem; border-radius: 4px; }
   .ticker ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; mask-image: linear-gradient(to right, #000 85%, transparent); }
   .ticker li { white-space: nowrap; color: #d9d9d9; }
   .ticker li + li::before { content: '·'; padding: 0 0.75rem; color: #8a8a8a; }

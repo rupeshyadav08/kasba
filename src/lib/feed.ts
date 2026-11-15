@@ -17,6 +17,7 @@ export async function feed(lang: Lang, context: APIContext) {
     ...meta[lang],
     site: context.site!,
     trailingSlash: false,
+    xmlns: { media: 'http://search.yahoo.com/mrss/' },
     customData: `<language>${lang}</language>`,
     items: stories.map((s) => ({
       title: s.data.title,
@@ -24,6 +25,8 @@ export async function feed(lang: Lang, context: APIContext) {
       pubDate: s.data.published,
       link: storyPath(lang, s.data.storyId),
       categories: [s.data.category],
+      // The story picture, for feed readers and news apps that show one.
+      ...(s.data.image && { customData: `<media:content url="${new URL(s.data.image.src, context.site)}" medium="image" width="1200" height="675" />` }),
     })),
   });
 }

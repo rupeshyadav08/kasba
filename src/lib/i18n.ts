@@ -11,6 +11,18 @@ export const categories = {
   nation: { hi: 'देश', en: 'Nation' },
 } as const;
 
+// One line on what each section covers, used as the section page's description in search results.
+export const sectionAbout = {
+  schemes: { hi: 'सरकारी योजनाओं की ताज़ा ख़बरें: कौन पात्र है, कितना पैसा मिलेगा, आवेदन कैसे और कब तक करें। आधिकारिक सूचना से, आसान हिंदी में।', en: 'Latest on government schemes: who is eligible, how much you get, how and by when to apply. From official notices, in plain language.' },
+  'jobs-exams': { hi: 'सरकारी नौकरी और परीक्षा की ताज़ा ख़बरें: भर्ती, फ़ॉर्म की last date, admit card, answer key और रिज़ल्ट। SSC, NTA, UPPSC, BPSC, UP Board की आधिकारिक सूचना से।', en: 'Latest government jobs and exams: vacancies, last dates, admit cards, answer keys and results, from official SSC, NTA, UPPSC, BPSC and UP Board notices.' },
+  farming: { hi: 'किसानों के काम की ख़बरें: MSP, खाद और बीज पर सब्सिडी, PM Kisan, फसल बीमा और मौसम की सलाह। आधिकारिक सूचना से, आसान हिंदी में।', en: 'News farmers can use: MSP, fertiliser and seed subsidy, PM Kisan, crop insurance and weather advice, from official notices.' },
+  money: { hi: 'आपके पैसे की ख़बरें: RBI और SEBI के नियम, बैंक, लोन, बचत, महंगाई और ठगी से बचाव। आधिकारिक सूचना से, आसान हिंदी में।', en: 'News about your money: RBI and SEBI rules, banks, loans, savings, inflation and fraud alerts, from official notices.' },
+  weather: { hi: 'मौसम और आपदा की चेतावनी: बारिश, लू, ठंड, चक्रवात और प्रदूषण पर आधिकारिक अलर्ट और बचाव के उपाय।', en: 'Weather and disaster alerts: rain, heat, cold, cyclones and pollution, with official advice on staying safe.' },
+  health: { hi: 'सेहत की ख़बरें: सरकारी अस्पताल, मुफ़्त इलाज की योजनाएँ, दवाओं के दाम और टीकाकरण। आधिकारिक सूचना से, आसान हिंदी में।', en: 'Health news: government hospitals, free treatment schemes, medicine prices and vaccination, from official notices.' },
+  sports: { hi: 'खेल की ख़बरें: ट्रायल, चयन, खेलो इंडिया, छात्रवृत्ति और भारतीय खिलाड़ियों के नतीजे। आधिकारिक सूचना से।', en: 'Sports news: trials, selections, Khelo India, scholarships and results of Indian players, from official notices.' },
+  nation: { hi: 'देश की वे ख़बरें जो आपकी रोज़ की ज़िंदगी पर असर डालती हैं: रेल, दस्तावेज़, नए नियम और सरकारी फ़ैसले, आसान हिंदी में।', en: 'National news that touches daily life: railways, documents, new rules and government decisions, in plain language.' },
+} as const;
+
 export const t = {
   hi: {
     tagline: 'छोटे शहरों की बड़ी ख़बरें',
@@ -20,6 +32,8 @@ export const t = {
     source: 'स्रोत',
     viewSource: 'मूल सूचना देखें',
     latest: 'ताज़ा',
+    latestNews: 'ताज़ा ख़बरें',
+    homeDescription: 'सरकारी योजनाएँ, भर्ती और परीक्षा की तारीख़ें, रिज़ल्ट, किसान और पैसे की ख़बरें: सीधे आधिकारिक स्रोत से, आसान हिंदी में, "आपके लिए इसका मतलब" के साथ। उत्तर प्रदेश, बिहार, मध्य प्रदेश और दिल्ली पर ख़ास नज़र।',
     minRead: 'मिनट',
     published: 'प्रकाशित',
     updated: 'अपडेट',
@@ -43,6 +57,8 @@ export const t = {
     aboutKasba: 'कस्बा',
     policies: 'नीतियाँ',
     share: 'WhatsApp पर भेजें',
+    shareAsk: 'काम की ख़बर लगी? WhatsApp पर अपनों को भेजें',
+    alsoRead: 'यह भी पढ़ें',
     addCalendar: 'कैलेंडर में जोड़ें',
     deadlines: 'आख़िरी तारीख़ें',
     deadlinesNote: 'फ़ॉर्म, फ़ीस, परीक्षा और योजनाओं की आने वाली अंतिम तिथियाँ, आधिकारिक सूचनाओं से।',
@@ -75,6 +91,8 @@ export const t = {
     source: 'Source',
     viewSource: 'Read the original notice',
     latest: 'Latest',
+    latestNews: 'Latest news',
+    homeDescription: 'Government schemes, job and exam dates, results, farming and money news from official sources, in plain language, with what each one means for you. Focused on Uttar Pradesh, Bihar, Madhya Pradesh and Delhi.',
     minRead: 'min read',
     published: 'Published',
     updated: 'Updated',
@@ -98,6 +116,8 @@ export const t = {
     aboutKasba: 'Kasba',
     policies: 'Policies',
     share: 'Share on WhatsApp',
+    shareAsk: 'Found this useful? Send it on WhatsApp',
+    alsoRead: 'Also read',
     addCalendar: 'Add to calendar',
     deadlines: 'Last dates',
     deadlinesNote: 'Upcoming last dates for forms, fees, exams and schemes, from official notices.',
