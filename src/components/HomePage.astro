@@ -92,12 +92,6 @@ const jsonLd = [
       </section>
     )}
 
-    <a class="briefing" href={`${p}/briefing`}>
-      <span class="b-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 15v-3a8 8 0 0 1 16 0v3M4 15a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2Zm16 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z"/></svg></span>
-      <span class="b-body"><span class="serif b-title">{L.briefing}</span><span class="b-text">{lang === 'hi' ? 'आज की ज़रूरी सरकारी सूचनाएँ, आसान भाषा में, कुछ मिनट में।' : "Today's essential official updates, in plain language, in a few minutes."}</span></span>
-      <span class="b-go" aria-hidden="true">→</span>
-    </a>
-
     <nav class="guides" aria-labelledby="guides-h">
       <header>
         <h2 id="guides-h" class="serif">{lang === 'hi' ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides'}</h2>
@@ -165,11 +159,4 @@ const jsonLd = [
     .guides ul { display: grid; grid-auto-flow: column; grid-template-rows: repeat(3, auto); justify-content: start; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--gap)); padding: 0 var(--gap); }
     .guides li a { white-space: nowrap; }
   }
-  .briefing { display: flex; align-items: center; gap: 1rem; background: var(--card); border-radius: var(--r-card); padding: 1rem 1.2rem; }
-  .b-icon { flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: var(--bg); }
-  .b-body { display: flex; flex-direction: column; flex: 1; min-width: 0; }
-  .b-title { font-size: 1.4rem; line-height: 1.2; }
-  .b-text { color: var(--text-soft); font-size: 0.97rem; line-height: 1.45; }
-  .b-go { font-size: 1.4rem; }
-  .briefing:hover .b-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 </style>
