@@ -1,0 +1,99 @@
+{
+  "id": "ee80c1925d",
+  "createdAt": "2026-11-16T07:33:41.897Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "UP Information Department",
+    "title": "मुख्यमंत्री ने जनजातीय गौरव दिवस पर स्वामी विवेकानन्द युवा सशक्तिकरण योजना के द्वितीय चरण के अन्तर्गत 25 लाख टैबलेट वितरण कार्यक्रम का शुभारम्भ किया\n 15/Nov/2026",
+    "link": "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_15a3c1ca-33a8-403e-8c89-690f67c3b778.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "schemes",
+    "imageQuery": "indian students tablet classroom",
+    "state": "up",
+    "districts": [
+      "lucknow",
+      "hardoi",
+      "sitapur",
+      "unnao"
+    ],
+    "deadline": null,
+    "sourceTitle": "मुख्यमंत्री ने जनजातीय गौरव दिवस पर स्वामी विवेकानन्द युवा सशक्तिकरण योजना के द्वितीय चरण के अन्तर्गत 25 लाख टैबलेट वितरण कार्यक्रम का शुभारम्भ किया",
+    "sourceDate": "2026-11-15",
+    "hi": {
+      "title": "Swami Vivekananda Yojana: 25 लाख टैबलेट बांटने का दूसरा चरण शुरू",
+      "summary": "उत्तर प्रदेश सरकार ने 15 नवंबर 2026 को स्वामी विवेकानन्द युवा सशक्तिकरण योजना के दूसरे चरण की शुरुआत की, जिसमें 25 लाख युवाओं को टैबलेट दिए जाने हैं। इसकी जानकारी उन छात्र-छात्राओं और प्रशिक्षणार्थियों के लिए है जो इस योजना से जुड़े शैक्षणिक संस्थानों में पढ़ रहे हैं।",
+      "meaning": "यह योजना उन युवाओं के लिए है जो सरकारी शैक्षणिक संस्थानों या प्रशिक्षण केंद्रों से जुड़े हैं और इस योजना के दायरे में आते हैं। शुरुआत में लखनऊ, हरदोई, सीतापुर और उन्नाव के 300 संस्थानों के 50 हजार से अधिक छात्र-छात्राओं और प्रशिक्षणार्थियों को टैबलेट बांटे गए। नोटिस में यह नहीं बताया गया है कि आम तौर पर कोई छात्र टैबलेट के लिए खुद कैसे आवेदन कर सकता है, इसलिए अपने संस्थान से पूछना सबसे सही रास्ता है।",
+      "keyFacts": [
+        "दूसरे चरण में 25 लाख युवाओं को टैबलेट देने का लक्ष्य",
+        "पहले चरण में 60 लाख से अधिक छात्र-छात्राओं को टैबलेट और स्मार्टफोन मिल चुके हैं",
+        "शुरुआत में लखनऊ, हरदोई, सीतापुर और उन्नाव के 300 संस्थानों के 50 हजार से अधिक लोगों को टैबलेट",
+        "टैबलेट में इन्फोसिस के साथ समझौते से 48 हजार से अधिक पाठ्यक्रमों की मुफ्त पढ़ाई सामग्री",
+        "योजना की शुरुआत 25 दिसंबर को अटल बिहारी वाजपेयी की जयंती पर हुई थी"
+      ],
+      "faq": [
+        {
+          "q": "Swami Vivekananda Yojana में कितने टैबलेट बांटे जाएंगे?",
+          "a": "दूसरे चरण में 25 लाख युवाओं को टैबलेट देने का कार्यक्रम शुरू हुआ है। पहले चरण में 60 लाख से अधिक छात्र-छात्राओं को टैबलेट और स्मार्टफोन दिए जा चुके हैं।"
+        },
+        {
+          "q": "टैबलेट में क्या-क्या मिलेगा?",
+          "a": "टैबलेट में 48 हजार से अधिक पाठ्यक्रमों की मुफ्त लर्निंग सामग्री है, जिसमें योग से लेकर आर्टिफिशियल इंटेलिजेंस और डीप टेक जैसे विषय शामिल हैं। साथ ही 'युवा साथी' ऐप से केंद्र और प्रदेश की युवा योजनाओं की जानकारी मिलती है।"
+        },
+        {
+          "q": "क्या मैं खुद टैबलेट के लिए आवेदन कर सकता हूं?",
+          "a": "नोटिस में आवेदन की कोई प्रक्रिया या तारीख नहीं बताई गई है। टैबलेट शैक्षणिक संस्थानों के जरिए बांटे जा रहे हैं, इसलिए अपने स्कूल, कॉलेज या प्रशिक्षण केंद्र से जानकारी लें।"
+        },
+        {
+          "q": "पहले चरण के टैबलेट का क्या असर हुआ?",
+          "a": "आईआईएम लखनऊ के जरिए कराए गए सर्वेक्षण में पहले चरण के टैबलेट और स्मार्टफोन के नतीजे बहुत अच्छे बताए गए हैं। सर्वेक्षण में देखा गया कि इन उपकरणों से पढ़ाई और डिजिटल उद्यमिता में कितना फायदा हुआ।"
+        },
+        {
+          "q": "यह योजना कब शुरू हुई थी?",
+          "a": "योजना की शुरुआत 25 दिसंबर को पूर्व प्रधानमंत्री अटल बिहारी वाजपेयी की जयंती के मौके पर की गई थी। उस समय कोरोना महामारी के कारण पढ़ाई और परीक्षाएं प्रभावित हो रही थीं।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nमुख्यमंत्री योगी आदित्यनाथ ने 15 नवंबर 2026 को जनजातीय गौरव दिवस के मौके पर स्वामी विवेकानन्द युवा सशक्तिकरण योजना के दूसरे चरण की शुरुआत की। इस चरण में 25 लाख युवाओं को टैबलेट देने का कार्यक्रम शुरू हुआ है।\n\nकार्यक्रम के पहले दिन लखनऊ, हरदोई, सीतापुर और उन्नाव के 300 शैक्षणिक संस्थानों के 50 हजार से अधिक छात्र-छात्राओं और प्रशिक्षणार्थियों को टैबलेट बांटे गए।\n\n## योजना क्यों शुरू हुई थी\n\nयोजना की शुरुआत 25 दिसंबर को पूर्व प्रधानमंत्री अटल बिहारी वाजपेयी की जयंती के मौके पर की गई थी। उस समय कोरोना महामारी से पूरी दुनिया प्रभावित थी, विद्यार्थियों की पढ़ाई और परीक्षाएं बाधित हो रही थीं, और हर विद्यार्थी के पास स्मार्टफोन या टैबलेट नहीं था।\n\nइसे देखते हुए सरकार ने दो करोड़ युवाओं को टैबलेट और स्मार्टफोन देने का संकल्प लिया। पहले चरण में 60 लाख से अधिक छात्र-छात्राओं को टैबलेट और स्मार्टफोन मिल चुके हैं।\n\n## टैबलेट में क्या मिलता है\n\nसरकार ने इन्फोसिस के साथ समझौते के जरिए टैबलेट में 48 हजार से अधिक पाठ्यक्रमों की मुफ्त लर्निंग सामग्री उपलब्ध कराई है। इसमें योग से लेकर आर्टिफिशियल इंटेलिजेंस और डीप टेक जैसे आधुनिक विषयों की सामग्री है, और गणित के कैलकुलस व इंटीग्रेशन जैसे विषय भी समझे जा सकते हैं।\n\nटैबलेट में 'युवा साथी' ऐप के जरिए केंद्र और प्रदेश सरकार की युवाओं से जुड़ी योजनाओं की जानकारी मिलती है। इसमें छात्रवृत्ति, मुख्यमंत्री कन्या सुमंगला योजना, पीएम इंटर्नशिप, सीएम इंटर्नशिप, मुख्यमंत्री युवा उद्यमी विकास अभियान और पीएम मुद्रा योजना जैसी योजनाओं का विवरण है। विद्यार्थी डिजिटल लाइब्रेरी से भी जुड़ सकते हैं।\n\n## पहले चरण का क्या नतीजा निकला\n\nपहले चरण में बांटे गए टैबलेट और स्मार्टफोन का विद्यार्थियों पर क्या असर पड़ा, यह जानने के लिए आईआईएम लखनऊ के जरिए सर्वेक्षण कराया गया। सरकार के अनुसार सर्वेक्षण के नतीजे बहुत अच्छे आए हैं।\n\n## आम छात्र को क्या करना चाहिए\n\nनोटिस में यह नहीं बताया गया है कि कोई छात्र अपने आप टैबलेट के लिए कैसे आवेदन कर सकता है। टैबलेट शैक्षणिक संस्थानों के जरिए बांटे जा रहे हैं, इसलिए जो छात्र और प्रशिक्षणार्थी इस योजना के दायरे में आते हैं, वे अपने स्कूल, कॉलेज या प्रशिक्षण केंद्र से पूरी जानकारी ले सकते हैं।"
+    },
+    "en": {
+      "title": "Swami Vivekananda Yojana: UP begins second phase, 25 lakh tablets to be given",
+      "summary": "The Uttar Pradesh government on 15 November 2026 launched the second phase of the Swami Vivekananda Yuva Sashaktikaran Yojana, under which 25 lakh tablets are to be given to young people. It concerns students and trainees enrolled in educational institutions covered by the scheme.",
+      "meaning": "The scheme is meant for young people studying in or attached to educational institutions and training centres covered under it. At the launch, more than 50,000 students and trainees from 300 institutions in Lucknow, Hardoi, Sitapur and Unnao received tablets. The notice does not say how an individual student can apply on their own, so asking your institution is the right step.",
+      "keyFacts": [
+        "Second phase aims to give tablets to 25 lakh young people",
+        "Over 60 lakh students already received tablets and smartphones in the first phase",
+        "At launch, over 50,000 people from 300 institutions in Lucknow, Hardoi, Sitapur and Unnao got tablets",
+        "Tablets carry free learning material for over 48,000 courses under an agreement with Infosys",
+        "The scheme was launched on 25 December, on Atal Bihari Vajpayee's birth anniversary"
+      ],
+      "faq": [
+        {
+          "q": "How many tablets will be given under Swami Vivekananda Yojana?",
+          "a": "The second phase has begun with the aim of giving tablets to 25 lakh young people. In the first phase, more than 60 lakh students had already received tablets and smartphones."
+        },
+        {
+          "q": "What does the tablet contain?",
+          "a": "The tablet has free learning material for more than 48,000 courses, covering subjects from yoga to artificial intelligence and deep tech. A 'Yuva Saathi' app gives information on central and state schemes for young people."
+        },
+        {
+          "q": "Can I apply for a tablet myself?",
+          "a": "The notice does not give any application process or date. Tablets are being distributed through educational institutions, so check with your school, college or training centre."
+        },
+        {
+          "q": "What did the survey of the first phase find?",
+          "a": "A survey conducted through IIM Lucknow found the results of the first phase's tablets and smartphones to be very good, according to the notice. It looked at how much students benefited and how the devices helped digital entrepreneurship."
+        },
+        {
+          "q": "When was the scheme started?",
+          "a": "The scheme was launched on 25 December, on former Prime Minister Atal Bihari Vajpayee's birth anniversary. At that time the Corona pandemic was disrupting studies and exams."
+        }
+      ],
+      "body": "## What happened\n\nChief Minister Yogi Adityanath on 15 November 2026 launched the second phase of the Swami Vivekananda Yuva Sashaktikaran Yojana on the occasion of Janjatiya Gaurav Diwas. This phase begins a drive to give tablets to 25 lakh young people.\n\nOn the first day, more than 50,000 students and trainees from 300 educational institutions in Lucknow, Hardoi, Sitapur and Unnao were given tablets.\n\n## Why the scheme began\n\nThe scheme was launched on 25 December, on former Prime Minister Atal Bihari Vajpayee's birth anniversary. At that time the Corona pandemic was affecting the whole world, students' studies and exams were being disrupted, and not every student had a smartphone or tablet.\n\nWith this in view, the government resolved to give tablets and smartphones to two crore young people. In the first phase, more than 60 lakh students have already received tablets and smartphones.\n\n## What the tablet offers\n\nUnder an agreement with Infosys, the government has made free learning material for more than 48,000 courses available on the tablet. This includes material on modern subjects from yoga to artificial intelligence and deep tech, and topics like calculus and integration in mathematics can also be understood through it.\n\nA 'Yuva Saathi' app on the tablet gives information on central and state government schemes for young people. It carries details of schemes including scholarships, the Mukhyamantri Kanya Sumangala Yojana, PM Internship, CM Internship, the Mukhyamantri Yuva Udyami Vikas Abhiyan and the PM Mudra Yojana. Students can also connect to a digital library.\n\n## What the first phase showed\n\nTo assess the effect of the tablets and smartphones given in the first phase on students' lives, a survey was conducted through IIM Lucknow. According to the government, the survey results were very good.\n\n## What a student should do\n\nThe notice does not say how an individual student can apply for a tablet on their own. Tablets are being distributed through educational institutions, so students and trainees covered by the scheme can get full details from their school, college or training centre."
+    }
+  }
+}
