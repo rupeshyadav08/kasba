@@ -43,15 +43,16 @@ export async function get(url, timeoutMs = 20000) {
 
 // Text of an official notice: HTML pages are cleaned, PDFs go through pdftotext.
 // Several sites wrap the real notice: RBI pages only link the PDF, SEBI shows it in a
-// viewer iframe, PIB puts it in one content block. Scanned PDFs are read with OCR.
-export async function noticeText(url) {
+// viewer iframe, PIB puts it in one content block. Scanned PDFs are read with OCR, and so are
+// PDFs from a Hindi source (hindi: true) whose text layer is an old non-Unicode font.
+export async function noticeText(url, { hindi = false } = {}) {
   if (!(await allowed(url))) throw new Error(`robots.txt disallows ${url}`);
   const res = await fetchOk(url, 30000);
   const isPdf = /\.pdf($|\?)/i.test(url) || (res.headers.get('content-type') ?? '').includes('pdf');
-  if (isPdf) return pdfText(Buffer.from(await res.arrayBuffer()));
+  if (isPdf) return pdfText(Buffer.from(await res.arrayBuffer()), hindi);
   const html = await res.text();
   const inner = innerPdf(html, res.url || url);
-  if (inner) return pdfText(Buffer.from(await (await fetchOk(inner, 30000)).arrayBuffer()));
+  if (inner) return pdfText(Buffer.from(await (await fetchOk(inner, 30000)).arrayBuffer()), hindi);
   return { text: mainText(html), ocr: false };
 }
 
@@ -73,20 +74,26 @@ export function innerPdf(html, base) {
   return null;
 }
 
-function pdfText(buf) {
+// Share of letters that are Devanagari. Old Hindi fonts (Kruti Dev and the like) extract as Latin gibberish.
+export const devanagariShare = (t) => (t.match(/[\u0900-\u097F]/g)?.length ?? 0) / Math.max(1, (t.match(/\p{L}/gu)?.length ?? 0));
+
+function pdfText(buf, hindi = false) {
   // Some PDF links answer with an HTML page instead (an error or a redirect page).
   if (buf.subarray(0, 5).toString() !== '%PDF-') return { text: htmlToText(buf.toString('utf8')), ocr: false };
   const dir = mkdtempSync(join(tmpdir(), 'kasba-'));
   const file = join(dir, 'notice.pdf');
   writeFileSync(file, buf);
   const text = execFileSync('pdftotext', ['-l', '6', '-enc', 'UTF-8', file, '-'], { encoding: 'utf8', maxBuffer: 20e6 }).trim();
-  if (text.length >= 200) return { text, ocr: false };
-  // No text layer: a scanned notice. OCR the first three pages in Hindi and English.
+  const oldFont = hindi && devanagariShare(text) < 0.3;
+  if (text.length >= 200 && !oldFont) return { text, ocr: false };
+  // No text layer (a scanned notice) or an old-font one: OCR the first three pages in Hindi and English.
   try {
     execFileSync('pdftoppm', ['-r', '200', '-l', '3', '-png', file, join(dir, 'page')]);
     const ocrText = readdirSync(dir).filter((f) => f.endsWith('.png')).sort()
       .map((f) => execFileSync('tesseract', [join(dir, f), '-', '-l', 'hin+eng'], { encoding: 'utf8', maxBuffer: 20e6, stdio: ['ignore', 'pipe', 'ignore'] }))
       .join('\n').trim();
+    // An old-font notice that OCR could not read as Hindi either (or an English one) keeps its own text.
+    if (oldFont && text.length >= 200 && devanagariShare(ocrText) < 0.3) return { text, ocr: false };
     return { text: ocrText, ocr: true };
   } catch { return { text, ocr: false }; } // OCR tools missing: fall back to whatever text there was
 }
