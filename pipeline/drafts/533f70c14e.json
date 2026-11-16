@@ -1,0 +1,106 @@
+{
+  "id": "533f70c14e",
+  "createdAt": "2026-11-16T13:32:37.691Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "सीसीपीए ने अमोनियम नाइट्रेट, पीईटीएन और पिक्रिक एसिड की ऑनलाइन लिस्टिंग के लिए दो आदेशों में ExportersIndia.com (Weblink.In Pvt. Ltd.) पर 20 लाख रुपये का जुर्माना लगाया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337042"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "indian chemical laboratory bottles",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "सीसीपीए ने अमोनियम नाइट्रेट, पीईटीएन और पिक्रिक एसिड की ऑनलाइन लिस्टिंग के लिए दो आदेशों में ExportersIndia.com (Weblink.In Pvt. Ltd.) पर 20 लाख रुपये का जुर्माना लगाया",
+    "sourceDate": "2026-11-16",
+    "hi": {
+      "title": "ExportersIndia.com पर 20 लाख का जुर्माना बरकरार, NCDRC ने अपील खारिज की",
+      "summary": "राष्ट्रीय उपभोक्ता विवाद निवारण आयोग (NCDRC) ने 12 नवंबर 2026 के दो आदेशों में ExportersIndia.com चलाने वाली कंपनी Weblink.In Pvt. Ltd. की अपीलें खारिज कर दीं। इससे CCPA का 20 लाख रुपये का जुर्माना और विस्फोटक पदार्थों की ऑनलाइन लिस्टिंग रोकने के निर्देश बरकरार रहेंगे।",
+      "meaning": "यह फैसला उन लोगों के लिए ज़रूरी है जो ऑनलाइन प्लेटफॉर्म से केमिकल या औद्योगिक सामान खरीदते हैं। अमोनियम नाइट्रेट, PETN और पिक्रिक एसिड जैसे पदार्थ कानून के तहत नियंत्रित हैं और इन्हें बिना लाइसेंस नहीं खरीदा-बेचा जा सकता। आम उपभोक्ता को कुछ करने की ज़रूरत नहीं; अगर कहीं ऐसे पदार्थ ऑनलाइन बिकते दिखें तो राष्ट्रीय उपभोक्ता हेल्पलाइन 1915 पर शिकायत की जा सकती है।",
+      "keyFacts": [
+        "NCDRC ने 12 नवंबर 2026 को दो आदेशों में Weblink.In Pvt. Ltd. की अपीलें खारिज कीं।",
+        "CCPA ने 8 सितंबर 2026 और 10 सितंबर 2026 के दो आदेशों में 10-10 लाख रुपये, कुल 20 लाख रुपये का जुर्माना लगाया था।",
+        "कंपनी को विस्फोटक अधिनियम, 1884 या विस्फोटक पदार्थ अधिनियम, 1908 के तहत विस्फोटक माने जाने वाले पदार्थों की लिस्टिंग, होस्टिंग, विज्ञापन और बिक्री स्थायी रूप से बंद करने का निर्देश दिया गया।",
+        "पिक्रिक एसिड को 7 अगस्त 1983 की अधिसूचना GSR 625(E) से विस्फोटक घोषित किया गया है; अमोनियम नाइट्रेट अमोनियम नाइट्रेट नियम, 2012 के तहत नियंत्रित है।",
+        "CCPA ने इंडियामार्ट, जस्टडायल, डायल4ट्रेड, सिग्मा-एल्ड्रिच इंडिया, एक्सपोर्टर्सइंडिया, इबुचेमिकल्स और ट्रेडइंडिया की जांच की थी; हस्तक्षेप के बाद लिस्टिंग हटाई गई थीं।",
+        "डायल4ट्रेड पर 10 लाख रुपये का जुर्माना लगा और NCDRC ने 9 अक्टूबर 2026 को उसकी अपील खारिज की; जस्ट डायल पर भी 10 लाख रुपये का जुर्माना लगाया गया।"
+      ],
+      "faq": [
+        {
+          "q": "ExportersIndia.com पर जुर्माना क्यों लगा?",
+          "a": "अमोनियम नाइट्रेट, PETN और पिक्रिक एसिड जैसे नियंत्रित विस्फोटक पदार्थों की ऑनलाइन लिस्टिंग और बिक्री की सुविधा देने के लिए। CCPA ने इसे भ्रामक विज्ञापन और अनुचित व्यापार व्यवहार माना।",
+          "q_en": "Why was the fine imposed on ExportersIndia.com?"
+        },
+        {
+          "q": "जुर्माना कितना है और किसने लगाया?",
+          "a": "कुल 20 लाख रुपये। CCPA ने 8 सितंबर 2026 और 10 सितंबर 2026 के दो आदेशों में 10-10 लाख रुपये लगाए थे, जिन्हें NCDRC ने 12 नवंबर 2026 को बरकरार रखा।",
+          "q_en": "How much is the fine and who imposed it?"
+        },
+        {
+          "q": "क्या कंपनी अब भी इन पदार्थों की लिस्टिंग कर सकती है?",
+          "a": "नहीं। CCPA ने कंपनी को विस्फोटक अधिनियम, 1884 या विस्फोटक पदार्थ अधिनियम, 1908 के तहत विस्फोटक माने जाने वाले पदार्थों की लिस्टिंग, होस्टिंग, विज्ञापन और बिक्री स्थायी रूप से बंद करने का निर्देश दिया है।",
+          "q_en": "Can the company still list these substances?"
+        },
+        {
+          "q": "अगर कहीं ऐसे पदार्थ ऑनलाइन बिकते दिखें तो कहां शिकायत करें?",
+          "a": "राष्ट्रीय उपभोक्ता हेल्पलाइन 1915 पर शिकायत दी जा सकती है। यह जानकारी CCPA ने अपनी विज्ञप्ति में दी है।",
+          "q_en": "Where can I complain if such substances are sold online?"
+        },
+        {
+          "q": "क्या आम खरीदार पर इसका कोई असर पड़ेगा?",
+          "a": "आम उपभोक्ता को कुछ करने की ज़रूरत नहीं। यह कार्रवाई ऑनलाइन प्लेटफॉर्म के खिलाफ है ताकि नियंत्रित विस्फोटक पदार्थ बिना लाइसेंस वाले लोगों तक न पहुंचें।",
+          "q_en": "Does this affect ordinary buyers?"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराष्ट्रीय उपभोक्ता विवाद निवारण आयोग (NCDRC) ने 12 नवंबर 2026 के दो आदेशों में ExportersIndia.com चलाने वाली कंपनी Weblink.In Pvt. Ltd. की अपीलें खारिज कर दीं। इससे केंद्रीय उपभोक्ता संरक्षण प्राधिकरण (CCPA) के दोनों अंतिम आदेशों के दंड और निर्देश बरकरार रहेंगे।\n\n## CCPA ने क्या पाया\n\nCCPA ने उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 18 और 19 के तहत ई-कॉमर्स प्लेटफॉर्म की समीक्षा की। इसमें देखा गया कि अमोनियम नाइट्रेट, गन पाउडर, पिक्रिक एसिड और पेंटाएरीथ्रिटोल टेट्रानाइट्रेट (PETN) जैसे नियंत्रित पदार्थ ऑनलाइन सूचीबद्ध, होस्ट, विज्ञापित या बिक्री के लिए उपलब्ध कराए जा रहे थे।\n\nCCPA के अनुसार, प्लेटफॉर्म ने इन पदार्थों को सामान्य उत्पादों की तरह दिखाया, मूल्य कोट और \"सर्वश्रेष्ठ कोट प्राप्त करें\" जैसे विकल्प दिए, लेकिन यह नहीं बताया कि ये अधिसूचित विस्फोटक हैं, इन्हें खरीदने-बेचने के लिए लाइसेंस चाहिए और अनधिकृत कब्जा दंडनीय है। कंपनी ने यह भी स्वीकार किया कि उसने किसी विक्रेता या खरीदार का लाइसेंस नहीं जांचा।\n\n## जुर्माना और निर्देश\n\nCCPA ने 8 सितंबर 2026 के आदेश में अमोनियम नाइट्रेट और PETN की लिस्टिंग पर और 10 सितंबर 2026 के आदेश में पिक्रिक एसिड की लिस्टिंग पर 10-10 लाख रुपये का जुर्माना लगाया, यानी कुल 20 लाख रुपये। कंपनी को विस्फोटक अधिनियम, 1884 या विस्फोटक पदार्थ अधिनियम, 1908 के तहत विस्फोटक माने जाने वाले पदार्थों और किसी भी अन्य ऐसे पदार्थ की लिस्टिंग, होस्टिंग, विज्ञापन, बिक्री या जांच की सुविधा स्थायी रूप से बंद करने का निर्देश भी दिया गया।\n\n## कंपनी की दलील और आयोग का जवाब\n\nकंपनी ने दोनों मंचों पर कहा कि वह सूचना प्रौद्योगिकी अधिनियम, 2000 की धारा 79 के तहत संरक्षित मध्यस्थ है, उसे लिस्टिंग की वास्तविक जानकारी नहीं थी और किसी कानून में विक्रेता या खरीदार का लाइसेंस जांचने की शर्त नहीं है।\n\nCCPA और NCDRC ने ये दलीलें नहीं मानीं। आदेश के अनुसार, धारा 79 का संरक्षण उचित परिश्रम पर निर्भर है और लिस्टिंग के समय भी सावधानी बरतनी होती है। NCDRC ने कहा कि प्लेटफॉर्म चुनिंदा सावधानी की बात नहीं कर सकता और इन पदार्थों को विस्फोटक घोषित करने वाली अधिसूचनाओं का ज्ञान ऐसे प्लेटफॉर्म को माना जा सकता है।\n\n## दूसरे प्लेटफॉर्म पर भी कार्रवाई\n\nसमीक्षा में इंडियामार्ट, जस्टडायल, डायल4ट्रेड, सिग्मा-एल्ड्रिच इंडिया, एक्सपोर्टर्सइंडिया, इबुचेमिकल्स और ट्रेडइंडिया को देखा गया और CCPA के हस्तक्षेप के बाद इन पदार्थों की लिस्टिंग हटाई गई। डायल4ट्रेड पर 10 लाख रुपये का जुर्माना लगा और NCDRC ने 9 अक्टूबर 2026 को उसकी अपील खारिज की; जस्ट डायल पर भी 10 लाख रुपये का जुर्माना लगाया गया। बाकी प्लेटफॉर्म के खिलाफ कार्रवाई जांच के दायरे में है।\n\n## आम आदमी के लिए क्या मतलब\n\nयह मामला ऑनलाइन प्लेटफॉर्म और नियंत्रित केमिकल की बिक्री से जुड़ा है, इसलिए आम उपभोक्ता को कोई कदम नहीं उठाना है। CCPA ने कहा है कि ऑनलाइन प्लेटफॉर्म पर बिक्री के लिए पेश किए जा रहे विस्फोटकों के किसी भी मामले की सूचना राष्ट्रीय उपभोक्ता हेल्पलाइन 1915 पर दी जा सकती है।"
+    },
+    "en": {
+      "title": "ExportersIndia.com fined Rs 20 lakh: NCDRC rejects appeals, CCPA orders stand",
+      "summary": "The National Consumer Disputes Redressal Commission (NCDRC) on 12 November 2026 rejected two appeals by Weblink.In Pvt. Ltd., which runs ExportersIndia.com. The CCPA's Rs 20 lakh penalty and its directions against listing explosive substances online will stand.",
+      "meaning": "This matters to people who buy chemicals or industrial goods on online platforms. Ammonium nitrate, PETN and picric acid are regulated substances that cannot be bought or sold without a licence. Ordinary consumers need not do anything; if such substances are seen for sale online, a complaint can be made on the National Consumer Helpline 1915.",
+      "keyFacts": [
+        "NCDRC rejected Weblink.In Pvt. Ltd.'s appeals in two orders dated 12 November 2026.",
+        "CCPA had imposed Rs 10 lakh each in orders dated 8 September 2026 and 10 September 2026, totalling Rs 20 lakh.",
+        "The company was told to permanently stop listing, hosting, advertising, selling or facilitating inquiry for substances classified as explosives under the Explosives Act, 1884 or the Explosive Substances Act, 1908.",
+        "Picric acid was declared an explosive by notification GSR 625(E) dated 7 August 1983; ammonium nitrate is regulated under the Ammonium Nitrate Rules, 2012.",
+        "CCPA reviewed IndiaMART, JustDial, Dial4Trade, Sigma-Aldrich India, ExportersIndia, eBuchemicals and TradeIndia; listings were removed after its intervention.",
+        "Dial4Trade was fined Rs 10 lakh and its appeal was rejected by NCDRC on 9 October 2026; Just Dial was also fined Rs 10 lakh."
+      ],
+      "faq": [
+        {
+          "q": "Why was ExportersIndia.com fined?",
+          "a": "For facilitating online listing and sale of regulated explosive substances such as ammonium nitrate, PETN and picric acid. CCPA treated this as a misleading advertisement and unfair trade practice.",
+          "q_en": "Why was ExportersIndia.com fined?"
+        },
+        {
+          "q": "How much is the fine and who imposed it?",
+          "a": "Rs 20 lakh in total. CCPA imposed Rs 10 lakh each in orders dated 8 September 2026 and 10 September 2026, and NCDRC upheld them on 12 November 2026.",
+          "q_en": "How much is the fine and who imposed it?"
+        },
+        {
+          "q": "Can the company still list these substances?",
+          "a": "No. CCPA directed the company to permanently stop listing, hosting, advertising, selling or facilitating inquiry for substances classified as explosives under the Explosives Act, 1884 or the Explosive Substances Act, 1908.",
+          "q_en": "Can the company still list these substances?"
+        },
+        {
+          "q": "Where can I complain if such substances are sold online?",
+          "a": "On the National Consumer Helpline 1915. CCPA gave this information in its release.",
+          "q_en": "Where can I complain if such substances are sold online?"
+        },
+        {
+          "q": "Does this affect ordinary buyers?",
+          "a": "Ordinary consumers need not do anything. The action is against an online platform so that regulated explosive substances do not reach people without a licence.",
+          "q_en": "Does this affect ordinary buyers?"
+        }
+      ],
+      "body": "## What happened\n\nThe National Consumer Disputes Redressal Commission (NCDRC) on 12 November 2026 rejected two appeals by Weblink.In Pvt. Ltd., the company that runs ExportersIndia.com. The penalties and directions in two final orders of the Central Consumer Protection Authority (CCPA) will therefore stand.\n\n## What CCPA found\n\nCCPA used its powers under Sections 18 and 19 of the Consumer Protection Act, 2019 to review e-commerce platforms. It looked at whether dangerous chemicals, explosives and related precursors — ammonium nitrate, gun powder, picric acid and pentaerythritol tetranitrate (PETN) — were being listed, hosted, advertised or offered for online sale.\n\nAccording to CCPA, the platform showed these substances like ordinary products, with price quote options and an invitation to \"get the best quote\", but did not disclose that they are notified explosives, that a licence is needed to buy or sell them, or that unauthorised possession is punishable. The company also admitted it had not checked the licence of any seller or buyer.\n\n## The fine and the directions\n\nCCPA imposed Rs 10 lakh in its order dated 8 September 2026, which dealt with ammonium nitrate and PETN listings, and Rs 10 lakh in its order dated 10 September 2026, which dealt with picric acid — a total of Rs 20 lakh. The company was also told to permanently stop listing, hosting, advertising, selling or facilitating inquiry for substances classified as explosives under the Explosives Act, 1884 or the Explosive Substances Act, 1908, and any other such substance.\n\n## The company's argument and the commissions' reply\n\nBefore both forums, the company argued that it was an intermediary protected by Section 79 of the Information Technology Act, 2000, that it had no actual knowledge of the listings, and that no law required it to verify the licences of sellers or buyers of explosives.\n\nCCPA and NCDRC did not accept these arguments. According to the orders, the Section 79 protection depends on due diligence, including at the point of listing. NCDRC said a platform cannot plead selective diligence, and that knowledge of the notifications declaring these substances explosives can be attributed to such platforms.\n\n## Action against other platforms\n\nCCPA's review covered IndiaMART, JustDial, Dial4Trade, Sigma-Aldrich India, ExportersIndia, eBuchemicals and TradeIndia, and the listings were removed after its intervention. Dial4Trade was fined Rs 10 lakh and NCDRC rejected its appeal on 9 October 2026; Just Dial was also fined Rs 10 lakh. Proceedings against the remaining platforms are under investigation.\n\n## What it means for ordinary people\n\nThis case concerns online platforms and the sale of regulated chemicals, so ordinary consumers do not need to take any step. CCPA has said that any case of explosives being offered for sale on online platforms can be reported on the National Consumer Helpline 1915."
+    }
+  }
+}
