@@ -9,7 +9,7 @@
 // to the main run.
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
-import { dateFromLink, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
+import { dateFromLink, devanagariShare, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
 import { check, districtSlugs, publish, unpublish } from './lib/story.mjs';
@@ -32,7 +32,6 @@ const summary = { telegramUpdates: 0, published: [], autoPublished: [], urgentPu
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
 const site = 'https://kasba.co.in';
-const devanagariShare = (t) => (t.match(/[\u0900-\u097F]/g)?.length ?? 0) / Math.max(1, (t.match(/\p{L}/gu)?.length ?? 0));
 
 // Links the editor sends to the bot are drafted in this run, if they are official.
 const official = /(^|\.)(gov\.in|nic\.in|rbi\.org\.in|nta\.ac\.in|upmsp\.edu\.in|allahabadhighcourt\.in|sansad\.in|ecourts\.gov\.in)$/i;
@@ -202,7 +201,7 @@ async function draftNew() {
       // feedText: the feed's description is the notice (UPPSC's notice pages hold no text).
       if (!it.feedText) try {
         // Boards that refuse GitHub's servers are read through the Kasba watcher (src.via).
-        const notice = await noticeText(it.via ? `${it.via}${encodeURIComponent(it.link)}` : it.link);
+        const notice = await noticeText(it.via ? `${it.via}${encodeURIComponent(it.link)}` : it.link, { hindi: it.lang === 'hi' });
         // RBI answers foreign servers with a CAPTCHA page; the feed's own description is then the better text.
         if (!/captcha/i.test(notice.text) || notice.text.length > 5 * text.length) ({ text, ocr } = notice);
         text = text.slice(0, 12000);
