@@ -1,0 +1,96 @@
+{
+  "id": "f91b53620a",
+  "createdAt": "2026-11-16T17:33:21.704Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "UP Information Department",
+    "title": "बेकरी-कन्फेक्शनरी के उत्पादों में नहीं चलेगी मनमानी\n 16/Nov/2026",
+    "link": "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_809c8b24-e648-41d4-992c-0289e929b97b.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "health",
+    "imageQuery": "bakery bread display india",
+    "state": "up",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "बेकरी-कन्फेक्शनरी के उत्पादों में नहीं चलेगी मनमानी",
+    "sourceDate": "2026-11-16",
+    "hi": {
+      "title": "UP बेकरी-कन्फेक्शनरी नियम: ब्रेड, केक, कुकीज पर सख्ती, जानें क्या बदलेगा",
+      "summary": "उत्तर प्रदेश के खाद्य सुरक्षा एवं औषधि प्रशासन ने बेकरी और कन्फेक्शनरी उत्पादों के लिए विस्तृत निर्देश जारी किए हैं। ये नियम ब्रेड, बिस्कुट, कुकीज, चॉकलेट, कैंडी और कैफे में बिकने वाले केक-पेस्ट्री बनाने और बेचने वाले कारोबारियों पर लागू होंगे।",
+      "meaning": "अगर आप बेकरी या कन्फेक्शनरी का काम करते हैं, तो अब साफ-सफाई, कच्चे माल, भंडारण, रंगों, पैकेजिंग और लाइसेंस से जुड़े नियमों का पालन करना होगा। ग्राहक के तौर पर आपको पैकेट पर पूरी जानकारी मिलेगी और दुकानों में खुले केक-पेस्ट्री ढके रखने होंगे। आम लोगों को कोई फॉर्म या आवेदन नहीं करना है।",
+      "keyFacts": [
+        "रोडामिन बी, मेटानिल येलो और सुडान डाई जैसे औद्योगिक रंगों का इस्तेमाल पूरी तरह प्रतिबंधित।",
+        "पोटैशियम ब्रोमेट, पोटैशियम आयोडेट, फॉर्मेलिन, बोरिक एसिड और सैलिसिलिक एसिड का प्रयोग वर्जित।",
+        "होल व्हीट ब्रेड में कुल आटे का कम से कम 75 प्रतिशत साबुत गेहूं का आटा होना चाहिए।",
+        "मल्टीग्रेन ब्रेड में गेहूं के अलावा अन्य अनुमन्य अनाजों की मात्रा कम से कम 20 प्रतिशत होनी चाहिए।",
+        "मिल्क ब्रेड में दूध के ठोस पदार्थ कम से कम छह प्रतिशत होने चाहिए।",
+        "पैकेट पर 14 अंकों का FSSAI लाइसेंस नंबर देना अनिवार्य।"
+      ],
+      "faq": [
+        {
+          "q": "बेकरी और कन्फेक्शनरी के नए नियम किन पर लागू होंगे?",
+          "a": "ये नियम ब्रेड, बिस्कुट, कुकीज, चॉकलेट, कैंडी और कैफे में बिकने वाले केक-पेस्ट्री बनाने और बेचने वाले कारोबारियों पर लागू होंगे। इन्हें खाद्य सुरक्षा के निर्धारित मानकों का पालन करना होगा।"
+        },
+        {
+          "q": "क्या ब्रेड में रंग मिलाकर ब्राउन बनाना बंद होगा?",
+          "a": "हाँ, सिर्फ रंग मिलाकर ब्रेड को ब्राउन, होल व्हीट ब्रेड या मिल्क ब्रेड बनाने का दावा नहीं चलेगा। हर नाम की ब्रेड में संबंधित सामग्री की निर्धारित मात्रा होनी जरूरी है।"
+        },
+        {
+          "q": "पैकेट पर कौन-कौन सी जानकारी देनी होगी?",
+          "a": "पैकेट पर उत्पाद का नाम, सामग्री की सूची, एलर्जेन जानकारी, पोषण विवरण, शाकाहारी/मांसाहारी चिह्न, बैच नंबर, निर्माण और समाप्ति तिथि तथा 14 अंकों का FSSAI लाइसेंस नंबर देना अनिवार्य होगा।"
+        },
+        {
+          "q": "कैफे और दुकानों में क्या बदलेगा?",
+          "a": "खुले केक, पेस्ट्री, मफिन, कुकीज और ब्रेड को शीशे के डिस्प्ले केस या खाद्य-ग्रेड कवर में रखना होगा। केक काटने वाले चाकू, ट्रे और अन्य उपकरणों को नियमित रूप से सैनिटाइज करना होगा।"
+        },
+        {
+          "q": "क्या आम ग्राहक को कुछ करना है?",
+          "a": "नहीं, आम ग्राहकों को कोई आवेदन या फॉर्म नहीं भरना है। ये निर्देश कारोबारियों के लिए हैं, जिससे ग्राहकों को सुरक्षित और साफ उत्पाद मिल सकें।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nखाद्य सुरक्षा एवं औषधि प्रशासन, उत्तर प्रदेश ने बेकरी और कन्फेक्शनरी उत्पादों के लिए विस्तृत निर्देश जारी किए हैं। ये निर्देश ब्रेड, बिस्कुट, कुकीज, चॉकलेट और कैंडी जैसे उत्पाद बनाने और बेचने वाले कारोबारियों के लिए हैं। अब घटिया कच्चे माल का इस्तेमाल, प्रतिबंधित रंगों-रसायनों से उत्पादों को आकर्षक बनाना, अस्वच्छ वातावरण में निर्माण, गलत भंडारण और भ्रामक दावे महंगे पड़ सकते हैं।\n\n## कच्चे माल और भंडारण के नियम क्या हैं\n\nमैदा, आटा, कोको पाउडर, अंडे, मेवे, वनस्पति वसा और शॉर्टनिंग जैसे कच्चे माल की नियमित निगरानी जरूरी है। इनमें असमान्य रंग, दुर्गंध, संक्रमण या मिलावट दिखने पर तुरंत स्टोर से अलग करना होगा। कच्चे माल में फफूंद न लगे, इसके लिए लेबल पर दिए निर्देशों के अनुसार तापमान और नमी नियंत्रित रखनी होगी।\n\nदूध, कस्टर्ड और पेस्ट्री फिलिंग जैसे जल्दी खराब होने वाले उत्पादों के लिए भंडारण से लेकर परिवहन और डिलीवरी तक कोल्ड चेन बनाए रखना अनिवार्य है। सात दिन से कम शेल्फ लाइफ वाले बेकरी उत्पादों पर उपयोग की अंतिम तिथि स्पष्ट रूप से अंकित करनी होगी।\n\n## कौन से रंग और रसायन प्रतिबंधित हैं\n\nउत्पादों का आकर्षण बढ़ाने के लिए रोडामिन बी, मेटानिल येलो और सुडान डाई जैसे औद्योगिक रंगों का इस्तेमाल पूरी तरह प्रतिबंधित है। पोटैशियम ब्रोमेट, पोटैशियम आयोडेट, फॉर्मेलिन, बोरिक एसिड और सैलिसिलिक एसिड जैसे पदार्थों का प्रयोग भी वर्जित है। बेकरी और कन्फेक्शनरी उत्पादों में केवल मानक रंग और प्रिजर्वेटिव का ही मानक मात्रा में प्रयोग किया जा सकता है।\n\n## ब्रेड के नाम पर भ्रामक बिक्री पर रोक\n\nअलग-अलग नाम से बेची जाने वाली ब्रेड में संबंधित सामग्री की निर्धारित न्यूनतम मात्रा होनी चाहिए। होल व्हीट ब्रेड में कुल आटे का कम से कम 75 प्रतिशत साबुत गेहूं का आटा होना चाहिए। मल्टीग्रेन ब्रेड में गेहूं के अलावा अन्य अनुमन्य अनाजों की मात्रा कम से कम 20 प्रतिशत होनी चाहिए। मिल्क ब्रेड में दूध के ठोस पदार्थ कम से कम छह प्रतिशत होने चाहिए। ओट, ब्रान, हनी या अन्य विशेष नामों से बेची जाने वाली ब्रेड में भी संबंधित सामग्री की निर्धारित मात्रा होना जरूरी है।\n\n## पैकेट पर क्या जानकारी देनी होगी\n\nपैकेजिंग पर उत्पाद का नाम, सामग्री की सूची, एलर्जेन संबंधी जानकारी, पोषण विवरण, शाकाहारी/मांसाहारी चिह्न, बैच नंबर, निर्माण एवं समाप्ति तिथि तथा 14 अंकों का FSSAI लाइसेंस नंबर देना अनिवार्य होगा। दूध, सोया, ग्लूटेन और मेवे जैसे एलर्जेन की जानकारी स्पष्ट रूप से देनी होगी। केक बोर्ड, पेपर कप, रैपर और टेकअवे बॉक्स खाद्य-ग्रेड होने चाहिए। खाद्य पदार्थों को लपेटने या पैक करने के लिए अखबार या छपे हुए कागज का इस्तेमाल प्रतिबंधित है। वनस्पति वसा, मार्जरीन और शॉर्टनिंग में ट्रांस फैट की मात्रा दो प्रतिशत से अधिक नहीं होनी चाहिए। शुगर फ्री, प्रिजर्वेटिव फ्री, ऑर्गेनिक और हेल्दी जैसे दावों की भी उत्पाद के वास्तविक फॉर्मूलेशन और अभिलेखों के आधार पर जांच की जाएगी।\n\n## कैफे और दुकानों पर क्या लागू होगा\n\nखुले केक, पेस्ट्री, मफिन, कुकीज और ब्रेड को शीशे के डिस्प्ले केस या खाद्य-ग्रेड कवर में रखना होगा, ताकि वे धूल, मक्खियों और ग्राहकों के सीधे संपर्क से सुरक्षित रहें। केक काटने वाले चाकू, ट्रे और अन्य उपकरणों को नियमित रूप से सैनिटाइज करना होगा। कच्चे और तैयार खाद्य पदार्थों के लिए अलग-अलग उपकरणों का इस्तेमाल करना जरूरी है। कैफे में दूध को उचित तापमान पर रखना तथा आइस मेकर में सुरक्षित पेयजल का उपयोग सुनिश्चित करना होगा। कॉफी मशीन, ब्लेंडर और जूसर की नियमित सफाई भी अनिवार्य है।\n\n## लाइसेंस और रिकॉर्ड की जांच\n\nसभी कारोबारियों के पास गतिविधियों के अनुरूप लाइसेंस या पंजीकरण होना चाहिए। मैदा, चीनी, दूध के ठोस पदार्थ, वसा, खाद्य रंग और फ्लेवर की खरीद के बिल, बैच नंबर और आपूर्तिकर्ताओं का रिकॉर्ड सुरक्षित रखना होगा। कर्मचारियों के मेडिकल रिकॉर्ड, पेयजल की जांच रिपोर्ट, कीट नियंत्रण संबंधी दस्तावेज और तापमान नियंत्रण के रिकॉर्ड भी रखने होंगे। बाजार में किसी उत्पाद के असुरक्षित पाए जाने पर उसे तत्काल वापस मंगाने की व्यवस्था और वितरण की पूरी जानकारी उपलब्ध होनी चाहिए।"
+    },
+    "en": {
+      "title": "UP bakery rules: Bread, cake, cookies makers must follow new food safety norms",
+      "summary": "The Uttar Pradesh Food Safety and Drug Administration has issued detailed directions for bakery and confectionery products. These rules apply to businesses making and selling bread, biscuits, cookies, chocolate, candy and cafe cakes and pastries.",
+      "meaning": "If you run a bakery or confectionery business, you must now follow rules on hygiene, raw material, storage, colours, packaging and licensing. As a customer, you will get full information on packets and open cakes and pastries must be kept covered in shops. Ordinary people do not need to fill any form or apply.",
+      "keyFacts": [
+        "Industrial colours like Rhodamine B, Metanil Yellow and Sudan Dye are completely banned.",
+        "Potassium bromate, potassium iodate, formalin, boric acid and salicylic acid are also prohibited.",
+        "Whole wheat bread must have at least 75 per cent whole wheat flour of total flour.",
+        "Multigrain bread must have at least 20 per cent other permitted grains besides wheat.",
+        "Milk bread must have at least six per cent milk solids.",
+        "Packets must carry a 14-digit FSSAI licence number."
+      ],
+      "faq": [
+        {
+          "q": "Who do the new bakery and confectionery rules apply to?",
+          "a": "The rules apply to businesses that make and sell bread, biscuits, cookies, chocolate, candy and cafe cakes and pastries. They must follow the prescribed food safety standards."
+        },
+        {
+          "q": "Will colouring bread brown to claim it is whole wheat stop?",
+          "a": "Yes, simply adding colour to claim bread is brown, whole wheat or milk bread will not be allowed. Each named bread must contain the prescribed amount of the relevant ingredient."
+        },
+        {
+          "q": "What information must be printed on packets?",
+          "a": "Packets must carry the product name, ingredient list, allergen information, nutrition details, vegetarian/non-vegetarian mark, batch number, manufacturing and expiry date and a 14-digit FSSAI licence number."
+        },
+        {
+          "q": "What changes in cafes and shops?",
+          "a": "Open cakes, pastries, muffins, cookies and bread must be kept in glass display cases or food-grade covers. Knives, trays and other equipment used to cut cakes must be sanitised regularly."
+        },
+        {
+          "q": "Do ordinary customers need to do anything?",
+          "a": "No, ordinary customers do not need to fill any form or apply. These directions are for businesses so that customers get safe and clean products."
+        }
+      ],
+      "body": "## What has happened\n\nThe Uttar Pradesh Food Safety and Drug Administration has issued detailed directions for bakery and confectionery products. These directions are for businesses that make and sell products such as bread, biscuits, cookies, chocolate and candy. Using poor-quality raw material, making products attractive with banned colours and chemicals, manufacturing in unhygienic conditions, wrong storage and misleading claims can now prove costly.\n\n## What are the rules on raw material and storage\n\nRaw material such as maida, flour, cocoa powder, eggs, nuts, vegetable fat and shortening must be monitored regularly. If any abnormal colour, bad smell, infection or adulteration is found, it must be immediately separated from the store. Temperature and moisture must be controlled as per label instructions so that raw material does not get fungus.\n\nFor quickly spoiling products like milk, custard and pastry filling, a cold chain must be maintained from storage to transport and delivery. Bakery products with a shelf life of less than seven days must clearly print the last date of use.\n\n## Which colours and chemicals are banned\n\nIndustrial colours like Rhodamine B, Metanil Yellow and Sudan Dye are completely banned for making products attractive. Substances like potassium bromate, potassium iodate, formalin, boric acid and salicylic acid are also prohibited. Only standard colours and preservatives can be used in standard quantities in bakery and confectionery products.\n\n## Misleading sale in the name of bread will stop\n\nEach bread sold under a different name must contain the prescribed minimum amount of the relevant ingredient. Whole wheat bread must have at least 75 per cent whole wheat flour of total flour. Multigrain bread must have at least 20 per cent other permitted grains besides wheat. Milk bread must have at least six per cent milk solids. Bread sold under special names like oat, bran or honey must also contain the prescribed amount of that ingredient.\n\n## What information must be on packets\n\nPackaging must carry the product name, ingredient list, allergen information, nutrition details, vegetarian/non-vegetarian mark, batch number, manufacturing and expiry date and a 14-digit FSSAI licence number. Allergens like milk, soy, gluten and nuts must be clearly stated. Cake boards, paper cups, wrappers and takeaway boxes must be food-grade. Using newspaper or printed paper to wrap or pack food is prohibited. Trans fat in vegetable fat, margarine and shortening must not be more than two per cent. Claims like sugar free, preservative free, organic and healthy will also be checked against the product's actual formulation and records.\n\n## What applies to cafes and shops\n\nOpen cakes, pastries, muffins, cookies and bread must be kept in glass display cases or food-grade covers so they are protected from dust, flies and direct contact with customers. Knives, trays and other equipment used to cut cakes must be sanitised regularly. Separate equipment must be used for raw and prepared food. Milk used in cafes must be kept at the proper temperature and safe drinking water must be used in ice makers. Regular cleaning of coffee machines, blenders and juicers is also mandatory.\n\n## Licence and records will be checked\n\nAll businesses must have a licence or registration matching their activities. Bills for purchase of maida, sugar, milk solids, fat, food colours and flavours, batch numbers and supplier records must be kept safe. Employee medical records, drinking water test reports, pest control documents and temperature control records must also be maintained. If any product is found unsafe in the market, an effective system to recall it immediately and full distribution details must be available."
+    }
+  }
+}
