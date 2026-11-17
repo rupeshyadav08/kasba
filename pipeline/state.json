@@ -3639,11 +3639,26 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337368": "2026-11-17",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337409": "2026-11-17",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63988": "2026-11-17",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63987": "2026-11-17"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63987": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337524": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337582": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337471": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337484": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337467": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337520": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337511": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337462": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337489": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337443": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337563": "2026-11-17",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63990": "2026-11-17",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63989": "2026-11-17",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/DFA_notice_17112026.pdf": "2026-11-17",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf": "2026-11-17"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-17T10:51:03.874Z",
+    "last": "2026-11-17T13:33:19.735Z",
     "pending": []
   },
   "sources": [
