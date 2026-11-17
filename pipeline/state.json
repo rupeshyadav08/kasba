@@ -3654,11 +3654,29 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63990": "2026-11-17",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63989": "2026-11-17",
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/DFA_notice_17112026.pdf": "2026-11-17",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf": "2026-11-17"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_STENO-LDC_2026.pdf": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337677": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337692": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337683": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337669": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337679": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337682": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337641": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337644": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337625": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337605": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337618": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337640": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337609": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337607": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337604": "2026-11-17",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63991": "2026-11-17",
+    "https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf": "2026-11-17",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/noticectgd_17112026.pdf": "2026-11-17"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-17T13:33:19.735Z",
+    "last": "2026-11-17T17:08:20.342Z",
     "pending": []
   },
   "sources": [
