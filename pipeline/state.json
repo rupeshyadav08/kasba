@@ -3628,13 +3628,15 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63985": "2026-11-17",
     "https://www.cbse.gov.in/cbsenew/documents/CBSE_PRASHAST_Portal_17112026.pdf": "2026-11-17",
     "https://www.cbse.gov.in/cbsenew/documents/TRG_MITRA_23_17112026.pdf": "2026-11-17",
-    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_456e8d97-4576-41a9-b84e-817827d961a1.pdf": "2026-11-17"
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_456e8d97-4576-41a9-b84e-817827d961a1.pdf": "2026-11-17",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337358": "2026-11-17"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-17T07:33:35.882Z",
     "pending": [
-      "census-2027-up-self-enumeration-from-16-30-nov-house-visits"
+      "census-2027-up-self-enumeration-from-16-30-nov-house-visits",
+      "cyclone-akvan-to-hit-andhra-coast-on-20-november-winds-up-to"
     ]
   },
   "sources": [
