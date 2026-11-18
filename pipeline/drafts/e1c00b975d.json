@@ -1,0 +1,96 @@
+{
+  "id": "e1c00b975d",
+  "createdAt": "2026-11-18T08:31:52.070Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "IMD (India Meteorological Department)",
+    "title": "Press Release Dated 18th November 2026:Severe Cyclonic Storm “Akvan” [Pronunciation: Akvan] over the central parts of south & adjoining westcentral Bay of Bengal.",
+    "link": "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2018-11-2026.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "weather",
+    "imageQuery": "cyclone bay of bengal india",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Press Release Dated 18th November 2026: Severe Cyclonic Storm “Akvan” over the central parts of south & adjoining westcentral Bay of Bengal.",
+    "sourceDate": "2026-11-18",
+    "hi": {
+      "title": "Cyclone Akvan: 20 नवंबर दोपहर तक आंध्र-ओडिशा तट पर टकराएगा, 110 kmph हवा",
+      "summary": "IMD ने 18 नवंबर 2026 को बताया कि Severe Cyclonic Storm “Akvan” 20 नवंबर की दोपहर तक आंध्र प्रदेश और ओडिशा तट से टकराएगा। इसका असर पूर्वी उत्तर प्रदेश, बिहार और मध्य प्रदेश में 20-23 नवंबर के बीच बारिश के रूप में दिख सकता है।",
+      "meaning": "यह चक्रवात मुख्य रूप से आंध्र प्रदेश, ओडिशा और तटीय इलाकों को प्रभावित करेगा। उत्तर प्रदेश, बिहार और मध्य प्रदेश के लोगों को सीधा खतरा नहीं है, लेकिन 20 से 23 नवंबर के बीच हल्की से मध्यम बारिश और कहीं-कहीं गरज-चमक हो सकती है। मछुआरों को समुद्र में न जाने की सलाह दी गई है।",
+      "keyFacts": [
+        "चक्रवात 20 नवंबर 2026 की दोपहर तक मछलीपट्टनम और पुरी के बीच तट पर टकराएगा।",
+        "हवा की रफ्तार 90-100 kmph और झोंकों में 110 kmph तक हो सकती है।",
+        "19-20 नवंबर को तटीय आंध्र प्रदेश और ओडिशा में कहीं-कहीं अत्यधिक भारी बारिश की संभावना है।",
+        "पूर्वी उत्तर प्रदेश में 21-22 नवंबर को छिटपुट से लेकर कहीं-कहीं बारिश हो सकती है।",
+        "बिहार में 21-22 नवंबर और पूर्वी मध्य प्रदेश में 20-23 नवंबर के बीच बारिश की संभावना है।",
+        "दिल्ली, हरियाणा, चंडीगढ़ और पंजाब में 19-22 नवंबर तक घना कोहरा रह सकता है।"
+      ],
+      "faq": [
+        {
+          "q": "Cyclone Akvan कब और कहाँ टकराएगा?",
+          "a": "20 नवंबर 2026 की दोपहर तक मछलीपट्टनम और पुरी के बीच उत्तरी आंध्र प्रदेश और दक्षिण ओडिशा तट पर। यह severe cyclonic storm रहेगा।"
+        },
+        {
+          "q": "क्या उत्तर प्रदेश या बिहार पर इसका असर होगा?",
+          "a": "सीधा खतरा नहीं है, लेकिन बारिश हो सकती है। पूर्वी उत्तर प्रदेश में 21-22 नवंबर को छिटपुट से कहीं-कहीं बारिश और 21 नवंबर को गरज-चमक के साथ 40-50 kmph की हवा चल सकती है। बिहार में 21-22 नवंबर को छिटपुट से कहीं-कहीं बारिश की संभावना है।"
+        },
+        {
+          "q": "मध्य प्रदेश में मौसम कैसा रहेगा?",
+          "a": "पश्चिमी मध्य प्रदेश में 21-22 नवंबर और पूर्वी मध्य प्रदेश में 20-23 नवंबर के बीच छिटपुट से कहीं-कहीं बारिश हो सकती है। पूर्वी मध्य प्रदेश में 20-21 नवंबर को गरज-चमक और 40-50 kmph की हवा की संभावना है।"
+        },
+        {
+          "q": "मछुआरों के लिए क्या चेतावनी है?",
+          "a": "मछुआरों को बंगाल की खाड़ी के कई हिस्सों में न जाने की सलाह दी गई है। दक्षिण-पूर्व बंगाल की खाड़ी में 18 नवंबर तक, दक्षिण-पश्चिम में 19 नवंबर तक, पश्चिम-मध्य और उत्तर-पश्चिम में 21 नवंबर सुबह तक और पूर्व-मध्य में 19 नवंबर तक मछली पकड़ने न जाएँ।"
+        },
+        {
+          "q": "दिल्ली में कोहरा कब तक रहेगा?",
+          "a": "IMD के अनुसार दिल्ली, हरियाणा, चंडीगढ़ और पंजाब में 19 से 22 नवंबर तक घना कोहरा रहने की बहुत संभावना है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nबंगाल की खाड़ी के मध्य-दक्षिणी हिस्से में चक्रवात “Akvan” 18 नवंबर 2026 की सुबह severe cyclonic storm में बदल गया। IMD के मुताबिक यह उत्तर-उत्तर-पश्चिम की ओर बढ़ रहा है और 20 नवंबर की दोपहर तक मछलीपट्टनम से पुरी के बीच उत्तरी आंध्र प्रदेश, यानम और दक्षिण ओडिशा तट से टकरा सकता है।\n\nटकराने के समय हवा की रफ्तार 90-100 kmph और झोंके 110 kmph तक हो सकते हैं। 18 नवंबर सुबह 8:30 बजे यह चक्रवात चेन्नई से करीब 570 km पूर्व, विशाखापत्तनम से 580 km दक्षिण-दक्षिण-पूर्व और पुरी से 770 km दक्षिण में था।\n\n## किस इलाके में क्या असर\n\nआंध्र प्रदेश और ओडिशा के तटीय इलाकों में 19-20 नवंबर को कहीं-कहीं अत्यधिक भारी बारिश की संभावना है। वहीं तटीय आंध्र प्रदेश और यानम में 19-20 नवंबर को गरज-चमक के साथ 80-90 kmph तक की हवा चल सकती है। ओडिशा में 19-20 नवंबर को thundersquall (50-60 kmph, झोंके 70 kmph) की संभावना जताई गई है।\n\nतट पर पानी भरने की चेतावनी भी है। Storm surge समुद्री ज्वार से 0.5 से 1.2 मीटर ऊपर उठकर आंध्र प्रदेश के पश्चिम गोदावरी, कोनसीमा, काकीनाडा, विजयनगरम, श्रीकाकुलम और विशाखापत्तनम तथा दक्षिण तटीय ओडिशा के गंजाम, खोरधा और पुरी जिलों के निचले इलाकों में पानी भर सकता है।\n\n## उत्तर भारत में क्या बदलेगा\n\nपूर्वी उत्तर प्रदेश में 21-22 नवंबर को छिटपुट से कहीं-कहीं बारिश हो सकती है। 21 नवंबर को वहाँ गरज-चमक और 40-50 kmph (झोंके 60 kmph) की हवा की संभावना है। बिहार में 21-22 नवंबर को छिटपुट से कहीं-कहीं बारिश रह सकती है।\n\nमध्य प्रदेश में पश्चिमी हिस्से में 21-22 नवंबर और पूर्वी हिस्से में 20-23 नवंबर के बीच बारिश हो सकती है। पूर्वी मध्य प्रदेश में 20-21 नवंबर को गरज-चमक और तेज हवा की संभावना है।\n\n## कोहरा और समुद्र\n\nदिल्ली, हरियाणा, चंडीगढ़ और पंजाब में 19 से 22 नवंबर तक घना कोहरा रहने की बहुत संभावना है। बंगाल की खाड़ी में समुद्र कई हिस्सों में very rough से very high रहेगा। मछुआरों को 18 से 21 नवंबर के बीच अलग-अलग हिस्सों में समुद्र में न जाने की सलाह दी गई है।\n\n## आगे क्या करें\n\nतटीय इलाकों में रहने वाले लोग मौसम विभाग की district-wise चेतावनी देखें और प्रशासन के निर्देश मानें। उत्तर भारत के लोगों को कोई खास तैयारी नहीं करनी है, बस 20-23 नवंबर के बीच बारिश और कोहरे को ध्यान में रखकर सफर की योजना बनाएँ। ताज़ा जानकारी के लिए IMD की वेबसाइट mausam.imd.gov.in देख सकते हैं।"
+    },
+    "en": {
+      "title": "Cyclone Akvan to hit Andhra-Odisha coast by noon of 20 November, winds up to 110 kmph",
+      "summary": "IMD said on 18 November 2026 that Severe Cyclonic Storm “Akvan” is likely to cross the north Andhra Pradesh and south Odisha coasts by noon of 20 November. Its effect may show up as rain over east Uttar Pradesh, Bihar and Madhya Pradesh between 20 and 23 November.",
+      "meaning": "The cyclone mainly affects coastal Andhra Pradesh, Odisha and nearby coastal areas. People in Uttar Pradesh, Bihar and Madhya Pradesh face no direct danger, but light to moderate rain and isolated thunder are possible between 20 and 23 November. Fishermen have been told not to go to sea.",
+      "keyFacts": [
+        "The cyclone is likely to cross the coast between Machilipatnam and Puri by noon of 20 November 2026.",
+        "Maximum sustained wind speed of 90-100 kmph, gusting to 110 kmph.",
+        "Isolated extremely heavy rainfall likely over coastal Andhra Pradesh and Odisha during 19-20 November.",
+        "Isolated to scattered rainfall likely over east Uttar Pradesh during 21-22 November.",
+        "Rain likely over Bihar during 21-22 November and over east Madhya Pradesh during 20-23 November.",
+        "Dense fog very likely over Delhi, Haryana, Chandigarh and Punjab during 19-22 November."
+      ],
+      "faq": [
+        {
+          "q": "When and where will Cyclone Akvan make landfall?",
+          "a": "By noon of 20 November 2026, between Machilipatnam and Puri, on the north Andhra Pradesh and south Odisha coasts. It will be a severe cyclonic storm at that time."
+        },
+        {
+          "q": "Will it affect Uttar Pradesh or Bihar?",
+          "a": "There is no direct danger, but rain is possible. East Uttar Pradesh may see isolated to scattered rainfall during 21-22 November, with thunder, lightning and winds of 40-50 kmph on 21 November. Bihar may see isolated to scattered rainfall during 21-22 November."
+        },
+        {
+          "q": "What will the weather be like in Madhya Pradesh?",
+          "a": "West Madhya Pradesh may see isolated to scattered rainfall during 21-22 November and east Madhya Pradesh during 20-23 November. East Madhya Pradesh may also see thunder, lightning and winds of 40-50 kmph during 20-21 November."
+        },
+        {
+          "q": "What is the warning for fishermen?",
+          "a": "Fishermen are advised not to venture into several parts of the Bay of Bengal. These are the southeast Bay of Bengal till 18 November, southwest till 19 November, westcentral and northwest till the morning of 21 November, and eastcentral till 19 November."
+        },
+        {
+          "q": "How long will the fog last in Delhi?",
+          "a": "According to IMD, dense fog is very likely over Delhi, Haryana, Chandigarh and Punjab during 19-22 November."
+        }
+      ],
+      "body": "## What has happened\n\nCyclone “Akvan” over the central parts of the south Bay of Bengal intensified into a severe cyclonic storm on the morning of 18 November 2026. According to IMD, it is moving north-northwestwards and is likely to cross the north Andhra Pradesh and Yanam and south Odisha coasts between Machilipatnam and Puri by noon of 20 November.\n\nAt landfall, maximum sustained wind speed is expected to be 90-100 kmph, gusting to 110 kmph. At 8:30 am on 18 November, the storm lay about 570 km east of Chennai, 580 km south-southeast of Visakhapatnam and 770 km south of Puri.\n\n## What the coast faces\n\nIsolated extremely heavy rainfall is likely over coastal Andhra Pradesh and Odisha during 19-20 November. Coastal Andhra Pradesh and Yanam may see isolated thunderstorm, lightning and gusty winds of 80-90 kmph during 19-20 November. Odisha may see a thundersquall (50-60 kmph, gusting to 70 kmph) during 19-20 November.\n\nThere is also a storm surge warning. A surge of 0.5 to 1.2 m above astronomical tide is very likely to inundate low-lying areas of Andhra Pradesh (West Godavari, Konaseema, Kakinada, Vijayanagaram, Srikakulam and Visakhapatnam districts) and south coastal Odisha (Ganjam, Khorda and Puri) at the time of landfall.\n\n## What changes in north India\n\nEast Uttar Pradesh may see isolated to scattered rainfall during 21-22 November. On 21 November, isolated thunderstorm, lightning and gusty winds of 40-50 kmph (gusting to 60 kmph) are likely there. Bihar may see isolated to scattered rainfall during 21-22 November.\n\nIn Madhya Pradesh, west Madhya Pradesh may see isolated to scattered rainfall during 21-22 November and east Madhya Pradesh during 20-23 November. East Madhya Pradesh may also see thunder, lightning and gusty winds during 20-21 November.\n\n## Fog and the sea\n\nDense fog is very likely over Delhi, Haryana, Chandigarh and Punjab during 19-22 November. Sea conditions in several parts of the Bay of Bengal will be very rough to very high. Fishermen are advised not to venture into the southeast Bay of Bengal till 18 November, the southwest till 19 November, the westcentral and northwest till the morning of 21 November, and the eastcentral till 19 November.\n\n## What to do next\n\nPeople living in coastal areas should follow IMD's district-wise warnings and the instructions of local authorities. People in north India need no special preparation, but should plan travel keeping in mind rain and fog between 20 and 23 November. For the latest updates, check IMD's website mausam.imd.gov.in."
+    }
+  }
+}
