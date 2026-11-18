@@ -3673,11 +3673,20 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63991": "2026-11-17",
     "https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf": "2026-11-17",
     "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/noticectgd_17112026.pdf": "2026-11-17",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf": "2026-11-18"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337782": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337737": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337779": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337721": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337717": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337715": "2026-11-18",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337733": "2026-11-18",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63993": "2026-11-18",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63992": "2026-11-18"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-18T02:02:11.877Z",
+    "last": "2026-11-18T07:32:54.999Z",
     "pending": []
   },
   "sources": [
