@@ -3672,11 +3672,12 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337604": "2026-11-17",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63991": "2026-11-17",
     "https://nta.ac.in/Download/Notice/Notice_20261117205801.pdf": "2026-11-17",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/noticectgd_17112026.pdf": "2026-11-17"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/noticectgd_17112026.pdf": "2026-11-17",
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/answer_key_17112026.pdf": "2026-11-18"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-17T17:08:20.342Z",
+    "last": "2026-11-18T02:02:11.877Z",
     "pending": []
   },
   "sources": [
