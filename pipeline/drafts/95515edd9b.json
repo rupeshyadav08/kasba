@@ -1,0 +1,96 @@
+{
+  "id": "95515edd9b",
+  "createdAt": "2026-11-18T13:05:59.947Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "डीआरआई ने दिल्ली में अवैध मादक पदार्थ निर्माण प्रयोगशाला का भंडाफोड़ कर 148 किलोग्राम अल्प्राजोलम इंटरमीडिएट तथा 1,046 किलोग्राम से अधिक कच्चा माल और रसायन जब्त किए; एक व्यक्ति गिरफ्तार",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2337881"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "health",
+    "imageQuery": "indian police seized chemicals",
+    "state": "delhi",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "डीआरआई ने दिल्ली में अवैध मादक पदार्थ निर्माण प्रयोगशाला का भंडाफोड़ कर 148 किलोग्राम अल्प्राजोलम इंटरमीडिएट तथा 1,046 किलोग्राम से अधिक कच्चा माल और रसायन जब्त किए; एक व्यक्ति गिरफ्तार",
+    "sourceDate": "2026-11-18",
+    "hi": {
+      "title": "Delhi के गाजीपुर में अवैध दवा लैब का भंडाफोड़: 148 किलो अल्प्राजोलम बरामद, एक गिरफ्तार",
+      "summary": "राजस्व आसूचना निदेशालय (DRI) ने 15-16 नवंबर 2026 को नई दिल्ली के गाजीपुर में कंप्यूटर दुकान की आड़ में चल रही अवैध अल्प्राजोलम बनाने की प्रयोगशाला पकड़ी और एक व्यक्ति को गिरफ्तार किया। यह कार्रवाई उन लोगों के लिए चेतावनी है जो बिना पर्चे के ऐसी दवाएं बेचते या खरीदते हैं, क्योंकि NDPS कानून के तहत इन पर सजा का प्रावधान है।",
+      "meaning": "आम नागरिकों को इस खबर से कोई फॉर्म भरने या आवेदन करने की जरूरत नहीं है। लेकिन अगर कोई बिना डॉक्टर के पर्चे के अल्प्राजोलम जैसी दवा बेचता या दिलाता है तो वह NDPS कानून के दायरे में आता है। अल्प्राजोलम एक प्रिस्क्रिप्शन दवा है, इसे डॉक्टर की सलाह के बिना न लें और न ही किसी अनजान जगह से खरीदें।",
+      "keyFacts": [
+        "कार्रवाई 15-16 नवंबर 2026 को नई दिल्ली के गाजीपुर में हुई।",
+        "148 किलोग्राम अल्प्राजोलम इंटरमीडिएट ठोस और तरल रूप में बरामद हुआ।",
+        "लगभग 1,046 किलोग्राम कच्चा माल और रसायन तथा 188 लीटर अतिरिक्त रसायन/तरल पदार्थ जब्त हुआ।",
+        "प्रयोगशाला कंप्यूटर की दुकान की आड़ में चलाई जा रही थी।",
+        "एक व्यक्ति को NDPS अधिनियम, 1985 के तहत गिरफ्तार किया गया।",
+        "इससे पहले 29 अक्टूबर 2026 को जालौन, उत्तर प्रदेश में भी एक गुप्त लैब पकड़ी गई थी।"
+      ],
+      "faq": [
+        {
+          "q": "अल्प्राजोलम क्या है?",
+          "a": "अल्प्राजोलम एक साइकोट्रॉपिक पदार्थ है जो बेंजोडायजेपाइन श्रेणी में आता है। यह डॉक्टर के पर्चे पर मिलने वाली दवा है, जिसे आमतौर पर जेनैक्स और अल्प्रैक्स जैसे ब्रांड नामों से बेचा जाता है और चिंता व घबराहट के इलाज में इस्तेमाल होता है।"
+        },
+        {
+          "q": "क्या अल्प्राजोलम बिना पर्चे के खरीद सकते हैं?",
+          "a": "नहीं, यह प्रिस्क्रिप्शन दवा है और NDPS अधिनियम, 1985 के तहत अधिसूचित साइकोट्रॉपिक पदार्थ है। इसके अनधिकृत निर्माण, कब्जे, बिक्री और वितरण पर कानून के तहत सजा का प्रावधान है।"
+        },
+        {
+          "q": "DRI ने दिल्ली में कब और कहां कार्रवाई की?",
+          "a": "DRI ने 15-16 नवंबर 2026 को नई दिल्ली के गाजीपुर में कार्रवाई की। वहां कंप्यूटर की दुकान की आड़ में एक गुप्त प्रयोगशाला चल रही थी।"
+        },
+        {
+          "q": "इस मामले में कितना सामान जब्त हुआ?",
+          "a": "148 किलोग्राम अल्प्राजोलम इंटरमीडिएट, लगभग 1,046 किलोग्राम कच्चा माल और रसायन तथा 188 लीटर अतिरिक्त रसायन/तरल पदार्थ जब्त किया गया। प्रयोगशाला के उपकरण और संबंधित सामग्री भी जब्त हुई।"
+        },
+        {
+          "q": "क्या इससे आम लोगों को कुछ करना है?",
+          "a": "नहीं, इस खबर में आम लोगों के लिए कोई आवेदन या फॉर्म भरने की बात नहीं है। बस ध्यान रखें कि अल्प्राजोलम जैसी दवाएं डॉक्टर के पर्चे के बिना न खरीदें और न बेचें।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nराजस्व आसूचना निदेशालय (DRI) ने 15-16 नवंबर 2026 को नई दिल्ली के गाजीपुर इलाके में एक अवैध प्रयोगशाला पकड़ी। यह जगह बाहर से कंप्यूटर की दुकान जैसी दिखती थी, लेकिन अंदर अल्प्राजोलम बनाने का पूरा काम चल रहा था। DRI को इसकी खुफिया जानकारी मिली थी, जिसके आधार पर तलाशी ली गई।\n\nतलाशी में वहां रासायनिक अभिक्रिया के उपकरण, वाटर चिलर, वैक्यूम एग्जॉस्ट मशीन और दूसरे उपकरण मिले। यानी यह कोई छोटा-मोटा धंधा नहीं, बल्कि पूरी तरह चल रही गुप्त प्रयोगशाला थी।\n\n## कितना सामान बरामद हुआ\n\nअधिकारियों ने ठोस और तरल रूप में 148 किलोग्राम अल्प्राजोलम इंटरमीडिएट बरामद किया। इसके अलावा लगभग 1,046 किलोग्राम कच्चा माल और रसायन तथा 188 लीटर अतिरिक्त रसायन या तरल पदार्थ भी मिला।\n\nNDPS अधिनियम, 1985 के प्रावधानों के तहत प्रयोगशाला के उपकरण और उससे जुड़ी सामग्री भी जब्त कर ली गई। प्रयोगशाला चलाने वाले व्यक्ति को इसी कानून के तहत गिरफ्तार किया गया है।\n\n## अल्प्राजोलम क्या है और इससे क्या फर्क पड़ता है\n\nअल्प्राजोलम बेंजोडायजेपाइन श्रेणी का साइकोट्रॉपिक पदार्थ है। बाजार में यह आमतौर पर जेनैक्स, अल्प्रैक्स जैसे ब्रांड नामों से मिलता है। यह डॉक्टर के पर्चे पर मिलने वाली दवा है और मुख्य रूप से चिंता व घबराहट से जुड़े विकारों के इलाज में इस्तेमाल होती है।\n\nलेकिन इसका दुरुपयोग, इसकी लत लगने की संभावना और गैरकानूनी तरीके से इसकी सप्लाई सार्वजनिक स्वास्थ्य के लिए चिंता की बात है। अल्प्राजोलम को NDPS अधिनियम, 1985 के तहत अधिसूचित साइकोट्रॉपिक पदार्थ माना गया है। इसका बिना अनुमति बनाना, रखना, बेचना या बांटना कानून के तहत दंडनीय है।\n\n## पहले भी हुई थी ऐसी कार्रवाई\n\nयह कार्रवाई DRI के उस अभियान के कुछ ही हफ्तों बाद हुई है, जिसमें 29 अक्टूबर 2026 को उत्तर प्रदेश के जालौन जिले में एक बड़ी गुप्त सिंथेटिक मादक पदार्थ बनाने की प्रयोगशाला पकड़ी गई थी। उस कार्रवाई में उत्तर प्रदेश एटीएस ने मदद की थी।\n\nजालौन में लगभग 1,100 किलोग्राम मादक पदार्थ और प्रीकर्सर केमिकल तथा बनाने के उपकरण जब्त हुए थे और दो लोगों को गिरफ्तार किया गया था। दिल्ली में इतने कम समय में दूसरी लैब पकड़ा जाना दिखाता है कि DRI ऐसे ठिकानों को खोजकर खत्म करने और गैरकानूनी सप्लाई चेन को रोकने पर ध्यान दे रहा है।\n\n## आम लोगों को क्या करना चाहिए\n\nइस खबर में आम नागरिकों के लिए कोई आवेदन, फॉर्म या तारीख नहीं है। लेकिन एक बात ध्यान रखें: अल्प्राजोलम जैसी दवाएं सिर्फ डॉक्टर के पर्चे पर ही लें और किसी अनजान या संदिग्ध जगह से न खरीदें। अगर कहीं ऐसी दवाओं की गैरकानूनी बिक्री दिखे तो स्थानीय पुलिस या संबंधित विभाग को सूचना दी जा सकती है।"
+    },
+    "en": {
+      "title": "Delhi's Ghazipur illegal drug lab busted: 148 kg alprazolam seized, one arrested",
+      "summary": "The Directorate of Revenue Intelligence (DRI) busted an illegal alprazolam-making laboratory in Ghazipur, New Delhi, on 15-16 November 2026, run behind the front of a computer shop, and arrested one person. The action is a warning to anyone who makes, sells or buys such prescription drugs without authorisation, which is punishable under the NDPS Act.",
+      "meaning": "Ordinary readers have nothing to apply for or claim because of this news. But it is a reminder that alprazolam is a prescription-only medicine and its unauthorised making, possession, sale or distribution is punishable under the NDPS Act, 1985. Do not buy such medicines without a doctor's prescription or from unknown sellers.",
+      "keyFacts": [
+        "The raid took place on 15-16 November 2026 in Ghazipur, New Delhi.",
+        "148 kg of alprazolam intermediate was seized in solid and liquid form.",
+        "About 1,046 kg of raw material and chemicals and 188 litres of additional chemicals/liquids were seized.",
+        "The laboratory was being run behind the front of a computer shop.",
+        "One person was arrested under the NDPS Act, 1985.",
+        "Earlier, on 29 October 2026, a similar secret lab was busted in Jalaun, Uttar Pradesh."
+      ],
+      "faq": [
+        {
+          "q": "What is alprazolam?",
+          "a": "Alprazolam is a psychotropic substance of the benzodiazepine class. It is a prescription medicine usually sold under brand names such as Zenax and Alprax and is mainly used to treat anxiety and panic disorders."
+        },
+        {
+          "q": "Can alprazolam be bought without a prescription?",
+          "a": "No. It is a prescription medicine and a notified psychotropic substance under the NDPS Act, 1985. Its unauthorised manufacture, possession, sale and distribution attract penal provisions under the Act."
+        },
+        {
+          "q": "When and where did the DRI act in Delhi?",
+          "a": "The DRI carried out the operation on 15-16 November 2026 in Ghazipur, New Delhi, where a secret laboratory was running behind the front of a computer shop."
+        },
+        {
+          "q": "How much material was seized in this case?",
+          "a": "148 kg of alprazolam intermediate, about 1,046 kg of raw material and chemicals, and 188 litres of additional chemicals/liquids were seized. Laboratory equipment and related material were also seized."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No. The notice asks nothing of ordinary readers. The only takeaway is to avoid buying or selling medicines like alprazolam without a doctor's prescription."
+        }
+      ],
+      "body": "## What happened\n\nThe Directorate of Revenue Intelligence (DRI) busted an illegal laboratory in Ghazipur, New Delhi, on 15-16 November 2026. From outside, the premises looked like a computer shop, but inside a full operation to make alprazolam was running. The raid was carried out on the basis of intelligence input.\n\nDuring the search, officials found equipment needed for chemical reactions, a water chiller, a vacuum exhaust machine and other tools used in manufacturing. In other words, this was a fully working secret laboratory, not a small-time operation.\n\n## What was seized\n\nOfficials seized 148 kg of alprazolam intermediate in solid and liquid form. In addition, about 1,046 kg of raw material and chemicals and 188 litres of additional chemicals or liquids were recovered.\n\nUnder the provisions of the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985, the laboratory equipment and related material were also seized. The person running the laboratory was arrested under the same Act.\n\n## What alprazolam is and why it matters\n\nAlprazolam is a psychotropic substance of the benzodiazepine class. In the market it is usually sold under brand names such as Zenax and Alprax. It is a prescription medicine, mainly used to treat anxiety and panic disorders.\n\nHowever, its misuse, the risk of dependence and its supply through illegal channels are a serious public health concern. Alprazolam is a notified psychotropic substance under the NDPS Act, 1985. Its unauthorised manufacture, possession, sale and distribution attract penal provisions under the Act.\n\n## An earlier crackdown\n\nThis operation came within weeks of a DRI action on 29 October 2026, when a large secret synthetic drug-making laboratory was busted in Jalaun district of Uttar Pradesh. The Uttar Pradesh ATS provided operational help in that operation.\n\nIn the Jalaun action, about 1,100 kg of drugs and precursor chemicals and manufacturing equipment were seized, and two persons were arrested. The busting of another lab in Delhi so soon after shows the DRI's growing focus on identifying and destroying illegal drug-making sites, removing large quantities of intermediates and precursor chemicals from the illegal supply chain, and stopping the networks behind them.\n\n## What should ordinary people do\n\nThere is no application, form or deadline for ordinary citizens in this news. One thing to keep in mind: take medicines like alprazolam only on a doctor's prescription and never buy them from unknown or suspicious sellers. If you see such medicines being sold illegally, you can inform the local police or the concerned department."
+    }
+  }
+}

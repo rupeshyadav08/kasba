@@ -1,0 +1,96 @@
+{
+  "id": "0f4ba23fbb",
+  "createdAt": "2026-11-18T13:08:01.257Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "UP Information Department",
+    "title": "खाद्य प्रसंस्करण उद्योग से बदलेगी ग्रामीण अर्थव्यवस्था की तस्वीर, किसानों की आय और युवाओं के रोजगार को मिलेगा नया विस्तार- श्री केशव प्रसाद मौर्य\n 17/Nov/2026",
+    "link": "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_f78776b3-a165-4b48-88e0-c1cbd309c5b3.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "money",
+    "imageQuery": "food processing factory india",
+    "state": "up",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "खाद्य प्रसंस्करण उद्योग से बदलेगी ग्रामीण अर्थव्यवस्था की तस्वीर, किसानों की आय और युवाओं के रोजगार को मिलेगा नया विस्तार- श्री केशव प्रसाद मौर्य",
+    "sourceDate": "2026-11-17",
+    "hi": {
+      "title": "UP खाद्य प्रसंस्करण नीति 2023: 48 निवेश प्रस्ताव SLEC को भेजने की संस्तुति",
+      "summary": "उत्तर प्रदेश में खाद्य प्रसंस्करण उद्योग नीति-2023 के तहत मिले 52 निवेश प्रस्तावों में से 48 को राज्य स्तरीय समिति (SLEC) के पास भेजने की संस्तुति की गई है। इससे प्रदेश में खाद्य प्रसंस्करण इकाइयों, सोलर प्लांट और महिला उद्यमियों की इकाइयों को बढ़ावा मिलने की उम्मीद है।",
+      "meaning": "यह खबर सीधे आम नागरिक के लिए कोई नई योजना या आवेदन की तारीख नहीं बताती। इसका असर उन लोगों पर पड़ेगा जो खाद्य प्रसंस्करण का कारोबार चलाते हैं या नई इकाई लगाना चाहते हैं, और उन किसानों पर जिनसे ये इकाइयाँ कच्चा माल लेंगी। आम पाठक को कुछ करने की जरूरत नहीं है; नीति-2023 के प्रोत्साहनों की जानकारी विभागीय अधिकारियों से ली जा सकती है।",
+      "keyFacts": [
+        "52 निवेश प्रस्तावों की समीक्षा हुई, 48 को निर्धारित शर्तों के साथ संस्तुति मिली",
+        "4 प्रस्तावों पर कमियों के कारण संस्तुति नहीं दी गई",
+        "25 जनपदों में लगभग 4,000 करोड़ रुपये के 48 निवेश प्रस्ताव चयनित",
+        "35 सोलर पावर प्लांट लगाने के प्रस्ताव भी प्रगति पर",
+        "अब तक लगभग 600 करोड़ रुपये की प्रोत्साहन राशि वितरित, 400 परियोजनाएँ पूरी",
+        "बैठक 17 नवंबर 2026 को खाद्य प्रसंस्करण निदेशालय में हुई"
+      ],
+      "faq": [
+        {
+          "q": "UP खाद्य प्रसंस्करण नीति 2023 में कितने प्रस्तावों को मंजूरी मिली?",
+          "a": "अभी सिर्फ संस्तुति हुई है, मंजूरी नहीं। 52 प्रस्तावों में से 48 को राज्य स्तरीय अधिकार प्राप्त समिति (SLEC) के समक्ष भेजने की संस्तुति की गई है।"
+        },
+        {
+          "q": "जिन 4 प्रस्तावों पर संस्तुति नहीं मिली, उनका क्या होगा?",
+          "a": "उनमें पाई गई कमियों और औपचारिकताओं को पूरा करने के बाद नियमानुसार दोबारा विचार किया जाएगा।"
+        },
+        {
+          "q": "इन प्रस्तावों में किस तरह की इकाइयाँ शामिल हैं?",
+          "a": "बेकरी और बिस्कुट, आटा प्रसंस्करण, मसाला निर्माण, डेयरी और दुग्ध उत्पाद, नमकीन तथा अन्य खाद्य उत्पादों की नई इकाइयाँ और मौजूदा इकाइयों का विस्तार शामिल है। सोलर पावर प्लांट के प्रस्ताव भी इसमें हैं।"
+        },
+        {
+          "q": "क्या इन इकाइयों को कच्चा माल किसानों से लेना होगा?",
+          "a": "समिति ने इकाइयों को कच्चे माल की आपूर्ति स्थानीय कृषकों और दुग्ध उत्पादकों के माध्यम से सुनिश्चित करने पर जोर दिया है।"
+        },
+        {
+          "q": "आम आदमी इस योजना का फायदा कैसे उठा सकता है?",
+          "a": "सूचना में आवेदन की कोई तारीख या तरीका नहीं दिया गया है। इच्छुक उद्यमी खाद्य प्रसंस्करण विभाग के अधिकारियों से नीति-2023 के प्रोत्साहनों की जानकारी ले सकते हैं।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nउत्तर प्रदेश में खाद्य प्रसंस्करण उद्योग नीति-2023 के तहत ऑनलाइन पोर्टल से कुल 52 नए निवेश प्रस्ताव मिले थे। 17 नवंबर 2026 को खाद्य प्रसंस्करण निदेशालय में अपर मुख्य सचिव बी.एल. मीणा की अध्यक्षता में अप्रेजल समिति की बैठक हुई। समिति ने सभी प्रस्तावों की नीति के प्रावधानों, पात्रता मानकों और उपलब्ध अभिलेखों के आधार पर जाँच की।\n\nजाँच के बाद 48 प्रस्तावों को निर्धारित शर्तों के पालन के साथ राज्य स्तरीय अधिकार प्राप्त समिति (SLEC) के समक्ष विचार के लिए भेजने की संस्तुति की गई। बाकी 4 प्रस्तावों में कमियाँ मिलीं, इसलिए उन पर संस्तुति नहीं दी गई। इन पर कमियाँ और औपचारिकताएँ पूरी होने के बाद नियमानुसार दोबारा विचार किया जाएगा।\n\n## किन इकाइयों के प्रस्ताव हैं\n\nसंस्तुत प्रस्तावों में बेकरी और बिस्कुट निर्माण, आटा प्रसंस्करण, मसाला निर्माण, डेयरी और दुग्ध उत्पाद, नमकीन तथा अन्य खाद्य उत्पादों की नई इकाइयाँ लगाने और पुरानी इकाइयों का विस्तार करने के प्रस्ताव शामिल हैं। इनमें सोलर पावर प्लांट लगाने के प्रस्ताव भी हैं, ताकि खाद्य प्रसंस्करण इकाइयों में नवीकरणीय ऊर्जा का इस्तेमाल बढ़े।\n\nप्रस्तावों में सूक्ष्म और लघु उद्यमों के साथ महिला उद्यमियों की इकाइयाँ और टेक होम राशन (THR) से जुड़ी इकाइयाँ भी हैं। सूचना के मुताबिक इससे महिला उद्यमिता को बढ़ावा मिलेगा और ग्रामीण क्षेत्रों में स्थानीय रोजगार के अवसर बढ़ सकते हैं।\n\n## अब तक की प्रगति\n\nसूचना के अनुसार नीति-2023 के लागू होने के बाद से खाद्य प्रसंस्करण क्षेत्र में अब तक लगभग 600 करोड़ रुपये की प्रोत्साहन राशि वितरित की जा चुकी है और 400 परियोजनाएँ पूरी हो चुकी हैं। 200 परियोजनाओं को दोनों किस्तें और 300 परियोजनाओं को पहली किस्त की प्रोत्साहन राशि दी गई है।\n\nप्रदेश के 25 जनपदों में लगभग 4,000 करोड़ रुपये के 48 निवेश प्रस्ताव चयनित किए गए हैं। हरित ऊर्जा को बढ़ावा देने के लिए 35 सोलर पावर प्लांट लगाने के प्रस्ताव भी प्रगति पर हैं।\n\n## इकाइयों से क्या कहा गया\n\nसमिति ने इकाइयों को निर्धारित शर्तों के अनुसार जरूरी प्रमाण-पत्र, पिछले दो वर्षों के आयकर और GST रिटर्न तथा अन्य अभिलेख देने के निर्देश दिए हैं। साथ ही कच्चे माल की आपूर्ति स्थानीय किसानों और दुग्ध उत्पादकों से सुनिश्चित करने तथा तय मानकों के अनुसार उत्पादन क्षमता का उपयोग करने पर जोर दिया गया।\n\n## आम लोगों के लिए क्या मतलब\n\nयह सूचना किसी नई योजना में आवेदन करने या कोई तारीख याद रखने के बारे में नहीं है। आम पाठक को इससे सीधे कुछ करने की जरूरत नहीं है। इसका फायदा उन लोगों को मिल सकता है जो खाद्य प्रसंस्करण का काम करते हैं या नई इकाई लगाना चाहते हैं, और उन किसानों को जिनसे ये इकाइयाँ कच्चा माल खरीदेंगी।"
+    },
+    "en": {
+      "title": "UP Food Processing Policy 2023: 48 investment proposals recommended for SLEC",
+      "summary": "Of 52 investment proposals received under Uttar Pradesh's Food Processing Industry Policy-2023, 48 have been recommended for the State Level Empowered Committee (SLEC). The proposals cover new food processing units, solar plants and women-run enterprises.",
+      "meaning": "This notice does not announce a new scheme or an application date for ordinary citizens. It matters to people who run or want to set up food processing units, and to farmers who may supply raw material to them. Most readers do not need to do anything; those interested can ask the Food Processing Department about the incentives under Policy-2023.",
+      "keyFacts": [
+        "52 investment proposals reviewed; 48 recommended with prescribed conditions",
+        "4 proposals not recommended due to shortcomings",
+        "48 selected proposals worth about Rs 4,000 crore across 25 districts",
+        "Proposals for 35 solar power plants also in progress",
+        "About Rs 600 crore incentive disbursed so far; 400 projects completed",
+        "Appraisal committee meeting held on 17 November 2026 at the Food Processing Directorate"
+      ],
+      "faq": [
+        {
+          "q": "How many proposals were approved under UP Food Processing Policy 2023?",
+          "a": "They have only been recommended so far, not approved. Of 52 proposals, 48 were recommended for consideration by the State Level Empowered Committee (SLEC)."
+        },
+        {
+          "q": "What happens to the 4 proposals that were not recommended?",
+          "a": "They will be reconsidered as per rules once the shortcomings and formalities found in them are completed."
+        },
+        {
+          "q": "What kind of units are covered in these proposals?",
+          "a": "They include new units and expansion of existing units for bakery and biscuits, flour processing, spices, dairy and milk products, namkeen and other food products, along with solar power plant proposals."
+        },
+        {
+          "q": "Will these units have to buy raw material from farmers?",
+          "a": "The committee stressed ensuring raw material supply through local farmers and milk producers."
+        },
+        {
+          "q": "How can an ordinary person benefit from this policy?",
+          "a": "The notice gives no application date or procedure. Interested entrepreneurs can ask Food Processing Department officials about the incentives under Policy-2023."
+        }
+      ],
+      "body": "## What happened\n\nUnder Uttar Pradesh's Food Processing Industry Policy-2023, a total of 52 new investment proposals were received through the online portal. On 17 November 2026, an appraisal committee meeting was held at the Food Processing Directorate, chaired by Additional Chief Secretary B.L. Meena. The committee examined every proposal against the policy's provisions, eligibility standards and available records.\n\nAfter the review, 48 proposals were recommended to be placed before the State Level Empowered Committee (SLEC) for consideration, subject to compliance with prescribed conditions. The remaining 4 proposals were not recommended because shortcomings were found; they will be reconsidered as per rules once those shortcomings and formalities are completed.\n\n## What kind of units are proposed\n\nThe recommended proposals cover new units and expansion of existing ones for bakery and biscuits, flour processing, spices, dairy and milk products, namkeen and other food products. They also include proposals for solar power plants, to increase the use of renewable energy in food processing units.\n\nThe proposals include micro and small enterprises, units run by women entrepreneurs, and units linked to Take Home Ration (THR). According to the notice, this is expected to encourage women's entrepreneurship and create local employment opportunities in rural areas.\n\n## Progress so far\n\nAccording to the notice, about Rs 600 crore of incentive money has been disbursed in the food processing sector so far and 400 projects have been completed. Two instalments have been given to 200 projects and the first instalment to 300 projects.\n\nIn 25 districts of the state, 48 investment proposals worth about Rs 4,000 crore have been selected. Proposals for setting up 35 solar power plants are also in progress to promote green energy.\n\n## What units have been told\n\nThe committee directed the units to provide the necessary certificates, income tax and GST returns for the past two years, and other required records as per the prescribed conditions. It also stressed ensuring raw material supply through local farmers and milk producers, and using production capacity as per the set standards.\n\n## What it means for ordinary people\n\nThis notice is not about applying to a new scheme or remembering a date. Ordinary readers do not need to do anything. The benefit may reach those who run food processing businesses or want to set up a unit, and farmers who supply raw material to such units."
+    }
+  }
+}
