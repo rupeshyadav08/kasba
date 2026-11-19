@@ -3792,15 +3792,37 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_50cf14c8-8f90-4744-bcf8-0eaf5ef9bf32.pdf": "2026-11-19",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_05be15ab-4164-4aad-bf45-3dec18c6184f.pdf": "2026-11-19",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_3b912229-0a91-43fe-afb3-0e776e6b2d8c.pdf": "2026-11-19",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_0571115d-69ce-44de-81ca-273f62180b5c.pdf": "2026-11-19"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_0571115d-69ce-44de-81ca-273f62180b5c.pdf": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338801": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338799": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338790": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338810": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338795": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338749": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338770": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338697": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338768": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338784": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338738": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338767": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338704": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338729": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338700": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338739": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338714": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338730": "2026-11-19",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64004": "2026-11-19",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64003": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_b83200c5-34a6-43ca-9fba-687b69932a23.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_22ab1f18-c43c-47f4-aa17-cc2f839f1734.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bf666c37-eb9c-4d3f-a677-20c9828f02d0.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_deed38ca-e853-41f0-aa43-280d79b4848d.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_afca4815-f9f1-47a3-a8d1-5d303fc2a6b3.pdf": "2026-11-19"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-19T13:04:35.084Z",
-    "pending": [
-      "ayush-quality-mark-certificates-given-to-hospitals-and",
-      "epf-withdrawal-relief-only-10-to-stay-in-account-final"
-    ]
+    "last": "2026-11-19T16:37:45.079Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
