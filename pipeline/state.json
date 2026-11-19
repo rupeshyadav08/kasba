@@ -3817,16 +3817,14 @@
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_22ab1f18-c43c-47f4-aa17-cc2f839f1734.pdf": "2026-11-19",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_bf666c37-eb9c-4d3f-a677-20c9828f02d0.pdf": "2026-11-19",
     "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_deed38ca-e853-41f0-aa43-280d79b4848d.pdf": "2026-11-19",
-    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_afca4815-f9f1-47a3-a8d1-5d303fc2a6b3.pdf": "2026-11-19"
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_afca4815-f9f1-47a3-a8d1-5d303fc2a6b3.pdf": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338850": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338845": "2026-11-19"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-19T16:37:45.079Z",
-    "pending": [
-      "fake-medicine-syndicate-probe-begins-in-varanasi-unlicensed",
-      "cm-abhyuday-yojana-438-students-from-40-up-coaching-centres",
-      "lucknow-traffic-challan-special-lok-adalat-on-28-november-to"
-    ]
+    "last": "2026-11-19T21:49:56.672Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
