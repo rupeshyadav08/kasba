@@ -3822,7 +3822,11 @@
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-19T16:37:45.079Z",
-    "pending": []
+    "pending": [
+      "fake-medicine-syndicate-probe-begins-in-varanasi-unlicensed",
+      "cm-abhyuday-yojana-438-students-from-40-up-coaching-centres",
+      "lucknow-traffic-challan-special-lok-adalat-on-28-november-to"
+    ]
   },
   "sources": [
     "pib-hi",
