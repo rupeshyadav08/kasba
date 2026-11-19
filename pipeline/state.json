@@ -3744,12 +3744,23 @@
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64000": "2026-11-19",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63999": "2026-11-19",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63998": "2026-11-19",
-    "https://nta.ac.in/Download/Notice/Notice_20261119125453.pdf": "2026-11-19"
+    "https://nta.ac.in/Download/Notice/Notice_20261119125453.pdf": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338365": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338350": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338370": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338339": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338324": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338352": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338341": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_4083a31d-e657-4027-83e0-f0570be9a3d5.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_567528ea-0809-44c8-8585-36bd2a972738.pdf": "2026-11-19"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-19T07:34:59.552Z",
-    "pending": []
+    "pending": [
+      "ugc-net-december-2026-exam-in-cbt-mode-from-4-to-24-december"
+    ]
   },
   "sources": [
     "pib-hi",
