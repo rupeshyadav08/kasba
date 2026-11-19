@@ -3782,12 +3782,25 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338469": "2026-11-19",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64002": "2026-11-19",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64001": "2026-11-19",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative%20answer%20key%20of%20JE_2026_P_1_19112026.pdf": "2026-11-19"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative%20answer%20key%20of%20JE_2026_P_1_19112026.pdf": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338677": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338673": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338685": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338692": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338675": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_a87b4af1-8e69-4bde-8019-b491e864acf4.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_50cf14c8-8f90-4744-bcf8-0eaf5ef9bf32.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_05be15ab-4164-4aad-bf45-3dec18c6184f.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_3b912229-0a91-43fe-afb3-0e776e6b2d8c.pdf": "2026-11-19",
+    "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_0571115d-69ce-44de-81ca-273f62180b5c.pdf": "2026-11-19"
   },
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-19T13:04:35.084Z",
-    "pending": []
+    "pending": [
+      "ayush-quality-mark-certificates-given-to-hospitals-and",
+      "epf-withdrawal-relief-only-10-to-stay-in-account-final"
+    ]
   },
   "sources": [
     "pib-hi",
