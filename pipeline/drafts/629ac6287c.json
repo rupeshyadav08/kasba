@@ -1,0 +1,98 @@
+{
+  "id": "629ac6287c",
+  "createdAt": "2026-11-19T09:01:52.567Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "IMD (India Meteorological Department)",
+    "title": "Press Release Date: 19th November 2026",
+    "link": "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2019-11-2026.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "weather",
+    "imageQuery": "foggy road north india morning",
+    "state": "up",
+    "districts": [
+      "ballia",
+      "azamgarh",
+      "ayodhya"
+    ],
+    "deadline": null,
+    "sourceTitle": "Press Release Date: 19th November 2026",
+    "sourceDate": "2026-11-19",
+    "hi": {
+      "title": "IMD alert: यूपी के पूर्वी ज़िलों में घना कोग, 22-23 नवंबर तक रहेगा असर",
+      "summary": "मौसम विभाग (IMD) ने 19 नवंबर 2026 को बताया कि बंगाल की खाड़ी में बना Severe Cyclonic Storm \"Akvan\" 20 नवंबर की दोपहर तक आंध्र प्रदेश और ओडिशा के तट से टकराएगा। इसी बुलेटिन में पूर्वी उत्तर प्रदेश में घने कोहरे का अलर्ट भी दिया गया है, जिसका असर 22-23 नवंबर तक रह सकता है।",
+      "meaning": "यह चेतावनी सबसे ज़्यादा आंध्र प्रदेश और ओडिशा के तटीय इलाकों के लोगों के लिए है, जहाँ तेज़ हवा और भारी बारिश का खतरा है। उत्तर प्रदेश, बिहार, दिल्ली और मध्य प्रदेश के लोगों को तूफ़ान से सीधा खतरा नहीं है, लेकिन पूर्वी यूपी में घने कोहरे के कारण सुबह-सुबह सड़क पर निकलने वालों को सावधानी रखनी चाहिए। मछुआरों को बंगाल की खाड़ी में तय तारीखों तक न जाने की सलाह दी गई है।",
+      "keyFacts": [
+        "तूफ़ान \"Akvan\" 20 नवंबर 2026 की दोपहर तक नरसापुर और पुरी के बीच तट से टकरा सकता है।",
+        "हवा की रफ़्तार 90-100 किमी प्रति घंटा, कुछ झोंके 110 किमी प्रति घंटा तक हो सकते हैं।",
+        "19 नवंबर को पूर्वी उत्तर प्रदेश में कुछ जगहों पर कोहरा 200 मीटर से कम दिखाई दिया — बलिया, आज़मगढ़ और अयोध्या में।",
+        "पूर्वी यूपी में घना कोहरा 19 नवंबर और 22-23 नवंबर को रह सकता है।",
+        "दिल्ली, हरियाणा, चंडीगढ़ और पंजाब में 20-22 नवंबर को घने कोहरे की संभावना है।"
+      ],
+      "faq": [
+        {
+          "q": "Akvan तूफ़ान कब और कहाँ टकराएगा?",
+          "a": "20 नवंबर 2026 की दोपहर तक, नरसापुर और पुरी के बीच गोपालपुर के पूर्व की ओर। IMD के मुताबिक यह उत्तर आंध्र प्रदेश, यनम और दक्षिण ओडिशा के तट से टकराएगा।"
+        },
+        {
+          "q": "क्या उत्तर प्रदेश में तूफ़ान का असर होगा?",
+          "a": "नहीं, बुलेटिन में यूपी के लिए तूफ़ान का कोई अलर्ट नहीं है। यूपी के लिए सिर्फ़ घने कोहरे की चेतावनी दी गई है।"
+        },
+        {
+          "q": "पूर्वी यूपी में कोहरा कब-कब रहेगा?",
+          "a": "19 नवंबर को और फिर 22-23 नवंबर को घना कोहरा रह सकता है। 19 नवंबर की सुबह बलिया, आज़मगढ़ और अयोध्या में दृश्यता 200 मीटर से कम दर्ज की गई।"
+        },
+        {
+          "q": "मछुआरों के लिए क्या सलाह है?",
+          "a": "मछुआरों को बंगाल की खाड़ी के कुछ हिस्सों में तय तारीखों तक न जाने की सलाह दी गई है — जैसे पश्चिम-मध्य बंगाल की खाड़ी में 21 नवंबर सुबह तक।"
+        },
+        {
+          "q": "अपने ज़िले का मौसम अलर्ट कहाँ देखें?",
+          "a": "IMD की वेबसाइट mausam.imd.gov.in पर ज़िला-वार चेतावनी वाला पेज देखा जा सकता है।"
+        }
+      ],
+      "body": "## क्या कहा गया है\n\nमौसम विभाग ने 19 नवंबर 2026 की दोपहर जारी बुलेटिन में बताया कि बंगाल की खाड़ी के पश्चिम-मध्य हिस्से में बना Severe Cyclonic Storm \"Akvan\" उत्तर-उत्तर-पश्चिम की ओर बढ़ रहा है। यह 20 नवंबर की दोपहर तक उत्तर आंध्र प्रदेश, यनम और दक्षिण ओडिशा के तट से नरसापुर और पुरी के बीच, गोपालपुर के पूर्व की ओर टकरा सकता है।\n\nटकराने के समय हवा की रफ़्तार 90-100 किमी प्रति घंटा और झोंके 110 किमी प्रति घंटा तक हो सकते हैं। 19 नवंबर सुबह 8:30 बजे तूफ़ान नरसापुर से करीब 420 किमी दूर बताया गया था।\n\n## किस इलाके में क्या असर\n\nआंध्र प्रदेश और यनम के तटीय इलाकों में 19 नवंबर को कहीं-कहीं बहुत भारी बारिश हो सकती है। ओडिशा में 19 और 20 नवंबर को बहुत भारी बारिश की संभावना है। तटीय इलाकों में तेज़ हवा के साथ बारिश का असर रहेगा।\n\nबुलेटिन के मुताबिक तट से टकराने के समय आंध्र प्रदेश के पश्चिम गोदावरी, कोनसीमा, काकीनाडा, विजयनगरम, श्रीकाकुलम और विशाखापत्तनम तथा दक्षिण तटीय ओडिशा के गंजाम और पुरी ज़िलों के निचले इलाकों में समुद्री पानी भर सकता है।\n\n## उत्तर भारत में कोहरा\n\nबुलेटिन में पूर्वी उत्तर प्रदेश के लिए घने कोहरे की चेतावनी है। 19 नवंबर को और फिर 22-23 नवंबर को घना कोहरा रह सकता है। 19 नवंबर की सुबह बलिया, आज़मगढ़ और अयोध्या में दृश्यता 200 मीटर से कम दर्ज की गई।\n\nदिल्ली, हरियाणा, चंडीगढ़ और पंजाब में 20-22 नवंबर और पश्चिमी उत्तर प्रदेश में 21-23 नवंबर को घने कोहरे की संभावना जताई गई है।\n\n## मछुआरों के लिए सलाह\n\nमछुआरों को बंगाल की खाड़ी के कुछ हिस्सों में तय तारीखों तक न जाने की सलाह दी गई है। पश्चिम-मध्य बंगाल की खाड़ी में 21 नवंबर सुबह तक और उत्तर-पश्चिम बंगाल की खाड़ी में भी 21 नवंबर सुबह तक जाने से मना किया गया है।\n\n## ज़्यादा जानकारी कहाँ\n\nज़िला-वार मौसम चेतावनी IMD की वेबसाइट mausam.imd.gov.in पर देखी जा सकती है। मछुआरों की चेतावनी के लिए अलग पेज भी बुलेटिन में बताया गया है।"
+    },
+    "en": {
+      "title": "IMD alert: Dense fog in east UP on 19 Nov, again on 22-23 Nov; Cyclone Akvan to hit coast",
+      "summary": "IMD said on 19 November 2026 that Severe Cyclonic Storm \"Akvan\" over the Bay of Bengal will cross the north Andhra Pradesh and south Odisha coast by noon of 20 November. The same bulletin warns of dense fog in East Uttar Pradesh on 19 November and again on 22-23 November.",
+      "meaning": "The cyclone warning matters most to people on the Andhra Pradesh and Odisha coast, where strong winds and very heavy rain are expected. For readers in UP, Bihar, Delhi and MP there is no direct cyclone threat, but dense fog in East UP means morning travellers should be careful on the road. Fishermen have been told to stay away from parts of the Bay of Bengal until the dates listed.",
+      "keyFacts": [
+        "Cyclone \"Akvan\" is likely to cross the coast between Narsapur and Puri, close to east of Gopalpur, by noon of 20 November 2026.",
+        "Wind speed at landfall may be 90-100 kmph, gusting to 110 kmph.",
+        "On 19 November, visibility below 200 m was reported in Ballia, Azamgarh and Ayodhya in East Uttar Pradesh.",
+        "Dense fog is likely over East UP on 19 November and during 22-23 November.",
+        "Dense fog is likely over Delhi, Haryana, Chandigarh and Punjab during 20-22 November."
+      ],
+      "faq": [
+        {
+          "q": "When and where will Cyclone Akvan make landfall?",
+          "a": "By noon of 20 November 2026, between Narsapur and Puri, close to east of Gopalpur. IMD says it will cross the north Andhra Pradesh, Yanam and south Odisha coasts."
+        },
+        {
+          "q": "Will the cyclone affect Uttar Pradesh?",
+          "a": "No, the bulletin gives no cyclone warning for UP. The only warning for UP is for dense fog."
+        },
+        {
+          "q": "When will dense fog hit East Uttar Pradesh?",
+          "a": "Dense fog is very likely on 19 November and again during 22-23 November. On the morning of 19 November, visibility below 200 m was reported in Ballia, Azamgarh and Ayodhya."
+        },
+        {
+          "q": "What is the advice for fishermen?",
+          "a": "Fishermen are advised not to venture into parts of the Bay of Bengal until the dates given, such as the westcentral Bay of Bengal till the morning of 21 November."
+        },
+        {
+          "q": "Where can I check the warning for my district?",
+          "a": "District-wise weather warnings are available on the IMD website, mausam.imd.gov.in."
+        }
+      ],
+      "body": "## What the bulletin says\n\nIn a press release issued on the afternoon of 19 November 2026, the India Meteorological Department said Severe Cyclonic Storm \"Akvan\" over the westcentral Bay of Bengal is moving north-northwestwards. It is likely to cross the north Andhra Pradesh, Yanam and south Odisha coasts between Narsapur and Puri, close to east of Gopalpur, by noon of 20 November.\n\nAt landfall, maximum sustained wind speed may be 90-100 kmph, gusting to 110 kmph. At 8:30 am on 19 November the storm lay about 420 km east-southeast of Narsapur.\n\n## Which areas are affected\n\nIsolated extremely heavy rainfall is likely over coastal Andhra Pradesh and Yanam on 19 November, and over Odisha on 19 and 20 November. Thundersquall conditions with strong winds are also forecast for the Odisha coast during these two days.\n\nAccording to the bulletin, a storm surge may inundate low-lying areas of West Godavari, Konaseema, Kakinada, Vizianagaram, Srikakulam and Visakhapatnam districts of Andhra Pradesh, and Ganjam and Puri districts of south coastal Odisha, at the time of landfall.\n\n## Fog in North India\n\nFor East Uttar Pradesh, dense fog is very likely on 19 November and during 22-23 November. On the morning of 19 November, visibility below 200 metres was reported in Ballia, Azamgarh and Ayodhya.\n\nDense fog is also likely over Haryana, Chandigarh, Delhi and Punjab during 20-22 November, and over West Uttar Pradesh during 21-23 November.\n\n## Advice for fishermen\n\nFishermen are advised not to venture into parts of the Bay of Bengal until the dates given. These include the westcentral Bay of Bengal till the morning of 21 November and the northwest Bay of Bengal till the morning of 21 November.\n\n## Where to get more information\n\nDistrict-wise multi-hazard weather warnings are available on the IMD website, mausam.imd.gov.in. The bulletin also points to a separate page for fishermen warnings."
+    }
+  }
+}
