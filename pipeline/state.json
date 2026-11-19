@@ -3753,14 +3753,22 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338352": "2026-11-19",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338341": "2026-11-19",
     "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_4083a31d-e657-4027-83e0-f0570be9a3d5.pdf": "2026-11-19",
-    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_567528ea-0809-44c8-8585-36bd2a972738.pdf": "2026-11-19"
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_567528ea-0809-44c8-8585-36bd2a972738.pdf": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338459": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338411": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338429": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338384": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338386": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338454": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338417": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338382": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338431": "2026-11-19",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338416": "2026-11-19"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-19T07:34:59.552Z",
-    "pending": [
-      "ugc-net-december-2026-exam-in-cbt-mode-from-4-to-24-december"
-    ]
+    "last": "2026-11-19T10:31:24.580Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
