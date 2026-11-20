@@ -1,0 +1,33 @@
+name: Desi Sherlock upload
+
+# One-off: uploads youtube/desi-sherlock/short.mp4 to the channel as a scheduled Short.
+# Runs only on a push that touches youtube/desi-sherlock/ on this branch.
+on:
+  push:
+    branches: [claude/project-thread-qrvqdq]
+    paths: ['youtube/desi-sherlock/**']
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Token scopes
+        run: |
+          curl -s https://oauth2.googleapis.com/token -d client_id="$YT_CLIENT_ID" -d client_secret="$YT_CLIENT_SECRET" \
+            -d refresh_token="$YT_REFRESH_TOKEN" -d grant_type=refresh_token | python3 -c 'import json,sys; print("scope:", json.load(sys.stdin).get("scope"))'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      - run: node scripts/youtube-upload.mjs
+        env:
+          SHORT_DIR: youtube/desi-sherlock/
+          YT_PUBLISH_AT: '2026-11-21T06:30:00Z'
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
