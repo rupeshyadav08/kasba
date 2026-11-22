@@ -3984,11 +3984,18 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339852": "2026-11-22",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339829": "2026-11-22",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339891": "2026-11-22",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339904": "2026-11-22"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339904": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339987": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339976": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339963": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339992": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339922": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339918": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339920": "2026-11-22"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-22T09:54:11.695Z",
+    "last": "2026-11-22T13:32:34.234Z",
     "pending": []
   },
   "sources": [
