@@ -3982,16 +3982,14 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339782": "2026-11-21",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339856": "2026-11-22",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339852": "2026-11-22",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339829": "2026-11-22"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339829": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339891": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339904": "2026-11-22"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-22T07:33:24.736Z",
-    "pending": [
-      "delhi-air-cargo-cocaine-worth-about-5-crore-seized-smuggling",
-      "operation-monsoon-thunder-ncb-and-us-dea-arrest-6-seize",
-      "kota-accident-rs-2-lakh-from-pmnrf-for-families-of-the-dead"
-    ]
+    "last": "2026-11-22T09:54:11.695Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
