@@ -4023,14 +4023,20 @@
     "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_f4d956e3-33a1-4f5c-a979-d7c6d3f23c2f.pdf": "2026-11-23",
     "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_2339e797-036f-406b-9924-a96e61cb8a22.pdf": "2026-11-23",
     "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_26c9d670-4915-488e-98e9-1f445a589337.pdf": "2026-11-23",
-    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_32189664-9a00-4684-8a10-a9fdfd8071b7.pdf": "2026-11-23"
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_32189664-9a00-4684-8a10-a9fdfd8071b7.pdf": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340336": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340292": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340274": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340311": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340293": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340290": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340261": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64024": "2026-11-23"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-23T07:34:27.482Z",
-    "pending": [
-      "nai-chetna-5-0-begins-25-november-month-long-rural-gender"
-    ]
+    "last": "2026-11-23T10:55:30.421Z",
+    "pending": []
   },
   "sources": [
     "pib-hi",
