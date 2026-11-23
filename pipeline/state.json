@@ -4028,7 +4028,9 @@
   "telegramOffset": 406796360,
   "deploy": {
     "last": "2026-11-23T07:34:27.482Z",
-    "pending": []
+    "pending": [
+      "nai-chetna-5-0-begins-25-november-month-long-rural-gender"
+    ]
   },
   "sources": [
     "pib-hi",
