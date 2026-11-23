@@ -1,0 +1,30 @@
+name: Desi Sherlock batch upload
+
+# Uploads the Shorts listed in youtube/desi-sherlock-b1/upload.txt (folder numbers), each scheduled
+# to go public at the time in its publish_at.txt. Runs only when upload.txt changes on this branch.
+# YouTube's daily API quota allows about 6 uploads a day, so a batch is split across days.
+on:
+  push:
+    branches: [claude/project-thread-ont3k8]
+    paths: ['youtube/desi-sherlock-b1/upload.txt']
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Upload listed Shorts
+        run: |
+          for n in $(cat youtube/desi-sherlock-b1/upload.txt); do
+            d="youtube/desi-sherlock-b1/$n/"
+            echo "== $d $(cat $d/publish_at.txt)"
+            SHORT_DIR="$d" YT_PUBLISH_AT="$(cat $d/publish_at.txt)" node scripts/youtube-upload.mjs
+          done
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
