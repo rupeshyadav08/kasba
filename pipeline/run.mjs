@@ -12,7 +12,7 @@ import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'no
 import { dateFromLink, devanagariShare, get, noticeText, parsePage, parseRss } from './lib/feeds.mjs';
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
-import { check, districtSlugs, publish, unpublish } from './lib/story.mjs';
+import { check, districtSlugs, publish, similarStories, unpublish } from './lib/story.mjs';
 import * as tg from './lib/telegram.mjs';
 
 const here = (p) => new URL(p, import.meta.url);
@@ -172,6 +172,25 @@ function draftMessage(id, d) {
   return lines.join('\n').slice(0, 4000);
 }
 
+// The same news often arrives more than once: PIB issues a release in two languages, a ministry
+// sends a new release for every day of a fair, a board re-uploads a notice. Several stories on one
+// event compete with each other in search, so a draft that repeats a recent story is dropped.
+// Headlines that merely look alike (another bank, exam or bond series) are told apart by the model.
+const DUPLICATE_PROMPT = `You compare a NEW story with OLDER stories from the same news site.
+The NEW story is a duplicate when it reports the same announcement, event, result or order as one OLDER story and gives readers no new date, amount, result, last date or action.
+It is NOT a duplicate when it is about a different exam, post, bank, bond series, scheme, city, district or person, or when it is a follow-up with a new fact readers can use (the money was released, the result is out, the date changed, the event has opened).
+A fresh weather forecast or warning for new dates is NOT a duplicate.
+A new daily tally from the same fair or campaign (sales so far, visitors so far) IS a duplicate.
+Answer with JSON only: {"duplicate": "<id of the OLDER story>"} or {"duplicate": null}.`;
+async function duplicateOf(story, provider, model) {
+  const older = similarStories(story.en.title);
+  if (!older.length) return null;
+  const user = `NEW\nTitle: ${story.en.title}\nSummary: ${story.en.summary}\n\nOLDER\n${older.map((o) => `id: ${o.id}\nTitle: ${o.title}\nSummary: ${o.summary}`).join('\n\n')}`;
+  const { text } = await complete({ provider, model, system: DUPLICATE_PROMPT, user });
+  const id = parseJson(text).duplicate;
+  return older.some((o) => o.id === id) ? id : null;
+}
+
 async function draftNew() {
   let items = await newItems();
   // A source's first run: everything in its feed is already old news. Remember it all and
@@ -232,6 +251,9 @@ async function draftNew() {
       }
       const problems = check(story);
       if (problems.length) { summary.errors.push(`draft for ${it.link} failed checks: ${problems.join(', ')}`); continue; }
+      // If the check itself fails, the story is kept: a repeat is better than a lost notice.
+      const repeat = it.sourceId === 'editor' ? null : await duplicateOf(story, provider, model).catch(() => null);
+      if (repeat) { summary.skipped.push(`${it.sourceId}: same news as ${repeat} (${it.link})`); continue; }
       const id = createHash('sha1').update(it.link).digest('hex').slice(0, 10);
       const draft = { id, createdAt: new Date().toISOString(), provider, model, ocr, source: { name: it.name, title: it.title, link: it.link }, story };
       if (dryRun) { console.log(JSON.stringify(draft, null, 2)); drafted++; continue; }

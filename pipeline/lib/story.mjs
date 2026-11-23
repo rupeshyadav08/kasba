@@ -1,5 +1,5 @@
 // Checks a model draft against Kasba's story schema and writes the Markdown files.
-import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { storyImage } from './image.mjs';
 import { categories } from './prompt.mjs';
 
@@ -43,6 +43,40 @@ export const slugify = (s) => {
   const cut = full.slice(0, 61);
   return cut.slice(0, cut.lastIndexOf('-') > 30 ? cut.lastIndexOf('-') : 60).replace(/-+$/g, '');
 };
+
+// Words that say little about what a headline is about.
+const COMMON = new Set('a an the of to in on for at by and or from with as is are be now new out over under into its it this that says get gets will can after before till until up india indian rs'.split(' '));
+const headlineWords = (s) => new Set(s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w.length > 1 && !/^\d+$/.test(w) && !COMMON.has(w)));
+const field = (text, name) => {
+  const raw = text.match(new RegExp(`^${name}:\\s*(.*)$`, 'm'))?.[1] ?? '';
+  try { return String(JSON.parse(raw)); } catch { return raw; }
+};
+
+// Published stories and waiting drafts from the last few days whose English headline shares most of
+// its words with a new one. They may be the same news (PIB issues one release in two languages,
+// and a new release for every day of a fair) or only look alike (another bank, exam or bond
+// series), so the pipeline asks the model to decide between them.
+export function similarStories(enTitle, days = 10) {
+  const since = Date.now() - days * 86400e3;
+  const dir = new URL('src/content/stories/en/', root);
+  const drafts = new URL('pipeline/drafts/', root);
+  const recent = [
+    ...readdirSync(dir).filter((f) => f.endsWith('.md')).map((f) => {
+      const text = readFileSync(new URL(f, dir), 'utf8');
+      return { id: f.slice(0, -3), title: field(text, 'title'), summary: field(text, 'summary'), at: field(text, 'published') };
+    }),
+    ...(existsSync(drafts) ? readdirSync(drafts) : []).filter((f) => f.endsWith('.json')).map((f) => {
+      const d = JSON.parse(readFileSync(new URL(f, drafts), 'utf8'));
+      return { id: `draft ${d.id}`, title: d.story?.en?.title ?? '', summary: d.story?.en?.summary ?? '', at: d.createdAt };
+    }),
+  ];
+  const mine = headlineWords(enTitle);
+  return recent.filter((s) => Date.parse(s.at) >= since).filter((s) => {
+    const theirs = headlineWords(s.title);
+    const shared = [...mine].filter((w) => theirs.has(w)).length;
+    return shared >= 4 && shared / Math.min(mine.size, theirs.size) >= 0.6;
+  });
+}
 
 export function uniqueId(base) {
   let id = base;
