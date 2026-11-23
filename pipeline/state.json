@@ -4008,11 +4008,26 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340115": "2026-11-22",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340126": "2026-11-22",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340129": "2026-11-22",
-    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340113": "2026-11-22"
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340113": "2026-11-22",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340244": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340183": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340179": "2026-11-23",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340188": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64023": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64022": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64021": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64020": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64019": "2026-11-23",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64018": "2026-11-23",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_d80a4ca0-55e3-43a6-acda-032260637ac3.pdf": "2026-11-23",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_f4d956e3-33a1-4f5c-a979-d7c6d3f23c2f.pdf": "2026-11-23",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_2339e797-036f-406b-9924-a96e61cb8a22.pdf": "2026-11-23",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_26c9d670-4915-488e-98e9-1f445a589337.pdf": "2026-11-23",
+    "https://information.up.gov.in/admin/UploadDocument/CmPress/compressed_32189664-9a00-4684-8a10-a9fdfd8071b7.pdf": "2026-11-23"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-22T15:43:30.892Z",
+    "last": "2026-11-23T07:34:27.482Z",
     "pending": []
   },
   "sources": [
