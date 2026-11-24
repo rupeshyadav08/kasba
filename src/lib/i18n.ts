@@ -19,7 +19,7 @@ export const sectionAbout = {
   money: { hi: 'आपके पैसे की ख़बरें: RBI और SEBI के नियम, बैंक, लोन, बचत, महंगाई और ठगी से बचाव। आधिकारिक सूचना से, आसान हिंदी में।', en: 'News about your money: RBI and SEBI rules, banks, loans, savings, inflation and fraud alerts, from official notices.' },
   weather: { hi: 'मौसम और आपदा की चेतावनी: बारिश, लू, ठंड, चक्रवात और प्रदूषण पर आधिकारिक अलर्ट और बचाव के उपाय।', en: 'Weather and disaster alerts: rain, heat, cold, cyclones and pollution, with official advice on staying safe.' },
   health: { hi: 'सेहत की ख़बरें: सरकारी अस्पताल, मुफ़्त इलाज की योजनाएँ, दवाओं के दाम और टीकाकरण। आधिकारिक सूचना से, आसान हिंदी में।', en: 'Health news: government hospitals, free treatment schemes, medicine prices and vaccination, from official notices.' },
-  sports: { hi: 'खेल की ख़बरें: ट्रायल, चयन, खेलो इंडिया, छात्रवृत्ति और भारतीय खिलाड़ियों के नतीजे। आधिकारिक सूचना से।', en: 'Sports news: trials, selections, Khelo India, scholarships and results of Indian players, from official notices.' },
+  sports: { hi: 'खेल की ख़बरें: क्रिकेट (टीम इंडिया, BCCI, ICC), ट्रायल, चयन, खेलो इंडिया, छात्रवृत्ति और भारतीय खिलाड़ियों के नतीजे। आधिकारिक सूचना से।', en: 'Sports news: cricket (Team India, BCCI, ICC), trials, selections, Khelo India, scholarships and results of Indian players, from official notices.' },
   nation: { hi: 'देश की वे ख़बरें जो आपकी रोज़ की ज़िंदगी पर असर डालती हैं: रेल, दस्तावेज़, नए नियम और सरकारी फ़ैसले, आसान हिंदी में।', en: 'National news that touches daily life: railways, documents, new rules and government decisions, in plain language.' },
 } as const;
 
