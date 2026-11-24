@@ -3,6 +3,8 @@ lang: en
 storyId: cbse-class-10-2026-27-marks-split-for-theory-practical-and-i
 title: "CBSE Class 10 2026-27: marks split for theory, practical and I.A in every subject"
 summary: "CBSE has released the subject-wise marks bifurcation for Class 10 and Class 12 examinations 2026-27. It is meant for students who will appear in the 2026-27 board exams and want to know how marks are divided in each subject."
+searchTitle: "CBSE Class 10 2026-27: theory, practical, IA marks"
+searchDescription: "CBSE subject-wise marks bifurcation for the 2026-27 exams: how marks are divided in each subject."
 meaning: "If you or your child will take the CBSE Class 10 or Class 12 exam in 2026-27, this list shows how total marks are split in each subject. It tells you which subjects have practicals and which have only theory and I.A. Students do not need to do anything; they can simply check the marks for their subjects."
 keyFacts:
   - "Most Class 10 language subjects have 80 marks for theory and 20 for I.A."

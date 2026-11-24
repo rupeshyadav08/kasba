@@ -3,6 +3,8 @@ lang: hi
 storyId: rbi-cancels-registration-of-49-nbfcs-what-it-means-for-you
 title: "RBI ने 49 NBFC का registration रद्द किया: जानें आप पर क्या असर"
 summary: "भारतीय रिज़र्व बैंक (RBI) ने 16 नवंबर 2026 को 49 NBFC कंपनियों का Certificate of Registration रद्द कर दिया। यह कदम उन कंपनियों पर लागू है जिनके नाम और पते RBI की सूची में दिए गए हैं।"
+searchTitle: "RBI ने 49 NBFC का registration रद्द किया: असर क्या"
+searchDescription: "RBI ने 16 नवंबर 2026 को 49 NBFC कंपनियों का Certificate of Registration रद्द किया। जानिए यह किन पर लागू है और आपके लिए इसका क्या मतलब है।"
 meaning: "अगर आपने इन 49 कंपनियों में से किसी से loan लिया है या उनमें पैसा जमा किया है, तो आपको सतर्क रहना चाहिए। RBI ने सिर्फ registration रद्द किया है, यह नहीं बताया कि आपके पैसे का क्या होगा। आम लोगों को सीधे तौर पर कुछ करने की ज़रूरत नहीं है, लेकिन अगर आप इनमें से किसी कंपनी से जुड़े हैं तो अपने दस्तावेज़ और लेन-देन की जानकारी संभाल कर रखें।"
 keyFacts:
   - "RBI ने 49 NBFC कंपनियों का Certificate of Registration रद्द किया।"

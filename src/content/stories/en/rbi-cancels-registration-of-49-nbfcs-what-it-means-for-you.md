@@ -3,6 +3,8 @@ lang: en
 storyId: rbi-cancels-registration-of-49-nbfcs-what-it-means-for-you
 title: "RBI cancels registration of 49 NBFCs: what it means for you"
 summary: "The Reserve Bank of India (RBI) on 16 November 2026 cancelled the Certificate of Registration of 49 NBFC companies. The action applies to the companies named in the RBI list."
+searchTitle: "RBI cancels 49 NBFC registrations: what it means"
+searchDescription: "RBI cancelled the Certificate of Registration of 49 NBFCs on 16 November 2026. Who is covered and what it means for customers."
 meaning: "If you have taken a loan from or deposited money with any of these 49 companies, you should be careful. RBI has only cancelled the registration; it has not said what will happen to your money. Ordinary people do not need to do anything directly, but if you are connected to any of these companies, keep your documents and transaction records safe."
 keyFacts:
   - "RBI cancelled the Certificate of Registration of 49 NBFC companies."

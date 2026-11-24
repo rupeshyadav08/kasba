@@ -3,6 +3,8 @@ lang: en
 storyId: vb-g-ram-g-replaces-mgnrega-125-days-of-guaranteed-wage-work
 title: "VB-G RAM G replaces MGNREGA: 125 days of guaranteed wage work every year"
 summary: "The government has replaced Mahatma Gandhi NREGA with the new Viksit Bharat - Rozgar aur Aajivika Guarantee Mission (Rural), or VB-G RAM G, in force from 1 July 2026. It affects rural households whose adult members come forward for unskilled manual work."
+searchTitle: "VB-G RAM G replaces MGNREGA: 125 days of work"
+searchDescription: "VB-G RAM G replaced MGNREGA from 1 July 2026. Rural households get 125 days of guaranteed wage work every year."
 meaning: "If you live in a village and want wage work, it will now come under VB-G RAM G instead of NREGA. The law guarantees 125 days of wage employment in every financial year. Attendance is recorded through e-KYC and face or biometric authentication, and wages are paid through DBT. The village plan is prepared with Gram Sabha participation."
 keyFacts:
   - "The VB-G RAM G Act, 2025 came into force on 1 July 2026."

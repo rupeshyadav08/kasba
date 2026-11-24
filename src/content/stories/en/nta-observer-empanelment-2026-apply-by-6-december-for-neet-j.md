@@ -3,6 +3,8 @@ lang: en
 storyId: nta-observer-empanelment-2026-apply-by-6-december-for-neet-j
 title: "NTA Observer Empanelment 2026: Apply by 6 December for NEET, JEE exam duty"
 summary: "The National Testing Agency (NTA) on 7 November 2026 invited online applications to empanel observers at its exam centres. The opening is for serving and retired teachers of government institutions, government officers, and retired Armed Forces and CAPF personnel."
+searchTitle: "NTA Observer 2026: apply by 6 December"
+searchDescription: "NTA invites applications for exam-centre observers. Open to serving and retired government teachers, officers, and retired Armed Forces and CAPF personnel."
 meaning: "If you teach or taught at a government school, college, polytechnic, Kendriya Vidyalaya or Navodaya Vidyalaya, or served as a government officer, you can join this pool. Once selected, you may be posted at centres for exams such as NEET (UG), JEE (Main), UGC-NET and CUET, with ₹3,000 for the briefing day and ₹4,000 for the exam day. Apply on observermanagement.nta.gov.in by 6 December 2026. Students and parents have nothing to do here."
 keyFacts:
   - "Last date to apply: 6 December 2026"

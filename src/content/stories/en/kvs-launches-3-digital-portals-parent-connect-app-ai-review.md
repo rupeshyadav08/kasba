@@ -3,6 +3,8 @@ lang: en
 storyId: kvs-launches-3-digital-portals-parent-connect-app-ai-review
 title: "KVS launches 3 digital portals: parent connect app, AI review centre, alumni network"
 summary: "Union Education Minister Prahlad Joshi on 12 November 2026 launched three digital initiatives of Kendriya Vidyalaya Sangathan (KVS) in New Delhi. These are the AI-enabled Vidya Samiksha Kendra, the KVS-Samvaad Parent Connect app and web portal, and the KVS Alumni Connect portal, meant for KVS students, parents, teachers and former students."
+searchTitle: "KVS launches Parent Connect app, alumni portal"
+searchDescription: "Kendriya Vidyalaya Sangathan launched three services on 12 November 2026: KVS-Samvaad Parent Connect app, Alumni Connect portal and Vidya Samiksha Kendra."
 meaning: "If your child studies in a Kendriya Vidyalaya, you will be able to check attendance, syllabus progress, results and the digital student ID card through the app. You can also apply online for bonafide certificates, CEA certificates and student leave, which should mean fewer trips to school. KVS alumni can join the alumni portal to reconnect with their school and contribute through mentorship and career guidance."
 keyFacts:
   - "Three digital initiatives launched on 12 November 2026"

@@ -3,6 +3,8 @@ lang: en
 storyId: nda-2026-final-result-out-upsc-declares-nda-na-exam-i-result
 title: "NDA 2026 final result out: UPSC declares NDA & NA Exam (I) result, 617 candidates qualify"
 summary: "The Union Public Service Commission (UPSC) declared the final result of the National Defence Academy and Naval Academy Examination (I), 2026 on 5 November 2026, with 617 candidates listed in order of merit. The result is for admission to the Army, Navy and Air Force wings of the NDA's 157th course and the Naval Academy's 119th course."
+searchTitle: "NDA 2026 (I) final result out: 617 qualify"
+searchDescription: "UPSC declared the final result of NDA and NA Exam (I) 2026 on 5 November 2026. 617 candidates are listed in order of merit."
 meaning: "If you appeared for the NDA/NA Exam (I) 2026 and attended the SSB interview, check your roll number in the list on the UPSC website. Successful candidates should note that their candidature is provisional and their date of birth and educational certificates must go to the Army Headquarters address given, not to UPSC. People who did not appear for this exam are not directly affected."
 keyFacts:
   - "617 candidates declared successful"

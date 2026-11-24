@@ -80,7 +80,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base lang={d.lang} title={`${d.title} | Kasba`} description={d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category} image={image} markdown={`${storyPath(d.lang, d.storyId)}.md`}>
+<Base lang={d.lang} title={d.searchTitle ?? `${d.title} | Kasba`} description={d.searchDescription ?? d.summary} altPath={altPath} jsonLd={jsonLd} type="article" section={d.category} image={image} markdown={`${storyPath(d.lang, d.storyId)}.md`}>
   <div class="layout" style={secColor(d.category)}>
   <main class="story">
     <nav aria-label="breadcrumb" class="crumbs"><a href={d.lang === 'hi' ? '/' : '/en'}>{L.home}</a> › <a class="sec" href={sectionPath(d.lang, d.category)}>{categories[d.category][d.lang]}</a></nav>

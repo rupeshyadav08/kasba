@@ -3,6 +3,8 @@ lang: en
 storyId: new-kanpur-express-between-kanpur-central-and-anand-vihar
 title: "New Kanpur Express between Kanpur Central and Anand Vihar flagged off"
 summary: "Railway Minister Ashwini Vaishnaw and Kanpur MP Ramesh Awasthi flagged off the new Kanpur Express between Kanpur Central and Anand Vihar Terminal on 16 November 2026. The daily train gives people travelling between Kanpur and Delhi one more option."
+searchTitle: "New daily Kanpur Express: Kanpur to Anand Vihar"
+searchDescription: "The new daily Kanpur Express between Kanpur Central and Anand Vihar Terminal was flagged off on 16 November 2026, adding an option for Kanpur-Delhi travel."
 meaning: "If you travel between Kanpur, Auraiya, Etawah, Firozabad, Hathras, Aligarh, Khurja, Dadri or Ghaziabad and Delhi, this train is for you. It will run daily to Anand Vihar Terminal, from where different parts of the NCR are easier to reach. The notice does not give the train's stops or timings, so check official railway information before booking a ticket."
 keyFacts:
   - "The new Kanpur Express will run between Kanpur Central and Anand Vihar Terminal"

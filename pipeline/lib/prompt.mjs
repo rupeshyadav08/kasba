@@ -53,6 +53,8 @@ Otherwise return this JSON object and nothing else:
   "hi": {
     "title": headline, max 80 characters. Search results show only about the first 60, so the name people search for and the main fact come first,
     "summary": 2 sentences, max 280 characters,
+    "searchTitle": the line shown in Google results, max 55 characters, because phones cut the rest. Start with the name people type (exam, scheme, board, city), then the one fact that makes them open it: the last date, the number of posts, the amount, the place or "result out". No site name, no full stop. Every fact in it must be in the notice,
+    "searchDescription": one or two short sentences, max 150 characters, shown under that line. Say what the reader gets on this page (who can apply, last date, how much, where, what to do), not who issued the notice or on which date,
     "meaning": 2 to 4 sentences,
     "keyFacts": 3 to 6 short facts, each with its number or date where the notice gives one,
     "faq": 3 to 5 objects {"q": "...", "a": "..."} that readers would ask, answered only from the notice,

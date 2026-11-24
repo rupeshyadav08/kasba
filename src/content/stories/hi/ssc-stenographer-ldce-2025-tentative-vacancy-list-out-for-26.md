@@ -3,6 +3,8 @@ lang: hi
 storyId: ssc-stenographer-ldce-2025-tentative-vacancy-list-out-for-26
 title: "SSC Stenographer LDCE 2025: Grade C के लिए 267 पदों की tentative vacancy जारी"
 summary: "SSC ने Grade 'C' Stenographers LDCE 2025 के लिए 267 tentative पदों की सूची 22 अक्टूबर 2026 को जारी की। यह सूची उन विभागीय कर्मचारियों के लिए है जो इस परीक्षा के ज़रिए स्टेनोग्राफर के पद पर जाने की तैयारी कर रहे हैं।"
+searchTitle: "SSC Steno LDCE 2025: Grade 'C' के 267 पद, list जारी"
+searchDescription: "SSC ने 22 अक्टूबर 2026 को Grade 'C' Stenographer LDCE 2025 की tentative vacancy list जारी की। कुल 267 पद, विभागीय कर्मचारियों के लिए।"
 meaning: "यह सूचना आम लोगों के लिए सीधे तौर पर नहीं है। यह उन सरकारी कर्मचारियों से जुड़ी है जो विभागीय परीक्षा (LDCE) के ज़रिए Grade 'C' स्टेनोग्राफर बनने की प्रक्रिया में हैं। अगर आप इस परीक्षा में शामिल हैं, तो अपनी श्रेणी (UR, SC, ST, PwBD) के हिसाब से पदों की संख्या देख सकते हैं। ये संख्याएँ tentative हैं, यानी शुरुआती हैं और बदल सकती हैं।"
 keyFacts:
   - "कुल tentative पद: 267"

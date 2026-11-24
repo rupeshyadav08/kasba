@@ -3,6 +3,8 @@ lang: en
 storyId: ssc-exam-keep-aadhaar-biometrics-permanently-unlocked-10
 title: "SSC exam: keep Aadhaar biometrics permanently unlocked, 10-minute temporary unlock won't work"
 summary: "SSC issued an advisory on 17 November 2026 asking exam candidates to keep their Aadhaar details and biometrics updated. It also said biometrics must stay permanently unlocked for the entire duration of the examination process."
+searchTitle: "SSC exam: keep Aadhaar biometrics unlocked"
+searchDescription: "SSC advisory of 17 November 2026: keep Aadhaar biometrics permanently unlocked through the exam. A 10-minute temporary unlock will not work."
 meaning: "This matters to anyone who appears for SSC examinations. If the name, date of birth or address on your Aadhaar is wrong, or your biometrics are not updated, identity checks at the exam centre can run into trouble. Get your Aadhaar updated and keep biometrics permanently unlocked well before the exam."
 keyFacts:
   - "SSC issued the advisory on 17 November 2026."

@@ -3,6 +3,8 @@ lang: en
 storyId: ugc-net-december-2026-exam-in-cbt-mode-from-4-to-24-december
 title: "UGC-NET December 2026: exam in CBT mode from 4 to 24 December, subject-wise schedule out"
 summary: "NTA has released the subject-wise schedule for the UGC-NET December 2026 examination. The exam will be held in Computer Based Test (CBT) mode from 4 to 8 December and on 24 December 2026."
+searchTitle: "UGC NET December 2026: exam on 4-8 and 24 Dec"
+searchDescription: "NTA released the subject-wise schedule for UGC-NET December 2026. The CBT exam is on 4 to 8 December and 24 December 2026."
 meaning: "Candidates appearing for UGC-NET December 2026 should check their subject's date and shift in the schedule. The city of the exam centre will be shown on the NTA website 2 days before the exam, so keep checking the site. This does not directly affect the general public."
 keyFacts:
   - "Exam will be held in CBT mode"

@@ -3,6 +3,8 @@ lang: hi
 storyId: ssc-exam-keep-aadhaar-biometrics-permanently-unlocked-10
 title: "SSC परीक्षा: आधार biometrics रखें permanently unlock, 10 मिनट का temporary unlock नहीं चलेगा"
 summary: "SSC ने 17 नवंबर 2026 को एक advisory जारी कर परीक्षा देने वाले candidates से कहा है कि वे अपने आधार के नाम, जन्मतिथि, पता और biometrics अपडेट रखें। साथ ही परीक्षा की पूरी प्रक्रिया के दौरान आधार biometrics permanently unlock रखने को कहा गया है।"
+searchTitle: "SSC परीक्षा: आधार biometrics unlock रखना ज़रूरी"
+searchDescription: "SSC की 17 नवंबर 2026 की advisory: परीक्षा के दौरान आधार biometrics permanently unlock रखें। 10 मिनट का temporary unlock नहीं चलेगा।"
 meaning: "यह उन लोगों के लिए है जो SSC की परीक्षाओं में बैठते हैं। अगर आपका आधार कार्ड में नाम, जन्मतिथि या पता गलत है, या biometrics अपडेट नहीं हैं, तो परीक्षा केंद्र पर पहचान जाँच में दिक्कत आ सकती है। इसलिए परीक्षा से पहले ही अपना आधार अपडेट करा लें और biometrics permanently unlock रखें।"
 keyFacts:
   - "SSC ने यह advisory 17 नवंबर 2026 को जारी की।"

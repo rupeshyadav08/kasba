@@ -3,6 +3,8 @@ lang: en
 storyId: satna-deendayal-nagar-and-rewa-churhat-rail-lines-opened-dee
 title: "Satna–Deendayal Nagar and Rewa–Churhat rail lines opened, Deendayal Nagar–Churhat train flagged off"
 summary: "The Railway Ministry on 24 October 2026 inaugurated the new Satna–Deendayal Nagar (53 km) and Rewa–Churhat (65 km) rail lines and flagged off the Deendayal Nagar–Churhat passenger train. It will help passengers, students, patients, farmers and traders around Satna, Rewa, Sidhi and Panna in Madhya Pradesh."
+searchTitle: "Satna and Rewa-Churhat new rail lines open"
+searchDescription: "Satna-Deendayal Nagar (53 km) and Rewa-Churhat (65 km) lines opened on 24 October 2026, with a new Deendayal Nagar-Churhat passenger train."
 meaning: "If you live around Satna, Rewa, Sidhi or Panna, you now have a new rail route to travel on. Sidhi district gets a rail link to the national network through Churhat. The new Deendayal Nagar–Churhat train will make travel easier via Satna and Rewa. For train timings and stoppages, check at the station or official railway information."
 keyFacts:
   - "The Satna–Deendayal Nagar line is about 53 km long and cost about ₹873 crore."

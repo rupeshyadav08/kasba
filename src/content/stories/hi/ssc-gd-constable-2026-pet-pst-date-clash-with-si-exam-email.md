@@ -3,6 +3,8 @@ lang: hi
 storyId: ssc-gd-constable-2026-pet-pst-date-clash-with-si-exam-email
 title: "SSC GD Constable 2026: PET/PST की तारीख टकराई तो ईमेल करें, बदली जा सकती है तारीख"
 summary: "SSC ने 17 नवंबर 2026 को नोटिस जारी कर कहा है कि जिन अभ्यर्थियों के SSC Constable (GD) 2026 के PET/PST की तारीख SI in DP और CAPFs परीक्षा से टकरा रही है, वे ईमेल से इसकी जानकारी दें। ऐसे मामलों में PET/PST की तारीख बदलने पर विचार किया जाएगा।"
+searchTitle: "SSC GD 2026 PET/PST की तारीख़ SI exam से टकराए तो"
+searchDescription: "SSC GD Constable 2026 का PET/PST और SI (DP, CAPF) exam एक ही दिन पड़े तो email से बताएँ। SSC के 17 नवंबर के notice के अनुसार तारीख़ बदलने पर विचार होगा।"
 meaning: "यह उन अभ्यर्थियों के लिए है जो SSC Constable (GD) 2026 के PET/PST और SI in DP और CAPFs परीक्षा, दोनों में बैठ रहे हैं और जिनकी तारीखें एक ही दिन पड़ रही हैं। अगर आपके साथ ऐसा है तो तुरंत दिए गए ईमेल पते पर अपनी जानकारी भेजें। जिन अभ्यर्थियों की तारीखों में टकराव नहीं है, उन्हें कुछ करने की ज़रूरत नहीं है।"
 keyFacts:
   - "SSC ने यह नोटिस 17 नवंबर 2026 को जारी किया है।"

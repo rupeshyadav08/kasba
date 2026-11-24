@@ -3,6 +3,8 @@ lang: en
 storyId: vb-g-ram-g-upgraded-nmms-app-with-face-authentication-releas
 title: "VB-G RAM G: Upgraded NMMS app with face authentication released to stop fake attendance"
 summary: "Union Rural Development Minister Shivraj Singh Chouhan released an upgraded security version of the NMMS app on 23 October 2026 for recording worker attendance under VB-G RAM G. It affects rural workers, whose attendance will now be recorded through face authentication."
+searchTitle: "VB-G RAM G: NMMS app now uses face attendance"
+searchDescription: "Worker attendance under VB-G RAM G will be recorded by face authentication on the upgraded NMMS app, released on 23 October 2026."
 meaning: "If you work under the VB-G RAM G scheme, your attendance will still be marked on the app, but now with a face check. Where there is no network, offline attendance can be recorded. If an elderly or disabled worker's face does not match, the mate or field worker can request an exemption."
 keyFacts:
   - "The upgraded NMMS app was released on 23 October 2026."

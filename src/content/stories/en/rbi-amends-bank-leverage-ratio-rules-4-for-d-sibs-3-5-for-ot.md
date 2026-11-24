@@ -3,6 +3,8 @@ lang: en
 storyId: rbi-amends-bank-leverage-ratio-rules-4-for-d-sibs-3-5-for-ot
 title: "RBI amends bank leverage ratio rules: 4% for D-SIBs, 3.5% for other banks"
 summary: "The RBI issued the Eleventh Amendment to its Commercial Banks Capital Adequacy Directions on 23 October 2026, setting the definition and minimum leverage ratio for banks. The change applies to banks, not directly to ordinary customers or depositors."
+searchTitle: "RBI leverage ratio: 4% for D-SIBs, 3.5% others"
+searchDescription: "RBI set the minimum leverage ratio for banks on 23 October 2026. The rule applies to banks, not directly to customers or depositors."
 meaning: "This is a rule for banks, not for ordinary people. There is no form to fill or deadline for the public. It sets how banks' financial strength is measured, which the RBI says is meant to keep the banking system sound."
 keyFacts:
   - "The RBI issued the amendment on 23 October 2026."

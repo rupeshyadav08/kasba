@@ -3,6 +3,8 @@ lang: hi
 storyId: cbse-board-exam-2027-class-10-and-12-date-sheet-out-exams-be
 title: "CBSE Board Exam 2027: Class 10 और 12 की date sheet जारी, 16 फरवरी से शुरू होंगी परीक्षाएं"
 summary: "CBSE ने Class 10 और Class 12 Board Examinations 2027 की date sheet जारी कर दी है। परीक्षाएं 16 फरवरी 2027 (मंगलवार) से शुरू होंगी और date sheet CBSE की वेबसाइट cbse.gov.in पर उपलब्ध है।"
+searchTitle: "CBSE Date Sheet 2027: 10वीं-12वीं exam 16 फरवरी से"
+searchDescription: "CBSE ने Class 10 और 12 Board Exam 2027 की date sheet जारी की। परीक्षाएँ 16 फरवरी 2027 (मंगलवार) से शुरू होंगी। Date sheet cbse.gov.in पर है।"
 meaning: "यह खबर उन सभी students के लिए है जो 2027 में CBSE Class 10 या Class 12 की board exam देंगे। अब आपके पास तैयारी की योजना बनाने का पूरा समय है, इसलिए अपनी subject-wise date sheet देखकर पढ़ाई का timetable बना लें। अभी कोई फ़ॉर्म या आवेदन नहीं करना है; date sheet सिर्फ़ देखने और download करने के लिए है।"
 keyFacts:
   - "परीक्षाएं 16 फरवरी 2027 (मंगलवार) से शुरू होंगी।"

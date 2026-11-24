@@ -3,6 +3,8 @@ lang: en
 storyId: trai-launches-network-anubhav-portal-check-internet-speed-in
 title: "TRAI launches 'Network Anubhav' portal: check internet speed in your area, report spam"
 summary: "The Telecom Regulatory Authority of India (TRAI) launched the 'Network Anubhav' platform on 4 November 2026. It lets ordinary users see other people's internet speed tests in their area and use DND services to report spam messages and calls."
+searchTitle: "TRAI Network Anubhav: check net speed in your area"
+searchDescription: "TRAI's 'Network Anubhav' platform, launched 4 November 2026, shows internet speed tests in your area and lets you report spam calls and messages."
 meaning: "If you use mobile or broadband internet, this portal is for you. You can see what speeds other users in your area are getting and how different service providers perform. You can also set your DND preferences and file complaints about unwanted commercial calls and messages through the website. TRAI has urged people to keep contributing tests through its MySpeed and MyCall apps."
 keyFacts:
   - "The portal launched on 4 November 2026 at https://anubhav.trai.gov.in"

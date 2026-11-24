@@ -3,6 +3,8 @@ lang: en
 storyId: bird-flu-india-s-first-indigenous-h5n1-chicken-vaccine-to-be
 title: "Bird Flu: India's first indigenous H5N1 chicken vaccine to be dedicated on 20 November"
 summary: "Union Agriculture Minister Shivraj Singh Chouhan will dedicate India's first indigenous H5N1 chicken vaccine to the nation on 20 November 2026 in Bhopal. The vaccine, developed by ICAR-NIHSAD, is meant to protect poultry from bird flu and matters most to poultry farmers."
+searchTitle: "Bird flu: India's first H5N1 chicken vaccine"
+searchDescription: "India's first indigenous H5N1 chicken vaccine, developed by ICAR-NIHSAD, is to be dedicated on 20 November 2026 in Bhopal. What it means for poultry farmers."
 meaning: "This news is mainly for people who rear chickens and run poultry businesses. When bird flu spreads, birds die and trade is restricted, causing heavy losses. Dedicating the vaccine is a step towards preventing the disease. Ordinary readers have nothing to do right now; the notice does not say when or how the vaccine will be given."
 keyFacts:
   - "The vaccine will be dedicated to the nation on 20 November 2026 at ICAR-NIHSAD, Bhopal."

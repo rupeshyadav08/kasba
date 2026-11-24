@@ -3,6 +3,8 @@ lang: en
 storyId: ssc-stenographer-ldce-2025-tentative-vacancy-list-out-for-26
 title: "SSC Stenographer LDCE 2025: tentative vacancy list out for 267 Grade 'C' posts"
 summary: "SSC released a tentative vacancy list for Grade 'C' Stenographers LDCE 2025 on 22 October 2026, showing 267 posts. The list is meant for departmental employees preparing for this exam."
+searchTitle: "SSC Steno LDCE 2025: 267 Grade 'C' posts listed"
+searchDescription: "SSC released the tentative vacancy list for Grade 'C' Stenographers LDCE 2025 on 22 October 2026, showing 267 posts for departmental employees."
 meaning: "This notice does not directly affect ordinary readers. It concerns government employees who are in the process of moving to Grade 'C' stenographer posts through the departmental exam (LDCE). If you are appearing for this exam, you can check the number of posts for your category (UR, SC, ST, PwBD). These numbers are tentative and may change."
 keyFacts:
   - "Total tentative posts: 267"
