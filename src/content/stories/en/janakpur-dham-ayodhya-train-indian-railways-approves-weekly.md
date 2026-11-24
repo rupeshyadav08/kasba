@@ -3,6 +3,8 @@ lang: en
 storyId: janakpur-dham-ayodhya-train-indian-railways-approves-weekly
 title: "Janakpur Dham-Ayodhya Train: Indian Railways approves weekly service between Nepal and Ayodhya Cantt"
 summary: "Indian Railways on 14 November 2026 approved a new weekly train service between Janakpur Dham in Nepal and Ayodhya Cantt in Uttar Pradesh. The train will pass through several towns in Bihar and Uttar Pradesh and give pilgrims and other travellers another cross-border option."
+searchTitle: "Janakpur Dham-Ayodhya train: weekly service"
+searchDescription: "Indian Railways approved a weekly train between Janakpur Dham in Nepal and Ayodhya Cantt on 14 November 2026, passing through towns in Bihar and UP."
 meaning: "If you are planning to visit Ayodhya or Janakpur Dham, or travel across the Bihar-Nepal border, this train is meant for you. It will run once a week — from Janakpur Dham on Saturday and from Ayodhya Cantt on Monday. The railway has not yet announced a start date, fare or booking details, so keep checking official railway information for tickets."
 keyFacts:
   - "Weekly train approved between Janakpur Dham (Nepal) and Ayodhya Cantt (Uttar Pradesh)"

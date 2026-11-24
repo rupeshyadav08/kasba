@@ -3,6 +3,8 @@ lang: en
 storyId: india-s-ramsar-sites-rise-to-103-uttar-pradesh-second-with-1
 title: "India's Ramsar sites rise to 103; Uttar Pradesh second with 14 sites"
 summary: "According to information released by the central government, India's number of Ramsar sites rose to 103 by 15 October 2026. The information is for people interested in wetlands, birds and the environment."
+searchTitle: "India now has 103 Ramsar sites; UP has 14"
+searchDescription: "India's Ramsar sites rose to 103 by 15 October 2026. Uttar Pradesh is second among states with 14 sites."
 meaning: "For ordinary people, this means more lakes and marshy areas in the country have received international recognition. People who visit these places for birdwatching and local residents should stay aware of wetland conservation. The notice mentions no application, payment or deadline, so ordinary citizens do not need to take any action."
 keyFacts:
   - "India had 26 Ramsar sites in 2014, which rose to 103 by 15 October 2026."

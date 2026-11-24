@@ -3,6 +3,8 @@ lang: en
 storyId: delhi-ncr-grap-3-curbs-lifted-grap-2-measures-stay-in-force
 title: "Delhi-NCR: GRAP 3 curbs lifted, GRAP 2 measures stay in force"
 summary: "The CAQM's GRAP sub-committee on 17 November 2026 lifted the Stage 3 restrictions in Delhi-NCR with immediate effect. The decision came after Delhi's air quality index was recorded at 204, but Stage 1 and Stage 2 measures will continue."
+searchTitle: "Delhi-NCR: GRAP 3 lifted, GRAP 2 rules stay"
+searchDescription: "CAQM lifted GRAP Stage 3 curbs in Delhi-NCR on 17 November 2026 after AQI was 204. Stage 1 and Stage 2 measures continue."
 meaning: "This matters directly to people living in Delhi and the surrounding NCR districts. With Stage 3 lifted, some restrictions are gone, but the 30 October 2026 order still applies, which bans dust-generating demolition and open-area construction work. Offices have also been told to work with at most 50 per cent staff from 5 to 20 November. Ordinary residents should keep checking the Sameer app for the AQI and the CAQM website for the GRAP stage in force."
 keyFacts:
   - "Delhi's air quality index was recorded at 204 on 17 November 2026."

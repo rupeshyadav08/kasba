@@ -3,6 +3,8 @@ lang: hi
 storyId: cbse-class-10-12-exam-2026-27-theory-practical-and-internal
 title: "CBSE Class 10, 12 Exam 2026-27: किस सब्जेक्ट में theory, practical और internal के कितने नंबर"
 summary: "CBSE ने Class X और XII की 2026-27 परीक्षा के लिए हर विषय में नंबरों का बँटवारा बताया है — theory, practical, project और internal assessment में कितने नंबर हैं। यह जानकारी उन सभी स्टूडेंट्स के लिए है जो 2026-27 में बोर्ड परीक्षा देंगे।"
+searchTitle: "CBSE 10वीं-12वीं 2026-27: हर विषय के marks का बँटवारा"
+searchDescription: "CBSE ने Class 10 और 12 परीक्षा 2026-27 के लिए हर विषय में theory, practical, project और internal assessment के marks जारी किए।"
 meaning: "अगर आप या आपका बच्चा 2026-27 में CBSE Class 10 या 12 की परीक्षा देगा, तो यह जानकारी आपके काम की है। इससे पता चलता है कि किस विषय में theory का पेपर कितने नंबर का होगा और practical या internal assessment में कितने नंबर जुड़ेंगे। इससे तैयारी का हिसाब लगाना आसान होगा।"
 keyFacts:
   - "Class 10 के ज़्यादातर भाषा विषयों में theory 80 नंबर और internal assessment 20 नंबर का है।"

@@ -3,6 +3,8 @@ lang: en
 storyId: khelo-india-youth-games-2026-telangana-to-host-11-22-decembe
 title: "Khelo India Youth Games 2026: Telangana to host 11-22 December, logo and mascot 'Neelamani' unveiled"
 summary: "Union Sports Minister Dr Mansukh Mandaviya and Telangana Chief Minister A Revanth Reddy unveiled the logo and mascot of the 8th Khelo India Youth Games on 15 November 2026. The Games will be held in six Telangana cities from 11 to 22 December 2026, with about 8,000 athletes and participants expected."
+searchTitle: "Khelo India Youth Games 2026: 11-22 Dec, Telangana"
+searchDescription: "The 8th Khelo India Youth Games will be held in six Telangana cities from 11 to 22 December 2026, with about 8,000 athletes and participants."
 meaning: "This is mainly news for young sportspersons who follow national events like Khelo India. Ordinary readers have nothing to apply for or pay here. Athletes taking part should get details about their participation from their state sports department or coach."
 keyFacts:
   - "8th Khelo India Youth Games from 11 to 22 December 2026 in Telangana"

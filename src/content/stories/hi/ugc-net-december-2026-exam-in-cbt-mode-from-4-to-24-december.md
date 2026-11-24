@@ -3,6 +3,8 @@ lang: hi
 storyId: ugc-net-december-2026-exam-in-cbt-mode-from-4-to-24-december
 title: "UGC-NET December 2026: CBT मोड में 4 से 24 दिसंबर तक परीक्षा, सब्जेक्ट-वाइज शेड्यूल जारी"
 summary: "NTA ने UGC-NET December 2026 परीक्षा का सब्जेक्ट-वाइज शेड्यूल जारी किया है। परीक्षा Computer Based Test (CBT) मोड में 4 से 8 दिसंबर और 24 दिसंबर 2026 तक होगी।"
+searchTitle: "UGC NET December 2026: exam 4-8 और 24 दिसंबर को"
+searchDescription: "NTA ने UGC-NET December 2026 का subject-wise schedule जारी किया। परीक्षा CBT mode में 4 से 8 दिसंबर और 24 दिसंबर 2026 को होगी।"
 meaning: "जो उम्मीदवार UGC-NET December 2026 में बैठ रहे हैं, उन्हें अपने विषय का दिन और शिफ्ट शेड्यूल में देखना होगा। परीक्षा केंद्र का शहर परीक्षा से 2 दिन पहले NTA की वेबसाइट पर बताया जाएगा, इसलिए वेबसाइट पर नज़र रखें। आम लोगों पर इसका सीधा असर नहीं है।"
 keyFacts:
   - "परीक्षा CBT मोड में होगी"

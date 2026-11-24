@@ -97,6 +97,9 @@ export function toMarkdown(draft, lang, { storyId, author, published, auto = fal
     `storyId: ${storyId}`,
     `title: ${q(s.title)}`,
     `summary: ${q(s.summary)}`,
+    // Only when they fit; otherwise the page falls back to the headline and summary.
+    ...(s.searchTitle && s.searchTitle.length <= 70 ? [`searchTitle: ${q(s.searchTitle)}`] : []),
+    ...(s.searchDescription && s.searchDescription.length <= 200 ? [`searchDescription: ${q(s.searchDescription)}`] : []),
     `meaning: ${q(s.meaning)}`,
     'keyFacts:', ...s.keyFacts.map((f) => `  - ${q(f)}`),
     'faq:', ...s.faq.flatMap((f) => [`  - q: ${q(f.q)}`, `    a: ${q(f.a)}`]),

@@ -13,6 +13,10 @@ const stories = defineCollection({
     storyId: z.string(),
     title: z.string().max(130),
     summary: z.string().max(450),
+    // What a search result shows: a short title (phones cut at about 55 characters) and one line
+    // saying what the reader gets. Without them the headline and the summary are used.
+    searchTitle: z.string().max(70).optional(),
+    searchDescription: z.string().max(200).optional(),
     meaning: z.string(),
     keyFacts: z.array(z.string()).min(1),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2).max(5),

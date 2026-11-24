@@ -3,6 +3,8 @@ lang: en
 storyId: cbse-class-10-12-exam-2026-27-theory-practical-and-internal
 title: "CBSE Class 10, 12 Exam 2026-27: theory, practical and internal marks for each subject"
 summary: "CBSE has issued the subject-wise marks bifurcation for Class X and XII Examination 2026-27, showing how marks are split between theory, practical, project and internal assessment. It applies to students who will take the board exams in 2026-27."
+searchTitle: "CBSE Class 10, 12 2026-27: marks split by subject"
+searchDescription: "CBSE subject-wise marks for Class 10 and 12 exams 2026-27: how marks are divided between theory, practical, project and internal assessment."
 meaning: "If you or your child will appear for CBSE Class 10 or 12 in 2026-27, this tells you how many marks the theory paper carries in each subject and how many go to practical or internal assessment. It helps students plan their preparation subject by subject."
 keyFacts:
   - "Most Class 10 language subjects have 80 marks for theory and 20 for internal assessment."

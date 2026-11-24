@@ -3,6 +3,8 @@ lang: en
 storyId: constitution-day-quiz-2026-500-winners-to-get-cash-prizes
 title: "Constitution Day Quiz 2026: 500 winners to get cash prizes, take part by 26 November"
 summary: "The Ministry of Youth Affairs and Sports has opened the Constitution Day Quiz 2026, which runs from 18 to 26 November 2026. Any citizen can take part in Hindi or English, and 500 winners will get cash prizes."
+searchTitle: "Constitution Day Quiz 2026: enter by 26 November"
+searchDescription: "Open 18 to 26 November 2026 to any citizen, in Hindi or English. 500 winners get cash prizes. How to take part."
 meaning: "If you want to take part, answer the quiz online before 26 November 2026. Every participant gets an e-certificate. Of the 500 winners, the top 100 will get Rs 5,000 each and the next 400 will get Rs 2,000 each."
 keyFacts:
   - "The quiz is open from 18 November 2026 to 26 November 2026"

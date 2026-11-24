@@ -3,6 +3,8 @@ lang: en
 storyId: shreshta-nets-2027-registration-open-apply-by-30-november
 title: "Shreshta NETS 2027 registration open: apply by 30 November"
 summary: "The Department of Social Justice and Empowerment, with NTA, has opened online registration for the Shreshta National Entrance Test (NETS) 2027. It offers SC and eligible DNT students a chance to study in reputed private residential schools."
+searchTitle: "Shreshta NETS 2027: apply by 30 November"
+searchDescription: "Online registration is open for Shreshta NETS 2027, which lets SC and eligible DNT students study in reputed private residential schools."
 meaning: "If you are from an SC community or an eligible DNT community that is not covered under SC, ST or OBC categories, and your child is in high school, this scheme is for you. Eligible students can apply online on the NTA portal till 11:50 pm on 30 November 2026. If there is a mistake in the submitted form, it can be corrected during the correction window from 2 to 4 December 2026."
 keyFacts:
   - "Online registration began on 14 November 2026 and stays open till 11:50 pm on 30 November 2026."

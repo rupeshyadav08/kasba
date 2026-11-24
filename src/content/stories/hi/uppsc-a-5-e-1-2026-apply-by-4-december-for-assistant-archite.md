@@ -3,6 +3,8 @@ lang: hi
 storyId: uppsc-a-5-e-1-2026-apply-by-4-december-for-assistant-archite
 title: "UPPSC A-5/E-1/2026: Assistant Architect Planner, Sports Officer, Programmer Grade-2 के लिए 4 दिसंबर तक apply"
 summary: "उत्तर प्रदेश लोक सेवा आयोग (UPPSC) ने विज्ञापन संख्या A-5/E-1/2026 के तहत Assistant Architect Planner, Sports Officer और Programmer Grade-2 परीक्षा-2026 के लिए ऑनलाइन आवेदन माँगे हैं। यह उन अभ्यर्थियों के लिए है जो इन पदों की परीक्षा में शामिल होना चाहते हैं और आयोग की वेबसाइट पर आवेदन कर सकते हैं।"
+searchTitle: "UPPSC भर्ती 2026: 4 दिसंबर तक apply, 3 परीक्षाएँ"
+searchDescription: "UPPSC विज्ञापन A-5/E-1/2026: Assistant Architect Planner, Sports Officer और Programmer Grade-2 परीक्षा के लिए online आवेदन। Last date 4 दिसंबर।"
 meaning: "अगर आप इन तीनों में से किसी पद की परीक्षा देना चाहते हैं, तो आपको 4 नवंबर 2026 से 4 दिसंबर 2026 के बीच ऑनलाइन आवेदन करना होगा और उसी तारीख तक फ़ीस भी जमा करनी होगी। आवेदन में किसी तरह का सुधार 11 दिसंबर 2026 तक किया जा सकेगा। जिन लोगों को इन पदों में दिलचस्पी नहीं है, उन पर इस विज्ञापन का कोई सीधा असर नहीं है।"
 keyFacts:
   - "विज्ञापन संख्या: A-5/E-1/2026"

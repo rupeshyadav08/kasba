@@ -3,6 +3,8 @@ lang: en
 storyId: pm-awas-yojana-urban-2-0-1-75-lakh-new-houses-approved-up
 title: "PM Awas Yojana Urban 2.0: 1.75 lakh new houses approved, UP gets 1,01,493"
 summary: "The Ministry of Housing and Urban Affairs approved 1.75 lakh houses under PMAY-Urban 2.0 at a committee meeting held on 19 November 2026. This opens the way for pucca houses for low-income urban families, especially EWS households."
+searchTitle: "PM Awas Urban 2.0: UP gets 1,01,493 new houses"
+searchDescription: "1.75 lakh houses were approved under PMAY-Urban 2.0 on 19 November 2026, with 1,01,493 for UP. For low-income urban families."
 meaning: "If you live in a city and your family falls in the EWS, LIG or MIG group, this approval can help build or buy a pucca house in your town. Approval does not mean money has reached you; the state must first submit the required documents. Keep checking your application status with your local urban body or state agency."
 keyFacts:
   - "Decision taken at the 11th CSMC meeting on 19 November 2026"

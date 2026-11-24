@@ -3,6 +3,8 @@ lang: en
 storyId: ssc-gd-constable-2026-pet-pst-date-clash-with-si-exam-email
 title: "SSC GD Constable 2026: PET/PST date clash with SI exam? Email to request a change"
 summary: "SSC said in a notice dated 17 November 2026 that candidates whose SSC Constable (GD) 2026 PET/PST dates clash with the SI in DP and CAPFs exams should inform the conducting authority by email. Such cases will be examined for rescheduling of PET/PST dates."
+searchTitle: "SSC GD 2026 PET/PST clashes with SI exam? Email"
+searchDescription: "If your SSC GD Constable 2026 PET/PST date clashes with the SI (DP and CAPFs) exam, inform the conducting authority by email for rescheduling."
 meaning: "This is for candidates appearing in both the SSC Constable (GD) 2026 PET/PST and the SI in DP and CAPFs exams whose dates fall on the same days. If that applies to you, email the address given with your details and supporting documents. Candidates with no clash do not need to do anything."
 keyFacts:
   - "SSC issued the notice on 17 November 2026."

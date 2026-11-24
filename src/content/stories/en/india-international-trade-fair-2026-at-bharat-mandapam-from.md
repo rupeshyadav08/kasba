@@ -3,6 +3,8 @@ lang: en
 storyId: india-international-trade-fair-2026-at-bharat-mandapam-from
 title: "India International Trade Fair 2026: at Bharat Mandapam from 14-27 November, open to public from 19 November"
 summary: "The India Trade Promotion Organisation (ITPO) is holding the 45th India International Trade Fair from 14 to 27 November 2026 at Bharat Mandapam in New Delhi, to be inaugurated by Union Commerce and Industry Minister Piyush Goyal on 13 November. The fair opens to the general public from 19 to 27 November, while the first five days are for business visitors only."
+searchTitle: "Trade Fair 2026 Delhi: public days 19-27 November"
+searchDescription: "India International Trade Fair 2026 at Bharat Mandapam, New Delhi, runs 14 to 27 November. Open to the general public from 19 to 27 November."
 meaning: "If you live in or near Delhi and are planning an outing, you can visit the fair between 19 and 27 November; the first five days are not for the general public. Tickets are available online, on the app or at 55 Delhi Metro stations, and senior citizens and persons with disabilities get free entry on public days on showing a valid government ID. Small businesses, startups and artisans get a platform to show their products and meet buyers."
 keyFacts:
   - "Fair runs 14 to 27 November 2026 at Bharat Mandapam, New Delhi"
