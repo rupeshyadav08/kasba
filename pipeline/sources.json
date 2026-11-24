@@ -171,5 +171,32 @@
     "linkPattern": "^https://mausam\\.imd\\.gov\\.in/Forecast/marquee_data/Press[^/]*release[^/]*\\.pdf$",
     "india": true,
     "auto": true
+  },
+  {
+    "id": "bcci",
+    "name": "BCCI (Board of Control for Cricket in India)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://www.bcci.tv/press-releases",
+    "linkPattern": "^https://www\\.bcci\\.tv/news/article/.+",
+    "auto": true
+  },
+  {
+    "id": "icc",
+    "name": "ICC (International Cricket Council)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://www.icc-cricket.com/media-releases",
+    "linkPattern": "^https://www\\.icc-cricket\\.com/media-releases/.+",
+    "auto": true
+  },
+  {
+    "id": "cag",
+    "name": "CAG (Comptroller and Auditor General of India)",
+    "type": "page",
+    "lang": "en",
+    "url": "https://cag.gov.in/en/press-release",
+    "linkPattern": "^https://d1jmc0u14z2tmp\\.cloudfront\\.net/uploads/PressRelease/.+\\.pdf$",
+    "kind": "record"
   }
 ]
