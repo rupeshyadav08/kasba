@@ -52,11 +52,11 @@ const field = (text, name) => {
   try { return String(JSON.parse(raw)); } catch { return raw; }
 };
 
-// Published stories and waiting drafts from the last few days whose English headline shares most of
+// Published stories and waiting drafts from the last 30 days whose English headline shares most of
 // its words with a new one. They may be the same news (PIB issues one release in two languages,
 // and a new release for every day of a fair) or only look alike (another bank, exam or bond
 // series), so the pipeline asks the model to decide between them.
-export function similarStories(enTitle, days = 10) {
+export function similarStories(enTitle, days = 30) {
   const since = Date.now() - days * 86400e3;
   const dir = new URL('src/content/stories/en/', root);
   const drafts = new URL('pipeline/drafts/', root);
