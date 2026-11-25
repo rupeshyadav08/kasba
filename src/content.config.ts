@@ -86,6 +86,12 @@ const exams = defineCollection({
     faq: z.array(z.object({ q: z.string(), a: z.string() })).min(2),
     order: z.number().default(50),
     updated: z.coerce.date(),
+    // "Where things stand now", rewritten by the pipeline (pipeline/lib/guides.mjs) when a new
+    // story about this guide goes live.
+    now: z.string().max(600).optional(),
+    nowFacts: z.array(z.string()).max(6).default([]),
+    nowStory: z.string().optional(),
+    searchTitle: z.string().max(70).optional(),
   }),
 });
 

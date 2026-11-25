@@ -39,11 +39,19 @@ const jsonLd = [
   }] : []),
 ];
 ---
-<Base lang={lang} title={`${d.name} | Kasba`} description={d.short} altPath={altPath} jsonLd={jsonLd}>
+<Base lang={lang} title={d.searchTitle ?? `${d.name} | Kasba`} description={d.short} altPath={altPath} jsonLd={jsonLd}>
   <main class="wrap epage">
     <nav class="crumbs"><a href={examPath(lang)}>{hi ? 'परीक्षा और योजना गाइड' : 'Exam and scheme guides'}</a></nav>
     <h1 class="serif">{d.name}</h1>
     <p class="lede">{d.short}</p>
+    {d.now && (
+      <section class="now" aria-labelledby="now-h">
+        <h2 id="now-h" class="serif">{hi ? 'अभी की स्थिति' : 'Where things stand now'}</h2>
+        <p>{d.now}</p>
+        {d.nowFacts.length > 0 && <ul>{d.nowFacts.map((f) => <li>{f}</li>)}</ul>}
+        {d.nowStory && <a href={`${hi ? '' : '/en'}/story/${d.nowStory}`}>{hi ? 'पूरी ख़बर पढ़ें' : 'Read the full story'} →</a>}
+      </section>
+    )}
     <p class="muted">{hi ? 'अपडेट' : 'Updated'}: <time datetime={lastUpdate.toISOString()}>{dateFmt(lang, lastUpdate)}</time>. {hi ? 'नई आधिकारिक सूचना आते ही यह पेज अपने-आप अपडेट होता है।' : 'This page updates itself as new official notices arrive.'}</p>
 
     <section aria-labelledby="latest-h">
@@ -89,6 +97,11 @@ const jsonLd = [
   h2 { margin: 0 0 0.5rem; font-size: 1.35rem; }
   .lede { margin: 0; font-size: 1.1rem; font-weight: 600; line-height: 1.6; }
   .muted { margin: 0; color: var(--muted); }
+  .now { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: 0.9rem 1rem; display: grid; gap: 0.5rem; }
+  .now h2 { margin: 0; font-size: 1.15rem; }
+  .now p { margin: 0; line-height: 1.7; }
+  .now ul { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.3rem; line-height: 1.6; }
+  .now a { color: var(--accent); font-weight: 600; }
   .small { font-size: 0.875rem; margin-top: 0.5rem; }
   .list { display: grid; gap: 0.5rem; }
   .body :global(p) { margin: 0 0 0.75rem; line-height: 1.8; }

@@ -6,7 +6,7 @@ import StoryCard from './StoryCard.astro';
 import { districtBySlug, districtPath, stateByCode, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
 import { org } from '../lib/site';
-import { examPath, examsForStory } from '../lib/exams';
+import { examPath, examStories, examsForStory } from '../lib/exams';
 import { calendarLink, categories, dateFmt, readMinutes, secColor, sectionPath, storyPath, t } from '../lib/i18n';
 interface Props { story: CollectionEntry<'stories'>; altPath?: string }
 const { story, altPath } = Astro.props;
@@ -25,6 +25,10 @@ const terms = (await getCollection('glossary', ({ data }) => data.lang === d.lan
 const glossaryPath = d.lang === 'hi' ? '/shabdkosh' : '/en/shabdkosh';
 // Always-updated guide pages for the exam or scheme this story is about.
 const guides = await examsForStory(story);
+// More stories on the same topic, so readers (and search engines) move between them and the guide.
+const topicMore = guides.length
+  ? (await examStories(guides[0])).stories.filter((s) => s.data.storyId !== d.storyId).slice(0, 3)
+  : [];
 const minutes = readMinutes([d.summary, d.meaning, story.body ?? ''].join(' '), d.lang);
 const words = [d.summary, d.meaning, ...d.keyFacts, story.body ?? ''].join(' ').trim().split(/\s+/).length;
 // The state a story is about: stated, or the state of its first district.
@@ -149,6 +153,13 @@ const jsonLd = [
           </a>
         ))}
       </nav>
+    )}
+
+    {topicMore.length > 0 && (
+      <section class="topic-more" aria-labelledby="tm-h">
+        <h2 id="tm-h" class="rail-h">{d.lang === 'hi' ? 'इसी विषय पर और ख़बरें' : 'More on this topic'}</h2>
+        <div class="tm-list">{topicMore.map((s) => <StoryCard story={s} size="compact" />)}</div>
+      </section>
     )}
 
     <AffiliateBox lang={d.lang} category={d.category} />
@@ -276,6 +287,8 @@ const jsonLd = [
   .source { border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.95rem; color: var(--muted); }
   .source a { color: var(--text); text-decoration: underline; display: inline-block; padding: 0.6rem 0; }
   .guides { display: grid; gap: 0.5rem; }
+  .topic-more { display: grid; gap: 0.5rem; }
+  .tm-list { display: grid; gap: 0.5rem; }
   .guides a { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.8rem 1rem; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; min-height: 44px; }
   .guides a:hover .g-n { text-decoration: underline; }
   .g-k { font-size: 0.8rem; color: var(--accent); font-weight: 600; }
