@@ -24,9 +24,6 @@ source:
   url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf"
   date: 2026-11-06
 category: jobs-exams
-image:
-  src: "/img/s/cgept-2026-exam-on-17-18-november-check-your-exam-city-now.webp"
-  credit: "Pixabay (Tama66)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-06T21:00:47+05:30

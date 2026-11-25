@@ -27,9 +27,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341452"
   date: 2026-11-25
 category: nation
-image:
-  src: "/img/s/nh-highway-ambulance-crane-services-to-be-ready-before.webp"
-  credit: "Pixabay (MaxxGirr)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-25T19:02:37+05:30

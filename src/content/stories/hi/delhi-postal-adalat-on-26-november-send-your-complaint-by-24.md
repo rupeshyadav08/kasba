@@ -32,9 +32,6 @@ state: delhi
 deadline:
   date: 2026-11-24
   label: "शिकायत भेजने की अंतिम तिथि 24 नवंबर 2026"
-image:
-  src: "/img/s/delhi-postal-adalat-on-26-november-send-your-complaint-by-24.webp"
-  credit: "Pixabay (adege)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-20T18:07:52+05:30

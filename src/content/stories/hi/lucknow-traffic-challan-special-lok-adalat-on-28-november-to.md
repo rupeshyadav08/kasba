@@ -31,9 +31,6 @@ districts:
 deadline:
   date: 2026-11-28
   label: "28 नवंबर 2026 को लोक अदालत"
-image:
-  src: "/img/s/lucknow-traffic-challan-special-lok-adalat-on-28-november-to.webp"
-  credit: "Pixabay (tortugamediaservices)"
 author: "कस्बा डेस्क"
 published: 2026-11-19T22:11:17+05:30
 ---

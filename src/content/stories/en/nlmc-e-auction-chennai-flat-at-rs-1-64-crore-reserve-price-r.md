@@ -31,9 +31,6 @@ category: money
 deadline:
   date: 2026-12-07
   label: "Last date to register and deposit EMD"
-image:
-  src: "/img/s/nlmc-e-auction-chennai-flat-at-rs-1-64-crore-reserve-price-r.webp"
-  credit: "Pixabay (Alef_photograph)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-13T19:02:04+05:30

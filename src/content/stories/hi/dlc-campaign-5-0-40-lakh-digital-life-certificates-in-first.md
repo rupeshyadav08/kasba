@@ -27,9 +27,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2333729"
   date: 2026-11-06
 category: schemes
-image:
-  src: "/img/s/dlc-campaign-5-0-40-lakh-digital-life-certificates-in-first.webp"
-  credit: "Pixabay (Pexels)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-06T20:56:19+05:30

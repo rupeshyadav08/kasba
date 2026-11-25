@@ -32,9 +32,6 @@ state: delhi
 deadline:
   date: 2026-11-27
   label: "Stalls open till 27 November 2026"
-image:
-  src: "/img/s/india-international-trade-fair-2026-epfo-and-esic-stalls.webp"
-  credit: "Pixabay (jarmoluk)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-16T13:02:40+05:30

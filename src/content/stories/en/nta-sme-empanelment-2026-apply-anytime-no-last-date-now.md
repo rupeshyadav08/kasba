@@ -28,9 +28,6 @@ source:
   url: "https://nta.ac.in/Download/Notice/Notice_20261107140457.pdf"
   date: 2026-11-07
 category: jobs-exams
-image:
-  src: "/img/s/nta-sme-empanelment-2026-apply-anytime-no-last-date-now.webp"
-  credit: "Pixabay (This_is_Engineering)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-07T14:23:12+05:30

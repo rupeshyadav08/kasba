@@ -27,9 +27,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332783"
   date: 2026-11-04
 category: schemes
-image:
-  src: "/img/s/vayo-samman-national-abhiyan-launched-citizens-aged-18-and-a.webp"
-  credit: "Pixabay (pasja1000)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-04T21:17:23+05:30

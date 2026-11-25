@@ -28,9 +28,6 @@ source:
   date: 2026-11-18
 category: nation
 state: up
-image:
-  src: "/img/s/up-cracks-down-on-illegal-horns-sirens-and-modified.webp"
-  credit: "Pixabay (GlauchauCity)"
 author: "Kasba Desk"
 published: 2026-11-19T22:03:14+05:30
 ---

@@ -26,9 +26,6 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63924"
   date: 2026-11-05
 category: money
-image:
-  src: "/img/s/rbi-extends-restrictions-on-pusad-urban-co-operative-bank-ti.webp"
-  credit: "Pixabay (hslergr1)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-05T15:04:53+05:30

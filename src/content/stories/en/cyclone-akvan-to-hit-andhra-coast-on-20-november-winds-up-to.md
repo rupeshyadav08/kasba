@@ -28,9 +28,6 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2017-11-2026.pdf"
   date: 2026-11-17
 category: weather
-image:
-  src: "/img/s/cyclone-akvan-to-hit-andhra-coast-on-20-november-winds-up-to.webp"
-  credit: "Pixabay (51581)"
 author: "Kasba Desk"
 published: 2026-11-17T14:37:10+05:30
 ---

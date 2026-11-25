@@ -28,9 +28,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336552"
   date: 2026-11-15
 category: health
-image:
-  src: "/img/s/national-health-accounts-2023-24-out-of-pocket-health-spendi.webp"
-  credit: "Pixabay (PavanPrasad_IND)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-15T19:02:56+05:30

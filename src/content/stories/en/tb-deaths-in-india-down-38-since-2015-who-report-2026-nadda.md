@@ -28,9 +28,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335795"
   date: 2026-11-13
 category: health
-image:
-  src: "/img/s/tb-deaths-in-india-down-38-since-2015-who-report-2026-nadda.webp"
-  credit: "Pixabay (congerdesign)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-13T19:03:57+05:30

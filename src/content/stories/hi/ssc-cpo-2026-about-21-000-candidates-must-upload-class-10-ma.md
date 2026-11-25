@@ -30,9 +30,6 @@ category: jobs-exams
 deadline:
   date: 2026-11-20
   label: "क्लास 10 की मार्कशीट अपलोड करने की last date"
-image:
-  src: "/img/s/ssc-cpo-2026-about-21-000-candidates-must-upload-class-10-ma.webp"
-  credit: "Pixabay (652234)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-13T19:07:27+05:30
