@@ -1,0 +1,98 @@
+{
+  "id": "abe323c25d",
+  "createdAt": "2026-11-25T18:14:42.400Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "महिला एवं बाल विकास मंत्रालय ने #NumberSaveKiya? अभियान की शुरुआत की, लैंगिक हिंसा के खिलाफ 16 दिनों के अभियान पर परामर्श जारी किया और नई चेतना 5.0 के तहत महिला सुरक्षा सेवाओं को मजबूत करने के लिए अंतर-मंत्रालयी समझौता ज्ञापन पर हस्ताक्षर किए",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341603"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "indian woman mobile phone",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "महिला एवं बाल विकास मंत्रालय ने #NumberSaveKiya? अभियान की शुरुआत की, लैंगिक हिंसा के खिलाफ 16 दिनों के अभियान पर परामर्श जारी किया और नई चेतना 5.0 के तहत महिला सुरक्षा सेवाओं को मजबूत करने के लिए अंतर-मंत्रालयी समझौता ज्ञापन पर हस्ताक्षर किए",
+    "sourceDate": "2026-11-25",
+    "hi": {
+      "title": "#NumberSaveKiya? अभियान शुरू: फोन में 181 और 112 सेव करें",
+      "summary": "महिला एवं बाल विकास मंत्रालय ने 25 नवंबर 2026 को #NumberSaveKiya? अभियान और नई चेतना 5.0 की शुरुआत की। यह अभियान हर महिला से फोन में महिला हेल्पलाइन 181 और आपातकालीन नंबर 112 सेव करने की अपील करता है।",
+      "searchTitle": "#NumberSaveKiya? अभियान: फोन में 181, 112 सेव करें",
+      "searchDescription": "महिला हेल्पलाइन 181 और आपातकालीन नंबर 112 फोन में कैसे सेव करें, 181 से क्या मदद मिलती है और नई चेतना 5.0 क्या है — सब आसान भाषा में।",
+      "meaning": "अगर आप महिला हैं या आपके घर-आसपास कोई महिला है, तो इस खबर का सीधा मतलब है कि फोन में 181 और 112 नंबर सेव कर लें। मुश्किल के समय नंबर याद न रहे तो भी एक कॉल पर मदद मिल सकती है। 181 हिंसा का सामना कर रही महिलाओं को पुलिस, वन स्टॉप सेंटर, इलाज और कानूनी सहायता से जोड़ता है।",
+      "keyFacts": [
+        "25 नवंबर 2026 को नई दिल्ली के पूसा स्थित भारत रत्न सी. सुब्रमण्यम ऑडिटोरियम में नई चेतना 5.0 का उद्घाटन हुआ",
+        "महिला हेल्पलाइन 181 एक 24x7 टोल-फ्री सेवा है",
+        "आपातकालीन नंबर 112 और चाइल्ड हेल्पलाइन 1098 भी सेव करने की अपील",
+        "10 मंत्रालयों और नालसा ने 16 दिवसीय अभियान पर संयुक्त परामर्श जारी किया",
+        "महिला एवं बाल विकास मंत्रालय, न्याय विभाग, नालसा और ग्रामीण विकास विभाग ने हिंसा-मुक्त गांव पहल पर समझौता ज्ञापन पर हस्ताक्षर किए"
+      ],
+      "faq": [
+        {
+          "q": "महिला हेल्पलाइन 181 क्या है?",
+          "a": "181 एक 24x7 चलने वाली टोल-फ्री सेवा है। यह हिंसा का सामना कर रही महिलाओं को पुलिस, वन स्टॉप सेंटर, चिकित्सा सुविधा और कानूनी सहायता से जोड़ती है।"
+        },
+        {
+          "q": "फोन में कौन-कौन से नंबर सेव करने को कहा गया है?",
+          "a": "मंत्रालय ने महिला हेल्पलाइन 181, आपातकालीन हेल्पलाइन 112 और चाइल्ड हेल्पलाइन 1098 सेव करने की अपील की है। मंत्री ने कहा कि लोग दूसरों को भी इन नंबरों के बारे में बताएं।"
+        },
+        {
+          "q": "#NumberSaveKiya? अभियान क्या है?",
+          "a": "यह एक सवाल पर आधारित अभियान है — 'नंबर सेव किया?' इसके वीडियो में सभी महिलाओं और उनके आस-पास के लोगों से फोन में 181 और 112 सेव करने की अपील की गई है। इसे आंगनवाड़ी कार्यकर्ताओं, वन स्टॉप सेंटर और मिशन शक्ति हब के नेटवर्क से फैलाया जाएगा।"
+        },
+        {
+          "q": "नई चेतना 5.0 क्या है?",
+          "a": "यह लैंगिक समानता और महिला सशक्तिकरण पर एक राष्ट्रीय अभियान है, जिसका उद्घाटन 25 नवंबर 2026 को हुआ। इसी कार्यक्रम में नई चेतना 4.0 असेसमेंट रिपोर्ट भी जारी की गई।"
+        },
+        {
+          "q": "हिंसा-मुक्त गांव पहल पर किसने समझौता किया?",
+          "a": "महिला एवं बाल विकास मंत्रालय, न्याय विभाग, नालसा और ग्रामीण विकास विभाग ने इस पर समझौता ज्ञापन पर हस्ताक्षर किए। इसका मकसद गांव के स्तर पर कानूनी सहायता, महिलाओं के लिए सहायता सेवाएं और सामुदायिक संस्थाओं को साथ लाना है।"
+        }
+      ],
+      "body": "महिला एवं बाल विकास मंत्रालय ने 25 नवंबर 2026 को नई दिल्ली के पूसा स्थित भारत रत्न सी. सुब्रमण्यम ऑडिटोरियम में नई चेतना 5.0 का उद्घाटन किया। यह लैंगिक समानता और महिला सशक्तिकरण पर एक राष्ट्रीय अभियान है। कार्यक्रम महिलाओं के विरुद्ध हिंसा उन्मूलन के अंतर्राष्ट्रीय दिवस और लैंगिक हिंसा के खिलाफ 16 दिवसीय सक्रियता अभियान की शुरुआत के मौके पर रखा गया था।\n\n## क्या बदला है\n\nइस कार्यक्रम में #NumberSaveKiya? अभियान और हेल्पलाइन गीत की शुरुआत हुई। अभियान का सीधा संदेश है — नंबर जानें, नंबर सेव करें और दूसरों के साथ भी साझा करें। साथ ही 10 मंत्रालयों और नालसा ने 16 दिवसीय अभियान पर एक संयुक्त परामर्श जारी किया, जिसमें राज्यों और केंद्र शासित प्रदेशों को जागरूकता फैलाने और सहायता तथा कानूनी मदद तक पहुंच सुनिश्चित करने का मार्गदर्शन दिया गया है। अभियान की थीम है — 'जागरूकता से कार्रवाई तक और पहुंच से सशक्तिकरण तक'।\n\n## किसे फ़ायदा होगा\n\nयह अभियान खास तौर पर उन महिलाओं के लिए है जिन्हें मुश्किल के समय तुरंत मदद चाहिए। हेल्पलाइन 181 एक 24x7 टोल-फ्री सेवा है, जो हिंसा का सामना कर रही महिलाओं को पुलिस, वन स्टॉप सेंटर, चिकित्सा सुविधा और कानूनी सहायता से जोड़ती है। मंत्री श्रीमती अन्नपूर्णा देवी ने कहा कि बहुत ज़्यादा तनाव में कभी-कभी नंबर याद नहीं रहता और मदद मिलने में देर हो सकती है, इसलिए नंबर फोन में सेव होना चाहिए।\n\n## आपको क्या करना चाहिए\n\nअपने फोन में महिला हेल्पलाइन 181, आपातकालीन हेल्पलाइन 112 और चाइल्ड हेल्पलाइन 1098 सेव कर लें। घर और आसपास की महिलाओं को भी इन नंबरों के बारे में बताएं। अभियान को मंत्रालय के डिजिटल प्लेटफॉर्म के साथ आंगनवाड़ी कार्यकर्ताओं, वन स्टॉप सेंटर और मिशन शक्ति हब के जमीनी नेटवर्क के जरिए फैलाया जाएगा।\n\n## हिंसा-मुक्त गांव पहल\n\nकार्यक्रम में महिला एवं बाल विकास मंत्रालय, न्याय विभाग, नालसा और ग्रामीण विकास विभाग के बीच एक समझौता ज्ञापन पर हस्ताक्षर हुए। इसका मकसद गांव के स्तर पर कानूनी सहायता, महिलाओं के लिए सहायता सेवाएं और सामुदायिक संस्थाओं को एक साथ लाना है। कार्यक्रम में नए जेंडर रिसोर्स सेंटर्स की भी शुरुआत की गई और नई चेतना 4.0 असेसमेंट रिपोर्ट जारी हुई।"
+    },
+    "en": {
+      "title": "#NumberSaveKiya? campaign: save 181 and 112 on your phone",
+      "summary": "The Ministry of Women and Child Development launched the #NumberSaveKiya? campaign and Nai Chetna 5.0 on 25 November 2026. The campaign asks every woman to save the Women Helpline 181 and emergency number 112 on her phone.",
+      "searchTitle": "#NumberSaveKiya? campaign: save 181 and 112",
+      "searchDescription": "What the Women Helpline 181 does, why 112 and 1098 matter, and what the new Nai Chetna 5.0 campaign and the violence-free village MoU mean for you.",
+      "meaning": "If you are a woman, or there is a woman in your home or neighbourhood, the message is simple: save 181 and 112 on the phone now. In a crisis you may not remember the number, and one saved contact can bring help faster. Helpline 181 connects a woman facing violence to police, a One Stop Centre, medical care and legal aid.",
+      "keyFacts": [
+        "Nai Chetna 5.0 was launched on 25 November 2026 at Bharat Ratna C. Subramaniam Auditorium, Pusa, New Delhi",
+        "Women Helpline 181 is a 24x7 toll-free service",
+        "People were also asked to save emergency number 112 and Child Helpline 1098",
+        "10 ministries and NALSA issued a joint advisory for the 16-day campaign",
+        "The WCD Ministry, Department of Justice, NALSA and DoRD signed an MoU on a violence-free village initiative"
+      ],
+      "faq": [
+        {
+          "q": "What is the Women Helpline 181?",
+          "a": "It is a 24x7 toll-free service. It connects women facing violence to police, One Stop Centres, medical facilities and legal aid."
+        },
+        {
+          "q": "Which numbers are women asked to save?",
+          "a": "The Ministry asked people to save Women Helpline 181, emergency helpline 112 and Child Helpline 1098. The Minister also asked people to spread awareness about these numbers."
+        },
+        {
+          "q": "What is the #NumberSaveKiya? campaign?",
+          "a": "It is built around one simple question: 'Have you saved the number?' Its video asks all women and people around them to save 181 and 112 on their phones. It will be spread through the Ministry's digital platforms and the ground network of anganwadi workers, One Stop Centres and Mission Shakti hubs."
+        },
+        {
+          "q": "What is Nai Chetna 5.0?",
+          "a": "It is a national campaign on gender equality and women's empowerment, launched on 25 November 2026. The Nai Chetna 4.0 assessment report was also released at the same event."
+        },
+        {
+          "q": "Who signed the violence-free village MoU?",
+          "a": "The Ministry of Women and Child Development, the Department of Justice, NALSA and the Department of Rural Development signed it. The aim is to bring legal aid, support services for women and community institutions together at the village level."
+        }
+      ],
+      "body": "The Ministry of Women and Child Development launched Nai Chetna 5.0 at the Bharat Ratna C. Subramaniam Auditorium in Pusa, New Delhi, on 25 November 2026. It is a national campaign on gender equality and women's empowerment. The event was held on the International Day for the Elimination of Violence against Women and the start of the 16 Days of Activism against Gender-Based Violence.\n\n## What has changed\n\nThe event saw the launch of the #NumberSaveKiya? campaign and a helpline song. The campaign's message is simple: know the number, save the number, and share it with others. Along with this, 10 ministries and NALSA issued a joint advisory for the 16-day campaign, guiding states and union territories to spread awareness and ensure people can reach support and legal help. The campaign's theme is 'from awareness to action, from access to empowerment'.\n\n## Who it helps\n\nThe campaign is aimed at women who need help quickly in a difficult situation. Helpline 181 is a 24x7 toll-free service that connects women facing violence to police, One Stop Centres, medical facilities and legal aid. Minister Annapurna Devi said that in moments of great stress a number is sometimes forgotten and help can get delayed, which is why it should be saved on the phone.\n\n## What you should do\n\nSave Women Helpline 181, emergency helpline 112 and Child Helpline 1098 on your phone. Tell the women in your home and neighbourhood about these numbers too. The campaign will be spread through the Ministry's digital platforms and the ground network of anganwadi workers, One Stop Centres and Mission Shakti hubs.\n\n## The violence-free village initiative\n\nAt the event, an MoU was signed between the Ministry of Women and Child Development, the Department of Justice, NALSA and the Department of Rural Development. Its aim is to bring legal aid, support services for women and community institutions together at the village level. New Gender Resource Centres were also launched and the Nai Chetna 4.0 assessment report was released."
+    }
+  }
+}
