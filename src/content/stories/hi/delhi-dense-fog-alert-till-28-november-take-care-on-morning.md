@@ -31,6 +31,9 @@ source:
   date: 2026-11-25
 category: weather
 state: delhi
+image:
+  src: "/img/s/delhi-dense-fog-alert-till-28-november-take-care-on-morning.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-25T13:32:06+05:30

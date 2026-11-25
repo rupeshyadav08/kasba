@@ -31,6 +31,9 @@ category: health
 deadline:
   date: 2026-11-09
   label: "New prices apply from 9 November 2026"
+image:
+  src: "/img/s/nppa-issues-revised-prices-for-543-cancer-drug-brands-effect.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T00:27:46+05:30

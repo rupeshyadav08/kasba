@@ -25,6 +25,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329172"
   date: 2026-10-27
 category: schemes
+image:
+  src: "/img/s/postal-dept-held-1-861-dak-chaupals-under-special-campaign-6.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-27T22:21:01+05:30

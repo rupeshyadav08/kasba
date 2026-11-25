@@ -37,6 +37,9 @@ districts:
   - sidhi
   - panna
   - chhatarpur
+image:
+  src: "/img/s/satna-deendayal-nagar-and-rewa-churhat-rail-lines-opened-dee.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-24T21:34:06+05:30

@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330726"
   date: 2026-10-31
 category: schemes
+image:
+  src: "/img/s/45-new-road-projects-approved-in-mizoram-under-pmgsy-iv-48-h.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T11:25:06+05:30

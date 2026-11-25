@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63883"
   date: 2026-10-29
 category: money
+image:
+  src: "/img/s/rbi-frb-2034-bond-to-pay-7-26-interest-for-next-six-months.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T11:31:06+05:30

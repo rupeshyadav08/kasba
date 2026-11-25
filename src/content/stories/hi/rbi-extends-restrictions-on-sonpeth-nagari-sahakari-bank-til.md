@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63875"
   date: 2026-10-28
 category: money
+image:
+  src: "/img/s/rbi-extends-restrictions-on-sonpeth-nagari-sahakari-bank-til.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T11:28:55+05:30

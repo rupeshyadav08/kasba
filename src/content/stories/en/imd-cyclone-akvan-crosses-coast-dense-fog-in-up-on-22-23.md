@@ -28,6 +28,9 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2020-11-2026.pdf"
   date: 2026-11-20
 category: weather
+image:
+  src: "/img/s/imd-cyclone-akvan-crosses-coast-dense-fog-in-up-on-22-23.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-20T14:01:52+05:30

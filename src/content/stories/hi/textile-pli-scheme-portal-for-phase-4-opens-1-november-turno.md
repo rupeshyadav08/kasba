@@ -30,6 +30,9 @@ category: money
 deadline:
   date: 2026-12-31
   label: "पीएलआई योजना चरण 4 के लिए आवेदन की आख़िरी तारीख़ 31 दिसंबर 2026"
+image:
+  src: "/img/s/textile-pli-scheme-portal-for-phase-4-opens-1-november-turno.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T00:28:32+05:30

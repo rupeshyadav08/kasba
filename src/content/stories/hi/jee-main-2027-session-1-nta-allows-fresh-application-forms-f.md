@@ -30,6 +30,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-22
   label: "JEE (Main) 2027 Session 1 का नया फ़ॉर्म भरने की आख़िरी तारीख़ (शाम 11:50 बजे तक)"
+image:
+  src: "/img/s/jee-main-2027-session-1-nta-allows-fresh-application-forms-f.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T13:43:25+05:30

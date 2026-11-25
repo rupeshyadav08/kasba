@@ -28,6 +28,9 @@ category: schemes
 state: mp
 districts:
   - indore
+image:
+  src: "/img/s/smile-scheme-homeless-woman-in-indore-rehabilitated-now-earn.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T00:28:13+05:30

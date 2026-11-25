@@ -28,6 +28,9 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2022-11-2026.pdf"
   date: 2026-11-22
 category: weather
+image:
+  src: "/img/s/imd-alert-dense-fog-over-bihar-east-up-jharkhand-odisha-on.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-22T13:32:07+05:30

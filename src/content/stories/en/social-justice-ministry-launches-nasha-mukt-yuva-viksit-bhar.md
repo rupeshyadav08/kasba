@@ -31,6 +31,9 @@ category: schemes
 deadline:
   date: 2026-11-25
   label: "Last date to take the quiz: 25 November 2026"
+image:
+  src: "/img/s/social-justice-ministry-launches-nasha-mukt-yuva-viksit-bhar.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T22:58:40+05:30

@@ -30,6 +30,9 @@ category: money
 state: delhi
 districts:
   - new-delhi
+image:
+  src: "/img/s/khadi-diwali-utsav-2026-at-connaught-place-20-off-khadi-10-o.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T15:06:23+05:30

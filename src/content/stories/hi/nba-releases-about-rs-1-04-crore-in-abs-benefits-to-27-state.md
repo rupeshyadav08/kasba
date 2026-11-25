@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328130"
   date: 2026-10-24
 category: farming
+image:
+  src: "/img/s/nba-releases-about-rs-1-04-crore-in-abs-benefits-to-27-state.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-25T10:23:51+05:30

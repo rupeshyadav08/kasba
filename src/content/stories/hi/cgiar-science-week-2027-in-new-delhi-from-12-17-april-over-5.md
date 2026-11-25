@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330436"
   date: 2026-10-30
 category: farming
+image:
+  src: "/img/s/cgiar-science-week-2027-in-new-delhi-from-12-17-april-over-5.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T18:39:27+05:30

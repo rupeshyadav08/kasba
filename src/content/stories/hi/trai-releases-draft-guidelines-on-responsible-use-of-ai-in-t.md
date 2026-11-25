@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-11-27
   label: "27 नवंबर 2026 तक ट्राई को लिखित टिप्पणियां भेजें"
+image:
+  src: "/img/s/trai-releases-draft-guidelines-on-responsible-use-of-ai-in-t.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T18:37:56+05:30

@@ -28,6 +28,9 @@ source:
   date: 2026-11-21
 category: weather
 state: delhi
+image:
+  src: "/img/s/imd-dense-fog-in-delhi-ncr-on-21-november-east-up-fog-on-22.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-21T13:02:09+05:30

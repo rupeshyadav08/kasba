@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330177"
   date: 2026-10-29
 category: nation
+image:
+  src: "/img/s/dot-s-t-csirti-holds-webinar-on-cyber-fraud-and-cyber-hygien.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T11:30:32+05:30

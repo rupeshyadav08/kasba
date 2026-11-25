@@ -29,6 +29,9 @@ source:
   date: 2026-11-18
 category: health
 state: delhi
+image:
+  src: "/img/s/delhi-s-ghazipur-illegal-drug-lab-busted-148-kg-alprazolam.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-18T21:11:09+05:30
 ---

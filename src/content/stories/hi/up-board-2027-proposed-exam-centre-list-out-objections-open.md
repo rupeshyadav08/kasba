@@ -31,6 +31,9 @@ state: up
 deadline:
   date: 2026-10-28
   label: "आपत्ति/शिकायत दर्ज करने की अंतिम तिथि"
+image:
+  src: "/img/s/up-board-2027-proposed-exam-centre-list-out-objections-open.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-27T15:22:35+05:30
 ---

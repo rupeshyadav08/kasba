@@ -29,6 +29,9 @@ source:
   date: 2026-10-26
 category: schemes
 state: delhi
+image:
+  src: "/img/s/telecom-pensioners-life-certificate-camps-in-delhi-ncr-in-no.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T16:45:37+05:30

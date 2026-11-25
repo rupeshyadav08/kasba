@@ -31,6 +31,9 @@ category: schemes
 deadline:
   date: 2026-12-28
   label: "एमनेस्टी, 2026 के तहत आवेदन की आख़िरी तारीख"
+image:
+  src: "/img/s/epfo-raises-pf-wage-ceiling-to-rs-25-000-51-lakh-more-worker.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T11:24:49+05:30

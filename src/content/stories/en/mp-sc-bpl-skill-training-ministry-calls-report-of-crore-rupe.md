@@ -29,6 +29,9 @@ source:
   date: 2026-11-01
 category: jobs-exams
 state: mp
+image:
+  src: "/img/s/mp-sc-bpl-skill-training-ministry-calls-report-of-crore-rupe.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-11-02T06:55:29+05:30
 ---

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327350"
   date: 2026-10-23
 category: farming
+image:
+  src: "/img/s/protective-gloves-for-cotton-pickers-icar-circot-signs-techn.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:27+05:30
 ---

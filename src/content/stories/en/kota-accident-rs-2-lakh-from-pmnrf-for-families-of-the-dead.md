@@ -24,6 +24,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339852"
   date: 2026-11-22
 category: nation
+image:
+  src: "/img/s/kota-accident-rs-2-lakh-from-pmnrf-for-families-of-the-dead.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-11-22T13:06:50+05:30
 ---

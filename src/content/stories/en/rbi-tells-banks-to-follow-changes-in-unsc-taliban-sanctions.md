@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13749&Mode=0"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/rbi-tells-banks-to-follow-changes-in-unsc-taliban-sanctions.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T12:27:17+05:30

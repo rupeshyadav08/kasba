@@ -31,6 +31,9 @@ state: delhi
 deadline:
   date: 2026-11-20
   label: "e-dossier अपलोड करने की अंतिम तारीख"
+image:
+  src: "/img/s/dsssb-junior-environmental-engineer-68-24-tier-ii-marks-out.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-03T20:18:10+05:30

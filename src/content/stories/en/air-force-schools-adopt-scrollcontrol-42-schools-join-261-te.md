@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331467"
   date: 2026-11-02
 category: nation
+image:
+  src: "/img/s/air-force-schools-adopt-scrollcontrol-42-schools-join-261-te.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T15:04:37+05:30

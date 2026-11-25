@@ -31,6 +31,9 @@ category: nation
 state: delhi
 districts:
   - new-delhi
+image:
+  src: "/img/s/yuge-yugeen-bharat-museum-cleared-for-north-and-south-blocks.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-11T19:05:55+05:30

@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-20
   label: "Last date to apply for National Startup Awards 6.0"
+image:
+  src: "/img/s/national-startup-awards-6-0-launched-20-sector-and-3-special.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-27T22:20:29+05:30

@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327890"
   date: 2026-10-24
 category: farming
+image:
+  src: "/img/s/11-crore-farmers-get-farmer-id-target-met-5-months-ahead-of.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:17+05:30
 ---

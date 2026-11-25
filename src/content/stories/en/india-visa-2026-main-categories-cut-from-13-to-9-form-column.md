@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335185"
   date: 2026-11-11
 category: nation
+image:
+  src: "/img/s/india-visa-2026-main-categories-cut-from-13-to-9-form-column.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-12T07:32:12+05:30

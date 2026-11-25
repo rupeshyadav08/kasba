@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328187"
   date: 2026-10-25
 category: nation
+image:
+  src: "/img/s/operation-trident-ncb-raids-38-locations-across-assam-mizora.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-25T20:39:31+05:30
 ---

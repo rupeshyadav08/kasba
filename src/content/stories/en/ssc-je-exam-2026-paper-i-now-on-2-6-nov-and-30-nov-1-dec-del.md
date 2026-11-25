@@ -25,6 +25,9 @@ source:
   url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Important%20notice_revised_dated_26_10_2026.pdf"
   date: 2026-10-26
 category: jobs-exams
+image:
+  src: "/img/s/ssc-je-exam-2026-paper-i-now-on-2-6-nov-and-30-nov-1-dec-del.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T23:45:25+05:30

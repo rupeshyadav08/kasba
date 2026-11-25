@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328493"
   date: 2026-10-26
 category: schemes
+image:
+  src: "/img/s/gem-s-aabhar-collection-294-products-from-10-states-as-a-dig.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T16:44:46+05:30

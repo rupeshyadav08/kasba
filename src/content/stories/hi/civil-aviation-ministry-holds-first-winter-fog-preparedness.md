@@ -25,6 +25,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329283"
   date: 2026-10-27
 category: nation
+image:
+  src: "/img/s/civil-aviation-ministry-holds-first-winter-fog-preparedness.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T11:24:11+05:30

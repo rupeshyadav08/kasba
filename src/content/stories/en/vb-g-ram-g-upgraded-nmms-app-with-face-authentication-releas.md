@@ -30,6 +30,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327538"
   date: 2026-10-23
 category: schemes
+image:
+  src: "/img/s/vb-g-ram-g-upgraded-nmms-app-with-face-authentication-releas.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:24+05:30
 ---

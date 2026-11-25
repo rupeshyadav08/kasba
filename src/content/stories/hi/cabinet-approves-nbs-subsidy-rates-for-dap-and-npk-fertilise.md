@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334983"
   date: 2026-11-11
 category: farming
+image:
+  src: "/img/s/cabinet-approves-nbs-subsidy-rates-for-dap-and-npk-fertilise.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-11T19:04:54+05:30

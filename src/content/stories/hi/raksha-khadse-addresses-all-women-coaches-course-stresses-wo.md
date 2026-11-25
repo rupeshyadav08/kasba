@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328060"
   date: 2026-10-24
 category: sports
+image:
+  src: "/img/s/raksha-khadse-addresses-all-women-coaches-course-stresses-wo.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-24T21:35:06+05:30

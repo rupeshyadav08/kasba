@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328917"
   date: 2026-10-27
 category: nation
+image:
+  src: "/img/s/dppit-report-startup-india-support-single-window-approvals-a.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T15:24:02+05:30

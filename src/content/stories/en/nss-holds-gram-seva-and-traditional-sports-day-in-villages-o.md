@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328023"
   date: 2026-10-24
 category: sports
+image:
+  src: "/img/s/nss-holds-gram-seva-and-traditional-sports-day-in-villages-o.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-24T18:30:53+05:30

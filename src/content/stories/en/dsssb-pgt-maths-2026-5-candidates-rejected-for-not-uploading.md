@@ -26,6 +26,9 @@ source:
   date: 2026-10-30
 category: jobs-exams
 state: delhi
+image:
+  src: "/img/s/dsssb-pgt-maths-2026-5-candidates-rejected-for-not-uploading.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-03T00:01:28+05:30

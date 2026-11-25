@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331292"
   date: 2026-11-01
 category: money
+image:
+  src: "/img/s/epfo-check-pf-balance-on-whatsapp-inactive-accounts-with-up.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-01T20:03:07+05:30

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329608"
   date: 2026-10-28
 category: schemes
+image:
+  src: "/img/s/cabinet-approves-pm-viksit-gram-swaraj-yojana-to-run-from-20.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T18:40:51+05:30

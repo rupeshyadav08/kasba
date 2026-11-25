@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63845"
   date: 2026-10-22
 category: money
+image:
+  src: "/img/s/rbi-extends-restrictions-on-suri-friends-union-co-operative.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:30+05:30
 ---

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330631"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/government-sets-up-high-level-committee-on-banking-for-viksi.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T00:11:44+05:30

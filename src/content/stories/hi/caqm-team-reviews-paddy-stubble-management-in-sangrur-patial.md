@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331063"
   date: 2026-10-31
 category: farming
+image:
+  src: "/img/s/caqm-team-reviews-paddy-stubble-management-in-sangrur-patial.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-01T11:50:31+05:30

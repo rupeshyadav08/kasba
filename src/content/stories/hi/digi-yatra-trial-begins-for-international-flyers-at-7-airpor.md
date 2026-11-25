@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331231"
   date: 2026-11-01
 category: nation
+image:
+  src: "/img/s/digi-yatra-trial-begins-for-international-flyers-at-7-airpor.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-01T20:02:19+05:30

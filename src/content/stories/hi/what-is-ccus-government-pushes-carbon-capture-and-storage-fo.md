@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328854"
   date: 2026-10-27
 category: nation
+image:
+  src: "/img/s/what-is-ccus-government-pushes-carbon-capture-and-storage-fo.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T15:24:25+05:30

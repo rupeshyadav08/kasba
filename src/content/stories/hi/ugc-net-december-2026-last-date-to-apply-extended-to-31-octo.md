@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-10-31
   label: "UGC-NET दिसंबर 2026 के ऑनलाइन आवेदन की आख़िरी तारीख़ (रात 11:50 बजे तक)"
+image:
+  src: "/img/s/ugc-net-december-2026-last-date-to-apply-extended-to-31-octo.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T11:39:04+05:30

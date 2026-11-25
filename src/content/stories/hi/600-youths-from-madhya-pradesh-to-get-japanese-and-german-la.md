@@ -23,6 +23,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2326873"
   date: 2026-10-22
 category: jobs-exams
+image:
+  src: "/img/s/600-youths-from-madhya-pradesh-to-get-japanese-and-german-la.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-22T21:39:53+05:30
 ---

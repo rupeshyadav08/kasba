@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331400"
   date: 2026-11-02
 category: schemes
+image:
+  src: "/img/s/vb-g-ram-g-complaint-rules-2026-probe-in-7-working-days-redr.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T15:05:25+05:30

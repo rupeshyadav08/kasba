@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330564"
   date: 2026-10-30
 category: nation
+image:
+  src: "/img/s/vande-bharat-sleeper-new-overnight-varanasi-new-delhi-train.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T19:23:54+05:30

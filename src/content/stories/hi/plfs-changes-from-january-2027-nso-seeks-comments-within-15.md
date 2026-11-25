@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-07
   label: "टिप्पणी भेजने की आख़िरी तारीख (प्रेस नोट की तारीख 23 अक्टूबर 2026 से 15 दिन)"
+image:
+  src: "/img/s/plfs-changes-from-january-2027-nso-seeks-comments-within-15.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:26+05:30
 ---

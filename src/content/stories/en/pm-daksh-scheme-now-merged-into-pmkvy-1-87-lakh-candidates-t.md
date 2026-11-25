@@ -23,6 +23,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2326516"
   date: 2026-10-22
 category: jobs-exams
+image:
+  src: "/img/s/pm-daksh-scheme-now-merged-into-pmkvy-1-87-lakh-candidates-t.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-22T15:16:34+05:30
 ---

@@ -30,6 +30,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-30
   label: "आवेदन की last date (शाम 9 बजे तक)"
+image:
+  src: "/img/s/army-cadet-college-entrance-exam-2027-nta-opens-online-appli.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-07T09:36:34+05:30
 ---

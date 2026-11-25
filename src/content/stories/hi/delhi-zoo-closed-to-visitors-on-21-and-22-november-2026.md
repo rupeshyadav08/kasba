@@ -28,6 +28,9 @@ category: nation
 state: delhi
 districts:
   - new-delhi
+image:
+  src: "/img/s/delhi-zoo-closed-to-visitors-on-21-and-22-november-2026.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-20T21:54:49+05:30

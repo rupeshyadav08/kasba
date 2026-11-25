@@ -28,6 +28,9 @@ source:
   date: 2026-11-10
 category: nation
 state: delhi
+image:
+  src: "/img/s/yamuna-river-cruise-delhi-s-first-recreational-cruise-servic.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-10T19:02:04+05:30

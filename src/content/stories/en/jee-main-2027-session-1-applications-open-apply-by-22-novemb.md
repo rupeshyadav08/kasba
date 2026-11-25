@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-22
   label: "Last date to apply and pay the fee for JEE Main 2027 Session 1 (up to 11:50 PM)"
+image:
+  src: "/img/s/jee-main-2027-session-1-applications-open-apply-by-22-novemb.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-25T00:21:01+05:30

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331080"
   date: 2026-10-31
 category: nation
+image:
+  src: "/img/s/waterlogging-on-ins-kesari-at-visakhapatnam-dockyard-formal.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-11-01T12:05:07+05:30
 ---

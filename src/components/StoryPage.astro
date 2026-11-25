@@ -95,7 +95,8 @@ const jsonLd = [
       <span class="l-text">{d.lang === 'hi' ? 'सुनें' : 'Listen'}</span> <span class="l-min">({minutes} {d.lang === 'hi' ? 'मिनट' : 'min'})</span>
     </button>
     <p class="summary">{d.summary}</p>
-    {d.image && (
+    {/* A headline card (credit "Kasba") only repeats the title here; it is for previews and lists. */}
+    {d.image && d.image.credit !== 'Kasba' && (
       <figure class="lead-img">
         <img src={d.image.src} width="1200" height="675" alt="" fetchpriority="high" decoding="async" />
         <figcaption>{d.lang === 'hi' ? 'सांकेतिक तस्वीर' : 'Representative image'} · {d.image.credit}</figcaption>

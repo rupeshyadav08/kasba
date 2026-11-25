@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330206"
   date: 2026-10-29
 category: schemes
+image:
+  src: "/img/s/ncsc-da-diwali-fair-showcases-handmade-products-of-disabled.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T00:32:58+05:30

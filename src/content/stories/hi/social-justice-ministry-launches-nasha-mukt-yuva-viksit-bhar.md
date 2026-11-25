@@ -31,6 +31,9 @@ category: schemes
 deadline:
   date: 2026-11-25
   label: "क्विज़ में भाग लेने की आख़िरी तारीख 25 नवंबर 2026"
+image:
+  src: "/img/s/social-justice-ministry-launches-nasha-mukt-yuva-viksit-bhar.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T22:58:40+05:30

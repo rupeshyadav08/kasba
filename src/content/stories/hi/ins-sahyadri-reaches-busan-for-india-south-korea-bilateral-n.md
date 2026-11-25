@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329618"
   date: 2026-10-28
 category: nation
+image:
+  src: "/img/s/ins-sahyadri-reaches-busan-for-india-south-korea-bilateral-n.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T18:39:19+05:30

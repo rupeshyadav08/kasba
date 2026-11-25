@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330091"
   date: 2026-10-29
 category: nation
+image:
+  src: "/img/s/green-hydrogen-india-leads-globally-with-over-5-5-lakh-tonne.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T18:48:02+05:30

@@ -31,6 +31,9 @@ category: schemes
 state: up
 districts:
   - moradabad
+image:
+  src: "/img/s/namaste-scheme-sanitation-workers-in-moradabad-given-ppe-kit.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T22:19:45+05:30

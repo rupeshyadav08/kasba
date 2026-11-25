@@ -31,6 +31,9 @@ state: up
 deadline:
   date: 2026-10-28
   label: "Last date to file objection/complaint"
+image:
+  src: "/img/s/up-board-2027-proposed-exam-centre-list-out-objections-open.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-27T15:22:35+05:30
 ---

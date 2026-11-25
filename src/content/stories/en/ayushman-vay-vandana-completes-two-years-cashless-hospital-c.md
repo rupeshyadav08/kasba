@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330113"
   date: 2026-10-29
 category: schemes
+image:
+  src: "/img/s/ayushman-vay-vandana-completes-two-years-cashless-hospital-c.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T18:46:49+05:30

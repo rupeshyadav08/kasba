@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328676"
   date: 2026-10-26
 category: nation
+image:
+  src: "/img/s/road-transport-ministry-amends-rules-to-promote-e85-and-e100.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T22:59:56+05:30

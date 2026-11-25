@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63884"
   date: 2026-10-29
 category: money
+image:
+  src: "/img/s/rbi-fixes-sgb-2019-20-series-vi-premature-redemption-price-a.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T11:30:52+05:30

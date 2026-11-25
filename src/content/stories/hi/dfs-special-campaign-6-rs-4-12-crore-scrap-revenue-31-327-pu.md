@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330556"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/dfs-special-campaign-6-rs-4-12-crore-scrap-revenue-31-327-pu.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T19:24:48+05:30

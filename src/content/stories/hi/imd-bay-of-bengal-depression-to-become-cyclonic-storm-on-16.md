@@ -28,6 +28,9 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2015-11-2026.pdf"
   date: 2026-11-15
 category: weather
+image:
+  src: "/img/s/imd-bay-of-bengal-depression-to-become-cyclonic-storm-on-16.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-16T05:34:46+05:30

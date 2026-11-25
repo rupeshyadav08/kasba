@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63881"
   date: 2026-10-29
 category: money
+image:
+  src: "/img/s/rbi-extends-restrictions-on-kerala-s-irinjalakuda-town-co-op.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T11:44:10+05:30

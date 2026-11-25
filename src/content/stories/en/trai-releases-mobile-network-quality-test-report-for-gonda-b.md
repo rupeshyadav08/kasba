@@ -38,6 +38,9 @@ districts:
   - sultanpur
   - ayodhya
   - pratapgarh
+image:
+  src: "/img/s/trai-releases-mobile-network-quality-test-report-for-gonda-b.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T18:39:48+05:30

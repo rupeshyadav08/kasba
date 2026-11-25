@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330196"
   date: 2026-10-29
 category: health
+image:
+  src: "/img/s/aiia-icaine-launches-national-ayurveda-ai-challenge-finale-a.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T00:31:50+05:30

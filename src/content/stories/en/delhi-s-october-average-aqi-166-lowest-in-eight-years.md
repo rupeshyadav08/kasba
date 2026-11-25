@@ -29,6 +29,9 @@ source:
   date: 2026-10-31
 category: health
 state: delhi
+image:
+  src: "/img/s/delhi-s-october-average-aqi-166-lowest-in-eight-years.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-01T11:51:15+05:30

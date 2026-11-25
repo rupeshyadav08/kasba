@@ -28,6 +28,9 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2023-11-2026.pdf"
   date: 2026-11-23
 category: weather
+image:
+  src: "/img/s/imd-alert-dense-fog-over-bihar-east-up-and-delhi-from-23-25.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-23T13:32:19+05:30

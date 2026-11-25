@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335104"
   date: 2026-11-11
 category: nation
+image:
+  src: "/img/s/dgft-bans-export-of-lithium-ion-battery-black-mass-moves-it.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-11T19:02:32+05:30

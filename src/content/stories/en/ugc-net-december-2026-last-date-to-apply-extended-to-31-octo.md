@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-10-31
   label: "Last date for UGC-NET December 2026 online application (up to 11:50 PM)"
+image:
+  src: "/img/s/ugc-net-december-2026-last-date-to-apply-extended-to-31-octo.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T11:39:04+05:30

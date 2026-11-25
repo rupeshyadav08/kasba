@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328605"
   date: 2026-10-26
 category: nation
+image:
+  src: "/img/s/jaipur-tatanagar-santragachi-express-train-flagged-off-to-li.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-27T10:45:35+05:30

@@ -31,6 +31,9 @@ category: money
 deadline:
   date: 2027-03-31
   label: "31 March 2027 (extended deadline for RELIEF Component II)"
+image:
+  src: "/img/s/relief-scheme-ecgc-cover-deadline-for-exporters-extended-to.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T16:45:09+05:30

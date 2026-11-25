@@ -29,6 +29,9 @@ source:
   date: 2026-10-27
 category: jobs-exams
 state: bihar
+image:
+  src: "/img/s/bihar-gramin-bank-10-900-staff-to-gain-about-rs-78-crore-as.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T15:23:42+05:30

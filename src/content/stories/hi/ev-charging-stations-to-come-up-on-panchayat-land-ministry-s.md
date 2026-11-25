@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330837"
   date: 2026-10-31
 category: schemes
+image:
+  src: "/img/s/ev-charging-stations-to-come-up-on-panchayat-land-ministry-s.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T18:16:58+05:30

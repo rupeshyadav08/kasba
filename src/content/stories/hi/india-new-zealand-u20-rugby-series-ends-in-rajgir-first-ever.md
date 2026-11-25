@@ -28,6 +28,9 @@ source:
   date: 2026-10-27
 category: sports
 state: bihar
+image:
+  src: "/img/s/india-new-zealand-u20-rugby-series-ends-in-rajgir-first-ever.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T11:25:07+05:30

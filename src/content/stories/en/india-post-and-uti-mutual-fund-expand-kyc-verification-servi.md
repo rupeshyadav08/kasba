@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330259"
   date: 2026-10-29
 category: money
+image:
+  src: "/img/s/india-post-and-uti-mutual-fund-expand-kyc-verification-servi.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T00:32:08+05:30

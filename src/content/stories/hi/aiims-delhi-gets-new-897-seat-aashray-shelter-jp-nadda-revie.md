@@ -31,6 +31,9 @@ category: health
 state: delhi
 districts:
   - new-delhi
+image:
+  src: "/img/s/aiims-delhi-gets-new-897-seat-aashray-shelter-jp-nadda-revie.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T00:33:29+05:30

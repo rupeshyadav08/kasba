@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335171"
   date: 2026-11-11
 category: nation
+image:
+  src: "/img/s/4g-saturation-project-villages-without-4g-fall-from-45-180-t.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-12T07:32:55+05:30

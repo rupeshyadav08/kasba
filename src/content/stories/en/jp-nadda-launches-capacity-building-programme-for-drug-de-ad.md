@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328738"
   date: 2026-10-26
 category: health
+image:
+  src: "/img/s/jp-nadda-launches-capacity-building-programme-for-drug-de-ad.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T23:00:27+05:30

@@ -31,6 +31,9 @@ category: schemes
 deadline:
   date: 2026-11-15
   label: "NMMSS छात्रवृत्ति के लिए आवेदन की अंतिम तिथि"
+image:
+  src: "/img/s/nmmss-scholarship-2026-27-last-date-to-apply-extended-to-15.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T23:20:42+05:30

@@ -30,6 +30,9 @@ category: health
 deadline:
   date: 2026-11-20
   label: "Construction and demolition activities banned in NCR till 20 November"
+image:
+  src: "/img/s/caqm-s-pawan-i3c-centre-launched-ncr-construction-work-banne.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T19:24:26+05:30

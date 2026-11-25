@@ -29,6 +29,9 @@ source:
   date: 2026-11-23
 category: jobs-exams
 state: delhi
+image:
+  src: "/img/s/dsssb-exam-schedule-2026-exams-on-15-december-in-three.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-23T15:32:08+05:30

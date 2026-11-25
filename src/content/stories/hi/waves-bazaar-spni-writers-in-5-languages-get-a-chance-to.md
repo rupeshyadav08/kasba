@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339920"
   date: 2026-11-22
 category: nation
+image:
+  src: "/img/s/waves-bazaar-spni-writers-in-5-languages-get-a-chance-to.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-22T19:02:33+05:30

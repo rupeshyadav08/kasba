@@ -29,6 +29,9 @@ source:
   date: 2026-11-24
 category: weather
 state: delhi
+image:
+  src: "/img/s/delhi-weather-dense-fog-likely-on-26-27-november-says-imd.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-24T13:32:15+05:30

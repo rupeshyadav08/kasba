@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63938"
   date: 2026-11-06
 category: money
+image:
+  src: "/img/s/rbi-extends-restrictions-on-sri-guru-raghavendra-sahakara-ba.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-06T20:56:58+05:30

@@ -30,6 +30,9 @@ category: jobs-exams
 deadline:
   date: 2026-10-28
   label: "28 अक्टूबर 2026, शाम 4:50 बजे तक"
+image:
+  src: "/img/s/rms-cet-2026-nta-opens-one-time-correction-window-for-applic.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-27T15:29:38+05:30
 ---

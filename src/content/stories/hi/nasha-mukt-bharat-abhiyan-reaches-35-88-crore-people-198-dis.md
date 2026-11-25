@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335521"
   date: 2026-11-12
 category: health
+image:
+  src: "/img/s/nasha-mukt-bharat-abhiyan-reaches-35-88-crore-people-198-dis.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-12T19:02:45+05:30

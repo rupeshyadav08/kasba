@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330741"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/digidukaan-piyush-goyal-chairs-chintan-shivir-on-digitising.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T11:26:02+05:30

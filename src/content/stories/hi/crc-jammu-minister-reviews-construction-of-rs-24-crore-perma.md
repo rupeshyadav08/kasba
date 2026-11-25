@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329140"
   date: 2026-10-27
 category: schemes
+image:
+  src: "/img/s/crc-jammu-minister-reviews-construction-of-rs-24-crore-perma.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T22:21:33+05:30

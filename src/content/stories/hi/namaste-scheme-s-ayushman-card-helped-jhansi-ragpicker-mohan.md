@@ -28,6 +28,9 @@ category: schemes
 state: up
 districts:
   - jhansi
+image:
+  src: "/img/s/namaste-scheme-s-ayushman-card-helped-jhansi-ragpicker-mohan.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T22:20:45+05:30

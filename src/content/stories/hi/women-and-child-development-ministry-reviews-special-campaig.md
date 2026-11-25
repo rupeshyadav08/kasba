@@ -30,6 +30,9 @@ category: schemes
 deadline:
   date: 2026-10-30
   label: "30 अक्टूबर 2026 तक लंबित शिकायतों का निपटान"
+image:
+  src: "/img/s/women-and-child-development-ministry-reviews-special-campaig.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T22:59:00+05:30
