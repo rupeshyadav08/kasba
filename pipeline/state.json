@@ -4166,11 +4166,31 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341112": "2026-11-25",
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341162": "2026-11-25",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64040": "2026-11-25",
-    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64039": "2026-11-25"
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64039": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341440": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341409": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341468": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341452": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341448": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341446": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341434": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341371": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341454": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341455": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341432": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341374": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341384": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341343": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341387": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341426": "2026-11-25",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341333": "2026-11-25",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64042": "2026-11-25",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64041": "2026-11-25",
+    "https://nta.ac.in/Download/Notice/Notice_20261125175249.pdf": "2026-11-25"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-25T11:28:03.641Z",
+    "last": "2026-11-25T13:34:57.520Z",
     "pending": []
   },
   "sources": [
