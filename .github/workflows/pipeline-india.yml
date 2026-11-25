@@ -60,7 +60,7 @@ jobs:
         run: |
           git config user.name "kasba-pipeline"
           git config user.email "admin@kasba.co.in"
-          git add -A pipeline/state-india.json pipeline/drafts src/content/stories public/img/s
+          git add -A pipeline/state-india.json pipeline/drafts src/content/stories src/content/exams public/img/s
           git diff --cached --quiet && exit 0
           if [ "${{ steps.pipeline.outputs.deploy }}" = "true" ]; then
             git commit -m "Put ${{ steps.pipeline.outputs.live }} urgent stories live (India runner)"

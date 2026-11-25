@@ -13,6 +13,7 @@ import { dateFromLink, devanagariShare, get, noticeText, parsePage, parseRss } f
 import { complete, parseJson } from './lib/llm.mjs';
 import { systemPrompt, userPrompt } from './lib/prompt.mjs';
 import { check, districtSlugs, publish, similarStories, unpublish } from './lib/story.mjs';
+import { refreshGuides } from './lib/guides.mjs';
 import * as tg from './lib/telegram.mjs';
 
 const here = (p) => new URL(p, import.meta.url);
@@ -28,6 +29,8 @@ const dryRun = process.env.DRY_RUN === 'true';
 // Notices readers rush to (the same words the result watcher looks for).
 const URGENT = /result|admit|hall ?ticket|answer ?key|merit|cut ?off|परिणाम|रिजल्ट|प्रवेश ?पत्र|उत्तर ?कुंजी|मेरिट/i;
 const summary = { telegramUpdates: 0, published: [], autoPublished: [], urgentPublished: [], removed: [], rejected: [], drafted: [], skipped: [], errors: [] };
+// Stories put live in this run, with their drafts, for the guide pages (pipeline/lib/guides.mjs).
+const wentLive = [];
 
 const draftPath = (id) => here(`drafts/${id}.json`);
 const draftIds = () => readdirSync(here('drafts/')).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5));
@@ -113,6 +116,7 @@ async function applyDecisions() {
     if (action === 'a') {
       const storyId = await publish(draft, config.author);
       summary.published.push(storyId);
+      wentLive.push({ storyId, draft });
       await tg.answer(cb.id, '✅ मंज़ूर, अगले अपडेट में साइट पर');
       await tg.send(`✅ प्रकाशित: <b>${tg.esc(draft.story.hi.title)}</b>\n${site}/story/${storyId}\n(अगले अपडेट में साइट पर)`);
     } else {
@@ -262,6 +266,7 @@ async function draftNew() {
       if (auto) {
         const storyId = await publish(draft, config.author, { auto: true });
         summary.published.push(storyId);
+        wentLive.push({ storyId, draft });
         summary.autoPublished.push(storyId);
         if (URGENT.test(`${it.title} ${story.en?.title ?? ''}`)) summary.urgentPublished.push(storyId);
         await tg.send(`🤖 <b>अपने-आप प्रकाशित</b> (अगले अपडेट में साइट पर)\n${site}/story/${storyId}\n\n${draftMessage(id, draft)}`, [
@@ -317,6 +322,10 @@ try {
   if (!dryRun && !india) await ensureWebhook();
   if (!india) expireDrafts();
   await draftNew();
+  // Guide pages the new stories belong to get their "where things stand now" box rewritten.
+  if (!dryRun && wentLive.length) {
+    summary.guides = await refreshGuides(wentLive, { provider: config.provider, model: config.models[config.provider] }).catch((e) => { summary.errors.push(`guides: ${e.message}`); return []; });
+  }
   pruneSeen();
 } finally {
   // The India runner queues its stories for the main pipeline's next deploy, except results,
