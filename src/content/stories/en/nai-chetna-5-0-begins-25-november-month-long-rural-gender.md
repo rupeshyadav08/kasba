@@ -28,9 +28,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2340244"
   date: 2026-11-23
 category: schemes
-image:
-  src: "/img/s/nai-chetna-5-0-begins-25-november-month-long-rural-gender.webp"
-  credit: "Pixabay (geralt)"
 author: "Kasba Desk"
 published: 2026-11-23T13:08:05+05:30
 ---

@@ -31,9 +31,6 @@ category: money
 deadline:
   date: 2026-12-07
   label: "पंजीकरण और EMD जमा करने की अंतिम तिथि"
-image:
-  src: "/img/s/nlmc-e-auction-chennai-flat-at-rs-1-64-crore-reserve-price-r.webp"
-  credit: "Pixabay (Alef_photograph)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-13T19:02:04+05:30

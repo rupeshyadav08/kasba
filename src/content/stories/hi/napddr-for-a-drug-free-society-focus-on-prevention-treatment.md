@@ -25,9 +25,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2338088"
   date: 2026-11-18
 category: health
-image:
-  src: "/img/s/napddr-for-a-drug-free-society-focus-on-prevention-treatment.webp"
-  credit: "Pixabay (Open_Arms_Initiative)"
 author: "कस्बा डेस्क"
 published: 2026-11-18T21:11:06+05:30
 ---

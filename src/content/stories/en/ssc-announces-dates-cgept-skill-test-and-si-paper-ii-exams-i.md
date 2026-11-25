@@ -25,9 +25,6 @@ source:
   url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Exams_notice_02112026.pdf"
   date: 2026-11-02
 category: jobs-exams
-image:
-  src: "/img/s/ssc-announces-dates-cgept-skill-test-and-si-paper-ii-exams-i.webp"
-  credit: "Pixabay (fernandozhiminaicela)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T23:44:43+05:30

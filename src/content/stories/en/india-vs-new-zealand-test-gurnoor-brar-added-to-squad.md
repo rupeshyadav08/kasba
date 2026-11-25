@@ -30,9 +30,6 @@ source:
   url: "https://www.bcci.tv/news/article/gurnoor-brar-added-to-indias-test-squad-kuldeep-yadav-released"
   date: 2026-11-14
 category: sports
-image:
-  src: "/img/s/india-vs-new-zealand-test-gurnoor-brar-added-to-squad.webp"
-  credit: "Pixabay (jarmoluk)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-25T00:38:52+05:30

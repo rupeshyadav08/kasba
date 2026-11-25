@@ -27,9 +27,6 @@ category: money
 state: up
 districts:
   - etawah
-image:
-  src: "/img/s/nagar-sahakari-bank-etawah-rbi-extends-directions-till-18.webp"
-  credit: "Pixabay (namair)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-17T16:21:00+05:30

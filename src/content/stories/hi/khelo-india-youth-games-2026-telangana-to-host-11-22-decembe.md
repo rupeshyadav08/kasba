@@ -30,9 +30,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336572"
   date: 2026-11-15
 category: sports
-image:
-  src: "/img/s/khelo-india-youth-games-2026-telangana-to-host-11-22-decembe.webp"
-  credit: "Pixabay (Pexels)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-15T19:02:08+05:30

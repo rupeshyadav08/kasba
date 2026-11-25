@@ -28,9 +28,6 @@ source:
   url: "https://www.sebi.gov.in/legal/circulars/nov-2026/review-of-know-your-client-process-for-individual-person-resident-outside-india-clients_105603.html"
   date: 2026-11-04
 category: money
-image:
-  src: "/img/s/sebi-eases-digital-kyc-for-nris-and-ocis-now-possible-from-a.webp"
-  credit: "Pixabay (Pamjpat)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-04T21:20:37+05:30

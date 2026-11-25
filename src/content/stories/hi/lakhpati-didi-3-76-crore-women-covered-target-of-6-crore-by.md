@@ -28,9 +28,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336454"
   date: 2026-11-15
 category: schemes
-image:
-  src: "/img/s/lakhpati-didi-3-76-crore-women-covered-target-of-6-crore-by.webp"
-  credit: "Pixabay (Danganhfoto)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-15T13:02:11+05:30

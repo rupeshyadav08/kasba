@@ -30,9 +30,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339090"
   date: 2026-11-20
 category: schemes
-image:
-  src: "/img/s/pm-awas-yojana-urban-2-0-1-75-lakh-new-houses-approved-up.webp"
-  credit: "Pixabay (652234)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-20T18:07:35+05:30

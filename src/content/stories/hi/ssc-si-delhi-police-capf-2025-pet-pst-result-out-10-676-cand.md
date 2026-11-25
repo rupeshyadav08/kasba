@@ -28,9 +28,6 @@ source:
   url: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_29102026.pdf"
   date: 2026-10-29
 category: jobs-exams
-image:
-  src: "/img/s/ssc-si-delhi-police-capf-2025-pet-pst-result-out-10-676-cand.webp"
-  credit: "Pixabay (PublicDomainPictures)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-02T23:44:59+05:30

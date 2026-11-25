@@ -31,9 +31,6 @@ category: jobs-exams
 deadline:
   date: 2026-11-24
   label: "NIFTEE 2027 आवेदन की last date (बिना late fee)"
-image:
-  src: "/img/s/niftee-2027-last-date-to-apply-extended-to-24-november-says.webp"
-  credit: "Pixabay (ptksgc)"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-14T19:03:52+05:30

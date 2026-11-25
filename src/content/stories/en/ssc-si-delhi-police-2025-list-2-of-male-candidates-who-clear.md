@@ -25,9 +25,6 @@ source:
   url: "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST_2_29102026.pdf"
   date: 2026-10-29
 category: jobs-exams
-image:
-  src: "/img/s/ssc-si-delhi-police-2025-list-2-of-male-candidates-who-clear.webp"
-  credit: "Pixabay (baoway)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-05T15:05:41+05:30

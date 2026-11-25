@@ -28,9 +28,6 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335009"
   date: 2026-11-11
 category: money
-image:
-  src: "/img/s/mudra-loan-cabinet-extends-credit-guarantee-fund-for-micro-u.webp"
-  credit: "Pixabay (Lepale)"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-11T19:03:56+05:30

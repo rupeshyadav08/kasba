@@ -31,9 +31,6 @@ districts:
 deadline:
   date: 2026-11-28
   label: "Lok Adalat on 28 November 2026"
-image:
-  src: "/img/s/lucknow-traffic-challan-special-lok-adalat-on-28-november-to.webp"
-  credit: "Pixabay (tortugamediaservices)"
 author: "Kasba Desk"
 published: 2026-11-19T22:11:17+05:30
 ---
