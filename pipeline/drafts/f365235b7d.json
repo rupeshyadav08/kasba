@@ -1,0 +1,92 @@
+{
+  "id": "f365235b7d",
+  "createdAt": "2026-11-25T09:07:53.271Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "BPSC (Bihar Public Service Commission)",
+    "title": "Document Verification Program : Integrated 71st Combined Competitive Examination",
+    "link": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/DV-Program-Integrated-71st-CCE_BPSC-20261118-vwk9rz.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "indian students documents office",
+    "state": "bihar",
+    "districts": [
+      "patna"
+    ],
+    "deadline": null,
+    "sourceTitle": "Document Verification Program : Integrated 71st Combined Competitive Examination",
+    "sourceDate": "2026-11-18",
+    "hi": {
+      "title": "BPSC 71st CCE: दस्तावेज सत्यापन का कार्यक्रम जारी, 4 से 11 दिसंबर तक पटना में",
+      "summary": "बिहार लोक सेवा आयोग ने एकीकृत 71वीं संयुक्त मुख्य परीक्षा में सफल उम्मीदवारों के दस्तावेज सत्यापन का कार्यक्रम जारी किया है। यह सत्यापन 4 से 11 दिसंबर 2026 तक पटना में होगा।",
+      "searchTitle": "BPSC 71st CCE: दस्तावेज सत्यापन 4-11 दिसंबर",
+      "searchDescription": "71वीं संयुक्त मुख्य परीक्षा में सफल उम्मीदवारों के लिए दस्तावेज सत्यापन का कार्यक्रम जारी। जानें अपनी तारीख, समय और क्या ले जाना है।",
+      "meaning": "यह सूचना उन उम्मीदवारों के लिए है जो बिहार लोक सेवा आयोग की एकीकृत 71वीं संयुक्त मुख्य परीक्षा में सफल घोषित हुए हैं। उन्हें अपने दस्तावेज सत्यापन के लिए तय तारीख और समय पर पटना स्थित आयोग कार्यालय जाना होगा। आम लोगों पर इसका कोई सीधा असर नहीं है।",
+      "keyFacts": [
+        "दस्तावेज सत्यापन 4 दिसंबर 2026 से 11 दिसंबर 2026 तक चलेगा।",
+        "सत्यापन पटना के नेहरू पथ (बेली रोड) स्थित आयोग कार्यालय में होगा।",
+        "प्रत्येक दिन दो पालियों में सत्यापन होगा: पहली पाली सुबह 10:00 बजे से और दूसरी पाली दोपहर 2:00 बजे से।",
+        "उम्मीदवारों को उनके अनुक्रमांक के अनुसार तारीख और पाली आवंटित की गई है।",
+        "सत्यापन के लिए सभी सफल उम्मीदवारों को आमंत्रित किया गया है।"
+      ],
+      "faq": [
+        {
+          "q": "BPSC 71st CCE का दस्तावेज सत्यापन कब होगा?",
+          "a": "दस्तावेज सत्यापन 4 दिसंबर 2026 से 11 दिसंबर 2026 तक होगा। प्रत्येक दिन दो पालियों में सत्यापन किया जाएगा।"
+        },
+        {
+          "q": "मेरा दस्तावेज सत्यापन किस तारीख और समय पर है?",
+          "a": "आपकी तारीख और पाली आपके अनुक्रमांक के अनुसार तय की गई है। आयोग द्वारा जारी विस्तृत कार्यक्रम में अपना अनुक्रमांक देखकर पता करें कि आपको किस दिन और किस पाली में आना है।"
+        },
+        {
+          "q": "दस्तावेज सत्यापन कहाँ होगा?",
+          "a": "सत्यापन बिहार लोक सेवा आयोग, 45, नेहरू पथ (बेली रोड), पटना — 800007 में होगा।"
+        },
+        {
+          "q": "क्या सभी सफल उम्मीदवारों को दस्तावेज सत्यापन के लिए बुलाया गया है?",
+          "a": "हाँ, आयोग ने एकीकृत 71वीं संयुक्त मुख्य परीक्षा में सफल घोषित सभी उम्मीदवारों को दस्तावेज सत्यापन के लिए आमंत्रित किया है।"
+        }
+      ],
+      "body": "बिहार लोक सेवा आयोग (BPSC) ने एकीकृत 71वीं संयुक्त मुख्य (लिखित) प्रतियोगिता परीक्षा में सफल उम्मीदवारों के दस्तावेज सत्यापन (Document Verification) का कार्यक्रम जारी किया है। यह सूचना उन सभी उम्मीदवारों के लिए है जिन्हें इस परीक्षा में सफल घोषित किया गया है।\n\n## क्या है पूरा कार्यक्रम\n\nदस्तावेज सत्यापन 4 दिसंबर 2026 से 11 दिसंबर 2026 तक चलेगा। यह पटना के नेहरू पथ (बेली रोड) स्थित आयोग कार्यालय में होगा। हर दिन दो पालियों में सत्यापन होगा — पहली पाली सुबह 10:00 बजे से और दूसरी पाली दोपहर 2:00 बजे से।\n\nआयोग ने उम्मीदवारों को उनके अनुक्रमांक के आधार पर अलग-अलग तारीख और पाली आवंटित की है। सूचना में दी गई तालिका में यह देखा जा सकता है कि किस अनुक्रमांक वाले उम्मीदवार को किस दिन और किस पाली में आना है।\n\n## किसे जाना है\n\nयह सूचना केवल उन उम्मीदवारों के लिए है जो एकीकृत 71वीं संयुक्त मुख्य परीक्षा में सफल हुए हैं। आयोग ने सभी सफल उम्मीदवारों को दस्तावेज सत्यापन के लिए आमंत्रित किया है।\n\n## उम्मीदवारों को क्या करना चाहिए\n\nउम्मीदवारों को अपना अनुक्रमांक जारी कार्यक्रम में देखकर अपनी तारीख और पाली की पुष्टि करनी चाहिए। तय तारीख और समय पर आयोग कार्यालय पहुँचना होगा। सत्यापन के लिए कौन-कौन से दस्तावेज ले जाने हैं, इसकी जानकारी इस सूचना में नहीं दी गई है। इसके लिए उम्मीदवार आयोग की आधिकारिक वेबसाइट bpsc.bihar.gov.in पर देख सकते हैं।\n\n## आम लोगों पर असर\n\nइस सूचना का आम जनता पर कोई सीधा असर नहीं है। यह केवल परीक्षा में सफल उम्मीदवारों के लिए एक प्रक्रिया है।"
+    },
+    "en": {
+      "title": "BPSC 71st CCE: Document verification from Dec 4 to 11 in Patna, check your date",
+      "summary": "The Bihar Public Service Commission has released the document verification schedule for candidates who cleared the Integrated 71st Combined Competitive Examination. Verification will be held in Patna from December 4 to 11, 2026.",
+      "searchTitle": "BPSC 71st CCE document verification Dec 4-11",
+      "searchDescription": "Schedule out for document verification of successful 71st CCE candidates. Check your date, time and what to carry.",
+      "meaning": "This notice is for candidates who have been declared successful in the Bihar Public Service Commission's Integrated 71st Combined Competitive Examination. They must go to the Commission's office in Patna on their allotted date and time for document verification. It does not directly affect the general public.",
+      "keyFacts": [
+        "Document verification will run from December 4 to December 11, 2026.",
+        "Verification will be held at the Commission's office on Nehru Path (Bailey Road), Patna.",
+        "There will be two sessions each day: the first from 10:00 am and the second from 2:00 pm.",
+        "Candidates have been allotted a date and session according to their roll number.",
+        "All successful candidates have been invited for verification."
+      ],
+      "faq": [
+        {
+          "q": "When is the BPSC 71st CCE document verification?",
+          "a": "Document verification will be held from December 4 to December 11, 2026. There will be two sessions each day."
+        },
+        {
+          "q": "How do I know my document verification date and time?",
+          "a": "Your date and session are fixed according to your roll number. Check the detailed schedule issued by the Commission to find out which day and session you must attend."
+        },
+        {
+          "q": "Where will the document verification take place?",
+          "a": "Verification will be held at the Bihar Public Service Commission, 45 Nehru Path (Bailey Road), Patna — 800007."
+        },
+        {
+          "q": "Have all successful candidates been called for document verification?",
+          "a": "Yes, the Commission has invited all candidates declared successful in the Integrated 71st Combined Competitive Examination for document verification."
+        }
+      ],
+      "body": "The Bihar Public Service Commission (BPSC) has released the schedule for document verification of candidates who cleared the Integrated 71st Combined Competitive Examination. The notice applies to all candidates declared successful in this examination.\n\n## What the schedule says\n\nDocument verification will be held from December 4 to December 11, 2026, at the Commission's office on Nehru Path (Bailey Road), Patna. There will be two sessions each day — the first from 10:00 am and the second from 2:00 pm.\n\nCandidates have been allotted different dates and sessions based on their roll numbers. The table in the notice shows which roll number is to appear on which day and in which session.\n\n## Who needs to go\n\nThe notice is only for candidates who have been declared successful in the Integrated 71st Combined Competitive Examination. The Commission has invited all successful candidates for document verification.\n\n## What candidates should do\n\nCandidates should check their roll number in the released schedule to confirm their date and session. They must reach the Commission's office on the allotted date and time. The notice does not list the documents to be carried for verification. Candidates can check the Commission's official website bpsc.bihar.gov.in for that information.\n\n## Impact on the general public\n\nThis notice has no direct impact on the general public. It is a procedure only for candidates who cleared the examination."
+    }
+  }
+}
