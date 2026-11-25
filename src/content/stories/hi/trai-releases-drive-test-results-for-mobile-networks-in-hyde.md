@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330491"
   date: 2026-10-30
 category: nation
+image:
+  src: "/img/s/trai-releases-drive-test-results-for-mobile-networks-in-hyde.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T18:38:40+05:30

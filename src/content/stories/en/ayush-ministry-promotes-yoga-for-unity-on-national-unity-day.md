@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330892"
   date: 2026-10-31
 category: health
+image:
+  src: "/img/s/ayush-ministry-promotes-yoga-for-unity-on-national-unity-day.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T18:16:33+05:30

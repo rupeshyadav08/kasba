@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331823"
   date: 2026-11-02
 category: jobs-exams
+image:
+  src: "/img/s/msde-names-19-institutes-as-centres-of-excellence-in-skills.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-02T23:39:10+05:30

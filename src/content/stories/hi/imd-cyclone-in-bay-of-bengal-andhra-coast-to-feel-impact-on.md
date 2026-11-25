@@ -23,6 +23,9 @@ source:
   url: "https://mausam.imd.gov.in/Forecast/marquee_data/Press%20Release%2016-11-2026.pdf"
   date: 2026-11-16
 category: weather
+image:
+  src: "/img/s/imd-cyclone-in-bay-of-bengal-andhra-coast-to-feel-impact-on.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-16T13:31:54+05:30

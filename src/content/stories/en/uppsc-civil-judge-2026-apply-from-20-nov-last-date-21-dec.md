@@ -30,6 +30,9 @@ state: up
 deadline:
   date: 2026-12-21
   label: "Last date to apply and pay fee"
+image:
+  src: "/img/s/uppsc-civil-judge-2026-apply-from-20-nov-last-date-21-dec.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-20T18:10:06+05:30

@@ -28,6 +28,9 @@ source:
   date: 2026-10-31
 category: schemes
 state: mp
+image:
+  src: "/img/s/mpapcet-did-not-pay-crores-on-placement-claims-says-social-j.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-01T12:05:08+05:30
 ---

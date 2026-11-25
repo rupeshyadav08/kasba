@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13747&Mode=0"
   date: 2026-10-27
 category: money
+image:
+  src: "/img/s/rbi-tells-banks-three-names-removed-from-unsc-isil-and-al-qa.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-28T11:38:14+05:30
 ---

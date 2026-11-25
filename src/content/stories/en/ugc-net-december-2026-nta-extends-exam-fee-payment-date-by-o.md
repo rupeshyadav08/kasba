@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-01
   label: "Last date to complete examination fee payment (up to 11:50 PM)"
+image:
+  src: "/img/s/ugc-net-december-2026-nta-extends-exam-fee-payment-date-by-o.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-01T12:05:50+05:30

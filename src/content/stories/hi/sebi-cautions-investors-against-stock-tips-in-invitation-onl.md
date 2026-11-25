@@ -28,6 +28,9 @@ source:
   url: "https://www.sebi.gov.in/media-and-notifications/press-releases/oct-2026/caution-to-investors-against-stock-tips-offered-through-invitation-only-whatsapp-groups_105389.html"
   date: 2026-10-22
 category: money
+image:
+  src: "/img/s/sebi-cautions-investors-against-stock-tips-in-invitation-onl.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:29+05:30
 ---

@@ -30,6 +30,9 @@ category: money
 deadline:
   date: 2026-12-31
   label: "Last date to apply under PLI Scheme Phase 4 is 31 December 2026"
+image:
+  src: "/img/s/textile-pli-scheme-portal-for-phase-4-opens-1-november-turno.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T00:28:32+05:30

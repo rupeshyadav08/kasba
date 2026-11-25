@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330210"
   date: 2026-10-29
 category: nation
+image:
+  src: "/img/s/narmada-control-authority-15th-rcnca-meet-accepts-mou-on-sar.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-30T11:43:31+05:30
 ---

@@ -18,7 +18,9 @@ const colon = d.title.indexOf(':');
 const [topic, rest] = mark && colon > 0 && colon < 40 ? [d.title.slice(0, colon), d.title.slice(colon)] : ['', d.title];
 const sec = categories[d.category][d.lang];
 // The lead uses the full picture; every other card the small copy.
-const pic = d.image && (wide ? d.image.src : thumb(d.image.src));
+// Headline cards (credit "Kasba") are for share previews and Discover only; next to the
+// headline itself they would just repeat it.
+const pic = d.image && d.image.credit !== 'Kasba' && (wide ? d.image.src : thumb(d.image.src));
 ---
 <article class={`card ${size}${pic ? ' has-pic' : ''}`} style={secColor(d.category)}>
   <a href={storyPath(d.lang, d.storyId)}>

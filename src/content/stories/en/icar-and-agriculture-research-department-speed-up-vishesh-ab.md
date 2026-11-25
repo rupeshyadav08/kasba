@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330912"
   date: 2026-10-31
 category: nation
+image:
+  src: "/img/s/icar-and-agriculture-research-department-speed-up-vishesh-ab.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T18:16:13+05:30

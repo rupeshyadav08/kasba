@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330639"
   date: 2026-10-30
 category: schemes
+image:
+  src: "/img/s/bharatnet-pact-signed-to-give-fibre-connections-to-over-5-la.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T00:12:02+05:30

@@ -23,6 +23,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63847"
   date: 2026-10-22
 category: money
+image:
+  src: "/img/s/rbi-sgb-2018-19-series-ii-final-redemption-on-october-23-pri.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:31+05:30
 ---

@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-22
   label: "JEE Main 2027 सत्र 1 के आवेदन और फ़ीस जमा करने की आख़िरी तारीख़ (रात 11:50 बजे तक)"
+image:
+  src: "/img/s/jee-main-2027-session-1-applications-open-apply-by-22-novemb.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-25T00:21:01+05:30

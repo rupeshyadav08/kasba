@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327891"
   date: 2026-10-24
 category: nation
+image:
+  src: "/img/s/8th-all-india-conference-of-grp-chiefs-ends-grp-staff-to-be.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:15+05:30
 ---

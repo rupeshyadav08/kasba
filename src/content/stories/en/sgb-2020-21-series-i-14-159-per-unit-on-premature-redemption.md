@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63872"
   date: 2026-10-27
 category: money
+image:
+  src: "/img/s/sgb-2020-21-series-i-14-159-per-unit-on-premature-redemption.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T11:25:28+05:30

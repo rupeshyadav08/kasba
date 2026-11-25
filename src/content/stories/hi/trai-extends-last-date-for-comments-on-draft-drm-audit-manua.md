@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-11-13
   label: "ट्राई के मसौदा DRM ऑडिट मैनुअल पर टिप्पणी जमा करने की अंतिम तिथि"
+image:
+  src: "/img/s/trai-extends-last-date-for-comments-on-draft-drm-audit-manua.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T00:10:27+05:30

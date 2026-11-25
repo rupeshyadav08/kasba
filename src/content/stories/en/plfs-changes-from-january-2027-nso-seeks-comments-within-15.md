@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-07
   label: "Last date to send comments (15 days from the press note date of 23 October 2026)"
+image:
+  src: "/img/s/plfs-changes-from-january-2027-nso-seeks-comments-within-15.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:26+05:30
 ---

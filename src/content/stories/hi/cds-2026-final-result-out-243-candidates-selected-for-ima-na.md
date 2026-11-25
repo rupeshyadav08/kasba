@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331828"
   date: 2026-11-02
 category: jobs-exams
+image:
+  src: "/img/s/cds-2026-final-result-out-243-candidates-selected-for-ima-na.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-02T23:38:38+05:30

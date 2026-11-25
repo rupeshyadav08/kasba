@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329766"
   date: 2026-10-28
 category: nation
+image:
+  src: "/img/s/cabinet-approves-container-manufacturing-promotion-scheme-cm.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T11:28:11+05:30

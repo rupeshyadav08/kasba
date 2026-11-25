@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329621"
   date: 2026-10-28
 category: sports
+image:
+  src: "/img/s/cabinet-approves-khelo-india-sports-goods-manufacturing-sche.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T18:41:15+05:30

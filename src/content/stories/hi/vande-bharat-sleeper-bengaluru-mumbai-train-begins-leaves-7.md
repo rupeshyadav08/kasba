@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331353"
   date: 2026-11-01
 category: nation
+image:
+  src: "/img/s/vande-bharat-sleeper-bengaluru-mumbai-train-begins-leaves-7.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-02T00:07:30+05:30

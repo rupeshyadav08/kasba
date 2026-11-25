@@ -28,6 +28,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63894"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/rbi-average-interest-rate-on-fresh-bank-loans-falls-in-septe.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T19:25:30+05:30

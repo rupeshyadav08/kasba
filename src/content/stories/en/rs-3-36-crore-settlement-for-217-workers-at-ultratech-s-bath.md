@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330072"
   date: 2026-10-29
 category: jobs-exams
+image:
+  src: "/img/s/rs-3-36-crore-settlement-for-217-workers-at-ultratech-s-bath.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T18:47:36+05:30

@@ -24,6 +24,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328090"
   date: 2026-10-24
 category: nation
+image:
+  src: "/img/s/drdo-s-indigenous-aip-system-enters-setting-to-work-phase-2.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-24T21:34:45+05:30

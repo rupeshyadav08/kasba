@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336636"
   date: 2026-11-15
 category: nation
+image:
+  src: "/img/s/pune-groundwork-begins-for-nhec-cooperative-plant-bharat-tax.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-11-15T20:30:30+05:30
 ---

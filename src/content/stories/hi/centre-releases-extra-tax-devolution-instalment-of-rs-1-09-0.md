@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331028"
   date: 2026-10-31
 category: money
+image:
+  src: "/img/s/centre-releases-extra-tax-devolution-instalment-of-rs-1-09-0.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T23:19:32+05:30

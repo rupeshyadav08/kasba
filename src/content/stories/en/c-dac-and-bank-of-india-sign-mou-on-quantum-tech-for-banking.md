@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327342"
   date: 2026-10-23
 category: money
+image:
+  src: "/img/s/c-dac-and-bank-of-india-sign-mou-on-quantum-tech-for-banking.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:26+05:30
 ---

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328673"
   date: 2026-10-26
 category: schemes
+image:
+  src: "/img/s/my-bharat-reaches-over-2-11-lakh-participants-in-week-six-of.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-27T10:45:16+05:30

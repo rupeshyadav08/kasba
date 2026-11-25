@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330902"
   date: 2026-10-31
 category: money
+image:
+  src: "/img/s/cci-approves-mih-payments-holdings-bv-s-purchase-of-stake-in.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T18:15:29+05:30

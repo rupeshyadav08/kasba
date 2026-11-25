@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-11-13
   label: "Last date to send comments on TRAI's draft DRM Audit Manual"
+image:
+  src: "/img/s/trai-extends-last-date-for-comments-on-draft-drm-audit-manua.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T00:10:27+05:30

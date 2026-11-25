@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328061"
   date: 2026-10-24
 category: farming
+image:
+  src: "/img/s/caqm-reviews-paddy-stubble-management-in-amritsar-and-tarn-t.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-24T21:34:29+05:30

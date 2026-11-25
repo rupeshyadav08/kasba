@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329282"
   date: 2026-10-27
 category: weather
+image:
+  src: "/img/s/cyclone-arnab-flights-cancelled-in-visakhapatnam-vijayawada.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T11:23:52+05:30

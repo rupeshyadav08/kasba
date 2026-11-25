@@ -29,6 +29,9 @@ source:
   date: 2026-11-17
 category: money
 state: up
+image:
+  src: "/img/s/up-food-processing-policy-2023-48-investment-proposals.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-18T21:11:07+05:30
 ---

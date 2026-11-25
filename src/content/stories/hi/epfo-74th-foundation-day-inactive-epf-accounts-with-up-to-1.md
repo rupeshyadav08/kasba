@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330945"
   date: 2026-10-31
 category: money
+image:
+  src: "/img/s/epfo-74th-foundation-day-inactive-epf-accounts-with-up-to-1.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T23:21:25+05:30

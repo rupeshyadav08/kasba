@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328927"
   date: 2026-10-27
 category: health
+image:
+  src: "/img/s/aiia-report-encouraging-results-from-ayurveda-programme-for.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T15:23:17+05:30

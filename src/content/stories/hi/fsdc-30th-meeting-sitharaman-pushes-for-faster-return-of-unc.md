@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327696"
   date: 2026-10-23
 category: money
+image:
+  src: "/img/s/fsdc-30th-meeting-sitharaman-pushes-for-faster-return-of-unc.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:20+05:30
 ---

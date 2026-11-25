@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330605"
   date: 2026-10-30
 category: schemes
+image:
+  src: "/img/s/national-fellowship-sc-scheme-phd-scholar-received-24-lakh-s.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T11:26:24+05:30

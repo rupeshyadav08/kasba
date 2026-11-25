@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63878"
   date: 2026-10-28
 category: money
+image:
+  src: "/img/s/rbi-extends-restrictions-on-lokapavani-mahila-sahakari-bank.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T11:28:34+05:30

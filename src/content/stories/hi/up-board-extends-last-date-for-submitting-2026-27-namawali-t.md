@@ -32,6 +32,9 @@ state: up
 deadline:
   date: 2026-10-26
   label: "नामावली जनरेट/डाउनलोड कर जिला विद्यालय निरीक्षक कार्यालय में जमा करने की अंतिम तिथि"
+image:
+  src: "/img/s/up-board-extends-last-date-for-submitting-2026-27-namawali-t.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:14+05:30
 ---

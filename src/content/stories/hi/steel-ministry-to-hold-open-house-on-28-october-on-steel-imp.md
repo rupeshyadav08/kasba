@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-10-26
   label: "26 अक्टूबर 2026, दोपहर 12:00 बजे तक ईमेल से समय मांगें"
+image:
+  src: "/img/s/steel-ministry-to-hold-open-house-on-28-october-on-steel-imp.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:24+05:30
 ---

@@ -30,6 +30,9 @@ category: jobs-exams
 state: delhi
 districts:
   - south-west-delhi
+image:
+  src: "/img/s/cbse-anubhav-kendra-opens-in-dwarka-delhi-6-000-sq-ft-centre.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-28T11:24:42+05:30

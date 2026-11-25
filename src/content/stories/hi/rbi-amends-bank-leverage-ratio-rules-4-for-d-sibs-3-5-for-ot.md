@@ -27,6 +27,9 @@ source:
   url: "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13743&Mode=0"
   date: 2026-10-23
 category: money
+image:
+  src: "/img/s/rbi-amends-bank-leverage-ratio-rules-4-for-d-sibs-3-5-for-ot.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:18+05:30
 ---

@@ -30,6 +30,9 @@ source:
   url: "https://www.bcci.tv/news/article/india-u19-squad-for-t20-series-against-england-u19-announced"
   date: 2026-11-21
 category: sports
+image:
+  src: "/img/s/india-u19-women-squad-named-for-five-match-t20-series.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-25T00:38:38+05:30

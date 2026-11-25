@@ -25,6 +25,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328453"
   date: 2026-10-26
 category: weather
+image:
+  src: "/img/s/cyclone-arnab-ncmc-reviews-readiness-heavy-rain-likely-in-ea.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T16:44:18+05:30

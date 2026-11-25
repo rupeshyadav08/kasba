@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336043"
   date: 2026-11-13
 category: schemes
+image:
+  src: "/img/s/nfsc-fellowship-sc-researchers-get-rs-16-000-a-month-for-phd.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-14T07:32:36+05:30

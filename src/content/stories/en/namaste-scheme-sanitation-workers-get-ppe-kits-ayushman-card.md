@@ -25,6 +25,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330671"
   date: 2026-10-30
 category: schemes
+image:
+  src: "/img/s/namaste-scheme-sanitation-workers-get-ppe-kits-ayushman-card.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T00:11:08+05:30

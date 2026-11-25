@@ -34,6 +34,9 @@ districts:
 deadline:
   date: 2026-10-28
   label: "Transport Mela on 28 October 2026 from 9:30 am"
+image:
+  src: "/img/s/parivartan-scheme-transport-mela-in-burari-on-28-october-to.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T22:59:39+05:30

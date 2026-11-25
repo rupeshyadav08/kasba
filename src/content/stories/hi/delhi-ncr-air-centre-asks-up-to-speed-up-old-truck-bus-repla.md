@@ -38,6 +38,9 @@ districts:
   - baghpat
   - muzaffarnagar
   - shamli
+image:
+  src: "/img/s/delhi-ncr-air-centre-asks-up-to-speed-up-old-truck-bus-repla.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:19+05:30
 ---

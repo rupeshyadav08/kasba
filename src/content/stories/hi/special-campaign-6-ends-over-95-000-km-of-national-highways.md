@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336940"
   date: 2026-11-16
 category: nation
+image:
+  src: "/img/s/special-campaign-6-ends-over-95-000-km-of-national-highways.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-16T19:03:17+05:30

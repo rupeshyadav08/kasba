@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-11-27
   label: "Send written comments to TRAI by 27 November 2026"
+image:
+  src: "/img/s/trai-releases-draft-guidelines-on-responsible-use-of-ai-in-t.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T18:37:56+05:30

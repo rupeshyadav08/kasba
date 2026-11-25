@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63951"
   date: 2026-11-09
 category: money
+image:
+  src: "/img/s/rbi-extends-supersession-of-abhyudaya-co-operative-bank-boar.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-09T23:21:33+05:30

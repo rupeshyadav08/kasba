@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-01
   label: "परीक्षा शुल्क जमा करने की आख़िरी तारीख (रात 11:50 बजे तक)"
+image:
+  src: "/img/s/ugc-net-december-2026-nta-extends-exam-fee-payment-date-by-o.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-01T12:05:50+05:30

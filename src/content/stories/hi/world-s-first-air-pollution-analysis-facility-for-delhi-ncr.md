@@ -28,6 +28,9 @@ source:
   date: 2026-10-24
 category: health
 state: delhi
+image:
+  src: "/img/s/world-s-first-air-pollution-analysis-facility-for-delhi-ncr.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-24T18:31:14+05:30

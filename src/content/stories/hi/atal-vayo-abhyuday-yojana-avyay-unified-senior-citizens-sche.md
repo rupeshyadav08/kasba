@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328816"
   date: 2026-10-27
 category: schemes
+image:
+  src: "/img/s/atal-vayo-abhyuday-yojana-avyay-unified-senior-citizens-sche.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T15:24:49+05:30

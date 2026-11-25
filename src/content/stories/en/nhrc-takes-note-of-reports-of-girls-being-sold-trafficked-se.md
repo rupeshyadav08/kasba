@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2332225"
   date: 2026-11-03
 category: nation
+image:
+  src: "/img/s/nhrc-takes-note-of-reports-of-girls-being-sold-trafficked-se.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-11-03T20:29:19+05:30
 ---

@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327692"
   date: 2026-10-23
 category: farming
+image:
+  src: "/img/s/caqm-team-reviews-stubble-management-in-punjab-tells-officia.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:22+05:30
 ---

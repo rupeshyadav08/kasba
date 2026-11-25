@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327081"
   date: 2026-10-22
 category: farming
+image:
+  src: "/img/s/union-minister-shivraj-singh-chouhan-launches-khet-bachao-ab.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:28+05:30
 ---

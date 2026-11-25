@@ -29,6 +29,9 @@ source:
   date: 2026-11-01
 category: nation
 state: delhi
+image:
+  src: "/img/s/national-zoological-park-sunday-bird-walk-20-25-spots-each-w.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-01T20:01:31+05:30

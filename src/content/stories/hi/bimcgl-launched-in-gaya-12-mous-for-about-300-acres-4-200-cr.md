@@ -31,6 +31,9 @@ category: jobs-exams
 state: bihar
 districts:
   - gaya
+image:
+  src: "/img/s/bimcgl-launched-in-gaya-12-mous-for-about-300-acres-4-200-cr.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-24T21:33:43+05:30

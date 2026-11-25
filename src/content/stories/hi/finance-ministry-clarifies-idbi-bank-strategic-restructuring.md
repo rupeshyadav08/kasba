@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330296"
   date: 2026-10-29
 category: money
+image:
+  src: "/img/s/finance-ministry-clarifies-idbi-bank-strategic-restructuring.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T11:29:14+05:30

@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330504"
   date: 2026-10-30
 category: nation
+image:
+  src: "/img/s/drl-seizes-50-kg-methamphetamine-in-mizoram-and-assam-four-a.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-30T19:22:57+05:30
 ---

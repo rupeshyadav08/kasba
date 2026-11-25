@@ -33,6 +33,9 @@ districts:
 deadline:
   date: 2026-11-30
   label: "30 November 2026"
+image:
+  src: "/img/s/khet-bachao-abhiyan-rabi-2026-campaign-to-reach-50-lakh-farm.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-02T15:05:48+05:30

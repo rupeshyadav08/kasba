@@ -28,6 +28,9 @@ source:
   url: "https://nta.ac.in/Download/Notice/Notice_20261028220547.pdf"
   date: 2026-10-28
 category: jobs-exams
+image:
+  src: "/img/s/jee-main-2027-session-1-nta-says-do-digilocker-re-kyc-before.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T11:29:51+05:30

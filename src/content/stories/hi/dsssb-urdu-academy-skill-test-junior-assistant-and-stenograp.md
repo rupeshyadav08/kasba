@@ -28,6 +28,9 @@ source:
   date: 2026-10-28
 category: jobs-exams
 state: delhi
+image:
+  src: "/img/s/dsssb-urdu-academy-skill-test-junior-assistant-and-stenograp.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-03T09:01:46+05:30
 ---

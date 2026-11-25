@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330875"
   date: 2026-10-31
 category: money
+image:
+  src: "/img/s/cotton-import-customs-duty-exemption-extended-to-31-december.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-31T18:15:07+05:30

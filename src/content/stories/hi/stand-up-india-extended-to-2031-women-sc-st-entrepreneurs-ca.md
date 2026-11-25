@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2335026"
   date: 2026-11-11
 category: money
+image:
+  src: "/img/s/stand-up-india-extended-to-2031-women-sc-st-entrepreneurs-ca.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-11T19:03:19+05:30

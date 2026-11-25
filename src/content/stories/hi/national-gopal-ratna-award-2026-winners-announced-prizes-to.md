@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339331"
   date: 2026-11-20
 category: farming
+image:
+  src: "/img/s/national-gopal-ratna-award-2026-winners-announced-prizes-to.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-20T21:55:22+05:30

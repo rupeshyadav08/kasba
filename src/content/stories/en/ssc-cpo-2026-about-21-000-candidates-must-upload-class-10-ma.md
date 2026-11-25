@@ -30,6 +30,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-20
   label: "Last date to upload Class 10 marksheet"
+image:
+  src: "/img/s/ssc-cpo-2026-about-21-000-candidates-must-upload-class-10-ma.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-13T19:07:27+05:30

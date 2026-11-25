@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329808"
   date: 2026-10-28
 category: jobs-exams
+image:
+  src: "/img/s/msde-asks-central-public-sector-enterprises-cpses-to-speed-u.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T00:26:43+05:30

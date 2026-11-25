@@ -30,6 +30,9 @@ category: schemes
 deadline:
   date: 2026-10-30
   label: "Pending complaints to be resolved by 30 October 2026"
+image:
+  src: "/img/s/women-and-child-development-ministry-reviews-special-campaig.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-26T22:59:00+05:30

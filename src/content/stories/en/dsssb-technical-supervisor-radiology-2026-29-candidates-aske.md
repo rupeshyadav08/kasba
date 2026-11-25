@@ -31,6 +31,9 @@ state: delhi
 deadline:
   date: 2026-11-23
   label: "Last date to upload e-dossier"
+image:
+  src: "/img/s/dsssb-technical-supervisor-radiology-2026-29-candidates-aske.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-03T20:17:54+05:30

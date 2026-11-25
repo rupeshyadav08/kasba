@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330157"
   date: 2026-10-29
 category: nation
+image:
+  src: "/img/s/trai-releases-mobile-network-quality-report-for-kutch-coveri.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T18:46:15+05:30

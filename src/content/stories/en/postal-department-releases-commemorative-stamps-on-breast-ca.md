@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330674"
   date: 2026-10-30
 category: health
+image:
+  src: "/img/s/postal-department-releases-commemorative-stamps-on-breast-ca.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T00:11:26+05:30

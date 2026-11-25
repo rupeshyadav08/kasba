@@ -32,6 +32,9 @@ districts:
   - north-delhi
   - central-delhi
   - north-west-delhi
+image:
+  src: "/img/s/delhi-gets-three-new-districts-rbi-names-lead-banks-shahdara.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T10:45:58+05:30

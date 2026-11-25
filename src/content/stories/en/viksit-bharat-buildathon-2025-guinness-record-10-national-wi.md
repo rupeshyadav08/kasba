@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329789"
   date: 2026-10-28
 category: jobs-exams
+image:
+  src: "/img/s/viksit-bharat-buildathon-2025-guinness-record-10-national-wi.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-29T00:27:21+05:30

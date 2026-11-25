@@ -30,6 +30,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327846"
   date: 2026-10-24
 category: schemes
+image:
+  src: "/img/s/vb-g-ram-g-replaces-mgnrega-125-days-of-guaranteed-wage-work.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:16+05:30
 ---

@@ -29,6 +29,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328133"
   date: 2026-10-25
 category: nation
+image:
+  src: "/img/s/india-s-ramsar-sites-rise-to-103-uttar-pradesh-second-with-1.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-25T10:23:32+05:30

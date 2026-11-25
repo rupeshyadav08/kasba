@@ -29,6 +29,9 @@ source:
   date: 2026-11-16
 category: nation
 state: delhi
+image:
+  src: "/img/s/patel-chest-delhi-old-dumping-spot-now-an-rrr-centre-and.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-16T19:03:37+05:30

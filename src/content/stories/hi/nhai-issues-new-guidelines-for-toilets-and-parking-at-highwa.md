@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2327553"
   date: 2026-10-23
 category: nation
+image:
+  src: "/img/s/nhai-issues-new-guidelines-for-toilets-and-parking-at-highwa.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-10-24T17:19:23+05:30
 ---

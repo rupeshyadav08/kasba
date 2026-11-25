@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330416"
   date: 2026-10-30
 category: farming
+image:
+  src: "/img/s/pm-kisan-24th-instalment-released-9-34-crore-farmers-get-ove.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-30T18:38:14+05:30

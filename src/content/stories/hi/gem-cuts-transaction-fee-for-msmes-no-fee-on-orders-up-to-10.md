@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329825"
   date: 2026-10-28
 category: money
+image:
+  src: "/img/s/gem-cuts-transaction-fee-for-msmes-no-fee-on-orders-up-to-10.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-29T00:26:19+05:30

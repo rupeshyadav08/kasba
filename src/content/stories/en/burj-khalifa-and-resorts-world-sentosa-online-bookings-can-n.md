@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330601"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/burj-khalifa-and-resorts-world-sentosa-online-bookings-can-n.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T12:26:57+05:30

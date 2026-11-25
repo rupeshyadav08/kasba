@@ -28,6 +28,9 @@ category: nation
 state: mp
 districts:
   - mandsaur
+image:
+  src: "/img/s/cbn-madhya-pradesh-seizes-2-774-650-kg-of-poppy-husk-in-thre.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 published: 2026-11-01T12:05:06+05:30
 ---

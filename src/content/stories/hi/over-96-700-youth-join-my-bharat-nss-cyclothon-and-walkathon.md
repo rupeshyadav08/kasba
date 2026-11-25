@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331065"
   date: 2026-10-31
 category: sports
+image:
+  src: "/img/s/over-96-700-youth-join-my-bharat-nss-cyclothon-and-walkathon.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-01T11:50:52+05:30

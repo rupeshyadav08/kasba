@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328781"
   date: 2026-10-26
 category: jobs-exams
+image:
+  src: "/img/s/37-contract-staff-back-at-work-in-karnataka-esic-hospital-rs.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T22:58:10+05:30

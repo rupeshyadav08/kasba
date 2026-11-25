@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331461"
   date: 2026-11-02
 category: nation
+image:
+  src: "/img/s/navy-to-get-8-next-generation-corvettes-53-866-50-crore-cont.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-11-02T15:05:02+05:30

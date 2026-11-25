@@ -31,6 +31,9 @@ category: money
 deadline:
   date: 2027-03-31
   label: "31 मार्च, 2027 (रिलीफ घटक II की बढ़ी हुई समयसीमा)"
+image:
+  src: "/img/s/relief-scheme-ecgc-cover-deadline-for-exporters-extended-to.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T16:45:09+05:30

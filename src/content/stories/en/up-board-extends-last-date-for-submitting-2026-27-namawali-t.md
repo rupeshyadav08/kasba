@@ -32,6 +32,9 @@ state: up
 deadline:
   date: 2026-10-26
   label: "Last date to generate/download the namawali and submit it at the District School Inspector's office"
+image:
+  src: "/img/s/up-board-extends-last-date-for-submitting-2026-27-namawali-t.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-24T17:19:14+05:30
 ---

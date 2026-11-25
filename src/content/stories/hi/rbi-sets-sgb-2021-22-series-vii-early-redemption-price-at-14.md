@@ -25,6 +25,9 @@ source:
   url: "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63897"
   date: 2026-10-30
 category: money
+image:
+  src: "/img/s/rbi-sets-sgb-2021-22-series-vii-early-redemption-price-at-14.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T19:25:09+05:30

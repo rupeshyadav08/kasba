@@ -30,6 +30,9 @@ category: health
 deadline:
   date: 2026-11-20
   label: "एनसीआर में निर्माण एवं विध्वंस गतिविधियों पर रोक 20 नवंबर तक"
+image:
+  src: "/img/s/caqm-s-pawan-i3c-centre-launched-ncr-construction-work-banne.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-30T19:24:26+05:30

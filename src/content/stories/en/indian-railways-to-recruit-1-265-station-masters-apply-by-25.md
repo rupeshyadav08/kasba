@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-25
   label: "Last date for online application: 25 November 2026"
+image:
+  src: "/img/s/indian-railways-to-recruit-1-265-station-masters-apply-by-25.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-27T22:22:09+05:30

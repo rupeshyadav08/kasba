@@ -27,6 +27,9 @@ source:
   url: "https://www.cbse.gov.in/cbsenew/documents/TRG_MITRA_23_17112026.pdf"
   date: 2026-11-16
 category: jobs-exams
+image:
+  src: "/img/s/cbse-asks-schools-to-enrol-3-5-experienced-teachers-as.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-11-17T13:03:08+05:30

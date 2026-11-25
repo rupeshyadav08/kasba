@@ -27,6 +27,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328135"
   date: 2026-10-25
 category: sports
+image:
+  src: "/img/s/asian-para-games-2026-india-wins-record-114-medals-pm-modi-c.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-25T15:24:26+05:30

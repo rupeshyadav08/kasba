@@ -31,6 +31,9 @@ category: nation
 deadline:
   date: 2026-11-05
   label: "5 November 2026"
+image:
+  src: "/img/s/apna-vote-jaanein-drive-46-youth-dialogues-in-21-states-6-6.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-31T11:24:02+05:30
 ---

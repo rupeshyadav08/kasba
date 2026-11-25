@@ -31,6 +31,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-20
   label: "नेशनल स्टार्टअप अवार्ड्स 6.0 के लिए आवेदन की आख़िरी तारीख"
+image:
+  src: "/img/s/national-startup-awards-6-0-launched-20-sector-and-3-special.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-27T22:20:29+05:30

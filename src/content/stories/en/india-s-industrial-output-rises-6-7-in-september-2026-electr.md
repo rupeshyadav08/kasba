@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329614"
   date: 2026-10-28
 category: money
+image:
+  src: "/img/s/india-s-industrial-output-rises-6-7-in-september-2026-electr.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T18:40:20+05:30

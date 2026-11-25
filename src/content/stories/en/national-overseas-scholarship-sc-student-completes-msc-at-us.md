@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2329683"
   date: 2026-10-28
 category: schemes
+image:
+  src: "/img/s/national-overseas-scholarship-sc-student-completes-msc-at-us.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-28T18:39:02+05:30

@@ -1,6 +1,7 @@
 // Checks a model draft against Kasba's story schema and writes the Markdown files.
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { storyImage } from './image.mjs';
+import { storyCard } from './card.mjs';
 import { categories } from './prompt.mjs';
 
 const root = new URL('../../', import.meta.url);
@@ -128,6 +129,8 @@ export function toMarkdown(draft, lang, { storyId, author, published, auto = fal
 export async function publish(draft, author, { auto = false } = {}) {
   const storyId = uniqueId(slugify(draft.story.en.title));
   draft.image = await storyImage(draft, storyId).catch((e) => { console.log('image', e.message); return null; });
+  // No fitting photo: a card with the headline, so Discover and share previews still get a picture.
+  draft.image ??= await storyCard(draft, storyId).catch((e) => { console.log('card', e.message); return null; });
   const published = istNow();
   for (const lang of ['hi', 'en']) {
     writeFileSync(new URL(`src/content/stories/${lang}/${storyId}.md`, root), toMarkdown(draft, lang, { storyId, author, published, auto }));

@@ -28,6 +28,9 @@ source:
   url: "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330745"
   date: 2026-10-30
 category: nation
+image:
+  src: "/img/s/transbharat-aviation-helicopter-crashes-near-joshimath-dgca.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 published: 2026-10-31T12:26:15+05:30
 ---

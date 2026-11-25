@@ -34,6 +34,9 @@ districts:
 deadline:
   date: 2026-10-28
   label: "परिवहन मेला 28 अक्टूबर 2026 को सुबह 9:30 बजे से"
+image:
+  src: "/img/s/parivartan-scheme-transport-mela-in-burari-on-28-october-to.webp"
+  credit: "Kasba"
 author: "कस्बा डेस्क"
 autoPublished: true
 published: 2026-10-26T22:59:39+05:30

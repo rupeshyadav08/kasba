@@ -30,6 +30,9 @@ category: jobs-exams
 deadline:
   date: 2026-11-22
   label: "Last date to submit a fresh JEE (Main) 2027 Session 1 form (up to 11:50 PM)"
+image:
+  src: "/img/s/jee-main-2027-session-1-nta-allows-fresh-application-forms-f.webp"
+  credit: "Kasba"
 author: "Kasba Desk"
 autoPublished: true
 published: 2026-10-31T13:43:25+05:30
