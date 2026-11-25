@@ -9,8 +9,15 @@ enabled = true
 
 [triggers]
 # Every 30 minutes, 5:30 am to 11:30 pm India time (cron runs in UTC).
-crons = ["*/30 0-17 * * *"]
+# The second one (5 minutes after) sends browser notifications (push.js).
+crons = ["*/30 0-17 * * *", "5,35 0-17 * * *"]
 
 [[kv_namespaces]]
 binding = "WATCH"
 id = "KV_ID"
+
+# The Worker calls itself to send notifications in batches (push.js): each call gets its own
+# limit of outside requests on the free plan.
+[[services]]
+binding = "SELF"
+service = "kasba-watcher"

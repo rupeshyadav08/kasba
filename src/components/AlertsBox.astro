@@ -1,0 +1,70 @@
+---
+// "Get alerts on your phone": browser notifications for jobs, results and last dates.
+// Hidden until the script finds a browser that can do Web Push and the reader has not said no,
+// so it never leaves an empty gap. Subscriptions go to the result watcher Worker (push.js).
+import { watcherUrl } from '../lib/site';
+interface Props { lang: 'hi' | 'en' }
+const { lang } = Astro.props;
+const hi = lang === 'hi';
+---
+<aside class="alerts" data-alerts data-watcher={watcherUrl} hidden>
+  <div class="a-text">
+    <strong>{hi ? 'नौकरी, रिज़ल्ट और आख़िरी तारीख़ के अलर्ट' : 'Alerts for jobs, results and last dates'}</strong>
+    <span class="a-sub" data-a-off>{hi ? 'नई ज़रूरी ख़बर आते ही फ़ोन पर सूचना पाएँ। दिन में ज़्यादा से ज़्यादा 5, मुफ़्त।' : 'Get a notification on your phone as soon as important news comes. At most 5 a day, free.'}</span>
+    <span class="a-sub" data-a-on hidden>{hi ? 'अलर्ट चालू हैं।' : 'Alerts are on.'} <button type="button" class="a-link" data-a-stop>{hi ? 'बंद करें' : 'Turn off'}</button></span>
+    <span class="a-sub a-err" data-a-err hidden>{hi ? 'अलर्ट चालू नहीं हो सके। ब्राउज़र की सेटिंग में इस साइट की सूचनाएँ (Notifications) चालू करें।' : 'Could not turn alerts on. Allow notifications for this site in your browser settings.'}</span>
+  </div>
+  <button type="button" class="pill a-go" data-a-go>🔔 {hi ? 'अलर्ट चालू करें' : 'Turn on alerts'}</button>
+  <button type="button" class="a-x" data-a-x aria-label={hi ? 'हटाएँ' : 'Dismiss'}>×</button>
+</aside>
+<script>
+  const box = document.querySelector<HTMLElement>('[data-alerts]');
+  const supported = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  let dismissed = false;
+  try { dismissed = Number(localStorage.getItem('kasba-alerts-x') ?? 0) > Date.now(); } catch {}
+  if (box && supported && Notification.permission !== 'denied' && !dismissed) {
+    const api = box.dataset.watcher!;
+    const $ = (s: string) => box.querySelector<HTMLElement>(s)!;
+    const show = (on: boolean) => { $('[data-a-on]').hidden = !on; $('[data-a-off]').hidden = on; $('[data-a-go]').hidden = on; $('[data-a-err]').hidden = true; };
+    const key = (b64: string) => {
+      const s = atob((b64 + '='.repeat((4 - (b64.length % 4)) % 4)).replace(/-/g, '+').replace(/_/g, '/'));
+      return Uint8Array.from(s, (c) => c.charCodeAt(0));
+    };
+    const post = (path: string, endpoint: string) => fetch(api + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ endpoint }) });
+    navigator.serviceWorker.ready.then(async (reg) => {
+      show(!!(await reg.pushManager.getSubscription()));
+      box.hidden = false;
+      $('[data-a-go]').addEventListener('click', async () => {
+        try {
+          if ((await Notification.requestPermission()) !== 'granted') throw new Error('denied');
+          const { key: pub } = await (await fetch(api + '/push/key')).json();
+          const sub = (await reg.pushManager.getSubscription()) ?? await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key(pub) });
+          if (!(await post('/push/subscribe', sub.endpoint)).ok) throw new Error('save');
+          show(true);
+        } catch {
+          $('[data-a-err]').hidden = false;
+        }
+      });
+      $('[data-a-stop]').addEventListener('click', async () => {
+        const sub = await reg.pushManager.getSubscription();
+        if (sub) { await post('/push/unsubscribe', sub.endpoint).catch(() => {}); await sub.unsubscribe(); }
+        show(false);
+      });
+    });
+    $('[data-a-x]').addEventListener('click', () => {
+      box.hidden = true;
+      try { localStorage.setItem('kasba-alerts-x', String(Date.now() + 30 * 86400e3)); } catch {}
+    });
+  }
+</script>
+<style>
+  .alerts { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; padding: 0.9rem 1rem; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; position: relative; }
+  .alerts[hidden] { display: none; }
+  .a-text { flex: 1 1 16rem; display: grid; gap: 0.2rem; padding-right: 1.5rem; }
+  .a-sub { color: var(--muted); font-size: 0.925rem; line-height: 1.5; }
+  .a-sub[hidden], .a-go[hidden] { display: none; }
+  .a-err { color: var(--accent); }
+  .a-go { min-height: 44px; font-weight: 700; cursor: pointer; }
+  .a-link { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+  .a-x { position: absolute; top: 0.35rem; right: 0.5rem; background: none; border: 0; font-size: 1.4rem; line-height: 1; color: var(--muted); cursor: pointer; min-width: 32px; min-height: 32px; }
+</style>

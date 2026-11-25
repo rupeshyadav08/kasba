@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection, render } from 'astro:content';
 import AffiliateBox from './AffiliateBox.astro';
 import StoryCard from './StoryCard.astro';
+import AlertsBox from './AlertsBox.astro';
 import { districtBySlug, districtPath, stateByCode, statePath } from '../lib/places';
 import Base from '../layouts/Base.astro';
 import { org } from '../lib/site';
@@ -162,6 +163,8 @@ const jsonLd = [
         <div class="tm-list">{topicMore.map((s) => <StoryCard story={s} size="compact" />)}</div>
       </section>
     )}
+
+    <AlertsBox lang={d.lang} />
 
     <AffiliateBox lang={d.lang} category={d.category} />
 

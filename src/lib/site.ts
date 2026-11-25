@@ -23,3 +23,6 @@ export const org = {
   actionableFeedbackPolicy: 'https://kasba.co.in/contact',
   contactPoint: { '@type': 'ContactPoint', contactType: 'grievance', email: 'admin@kasba.co.in', url: 'https://kasba.co.in/grievance' },
 };
+
+// The result watcher Worker (workers/watcher), which also runs browser notifications (push.js).
+export const watcherUrl = 'https://kasba-watcher.rupeshyadavoffical.workers.dev';

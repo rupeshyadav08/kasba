@@ -11,6 +11,11 @@
 // fetches one notice from that board, so the pipeline (on GitHub's servers, which these boards
 // refuse) can turn them into stories. Only listed boards' own addresses are ever fetched.
 
+import { pushFetch, pushRun } from './push.js';
+
+// Cron that sends browser notifications (see push.js); the other cron checks the boards.
+const PUSH_CRON = '5,35 0-17 * * *';
+
 const BOARDS = [
   // Already Kasba sources: a new item here becomes a story in the run this starts.
   { id: 'up-board', url: 'https://upmsp.edu.in/' },
@@ -243,9 +248,12 @@ async function run(env) {
 
 export default {
   async scheduled(event, env, ctx) {
+    if (event.cron === PUSH_CRON) { ctx.waitUntil(pushRun(env)); return; }
     ctx.waitUntil(Promise.all([run(env), startPipelines(env, new Date(event.scheduledTime))]));
   },
   async fetch(request, env) {
+    const pushed = await pushFetch(request, env);
+    if (pushed) return pushed;
     const path = new URL(request.url).pathname;
     const json = { headers: { 'Content-Type': 'application/json; charset=utf-8' } };
     if (path === '/status') return new Response((await env.WATCH.get('status')) ?? '{}', json);
