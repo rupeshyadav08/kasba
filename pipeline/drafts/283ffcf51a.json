@@ -1,0 +1,100 @@
+{
+  "id": "283ffcf51a",
+  "createdAt": "2026-11-26T11:02:07.116Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "राजस्व खुफिया निदेशालय ने बिहार के पश्चिम चंपारण में भारत-नेपाल सीमा के पास बिहार पुलिस के साथ संयुक्त अभियान में 19 किलोग्राम से अधिक हाथी दांत जब्त किए; चार व्यक्ति गिरफ्तार",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341884"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "elephant india forest",
+    "state": "bihar",
+    "districts": [
+      "west-champaran"
+    ],
+    "deadline": null,
+    "sourceTitle": "राजस्व खुफिया निदेशालय ने बिहार के पश्चिम चंपारण में भारत-नेपाल सीमा के पास बिहार पुलिस के साथ संयुक्त अभियान में 19 किलोग्राम से अधिक हाथी दांत जब्त किए; चार व्यक्ति गिरफ्तार",
+    "sourceDate": "2026-11-26",
+    "hi": {
+      "title": "पश्चिम चंपारण: सीमा के पास 19.39 किलो हाथी दांत जब्त, चार गिरफ्तार",
+      "summary": "राजस्व खुफिया निदेशालय (DRI) ने बिहार पुलिस के साथ मिलकर पश्चिम चंपारण में भारत-नेपाल सीमा के पास 19.39 किलोग्राम हाथी दांत जब्त किया और चार लोगों को गिरफ्तार किया। यह कार्रवाई वन्यजीवों की अवैध तस्करी के खिलाफ बताई गई है।",
+      "searchTitle": "पश्चिम चंपारण: 19.39 किलो हाथी दांत जब्त, 4 गिरफ्तार",
+      "searchDescription": "DRI और बिहार पुलिस का संयुक्त अभियान, भारत-नेपाल सीमा के पास कार्रवाई। जानें क्या जब्त हुआ और कानून क्या कहता है।",
+      "meaning": "आम लोगों को इस खबर में कुछ करने की ज़रूरत नहीं है। यह वन्यजीव तस्करी से जुड़ी एक कार्रवाई है, जिसमें चार लोगों को गिरफ्तार किया गया है। हाथी दांत का व्यापार भारतीय कानून में प्रतिबंधित है, इसलिए किसी को भी ऐसा सामान खरीदने, बेचने या रखने से बचना चाहिए।",
+      "keyFacts": [
+        "19.39 किलोग्राम हाथी दांत जब्त किया गया",
+        "कार्रवाई पश्चिम चंपारण में भारत-नेपाल सीमा के पास हुई",
+        "चार व्यक्तियों को गिरफ्तार किया गया",
+        "संदिग्ध दो दोपहिया वाहनों पर सवार थे",
+        "हाथी दांत वन्यजीव (संरक्षण) अधिनियम, 1972 के तहत जब्त किया गया"
+      ],
+      "faq": [
+        {
+          "q": "पश्चिम चंपारण में कितना हाथी दांत जब्त हुआ?",
+          "a": "19.39 किलोग्राम हाथी दांत जब्त हुआ। यह कार्रवाई भारत-नेपाल सीमा के पास की गई।"
+        },
+        {
+          "q": "कितने लोगों को गिरफ्तार किया गया?",
+          "a": "चार व्यक्तियों को गिरफ्तार किया गया। DRI के अनुसार ये लोग हाथी दांत के अवैध व्यापार में शामिल बताए गए हैं।"
+        },
+        {
+          "q": "किस कानून के तहत कार्रवाई हुई?",
+          "a": "वन्यजीव (संरक्षण) अधिनियम, 1972 के संबंधित प्रावधानों के तहत हाथी दांत जब्त किया गया। हाथी इस कानून की अनुसूची-I में संरक्षित हैं।"
+        },
+        {
+          "q": "क्या हाथी दांत खरीदना या बेचना कानूनी है?",
+          "a": "नहीं। भारतीय कानून के तहत हाथी दांत का व्यापार प्रतिबंधित है।"
+        },
+        {
+          "q": "यह कार्रवाई किसने की?",
+          "a": "राजस्व खुफिया निदेशालय (DRI) ने बिहार पुलिस के साथ संयुक्त अभियान में यह कार्रवाई की।"
+        }
+      ],
+      "body": "## क्या हुआ\n\nराजस्व खुफिया निदेशालय (DRI) ने बिहार पुलिस के साथ मिलकर पश्चिम चंपारण जिले में एक संयुक्त अभियान चलाया। यह कार्रवाई भारत-नेपाल सीमा के पास की गई। अभियान में 19.39 किलोग्राम हाथी दांत जब्त किया गया और चार व्यक्तियों को गिरफ्तार किया गया।\n\nDRI के अनुसार यह कार्रवाई खुफिया जानकारी के आधार पर की गई। अधिकारियों ने दो दोपहिया वाहनों पर सवार चार लोगों को रोका। इनमें से एक के पास एक बैग था, जिसमें हाथी दांत होने का संदेह था।\n\n## संदिग्धों ने क्या किया\n\nविज्ञप्ति के मुताबिक संदिग्धों ने भागने की कोशिश की और अधिकारियों का विरोध भी किया, लेकिन उन्हें पकड़ लिया गया। बैग की जांच में उसमें से 19.39 किलोग्राम हाथी दांत बरामद हुआ। इसे वन्यजीव (संरक्षण) अधिनियम, 1972 के संबंधित प्रावधानों के तहत जब्त किया गया।\n\n## हाथी दांत पर कानून क्या कहता है\n\nविज्ञप्ति के अनुसार हाथियों को वन्यजीव (संरक्षण) अधिनियम, 1972 की अनुसूची-I में संरक्षित रखा गया है। ये उन प्रजातियों में भी शामिल हैं जिन्हें वन्य जीवों और वनस्पतियों की लुप्तप्राय प्रजातियों के अंतरराष्ट्रीय व्यापार पर कन्वेंशन (CITES) के परिशिष्ट-I में सूचीबद्ध किया गया है। भारतीय कानून के तहत हाथी दांत का व्यापार प्रतिबंधित है।\n\nDRI ने कहा कि हाथी दांत की अवैध तस्करी हाथियों के संरक्षण और जैव विविधता के लिए गंभीर खतरा पैदा करती है।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nइस खबर में आम पाठकों को कुछ करने की ज़रूरत नहीं है। यह वन्यजीव तस्करी से जुड़ी एक कार्रवाई है। ध्यान रखें कि हाथी दांत का व्यापार कानून में प्रतिबंधित है, इसलिए ऐसी किसी भी चीज़ की खरीद-बिक्री या रख-रखाव से बचें।\n\n## आगे क्या\n\nविज्ञप्ति में यह नहीं बताया गया है कि गिरफ्तार किए गए लोगों के खिलाफ आगे क्या कार्रवाई होगी। DRI ने कहा है कि वह अन्य कानून प्रवर्तन एजेंसियों के साथ मिलकर वन्यजीव तस्करी पर रोक लगाने और ऐसे नेटवर्क को तोड़ने के लिए काम करता रहेगा।"
+    },
+    "en": {
+      "title": "West Champaran: 19.39 kg ivory seized near Nepal border, four arrested",
+      "summary": "The Directorate of Revenue Intelligence (DRI), with Bihar Police, seized 19.39 kg of ivory near the India-Nepal border in West Champaran district and arrested four people. The action was described as part of efforts against illegal wildlife trafficking.",
+      "searchTitle": "West Champaran: 19.39 kg ivory seized, 4 arrested",
+      "searchDescription": "DRI and Bihar Police joint operation near the India-Nepal border. What was seized and what the wildlife law says.",
+      "meaning": "Ordinary readers do not need to do anything about this news. It is an enforcement action against wildlife trafficking in which four people were arrested. Trade in ivory is banned under Indian law, so people should avoid buying, selling or keeping such items.",
+      "keyFacts": [
+        "19.39 kg of ivory was seized",
+        "The operation took place in West Champaran near the India-Nepal border",
+        "Four people were arrested",
+        "The suspects were on two two-wheelers",
+        "The ivory was seized under the Wild Life (Protection) Act, 1972"
+      ],
+      "faq": [
+        {
+          "q": "How much ivory was seized in West Champaran?",
+          "a": "19.39 kg of ivory was seized. The operation was carried out near the India-Nepal border."
+        },
+        {
+          "q": "How many people were arrested?",
+          "a": "Four people were arrested. According to the DRI, they were said to be involved in the illegal ivory trade."
+        },
+        {
+          "q": "Under which law was the action taken?",
+          "a": "The ivory was seized under the relevant provisions of the Wild Life (Protection) Act, 1972. Elephants are protected under Schedule I of this law."
+        },
+        {
+          "q": "Is buying or selling ivory legal?",
+          "a": "No. Trade in ivory is prohibited under Indian law."
+        },
+        {
+          "q": "Who carried out the operation?",
+          "a": "The Directorate of Revenue Intelligence (DRI) carried it out in a joint operation with Bihar Police."
+        }
+      ],
+      "body": "## What happened\n\nThe Directorate of Revenue Intelligence (DRI), along with Bihar Police, carried out a joint operation in West Champaran district. The action took place near the India-Nepal border. During the operation, 19.39 kg of ivory was seized and four people were arrested.\n\nAccording to the DRI, the operation was based on intelligence input. Officials stopped four people travelling on two two-wheelers. One of them was carrying a bag suspected to contain ivory.\n\n## What the suspects did\n\nAccording to the release, the suspects tried to flee and resisted the officials, but were caught. On checking the bag, 19.39 kg of ivory was recovered. It was seized under the relevant provisions of the Wild Life (Protection) Act, 1972.\n\n## What the law says on ivory\n\nAccording to the release, elephants are protected under Schedule I of the Wild Life (Protection) Act, 1972. They are also listed in Appendix I of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). Trade in ivory is prohibited under Indian law.\n\nThe DRI said illegal ivory trafficking poses a serious threat to elephant conservation and biodiversity.\n\n## What this means for ordinary people\n\nReaders do not need to do anything about this news. It is an enforcement action linked to wildlife trafficking. Note that trade in ivory is banned under the law, so avoid buying, selling or keeping any such item.\n\n## What next\n\nThe release does not say what further action will be taken against the arrested people. The DRI said it will continue working with other law enforcement agencies to curb wildlife trafficking and break networks involved in the illegal trade of protected species."
+    }
+  }
+}

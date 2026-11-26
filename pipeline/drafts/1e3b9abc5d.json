@@ -1,0 +1,98 @@
+{
+  "id": "1e3b9abc5d",
+  "createdAt": "2026-11-26T11:03:29.789Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "UP Information Department",
+    "title": "प्रदेश की 96 चीनी मिलों में पेराई कार्य प्रारंभ, गन्ना मूल्य भुगतान में भी चीनी मिलों ने बनाया नया कीर्तिमान\n 25/Nov/2026",
+    "link": "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_ec92483e-3ba4-424f-8f24-46906d901800.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "farming",
+    "imageQuery": "sugarcane field india",
+    "state": "up",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "प्रदेश की 96 चीनी मिलों में पेराई कार्य प्रारंभ, गन्ना मूल्य भुगतान में भी चीनी मिलों ने बनाया नया कीर्तिमान",
+    "sourceDate": "2026-11-25",
+    "hi": {
+      "title": "UP गन्ना: 96 चीनी मिलों में पेराई शुरू, ₹552.23 करोड़ का मूल्य भुगतान",
+      "summary": "उत्तर प्रदेश में इस पेराई सत्र में अब तक 96 चीनी मिलों ने पेराई शुरू कर दी है और देय ₹552.23 करोड़ के सापेक्ष शत-प्रतिशत से अधिक गन्ना मूल्य भुगतान किया गया है। इसका सीधा फ़ायदा प्रदेश के गन्ना किसानों को मिल रहा है, जिनके बैंक खातों में पैसा सीधे भेजा गया है।",
+      "searchTitle": "UP गन्ना: 96 मिलों में पेराई शुरू, भुगतान ₹552 करोड़",
+      "searchDescription": "जानिए कितनी चीनी मिलों ने पेराई शुरू की, कितनी चीनी बनी और किसानों को गन्ना मूल्य का भुगतान कैसे हुआ।",
+      "meaning": "अगर आप गन्ना किसान हैं तो इस ख़बर का सीधा मतलब है कि मिलों ने पेराई शुरू कर दी है और भुगतान सीधे किसानों के बैंक खातों में भेजा जा रहा है। आम शहरी पाठकों पर इसका कोई सीधा असर नहीं है। किसान अपनी मिल से भुगतान की जानकारी ले सकते हैं।",
+      "keyFacts": [
+        "96 चीनी मिलों ने पेराई शुरू की — 4 निगम क्षेत्र, 47 सहकारी और 78 निजी क्षेत्र की मिलें",
+        "अब तक 707 लाख कुन्तल गन्ने की पेराई हुई",
+        "63.80 लाख कुन्तल चीनी का उत्पादन हुआ",
+        "देय गन्ना मूल्य ₹552.23 करोड़ के सापेक्ष शत-प्रतिशत से अधिक भुगतान",
+        "भुगतान सीधे किसानों के बैंक खातों में भेजा गया"
+      ],
+      "faq": [
+        {
+          "q": "UP में कितनी चीनी मिलों ने पेराई शुरू की है?",
+          "a": "प्रदेश की 96 चीनी मिलों ने पेराई शुरू की है। इनमें निगम क्षेत्र, सहकारी और निजी क्षेत्र की मिलें शामिल हैं।"
+        },
+        {
+          "q": "अब तक कितनी चीनी बनी है?",
+          "a": "96 मिलों ने अब तक 707 लाख कुन्तल गन्ने की पेराई कर 63.80 लाख कुन्तल चीनी का उत्पादन किया है।"
+        },
+        {
+          "q": "गन्ना किसानों को भुगतान कितना हुआ है?",
+          "a": "वर्तमान पेराई सत्र में देय ₹552.23 करोड़ के सापेक्ष शत-प्रतिशत से अधिक गन्ना मूल्य भुगतान किया गया है। यह पैसा सीधे किसानों के बैंक खातों में भेजा गया है।"
+        },
+        {
+          "q": "भुगतान किसानों को सीधे मिलता है या बीच में कोई आता है?",
+          "a": "सूचना के अनुसार भुगतान सीधे किसानों के बैंक खातों में अंतरित किया गया है। इससे बिचौलियों और देरी की समस्या कम होने की बात कही गई है।"
+        },
+        {
+          "q": "गन्ना मूल्य भुगतान में देरी होने पर क्या करें?",
+          "a": "सूचना में इस बारे में कोई निर्देश नहीं दिया गया है। भुगतान से जुड़ी जानकारी के लिए अपनी चीनी मिल या गन्ना विकास विभाग से संपर्क करें।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nउत्तर प्रदेश में इस पेराई सत्र में अब तक 96 चीनी मिलों ने पेराई का काम शुरू कर दिया है। गन्ना एवं चीनी आयुक्त के मुताबिक इनमें निगम क्षेत्र, सहकारी क्षेत्र और निजी क्षेत्र की मिलें शामिल हैं।\n\nइन मिलों ने अब तक 707 लाख कुन्तल गन्ने की पेराई की है, जिससे 63.80 लाख कुन्तल चीनी बनी है।\n\n## किसानों को भुगतान कितना हुआ\n\nसूचना के अनुसार इस पेराई सत्र में अब तक कुल देय गन्ना मूल्य ₹552.23 करोड़ रुपये है, और मिलों ने इससे भी अधिक यानी शत-प्रतिशत से ज़्यादा का भुगतान कर दिया है। यह पैसा सीधे किसानों के बैंक खातों में भेजा गया है।\n\nसूचना में कहा गया है कि मिलों को प्राथमिकता के आधार पर तेज़ भुगतान के निर्देश दिए गए हैं और विभागीय निगरानी के कारण ऐसा हो पाया है।\n\n## किसानों को इसका क्या फ़ायदा\n\nसूचना के मुताबिक समय पर भुगतान मिलने से किसानों को बिचौलियों और देरी की परेशानी से छुटकारा मिलता है और वे आसानी से गन्ना दे पाते हैं। पैसा समय पर मिलने से किसान खाद, बीज और अगली फसल की तैयारी पर खर्च कर पाते हैं।\n\n## किसे क्या करना है\n\nयह सूचना खास तौर पर गन्ना किसानों से जुड़ी है। आम लोगों को इसके लिए कुछ करने की ज़रूरत नहीं है। किसान अपने भुगतान की जानकारी अपनी चीनी मिल या गन्ना विकास विभाग से ले सकते हैं। सूचना में भुगतान से जुड़ी किसी शिकायत या संपर्क नंबर का ज़िक्र नहीं है।"
+    },
+    "en": {
+      "title": "UP sugarcane: crushing begins in 96 sugar mills, ₹552.23 crore cane price paid",
+      "summary": "In Uttar Pradesh, 96 sugar mills have started crushing this season and mills have paid more than 100 per cent of the ₹552.23 crore cane price due so far. The direct benefit goes to the state's sugarcane farmers, whose bank accounts received the money.",
+      "searchTitle": "UP sugarcane: crushing begins in 96 mills, ₹552 crore paid",
+      "searchDescription": "How many sugar mills started crushing, how much sugar was made, and how cane price was paid to farmers' bank accounts.",
+      "meaning": "If you are a sugarcane farmer, this means mills have started crushing and payments are being sent directly to farmers' bank accounts. For ordinary town readers there is no direct effect. Farmers can check payment details with their mill.",
+      "keyFacts": [
+        "96 sugar mills started crushing — 4 corporation, 47 cooperative and 78 private sector mills",
+        "707 lakh quintals of cane crushed so far",
+        "63.80 lakh quintals of sugar produced",
+        "More than 100 per cent of the ₹552.23 crore cane price due has been paid",
+        "Payments sent directly to farmers' bank accounts"
+      ],
+      "faq": [
+        {
+          "q": "How many sugar mills have started crushing in UP?",
+          "a": "96 sugar mills in the state have started crushing. These include mills of the corporation, cooperative and private sectors."
+        },
+        {
+          "q": "How much sugar has been produced so far?",
+          "a": "The 96 mills have crushed 707 lakh quintals of cane and produced 63.80 lakh quintals of sugar so far."
+        },
+        {
+          "q": "How much has been paid to sugarcane farmers?",
+          "a": "Against ₹552.23 crore due this crushing season, more than 100 per cent of the cane price has been paid. The money was sent directly to farmers' bank accounts."
+        },
+        {
+          "q": "Do farmers get the payment directly?",
+          "a": "According to the notice, the payment was transferred directly to farmers' bank accounts. It says this reduces the problem of middlemen and delays."
+        },
+        {
+          "q": "What should a farmer do if the cane payment is delayed?",
+          "a": "The notice gives no instructions on this. For payment-related information, contact your sugar mill or the Cane Development Department."
+        }
+      ],
+      "body": "## What has happened\n\nIn Uttar Pradesh, 96 sugar mills have started crushing so far this season. According to the Cane and Sugar Commissioner, these include mills in the corporation, cooperative and private sectors.\n\nThese mills have crushed 707 lakh quintals of cane so far, producing 63.80 lakh quintals of sugar.\n\n## How much has been paid to farmers\n\nAccording to the notice, the total cane price due this crushing season so far is ₹552.23 crore, and mills have paid more than that — over 100 per cent. The money was sent directly to farmers' bank accounts.\n\nThe notice says mills were instructed to make quick payments on priority, and departmental monitoring made this possible.\n\n## What farmers gain\n\nThe notice says timely payment frees farmers from middlemen and delays and makes it easier for them to supply cane. With money in hand on time, farmers can spend on fertiliser, seed and preparing for the next crop.\n\n## What readers should do\n\nThis notice is mainly about sugarcane farmers. Ordinary readers do not need to do anything. Farmers can check their payment details with their sugar mill or the Cane Development Department. The notice does not give any complaint or contact number for payment issues."
+    }
+  }
+}
