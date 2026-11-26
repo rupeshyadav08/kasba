@@ -1,0 +1,90 @@
+{
+  "id": "6fb86b7566",
+  "createdAt": "2026-11-26T13:35:07.507Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "SEBI",
+    "title": "Notices of Attachment of Bank accounts with AP No. 15891 of 2026 dated November 19, 2026 against Anugrah Stock and Broking Private Limited (PAN – AAACW2920N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9292 of 2026",
+    "link": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notices-of-attachment-of-bank-accounts-with-ap-no-15891-of-2026-dated-november-19-2026-against-anugrah-stock-and-broking-private-limited-pan-aaacw2920n-in-the-matter-of-anugrah-stock-and-broking-_105952.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "indian bank branch",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Notices of Attachment of Bank accounts with AP No. 15891 of 2026 dated November 19, 2026 against Anugrah Stock and Broking Private Limited (PAN – AAACW2920N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9292 of 2026",
+    "sourceDate": "2026-11-19",
+    "hi": {
+      "title": "SEBI ने Anugrah Stock and Broking के बैंक खाते अटैच किए, ₹5.72 करोड़ बकाया",
+      "summary": "SEBI के Recovery Officer ने Anugrah Stock and Broking Private Limited के सभी बैंक खाते और लॉकर अटैच करने का नोटिस जारी किया है। यह कार्रवाई कंपनी पर ₹5.72 करोड़ के बकाये के लिए की गई है, और इसका असर आम जमाकर्ताओं पर सीधे तौर पर नहीं पड़ता।",
+      "searchTitle": "SEBI: Anugrah Stock and Broking के खाते अटैच",
+      "searchDescription": "SEBI ने ₹5.72 करोड़ बकाये पर कंपनी के बैंक खाते और लॉकर अटैच किए। जानिए नोटिस में क्या कहा गया है और किस पर असर होगा।",
+      "meaning": "यह नोटिस सीधे तौर पर आम लोगों के लिए नहीं है। यह उस कंपनी के खातों के बारे में है जिस पर SEBI का बकाया है, और बैंकों को निर्देश दिया गया है कि उसके खातों से पैसा निकाला न जाए। अगर आपका इस कंपनी से कोई लेन-देन या शिकायत जुड़ी है, तो अपने बैंक या SEBI की वसूली प्रक्रिया से जुड़ी जानकारी के लिए संपर्क करें।",
+      "keyFacts": [
+        "कुल बकाया: ₹5,72,0,000 (पाँच करोड़ बहत्तर लाख रुपये)",
+        "जुर्माना: 28 फरवरी 2023 के आदेश से ₹4 करोड़",
+        "ब्याज: मार्च 2023 से सितंबर 2026 तक ₹4.72 करोड़",
+        "रिकवरी सर्टिफिकेट: 3 सितंबर 2026 को जारी",
+        "नोटिस जारी: 19 नवंबर 2026, मुंबई"
+      ],
+      "faq": [
+        {
+          "q": "SEBI ने Anugrah Stock and Broking के खाते क्यों अटैच किए?",
+          "a": "कंपनी पर ₹5.72 करोड़ का बकाया है और SEBI को लगता है कि कंपनी यह पैसा निकाल सकती है। इसलिए Recovery Officer ने बैंक खातों और लॉकर को अटैच करने का आदेश दिया।"
+        },
+        {
+          "q": "क्या इसका असर आम लोगों के खातों पर पड़ेगा?",
+          "a": "नहीं, यह नोटिस सिर्फ इस कंपनी के खातों के बारे में है। आम लोगों के बैंक खातों पर इसका कोई असर नहीं है।"
+        },
+        {
+          "q": "बैंकों को क्या करने को कहा गया है?",
+          "a": "बैंकों को कहा गया है कि कंपनी के खातों से पैसा निकाला न जाए, लेकिन खाते में पैसा आ सकता है। बैंकों को 5 दिन में खातों की जानकारी SEBI को देनी है।"
+        },
+        {
+          "q": "क्या कंपनी के खाते में पैसा आ सकता है?",
+          "a": "हाँ, नोटिस में कहा गया है कि खाते में पैसा आने पर रोक नहीं है, लेकिन बकाये की रकम तक पैसा निकाला नहीं जा सकता।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI के Recovery Officer ने Anugrah Stock and Broking Private Limited के सभी बैंक खातों और लॉकर को अटैच करने का नोटिस जारी किया है। यह नोटिस 19 नवंबर 2026 का है और इसे मुंबई से जारी किया गया है। नोटिस के अनुसार कंपनी पर कुल ₹5,72,0,000 (पाँच करोड़ बहत्तर लाख रुपये) का बकाया है।\n\n## बकाया कितना और किसका\n\nनोटिस में बताया गया है कि यह रकम तीन हिस्सों में है। पहला, 28 फरवरी 2023 के आदेश से कंपनी पर ₹4 करोड़ का जुर्माना लगाया गया था। दूसरा, मार्च 2023 से सितंबर 2026 तक इस पर ₹4.72 करोड़ का ब्याज बनता है। तीसरा, वसूली का खर्च भी जोड़ा गया है। इन सबको मिलाकर कुल ₹5.72 करोड़ बकाया है।\n\n## क्या कार्रवाई की गई है\n\nRecovery Officer ने आदेश दिया है कि कंपनी के सभी बैंक खाते और लॉकर तुरंत अटैच किए जाएँ। साथ ही यह भी कहा गया है कि जब तक SEBI के Recovery Officer से आगे कोई आदेश न आए, तब तक इन खातों से बकाये की रकम तक पैसा नहीं निकाला जाएगा। हालाँकि, खाते में पैसा आने पर रोक नहीं है।\n\n## बैंकों को क्या करना है\n\nबैंकों को नोटिस मिलने के 5 दिन के अंदर SEBI को कंपनी के सभी खातों और लॉकर की जानकारी देनी है। साथ ही पिछले एक साल का खाता विवरण, अटैचमेंट की पुष्टि और लोन से जुड़ी जानकारी भी भेजनी है। अगर 45 दिन में कोई जवाब नहीं आता, तो मान लिया जाएगा कि कंपनी का उस बैंक में कोई खाता नहीं है।\n\n## किस पर असर होगा\n\nयह नोटिस सीधे तौर पर आम लोगों के लिए नहीं है। यह सिर्फ इस कंपनी के बैंक खातों के बारे में है, इसलिए आम जमाकर्ताओं के खातों पर इसका कोई असर नहीं पड़ेगा। अगर किसी का इस कंपनी से कोई लेन-देन या शिकायत जुड़ी है, तो वह अपने बैंक या SEBI से जानकारी ले सकता है।"
+    },
+    "en": {
+      "title": "SEBI attaches bank accounts of Anugrah Stock and Broking over ₹5.72 crore dues",
+      "summary": "SEBI's Recovery Officer has issued a notice attaching all bank accounts and lockers of Anugrah Stock and Broking Private Limited. The action is over ₹5.72 crore in dues, and it does not directly affect ordinary bank customers.",
+      "searchTitle": "SEBI attaches Anugrah Stock and Broking bank accounts",
+      "searchDescription": "SEBI has attached the company's bank accounts and lockers over ₹5.72 crore dues. Here is what the notice says and who it affects.",
+      "meaning": "This notice is not aimed at ordinary people. It concerns the bank accounts of a company that owes money to SEBI, and banks have been told not to let money be withdrawn from those accounts. If you have any dealing or complaint linked to this company, contact your bank or SEBI's recovery office for information.",
+      "keyFacts": [
+        "Total dues: ₹5,72,0,000 (five crore seventy-two lakh rupees)",
+        "Penalty: ₹4 crore from the order dated 28 February 2023",
+        "Interest: ₹4.72 crore from March 2023 to September 2026",
+        "Recovery certificate issued on 3 September 2026",
+        "Notice issued on 19 November 2026 in Mumbai"
+      ],
+      "faq": [
+        {
+          "q": "Why has SEBI attached Anugrah Stock and Broking's accounts?",
+          "a": "The company owes ₹5.72 crore and SEBI believes it may move the money out. So the Recovery Officer ordered its bank accounts and lockers to be attached."
+        },
+        {
+          "q": "Will this affect ordinary people's bank accounts?",
+          "a": "No, the notice is only about this company's accounts. Ordinary bank accounts are not affected."
+        },
+        {
+          "q": "What have banks been told to do?",
+          "a": "Banks have been told not to allow money to be withdrawn from the company's accounts, though money can still come in. They must give SEBI details of the accounts within 5 days."
+        },
+        {
+          "q": "Can money still come into the company's account?",
+          "a": "Yes, the notice says credits into the account are allowed, but money cannot be withdrawn up to the dues amount."
+        }
+      ],
+      "body": "## What has happened\n\nSEBI's Recovery Officer has issued a notice attaching all bank accounts and lockers of Anugrah Stock and Broking Private Limited. The notice is dated 19 November 2026 and was issued from Mumbai. According to the notice, the company owes a total of ₹5,72,0,000 (five crore seventy-two lakh rupees).\n\n## What the dues are made of\n\nThe notice says the amount has three parts. First, a penalty of ₹4 crore was imposed on the company by an order dated 28 February 2023. Second, interest of ₹4.72 crore is due from March 2023 to September 2026. Third, recovery costs are added. Together these come to ₹5.72 crore.\n\n## What action has been ordered\n\nThe Recovery Officer has ordered that all bank accounts and lockers of the company be attached with immediate effect. It also says that until further orders from SEBI's Recovery Officer, no money up to the dues amount may be withdrawn from these accounts. However, money coming into the account is allowed.\n\n## What banks have to do\n\nBanks must give SEBI details of all the company's accounts and lockers within 5 days of receiving the notice. They must also send the account statements for the last one year, confirmation of the attachment, and details of loan accounts. If no response comes within 45 days, it will be presumed that the company has no account with that bank.\n\n## Who is affected\n\nThis notice is not directly for ordinary people. It concerns only this company's bank accounts, so ordinary depositors' accounts are not affected. Anyone with a dealing or complaint linked to this company can seek information from their bank or from SEBI."
+    }
+  }
+}

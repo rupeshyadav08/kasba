@@ -1,0 +1,100 @@
+{
+  "id": "42f7aa0fb5",
+  "createdAt": "2026-11-26T13:34:47.022Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "SEBI",
+    "title": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15892 of 2026 dated November 19, 2026 against Anugrah Stock and Broking Private Limited (PAN – AAACW2920N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9292 of 2026",
+    "link": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notices-of-attachment-of-demat-accounts-and-mutual-fund-folios-with-ap-no-15892-of-2026-dated-november-19-2026-against-anugrah-stock-and-broking-private-limited-pan-aaacw2920n-in-the-matter-of-a-_105954.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "indian rupee notes",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15892 of 2026 dated November 19, 2026 against Anugrah Stock and Broking Private Limited (PAN – AAACW2920N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9292 of 2026",
+    "sourceDate": "2026-11-19",
+    "hi": {
+      "title": "SEBI ने Anugrah Stock and Broking के demat और mutual fund खाते attach किए",
+      "summary": "SEBI के Recovery Officer ने Anugrah Stock and Broking Private Limited के सभी demat खातों और mutual fund folios को तुरंत प्रभाव से attach करने का आदेश दिया है। यह आदेश कंपनी पर बकाया वसूली के लिए है और आम निवेशकों पर सीधे लागू नहीं होता।",
+      "searchTitle": "SEBI: Anugrah Stock and Broking के खाते attach",
+      "searchDescription": "SEBI ने कंपनी के demat खाते और mutual fund folios attach किए, नई खरीद-बिक्री पर रोक। जानें किस पर लागू है।",
+      "meaning": "यह आदेश सीधे आम निवेशकों के खातों पर लागू नहीं होता, बल्कि Anugrah Stock and Broking Private Limited नाम की कंपनी के खातों पर है। अगर आपका इस कंपनी से कोई लेन-देन या खाता जुड़ा है, तो आपको अपने broker या depository participant से संपर्क करके स्थिति जाननी चाहिए। आम लोगों को इससे कोई और कार्रवाई करने की ज़रूरत नहीं है।",
+      "keyFacts": [
+        "वसूली राशि: ₹5,72,01,000 (पाँच करोड़ बहत्तर लाख एक हज़ार रुपये) और ब्याज, खर्च आदि",
+        "जुर्माना: WTM के 28 फरवरी 2023 के आदेश से ₹4,00,00,000",
+        "Recovery Certificate No. 9292 of 2026, दिनांक 3 सितंबर 2026",
+        "Attachment Proceeding No. 5892 of 2026",
+        "आदेश दिनांक: 19 नवंबर 2026, जारीकर्ता: SEBI Recovery Officer",
+        "नो डेबिट: खातों से पैसे निकालने या debit पर रोक, credit की अनुमति"
+      ],
+      "faq": [
+        {
+          "q": "SEBI ने किस कंपनी के खाते attach किए हैं?",
+          "a": "Anugrah Stock and Broking Private Limited के demat खाते और mutual fund folios attach किए गए हैं। यह आदेश कंपनी के नाम पर है, किसी आम निवेशक के व्यक्तिगत खाते पर नहीं।"
+        },
+        {
+          "q": "क्या मेरे demat खाते पर भी रोक लग गई है?",
+          "a": "नहीं, यह आदेश सिर्फ़ Anugrah Stock and Broking Private Limited के खातों और folios के लिए है। अगर आपका खाता इस कंपनी के नाम पर या उसके साथ संयुक्त रूप से है, तभी यह लागू होगा।"
+        },
+        {
+          "q": "attach होने का क्या मतलब है?",
+          "a": "आदेश के अनुसार इन खातों और folios से अगले आदेश तक कोई debit नहीं होगा। हालाँकि खाते में आने वाले credit (जमा) की अनुमति रहेगी।"
+        },
+        {
+          "q": "कंपनी पर कितना बकाया है?",
+          "a": "Recovery Certificate के अनुसार कुल ₹5,72,01,000 की वसूली होनी है, साथ में ब्याज, खर्च और अन्य शुल्क भी। इसमें 28 फरवरी 2023 के आदेश से लगाया गया ₹4,00,00,000 का जुर्माना भी शामिल है।"
+        },
+        {
+          "q": "अगर मेरा इस कंपनी से कोई खाता जुड़ा है तो क्या करूँ?",
+          "a": "अपने broker या depository participant से संपर्क करके अपने खाते की स्थिति जानें। आदेश के अनुसार depository और mutual funds को SEBI को खातों का ब्यौरा और attachment की पुष्टि भेजनी है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI के Recovery Officer ने 19 नवंबर 2026 को एक notice जारी कर Anugrah Stock and Broking Private Limited (PAN – AAACW2920N) के सभी demat खातों और mutual fund folios को तुरंत प्रभाव से attach करने का आदेश दिया है। आदेश के अनुसार यह कार्रवाई कंपनी पर बकाया राशि की वसूली के लिए की गई है।\n\n## कितना बकाया है\n\nnotice के अनुसार 3 सितंबर 2026 की Recovery Certificate No. 9292 of 2026 के तहत कुल ₹5,72,01,000 (पाँच करोड़ बहत्तर लाख एक हज़ार रुपये) की वसूली होनी है, साथ में ब्याज, खर्च और अन्य शुल्क भी। इसमें 28 फरवरी 2023 के WTM आदेश से लगाया गया ₹4,00,00,000 का जुर्माना भी शामिल है। notice कहता है कि कंपनी ने अब तक कोई राशि नहीं चुकाई है।\n\n## खातों पर क्या रोक लगी है\n\nआदेश के अनुसार attach किए गए खातों और folios से अगले आदेश तक कोई debit नहीं होगा। यानी इन खातों से पैसे निकालने या रकम हटाने पर रोक रहेगी। हालाँकि खाते में आने वाले credit (जमा) की अनुमति रहेगी। अगर कंपनी के नाम पर इस notice के बाद कोई नया खाता या folio खुलता है, तो उसे भी तुरंत attach करने का निर्देश दिया गया है।\n\n## किसे क्या करना है\n\nयह निर्देश NSDL, CDSL और देश के सभी mutual funds के Principal Officer, Chairman और CEO को दिया गया है। उन्हें कंपनी के खातों का ब्यौरा, account statement की कॉपी और attachment की पुष्टि SEBI को भेजनी है। अगर 5 दिन में कोई जवाब नहीं आता, तो माना जाएगा कि कंपनी का उनके पास कोई खाता या folio नहीं है।\n\n## आम निवेशकों के लिए इसका मतलब\n\nयह आदेश सिर्फ़ Anugrah Stock and Broking Private Limited के खातों और folios के बारे में है, इसलिए आम निवेशकों के अपने demat खातों या mutual fund निवेश पर इसका सीधा असर नहीं पड़ता। अगर आपका इस कंपनी से कोई खाता या लेन-देन जुड़ा है, तो अपने broker या depository participant से संपर्क करके स्थिति जान लें।\n\n## आदेश किस अधिकार से जारी हुआ\n\nnotice के अनुसार यह आदेश SEBI Act, 1992 की धारा 28A (1), (2) (ia) के तहत जारी किया गया है, जिसे Income-tax Act, 1961 की धारा 226 और Second Schedule के साथ पढ़ा जाता है। यह आदेश SEBI के Recovery Officer की ओर से मुंबई में जारी किया गया है।"
+    },
+    "en": {
+      "title": "SEBI attaches demat accounts, mutual fund folios of Anugrah Stock and Broking",
+      "summary": "SEBI's Recovery Officer has ordered the immediate attachment of all demat accounts and mutual fund folios of Anugrah Stock and Broking Private Limited. The order is for recovery of dues from the company and does not directly apply to ordinary investors.",
+      "searchTitle": "SEBI attaches Anugrah Stock and Broking accounts",
+      "searchDescription": "SEBI has attached the company's demat accounts and mutual fund folios, with no debit allowed. Here is who it applies to.",
+      "meaning": "This order does not apply to ordinary investors' own accounts; it is against the accounts of a company named Anugrah Stock and Broking Private Limited. If you have any account or dealing linked to this company, check with your broker or depository participant. Most readers need to do nothing.",
+      "keyFacts": [
+        "Amount to be recovered: ₹5,72,01,000 plus interest, costs and charges",
+        "Penalty of ₹4,00,00,000 imposed by a WTM order dated February 28, 2023",
+        "Recovery Certificate No. 9292 of 2026 dated September 3, 2026",
+        "Attachment Proceeding No. 5892 of 2026",
+        "Order dated November 19, 2026, issued by SEBI's Recovery Officer",
+        "No debit allowed in the attached accounts and folios until further orders; credits may be allowed"
+      ],
+      "faq": [
+        {
+          "q": "Whose accounts has SEBI attached?",
+          "a": "The demat accounts and mutual fund folios of Anugrah Stock and Broking Private Limited have been attached. The order is against the company, not against any ordinary investor's personal account."
+        },
+        {
+          "q": "Is my own demat account frozen?",
+          "a": "No, the order covers only the accounts and folios of Anugrah Stock and Broking Private Limited. It would apply to you only if an account is held in the company's name or jointly with it."
+        },
+        {
+          "q": "What does attachment mean?",
+          "a": "According to the order, no debit will be allowed in these accounts and folios until further orders. Credits coming into the accounts may be allowed."
+        },
+        {
+          "q": "How much does the company owe?",
+          "a": "The Recovery Certificate is for a total of ₹5,72,01,000, along with interest, costs and other charges. This includes a penalty of ₹4,00,00,000 imposed by an order dated February 28, 2023."
+        },
+        {
+          "q": "What should I do if I have an account linked to this company?",
+          "a": "Contact your broker or depository participant to check the status of your account. Under the order, depositories and mutual funds have to give SEBI the account details and confirm the attachment."
+        }
+      ],
+      "body": "## What has happened\n\nOn November 19, 2026, SEBI's Recovery Officer issued a notice ordering the immediate attachment of all demat accounts and mutual fund folios of Anugrah Stock and Broking Private Limited (PAN – AAACW2920N). According to the order, the action is for recovery of dues from the company.\n\n## How much is due\n\nAccording to the notice, a total of ₹5,72,01,000 is to be recovered under Recovery Certificate No. 9292 of 2026 dated September 3, 2026, along with interest, costs and other charges. This includes a penalty of ₹4,00,00,000 imposed by a WTM order dated February 28, 2023. The notice states that the company has not paid any amount so far.\n\n## What the attachment means\n\nThe order says no debit will be made in the attached accounts and folios until further orders, so funds cannot be withdrawn from them. Credits coming into the accounts may be allowed. If any new account or folio is opened for the company after this notice, it must also be attached immediately.\n\n## What depositories and mutual funds must do\n\nThe directions are addressed to NSDL, CDSL and the Principal Officer, Chairman and CEO of all mutual funds in India. They have to provide SEBI with details of the company's accounts, a copy of the account statements and confirmation of the attachment. If no response comes within 5 days, it will be presumed that the company has no account or folio with them.\n\n## What it means for ordinary investors\n\nThe order concerns only the accounts and folios of Anugrah Stock and Broking Private Limited, so it does not directly affect ordinary investors' own demat accounts or mutual fund investments. If you have an account or dealing linked to this company, check the position with your broker or depository participant.\n\n## Under what power was it issued\n\nThe notice says the order was issued under section 28A (1), (2) (ia) of the SEBI Act, 1992, read with section 226 and the Second Schedule to the Income-tax Act, 1961. It was issued by SEBI's Recovery Officer in Mumbai."
+    }
+  }
+}

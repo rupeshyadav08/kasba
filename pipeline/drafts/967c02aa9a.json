@@ -1,0 +1,98 @@
+{
+  "id": "967c02aa9a",
+  "createdAt": "2026-11-26T13:32:46.546Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "'बाल विवाह मुक्त भारत' अभियान के दो वर्ष पूर्ण होने पर 27 नवंबर 2026 को राष्ट्रीय कार्यक्रम का आयोजन",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2341999"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "indian school girls classroom",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "'बाल विवाह मुक्त भारत' अभियान के दो वर्ष पूर्ण होने पर 27 नवंबर 2026 को राष्ट्रीय कार्यक्रम का आयोजन",
+    "sourceDate": "2026-11-26",
+    "hi": {
+      "title": "बाल विवाह मुक्त भारत अभियान के 2 साल: 27 नवंबर को दिल्ली में राष्ट्रीय कार्यक्रम",
+      "summary": "महिला एवं बाल विकास मंत्रालय 27 नवंबर 2026 को नई दिल्ली के विज्ञान भवन में 'बाल विवाह मुक्त भारत' अभियान पर राष्ट्रीय कार्यक्रम आयोजित करेगा। यह कार्यक्रम 27 नवंबर 2024 को शुरू हुए अभियान की दूसरी वर्षगांठ पर हो रहा है और इसका असर आम लोगों, खासकर बालिकाओं और उनके परिवारों पर पड़ता है।",
+      "searchTitle": "बाल विवाह मुक्त भारत: 27 नवंबर को राष्ट्रीय कार्यक्रम",
+      "searchDescription": "अभियान के दो साल पूरे होने पर दिल्ली में कार्यक्रम। जानें अभियान क्या है, पोर्टल पर शिकायत कैसे दर्ज करें और शपथ कैसे लें।",
+      "meaning": "आम नागरिकों को इस कार्यक्रम में जाने की ज़रूरत नहीं है, यह दिल्ली में अधिकारियों और संगठनों के लिए है। लेकिन अगर आपके आसपास बाल विवाह की कोई घटना हो तो आप 'बाल विवाह मुक्त भारत पोर्टल' पर सूचना दे सकते हैं। आप पोर्टल, MyGov या MY Bharat के ज़रिए बाल विवाह के खिलाफ शपथ भी ले सकते हैं।",
+      "keyFacts": [
+        "राष्ट्रीय कार्यक्रम 27 नवंबर 2026 को नई दिल्ली के विज्ञान भवन में होगा।",
+        "अभियान 27 नवंबर 2024 को शुरू हुआ था, यह उसकी दूसरी वर्षगांठ है।",
+        "संयुक्त राष्ट्र महासभा ने 27 नवंबर को बाल, अल्पायु एवं जबरन विवाह की समाप्ति के लिए अंतरराष्ट्रीय दिवस तय किया है।",
+        "पोर्टल stopchildmarriage.wcd.gov.in पर बाल विवाह की सूचना दी जा सकती है और शपथ ली जा सकती है।",
+        "कार्यक्रम में केंद्रीय मंत्री अन्नपूर्णा देवी, दिल्ली की मुख्यमंत्री रेखा गुप्ता और राज्य मंत्री सावित्री ठाकुर शामिल होंगी।"
+      ],
+      "faq": [
+        {
+          "q": "बाल विवाह मुक्त भारत कार्यक्रम कब और कहाँ होगा?",
+          "a": "27 नवंबर 2026 को नई दिल्ली के विज्ञान भवन में। यह अभियान की दूसरी वर्षगांठ पर आयोजित राष्ट्रीय कार्यक्रम है।"
+        },
+        {
+          "q": "बाल विवाह की सूचना कहाँ दें?",
+          "a": "'बाल विवाह मुक्त भारत पोर्टल' (stopchildmarriage.wcd.gov.in) पर सूचना दी जा सकती है। पोर्टल पर बाल विवाह रोकने वाले अधिकारियों का विवरण भी मिलता है।"
+        },
+        {
+          "q": "क्या आम लोग इस कार्यक्रम में जा सकते हैं?",
+          "a": "विज्ञप्ति में आम लोगों के लिए कार्यक्रम में शामिल होने की बात नहीं कही गई है। इसमें राज्यों, मंत्रालयों, अधिकारियों और संगठनों की भागीदारी बताई गई है।"
+        },
+        {
+          "q": "शपथ कैसे ले सकते हैं?",
+          "a": "विज्ञप्ति के अनुसार नागरिक 'बाल विवाह मुक्त भारत पोर्टल', MyGov और MY Bharat प्लेटफॉर्म के ज़रिए शपथ ले सकते हैं।"
+        },
+        {
+          "q": "27 नवंबर को क्या खास है?",
+          "a": "संयुक्त राष्ट्र महासभा ने 27 नवंबर को बाल, अल्पायु एवं जबरन विवाह की समाप्ति के लिए अंतरराष्ट्रीय दिवस तय किया है। इसी दिन अभियान की शुरुआत हुई थी।"
+        }
+      ],
+      "body": "महिला एवं बाल विकास मंत्रालय 27 नवंबर 2026 को 'बाल विवाह मुक्त भारत' (बीवीएमबी) पर एक राष्ट्रीय कार्यक्रम आयोजित करेगा। यह कार्यक्रम नई दिल्ली के विज्ञान भवन में होगा और 27 नवंबर 2024 को शुरू हुए राष्ट्रीय अभियान की दूसरी वर्षगांठ के मौके पर रखा गया है।\n\n## अभियान क्या है\n\nअभियान का मकसद 'संपूर्ण सरकारी' और 'समग्र समाज' दृष्टिकोण से बाल विवाह का उन्मूलन करना है। शुरुआत से ही अभियान बाल विवाह के खिलाफ जागरूकता बढ़ाने, समुदायों को संगठित करने, बाल विवाह रोकने वाले अधिकारियों (सीएमपीओ) की व्यवस्था मजबूत करने, बाल विवाह के मामलों की समय पर सूचना देने को प्रोत्साहित करने और बालिकाओं की शिक्षा, सशक्तिकरण और कल्याण को बढ़ावा देने पर काम कर रहा है।\n\n## कार्यक्रम में क्या होगा\n\nविज्ञप्ति के अनुसार कार्यक्रम में राज्यों और केंद्र शासित प्रदेशों, विभिन्न मंत्रालयों और विभागों के प्रतिनिधि, बाल विवाह रोकने वाले अधिकारी, बाल कल्याण समिति के सदस्य, राष्ट्रीय विधिक सेवा प्राधिकरण (एनएएलएसए), नागरिक समाज संगठन और अन्य हितधारक शामिल होंगे। केंद्रीय महिला एवं बाल विकास मंत्री श्रीमती अन्नपूर्णा देवी, दिल्ली की मुख्यमंत्री श्रीमती रेखा गुप्ता और राज्य मंत्री श्रीमती सावित्री ठाकुर भी उपस्थित रहेंगी।\n\nइस मौके पर अभियान की प्रगति की समीक्षा की जाएगी, जमीनी स्तर पर काम करने वाले अधिकारियों और हितधारकों के योगदान को मान्यता दी जाएगी और राज्यों तथा केंद्र शासित प्रदेशों की पहलों को दिखाया जाएगा।\n\n## 27 नवंबर क्यों चुना गया\n\nसंयुक्त राष्ट्र महासभा ने 27 नवंबर को बाल, अल्पायु एवं जबरन विवाह की समाप्ति के लिए अंतरराष्ट्रीय दिवस के रूप में तय किया है। इसी तारीख को अभियान की शुरुआत हुई थी, इसलिए वर्षगांठ और यह दिवस एक साथ पड़ते हैं।\n\n## आम लोग क्या कर सकते हैं\n\nविज्ञप्ति में राज्यों और केंद्र शासित प्रदेशों से राज्य, जिला, ब्लॉक और ग्राम स्तर पर जागरूकता और जनसंपर्क गतिविधियां करने को कहा गया है। इनमें पंचायती राज संस्थाएं, शहरी स्थानीय निकाय, शैक्षणिक संस्थान, अग्रिम पंक्ति के कार्यकर्ता, युवा, सामुदायिक और धार्मिक नेता, संगठन और आम नागरिक शामिल हो सकते हैं। विशेष ग्राम सभाओं, जागरूकता अभियानों, शपथ कार्यक्रमों और डिजिटल माध्यमों से जनभागीदारी बढ़ाने पर जोर है।\n\n'बाल विवाह मुक्त भारत पोर्टल' (stopchildmarriage.wcd.gov.in) पर बाल विवाह की घटना की सूचना दी जा सकती है, बाल विवाह रोकने वाले अधिकारियों का विवरण देखा जा सकता है, जागरूकता गतिविधि की जानकारी दर्ज की जा सकती है और शपथ ली जा सकती है। नागरिक और संस्थान पोर्टल, MyGov और MY Bharat के ज़रिए भी शपथ ले सकते हैं।"
+    },
+    "en": {
+      "title": "Bal Vivah Mukt Bharat turns 2: national event in Delhi on 27 November",
+      "summary": "The Ministry of Women and Child Development will hold a national event on the 'Bal Vivah Mukt Bharat' campaign at Vigyan Bhawan in New Delhi on 27 November 2026. The event marks the second anniversary of the campaign launched on 27 November 2024 and concerns a matter that affects families and girls across the country.",
+      "searchTitle": "Bal Vivah Mukt Bharat: national event on 27 November",
+      "searchDescription": "Campaign completes two years. Know what the campaign does, how to report a child marriage on the portal and how to take the pledge.",
+      "meaning": "Ordinary readers do not need to attend this event; it is meant for officials, states and organisations. But if you come across a child marriage, you can report it on the 'Bal Vivah Mukt Bharat' portal. You can also take the pledge against child marriage through the portal, MyGov or MY Bharat.",
+      "keyFacts": [
+        "The national event will be held at Vigyan Bhawan, New Delhi, on 27 November 2026.",
+        "The campaign was launched on 27 November 2024; this is its second anniversary.",
+        "The UN General Assembly has marked 27 November as the International Day for the Elimination of Child, Early and Forced Marriage.",
+        "Child marriages can be reported on the portal stopchildmarriage.wcd.gov.in.",
+        "Union Minister Annapurna Devi, Delhi Chief Minister Rekha Gupta and Minister of State Savitri Thakur will attend."
+      ],
+      "faq": [
+        {
+          "q": "When and where is the Bal Vivah Mukt Bharat event?",
+          "a": "On 27 November 2026 at Vigyan Bhawan in New Delhi. It is a national event marking the second anniversary of the campaign."
+        },
+        {
+          "q": "Where can I report a child marriage?",
+          "a": "On the 'Bal Vivah Mukt Bharat' portal at stopchildmarriage.wcd.gov.in. The portal also gives details of officials who work to stop child marriages."
+        },
+        {
+          "q": "Can ordinary people attend the event?",
+          "a": "The release does not say that the public can attend. It lists participation by states, ministries, officials and organisations."
+        },
+        {
+          "q": "How can I take the pledge?",
+          "a": "According to the release, citizens can take the pledge through the 'Bal Vivah Mukt Bharat' portal, MyGov and the MY Bharat platform."
+        },
+        {
+          "q": "Why is 27 November significant?",
+          "a": "The UN General Assembly has marked 27 November as the International Day for the Elimination of Child, Early and Forced Marriage. The campaign was also launched on this date."
+        }
+      ],
+      "body": "The Ministry of Women and Child Development will hold a national event on the 'Bal Vivah Mukt Bharat' (BVMB) campaign on 27 November 2026. The event will take place at Vigyan Bhawan in New Delhi and marks the second anniversary of the national campaign launched on 27 November 2024.\n\n## What the campaign is\n\nThe campaign aims to eliminate child marriage through a 'whole of government' and 'whole of society' approach. From the start, it has focused on raising awareness against child marriage, organising communities, strengthening the system of Child Marriage Prohibition Officers (CMPOs), encouraging timely reporting of child marriage cases, and promoting the education, empowerment and welfare of girls.\n\n## What will happen at the event\n\nAccording to the release, the event will bring together representatives of states and union territories, various ministries and departments, Child Marriage Prohibition Officers, members of Child Welfare Committees, the National Legal Services Authority (NALSA), civil society organisations and other stakeholders. Union Minister for Women and Child Development Annapurna Devi, Delhi Chief Minister Rekha Gupta and Minister of State Savitri Thakur will be present.\n\nThe event will review the progress of the campaign, recognise the contribution of officials and stakeholders working at the ground level, and showcase initiatives started by states and union territories.\n\n## Why 27 November\n\nThe UN General Assembly has marked 27 November as the International Day for the Elimination of Child, Early and Forced Marriage. The campaign was launched on the same date, so the anniversary and the day fall together.\n\n## What ordinary people can do\n\nThe release asks states and union territories to hold awareness and outreach activities at state, district, block and village level. These can involve panchayati raj institutions, urban local bodies, educational institutions, frontline workers, young people, community and religious leaders, civil society organisations and ordinary citizens. Special gram sabhas, awareness drives, pledge programmes and digital outreach are being encouraged.\n\nThe 'Bal Vivah Mukt Bharat' portal (stopchildmarriage.wcd.gov.in) is a dedicated platform to report child marriage incidents, get details of Child Marriage Prohibition Officers, record awareness activities and take a pledge against child marriage. Citizens and institutions are encouraged to join the campaign and take the pledge through the portal, MyGov and the MY Bharat platform."
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "e562a565e9",
+  "createdAt": "2026-11-26T13:36:08.877Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "UP Information Department",
+    "title": "बाल विवाह के खिलाफ योगी सरकार का निर्णायक अभियान; 27 नवम्बर को प्रदेश भर के विद्यालयों में गूंजेगी जागरूकता की आवाज\n 26/Nov/2026",
+    "link": "https://information.up.gov.in/admin/UploadDocument/OtherPress/compressed_3a7afe16-3abd-43dd-ba8b-b3a7b4623e63.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "indian school girls classroom",
+    "state": "up",
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "बाल विवाह के खिलाफ योगी सरकार का निर्णायक अभियान; 27 नवम्बर को प्रदेश भर के विद्यालयों में गूंजेगी जागरूकता की आवाज",
+    "sourceDate": "2026-11-26",
+    "hi": {
+      "title": "UP: 27 नवंबर को स्कूलों में बाल विवाह के खिलाफ शपथ कार्यक्रम",
+      "summary": "उत्तर प्रदेश सरकार ने 27 नवंबर 2026 को प्रदेश के उच्च प्राथमिक, कंपोजिट और कस्तूरबा गांधी बालिका विद्यालयों में बाल विवाह के खिलाफ जागरूकता और सामूहिक शपथ कार्यक्रम कराने का निर्देश दिया है। इससे इन स्कूलों के विद्यार्थी, शिक्षक, कर्मचारी और अभिभावक सीधे जुड़ेंगे।",
+      "searchTitle": "UP स्कूल 27 नवंबर: बाल विवाह के खिलाफ शपथ",
+      "searchDescription": "प्रदेश के उच्च प्राथमिक, कंपोजिट और कस्तूरबा गांधी स्कूलों में जागरूकता व सामूहिक शपथ कार्यक्रम, अभिभावक भी शामिल होंगे।",
+      "meaning": "अगर आपका बच्चा उच्च प्राथमिक, कंपोजिट या कस्तूरबा गांधी बालिका विद्यालय में पढ़ता है, तो 27 नवंबर को स्कूल में बाल विवाह के खिलाफ कार्यक्रम होगा। अभिभावकों और विद्यालय प्रबंध समिति के सदस्यों को भी इसमें बुलाया जाएगा। विद्यार्थी, शिक्षक और कर्मचारी 'बाल विवाह मुक्त भारत पोर्टल' पर ऑनलाइन शपथ लेने के लिए प्रेरित किए जाएंगे।",
+      "keyFacts": [
+        "कार्यक्रम की तारीख: शुक्रवार, 27 नवंबर 2026",
+        "कहां: प्रदेश के सभी उच्च प्राथमिक, कंपोजिट और कस्तूरबा गांधी बालिका विद्यालय",
+        "कौन शपथ लेगा: विद्यार्थी, शिक्षक और विद्यालय कर्मचारी",
+        "अभिभावक और विद्यालय प्रबंध समिति (SMC) के सदस्य भी आमंत्रित",
+        "ऑनलाइन शपथ: भारत सरकार का 'बाल विवाह मुक्त भारत पोर्टल'",
+        "केंद्रीय महिला एवं बाल विकास मंत्रालय का 400 दिवसीय अभियान: 24 अक्टूबर से 24 दिसंबर 2026 तक"
+      ],
+      "faq": [
+        {
+          "q": "बाल विवाह के खिलाफ शपथ कार्यक्रम कब और कहां होगा?",
+          "a": "27 नवंबर 2026 को प्रदेश के सभी उच्च प्राथमिक, कंपोजिट और कस्तूरबा गांधी बालिका विद्यालयों में। इसके लिए सभी जिला बेसिक शिक्षा अधिकारियों को दिशा-निर्देश जारी कर दिए गए हैं।"
+        },
+        {
+          "q": "कार्यक्रम में कौन-कौन शामिल होगा?",
+          "a": "विद्यार्थी, शिक्षक और विद्यालय कर्मचारी सामूहिक रूप से शपथ लेंगे। अभिभावकों और विद्यालय प्रबंध समिति (SMC) के सदस्यों को भी आमंत्रित किया जाएगा।"
+        },
+        {
+          "q": "ऑनलाइन शपथ कहां लेनी है?",
+          "a": "भारत सरकार के 'बाल विवाह मुक्त भारत पोर्टल' पर। विद्यार्थियों, शिक्षकों और कर्मचारियों को इसके लिए प्रेरित किया जाएगा।"
+        },
+        {
+          "q": "यह कार्यक्रम किस अभियान के तहत हो रहा है?",
+          "a": "केंद्रीय महिला एवं बाल विकास मंत्रालय के 400 दिवसीय 'बाल विवाह मुक्त भारत जागरूकता अभियान' के तहत, जो 24 अक्टूबर से 24 दिसंबर 2026 तक चल रहा है।"
+        },
+        {
+          "q": "अभिभावक के तौर पर मुझे क्या करना है?",
+          "a": "अगर आपका बच्चा इन स्कूलों में पढ़ता है तो स्कूल से मिली जानकारी के अनुसार 27 नवंबर के कार्यक्रम में शामिल हो सकते हैं। कार्यक्रम में बाल विवाह के नुकसान और बालिकाओं की शिक्षा व सुरक्षा के बारे में बताया जाएगा।"
+        }
+      ],
+      "body": "## क्या होने जा रहा है\n\nउत्तर प्रदेश सरकार ने 27 नवंबर 2026, शुक्रवार को प्रदेश के सभी उच्च प्राथमिक विद्यालयों, कंपोजिट विद्यालयों और कस्तूरबा गांधी बालिका विद्यालयों में विशेष जागरूकता और सामूहिक शपथ ग्रहण कार्यक्रम कराने का फैसला किया है। इसके लिए सभी जिला बेसिक शिक्षा अधिकारियों को आवश्यक दिशा-निर्देश जारी कर दिए गए हैं।\n\n## कार्यक्रम में क्या होगा\n\nस्कूलों में विद्यार्थियों को बाल विवाह के दुष्परिणाम, बालिकाओं की शिक्षा और सुरक्षा का महत्व, और इस कुरीति को रोकने में उनकी अपनी भूमिका के बारे में बताया जाएगा। इस मौके पर शिक्षक, विद्यार्थी और विद्यालय कर्मचारी मिलकर बाल विवाह के खिलाफ शपथ लेंगे।\n\n## अभिभावक भी जुड़ेंगे\n\nसरकार का मकसद इस मुहिम को सिर्फ स्कूल परिसर तक सीमित न रखना है। इसलिए विद्यालय प्रबंध समिति (SMC) के सदस्यों और अभिभावकों को भी कार्यक्रम में आमंत्रित किया जाएगा, ताकि परिवार और समाज भी इस बदलाव का हिस्सा बनें।\n\n## ऑनलाइन शपथ भी\n\nअभियान का प्रचार बढ़ाने के लिए विद्यार्थियों, शिक्षकों और कर्मचारियों को भारत सरकार के 'बाल विवाह मुक्त भारत पोर्टल' पर ऑनलाइन शपथ लेने के लिए प्रेरित किया जाएगा। कार्यक्रमों की तस्वीरें विभागीय सोशल मीडिया और स्थानीय समाचार पत्रों के जरिए भी साझा की जाएंगी।\n\n## यह अभियान किसका हिस्सा है\n\nयह कार्यक्रम केंद्रीय महिला एवं बाल विकास मंत्रालय की ओर से चलाए जा रहे 400 दिवसीय 'बाल विवाह मुक्त भारत जागरूकता अभियान' का हिस्सा है, जो 24 अक्टूबर से 24 दिसंबर 2026 तक चल रहा है। 27 नवंबर के कार्यक्रम इसी राष्ट्रव्यापी अभियान के तहत आयोजित किए जा रहे हैं।\n\n## आम लोगों के लिए इसका मतलब\n\nजिन परिवारों के बच्चे इन स्कूलों में पढ़ते हैं, उनके लिए यह सीधा संदेश है कि 27 नवंबर को स्कूल में होने वाले कार्यक्रम की जानकारी स्कूल से लें और जुड़ें। इसके अलावा किसी को कुछ अलग से आवेदन नहीं करना है।"
+    },
+    "en": {
+      "title": "UP: schools across state to hold anti-child-marriage pledge on 27 November",
+      "summary": "The Uttar Pradesh government has directed all upper primary, composite and Kasturba Gandhi girls' schools to hold awareness and mass pledge programmes against child marriage on 27 November 2026. Students, teachers, staff and parents of these schools are directly involved.",
+      "searchTitle": "UP schools 27 November: child marriage pledge",
+      "searchDescription": "Awareness and mass pledge events in upper primary, composite and Kasturba Gandhi schools; parents and SMC members also invited.",
+      "meaning": "If your child studies in an upper primary, composite or Kasturba Gandhi girls' school, a programme against child marriage will be held there on 27 November. Parents and school management committee members are also invited. Students, teachers and staff will be encouraged to take an online pledge on the 'Bal Vivah Mukt Bharat' portal.",
+      "keyFacts": [
+        "Date of the programme: Friday, 27 November 2026",
+        "Where: all upper primary, composite and Kasturba Gandhi girls' schools in the state",
+        "Who takes the pledge: students, teachers and school staff",
+        "Parents and school management committee (SMC) members also invited",
+        "Online pledge: the central government's 'Bal Vivah Mukt Bharat' portal",
+        "Union Ministry of Women and Child Development's 400-day campaign: 24 October to 24 December 2026"
+      ],
+      "faq": [
+        {
+          "q": "When and where is the anti-child-marriage pledge programme?",
+          "a": "On 27 November 2026 in all upper primary, composite and Kasturba Gandhi girls' schools of the state. Directions have been issued to all district basic education officers."
+        },
+        {
+          "q": "Who will take part in the programme?",
+          "a": "Students, teachers and school staff will take the pledge together. Parents and members of the school management committee (SMC) have also been invited."
+        },
+        {
+          "q": "Where is the online pledge taken?",
+          "a": "On the central government's 'Bal Vivah Mukt Bharat' portal. Students, teachers and staff will be encouraged to take it."
+        },
+        {
+          "q": "Which campaign is this programme part of?",
+          "a": "The Union Ministry of Women and Child Development's 400-day 'Bal Vivah Mukt Bharat' awareness campaign, running from 24 October to 24 December 2026."
+        },
+        {
+          "q": "What should a parent do?",
+          "a": "If your child studies in one of these schools, check with the school about the 27 November programme and join it. The event will explain the harms of child marriage and the importance of girls' education and safety."
+        }
+      ],
+      "body": "## What is happening\n\nThe Uttar Pradesh government has decided to hold special awareness and mass pledge programmes on Friday, 27 November 2026, in all upper primary schools, composite schools and Kasturba Gandhi girls' schools across the state. Necessary directions have been issued to all district basic education officers.\n\n## What will happen at the schools\n\nStudents will be told about the harms of child marriage, the importance of girls' education and safety, and their own role in ending the practice. On the occasion, teachers, students and school staff will take a pledge together against child marriage.\n\n## Parents will join too\n\nThe aim is to take the campaign beyond school premises. Members of the school management committee (SMC) and parents will also be invited, so that families and the community become active partners in the change.\n\n## An online pledge as well\n\nTo spread the campaign and encourage digital participation, students, teachers and staff will be encouraged to take an online pledge on the central government's 'Bal Vivah Mukt Bharat' portal. Photographs from the programmes will be shared through the department's social media platforms and local newspapers.\n\n## Part of a national campaign\n\nThe programme is part of the 400-day 'Bal Vivah Mukt Bharat' awareness campaign run by the Union Ministry of Women and Child Development, which is being held from 24 October to 24 December 2026. The 27 November events are being organised as part of this nationwide campaign.\n\n## What it means for ordinary people\n\nFamilies whose children study in these schools should ask the school about the 27 November programme and take part. No separate application is needed from anyone."
+    }
+  }
+}

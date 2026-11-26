@@ -1,0 +1,100 @@
+{
+  "id": "ba6dc2d67a",
+  "createdAt": "2026-11-26T13:34:15.668Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "SEBI",
+    "title": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15890 of 2026 dated November 19, 2026 against Om Sri Sai Investments (PAN – AADFO8242K) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9293 of 2026",
+    "link": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notices-of-attachment-of-demat-accounts-and-mutual-fund-folios-with-ap-no-15890-of-2026-dated-november-19-2026-against-om-sri-sai-investments-pan-aadfo8242k-in-the-matter-of-anugrah-stock-and-br-_105958.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "indian rupee notes",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15890 of 2026 dated November 19, 2026 against Om Sri Sai Investments (PAN – AADFO8242K) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9293 of 2026",
+    "sourceDate": "2026-11-19",
+    "hi": {
+      "title": "SEBI ने Om Sri Sai Investments के demat और mutual fund खाते attach किए",
+      "summary": "SEBI के Recovery Officer ने Anugrah Stock and Broking मामले में Om Sri Sai Investments के सभी demat खातों और mutual fund folios को तुरंत attach करने का आदेश दिया है। यह आदेश कंपनी पर बकाया वसूली के लिए है और आम निवेशकों पर सीधे लागू नहीं होता।",
+      "searchTitle": "SEBI: Om Sri Sai Investments के demat खाते attach",
+      "searchDescription": "Anugrah Stock and Broking मामले में SEBI ने कंपनी के demat और mutual fund खाते attach किए। जानें क्या है पूरा मामला और किस पर असर।",
+      "meaning": "यह आदेश सीधे आम निवेशकों के लिए नहीं है। यह Anugrah Stock and Broking मामले में Om Sri Sai Investments नाम की कंपनी पर बकाया रकम की वसूली से जुड़ा है। अगर आपका इस कंपनी से कोई लेन-देन नहीं है, तो आपको कुछ करने की ज़रूरत नहीं। जिन लोगों का पैसा इस मामले में फंसा है, वे SEBI की recovery proceedings से जुड़ी जानकारी अपने broker या SEBI की वेबसाइट से ले सकते हैं।",
+      "keyFacts": [
+        "SEBI के Recovery Officer ने 19 नवंबर 2026 को attachment notice जारी किया",
+        "Recovery Certificate No. 9293 of 2026, 3 सितंबर 2026 को जारी हुआ",
+        "कुल बकाया रकम ₹1,71,61,000 बताई गई है",
+        "रकम में ₹20,00,000 का penalty, ₹5,60,000 का interest और recovery cost शामिल है",
+        "Penalty का आदेश 28 फरवरी 2023 को WTM के Order No. WTM/SM/MIRSD/MIRSD-DPIEA/24256/2022-23 से दिया गया था",
+        "Demat खातों और mutual fund folios से अब कोई debit नहीं हो सकेगा, credit मिल सकता है"
+      ],
+      "faq": [
+        {
+          "q": "SEBI ने किस कंपनी के खाते attach किए हैं?",
+          "a": "Om Sri Sai Investments (PAN – AADFO8242K) के demat खाते और mutual fund folios attach किए गए हैं। यह कार्रवाई Anugrah Stock and Broking Private Limited मामले में बकाया वसूली के तहत हुई है।"
+        },
+        {
+          "q": "कितनी रकम की वसूली के लिए यह आदेश है?",
+          "a": "Recovery Certificate में कुल ₹1,71,61,000 की वसूली का ज़िक्र है। इसमें penalty, interest और recovery cost शामिल बताए गए हैं।"
+        },
+        {
+          "q": "क्या इसका असर आम निवेशकों पर पड़ेगा?",
+          "a": "यह आदेश सिर्फ इस कंपनी के खातों पर लागू है, आम निवेशकों पर नहीं। जिनका इस कंपनी से कोई लेन-देन नहीं है, उन्हें कुछ नहीं करना है।"
+        },
+        {
+          "q": "attach होने के बाद खाते से पैसा निकाला जा सकता है?",
+          "a": "आदेश के अनुसार अगले आदेश तक इन खातों से कोई debit नहीं हो सकेगा। हालांकि खाते में आने वाला credit मिल सकता है।"
+        },
+        {
+          "q": "अगर किसी के पास इस कंपनी से जुड़ी जानकारी है तो कहां देखें?",
+          "a": "SEBI की वेबसाइट पर recovery proceedings से जुड़े notices देखे जा सकते हैं। अपने broker से भी इस मामले की जानकारी ली जा सकती है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI के Recovery Officer ने 19 नवंबर 2026 को एक attachment notice जारी किया है। इसके तहत Om Sri Sai Investments (PAN – AADFO8242K) के सभी demat खातों और mutual fund folios को तुरंत attach करने का आदेश दिया गया है। यह कार्रवाई Anugrah Stock and Broking Private Limited मामले में बकाया रकम की वसूली के लिए की गई है।\n\n## कितनी रकम बकाया है\n\nआदेश के अनुसार Recovery Certificate No. 9293 of 2026, 3 सितंबर 2026 को जारी हुआ था। इसमें कुल ₹1,71,61,000 की वसूली का ज़िक्र है। इसमें ₹20,00,000 का penalty शामिल है, जो 28 फरवरी 2023 के WTM के Order No. WTM/SM/MIRSD/MIRSD-DPIEA/24256/2022-23 से लगाया गया था। इसके अलावा मार्च 2023 से सितंबर 2026 तक का ₹5,60,000 interest और recovery cost भी इसमें जोड़ा गया है।\n\n## खातों पर क्या असर होगा\n\nआदेश के मुताबिक अगले आदेश तक इन खातों और folios से कोई debit नहीं हो सकेगा। यानी इनसे पैसा निकाला नहीं जा सकेगा। हालांकि अगर खाते में कोई credit आता है, तो उसे मिलने दिया जाएगा। SEBI ने depository और mutual fund कंपनियों से कहा है कि वे खातों की जानकारी, statement और attachment की पुष्टि भेजें।\n\n## किस पर लागू होता है\n\nयह आदेश सिर्फ Om Sri Sai Investments नाम की कंपनी के खातों पर लागू है। आम निवेशकों या दूसरे लोगों के खातों पर इसका कोई असर नहीं है। अगर आपका इस कंपनी से कोई लेन-देन नहीं है, तो आपको कुछ करने की ज़रूरत नहीं है।\n\n## कहां मिलेगी जानकारी\n\nSEBI ने यह notice अपनी वेबसाइट पर recovery proceedings के तहत जारी किया है। जिन लोगों का इस मामले से संबंध है, वे SEBI की वेबसाइट पर उपलब्ध notices देख सकते हैं या अपने broker से जानकारी ले सकते हैं।"
+    },
+    "en": {
+      "title": "SEBI attaches demat accounts, mutual fund folios of Om Sri Sai Investments",
+      "summary": "SEBI's Recovery Officer has ordered immediate attachment of all demat accounts and mutual fund folios of Om Sri Sai Investments in the Anugrah Stock and Broking matter. The order is for recovery of dues from the company and does not directly affect ordinary investors.",
+      "searchTitle": "SEBI attaches Om Sri Sai Investments demat accounts",
+      "searchDescription": "SEBI has attached the demat accounts and mutual fund folios of Om Sri Sai Investments in the Anugrah Stock and Broking matter. Know what the case is and who it affects.",
+      "meaning": "This order is not for ordinary investors. It relates to recovery of dues from a company called Om Sri Sai Investments in the Anugrah Stock and Broking matter. If you have no dealings with this company, you do not need to do anything. Those whose money is linked to this matter can check SEBI's website or ask their broker for information on the recovery proceedings.",
+      "keyFacts": [
+        "SEBI's Recovery Officer issued the attachment notice on November 19, 2026",
+        "Recovery Certificate No. 9293 of 2026 was drawn up on September 3, 2026",
+        "Total dues stated are ₹1,71,61,000",
+        "The amount includes a ₹20,00,000 penalty, ₹5,60,000 interest and recovery cost",
+        "The penalty order was passed on February 28, 2023 under Order No. WTM/SM/MIRSD/MIRSD-DPIEA/24256/2022-23",
+        "No debit will be allowed in the attached accounts and folios; credits may be allowed"
+      ],
+      "faq": [
+        {
+          "q": "Whose accounts has SEBI attached?",
+          "a": "The demat accounts and mutual fund folios of Om Sri Sai Investments (PAN – AADFO8242K) have been attached. The action is part of recovery in the Anugrah Stock and Broking Private Limited matter."
+        },
+        {
+          "q": "How much is to be recovered?",
+          "a": "The Recovery Certificate states total dues of ₹1,71,61,000. This includes penalty, interest and recovery cost, according to the notice."
+        },
+        {
+          "q": "Will this affect ordinary investors?",
+          "a": "The order applies only to this company's accounts, not to ordinary investors. Anyone with no dealings with this company does not need to do anything."
+        },
+        {
+          "q": "Can money be withdrawn from the attached accounts?",
+          "a": "According to the order, no debit will be allowed in these accounts until further orders. However, credits coming into the accounts may be allowed."
+        },
+        {
+          "q": "Where can I find more information on this case?",
+          "a": "SEBI's website lists notices related to recovery proceedings. You can also ask your broker for information on this matter."
+        }
+      ],
+      "body": "## What has happened\n\nSEBI's Recovery Officer issued an attachment notice on November 19, 2026. Under it, all demat accounts and mutual fund folios of Om Sri Sai Investments (PAN – AADFO8242K) have been ordered to be attached with immediate effect. The action is for recovery of dues in the Anugrah Stock and Broking Private Limited matter.\n\n## How much is due\n\nAccording to the order, Recovery Certificate No. 9293 of 2026 was drawn up on September 3, 2026. It states total dues of ₹1,71,61,000. This includes a penalty of ₹20,00,000 imposed by a WTM order dated February 28, 2023 (Order No. WTM/SM/MIRSD/MIRSD-DPIEA/24256/2022-23), interest of ₹5,60,000 for March 2023 to September 2026, and recovery cost.\n\n## What happens to the accounts\n\nThe order says no debit will be made in these accounts and folios until further orders, so money cannot be taken out. Credits, if any, into the accounts may be allowed. SEBI has directed the depositories and mutual funds to provide details of the accounts, account statements and confirmation of the attachment.\n\n## Who it applies to\n\nThe order applies only to the accounts of Om Sri Sai Investments. It does not affect ordinary investors or anyone else's accounts. If you have no dealings with this company, you do not need to do anything.\n\n## Where to get information\n\nSEBI has put this notice on its website under recovery proceedings. Those connected to the matter can check the notices on SEBI's website or ask their broker for details."
+    }
+  }
+}
