@@ -1,0 +1,102 @@
+{
+  "id": "ca30eb18a5",
+  "createdAt": "2026-11-26T17:57:56.675Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Opportunity for candidates allotted an Examination City outside their four preferences to select another Examination City – UGC-NET December 2026 – reg.",
+    "link": "https://nta.ac.in/Download/Notice/Notice_20261126205025.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "indian students computer exam hall",
+    "state": null,
+    "districts": [],
+    "deadline": {
+      "date": "2026-11-29",
+      "label_hi": "29 नवंबर 2026, शाम 1:55 बजे तक",
+      "label_en": "29 November 2026, 1:55 PM"
+    },
+    "sourceTitle": "Opportunity for candidates allotted an Examination City outside their four preferences to select another Examination City – UGC-NET December 2026 – reg.",
+    "sourceDate": "2026-11-26",
+    "hi": {
+      "title": "UGC-NET December 2026: 22,050 candidates 29 नवंबर तक बदल सकते हैं exam city",
+      "summary": "NTA ने 26 नवंबर 2026 को कहा है कि जिन UGC-NET December 2026 candidates को उनकी चार पसंदीदा cities से बाहर exam city मिली है, वे 29 नवंबर 2026 तक दूसरी city चुन सकते हैं। यह सुविधा सिर्फ़ उन्हीं 22,050 candidates के लिए है, बाकी को कुछ नहीं करना है।",
+      "searchTitle": "UGC-NET 2026: exam city बदलने की last date 29 नवंबर",
+      "searchDescription": "चार preference से बाहर city मिली है तो 29 नवंबर शाम 1:55 बजे तक portal पर दूसरी city चुनें। seat पहले आओ-पहले पाओ पर मिलेगी।",
+      "meaning": "अगर आपको UGC-NET December 2026 में वह city नहीं मिली जो आपने form में भरी थी, तो यह खबर आपके लिए है। आप 29 नवंबर 2026 शाम 1:55 बजे तक portal पर जाकर उपलब्ध cities में से कोई एक चुन सकते हैं, जो आपके लिए ज़्यादा सुविधाजनक हो। ध्यान रहे, seat सीमित हैं और पहले आओ-पहले पाओ के आधार पर मिलेंगी, और एक बार चुनी city बदली नहीं जा सकेगी। अगर आपने अपनी चार पसंदीदा cities में से कोई एक पाई है, तो आपको कुछ नहीं करना है।",
+      "keyFacts": [
+        "UGC-NET December 2026 परीक्षा 4 से 8 दिसंबर 2026 और 21 दिसंबर 2026 तक CBT mode में होगी।",
+        "9,76,008 candidates को exam city मिली, जिनमें 22,050 (2.26%) को चार preference से बाहर city मिली।",
+        "8,74,21 candidates (89.56%) को पहली पसंदीदा city मिली और 9,53,958 (97.74%) को चार में से कोई city मिली।",
+        "दूसरी city चुनने की सुविधा 29 नवंबर 2026, शाम 1:55 बजे तक खुली रहेगी।",
+        "seat सीमित हैं और पहले आओ-पहले पाओ के आधार पर allot होंगी; चुनी हुई city बाद में नहीं बदलेगी।"
+      ],
+      "faq": [
+        {
+          "q": "UGC-NET 2026 में exam city बदलने की last date क्या है?",
+          "a": "29 नवंबर 2026, शाम 1:55 बजे तक। इसके बाद कोई request नहीं मानी जाएगी।"
+        },
+        {
+          "q": "कौन exam city बदल सकता है?",
+          "a": "सिर्फ़ वे candidates जिन्हें उनकी चार पसंदीदा cities से बाहर city मिली है। जिन्हें चार में से कोई city मिली है, उनके लिए यह option नहीं है और उनकी request नहीं मानी जाएगी।"
+        },
+        {
+          "q": "नई city कैसे चुनें?",
+          "a": "https://ugcnet.nta.nic.in/ पर Application Number और Password/Date of Birth से login करें। यह option सिर्फ़ eligible candidates को दिखेगा और वहाँ दिख रही cities में से एक चुननी होगी।"
+        },
+        {
+          "q": "अगर मैं कोई city नहीं चुनूँ तो क्या होगा?",
+          "a": "आपकी 25 नवंबर 2026 की Advance City Intimation Slip में दिख रही city ही रहेगी। deadline के बाद कोई request नहीं ली जाएगी।"
+        },
+        {
+          "q": "Admit Card कब आएगा?",
+          "a": "Admit Card अलग से official website पर जारी होगा। Admit Card पर दिखने वाली city, centre, date और shift ही final मानी जाएगी।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nNational Testing Agency (NTA) ने 26 नवंबर 2026 को एक public notice जारी किया है। इसमें बताया गया है कि UGC-NET December 2026 के जिन candidates को उनकी चार पसंदीदा cities से बाहर exam city मिली है, वे अब दूसरी city चुन सकते हैं। परीक्षा 4 से 8 दिसंबर 2026 और 21 दिसंबर 2026 तक Computer-Based Test (CBT) mode में देश भर के centres पर होगी।\n\n## किसे city मिली, किसे नहीं\n\nNotice के मुताबिक 9,76,008 candidates को exam city allot हुई। इनमें 8,74,21 candidates (89.56%) को उनकी पहली पसंदीदा city मिली, और 9,53,958 candidates (97.74%) को उनकी चार पसंदीदा cities में से कोई एक city मिली। 22,050 candidates (2.26%) ऐसे हैं जिन्हें चार preference से बाहर की city मिली।\n\n## कुछ को बाहर की city क्यों मिली\n\nNTA के अनुसार कुछ cities में candidates की संख्या वहाँ उपलब्ध computer-based test seats से ज़्यादा थी। जहाँ किसी candidate की चारों पसंदीदा cities में seat नहीं बची, वहाँ application form में दिए पते के आधार पर नज़दीकी city दी गई जहाँ seat उपलब्ध थी। इसका मक़सद यह था कि हर candidate को तय समय-सारिणी के भीतर परीक्षा की seat मिल जाए।\n\n## अब दूसरी city क्यों चुन सकते हैं\n\nकुछ अन्य cities में अभी test capacity बची है। NTA का कहना है कि इनमें से कोई city कुछ candidates के लिए उनकी मिली city से ज़्यादा सुविधाजनक हो सकती है, जैसे वहाँ पहुँचना आसान हो या वे वहीं रह रहे हों। इसलिए NTA ने इन 22,050 candidates को उपलब्ध capacity वाली cities में से दूसरी city चुनने की सुविधा दी है।\n\n## किसे यह option नहीं मिलेगा\n\nयह सुविधा सिर्फ़ उन candidates के लिए है जिन्हें उनके online application form में भरी चार preferences से बाहर city मिली है। जिन्हें चार में से कोई पसंदीदा city मिल गई है, उन्हें कुछ नहीं करना है। उनके लिए यह option खुला नहीं है और उनकी request नहीं मानी जाएगी।\n\n## city कैसे चुनें\n\nEligible candidates https://ugcnet.nta.nic.in/ पर Application Number और Password/Date of Birth से login करें। यह option सिर्फ़ eligible candidates को ही दिखेगा। सूची में वही cities दिखेंगी जहाँ अभी capacity उपलब्ध है, और उनमें से कोई एक चुनी जा सकती है। सुविधा 29 नवंबर 2026, शाम 1:55 बजे तक खुली रहेगी। हर city में seats सीमित हैं और पहले आओ-पहले पाओ के आधार पर allot होंगी। एक बार चुनी हुई city final होगी, उसे बदला नहीं जा सकेगा।\n\n## अगर कोई city न चुनें तो\n\nजो candidates deadline तक दूसरी city नहीं चुनेंगे, उनकी 25 नवंबर 2026 की Advance City Intimation Slip में दिख रही city ही बनी रहेगी। deadline के बाद कोई request नहीं ली जाएगी।\n\n## Admit Card और मदद\n\nAdmit Card अलग से official website पर जारी होगा। Admit Card पर दिखने वाली Examination City, Centre, Date और Shift ही final मानी जाएगी। किसी भी सवाल के लिए candidates NTA Help Desk से संपर्क कर सकते हैं और समय-समय पर https://ugcnet.nta.nic.in/ देखते रहें।"
+    },
+    "en": {
+      "title": "UGC-NET December 2026: 22,050 candidates can change exam city till 29 November",
+      "summary": "NTA said on 26 November 2026 that UGC-NET December 2026 candidates who were allotted an exam city outside their four preferences can pick another city until 29 November 2026. The option is only for these 22,050 candidates; others need not do anything.",
+      "searchTitle": "UGC-NET 2026: change exam city by 29 November",
+      "searchDescription": "Allotted a city outside your four preferences? Log in to the UGC-NET portal and pick another city by 29 November, 1:55 PM. Seats are first-come, first-served.",
+      "meaning": "If you did not get any of the four exam cities you filled in your UGC-NET December 2026 form, this applies to you. You can log in to the portal until 29 November 2026, 1:55 PM and choose one of the cities where seats are still available, if that is easier for you to reach. Seats are limited and given on a first-come, first-served basis, and a choice once made cannot be changed. If you got one of your four preferred cities, you do not need to do anything.",
+      "keyFacts": [
+        "UGC-NET December 2026 will be held in CBT mode from 4 to 8 December 2026 and on 21 December 2026.",
+        "Of 9,76,008 candidates allotted a city, 22,050 (2.26%) got a city outside their four preferences.",
+        "8,74,21 candidates (89.56%) got their first preferred city and 9,53,958 (97.74%) got one of their four preferred cities.",
+        "The option to pick another city stays open until 29 November 2026, 1:55 PM.",
+        "Seats in each city are limited and allotted first-come, first-served; a submitted choice is final."
+      ],
+      "faq": [
+        {
+          "q": "What is the last date to change the UGC-NET 2026 exam city?",
+          "a": "29 November 2026, 1:55 PM. No request will be accepted after that."
+        },
+        {
+          "q": "Who can change the exam city?",
+          "a": "Only candidates who were allotted a city outside their four preferences. Those who got one of their four preferred cities cannot use this option and their requests will not be considered."
+        },
+        {
+          "q": "How do I choose another city?",
+          "a": "Log in at https://ugcnet.nta.nic.in/ with your Application Number and Password/Date of Birth. The option appears only for eligible candidates, and you pick one city from the list shown."
+        },
+        {
+          "q": "What if I do not choose a city?",
+          "a": "You will keep the city shown in your Advance City Intimation Slip of 25 November 2026. No request will be accepted after the deadline."
+        },
+        {
+          "q": "When will the admit card come?",
+          "a": "The admit card will be issued separately on the official website. The city, centre, date and shift shown on the admit card will be final."
+        }
+      ],
+      "body": "## What has happened\n\nOn 26 November 2026, the National Testing Agency (NTA) issued a public notice for UGC-NET December 2026. It says candidates who were allotted an exam city outside their four preferences can now choose another city. The exam will be held in Computer-Based Test (CBT) mode at centres across the country from 4 to 8 December 2026 and on 21 December 2026.\n\n## How the cities were allotted\n\nAccording to the notice, 9,76,008 candidates were allotted an exam city. Of these, 8,74,21 candidates (89.56%) got their first preferred city, and 9,53,958 candidates (97.74%) got one of their four preferred cities. The remaining 22,050 candidates (2.26%) were allotted a city outside their four preferences.\n\n## Why some got a city outside their list\n\nNTA says that in some cities, more candidates chose that city than there were computer-based test seats. Where none of a candidate's four preferred cities had a seat left, the candidate was given the nearest city with available capacity, based on the address in the application form. This was done so that every candidate gets a seat within the exam schedule.\n\n## Why the option is being given now\n\nTest capacity is still available in some other cities. NTA says one of these cities may be more convenient for some candidates than the one they were allotted, for example because it is easier to travel to or they are staying there. So these 22,050 candidates can pick another city from the places where capacity is available.\n\n## Who cannot use this option\n\nThe option is only for candidates who were allotted a city outside the four preferences in their online application form. Candidates who got one of their four preferred cities do not need to do anything; the option is not open to them and their requests will not be considered.\n\n## How to choose another city\n\nEligible candidates should log in at https://ugcnet.nta.nic.in/ with their Application Number and Password/Date of Birth. The option shows up only for eligible candidates. The list shows only cities where capacity is currently available, and a candidate may pick any one of them. The facility stays open until 29 November 2026, 1:55 PM. Seats in each city are limited and will be allotted on a first-come, first-served basis. A choice, once submitted, is final and cannot be changed.\n\n## If no city is chosen\n\nCandidates who do not choose another city by the deadline will keep the exam city shown in their Advance City Intimation Slip of 25 November 2026. No request will be accepted after the deadline.\n\n## Admit card and help\n\nThe admit card will be issued separately on the official website. The exam city, centre, date and shift shown on the admit card will be final. Candidates should keep checking https://ugcnet.nta.nic.in/ for updates and can contact the NTA Help Desk for any clarification."
+    }
+  }
+}
