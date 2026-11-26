@@ -1,0 +1,100 @@
+{
+  "id": "31c61a0b53",
+  "createdAt": "2026-11-26T07:39:10.170Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "SEBI",
+    "title": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15888 of 2026 dated November 17, 2026 against Sadhana Paresh Kariya (PAN – AJHPK6018N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9294 of 2026",
+    "link": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notices-of-attachment-of-demat-accounts-and-mutual-fund-folios-with-ap-no-15888-of-2026-dated-november-17-2026-against-sadhana-paresh-kariya-pan-ajhpk6018n-in-the-matter-of-anugrah-stock-and-bro-_105895.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "indian rupee notes",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Notices of Attachment of Demat Accounts and Mutual Fund Folios with AP No. 15888 of 2026 dated November 17, 2026 against Sadhana Paresh Kariya (PAN – AJHPK6018N) in the matter of Anugrah Stock and Broking Private Limited under RC No. 9294 of 2026",
+    "sourceDate": "2026-11-17",
+    "hi": {
+      "title": "SEBI ने Anugrah Stock मामले में एक डिफ़ॉल्टर के demat, mutual fund खाते attach किए",
+      "summary": "SEBI के Recovery Officer ने 17 नवंबर 2026 को Anugrah Stock and Broking Private Limited मामले में Sadhana Paresh Kariya के सभी demat खातों और mutual fund folios को attach करने का आदेश दिया। यह आदेश ₹2,00,21,000 की बकाया राशि वसूलने के लिए है और इसका असर आम निवेशकों पर सीधे नहीं पड़ता।",
+      "searchTitle": "SEBI: Anugrah Stock मामले में demat खाते attach",
+      "searchDescription": "SEBI के आदेश में किसके खाते attach हुए, कितनी राशि बकाया है और आम निवेशकों पर इसका क्या असर है, यहाँ पढ़ें।",
+      "meaning": "यह आदेश सिर्फ़ उस व्यक्ति के खातों पर लागू है जिसका नाम आदेश में है, इसलिए आम निवेशकों को कुछ करने की ज़रूरत नहीं है। अगर आपका Anugrah Stock and Broking से कोई लेन-देन या शिकायत जुड़ी है, तो SEBI की वसूली प्रक्रिया से जुड़ी जानकारी के लिए SEBI की वेबसाइट देख सकते हैं।",
+      "keyFacts": [
+        "आदेश की तारीख: 17 नवंबर 2026",
+        "Recovery Certificate No. 9294 of 2026, तारीख 3 सितंबर 2026",
+        "कुल बकाया राशि: ₹2,00,21,000",
+        "जुर्माना: ₹40,00,000 (28 फरवरी 2023 के आदेश से)",
+        "ब्याज: मार्च 2023 से सितंबर 2026 तक ₹60,20,000",
+        "आदेश: सभी demat खाते और mutual fund folios तुरंत attach, कोई debit नहीं"
+      ],
+      "faq": [
+        {
+          "q": "SEBI ने किसके demat और mutual fund खाते attach किए हैं?",
+          "a": "Sadhana Paresh Kariya के। आदेश के अनुसार यह कार्रवाई Anugrah Stock and Broking Private Limited मामले में बकाया वसूली के लिए की गई है।"
+        },
+        {
+          "q": "कितनी राशि बकाया बताई गई है?",
+          "a": "₹2,00,21,000। इसमें ₹40,00,000 का जुर्माना, मार्च 2023 से सितंबर 2026 तक का ₹60,20,000 ब्याज और recovery cost शामिल बताया गया है।"
+        },
+        {
+          "q": "क्या attach खाते से पैसे निकाले जा सकते हैं?",
+          "a": "नहीं। आदेश के अनुसार अगले आदेश तक इन खातों से कोई debit नहीं होगा, हालाँकि खाते में आने वाली राशि (credit) की अनुमति है।"
+        },
+        {
+          "q": "क्या आम निवेशकों पर इसका असर पड़ेगा?",
+          "a": "नहीं। यह आदेश सिर्फ़ उस व्यक्ति के खातों के बारे में है जिसका नाम इसमें है, आम निवेशकों को कुछ करने की ज़रूरत नहीं है।"
+        },
+        {
+          "q": "यह आदेश किस अधिकार से जारी हुआ है?",
+          "a": "SEBI Act, 1992 की धारा 28A और Income-tax Act, 1961 की धारा 226 व Second Schedule के तहत। आदेश SEBI के Recovery Officer ने जारी किया है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI के Recovery Officer ने 17 नवंबर 2026 को एक आदेश जारी किया, जिसमें Anugrah Stock and Broking Private Limited मामले से जुड़े एक व्यक्ति के सभी demat खातों और mutual fund folios को तुरंत attach करने को कहा गया है। आदेश के अनुसार यह कार्रवाई बकाया राशि की वसूली के लिए की गई है।\n\n## कितनी राशि बकाया है\n\nआदेश के अनुसार 3 सितंबर 2026 को Recovery Certificate No. 9294 of 2026 जारी हुआ था, जिसमें कुल ₹2,00,21,000 वसूलने की बात कही गई है। इसमें 28 फरवरी 2023 के एक आदेश से लगाया गया ₹40,00,000 का जुर्माना, मार्च 2023 से सितंबर 2026 तक का ₹60,20,000 ब्याज और recovery cost शामिल बताया गया है। आदेश कहता है कि डिफ़ॉल्टर ने कोई राशि नहीं चुकाई।\n\n## खातों का क्या होगा\n\nआदेश के मुताबिक अगले आदेश तक इन खातों और folios से कोई debit नहीं होगा। खाते में आने वाली राशि (credit) की अनुमति रहेगी। डिपॉज़िटरी और mutual fund कंपनियों को खातों का ब्यौरा, statement की कॉपी और attachment की पुष्टि SEBI को भेजनी है। अगर आदेश मिलने के 5 दिन में कोई जवाब नहीं आता, तो माना जाएगा कि डिफ़ॉल्टर का ऐसा कोई खाता नहीं है।\n\n## किसे फ़ायदा या नुकसान\n\nयह आदेश सिर्फ़ उस व्यक्ति के खातों पर लागू है जिसका नाम आदेश में दिया गया है। आम निवेशकों, demat खाताधारकों या mutual fund निवेशकों को इससे कोई सीधा फ़र्क नहीं पड़ता और उन्हें कुछ करने की ज़रूरत नहीं है।\n\n## कहाँ से जानकारी लें\n\nपूरा आदेश SEBI की वेबसाइट के enforcement और recovery proceedings वाले हिस्से में देखा जा सकता है। Anugrah Stock and Broking से जुड़ी किसी शिकायत या दावे के बारे में जानकारी के लिए SEBI की आधिकारिक वेबसाइट ही देखें।"
+    },
+    "en": {
+      "title": "SEBI attaches demat accounts, mutual fund folios in Anugrah Stock case",
+      "summary": "SEBI's Recovery Officer on November 17, 2026 ordered the attachment of all demat accounts and mutual fund folios of Sadhana Paresh Kariya in the Anugrah Stock and Broking Private Limited matter. The order is to recover ₹2,00,21,000 in dues and does not directly affect ordinary investors.",
+      "searchTitle": "SEBI attaches demat accounts in Anugrah Stock case",
+      "searchDescription": "Whose accounts were attached, how much is due and what it means for ordinary investors — read the key points of the SEBI order here.",
+      "meaning": "This order applies only to the person named in it, so ordinary investors do not need to do anything. If you have a transaction or complaint linked to Anugrah Stock and Broking, check SEBI's website for information on its recovery proceedings.",
+      "keyFacts": [
+        "Order dated: November 17, 2026",
+        "Recovery Certificate No. 9294 of 2026, dated September 3, 2026",
+        "Total amount due: ₹2,00,21,000",
+        "Penalty: ₹40,00,000 (from order dated February 28, 2023)",
+        "Interest: ₹60,20,000 from March 2023 to September 2026",
+        "Order: all demat accounts and mutual fund folios attached immediately, no debit allowed"
+      ],
+      "faq": [
+        {
+          "q": "Whose demat and mutual fund accounts has SEBI attached?",
+          "a": "Those of Sadhana Paresh Kariya. According to the order, the action is for recovery of dues in the Anugrah Stock and Broking Private Limited matter."
+        },
+        {
+          "q": "How much is stated as due?",
+          "a": "₹2,00,21,000. The order lists a ₹40,00,000 penalty, ₹60,20,000 interest from March 2023 to September 2026, and recovery cost."
+        },
+        {
+          "q": "Can money be withdrawn from the attached accounts?",
+          "a": "No. The order says no debit will be allowed until further orders, though credits into the account may be allowed."
+        },
+        {
+          "q": "Does this affect ordinary investors?",
+          "a": "No. The order concerns only the accounts of the person named in it, and ordinary investors need not do anything."
+        },
+        {
+          "q": "Under what powers was the order issued?",
+          "a": "Under section 28A of the SEBI Act, 1992 read with section 226 and the Second Schedule to the Income-tax Act, 1961. It was issued by SEBI's Recovery Officer."
+        }
+      ],
+      "body": "## What has happened\n\nSEBI's Recovery Officer issued an order on November 17, 2026 directing the immediate attachment of all demat accounts and mutual fund folios of a person in the Anugrah Stock and Broking Private Limited matter. According to the order, the action is to recover dues.\n\n## How much is due\n\nThe order says a Recovery Certificate No. 9294 of 2026 was drawn up on September 3, 2026 for recovery of a total of ₹2,00,21,000. This includes a ₹40,00,000 penalty from an order dated February 28, 2023, ₹60,20,000 interest from March 2023 to September 2026, and recovery cost. The order states that no amount has been paid.\n\n## What happens to the accounts\n\nThe order says no debit will be made in these accounts and folios until further orders, while credits may be allowed. Depositories and mutual funds have been asked to provide details of the accounts, a copy of the account statements and confirmation of attachment. If no response is received within 5 days of receipt of the order, it will be presumed that the defaulter has no such account.\n\n## Who is affected\n\nThe order applies only to the accounts of the person named in it. Ordinary investors, demat holders and mutual fund investors are not directly affected and do not need to do anything.\n\n## Where to get more information\n\nThe full order is available on SEBI's website under its enforcement and recovery proceedings section. For anything related to Anugrah Stock and Broking, rely on SEBI's official website."
+    }
+  }
+}

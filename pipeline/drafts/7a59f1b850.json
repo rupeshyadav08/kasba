@@ -1,0 +1,90 @@
+{
+  "id": "7a59f1b850",
+  "createdAt": "2026-11-26T07:36:47.420Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "SEBI",
+    "title": "Caution to investors regarding impersonation of SEBI registered intermediaries on closed user groups of social media platforms",
+    "link": "https://www.sebi.gov.in/media-and-notifications/press-releases/nov-2026/caution-to-investors-regarding-impersonation-of-sebi-registered-intermediaries-on-closed-user-groups-of-social-media-platforms_105944.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "smartphone whatsapp chat india",
+    "state": null,
+    "districts": [],
+    "deadline": null,
+    "sourceTitle": "Caution to investors regarding impersonation of SEBI registered intermediaries on closed user groups of social media platforms",
+    "sourceDate": "2026-11-23",
+    "hi": {
+      "title": "SEBI की चेतावनी: WhatsApp ग्रुप में निवेश का झांसा, पैसे भेजने से पहले ये जांचें",
+      "summary": "SEBI ने 23 नवंबर 2026 को निवेशकों को चेतावनी दी है कि कई WhatsApp ग्रुप SEBI में रजिस्टर्ड इंटरमीडियरी होने का झूठा दावा कर रहे हैं। ये ग्रुप विदेशी बाज़ार में मुनाफ़े का लालच देकर निवेशकों से अनजान खातों में पैसे भेजवा रहे हैं।",
+      "searchTitle": "SEBI चेतावनी: WhatsApp ग्रुप के निवेश से बचें",
+      "searchDescription": "SEBI ने कहा है कि रजिस्टर्ड इंटरमीडियरी बताकर WhatsApp ग्रुप में पैसे मांगे जा रहे हैं। रजिस्ट्रेशन और ऐप यहां से जांचें।",
+      "meaning": "अगर आपको किसी अनजान नंबर से WhatsApp या Telegram ग्रुप में जुड़ने का लिंक आए और वहां शेयर बाज़ार में मुनाफ़े या घाटा वसूलने की बात कही जाए, तो सतर्क रहें। SEBI ने कहा है कि पैसे भेजने या ट्रेडिंग खाता खोलने से पहले यह जांचें कि कंपनी SEBI में रजिस्टर्ड है या नहीं।",
+      "keyFacts": [
+        "SEBI ने 23 नवंबर 2026 को यह चेतावनी जारी की।",
+        "फ्रॉड करने वाले SEBI में रजिस्टर्ड इंटरमीडियरी होने का झूठा दावा कर रहे हैं।",
+        "ग्रुप के एडमिन के नंबर विदेशी कोड (+44, +65) या +91 वाले हो सकते हैं।",
+        "निवेशकों से तीसरे पक्ष के बैंक खातों में पैसे भेजने को कहा जा रहा है।",
+        "SEBI ने रजिस्ट्रेशन, ऐप और बैंक खाते की जांच के लिए लिंक दिए हैं।"
+      ],
+      "faq": [
+        {
+          "q": "क्या मुझे किसी अनजान WhatsApp ग्रुप में जुड़ना चाहिए?",
+          "a": "SEBI ने अनजान लोगों के भेजे लिंक से बने ग्रुप में जुड़ने से बचने की सलाह दी है। अगर ग्रुप बंद हो जाए तो नया लिंक भेजकर दोबारा जोड़ने की कोशिश की जा सकती है।"
+        },
+        {
+          "q": "SEBI में रजिस्टर्ड कंपनी है या नहीं, कैसे पता करें?",
+          "a": "SEBI ने अपनी वेबसाइट पर रजिस्टर्ड इकाइयों की जांच के लिए लिंक दिया है। निवेश से पहले उस लिंक पर कंपनी का नाम जांच लें।"
+        },
+        {
+          "q": "ट्रेडिंग ऐप असली है या नकली, कैसे जांचें?",
+          "a": "SEBI ने कहा है कि Play Store से ट्रेडिंग ऐप डाउनलोड करते समय 'verified' बैज देखें। SEBI ने रजिस्टर्ड इंटरमीडियरी के अधिकृत ऐप की जांच के लिए भी लिंक दिया है।"
+        },
+        {
+          "q": "पैसे किस बैंक खाते में भेज रहे हैं, यह कैसे पता करें?",
+          "a": "SEBI ने बैंक खाते या UPI ID की जांच के लिए लिंक दिया है। SEBI ने कहा है कि अनजान लोगों के बताए खातों में पैसे न भेजें।"
+        }
+      ],
+      "body": "## SEBI ने क्या कहा\n\nSEBI ने 23 नवंबर 2026 को एक प्रेस रिलीज़ जारी कर निवेशकों को आगाह किया है। SEBI के मुताबिक़, कई WhatsApp ग्रुप सोशल मीडिया के बंद ग्रुप में SEBI में रजिस्टर्ड इंटरमीडियरी होने का झूठा दावा कर रहे हैं। SEBI ने कहा है कि धोखाधड़ी करने वाले लोग खुद को रजिस्टर्ड इंटरमीडियरी बताकर निवेशकों को ट्रेडिंग खाता खुलवाने के लिए लुभा रहे हैं।\n\n## कैसे फंसाया जा रहा है\n\nSEBI के अनुसार, निवेशकों को यह कहकर फंसाया जा रहा है कि विदेशी शेयर बाज़ार भारतीय बाज़ार से ज़्यादा फ़ायदेमंद हैं। उन्हें 'इंस्टीट्यूशनल ट्रेडिंग' जैसे मौकों में शामिल होने का लालच दिया जा रहा है। निवेशकों से अनधिकृत ट्रेडिंग प्लेटफ़ॉर्म पर रजिस्टर करने और ऐसे बैंक खातों में पैसे भेजने को कहा जा रहा है जो रजिस्टर्ड नहीं हैं।\n\n## SEBI ने किन खतरों की ओर ध्यान दिलाया\n\nSEBI ने कुछ चेतावनी के संकेत गिनाए हैं। ग्रुप में जुड़ने का लिंक अनजान स्रोतों से आता है। ग्रुप के एडमिन के मोबाइल नंबर पर विदेशी कोड जैसे +44, +65 हो सकते हैं, या +91 से शुरू होने वाले भारतीय नंबर भी हो सकते हैं। निवेशकों से 'भारतीय पोर्टफ़ोलियो का घाटा विदेशी बाज़ार से वसूलें' जैसे दावे किए जाते हैं।\n\nSEBI ने यह भी कहा कि नकली 'इंस्टीट्यूशनल ट्रेडिंग अकाउंट' के ज़रिए ट्रेडिंग करवाई जाती है और मुफ़्त स्टॉक सुझाव दिए जाते हैं। पैसे ऐसे बैंक खातों में भेजने को कहा जाता है जो SEBI रजिस्टर्ड इकाइयों के नहीं हैं। निवेशकों को ऐसे ऐप डाउनलोड करने को कहा जाता है जिनमें उनका पैसा और पोर्टफ़ोलियो दिखाया जाता है। SEBI ने कहा कि धोखाधड़ी करने वाले SEBI की वेबसाइट के स्क्रीनशॉट, नकली SEBI लेटरहेड और नकली SEBI स्टांप का इस्तेमाल करते हैं, और SEBI कर्मचारियों से जुड़ाव होने का झूठा दावा करते हैं।\n\n## निवेशक क्या करें\n\nSEBI ने निवेशकों से कहा है कि किसी भी इकाई से जुड़ने से पहले उसका SEBI रजिस्ट्रेशन जांच लें। जिन निवेश में पक्का मुनाफ़ा का दावा किया जाए, उनसे बचें। अनजान लोगों के बताए प्लेटफ़ॉर्म पर खाता न खोलें और उनके बताए बैंक खातों में पैसे न भेजें। ट्रेडिंग ऐप डाउनलोड करते समय 'verified' बैज देखें और SEBI रजिस्टर्ड इंटरमीडियरी के अधिकृत ऐप की जांच करें। बैंक खाते या UPI ID की जांच भी SEBI के दिए लिंक से कर सकते हैं। SEBI ने अनजान लोगों के भेजे लिंक से बने ग्रुप में जुड़ने से बचने की सलाह दी है।\n\n## पहले भी जारी हुई थीं चेतावनियां\n\nSEBI ने बताया कि वह पहले भी SEBI की नकल और सिर्फ़ न्योते से बने WhatsApp ग्रुप में दिए जाने वाले स्टॉक टिप्स को लेकर चेतावनी जारी कर चुका है। SEBI ने निवेशकों से अपील की है कि वे सतर्क रहें और किसी भी इकाई से निवेश से जुड़ी सेवा लेने से पहले उसका रजिस्ट्रेशन जांच लें।"
+    },
+    "en": {
+      "title": "SEBI warns investors: fake WhatsApp groups posing as registered intermediaries",
+      "summary": "SEBI on 23 November 2026 cautioned investors that many WhatsApp groups are impersonating SEBI registered intermediaries. These groups lure people with claims of profits in foreign markets and ask them to send money to unknown bank accounts.",
+      "searchTitle": "SEBI warning: beware of investment WhatsApp groups",
+      "searchDescription": "SEBI says fake groups claim to be registered intermediaries and ask for money. Check registration, apps and bank accounts before investing.",
+      "meaning": "If an unknown number sends you a link to join a WhatsApp or Telegram group promising stock market profits or help recovering losses, be careful. SEBI says you should check whether the entity is SEBI registered before opening a trading account or sending money.",
+      "keyFacts": [
+        "SEBI issued the caution on 23 November 2026.",
+        "Fraudsters are impersonating SEBI registered intermediaries.",
+        "Group admins may use international codes like +44 or +65, or +91 numbers.",
+        "Investors are being asked to transfer money to third-party bank accounts.",
+        "SEBI gave links to check registration, apps and bank accounts."
+      ],
+      "faq": [
+        {
+          "q": "Should I join an unknown WhatsApp group?",
+          "a": "SEBI advised investors not to join closed user groups through invitations from unknown people. If a group is suspended, a fresh invitation link may be sent to add people again."
+        },
+        {
+          "q": "How do I check if a company is SEBI registered?",
+          "a": "SEBI has given a link on its website to check registered entities. Check the company's name there before investing."
+        },
+        {
+          "q": "How can I check if a trading app is genuine?",
+          "a": "SEBI said you should look for the 'verified' badge while downloading trading apps from the Play Store. SEBI also gave a link to check authorised apps of registered intermediaries."
+        },
+        {
+          "q": "How do I check the bank account I am asked to pay into?",
+          "a": "SEBI has given a link to check bank accounts and UPI IDs. SEBI said you should not transfer funds to accounts communicated by unknown persons."
+        }
+      ],
+      "body": "## What SEBI said\n\nIn a press release dated 23 November 2026, SEBI cautioned investors about fraud on social media. According to SEBI, many WhatsApp groups are impersonating SEBI registered intermediaries on closed user groups. SEBI said fraudsters create an impression of legitimacy and induce investors to open trading accounts.\n\n## How investors are being lured\n\nSEBI said investors are being drawn in with claims that international stock markets are more lucrative than Indian markets. They are offered what are described as institutional trading opportunities. Investors are then directed to register on unauthorised trading platforms and transfer funds to bank accounts held in the names of unregistered entities.\n\n## Red flags SEBI listed\n\nSEBI listed several warning signs. Invitation links to closed groups come from unknown sources. Group admins may use mobile numbers with international codes such as +44 or +65, or Indian numbers starting with +91. Investors are enticed with claims like recovering Indian portfolio losses from foreign markets, off-market negotiated block trades and institutional trades.\n\nSEBI said investors are misled through fake institutional trading accounts and given free stock recommendations. They are asked to send money to third-party bank accounts that do not belong to SEBI registered entities. They are given fraudulent apps that display the funds and portfolio supposedly invested. SEBI said fraudsters misuse screenshots of the SEBI website, fake SEBI letterheads and fake SEBI stamps, and falsely claim connections with SEBI employees.\n\n## What investors should do\n\nSEBI advised investors to verify an entity's SEBI registration before engaging with it. It asked them to avoid investments that claim sure-shot returns, to stay away from unverified trading platforms and not to transfer funds to accounts shared by unknown persons. While downloading trading apps, investors should check for the 'verified' badge, and they can check authorised apps of registered intermediaries through SEBI's link. Bank account and UPI details can also be checked through a link SEBI provided. SEBI advised against joining unverified closed user groups through invitations from unknown individuals.\n\n## Earlier cautions\n\nSEBI said it has issued earlier press releases cautioning the public about impersonation of SEBI and about stock tips offered through invitation-only WhatsApp groups. It urged investors to remain vigilant and verify SEBI registration status before engaging with any entity offering investment advisory services on closed groups."
+    }
+  }
+}

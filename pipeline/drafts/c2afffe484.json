@@ -1,0 +1,103 @@
+{
+  "id": "c2afffe484",
+  "createdAt": "2026-11-26T07:37:58.115Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "SEBI",
+    "title": "Notice of Demand under Recovery Certificate number 9326 of 2026 dated November 20, 2026, issued to Meenu Sharma [Defaulter] (PAN: KXYPS9957R) in the matter of Unregistered Investment Advisory Services by Meenu Sharma, Proprietor of Commodity Pandit.: under Recovery Certificate No. 9326 of 2026.",
+    "link": "https://www.sebi.gov.in/enforcement/recovery-proceedings/nov-2026/notice-of-demand-under-recovery-certificate-number-9326-of-2026-dated-november-20-2026-issued-to-meenu-sharma-defaulter-pan-kxyps9957r-in-the-matter-of-unregistered-investment-advisory-services-_105921.html"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "indian rupee notes",
+    "state": "up",
+    "districts": [
+      "moradabad",
+      "ghaziabad"
+    ],
+    "deadline": null,
+    "sourceTitle": "Notice of Demand under Recovery Certificate number 9326 of 2026 dated November 20, 2026, issued to Meenu Sharma [Defaulter] (PAN: KXYPS9957R) in the matter of Unregistered Investment Advisory Services by Meenu Sharma, Proprietor of Commodity Pandit.",
+    "sourceDate": "2026-11-20",
+    "hi": {
+      "title": "SEBI का ₹52.54 लाख का demand notice: Moradabad की Meenu Sharma को 15 दिन में भुगतान का निर्देश",
+      "summary": "SEBI ने 20 नवंबर 2026 को Moradabad की Meenu Sharma को ₹52,54,149 के भुगतान का demand notice जारी किया, जो बिना पंजीकरण के investment advisory सेवा देने के मामले में है। यह नोटिस उन पर लगे जुर्माने और बकाया के बारे में है, आम निवेशकों को इससे कोई भुगतान या आवेदन नहीं करना है।",
+      "searchTitle": "SEBI notice: Meenu Sharma पर ₹52.54 लाख बकाया",
+      "searchDescription": "SEBI ने unregistered advisory मामले में Moradabad की Meenu Sharma को 15 दिन में भुगतान का नोटिस भेजा है। जानिए पूरा मामला क्या है।",
+      "meaning": "यह नोटिस सीधे तौर पर आम लोगों के लिए नहीं है। यह SEBI का उस महिला पर भुगतान का आदेश है जो बिना पंजीकरण के investment advisory सेवा देने के मामले में दोषी पाई गईं। अगर आपने किसी से पैसा लगाने की सलाह ली है, तो यह जान लें कि SEBI का कहना है कि advisory सेवा देने वाले का पंजीकरण होना चाहिए; किसी भी सलाहकार का पंजीकरण SEBI की वेबसाइट पर जाँचा जा सकता है।",
+      "keyFacts": [
+        "कुल बकाया: ₹52,54,149 (52 लाख 54 हज़ार 149 रुपये)",
+        "वापसी योग्य राशि: ₹4,69,66 (3 अक्टूबर 2024 के आदेश के तहत)",
+        "ब्याज: अक्टूबर 2024 से नवंबर 2026 तक ₹10,83,983",
+        "रिकवरी खर्च: ₹4,000",
+        "भुगतान की अवधि: नोटिस मिलने के 15 दिन के भीतर",
+        "नोटिस की तारीख: 20 नवंबर 2026"
+      ],
+      "faq": [
+        {
+          "q": "SEBI का यह नोटिस किसे भेजा गया है?",
+          "a": "यह नोटिस Moradabad (उत्तर प्रदेश) की Meenu Sharma को भेजा गया है, जो Commodity Pandit नाम से unregistered investment advisory सेवा चलाती थीं। नोटिस में उनके Moradabad और Ghaziabad के दो पते दिए गए हैं।"
+        },
+        {
+          "q": "कितना पैसा जमा करना है और कितने दिन में?",
+          "a": "कुल ₹52,54,149 जमा करने हैं, नोटिस मिलने के 15 दिन के भीतर। इसमें ₹4,69,66 वापसी योग्य राशि, ₹10,83,983 ब्याज और ₹4,000 रिकवरी खर्च शामिल हैं।"
+        },
+        {
+          "q": "पैसा कैसे जमा करना है?",
+          "a": "भुगतान 'SEBI Recovery Proceeds' खाते के नाम से DD, NEFT/RTGS या SEBI पोर्टल (siportal.sebi.gov.in) के Recovery Payment module से किया जा सकता है। भुगतान के बाद पुष्टि Recovery Officer को तय फॉर्मैट में ईमेल से भेजनी होती है।"
+        },
+        {
+          "q": "अगर भुगतान नहीं किया जाए तो क्या होगा?",
+          "a": "नोटिस के अनुसार भुगतान न होने पर SEBI संपत्ति या बैंक खाते जब्त कर सकता है, संपत्ति की नीलामी कर सकता है, receiver नियुक्त कर सकता है या गिरफ़्तारी तक का रास्ता अपना सकता है।"
+        },
+        {
+          "q": "क्या आम निवेशकों को कुछ करना है?",
+          "a": "नहीं, इस नोटिस में आम निवेशकों के लिए कोई भुगतान, आवेदन या दावा तय नहीं किया गया है। यह सिर्फ़ उस व्यक्ति के खिलाफ़ वसूली की कार्रवाई है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nSEBI ने 20 नवंबर 2026 को Moradabad की Meenu Sharma को भुगतान का demand notice जारी किया है। यह नोटिस Recovery Certificate No. 9326 of 2026 के तहत भेजा गया है। मामला बिना पंजीकरण के investment advisory सेवा देने से जुड़ा है — Meenu Sharma, Commodity Pandit की proprietor बताई गई हैं।\n\nनोटिस के अनुसार उन पर कुल ₹52,54,149 बकाया है। इसमें 3 अक्टूबर 2024 के आदेश से वापस करने योग्य ₹4,69,66, अक्टूबर 2024 से नवंबर 2026 तक का ब्याज ₹10,83,983 और ₹4,000 रिकवरी खर्च शामिल है।\n\n## किसे भुगतान करना है और कब तक\n\nनोटिस सीधे Meenu Sharma को संबोधित है। उन्हें नोटिस मिलने के 15 दिन के भीतर पूरी राशि जमा करनी है। भुगतान 'SEBI Recovery Proceeds' खाते के नाम से DD, NEFT/RTGS या SEBI के पोर्टल siportal.sebi.gov.in के Recovery Payment module से किया जा सकता है। भुगतान के बाद पुष्टि तय फॉर्मैट में Recovery Officer को ईमेल से भेजनी होती है; ऐसा न करने पर जमा राशि बकाया में नहीं गिनी जाएगी।\n\n## भुगतान न होने पर क्या हो सकता है\n\nनोटिस के अनुसार भुगतान न होने पर SEBI चल संपत्ति या बैंक खाते जब्त कर सकता है, अचल संपत्ति की नीलामी कर सकता है, receiver नियुक्त कर सकता है या गिरफ़्तारी और जेल तक की कार्रवाई कर सकता है। नोटिस में यह भी कहा गया है कि नोटिस मिलने के बाद वह Recovery Officer की अनुमति के बिना अपनी संपत्ति को गिरवी रख, बेच या किसी और तरह से हस्तांतरित नहीं कर सकतीं।\n\n## क्या आम निवेशकों पर इसका असर है\n\nइस नोटिस में आम निवेशकों के लिए कोई भुगतान, दावा या आवेदन तय नहीं किया गया है। यह सिर्फ़ उस व्यक्ति के खिलाफ़ वसूली की कार्रवाई है। नोटिस में SEBI ने CDSL और NSDL से उनकी holding की जानकारी तुरंत देने को भी कहा है।\n\n## ध्यान रखने वाली बात\n\nSEBI का यह नोटिस एक आधिकारिक रिकॉर्ड है और इसमें लगाए गए आरोप SEBI के हैं। अदालत का अंतिम फैसला इससे अलग हो सकता है। जो लोग किसी से पैसा लगाने की सलाह लेते हैं, उनके लिए यह याद रखना ज़रूरी है कि SEBI में पंजीकृत investment advisor की जानकारी SEBI की वेबसाइट पर जाँची जा सकती है।"
+    },
+    "en": {
+      "title": "SEBI demand notice of ₹52.54 lakh to Meenu Sharma of Moradabad over unregistered advisory services",
+      "summary": "SEBI issued a demand notice on November 20, 2026 to Meenu Sharma of Moradabad, asking her to pay ₹52,54,149 in a case of unregistered investment advisory services. The notice concerns her dues, not any payment or claim for ordinary investors.",
+      "searchTitle": "SEBI notice: Meenu Sharma asked to pay ₹52.54 lakh",
+      "searchDescription": "SEBI has asked Meenu Sharma of Moradabad to pay ₹52,54,149 within 15 days in an unregistered advisory case. Here is what the notice says.",
+      "meaning": "This notice is not for ordinary people. It is SEBI's payment order against a woman found to have run investment advisory services without registration. If you take investment advice from anyone, remember that SEBI says advisory services must be registered, and an adviser's registration can be checked on SEBI's website.",
+      "keyFacts": [
+        "Total dues: ₹52,54,149",
+        "Amount to be refunded: ₹4,69,66, as per the October 3, 2024 order",
+        "Interest from October 2024 to November 2026: ₹10,83,983",
+        "Recovery cost: ₹4,000",
+        "Payment window: within 15 days of receiving the notice",
+        "Notice date: November 20, 2026"
+      ],
+      "faq": [
+        {
+          "q": "Who has been sent this SEBI notice?",
+          "a": "The notice is addressed to Meenu Sharma of Moradabad, Uttar Pradesh, described as proprietor of Commodity Pandit, in a matter of unregistered investment advisory services. The notice lists her addresses in Moradabad and Ghaziabad."
+        },
+        {
+          "q": "How much has to be paid and by when?",
+          "a": "The total is ₹52,54,149, to be paid within 15 days of receiving the notice. This includes ₹4,69,66 directed to be refunded, ₹10,83,983 as interest and ₹4,000 as recovery cost."
+        },
+        {
+          "q": "How can the payment be made?",
+          "a": "Payment can be made by DD in favour of the SEBI Recovery Proceeds account, by NEFT/RTGS, or through the Recovery Payment module on siportal.sebi.gov.in. After paying, confirmation must be sent to the Recovery Officer in the format given in the notice."
+        },
+        {
+          "q": "What happens if the amount is not paid?",
+          "a": "According to the notice, SEBI may attach and sell movable or immovable property, attach bank accounts, appoint a receiver, or seek arrest and detention in prison."
+        },
+        {
+          "q": "Do ordinary investors need to do anything?",
+          "a": "No. The notice sets no payment, claim or application for ordinary investors. It is a recovery action against one person."
+        }
+      ],
+      "body": "## What has happened\n\nSEBI issued a demand notice on November 20, 2026 to Meenu Sharma of Moradabad under Recovery Certificate No. 9326 of 2026. The case relates to unregistered investment advisory services; the notice describes her as proprietor of Commodity Pandit.\n\nAccording to the notice, ₹52,54,149 is due from her. This includes ₹4,69,66 directed to be refunded by an order dated October 3, 2024, interest of ₹10,83,983 for the period October 2024 to November 2026, and ₹4,000 as recovery cost.\n\n## Who must pay and by when\n\nThe notice is addressed to Meenu Sharma, who has to pay the full amount within 15 days of receiving it. Payment can be made by DD in favour of the SEBI Recovery Proceeds account, by NEFT/RTGS, or through the Recovery Payment module on SEBI's portal siportal.sebi.gov.in. After payment, confirmation must be sent to the Recovery Officer in the format given in the notice; without it, the payment will not be counted towards the dues.\n\n## What can follow non-payment\n\nThe notice says that if the dues are not paid, SEBI may attach and sell movable property, attach bank accounts, attach and sell immovable property, arrest and detain the person in prison, or appoint a receiver to manage her properties. It also states that after the notice is served, she cannot mortgage, charge, lease or otherwise deal with her property without the Recovery Officer's permission.\n\n## Does this affect ordinary investors\n\nThe notice sets no payment, claim or application for ordinary investors. It is a recovery action against one person. The notice also asks CDSL and NSDL to provide her holding details immediately.\n\n## A point to note\n\nThis is an official record, and the allegations in it are SEBI's. Anyone who takes investment advice should remember that SEBI-registered advisers can be checked on SEBI's website."
+    }
+  }
+}
