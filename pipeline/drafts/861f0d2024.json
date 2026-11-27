@@ -1,0 +1,100 @@
+{
+  "id": "861f0d2024",
+  "createdAt": "2026-11-27T17:40:59.031Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "एनएचआरसी, भारत ने टीबी मुक्त भारत अभियान के बीच मध्य प्रदेश के भोपाल में टीबी के मामलों में लगातार हो रही वृद्धि की खबर पर स्वतः संज्ञान लिया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342831"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "health",
+    "imageQuery": "hospital ward india",
+    "state": "mp",
+    "districts": [
+      "bhopal"
+    ],
+    "deadline": null,
+    "sourceTitle": "एनएचआरसी, भारत ने टीबी मुक्त भारत अभियान के बीच मध्य प्रदेश के भोपाल में टीबी के मामलों में लगातार हो रही वृद्धि की खबर पर स्वतः संज्ञान लिया",
+    "sourceDate": "2026-11-27",
+    "hi": {
+      "title": "भोपाल में टीबी के मामले बढ़े: NHRC ने MP सरकार से 2 हफ्ते में रिपोर्ट मांगी",
+      "summary": "राष्ट्रीय मानवाधिकार आयोग (NHRC) ने भोपाल में टीबी मरीजों की संख्या बढ़ने की मीडिया रिपोर्ट पर स्वतः संज्ञान लिया है और मध्य प्रदेश के मुख्य सचिव से दो सप्ताह में विस्तृत रिपोर्ट मांगी है। यह मामला भोपाल के टीबी मरीजों और राज्य की पोषण योजना से जुड़ा है।",
+      "searchTitle": "भोपाल टीबी मामले: NHRC ने MP सरकार से मांगी रिपोर्ट",
+      "searchDescription": "भोपाल में 2022 से 2024 के बीच टीबी मरीजों की संख्या कितनी बढ़ी, पोषण योजना में कितने मरीजों को पैसा मिला और NHRC ने क्या कहा — सब यहां पढ़ें।",
+      "meaning": "अगर आप भोपाल या मध्य प्रदेश में रहते हैं और टीबी का इलाज करा रहे हैं, तो यह खबर आपके लिए जरूरी है। आयोग ने सरकार से पूछा है कि मरीजों की संख्या क्यों बढ़ रही है और पोषण योजना का पैसा सभी मरीजों तक क्यों नहीं पहुंच रहा। फिलहाल आम लोगों को कुछ करने की जरूरत नहीं है; यह सरकार से जवाब मांगने का मामला है।",
+      "keyFacts": [
+        "भोपाल में पंजीकृत टीबी मरीज 2022 में 10,773 थे, जो 2024 में 12,850 हो गए — लगभग 19 प्रतिशत की वृद्धि।",
+        "मध्य प्रदेश आर्थिक सर्वेक्षण के अनुसार 2024 में पंजीकृत 1.77 लाख मरीजों में से केवल 1.43 लाख को पोषण योजना के तहत प्रतिमाह 1,000 रुपये की एक किस्त मिली।",
+        "बाकी मरीजों को एक भी किस्त नहीं मिली।",
+        "26 नवंबर 2026 की मीडिया रिपोर्ट के अनुसार 2025 में पूरे मध्य प्रदेश में टीबी के लगभग 1.72 लाख मामले आए और 4,733 लोगों की मौत हुई।",
+        "NHRC ने मध्य प्रदेश के मुख्य सचिव को दो सप्ताह के भीतर विस्तृत रिपोर्ट देने का नोटिस भेजा है।"
+      ],
+      "faq": [
+        {
+          "q": "NHRC ने टीबी पर क्या कार्रवाई की है?",
+          "a": "NHRC ने भोपाल में टीबी मामलों की बढ़ती संख्या पर स्वतः संज्ञान लिया है और मध्य प्रदेश के मुख्य सचिव को दो सप्ताह में विस्तृत रिपोर्ट देने का नोटिस भेजा है।"
+        },
+        {
+          "q": "भोपाल में टीबी मरीजों की संख्या कितनी बढ़ी?",
+          "a": "रिपोर्ट के अनुसार भोपाल में पंजीकृत टीबी मरीज 2022 में 10,773 से बढ़कर 2024 में 12,850 हो गए, यानी लगभग 19 प्रतिशत की वृद्धि।"
+        },
+        {
+          "q": "पोषण योजना में कितने मरीजों को पैसा मिला?",
+          "a": "मध्य प्रदेश आर्थिक सर्वेक्षण के अनुसार 2024 में पंजीकृत 1.77 लाख मरीजों में से केवल 1.43 लाख को प्रतिमाह 1,000 रुपये की एक किस्त मिली; बाकी को एक भी किस्त नहीं मिली।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं, इस मामले में आम लोगों को कुछ करने की जरूरत नहीं है। आयोग ने राज्य सरकार से जवाब मांगा है।"
+        },
+        {
+          "q": "मध्य प्रदेश में 2025 में टीबी से कितनी मौतें हुईं?",
+          "a": "26 नवंबर 2026 की मीडिया रिपोर्ट के अनुसार 2025 में पूरे मध्य प्रदेश में टीबी के लगभग 1.72 लाख मामले सामने आए और 4,733 लोगों की मौत हुई।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nराष्ट्रीय मानवाधिकार आयोग (NHRC) ने भोपाल में टीबी यानी तपेदिक के मरीजों की संख्या लगातार बढ़ने की एक मीडिया रिपोर्ट पर स्वतः संज्ञान लिया है। आयोग ने मध्य प्रदेश सरकार के मुख्य सचिव को नोटिस जारी कर दो सप्ताह के भीतर मामले पर विस्तृत रिपोर्ट मांगी है।\n\nआयोग ने कहा है कि अगर समाचार रिपोर्ट में दी गई जानकारी सही है, तो यह मानवाधिकारों के उल्लंघन से जुड़े गंभीर मुद्दे उठाती है।\n\n## रिपोर्ट में क्या आंकड़े हैं\n\nरिपोर्ट के अनुसार भोपाल में पंजीकृत टीबी मरीजों की संख्या 2022 में 10,773 थी, जो 2024 में बढ़कर 12,850 हो गई — लगभग 19 प्रतिशत की वृद्धि। रिपोर्ट में यह भी कहा गया है कि देश में टीबी मुक्त भारत अभियान चलाए जाने के बावजूद ये आंकड़े सामने आए हैं।\n\nमध्य प्रदेश आर्थिक सर्वेक्षण के अनुसार 2024 में पंजीकृत 1.77 लाख मरीजों में से केवल 1.43 लाख को ही सरकार की पोषण योजना के तहत प्रतिमाह 1,000 रुपये की वित्तीय सहायता की एक किस्त मिली। शेष मरीजों को एक भी किस्त नहीं मिली।\n\n26 नवंबर 2026 को प्रकाशित मीडिया रिपोर्ट के अनुसार 2025 में पूरे मध्य प्रदेश में टीबी के लगभग 1.72 लाख मामले सामने आए और इस बीमारी से 4,733 लोगों की मौत हुई।\n\n## आयोग ने क्या कहा\n\nआयोग ने यह मामला मीडिया रिपोर्ट के आधार पर दर्ज किया है और अभी अपनी ओर से कोई निष्कर्ष नहीं दिया है। उसने राज्य सरकार से दो सप्ताह में जवाब मांगा है। यानी यह सरकार से जवाब मांगने की प्रक्रिया है, कोई फैसला नहीं।\n\n## इसका मतलब क्या है\n\nयह मामला भोपाल और मध्य प्रदेश के टीबी मरीजों से जुड़ा है, खासकर उनसे जिन्हें पोषण योजना का पैसा नहीं मिला। फिलहाल आम लोगों को कुछ करने की जरूरत नहीं है। आगे क्या होगा, यह सरकार के जवाब और आयोग की जांच पर निर्भर करेगा।"
+    },
+    "en": {
+      "title": "Bhopal TB cases rise: NHRC asks MP govt for report in two weeks",
+      "summary": "The National Human Rights Commission (NHRC) has taken note of a media report on rising TB cases in Bhopal and asked the Madhya Pradesh chief secretary for a detailed report within two weeks. The matter concerns TB patients in Bhopal and the state's nutrition scheme.",
+      "searchTitle": "Bhopal TB cases: NHRC seeks report from MP govt",
+      "searchDescription": "How TB cases in Bhopal rose from 2022 to 2024, how many patients got nutrition scheme money, and what NHRC has said — read here.",
+      "meaning": "If you live in Bhopal or elsewhere in Madhya Pradesh and are being treated for TB, this news matters to you. The Commission has asked the state government why cases are rising and why nutrition scheme money is not reaching all patients. For now, ordinary people do not need to do anything; this is a matter of the government being asked to reply.",
+      "keyFacts": [
+        "Registered TB patients in Bhopal rose from 10,773 in 2022 to 12,850 in 2024 — a rise of about 19 per cent.",
+        "According to the MP Economic Survey, of 1.77 lakh patients registered in 2024, only 1.43 lakh received one monthly instalment of Rs 1,000 under the nutrition scheme.",
+        "The remaining patients received not a single instalment.",
+        "A media report of 26 November 2026 said about 1.72 lakh TB cases were reported across Madhya Pradesh in 2025 and 4,733 people died of the disease.",
+        "NHRC has sent a notice to the Madhya Pradesh chief secretary seeking a detailed report within two weeks."
+      ],
+      "faq": [
+        {
+          "q": "What has NHRC done on TB?",
+          "a": "NHRC has taken suo motu cognisance of the rise in TB cases in Bhopal and sent a notice to the Madhya Pradesh chief secretary seeking a detailed report within two weeks."
+        },
+        {
+          "q": "How much did TB cases rise in Bhopal?",
+          "a": "According to the report, registered TB patients in Bhopal rose from 10,773 in 2022 to 12,850 in 2024, a rise of about 19 per cent."
+        },
+        {
+          "q": "How many patients got nutrition scheme money?",
+          "a": "According to the MP Economic Survey, of 1.77 lakh patients registered in 2024, only 1.43 lakh received one monthly instalment of Rs 1,000; the rest received none."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No, ordinary people do not need to do anything in this matter. The Commission has asked the state government for a reply."
+        },
+        {
+          "q": "How many people died of TB in Madhya Pradesh in 2025?",
+          "a": "A media report of 26 November 2026 said about 1.72 lakh TB cases were reported across Madhya Pradesh in 2025 and 4,733 people died of the disease."
+        }
+      ],
+      "body": "## What has happened\n\nThe National Human Rights Commission (NHRC) has taken suo motu cognisance of a media report on the steady rise in tuberculosis (TB) patients in Bhopal. The Commission has issued a notice to the Madhya Pradesh chief secretary, asking for a detailed report on the matter within two weeks.\n\nThe Commission said that if the information in the news report is correct, it raises serious issues related to the violation of human rights.\n\n## What the report says\n\nAccording to the report, the number of registered TB patients in Bhopal rose from 10,773 in 2022 to 12,850 in 2024 — a rise of about 19 per cent. The report noted that these figures came even as the TB Mukt Bharat Abhiyan is being run in the country.\n\nAccording to the Madhya Pradesh Economic Survey, of 1.77 lakh patients registered in 2024, only 1.43 lakh received one monthly instalment of Rs 1,000 as financial help under the government's nutrition scheme. The remaining patients did not receive a single instalment.\n\nA media report published on 26 November 2026 said that in 2025, about 1.72 lakh TB cases were reported across Madhya Pradesh and 4,733 people died of the disease.\n\n## What the Commission has said\n\nThe Commission has registered the matter on the basis of a media report and has not given any finding of its own yet. It has asked the state government for a reply within two weeks. This is a process of seeking an answer from the government, not a decision.\n\n## What this means\n\nThe matter concerns TB patients in Bhopal and Madhya Pradesh, especially those who did not receive nutrition scheme money. For now, ordinary people do not need to do anything. What happens next will depend on the government's reply and the Commission's inquiry."
+    }
+  }
+}

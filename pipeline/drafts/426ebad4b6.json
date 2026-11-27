@@ -1,0 +1,100 @@
+{
+  "id": "426ebad4b6",
+  "createdAt": "2026-11-27T17:41:17.676Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "एनएचआरसी, भारत ने उत्तर प्रदेश के लखनऊ स्थित दो जेलों में सात दिनों के भीतर दो कैदियों द्वारा आत्महत्या किए जाने की घटना का स्वतः संज्ञान लिया",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342829"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "nation",
+    "imageQuery": "indian prison wall",
+    "state": "up",
+    "districts": [
+      "lucknow"
+    ],
+    "deadline": null,
+    "sourceTitle": "एनएचआरसी, भारत ने उत्तर प्रदेश के लखनऊ स्थित दो जेलों में सात दिनों के भीतर दो कैदियों द्वारा आत्महत्या किए जाने की घटना का स्वतः संज्ञान लिया",
+    "sourceDate": "2026-11-27",
+    "hi": {
+      "title": "लखनऊ: दो जेलों में सात दिन में दो कैदियों की मौत, NHRC ने मांगी रिपोर्ट",
+      "summary": "राष्ट्रीय मानवाधिकार आयोग (NHRC) ने लखनऊ की दो जेलों में सात दिनों के भीतर दो कैदियों द्वारा आत्महत्या किए जाने की मीडिया रिपोर्ट पर 27 नवंबर 2026 को स्वतः संज्ञान लिया है। आयोग ने उत्तर प्रदेश के कारागार महानिदेशक और लखनऊ के जिलाधिकारी को दो सप्ताह में विस्तृत रिपोर्ट देने का नोटिस भेजा है।",
+      "searchTitle": "लखनऊ जेल में दो कैदियों की मौत: NHRC का नोटिस",
+      "searchDescription": "NHRC ने लखनऊ की जिला जेल और मॉडल जेल में दो कैदियों की मौत पर संज्ञान लिया है और अधिकारियों से दो सप्ताह में रिपोर्ट मांगी है।",
+      "meaning": "यह मामला सीधे आम लोगों की जेब या रोज़मर्रा के काम से नहीं जुड़ा है, इसलिए आम नागरिकों को कुछ करने की ज़रूरत नहीं है। यह उन लोगों के लिए अहम है जिनके परिवार का कोई सदस्य हिरासत में है, क्योंकि आयोग हिरासत में हुई मौतों की जाँच और सूचना के नियम देख रहा है। आयोग ने जेल महानिदेशक और जिलाधिकारी से रिपोर्ट मांगी है, जिससे पता चलेगा कि ऐसी मौतों की सूचना समय पर क्यों नहीं दी गई।",
+      "keyFacts": [
+        "NHRC ने 26 नवंबर 2026 की मीडिया रिपोर्ट पर स्वतः संज्ञान लिया।",
+        "लखनऊ की जिला जेल और मॉडल जेल में सात दिनों के भीतर दो कैदियों ने आत्महत्या की।",
+        "एक विचाराधीन कैदी ने 19 नवंबर 2026 को जिला जेल में और आजीवन कारावास की सजा काट रहे कैदी ने 25 नवंबर 2026 को मॉडल जेल में फांसी लगाकर आत्महत्या की।",
+        "आयोग ने उत्तर प्रदेश के कारागार महानिदेशक और लखनऊ के जिलाधिकारी को दो सप्ताह के भीतर विस्तृत रिपोर्ट देने को कहा है।",
+        "आयोग के दिशा-निर्देशों के मुताबिक हिरासत में हुई मौत की सूचना 24 घंटे के भीतर नहीं दी गई, इसलिए अधिकारियों से 24 घंटे में स्पष्टीकरण मांगा गया है।"
+      ],
+      "faq": [
+        {
+          "q": "NHRC ने लखनऊ जेल मामले में क्या किया?",
+          "a": "NHRC ने 26 नवंबर 2026 की मीडिया रिपोर्ट पर स्वतः संज्ञान लिया है। आयोग ने उत्तर प्रदेश के कारागार महानिदेशक और लखनऊ के जिलाधिकारी को दो सप्ताह के भीतर विस्तृत रिपोर्ट देने का नोटिस भेजा है।"
+        },
+        {
+          "q": "लखनऊ की किन जेलों में कैदियों की मौत हुई?",
+          "a": "मीडिया रिपोर्ट के अनुसार जिला जेल और मॉडल जेल में दो कैदियों ने फांसी लगाकर आत्महत्या की। एक विचाराधीन कैदी था और दूसरा आजीवन कारावास की सजा काट रहा था।"
+        },
+        {
+          "q": "मौतें कब हुईं?",
+          "a": "रिपोर्ट के अनुसार जिला जेल में 19 नवंबर 2026 को और मॉडल जेल में 25 नवंबर 2026 को मौत हुई। दोनों मौतें सात दिनों के भीतर बताई गई हैं।"
+        },
+        {
+          "q": "NHRC ने अधिकारियों से स्पष्टीकरण क्यों मांगा?",
+          "a": "आयोग के दिशा-निर्देशों के मुताबिक हिरासत में हुई मौत की सूचना 24 घंटे के भीतर आयोग को देनी होती है, जो नहीं दी गई। इसलिए आयोग ने संबंधित अधिकारियों से 24 घंटे के भीतर स्पष्टीकरण मांगा है।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं, इस मामले में आम नागरिकों को कोई आवेदन या काम नहीं करना है। यह आयोग और जेल प्रशासन के बीच चल रही जाँच से जुड़ा मामला है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nराष्ट्रीय मानवाधिकार आयोग (NHRC) ने 26 नवंबर 2026 की एक मीडिया रिपोर्ट पर स्वतः संज्ञान लिया है। रिपोर्ट के अनुसार उत्तर प्रदेश की राजधानी लखनऊ की दो जेलों में सात दिनों के भीतर दो कैदियों ने फांसी लगाकर आत्महत्या कर ली।\n\nरिपोर्ट में बताया गया है कि एक विचाराधीन कैदी ने 19 नवंबर 2026 को जिला जेल में और आजीवन कारावास की सजा काट रहे एक अन्य कैदी ने 25 नवंबर 2026 को मॉडल जेल में आत्महत्या की। आयोग ने यह जानकारी अपनी विज्ञप्ति में दी है।\n\n## आयोग ने क्या कहा\n\nआयोग ने कहा है कि अगर समाचार रिपोर्ट में दी गई जानकारी सही है, तो यह मानवाधिकारों के उल्लंघन से जुड़े गंभीर मुद्दे उठाती है। इस संबंध में आयोग ने उत्तर प्रदेश के कारागार महानिदेशक और लखनऊ के जिलाधिकारी को नोटिस जारी कर दो सप्ताह के भीतर मामले पर विस्तृत रिपोर्ट मांगी है।\n\nयह ध्यान रखना ज़रूरी है कि यह आयोग का संज्ञान है और मामले की जाँच अभी चल रही है। आयोग ने अभी किसी को दोषी नहीं ठहराया है।\n\n## सूचना में देरी पर सवाल\n\nआयोग ने यह भी संज्ञान लिया कि उसके दिशा-निर्देशों के अनुसार इन हिरासत में हुई मौतों की सूचना 24 घंटे के भीतर आयोग को नहीं दी गई। इसलिए NHRC ने संबंधित अधिकारियों से 24 घंटे के भीतर स्पष्टीकरण मांगा है कि इन मौतों की जानकारी आयोग को क्यों नहीं दी गई।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nयह मामला सीधे आम नागरिकों की जेब, नौकरी या रोज़मर्रा के काम से नहीं जुड़ा है, इसलिए आम लोगों को कोई आवेदन या काम नहीं करना है। यह उन परिवारों के लिए अहम है जिनका कोई सदस्य हिरासत में है, क्योंकि आयोग हिरासत में हुई मौतों की सूचना और जाँच के नियमों को देख रहा है।\n\nआयोग ने जो रिपोर्ट मांगी है, उससे साफ हो सकेगा कि इन मौतों की सूचना समय पर क्यों नहीं दी गई और जेल प्रशासन की ज़िम्मेदारी क्या रही।"
+    },
+    "en": {
+      "title": "Lucknow: Two prisoners die in two jails within a week, NHRC seeks report",
+      "summary": "The National Human Rights Commission (NHRC) has taken suo motu cognisance of a media report that two prisoners died by suicide in two Lucknow jails within seven days, according to its 27 November 2026 release. It has asked Uttar Pradesh's Director General of Prisons and the Lucknow District Magistrate for a detailed report within two weeks.",
+      "searchTitle": "Lucknow jail deaths: NHRC issues notice, seeks report",
+      "searchDescription": "NHRC has taken cognisance of two prisoner deaths in Lucknow's District Jail and Model Jail and asked officials for a report within two weeks.",
+      "meaning": "This case does not directly affect the money or daily life of ordinary citizens, so there is nothing for the general public to do. It matters to families with a member in custody, because the Commission is examining how deaths in custody are reported and looked into. The report sought from the prisons chief and the District Magistrate should show why these deaths were not reported to the Commission in time.",
+      "keyFacts": [
+        "NHRC took suo motu cognisance of a media report dated 26 November 2026.",
+        "Two prisoners died by suicide in Lucknow's District Jail and Model Jail within seven days.",
+        "An undertrial died in District Jail on 19 November 2026 and a life convict in Model Jail on 25 November 2026, as per the report.",
+        "The Commission asked UP's Director General of Prisons and the Lucknow District Magistrate for a detailed report within two weeks.",
+        "The deaths were not reported to NHRC within 24 hours as its guidelines require, so officials have been asked for an explanation within 24 hours."
+      ],
+      "faq": [
+        {
+          "q": "What has NHRC done in the Lucknow jail case?",
+          "a": "NHRC has taken suo motu cognisance of a media report dated 26 November 2026. It has issued notices to Uttar Pradesh's Director General of Prisons and the Lucknow District Magistrate, seeking a detailed report within two weeks."
+        },
+        {
+          "q": "Which Lucknow jails are involved?",
+          "a": "According to the media report, the deaths took place in District Jail and Model Jail. One prisoner was an undertrial and the other was serving a life sentence."
+        },
+        {
+          "q": "When did the deaths happen?",
+          "a": "As per the report, the District Jail death was on 19 November 2026 and the Model Jail death on 25 November 2026. Both are described as having happened within seven days."
+        },
+        {
+          "q": "Why has NHRC asked officials for an explanation?",
+          "a": "NHRC's guidelines require that a death in custody be reported to it within 24 hours, and that was not done. The Commission has therefore asked the officials concerned to explain within 24 hours why it was not informed."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No. There is no application or action for the general public in this matter. It concerns the Commission's inquiry with the prison administration."
+        }
+      ],
+      "body": "## What happened\n\nThe National Human Rights Commission (NHRC) has taken suo motu cognisance of a media report dated 26 November 2026. According to that report, two prisoners died by hanging in two jails in Lucknow, the capital of Uttar Pradesh, within seven days.\n\nThe report says an undertrial prisoner died in District Jail on 19 November 2026, and another prisoner serving a life sentence died in Model Jail on 25 November 2026. The Commission shared these details in its release.\n\n## What the Commission said\n\nThe Commission said that if the information in the news report is correct, it raises serious issues related to human rights violations. It has issued notices to the Director General of Prisons, Uttar Pradesh, and the District Magistrate of Lucknow, asking for a detailed report on the matter within two weeks.\n\nIt is important to note that this is the Commission taking cognisance of the matter and that the inquiry is still under way. The Commission has not held anyone guilty.\n\n## Questions over delay in reporting\n\nThe Commission also noted that, as per its guidelines, these deaths in custody were not reported to it within 24 hours. NHRC has therefore asked the officials concerned to explain within 24 hours why it was not informed of these custodial deaths.\n\n## What this means for ordinary people\n\nThis matter does not directly affect the money, jobs or daily life of ordinary citizens, so the general public has nothing to apply for or do. It matters to families who have a member in custody, because the Commission is looking at how deaths in custody are reported and examined.\n\nThe report sought by the Commission should make clear why these deaths were not reported in time and what responsibility the prison administration carries."
+    }
+  }
+}
