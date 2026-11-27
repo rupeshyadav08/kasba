@@ -4316,11 +4316,20 @@
     "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342190": "2026-11-26",
     "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64051": "2026-11-26",
     "https://nta.ac.in/Download/Notice/Notice_20261126205025.pdf": "2026-11-26",
-    "https://upmsp.edu.in/Downloads/Notification_Centre_26112026.pdf": "2026-11-26"
+    "https://upmsp.edu.in/Downloads/Notification_Centre_26112026.pdf": "2026-11-26",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342409": "2026-11-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342387": "2026-11-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342379": "2026-11-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342380": "2026-11-27",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64054": "2026-11-27",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64053": "2026-11-27",
+    "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=64052": "2026-11-27",
+    "https://www.sebi.gov.in/filings/public-issues/aug-2026/muthoot-fincorp-limited-drhp_103697.html": "2026-11-27",
+    "https://nta.ac.in/Download/Notice/Notice_20261127125048.pdf": "2026-11-27"
   },
   "telegramOffset": 406796360,
   "deploy": {
-    "last": "2026-11-26T17:58:14.125Z",
+    "last": "2026-11-27T07:33:03.702Z",
     "pending": []
   },
   "sources": [

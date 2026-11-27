@@ -1,0 +1,104 @@
+{
+  "id": "481166d197",
+  "createdAt": "2026-11-27T07:33:03.186Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": true,
+  "source": {
+    "name": "NTA",
+    "title": "Correction in Particulars of Online Application Form of Joint Entrance Examination(Main) - 2027 (Session 1)- Reg.",
+    "link": "https://nta.ac.in/Download/Notice/Notice_20261127125048.pdf"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "notice",
+    "sensitive": false,
+    "category": "jobs-exams",
+    "imageQuery": "indian students exam hall",
+    "state": null,
+    "districts": [],
+    "deadline": {
+      "date": "2026-11-29",
+      "label_hi": "JEE Main 2027 Session 1 फ़ॉर्म सुधार की last date (शाम 5:50 बजे तक)",
+      "label_en": "Last date to correct JEE Main 2027 Session 1 form (up to 5:50 PM)"
+    },
+    "sourceTitle": "Correction in Particulars of Online Application Form of Joint Entrance Examination (Main) - 2027 (Session 1) - Reg.",
+    "sourceDate": "2026-11-27",
+    "hi": {
+      "title": "JEE Main 2027 Session 1: फ़ॉर्म में गलती है तो 29 नवंबर तक सुधारें",
+      "summary": "NTA ने JEE Main 2027 (Session 1) के ऑनलाइन आवेदन फ़ॉर्म में सुधार की एक बार की सुविधा दी है, जिसके लिए 27 से 29 नवंबर 2026 तक समय है। यह सुविधा उन सभी रजिस्टर्ड उम्मीदवारों के लिए है जिन्होंने इस सत्र का फ़ॉर्म भरा है।",
+      "searchTitle": "JEE Main 2027 Session 1: 29 नवंबर तक फ़ॉर्म सुधार",
+      "searchDescription": "कौन-कौन से खाने बदल सकते हैं, कहाँ से करें सुधार और कब तक — पूरी जानकारी आसान भाषा में।",
+      "meaning": "अगर आपने JEE Main 2027 (Session 1) का फ़ॉर्म भरा है, तो अपने फ़ॉर्म की जानकारी एक बार जाँच लें। नाम, पता, फ़ोटो, जन्मतिथि, श्रेणी या परीक्षा शहर जैसी किसी चीज़ में गलती हो तो 29 नवंबर 2026 शाम 5:50 बजे से पहले सुधार सकते हैं। इसके बाद NTA कोई सुधार नहीं करेगा।",
+      "keyFacts": [
+        "सुधार की अवधि: 27 नवंबर से 29 नवंबर 2026",
+        "आख़िरी समय: 29 नवंबर 2026, शाम 5:50 बजे तक",
+        "सुधार सिर्फ़ एक बार मिलेगा; जमा करने के बाद फ़ॉर्म फ़्रीज़ हो जाएगा",
+        "कुछ खानों में सुधार के लिए अतिरिक्त शुल्क देना पड़ सकता है; शुल्क वापस नहीं होगा",
+        "परीक्षा 20 से 24 जनवरी और 28 जनवरी 2027 को CBT मोड में होगी",
+        "परीक्षा देश भर के केंद्रों और देश के बाहर 09 शहरों में होगी"
+      ],
+      "faq": [
+        {
+          "q": "JEE Main 2027 Session 1 फ़ॉर्म में सुधार की last date क्या है?",
+          "a": "29 नवंबर 2026, शाम 5:50 बजे तक। इसके बाद NTA किसी भी हालत में सुधार नहीं करेगा।"
+        },
+        {
+          "q": "फ़ॉर्म में कौन-कौन सी चीज़ें बदल सकते हैं?",
+          "a": "मोबाइल नंबर, ई-मेल, पता, आपातकालीन संपर्क, फ़ोटो, 10वीं और 12वीं की जानकारी, राज्य कोड, परीक्षा शहर, जन्मतिथि, लिंग, श्रेणी, हस्ताक्षर, परीक्षा की भाषा और पेपर का चुनाव जैसे खाने बदले जा सकते हैं। कुछ खानों में एक बार में सिर्फ़ एक चीज़ बदल सकते हैं, इसलिए नियम ध्यान से पढ़ें।"
+        },
+        {
+          "q": "क्या सुधार के लिए पैसे देने होंगे?",
+          "a": "अगर सुधार से शुल्क पर असर पड़ता है तो अतिरिक्त शुल्क देना होगा। जो शुल्क पहले दिया है वह किसी भी हालत में वापस नहीं होगा।"
+        },
+        {
+          "q": "सुधार कितनी बार कर सकते हैं?",
+          "a": "सिर्फ़ एक बार। सुधार करके जमा करने के बाद फ़ॉर्म फ़्रीज़ हो जाएगा, दोबारा बदलाव नहीं हो सकेगा।"
+        },
+        {
+          "q": "सुधार कहाँ से करें और मदद कहाँ मिलेगी?",
+          "a": "आधिकारिक वेबसाइट jeemain.nta.nic.in पर जाकर अपने फ़ॉर्म की जानकारी जाँचें और सुधार करें। किसी सवाल के लिए NTA के दिए नंबरों पर कॉल करें या jeemain@nta.ac.in पर ई-मेल लिखें।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nराष्ट्रीय परीक्षा एजेंसी (NTA) ने JEE Main 2027 (Session 1) के ऑनलाइन आवेदन फ़ॉर्म में सुधार के लिए एक तय समय दिया है। नोटिस के मुताबिक यह सुविधा 27 नवंबर से 29 नवंबर 2026 तक मिलेगी और आख़िरी दिन शाम 5:50 बजे तक सुधार किया जा सकेगा।\n\nयह सुविधा उन सभी उम्मीदवारों के लिए है जिन्होंने इस सत्र का फ़ॉर्म भरा है। NTA ने इसे एक बार मिलने वाली सुविधा बताया है, ताकि उम्मीदवारों को परेशानी न हो।\n\n## क्या बदला है\n\nपहले भरे फ़ॉर्म में अब कुछ खानों में सुधार किया जा सकता है। नोटिस के साथ दिए गए ब्यौरे के अनुसार मोबाइल नंबर, ई-मेल पता, स्थायी और वर्तमान पता, आपातकालीन संपर्क, फ़ोटो, 10वीं और 12वीं की जानकारी, राज्य कोड, परीक्षा शहर, जन्मतिथि, लिंग, श्रेणी, हस्ताक्षर, परीक्षा की भाषा और पेपर का चुनाव जैसी चीज़ों में सुधार का विकल्प है।\n\nहर खाने के लिए नियम अलग हैं। कुछ खानों में सिर्फ़ एक चीज़ बदली जा सकती है, जैसे नाम, पिता का नाम या माता का नाम में से कोई एक। कुछ खानों में सभी चीज़ें बदल सकती हैं। इसलिए सुधार करने से पहले नोटिस में दी गई सूची ध्यान से पढ़ें।\n\n## किसे ध्यान रखना है\n\nसुधार सिर्फ़ एक बार होगा। एक बार सुधार करके जमा करने के बाद फ़ॉर्म फ़्रीज़ हो जाएगा, यानी उसमें दोबारा बदलाव नहीं हो सकेगा। NTA ने साफ़ कहा है कि 29 नवंबर 2026 के बाद किसी भी हालत में सुधार नहीं लिया जाएगा।\n\nअगर सुधार से शुल्क पर असर पड़ता है, तो उम्मीदवार को अतिरिक्त शुल्क देना होगा। यह शुल्क क्रेडिट/डेबिट कार्ड, नेट बैंकिंग या UPI से दिया जा सकता है। नोटिस के मुताबिक जो शुल्क पहले जमा हो चुका है, वह किसी भी हालत में वापस नहीं होगा।\n\n## परीक्षा कब और कहाँ\n\nJEE Main 2027 (Session 1) 20 से 24 जनवरी और 28 जनवरी 2027 को कंप्यूटर आधारित टेस्ट (CBT) मोड में होगी। परीक्षा देश भर के केंद्रों के साथ-साथ देश के बाहर 09 शहरों में भी आयोजित की जाएगी।\n\n## अब क्या करें\n\nअपने फ़ॉर्म की जानकारी jeemain.nta.nic.in पर जाकर जाँचें। गलती मिले तो तय समय के अंदर सुधार करें और शुल्क लगे तो उसे भी जमा करें। NTA ने कहा है कि उम्मीदवार nta.ac.in और jeemain.nta.nic.in पर नई जानकारी के लिए नज़र बनाए रखें।\n\nकिसी सवाल के लिए NTA के दिए गए फ़ोन नंबरों पर कॉल किया जा सकता है या jeemain@nta.ac.in पर ई-मेल लिखा जा सकता है।"
+    },
+    "en": {
+      "title": "JEE Main 2027 Session 1: correct your form by 29 November",
+      "summary": "NTA has opened a one-time window from 27 to 29 November 2026 for candidates to correct details in their JEE Main 2027 (Session 1) online application forms. It applies to all registered candidates of this session.",
+      "searchTitle": "JEE Main 2027 Session 1: form correction till 29 Nov",
+      "searchDescription": "Which fields can be changed, how to make the correction, the last date and where to get help — explained simply.",
+      "meaning": "If you have filled the JEE Main 2027 (Session 1) form, check your details once. If something like your name, address, photo, date of birth, category or exam city is wrong, you can correct it before 5:50 PM on 29 November 2026. After that, NTA will not accept any correction.",
+      "keyFacts": [
+        "Correction window: 27 November to 29 November 2026",
+        "Last time: 29 November 2026, up to 5:50 PM",
+        "Only one correction is allowed; the form is frozen once submitted",
+        "Some corrections may need an additional fee; fees already paid are not refunded",
+        "Exam will be held on 20-24 January and 28 January 2027 in CBT mode",
+        "Exam centres across India and in 09 cities outside the country"
+      ],
+      "faq": [
+        {
+          "q": "What is the last date to correct the JEE Main 2027 Session 1 form?",
+          "a": "29 November 2026, up to 5:50 PM. After that NTA will not entertain any correction under any circumstances."
+        },
+        {
+          "q": "Which details can be changed in the form?",
+          "a": "Fields such as mobile number, e-mail, address, emergency contact, photograph, Class 10 and Class 12 details, state code of eligibility, exam city, date of birth, gender, category, signature, exam medium and choice of paper can be corrected. Some fields allow only one change at a time, so read the rules carefully."
+        },
+        {
+          "q": "Do I have to pay for the correction?",
+          "a": "If the correction affects the fee, the additional fee has to be paid. The fee already paid will not be refunded in any case."
+        },
+        {
+          "q": "How many times can I make corrections?",
+          "a": "Only once. After the correction is submitted, the form is frozen and cannot be changed again."
+        },
+        {
+          "q": "Where do I make the correction and get help?",
+          "a": "Visit jeemain.nta.nic.in, check your form details and make the correction. For queries, call the NTA numbers given in the notice or write to jeemain@nta.ac.in."
+        }
+      ],
+      "body": "## What has happened\n\nNTA has announced a fixed window to correct details in the online application form for JEE Main 2027 (Session 1). According to the notice, the facility is open from 27 November to 29 November 2026, and corrections can be made till 5:50 PM on the last day.\n\nThe facility is for all candidates who have registered for this session. NTA describes it as a one-time facility meant to save candidates hardship.\n\n## What can be changed\n\nThe annexure to the notice lists the fields open for correction. These include mobile number, e-mail address, permanent and present address, emergency contact details, photograph, Class 10 and Class 12 details, state code of eligibility, examination city, date of birth, gender, category, signature, medium of examination and choice of paper.\n\nThe rules differ from field to field. In some fields only one item can be changed, such as the candidate's name, father's name or mother's name. In others, all details can be changed. Candidates should read the list in the notice carefully before making a correction.\n\n## What to keep in mind\n\nOnly one correction is allowed. Once the correction is submitted, the form is frozen and cannot be edited again. NTA has said no correction will be entertained after 29 November 2026 under any circumstances.\n\nIf a correction affects the fee, the candidate has to pay the additional amount through credit/debit card, net banking or UPI. The notice says the fee already paid will not be refunded in any case.\n\n## When and where the exam is\n\nJEE Main 2027 (Session 1) will be held in Computer-Based Test (CBT) mode from 20 to 24 January and on 28 January 2027. The exam will be held at centres across India and in 09 cities outside the country.\n\n## What to do now\n\nCheck your form details on jeemain.nta.nic.in. If something is wrong, make the correction within the window and pay any additional fee that applies. NTA has asked candidates to keep checking nta.ac.in and jeemain.nta.nic.in for updates.\n\nFor any query, candidates can call the NTA numbers given in the notice or write to jeemain@nta.ac.in."
+    }
+  }
+}
