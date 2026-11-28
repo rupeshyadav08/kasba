@@ -1,0 +1,100 @@
+{
+  "id": "c508ba7ab6",
+  "createdAt": "2026-11-28T13:33:00.578Z",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "ocr": false,
+  "source": {
+    "name": "PIB",
+    "title": "डीजीजीआई पटना जोनल यूनिट ने तंबाकू सेक्टर में ₹88 करोड़ से ज़्यादा के जीएसटी रिफंड फ्रॉड का पता लगाया; ₹150 करोड़ से ज़्यादा कीमत की सिगरेट बैन की गईं",
+    "link": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2343127"
+  },
+  "story": {
+    "relevant": true,
+    "storyType": "record",
+    "sensitive": true,
+    "category": "money",
+    "imageQuery": "cigarette packets india",
+    "state": "bihar",
+    "districts": [
+      "patna"
+    ],
+    "deadline": null,
+    "sourceTitle": "डीजीजीआई पटना जोनल यूनिट ने तंबाकू सेक्टर में ₹88 करोड़ से ज़्यादा के जीएसटी रिफंड फ्रॉड का पता लगाया; ₹150 करोड़ से ज़्यादा कीमत की सिगरेट बैन की गईं",
+    "sourceDate": "2026-11-28",
+    "hi": {
+      "title": "पटना: DGGI ने ₹88 करोड़ के GST रिफंड फ्रॉड का पता लगाया",
+      "summary": "डीजीजीआई की पटना ज़ोनल यूनिट ने 28 नवंबर 2026 को बताया कि उसने तंबाकू सेक्टर में ₹88 करोड़ से ज़्यादा के जीएसटी रिफंड फ्रॉड वाले सिंडिकेट का पता लगाया है। यह कार्रवाई सिगरेट बनाने, सप्लाई करने और रिफंड लेने से जुड़े कारोबारियों पर है; आम उपभोक्ता को इससे सीधे कोई काम नहीं करना है।",
+      "searchTitle": "GST रिफंड फ्रॉड: पटना में ₹88 करोड़ का मामला",
+      "searchDescription": "DGGI पटना ने तंबाकू सेक्टर में रिफंड फ्रॉड पकड़ा, ₹150 करोड़ कीमत की सिगरेट बैन। पूरी जानकारी हिंदी में पढ़ें।",
+      "meaning": "यह मामला सिगरेट के कारोबार से जुड़े उन लोगों और कंपनियों का है जो जीएसटी रिफंड लेते हैं। आम पढ़ने वाले पर इसका सीधा असर नहीं पड़ता और उन्हें कुछ करने की ज़रूरत नहीं है। जांच अभी चल रही है, इसलिए अभी यह तय नहीं हुआ है कि इसमें कौन-कौन शामिल है।",
+      "keyFacts": [
+        "पटना ज़ोनल यूनिट ने पिछले दो सालों में ₹88 करोड़ से ज़्यादा के रिफंड फ्रॉड का पता लगाया",
+        "कोलकाता के फाल्टा एसईजेड में लगभग 8.76 करोड़ स्टिक (8,410 कार्टन) नकली सिगरेट मिलीं, जिनकी एमआरपी ₹150 करोड़ से ज़्यादा थी",
+        "सितंबर और अक्टूबर में दो गैर-कानूनी यूनिट पकड़ी गईं, लगभग 25 लाख स्टिक और मशीनों के 03 सेट ज़ब्त",
+        "चालू वित्त वर्ष में अब तक सिगरेट से जुड़े 06 मामले दर्ज, ₹160 करोड़ से ज़्यादा कीमत की 10.07 करोड़ से ज़्यादा स्टिक ज़ब्त",
+        "अब तक पकड़े गए फ्रॉड रिफंड की कुल रकम ₹110 करोड़ से ज़्यादा"
+      ],
+      "faq": [
+        {
+          "q": "DGGI पटना ने कितने रिफंड फ्रॉड का पता लगाया?",
+          "a": "₹88 करोड़ से ज़्यादा का। विज्ञप्ति के अनुसार सिंडिकेट ने पिछले दो सालों में यह रकम रिफंड के रूप में हासिल की।"
+        },
+        {
+          "q": "कितनी सिगरेट बैन की गईं?",
+          "a": "कोलकाता के फाल्टा एसईजेड में लगभग 8.76 करोड़ स्टिक यानी 8,410 कार्टन नकली और घटिया सिगरेट मिलीं, जिनकी एमआरपी ₹150 करोड़ से ज़्यादा थी। इन्हें बैन कर दिया गया।"
+        },
+        {
+          "q": "क्या आम लोगों को कुछ करना है?",
+          "a": "नहीं। यह मामला सिगरेट कारोबार और जीएसटी रिफंड से जुड़ा है, आम उपभोक्ता को इसके लिए कोई कार्रवाई नहीं करनी है।"
+        },
+        {
+          "q": "जांच में क्या पता चला?",
+          "a": "विज्ञप्ति के अनुसार सिंडिकेट शेल एंटिटीज़ के नेटवर्क से चल रहा था, जो बिना असली सामान की रसीद के इनवॉइस लेकर इनपुट टैक्स क्रेडिट हासिल करता था और घटिया सिगरेट को एसईजेड में सप्लाई कर रिफंड क्लेम करता था।"
+        },
+        {
+          "q": "क्या मामला पूरा खत्म हो गया है?",
+          "a": "नहीं। विज्ञप्ति कहती है कि सिंडिकेट में शामिल एंटिटी और लोगों की पहचान के लिए आगे की जांच चल रही है।"
+        }
+      ],
+      "body": "## क्या हुआ है\n\nडायरेक्टोरेट जनरल ऑफ़ जीएसटी इंटेलिजेंस (डीजीजीआई) की पटना ज़ोनल यूनिट ने तंबाकू सेक्टर में जीएसटी रिफंड के एक मामले का पता लगाया है। 28 नवंबर 2026 की विज्ञप्ति के अनुसार जांच में सामने आया कि एक सिंडिकेट पिछले दो सालों में ₹88 करोड़ से ज़्यादा का रिफंड हासिल कर चुका है।\n\n## सिंडिकेट कैसे काम करता था\n\nविज्ञप्ति के अनुसार सिंडिकेट शेल एंटिटीज़ के नेटवर्क से चल रहा था। ये ब्रांडेड सिगरेट के डीलरों से बिना असली सामान की रसीद के इनवॉइस लेते थे और इस तरह बड़ी मात्रा में इनपुट टैक्स क्रेडिट (आईटीसी) हासिल करते थे। विज्ञप्ति कहती है कि इसमें सेंट्रल गुड्स एंड सर्विसेज़ टैक्स एक्ट, 2017 के सेक्शन 16 का उल्लंघन हुआ।\n\nसिंडिकेट अनजान ओरिजिन की घटिया सिगरेट भी खरीदता था और उन्हें लेटर ऑफ़ अंडरटेकिंग (एलयूटी) के तहत कोलकाता के फाल्टा स्पेशल इकोनॉमिक ज़ोन (एसईजेड) को सप्लाई करता था। इसके बाद इन डीम्ड एक्सपोर्ट के नाम पर जमा हुए आईटीसी के खिलाफ रिफंड क्लेम किए गए।\n\n## क्या ज़ब्त हुआ\n\nजांच के दौरान फाल्टा एसईजेड में अलग-अलग जाने-माने ब्रांड के नाम वाली लगभग 8.76 करोड़ स्टिक (8,410 कार्टन) नकली और घटिया सिगरेट मिलीं। विज्ञप्ति के अनुसार इनकी कुल एमआरपी कीमत ₹150 करोड़ से ज़्यादा थी और इन्हें बैन कर दिया गया।\n\nइस साल सितंबर और अक्टूबर में दो गैर-कानूनी सिगरेट बनाने वाली यूनिट का भंडाफोड़ हुआ। इनसे लगभग 25 लाख सिगरेट स्टिक और सिगरेट बनाने व पैकिंग की मशीनों के 03 सेट ज़ब्त किए गए।\n\n## अब तक का कुल आंकड़ा\n\nविज्ञप्ति के अनुसार चालू वित्त वर्ष में अब तक डीजीजीआई ने सिगरेट के विनिर्माण या आपूर्ति से जुड़े छह मामले दर्ज किए हैं। इनमें ₹160 करोड़ से ज़्यादा मूल्य की 10.07 करोड़ से ज़्यादा सिगरेट स्टिक ज़ब्त की गईं, साथ ही मशीनरी, पैकिंग सामग्री और कच्चा माल भी ज़ब्त हुआ। अब तक धोखाधड़ी से लिए गए जीएसटी रिफंड की कुल रकम ₹110 करोड़ से ज़्यादा बताई गई है।\n\n## आगे क्या\n\nविज्ञप्ति कहती है कि सिंडिकेट में शामिल एंटिटी और लोगों की पहचान करने तथा टैक्स चोरी और फ्रॉड रिफंड की पूरी रकम का पता लगाने के लिए आगे की जांच चल रही है। यानी मामला अभी पूरा नहीं हुआ है।\n\n## आम लोगों के लिए इसका क्या मतलब है\n\nयह मामला सिगरेट के कारोबार और जीएसटी रिफंड से जुड़ा है। आम उपभोक्ता को इसके लिए कोई फ़ॉर्म नहीं भरना है, कोई तारीख नहीं निभानी है और कहीं जाना नहीं है। जांच अभी चल रही है, इसलिए विज्ञप्ति में यह नहीं बताया गया है कि इसमें कौन-कौन शामिल है या आगे क्या होगा।"
+    },
+    "en": {
+      "title": "Patna: DGGI uncovers over ₹88 crore GST refund fraud in tobacco",
+      "summary": "The Patna zonal unit of the Directorate General of GST Intelligence said on 28 November 2026 that it had detected a syndicate involved in GST refund fraud of more than ₹88 crore in the tobacco sector. The action concerns cigarette manufacturers, suppliers and refund claimants; ordinary readers have nothing to do.",
+      "searchTitle": "GST refund fraud: Patna unit finds ₹88 crore case",
+      "searchDescription": "DGGI Patna detected a tobacco-sector GST refund fraud and banned cigarettes worth over ₹150 crore MRP. Read the full details.",
+      "meaning": "This case involves businesses and people in the cigarette trade who claim GST refunds. It does not affect ordinary readers directly and they do not need to do anything. The investigation is still on, so it is not yet established who all are involved.",
+      "keyFacts": [
+        "Patna zonal unit found refund fraud of over ₹88 crore over the last two years",
+        "About 8.76 crore sticks (8,410 cartons) of fake cigarettes found at Falta SEZ, Kolkata, with MRP over ₹150 crore",
+        "Two illegal units busted in September and October; about 25 lakh sticks and 03 sets of machines seized",
+        "Six cigarette manufacturing/supply cases registered this financial year; over 10.07 crore sticks worth more than ₹160 crore seized",
+        "Total fraudulently obtained GST refund detected so far is over ₹110 crore"
+      ],
+      "faq": [
+        {
+          "q": "How much GST refund fraud did DGGI Patna detect?",
+          "a": "More than ₹88 crore. According to the release, the syndicate obtained this amount as refunds over the last two years."
+        },
+        {
+          "q": "How many cigarettes were banned?",
+          "a": "About 8.76 crore sticks, or 8,410 cartons, of fake and inferior cigarettes were found at Falta SEZ in Kolkata, with an MRP value of over ₹150 crore. They were banned."
+        },
+        {
+          "q": "Do ordinary people need to do anything?",
+          "a": "No. The case relates to the cigarette trade and GST refunds, and consumers have no action to take."
+        },
+        {
+          "q": "What did the investigation find?",
+          "a": "According to the release, the syndicate worked through a network of shell entities that obtained invoices without receipts of actual goods to claim input tax credit, and supplied inferior cigarettes to an SEZ to claim refunds."
+        },
+        {
+          "q": "Is the case closed?",
+          "a": "No. The release says further investigation is on to identify the entities and people in the syndicate."
+        }
+      ],
+      "body": "## What happened\n\nThe Patna zonal unit of the Directorate General of GST Intelligence (DGGI) has detected a GST refund fraud case in the tobacco sector. According to the release dated 28 November 2026, the investigation found that a syndicate had obtained refunds of more than ₹88 crore over the last two years.\n\n## How the syndicate worked\n\nThe release says the syndicate operated through a network of shell entities. These obtained invoices from branded cigarette dealers without receipts of actual goods, and in this way fraudulently claimed large amounts of input tax credit (ITC). The release says this violated Section 16 of the Central Goods and Services Tax Act, 2017.\n\nThe syndicate also bought inferior cigarettes of unknown origin and supplied them to the Falta Special Economic Zone (SEZ) in Kolkata under a letter of undertaking (LUT). Fraudulent GST refund claims were then made against the ITC built up through such deemed exports.\n\n## What was seized\n\nDuring the investigation, about 8.76 crore sticks (8,410 cartons) of fake and inferior cigarettes bearing the names of various well-known brands were found at Falta SEZ. According to the release, their total MRP value was more than ₹150 crore, and they were banned.\n\nIn September and October this year, two illegal cigarette manufacturing units were busted. About 25 lakh cigarette sticks and 03 sets of cigarette-making and packing machines were seized from them.\n\n## The running total\n\nSo far this financial year, DGGI has registered six cases related to cigarette manufacturing or supply. More than 10.07 crore cigarette sticks worth over ₹160 crore were seized, along with machinery, packing material and raw material. The total fraudulently obtained GST refund detected so far is more than ₹110 crore.\n\n## What next\n\nFurther investigation is on to identify the entities and people in the syndicate and to establish the full amount of tax evasion and fraudulent refunds, the release says. The matter is therefore not closed.\n\n## What this means for ordinary readers\n\nThis case concerns the cigarette trade and GST refunds. Ordinary consumers have no form to fill, no deadline to meet and nowhere to go. Since the investigation is still on, the release does not say who all are involved or what will happen next."
+    }
+  }
+}
