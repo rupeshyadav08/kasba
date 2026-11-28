@@ -4401,7 +4401,11 @@
     "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13764&Mode=0": "2026-11-27",
     "https://www.rbi.org.in/scripts/NotificationUser.aspx?Id=13763&Mode=0": "2026-11-27",
     "https://nta.ac.in/Download/Notice/Notice_20261127225543.pdf": "2026-11-27",
-    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_for_re-exam_SICPO_2026_27112026.pdf": "2026-11-27"
+    "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_for_re-exam_SICPO_2026_27112026.pdf": "2026-11-27",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342975": "2026-11-28",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342965": "2026-11-28",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342955": "2026-11-28",
+    "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2342954": "2026-11-28"
   },
   "telegramOffset": 406796360,
   "deploy": {
