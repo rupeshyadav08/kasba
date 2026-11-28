@@ -1,3 +1,13 @@
+# Security headers for every page: no showing Kasba inside other sites' frames, no MIME sniffing,
+# HTTPS only, no camera/mic/location access. Kept light so stock photos and scripts still load.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: frame-ancestors 'self'; base-uri 'self'; object-src 'none'; form-action 'self'
+
 # Cloudflare Pages headers. Astro's /_astro/ files have a hash in their name, so they never change.
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
